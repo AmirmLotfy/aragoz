@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { makeModule, makeRecipe } from '@aragoz/contracts';
+import { creditLabel, makeModule, makeRecipe, validateRecipe } from '@aragoz/contracts';
 import type { BossRecipe, EncounterResult } from '@aragoz/contracts';
 import { showbillEntries } from './showbill';
 import { ShowbillHistory } from './components';
@@ -31,5 +31,13 @@ describe('complete showbill attribution',()=>{
     const hidden=renderToStaticMarkup(createElement(ShowbillHistory,{...props,hideAuthors:true}));
     for(const name of ['Viewer 1','Viewer 2','Viewer 3'])expect(hidden).not.toContain(name);
     expect(hidden).toContain('Audience author');expect(hidden).toContain('House Suggestion');expect(recipes.map(r=>r.hash)).toEqual(before);
+  });
+  it('restores a name hidden at commit time using the current preference without changing the contract',async()=>{
+    const committed=await makeRecipe({roomId:'show-one',actId:'act-hidden',seed:4,modules:[makeModule('charge-deliberate','left','proposal-hidden',{source:'viewer',authorId:'author-hidden',displayName:'Original viewer',hidden:true}),makeModule('steam-narrow','right')]});
+    const original=JSON.stringify(committed),props={roomId:'show-one',recipes:[committed],results:[],hideAuthors:false};
+    expect(creditLabel(committed.modules[0].credit)).toBe('Audience author');
+    expect(renderToStaticMarkup(createElement(ShowbillHistory,props))).toContain('Original viewer');
+    expect(renderToStaticMarkup(createElement(ShowbillHistory,{...props,hideAuthors:true}))).not.toContain('Original viewer');
+    expect(JSON.stringify(committed)).toBe(original);await expect(validateRecipe(committed)).resolves.toEqual(committed);
   });
 });

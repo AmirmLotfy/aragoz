@@ -1,0 +1,47 @@
+{
+  "kind": "current-local-presentation-validation",
+  "createdAt": "2026-10-26T04:17:50.500Z",
+  "checks": [
+    {
+      "kind": "typecheck",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "path": "evidence/release-presentation-typecheck.log",
+      "sha256": "44273af087ef4f08e29c7fecd416d59e1d6d5c2ebde0ce2b97d242b784abacd9"
+    },
+    {
+      "kind": "unit/server/helper tests",
+      "command": "npm test",
+      "exitCode": 0,
+      "path": "evidence/release-presentation-tests.log",
+      "sha256": "75443e5db0262ab5634076bc604445a159a96a26e4032e65341e2f7d7d69bf39"
+    },
+    {
+      "kind": "release build",
+      "command": "npm run build:release",
+      "exitCode": 0,
+      "path": "evidence/release-presentation-build.log",
+      "sha256": "8449a3595d8efa4590464701ead1f93496816f72644e34d2c9462545ce588488"
+    },
+    {
+      "kind": "actual local browser flows",
+      "command": "npm run test:browser",
+      "exitCode": 0,
+      "path": "evidence/release-presentation-browser.log",
+      "sha256": "3ee376d0d1054dc882644f32ea50e5c9d9afae4b52c73077e379ccfe44d126bb"
+    }
+  ],
+  "unitTests": 116,
+  "unitFiles": 8,
+  "browserTests": 13,
+  "browserDuration": "1.4minutes",
+  "fixes": [
+    "Retina scale matches CSS-based Babylon engine sizing",
+    "Physical sequential wing-to-socket assembly gates combat and readiness",
+    "Reduced motion seats modules without travel",
+    "Current author preference overrides immutable display default",
+    "OBS driver synchronizes Encore with advancing simulation ticks"
+  ],
+  "review": "Bounded source review plus React checklist completed; no additional material source gap established. Review is not provider/human acceptance.",
+  "scope": "Current native checks and actual local fixture browser flows pass. Linux packaging proof predates this presentation packet. Actual OBS diagnostics remain interrupted; no30minute/provider/human acceptance claimed."
+}

@@ -1,0 +1,521 @@
+{
+  "kind": "actual-OBS-diagnostic-recordings-only",
+  "createdAt": "2026-10-26T04:14:49.432Z",
+  "macOS": "26.6.2",
+  "device": "Apple M1",
+  "obsVersion": "33.0.0",
+  "scope": "These interrupted diagnostic clips do not satisfy either30minute measurement or human acceptance. Video contains only the selected game window; both microphone and capture audio mute were verified in OBS. No footage uploaded.",
+  "runs": [
+    {
+      "runId": "obs-1080p-retina-20261026",
+      "clip": "2026-10-26 06-59-40.mov",
+      "sha256": "f9a1388fde29041d631dae33ecb8ec9730460af0d050a6cc4b86553d152b87b7",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "60/1"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "avg_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "68.366667",
+          "size": "4466285"
+        }
+      },
+      "startedAt": "2026-10-26T04:00:02.028Z",
+      "gameplayDurationMs": 2107.707083999994,
+      "completedScheduledDuration": false,
+      "status": "attention-required-window-preserved-context-closed",
+      "attempts": [],
+      "errors": [
+        {
+          "at": "2026-10-26T04:00:04.135Z",
+          "kind": "script",
+          "name": "TimeoutError",
+          "message": "locator.click: Timeout 2000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Raise the curtain', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"button primary\">Raise the curtain</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    "
+        }
+      ],
+      "telemetry": [
+        {
+          "reason": "interrupted-or-failed-session",
+          "report": {
+            "schemaVersion": 1,
+            "evidence": "local browser telemetry; OBS and human acceptance unverified",
+            "createdAt": "2026-10-26T04:00:04.647Z",
+            "observationSpanMs": 474651.60000000894,
+            "activeFrameSamples": 6,
+            "pausedFrames": 7023,
+            "meanFrameMs": 383.7333333318432,
+            "p95FrameMs": 2000,
+            "longestFrameMs": 2187.3999999910593,
+            "peakVisibleTriangles": 35387,
+            "peakObservedDrawCalls": 61,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "resolution": {
+              "width": 1021,
+              "height": 564
+            },
+            "profiles": [
+              "charge-deliberate",
+              "steam-wide"
+            ],
+            "mechanicLibraryVersion": "1.0.0",
+            "artKitVersion": "local-kit-v1",
+            "presentationFps": 60,
+            "quality": "high"
+          },
+          "error": null
+        }
+      ],
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "platform": "MacIntel",
+        "viewport": {
+          "width": 1280,
+          "height": 632,
+          "devicePixelRatio": 2
+        },
+        "outerWindow": {
+          "width": 1280,
+          "height": 720
+        },
+        "screen": {
+          "width": 1440,
+          "height": 900,
+          "availableWidth": 1440,
+          "availableHeight": 900
+        },
+        "canvasCss": {
+          "width": 680.8828125,
+          "height": 375.9921875
+        },
+        "canvasBuffer": {
+          "width": 1021,
+          "height": 564
+        },
+        "gpu": {
+          "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+          "vendor": "Google Inc. (Apple)",
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+        },
+        "visibility": "visible",
+        "windowTitle": "ARAGOZ · OBS AI-led · obs-1080p-retina-20261026",
+        "chromeVersion": "155.0.8059.85",
+        "hardwareMetalConfirmed": true
+      }
+    },
+    {
+      "runId": "obs-1080p-keyboard-20261026",
+      "clip": "2026-10-26 07-03-28.mov",
+      "sha256": "e95648668d0d82f1988c5f00fe1b2486bfe1698b8bd2284dc7eab5a4c000c840",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "avg_frame_rate": "60/1"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "avg_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "216.583333",
+          "size": "16213846"
+        }
+      },
+      "startedAt": "2026-10-26T04:03:35.377Z",
+      "gameplayDurationMs": 138384.11220799998,
+      "completedScheduledDuration": false,
+      "status": "attention-required-window-preserved-context-closed",
+      "attempts": [
+        {
+          "attemptId": "2a60d5e0-f5b2-448a-9869-7c3bf273ad25",
+          "preset": 0,
+          "lastSimTick": 1088,
+          "outcome": "won"
+        },
+        {
+          "attemptId": "1a5f7992-2cdf-4312-8353-b1d84aba36b2",
+          "preset": 0,
+          "lastSimTick": 583,
+          "outcome": "won"
+        },
+        {
+          "attemptId": "8c942132-5281-46bb-9921-3fa32fe13869",
+          "preset": 0,
+          "lastSimTick": 985,
+          "outcome": "won"
+        },
+        {
+          "attemptId": "9a867644-e0d9-40e0-80fb-7e567338479f",
+          "preset": 0,
+          "lastSimTick": 1424,
+          "outcome": "won"
+        },
+        {
+          "attemptId": "feb4cbc6-8876-47a0-9147-e33bde5aee47",
+          "preset": 0,
+          "lastSimTick": 1141,
+          "outcome": "won"
+        },
+        {
+          "attemptId": "468ecc03-1ea1-4c4f-9901-712da0636f4c",
+          "preset": 0,
+          "lastSimTick": 981,
+          "outcome": "won"
+        },
+        {
+          "attemptId": "d3963850-bc6a-45f3-8a12-9a82ceeaf383",
+          "preset": 0,
+          "lastSimTick": 552,
+          "outcome": "won"
+        },
+        {
+          "attemptId": "8e252959-d820-4ead-a7c4-4f613e27f6d1",
+          "preset": 0,
+          "lastSimTick": 1132,
+          "outcome": "lost"
+        },
+        {
+          "attemptId": "48846258-e713-4719-9d78-b36dc3b5c746",
+          "preset": 0,
+          "lastSimTick": 0,
+          "outcome": null
+        }
+      ],
+      "errors": [
+        {
+          "at": "2026-10-26T04:05:53.806Z",
+          "kind": "script",
+          "name": "Error",
+          "message": "The rehearsal paused without a visible safe resume control"
+        }
+      ],
+      "telemetry": [
+        {
+          "reason": "actual-outcome-won",
+          "report": {
+            "schemaVersion": 1,
+            "evidence": "local browser telemetry; OBS and human acceptance unverified",
+            "createdAt": "2026-10-26T04:03:55.306Z",
+            "observationSpanMs": 123842.39999999106,
+            "activeFrameSamples": 1059,
+            "pausedFrames": 1554,
+            "meanFrameMs": 18.72710103871577,
+            "p95FrameMs": 18,
+            "longestFrameMs": 1829.8999999910593,
+            "peakVisibleTriangles": 39975,
+            "peakObservedDrawCalls": 70,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "resolution": {
+              "width": 1021,
+              "height": 564
+            },
+            "profiles": [
+              "charge-deliberate",
+              "steam-wide"
+            ],
+            "mechanicLibraryVersion": "1.0.0",
+            "artKitVersion": "local-kit-v1",
+            "presentationFps": 60,
+            "quality": "high"
+          },
+          "error": null
+        },
+        {
+          "reason": "actual-outcome-won",
+          "report": {
+            "schemaVersion": 1,
+            "evidence": "local browser telemetry; OBS and human acceptance unverified",
+            "createdAt": "2026-10-26T04:04:06.143Z",
+            "observationSpanMs": 10327.800000011921,
+            "activeFrameSamples": 578,
+            "pausedFrames": 4,
+            "meanFrameMs": 16.869550173000068,
+            "p95FrameMs": 18,
+            "longestFrameMs": 33.5,
+            "peakVisibleTriangles": 38391,
+            "peakObservedDrawCalls": 70,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "resolution": {
+              "width": 1021,
+              "height": 564
+            },
+            "profiles": [
+              "charge-deliberate",
+              "steam-wide"
+            ],
+            "mechanicLibraryVersion": "1.0.0",
+            "artKitVersion": "local-kit-v1",
+            "presentationFps": 60,
+            "quality": "high"
+          },
+          "error": null
+        },
+        {
+          "reason": "actual-outcome-won",
+          "report": {
+            "schemaVersion": 1,
+            "evidence": "local browser telemetry; OBS and human acceptance unverified",
+            "createdAt": "2026-10-26T04:04:23.313Z",
+            "observationSpanMs": 17088.59999999404,
+            "activeFrameSamples": 951,
+            "pausedFrames": 7,
+            "meanFrameMs": 17.450368033645656,
+            "p95FrameMs": 18,
+            "longestFrameMs": 63.70000000298023,
+            "peakVisibleTriangles": 40947,
+            "peakObservedDrawCalls": 70,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "resolution": {
+              "width": 1021,
+              "height": 564
+            },
+            "profiles": [
+              "charge-deliberate",
+              "steam-wide"
+            ],
+            "mechanicLibraryVersion": "1.0.0",
+            "artKitVersion": "local-kit-v1",
+            "presentationFps": 60,
+            "quality": "high"
+          },
+          "error": null
+        },
+        {
+          "reason": "actual-outcome-won",
+          "report": {
+            "schemaVersion": 1,
+            "evidence": "local browser telemetry; OBS and human acceptance unverified",
+            "createdAt": "2026-10-26T04:04:47.744Z",
+            "observationSpanMs": 24203,
+            "activeFrameSamples": 1375,
+            "pausedFrames": 6,
+            "meanFrameMs": 17.271854545463214,
+            "p95FrameMs": 18,
+            "longestFrameMs": 42.20000000298023,
+            "peakVisibleTriangles": 41555,
+            "peakObservedDrawCalls": 70,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "resolution": {
+              "width": 1021,
+              "height": 564
+            },
+            "profiles": [
+              "charge-deliberate",
+              "steam-wide"
+            ],
+            "mechanicLibraryVersion": "1.0.0",
+            "artKitVersion": "local-kit-v1",
+            "presentationFps": 60,
+            "quality": "high"
+          },
+          "error": null
+        },
+        {
+          "reason": "actual-outcome-won",
+          "report": {
+            "schemaVersion": 1,
+            "evidence": "local browser telemetry; OBS and human acceptance unverified",
+            "createdAt": "2026-10-26T04:05:07.931Z",
+            "observationSpanMs": 19625.5,
+            "activeFrameSamples": 1063,
+            "pausedFrames": 3,
+            "meanFrameMs": 17.967638758225814,
+            "p95FrameMs": 33,
+            "longestFrameMs": 60.099999994039536,
+            "peakVisibleTriangles": 40951,
+            "peakObservedDrawCalls": 70,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "resolution": {
+              "width": 1021,
+              "height": 564
+            },
+            "profiles": [
+              "charge-deliberate",
+              "steam-wide"
+            ],
+            "mechanicLibraryVersion": "1.0.0",
+            "artKitVersion": "local-kit-v1",
+            "presentationFps": 60,
+            "quality": "high"
+          },
+          "error": null
+        },
+        {
+          "reason": "actual-outcome-won",
+          "report": {
+            "schemaVersion": 1,
+            "evidence": "local browser telemetry; OBS and human acceptance unverified",
+            "createdAt": "2026-10-26T04:05:24.684Z",
+            "observationSpanMs": 16679.79999999702,
+            "activeFrameSamples": 889,
+            "pausedFrames": 2,
+            "meanFrameMs": 18.50416197975588,
+            "p95FrameMs": 33,
+            "longestFrameMs": 52.29999999701977,
+            "peakVisibleTriangles": 38391,
+            "peakObservedDrawCalls": 70,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "resolution": {
+              "width": 1021,
+              "height": 564
+            },
+            "profiles": [
+              "charge-deliberate",
+              "steam-wide"
+            ],
+            "mechanicLibraryVersion": "1.0.0",
+            "artKitVersion": "local-kit-v1",
+            "presentationFps": 60,
+            "quality": "high"
+          },
+          "error": null
+        },
+        {
+          "reason": "actual-outcome-won",
+          "report": {
+            "schemaVersion": 1,
+            "evidence": "local browser telemetry; OBS and human acceptance unverified",
+            "createdAt": "2026-10-26T04:05:34.229Z",
+            "observationSpanMs": 9517.10000000894,
+            "activeFrameSamples": 536,
+            "pausedFrames": 5,
+            "meanFrameMs": 17.194776119386304,
+            "p95FrameMs": 18,
+            "longestFrameMs": 33.900000005960464,
+            "peakVisibleTriangles": 46475,
+            "peakObservedDrawCalls": 70,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "resolution": {
+              "width": 1021,
+              "height": 564
+            },
+            "profiles": [
+              "charge-deliberate",
+              "steam-wide"
+            ],
+            "mechanicLibraryVersion": "1.0.0",
+            "artKitVersion": "local-kit-v1",
+            "presentationFps": 60,
+            "quality": "high"
+          },
+          "error": null
+        },
+        {
+          "reason": "actual-outcome-lost",
+          "report": {
+            "schemaVersion": 1,
+            "evidence": "local browser telemetry; OBS and human acceptance unverified",
+            "createdAt": "2026-10-26T04:05:53.626Z",
+            "observationSpanMs": 19364,
+            "activeFrameSamples": 1086,
+            "pausedFrames": 9,
+            "meanFrameMs": 17.509760589326834,
+            "p95FrameMs": 18,
+            "longestFrameMs": 66.5,
+            "peakVisibleTriangles": 40951,
+            "peakObservedDrawCalls": 70,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "resolution": {
+              "width": 1021,
+              "height": 564
+            },
+            "profiles": [
+              "charge-deliberate",
+              "steam-wide"
+            ],
+            "mechanicLibraryVersion": "1.0.0",
+            "artKitVersion": "local-kit-v1",
+            "presentationFps": 60,
+            "quality": "high"
+          },
+          "error": null
+        },
+        {
+          "reason": "interrupted-or-failed-session",
+          "report": {
+            "schemaVersion": 1,
+            "evidence": "local browser telemetry; OBS and human acceptance unverified",
+            "createdAt": "2026-10-26T04:05:53.864Z",
+            "observationSpanMs": 207.6000000089407,
+            "activeFrameSamples": 2,
+            "pausedFrames": 0,
+            "meanFrameMs": 38.25,
+            "p95FrameMs": 46,
+            "longestFrameMs": 46.29999999701977,
+            "peakVisibleTriangles": 35387,
+            "peakObservedDrawCalls": 13,
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "resolution": {
+              "width": 1021,
+              "height": 564
+            },
+            "profiles": [
+              "charge-deliberate",
+              "steam-wide"
+            ],
+            "mechanicLibraryVersion": "1.0.0",
+            "artKitVersion": "local-kit-v1",
+            "presentationFps": 60,
+            "quality": "high"
+          },
+          "error": null
+        }
+      ],
+      "browser": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "platform": "MacIntel",
+        "viewport": {
+          "width": 1280,
+          "height": 632,
+          "devicePixelRatio": 2
+        },
+        "outerWindow": {
+          "width": 1280,
+          "height": 720
+        },
+        "screen": {
+          "width": 1440,
+          "height": 900,
+          "availableWidth": 1440,
+          "availableHeight": 900
+        },
+        "canvasCss": {
+          "width": 680.8828125,
+          "height": 375.9921875
+        },
+        "canvasBuffer": {
+          "width": 1021,
+          "height": 564
+        },
+        "gpu": {
+          "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+          "vendor": "Google Inc. (Apple)",
+          "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+        },
+        "visibility": "visible",
+        "windowTitle": "ARAGOZ · OBS AI-led · obs-1080p-keyboard-20261026",
+        "chromeVersion": "155.0.8059.85",
+        "hardwareMetalConfirmed": true
+      }
+    }
+  ]
+}

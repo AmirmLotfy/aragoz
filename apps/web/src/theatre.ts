@@ -24,6 +24,8 @@ import type { CombatSnapshot } from '@aragoz/combat';
 import type { Preferences } from './settings';
 import { localAssetReviewEnabled } from './asset-review';
 import { AssetLoadBudget } from './asset-loading';
+import { hardwareScalingLevel } from './rendering';
+import { moduleAssemblyTransform } from './assembly';
 
 const C = { canvas: '#F2E6CA', soot: '#24231F', red: '#C74632', blue: '#244A9A', ochre: '#D5A43B', wood: '#88603E', darkwood: '#4B3427', brass: '#B08743' };
 export interface StageMetrics { fps: number; triangles: number; drawCalls: number; geometry: string; }
@@ -73,7 +75,7 @@ export class Theatre {
 
   constructor(private canvas: HTMLCanvasElement, private recipe: BossRecipe, preferences: Preferences) {
     this.engine = new Engine(canvas, true, { preserveDrawingBuffer: false, stencil: true, powerPreference: 'high-performance' });
-    this.engine.setHardwareScalingLevel(preferences.quality === 'low' ? Math.max(1, window.devicePixelRatio) : Math.max(1, window.devicePixelRatio / 1.5));
+    this.engine.setHardwareScalingLevel(hardwareScalingLevel(preferences.quality,window.devicePixelRatio));
     this.scene = new Scene(this.engine); this.scene.useRightHandedSystem = true;
     this.instrumentation = new SceneInstrumentation(this.scene);
     this.scene.clearColor = Color4.FromHexString('#1E211FFF'); this.scene.ambientColor = Color3.FromHexString('#564B3E');
@@ -243,7 +245,7 @@ export class Theatre {
     }catch{/* Offline, absent or stalled assets keep the approved shipped fallback. */}
     finally{budget.close();if(this.assetLoadBudget===budget)this.assetLoadBudget=null;}
   }
-  render(state:CombatSnapshot,wallTime:number,preferences:Preferences):void {
+  render(state:CombatSnapshot,wallTime:number,preferences:Preferences,assemblyProgress=1):void {
     const {hero,boss}=state;
     this.scene.animationTimeScale=state.paused&&!state.outcome?0:1;
     this.hero.position.set(hero.position.x,hero.dodging?0.12:0,hero.position.z);this.hero.rotation.y=Math.atan2(hero.facing.x,hero.facing.z);
@@ -280,7 +282,10 @@ export class Theatre {
         this.debris.push({node:fragment,started:wallTime,origin});node.setEnabled(false);this.moduleNodes[m.slotId].setEnabled(false);
         this.moduleGroups[m.slotId]?.forEach(g=>g.stop());
       }
-      if(!m.broken)this.moduleNodes[m.slotId].position.y=m.exposed?0.14:0;
+      if(!m.broken){
+        const pose=moduleAssemblyTransform(m.slotId,assemblyProgress,preferences.reducedMotion),node=this.moduleNodes[m.slotId];
+        node.position.set(pose.x,pose.y+(m.exposed?0.14:0),pose.z);node.rotation.z=pose.rotationZ;
+      }
     }
     this.debris=this.debris.filter(d=>{const age=wallTime-d.started;if(age>(preferences.reducedMotion?0.15:2)){d.node.dispose();return false;}if(!preferences.reducedMotion){d.node.position.set(d.origin.x+age*0.65,d.origin.y+Math.max(0,age*2-age*age*2),d.origin.z+age*0.7);d.node.rotation.z=age*3;}return true;});
     this.lane.setEnabled(false);this.cone.setEnabled(false);this.trail.setEnabled(false);this.steam.forEach(p=>p.setEnabled(false));

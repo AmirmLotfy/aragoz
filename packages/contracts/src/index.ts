@@ -126,7 +126,9 @@ export async function makeRecipe(input: {
 export function ruleCaption(module: RecipeModule): string {
   const p = MECHANICS[module.profileId]; return `${p.power} — BUT ${p.flaw.toLowerCase()}.`;
 }
-export function creditLabel(credit: Credit): string { return credit.source === 'house' ? 'House Suggestion' : credit.hidden ? 'Audience author' : credit.displayName; }
+// A saved recipe keeps its original visibility default. A live show may render
+// its current preference without changing the immutable recipe or attribution.
+export function creditLabel(credit: Credit, hideAuthors?: boolean): string { return credit.source === 'house' ? 'House Suggestion' : (hideAuthors ?? credit.hidden) ? 'Audience author' : credit.displayName; }
 export function sanitizeText(text: string, limit = 280): string {
   return text.normalize('NFKC').replace(/[\u0000-\u001f\u007f-\u009f\u200b-\u200f\u202a-\u202e\u2066-\u2069<>]/g, '').replace(/\s+/g, ' ').trim().slice(0, limit);
 }

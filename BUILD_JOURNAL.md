@@ -1,5 +1,14 @@
 # Build journal
 
+## 2026-10-26 — Retina validation and actual OBS measurement
+
+- Headed M1 Metal preflight exposed half-resolution Retina sizing:681×376CSS rendered510×282. Corrected the shared Babylon scale to1.5pixels/CSS atDPR2 (1021×564actual), with low quality1pixel/CSS. Current typecheck/release build pass.
+- Earlier13-case browser run passed8/failed5. Fixed one incorrect exact-label test locator; other traces showed delayed software rendering with controls present. All5failed cases passed on the bounded rerun using original timeouts (58.7seconds). After the assembly/author packet, current full typecheck/116unit-server tests/release build/13browser cases all pass; browser duration1.4minutes.
+- Configured OBS33.0.0 recording-only, Apple H.264,1920×1080/60fps, game-window-only capture, fitted source and both audio mutes checked. Actual clips68.366667s and216.583333s were stopped/finalized. The latter contains138.384s/7AI-led wins before a driver snapshot race, not a stuck game. Added keyboard activation plus curtain/advancing-tick synchronization. Both remain diagnostic only; zero completed30minute sessions. ffprobe metadata, receipt telemetry/hashes and an actual recorded frame are retained; no footage uploaded.
+- Bounded source review found absent physical assembly and inability to restore a name hidden at recipe commit. Implemented sequential1.6second wing→socket movement after actual asset admission, presentation-gated simulation/input/readiness and120ms no-travel reduced motion. Current author visibility now explicitly overrides immutable recipe defaults. Unit/browser evidence covers exact seating, reduced motion, tick0 throughout assembly and immutable author restoration. React review found no additional actionable issue in this packet; transient presentation state stays outside React combat updates.
+- Twitch developer login/agreement approved and completed. Registration still rejects2FA after the owner reported enabling it; refreshed Security still offers setup. Asked owner to finish final verification. App/credentials/genuine game OAuth/chat remain absent. No paid call/resource or fabricated provider/human evidence.
+- Root owns all files; specialists completed. HEAD d7d0b07/main before checkpoint. No heavy job or measurement remains; OBS is idle and diagnostic contexts closed after capture stopped. Local/public servers remain owned and running; no unrelated cleanup. Next is full timed OBS validation, while owner completes Twitch's still-required2FA verification.
+
 ## 2026-10-26 —720p framing and source publication
 
 - Baseline203files were credential/path checked, committed and pushed privately as e256d088443b62873e3e851ef1566cf2812e4974. Upstream font/software license whitespace was preserved unchanged. No credentials/data/dependencies were staged.

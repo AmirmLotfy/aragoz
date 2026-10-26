@@ -86,6 +86,15 @@ test('[FIXTURE] real live UI commits both audience contracts, hides private raw 
   await expect(play.getByText(first.displayName, { exact: true })).toHaveCount(0);
   await backstage.getByLabel('Hide author display names').uncheck();
   await expect(play.locator('.selected-contracts').getByText(first.displayName, { exact: true })).toBeVisible();
+  await play.evaluate(()=>{
+    const observed=window as Window & {assemblyFrames?:Array<{progress:number;tick:number;paused:string|null}>};observed.assemblyFrames=[];
+    const observer=new MutationObserver(records=>{for(const record of records){const canvas=record.target as HTMLElement;
+      if(canvas.getAttribute('data-testid')!=='game-canvas'||!canvas.hasAttribute('data-assembly-progress'))continue;
+      observed.assemblyFrames!.push({progress:Number(canvas.getAttribute('data-assembly-progress')),tick:Number(canvas.getAttribute('data-sim-tick')??0),paused:canvas.getAttribute('data-paused')});
+      if(canvas.getAttribute('data-presentation-ready')==='true')observer.disconnect();
+    }});
+    observer.observe(document.body,{subtree:true,attributes:true,attributeFilter:['data-assembly-progress','data-presentation-ready']});
+  });
   const right = await audienceBallot(play, backstage, second);
   expect(right.round).not.toBe(left.round);
   const committed = harness.state();
@@ -96,6 +105,11 @@ test('[FIXTURE] real live UI commits both audience contracts, hides private raw 
   await harness.advance(701);
   await expect(play.getByRole('button', { name: 'Take the stage', exact: true })).toBeEnabled();
   await expect(play.getByTestId('game-canvas')).toBeVisible();
+  await expect(play.getByTestId('game-canvas')).toHaveAttribute('data-presentation-ready','true');
+  const assemblyFrames=await play.evaluate(()=>(window as Window & {assemblyFrames?:Array<{progress:number;tick:number;paused:string|null}>}).assemblyFrames??[]);
+  expect(assemblyFrames.some(frame=>frame.progress>0&&frame.progress<1),'The actual stage renders intermediate attachment positions').toBe(true);
+  expect(assemblyFrames.every(frame=>frame.tick===0),'Assembly never advances combat').toBe(true);
+  await expect(play.getByTestId('game-canvas')).toHaveAttribute('data-assembly-progress','1');
   await expect(play.locator('.instruction-card').getByText(first.displayName, { exact: true })).toBeVisible();
   await expect(play.locator('.instruction-card').getByText(second.displayName, { exact: true })).toBeVisible();
   await expect(play.getByText(first.raw, { exact: true })).toHaveCount(0);

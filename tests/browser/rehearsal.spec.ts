@@ -51,6 +51,22 @@ test('the entire arena fits a 720p desktop play window',async({page})=>{
   await expect(page.getByRole('img',{name:'5 of 5 health stitches'})).toBeVisible();
 });
 
+test.describe('Retina presentation',()=>{
+  test.use({deviceScaleFactor:2});
+  test('standard quality preserves crisp pixels and low quality reduces resolution',async({page})=>{
+    await page.goto('/rehearse');await expect(page.getByRole('button',{name:'Raise the curtain'})).toBeEnabled();
+    const canvas=page.getByTestId('game-canvas');
+    const standard=await canvas.evaluate(element=>({buffer:(element as HTMLCanvasElement).width,css:element.getBoundingClientRect().width}));
+    expect(standard.buffer/standard.css).toBeGreaterThan(1.4);expect(standard.buffer/standard.css).toBeLessThan(1.6);
+    await page.getByRole('button',{name:'Sound & controls'}).click();
+    await page.getByRole('combobox',{name:'Quality',exact:true}).selectOption('low');
+    await page.getByRole('button',{name:'Back to the show'}).click();
+    await expect.poll(async()=>canvas.evaluate(element=>(element as HTMLCanvasElement).width/element.getBoundingClientRect().width)).toBeLessThan(1.1);
+    const reduced=await canvas.evaluate(element=>({buffer:(element as HTMLCanvasElement).width,css:element.getBoundingClientRect().width}));
+    expect(reduced.buffer).toBeLessThan(standard.buffer);expect(reduced.buffer/reduced.css).toBeGreaterThan(.9);
+  });
+});
+
 test('missing approved asset uses the shipped development geometry without changing mechanics',async({page})=>{
   const entries=JSON.parse(await readFile('assets/manifest.json','utf8'));
   const hero={...entries.find((entry:{id:string})=>entry.id==='hero'),glbPath:'/assets/runtime/missing.glb'};

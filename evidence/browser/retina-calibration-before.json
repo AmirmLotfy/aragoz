@@ -1,0 +1,40 @@
+{
+  "kind": "actual headed Chrome Metal calibration before OBS recording",
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "platform": "MacIntel",
+    "viewport": {
+      "width": 1280,
+      "height": 632,
+      "devicePixelRatio": 2
+    },
+    "outerWindow": {
+      "width": 1280,
+      "height": 720
+    },
+    "screen": {
+      "width": 1440,
+      "height": 900,
+      "availableWidth": 1440,
+      "availableHeight": 900
+    },
+    "canvasCss": {
+      "width": 680.8828125,
+      "height": 375.9921875
+    },
+    "canvasBuffer": {
+      "width": 510,
+      "height": 282
+    },
+    "gpu": {
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "visibility": "visible",
+    "windowTitle": "ARAGOZ \u00b7 OBS AI-led \u00b7 obs-1080p-20261026",
+    "chromeVersion": "155.0.8059.85",
+    "hardwareMetalConfirmed": true
+  },
+  "finding": "High quality Retina profile incorrectly produced a drawing buffer smaller than CSS size. No OBS recording started."
+}

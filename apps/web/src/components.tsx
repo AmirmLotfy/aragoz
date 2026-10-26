@@ -28,17 +28,17 @@ export function Timer({deadline,opensAt,delayed=false}:{deadline:number|null;ope
   const target=delayed?opensAt:deadline;const remaining=target?Math.max(0,Math.ceil((target-now)/1000)):0;
   return <span className="timer" aria-label={(delayed?'Opens in ':'Closes in ')+remaining+' seconds'}>{delayed?'OPENS IN':'CLOSES IN'} <strong>{remaining}s</strong></span>;
 }
-export function Placards({candidates,hideAuthors=false,votes,privateControls}:{candidates:Candidate[];hideAuthors?:boolean;votes?:[number,number,number];privateControls?:(candidate:Candidate)=>ReactNode}){
+export function Placards({candidates,hideAuthors,votes,privateControls}:{candidates:Candidate[];hideAuthors?:boolean;votes?:[number,number,number];privateControls?:(candidate:Candidate)=>ReactNode}){
   return <div className="placards">{candidates.map((c,i)=>{const p=MECHANICS[c.profileId];return <article className="placard" key={c.id}>
     <div className="placard-heading"><span className="choice-letter">{'ABC'[i]}</span><Glyph family={p.family}/><span className="family-label">{p.family}{candidates.filter(other=>MECHANICS[other.profileId].family===p.family).length>1?' · alternate tuning':''}</span></div>
     <h3>{p.power}</h3><p className="flaw"><span>BUT</span> {p.flaw.toLowerCase()}.</p><p className="tradeoff">{p.tradeoff}</p>
-    <div className="placard-credit">{hideAuthors&&c.credit.source==='viewer'?'Audience author':creditLabel(c.credit)}</div>
+    <div className="placard-credit">{creditLabel(c.credit,hideAuthors)}</div>
     {votes&&<div className="vote-count">{votes[i]} {votes[i]===1?'vote':'votes'}</div>}
     {c.adaptation&&privateControls&&<p className="adaptation">Adaptation: {c.adaptation}</p>}{privateControls?.(c)}
   </article>;})}</div>;
 }
-export function RuleList({modules,hideAuthors=false}:{modules:RecipeModule[];hideAuthors?:boolean}){
-  return <ul className="rule-list">{modules.map(m=><li key={m.slotId}><Glyph family={m.mechanicId}/><div><strong>{MECHANICS[m.profileId].title}</strong><p>{ruleCaption(m)}</p><small>{hideAuthors&&m.credit.source==='viewer'?'Audience author':creditLabel(m.credit)}</small></div></li>)}</ul>;
+export function RuleList({modules,hideAuthors}:{modules:RecipeModule[];hideAuthors?:boolean}){
+  return <ul className="rule-list">{modules.map(m=><li key={m.slotId}><Glyph family={m.mechanicId}/><div><strong>{MECHANICS[m.profileId].title}</strong><p>{ruleCaption(m)}</p><small>{creditLabel(m.credit,hideAuthors)}</small></div></li>)}</ul>;
 }
 export function ControlLegend({keys}:{keys:Preferences['keys']}){
   return <div className="control-legend"><span><kbd>{movementKeyLabel(keys)}</kbd> / <kbd>↑↓←→</kbd> Move</span><span><kbd>Mouse</kbd> / <kbd>{keyLabel(keys.strike)}</kbd> Strike</span><span><kbd>{keyLabel(keys.dodge)}</kbd> Dodge</span></div>;

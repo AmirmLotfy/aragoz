@@ -5,7 +5,7 @@ Local release candidate is prepared. This checklist records actual provider/host
 ## Current deliverable
 
 - [x] Pinned Node24.19.0, lockfile and successful clean npmci.
-- [x] Typecheck,112unit/server tests,62asset fixtures,12browser flows and release-asset build.
+- [x] Current typecheck,116unit/server tests,release-asset build and13browser flows (1.4minutes). Includes actual assembly frames at tick0 and correct readiness.62asset fixtures passed in the earlier Linux validation.
 - [x] Seven original Blender/GLB assets, rights and actual Babylon inspection.
 - [x] Real keyboard counter/break/final-strike/Encore playthrough, labelled AI-led.
 - [x] Production-only dependency package starts and serves API/frontend/assets/licenses.
@@ -27,7 +27,7 @@ Local release candidate is prepared. This checklist records actual provider/host
 
 ## Actual M1 OBS session
 
-OBS33.0.0 is installed in .runtime/OBS.app; official release SHA256 and Apple signature verified. Owner approved Screen Recording, but native control rejected the toggle as a changed window; owner manual enable is pending. Camera/microphone/input-monitoring access was not requested. No actual recording has run. The short headless Metal browser sample in evidence/browser/performance-smoke.json is not this test.
+OBS33.0.0 is installed in.runtime/OBS.app; official SHA256/signature and approved Screen Recording are verified. The dedicated scene captures only the uniquely titled ARAGOZ game window. Mic/Aux and capture audio are muted. Two interrupted diagnostic clips are retained separately (evidence/obs-diagnostics.json); zero complete30minute runs. The driver now synchronizes Encore with actual advancing ticks. Camera/mic/input-monitoring access was not requested. Short diagnostics and the Metal smoke sample do not replace this test.
 
 - [ ] Record actual macOS/M1/browser/OBS versions, source and encoder settings.
 - [ ] Capture only the public play window; exclude backstage and unrelated desktop content.
