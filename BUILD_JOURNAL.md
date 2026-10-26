@@ -1,5 +1,13 @@
 # Build journal
 
+## 2026-10-26 — final M1 profile completed; automated tests silenced
+
+- Source02f6b75 completed1800004.052ms of actual M1/OBS1080p30play:75attempts/67wins/5defeats/3unfinished,0driver/browser errors/downloads/cropped samples. OBS finalized before stop marker/context release. Driver exited0; OBS45543 and driver42776 are absent. User silence request arrived after full duration; SIGTERM changed the receipt's terminal status but did not shorten the completed capture.
+- Actual H.2641920×1080/30fps clip1859.900s/115323849bytes.53008unpaused samples average33.341ms(29.993fps); worst individual-attemptp95=50ms, longest61ms. OBS34/55808renderlagframes(0.061%),3/55808encoderframes(0.00538%). Peak46751triangles/71drawcalls. Actual5/15/25minframes show whole public stage. Recommended local M1 technical profile:1080p30/Standard/unchanged60Hzsimulation; not human acceptance or continuous peak offensive stress.
+- Owner reported audible game despite muted recording. Acknowledged the distinction and closed the test window. Added --mute-audio to both test browser launchers and a required real game-mute check before headed readiness. Fresh actual preflight verified Chrome flag and game mute before any play; intentional pre-start cancellation exited1 with its window closed. evidence/silent-test-policy.json. Typecheck/driver syntax pass; no app bytes changed and no new duration test needed. Standing project instructions now require silent tests.
+- Actual current public HTTPS build verified muted before play, real400msD movement x0→1.75,5approved assets and current index-DcI0Vvr4.js. An unattended26second encounter reached ordinary defeat during inspection; actual Encore restored fresh paused tick0/5stitches/ready curtain. Public tab6 is muted,30fpsselected and marked deliverable. evidence/browser/public-muted-release.{json,png}. No provider/human claim.
+- Completed report/checklist and preserved every diagnostic. Root owns source; no active specialist/heavy job. Local/public services remain intentionally available. Genuine Twitch SMS/2FA/app consent/chat and three-host/viewer acceptance remain open; no paid/model/Meshy action or outreach.
+
 ## 2026-10-26 — final-strike aim assistance verified
 
 - A post-pacing1080p60diagnostic was stopped safely after542884.892ms.8attempts/7wins/1unfinished,0browser/errors/downloads/crop. One both-broken posture stayed0.923m from the body for365seconds. Source inspection found assist targeted only intact sockets, preserving stale pointer direction for final strike. Diagnostic does not itself record pointer/facing; evidence/obs-1080p-aim-diagnostic.json labels that limit.

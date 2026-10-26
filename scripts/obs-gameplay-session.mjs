@@ -35,6 +35,7 @@ const paths={directory,startMarker,stopMarker,progress:join(directory,'progress.
 const evidence={schemaVersion:1,evidenceKind:'AI-led headed local keyboard gameplay during an operator-controlled OBS session',
   limits:'Not human, genuine Twitch, hosted, or independently verified OBS/encoder acceptance. Operator output labels do not establish game or recording resolution.',
   runId,operatorLabel:options.label??null,requestedQuality:options.quality??'high',requestedPresentationFps:Number(options.fps??60),target:target.toString(),pid:process.pid,createdAt:new Date().toISOString(),
+  audioPolicy:{browserOutputMuted:true,gameMuteVerifiedBeforePlay:false},
   requestedDurationMs:SESSION_MS,requestedPresetSegmentMs:SEGMENT_MS,status:'preparing',paths,
   processOwnership:'Only the fresh Chrome context/profile created by this script; never an existing user profile or unrelated browser.',
   profilePath:join(directory,'chrome-profile'),chromeExecutable:CHROME,headless:false,
@@ -196,7 +197,7 @@ for(const signal of ['SIGTERM','SIGINT'])process.on(signal,()=>{
 try{
   if(!existsSync(CHROME))throw new Error('The installed Google Chrome executable is absent; no browser download will be attempted');
   context=await chromium.launchPersistentContext(evidence.profilePath,{headless:false,chromiumSandbox:true,executablePath:CHROME,viewport:null,acceptDownloads:true,downloadsPath:join(directory,'downloads'),handleSIGINT:false,handleSIGTERM:false,handleSIGHUP:false,
-    args:['--app='+target.toString(),'--new-window','--window-size=1280,720','--use-angle=metal','--no-first-run','--no-default-browser-check','--disable-background-networking','--disable-component-update']});
+    args:['--app='+target.toString(),'--new-window','--window-size=1280,720','--use-angle=metal','--mute-audio','--no-first-run','--no-default-browser-check','--disable-background-networking','--disable-component-update']});
   await context.route('**/*',route=>{
     const request=route.request(),url=new URL(request.url());
     if(url.protocol==='data:'||url.protocol==='blob:')return route.continue();
@@ -211,8 +212,11 @@ try{
   if(!page.url().startsWith(target.origin+'/rehearse'))await page.goto(target.toString(),{waitUntil:'domcontentloaded',timeout:20000});
   await page.getByRole('button',{name:'Raise the curtain',exact:true}).waitFor({state:'visible',timeout:15000});
   await page.waitForFunction(()=>[...document.querySelectorAll('button')].some(button=>button.textContent==='Raise the curtain'&&!button.disabled),null,{timeout:15000});
-  if(options.quality==='low'||options.fps==='30'){
+  {
     await page.getByRole('button',{name:'Sound & controls',exact:true}).focus();await page.keyboard.press('Enter');
+    const mute=page.getByRole('checkbox',{name:'Mute all game audio',exact:true});await mute.check();
+    evidence.audioPolicy.gameMuteVerifiedBeforePlay=await mute.isChecked();
+    if(!evidence.audioPolicy.gameMuteVerifiedBeforePlay)throw new Error('Silent test policy could not mute the game before play');
     await page.getByRole('combobox',{name:'Quality',exact:true}).selectOption(options.quality??'high');
     await page.getByRole('combobox',{name:'Presentation frame rate',exact:true}).selectOption(options.fps??'60');
     await page.getByRole('button',{name:'Back to the show',exact:true}).focus();await page.keyboard.press('Enter');

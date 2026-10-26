@@ -25,11 +25,18 @@
     "limits": "Historical initial setup before actual recording; see finalized session receipts for measurement."
   },
   "latestCompletedCapture": {
-    "runId": "obs-720p-paced-20261026",
-    "evidence": "evidence/obs-720p-session.json",
+    "runId": "obs-1080p-30fps-20261026",
+    "evidence": "evidence/obs-1080p-30fps-session.json",
     "durationCompleted": true,
     "captureFramingReviewed": true,
-    "steady60fpsAccepted": false,
+    "presentationFps": 30,
+    "simulationHz": 60,
+    "localM1ProfileAccepted": true,
     "limits": "AI-led, not genuine Twitch or human acceptance"
+  },
+  "futureTestAudio": {
+    "browserMuteAtLaunch": true,
+    "gameMuteBeforePlayVerified": true,
+    "evidence": "evidence/silent-test-policy.json"
   }
 }

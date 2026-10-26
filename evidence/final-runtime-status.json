@@ -1,0 +1,21 @@
+{
+  "kind": "actual-final-readonly-runtime-check",
+  "performedAt": "2026-10-26T07:33:18.817Z",
+  "statuses": [
+    {
+      "origin": "http://127.0.0.1:3000",
+      "status": 200
+    },
+    {
+      "origin": "https://rid-structures-pursuant-owners.trycloudflare.com",
+      "status": 200
+    }
+  ],
+  "modelEnabled": false,
+  "obsAndFinalDriverExited": true,
+  "limits": [
+    "Temporary Mac-hosted rehearsal, not guaranteed uptime",
+    "No genuine Twitch or human acceptance",
+    "Source02f6b75 app bytes; later test-mute policy and documentation only"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "actual-headed-test-preflight-mute-verification",
+  "performedAt": "2026-10-26T07:23:27.176Z",
+  "status": "ready-awaiting-explicit-start-marker",
+  "audioPolicy": {
+    "browserOutputMuted": true,
+    "gameMuteVerifiedBeforePlay": true
+  },
+  "ownedChromeProcesses": 1,
+  "browserMuteFlagVerified": true,
+  "playStarted": false,
+  "limits": [
+    "Preflight only; no new30minute capture",
+    "Earlier OBS recordings were muted at the encoder but the game speakers were audible before this correction",
+    "Playwright browser suite launch configuration also now includes --mute-audio"
+  ],
+  "shutdown": {
+    "contextClosed": true,
+    "playStarted": false,
+    "exitCode": 1,
+    "reason": "Intentional stop marker cancelled the pre-start wait after mute verification; no combat or OBS capture started"
+  },
+  "typecheckAfterPolicy": {
+    "exitCode": 0,
+    "log": "evidence/silent-policy-typecheck.log"
+  }
+}

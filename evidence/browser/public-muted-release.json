@@ -1,0 +1,32 @@
+{
+  "kind": "actual-public-HTTPS-AI-led-browser-input",
+  "sourceRevision": "02f6b759ca5645f57f4e77957128c534d653c0b2",
+  "url": "https://rid-structures-pursuant-owners.trycloudflare.com/rehearse",
+  "mutedBeforePlayVerified": true,
+  "presentationFpsSelectedInSettings": 30,
+  "before": {
+    "hero": "{\"x\":0,\"z\":2.8}",
+    "tick": "1224"
+  },
+  "after": {
+    "buffer": {
+      "height": 696,
+      "width": 1255
+    },
+    "entry": "https://rid-structures-pursuant-owners.trycloudflare.com/assets/index-DcI0Vvr4.js",
+    "geometry": "5 approved assets loaded",
+    "hero": "{\"x\":1.750000000000001,\"z\":2.8}",
+    "tick": "1586"
+  },
+  "finalState": {
+    "paused": "true",
+    "tick": "0",
+    "muted": true,
+    "muteEvidence": "Final accessibility state: Unmute game audio checkbox Value1"
+  },
+  "limits": [
+    "AI-led public rehearsal; not genuine Twitch/human acceptance",
+    "An unattended26second attempt reached ordinary defeat during inspection; Encore restored a fresh paused curtain",
+    "Game build unchanged since02f6b75; later changes affect test mute policy and documentation only"
+  ]
+}

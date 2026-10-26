@@ -26,8 +26,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 2228,
-      "sha256": "5abdf414af80507d36b3044fcc3d819107e5dd199e679f20e2b636453d838d0e"
+      "bytes": 2525,
+      "sha256": "e7e325006c2c11dd57ced749a8c5dd3ed58d18af5bb819e739bb7a90f819d172"
     },
     {
       "path": "ARAGOZ_Full_Game_Brief.md",
@@ -46,8 +46,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 25119,
-      "sha256": "441567faf7e2901570ca29395b94859ecbc347f6e88dd4a4d9bc0bab6c5570e1"
+      "bytes": 27281,
+      "sha256": "7e5a3ad2149c380cb74998dff143460908408a69b4b46756eaf0bbf7c7daa1bf"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -56,8 +56,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 13917,
-      "sha256": "ee80ba95791ab026f7362bfe8e95d6aeac295149711d8d697b261b9734a8d6c0"
+      "bytes": 11125,
+      "sha256": "3410767f0505acda309c75daf9de74ea2b8514bc55859f083d008d06efe7d713"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -81,8 +81,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6959,
-      "sha256": "10579c7bbdcb2d5076ed62e24398a1c67118f0b5b9907708ec06e595ca59565d"
+      "bytes": 6876,
+      "sha256": "243ee0983d5c736b72e58c687b9b9228dbb3d45f903e2d9a3f08494b9e0fda14"
     },
     {
       "path": "SOURCE_LOG.md",
@@ -760,6 +760,21 @@
       "sha256": "b4226ef71625f11734369dd3dc1d358fcf5abb8b172eea5ff655236491b5821e"
     },
     {
+      "path": "evidence/browser/obs-1080p-30fps-charge-echo.png",
+      "bytes": 370957,
+      "sha256": "83c397a25856e1715e1a157e699f3c856001294ddd764ef275a38a7eb229d5d2"
+    },
+    {
+      "path": "evidence/browser/obs-1080p-30fps-charge-steam.png",
+      "bytes": 353037,
+      "sha256": "481bacfc65bb5398d1f6dbb724fb34ad9c9d8e6e70404e1a97c89f282f752f83"
+    },
+    {
+      "path": "evidence/browser/obs-1080p-30fps-steam-echo.png",
+      "bytes": 380977,
+      "sha256": "bd7a45a64eab89e5a66a3b9ccced55013c5b2776a21a9d350787108ab5711e68"
+    },
+    {
       "path": "evidence/browser/obs-1080p-charge-echo.png",
       "bytes": 395720,
       "sha256": "c180f9b3a260b42aedee1fe6e2b5d1ad58e39551d5b524795fd5fbedba3fb253"
@@ -803,6 +818,16 @@
       "path": "evidence/browser/performance-smoke.json",
       "bytes": 2774,
       "sha256": "d47297d2270e3108c688bbe427b30035417bdc6a9eb536ceb68109178a283d1b"
+    },
+    {
+      "path": "evidence/browser/public-muted-release.json",
+      "bytes": 1116,
+      "sha256": "28ed53c4537f08aabf1628b6bda2b3a5d264494be9ed151171f3461071bbd8c7"
+    },
+    {
+      "path": "evidence/browser/public-muted-release.png",
+      "bytes": 71942,
+      "sha256": "27f59ddcde2fbf478fcef280c22a65ec057ec7ea330bd75de1567a9eb775fa1a"
     },
     {
       "path": "evidence/browser/public-preview-input.json",
@@ -890,6 +915,11 @@
       "sha256": "5ca669c37079e2d3ccd321d369057ff4d27275590ec19cd036162c3ce739c367"
     },
     {
+      "path": "evidence/final-runtime-status.json",
+      "bytes": 562,
+      "sha256": "0794ee0d6a1384f08cf33cc6136149fb3c972f44ff52d56d9388408b918ae3c5"
+    },
+    {
       "path": "evidence/frame-pacing-validation.json",
       "bytes": 1402,
       "sha256": "3aee72a7a547eefe7dc4e9fc4b1a4c8bbbb075d9a3da5514bcbed2e41f19d6ad"
@@ -903,6 +933,11 @@
       "path": "evidence/linux-container-smoke.json",
       "bytes": 837,
       "sha256": "93697e97dbe0b5fe9c91ddcecaa183721a2f11e10b0c4a911a7b550d04efb6c7"
+    },
+    {
+      "path": "evidence/obs-1080p-30fps-session.json",
+      "bytes": 113990,
+      "sha256": "b6a0e9bf9578d6773bfdb81d684e7af7d9edeca91dc1fb47e9bf098ef7cb4c30"
     },
     {
       "path": "evidence/obs-1080p-aim-diagnostic.json",
@@ -931,8 +966,8 @@
     },
     {
       "path": "evidence/obs-release.json",
-      "bytes": 1376,
-      "sha256": "e856e6a3aa1e5fa5ca0c9b3caba5abab598590e8684848bed40a5b48e38e3fef"
+      "bytes": 1589,
+      "sha256": "653923d74761c4d7ae0c7a70201da8288576c54584b277415406a7aa1d360304"
     },
     {
       "path": "evidence/public-preview-backup-recheck.json",
@@ -965,6 +1000,11 @@
       "sha256": "9a2e23c5c6d7b84b8b877da8f545f5a186c2624f0e2358ec0261201a2be893c8"
     },
     {
+      "path": "evidence/silent-test-policy.json",
+      "bytes": 927,
+      "sha256": "71282c61024fd6ac938dbdc35ec525be2d6c05e2c45a9492b6a19320a0ac58b5"
+    },
+    {
       "path": "evidence/source-syntax.json",
       "bytes": 1359,
       "sha256": "ab8f85c8124d68c8b701994a3818e9995c4e8f1097207e6e9d35db208141f040"
@@ -986,13 +1026,13 @@
     },
     {
       "path": "ops/PERFORMANCE_REPORT.md",
-      "bytes": 4881,
-      "sha256": "d6ac30ad0be21cab94bac4410159135139e0d663694b94277b01d7c1dc0aa173"
+      "bytes": 5579,
+      "sha256": "fd4c5f4a768d71c845da2e8ed1a54c1ba3f74d6e55cd776214c8dcb503e74cc7"
     },
     {
       "path": "ops/RELEASE_CHECKLIST.md",
-      "bytes": 5743,
-      "sha256": "5bd5224e62ccf2c47b2d6052f885141ce66374bb271f413f05b20c714b4f2859"
+      "bytes": 5020,
+      "sha256": "d292b0cbb0bb09f6149c683e181bd178793954388e2f4480e1733a648b004eaa"
     },
     {
       "path": "ops/TWITCH_2FA_SUPPORT_DRAFT.md",
@@ -1056,8 +1096,8 @@
     },
     {
       "path": "playwright.config.ts",
-      "bytes": 710,
-      "sha256": "4146f45c1f00110855edfb89735a8e8535f4b8f6e0ae26bd091a15719d6f66f8"
+      "bytes": 725,
+      "sha256": "84d27c7cb4ac47f07daf62b706a74d1de6a541553d15964df97a18c95514a9ae"
     },
     {
       "path": "scripts/blender/build_local_kit.py",
@@ -1116,8 +1156,8 @@
     },
     {
       "path": "scripts/obs-gameplay-session.mjs",
-      "bytes": 25277,
-      "sha256": "d800554d8eed5a51666f6b173e3cd5bac12285ea483ad3cb45abe7f48712c3e3"
+      "bytes": 25628,
+      "sha256": "1ac38bc56953dd0a23a2f57271e4f180eb1f95884034dfd854de6c8c61ad47dc"
     },
     {
       "path": "scripts/precompress-web.mjs",

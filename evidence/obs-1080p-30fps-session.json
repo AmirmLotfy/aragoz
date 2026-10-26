@@ -1,0 +1,3339 @@
+{
+  "kind": "actual-M1-OBS-recording-with-AI-led-keyboard-play",
+  "sourceRevision": "02f6b759ca5645f57f4e77957128c534d653c0b2",
+  "runId": "obs-1080p-30fps-20261026",
+  "device": "Apple M1",
+  "macOS": "26.6.2",
+  "obsVersion": "33.0.0",
+  "profile": {
+    "output": "1920x1080",
+    "outputFps": 30,
+    "quality": "high",
+    "presentationFps": 30,
+    "simulationHz": 60,
+    "encoder": "Apple VideoToolbox H.264 hardware"
+  },
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "30/1"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "avg_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "1859.900000",
+      "size": "115323849"
+    }
+  },
+  "clipFilename": "2026-10-26 09-50-08.mov",
+  "clipSha256": "5800c326b622a9434279237a03d8ea9af67fbb6381e2e1ed5caf47dfd007e130",
+  "rawReceiptSha256": "1b7d10c246c624ea38a5ccc4de911dc1a793fb156e676a1bbe137964d150412b",
+  "startedAt": "2026-10-26T06:50:18.832Z",
+  "endedAt": "2026-10-26T07:20:18.788Z",
+  "durationMs": 1800004.0519579998,
+  "completedScheduledDuration": true,
+  "pausedAfterRun": true,
+  "contextClosedAt": "2026-10-26T07:21:21.841Z",
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "platform": "MacIntel",
+    "viewport": {
+      "width": 1280,
+      "height": 688,
+      "devicePixelRatio": 2
+    },
+    "outerWindow": {
+      "width": 1280,
+      "height": 720
+    },
+    "screen": {
+      "width": 1440,
+      "height": 900,
+      "availableWidth": 1440,
+      "availableHeight": 900
+    },
+    "canvasCss": {
+      "width": 780.4453125,
+      "height": 432
+    },
+    "canvasBuffer": {
+      "width": 1170,
+      "height": 648
+    },
+    "gpu": {
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "visibility": "visible",
+    "windowTitle": "ARAGOZ · OBS AI-led · obs-1080p-30fps-20261026",
+    "chromeVersion": "155.0.8059.85",
+    "hardwareMetalConfirmed": true
+  },
+  "presets": [
+    {
+      "index": 0,
+      "title": "The Teapot Tyrant",
+      "selectedAt": "2026-10-26T06:50:18.832Z",
+      "sessionElapsedMs": 0
+    },
+    {
+      "index": 1,
+      "title": "The Copycat’s Comeback",
+      "selectedAt": "2026-10-26T07:00:19.047Z",
+      "sessionElapsedMs": 600265.921125
+    },
+    {
+      "index": 2,
+      "title": "A Very Bad Reflection",
+      "selectedAt": "2026-10-26T07:10:18.909Z",
+      "sessionElapsedMs": 1200117.49975
+    }
+  ],
+  "counts": {
+    "attempts": 75,
+    "won": 67,
+    "lost": 5,
+    "skipped": 0,
+    "abandoned": 0,
+    "unfinished": 3
+  },
+  "presentation": {
+    "activeFrameSamples": 53008,
+    "weightedMeanFrameMs": 33.34135790823948,
+    "reciprocalMeanFps": 29.99277962079868,
+    "worstIndividualAttemptP95Ms": 50,
+    "p95Limit": "Maximum of per-attempt p95 values; not the global frame distribution",
+    "longestObservedFrameMs": 61,
+    "peakVisibleTriangles": 46751,
+    "peakObservedDrawCalls": 71
+  },
+  "sampledSimulation": {
+    "sameAttemptIntervals": 301,
+    "medianTicksPerWallSecond": 59.86608901142181,
+    "limit": "Sparse wall-time diagnostic, not a change to the fixed 1/60 simulation timestep"
+  },
+  "captureGuards": {
+    "sampleCount": 379,
+    "croppedSamples": 0,
+    "unexpectedDownloads": 0
+  },
+  "errors": [],
+  "pageErrors": [],
+  "exportErrors": [],
+  "obsCounters": {
+    "recordingStartLocal": "2026-10-26 09:50:08.610",
+    "recordingStopLocal": "2026-10-26 10:21:08.830",
+    "totalFramesOutput": 55798,
+    "totalDrawnFrames": 55774,
+    "attemptedFrames": 55808,
+    "renderLagFrames": 34,
+    "renderLagReportedPercent": 0.1,
+    "renderLagCalculatedPercent": 0.060923165137614685,
+    "encoderSkippedFrames": 3,
+    "encoderAttemptedFrames": 55808,
+    "encoderLagReportedPercent": 0,
+    "encoderLagCalculatedPercent": 0.005375573394495414,
+    "fileFinalizationMs": 24,
+    "microphoneDevice": "Disabled",
+    "captureSourceMuteChecked": true
+  },
+  "audioAudit": {
+    "microphoneDevice": "Disabled",
+    "captureSourceMuted": true,
+    "meanDb": "-91.0 dB",
+    "maxDb": "-91.0 dB",
+    "limit": "Actual complete encoded audio-track audit",
+    "gameSpeakersMuted": false,
+    "correction": "Owner reported audible game after duration completed. Test window closed, then future Chrome launches use --mute-audio and driver verifies game mute before play; evidence/silent-test-policy.json."
+  },
+  "captureReadabilityAccepted": true,
+  "frameReview": "Actual encoded frames at300,900,1500seconds show the whole stage, public House attribution and no popover/private desktop.379 sampled bounds passed; spectator comprehension remains human-unverified.",
+  "attempts": [
+    {
+      "attemptId": "5effd60c-d5a7-4a03-9d88-14a72f945c94",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:50:19.139Z",
+      "lastObservedAt": "2026-10-26T06:50:49.560Z",
+      "lastSimTick": 1837,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "dd99937d-07ed-4669-85e8-15d5802ac1de",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:50:49.969Z",
+      "lastObservedAt": "2026-10-26T06:51:37.936Z",
+      "lastSimTick": 2866,
+      "outcome": "lost"
+    },
+    {
+      "attemptId": "d4d8c47f-ae22-4987-ab45-8a35416c7574",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:51:38.268Z",
+      "lastObservedAt": "2026-10-26T06:51:53.568Z",
+      "lastSimTick": 908,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "5bc0bde2-9f94-4049-816a-16858f7c40f2",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:51:53.808Z",
+      "lastObservedAt": "2026-10-26T06:52:16.269Z",
+      "lastSimTick": 1351,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "c0e3df0d-a386-43d7-bf1e-87102cbc393a",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:52:16.522Z",
+      "lastObservedAt": "2026-10-26T06:52:37.966Z",
+      "lastSimTick": 1286,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "9513428c-0574-4b47-b4b5-11712b8993c3",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:52:38.287Z",
+      "lastObservedAt": "2026-10-26T06:52:55.024Z",
+      "lastSimTick": 998,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "7b4adc02-2eec-49f4-abfe-d0401021e8e0",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:52:55.371Z",
+      "lastObservedAt": "2026-10-26T06:53:15.225Z",
+      "lastSimTick": 1192,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "56a62d69-7c37-4adb-b67b-157ec56ca7d5",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:53:15.631Z",
+      "lastObservedAt": "2026-10-26T06:53:35.199Z",
+      "lastSimTick": 1171,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "de1d4cdc-12bb-40cf-b2c6-2e6ed13234e0",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:53:35.665Z",
+      "lastObservedAt": "2026-10-26T06:53:49.363Z",
+      "lastSimTick": 820,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "2ed44333-d577-4041-afd2-406734011800",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:53:49.713Z",
+      "lastObservedAt": "2026-10-26T06:53:59.636Z",
+      "lastSimTick": 592,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "007ca5a3-a82e-469a-9aae-e0b6181cfc90",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:54:00.131Z",
+      "lastObservedAt": "2026-10-26T06:54:09.306Z",
+      "lastSimTick": 548,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "407b13d5-3968-4518-8a1c-54308f037c92",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:54:09.631Z",
+      "lastObservedAt": "2026-10-26T06:54:28.633Z",
+      "lastSimTick": 1129,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "c6678870-b813-4345-a753-00911dd4356f",
+      "recipeHash": "f7586b150a11f786c502639c269a7d6ff62eb5de115521733922082822d38874",
+      "preset": 0,
+      "firstObservedAt": "2026-10-26T06:54:29.006Z",
+      "lastObservedAt": "2026-10-26T07:00:18.663Z",
+      "lastSimTick": 20976,
+      "outcome": null
+    },
+    {
+      "attemptId": "84c8c7bf-8742-4724-9f3d-d1f8fb8394ba",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:00:19.423Z",
+      "lastObservedAt": "2026-10-26T07:00:42.608Z",
+      "lastSimTick": 1389,
+      "outcome": "lost"
+    },
+    {
+      "attemptId": "06a9ed5e-80e6-41bd-9598-4898e2673b7f",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:00:43.083Z",
+      "lastObservedAt": "2026-10-26T07:01:03.125Z",
+      "lastSimTick": 1205,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "4708e942-3f5e-428d-8381-e5c0601cb186",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:01:03.462Z",
+      "lastObservedAt": "2026-10-26T07:01:32.402Z",
+      "lastSimTick": 1735,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "53d59bcf-ad9b-40f5-805d-4a45230362f0",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:01:32.874Z",
+      "lastObservedAt": "2026-10-26T07:01:44.028Z",
+      "lastSimTick": 665,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "8c485ac9-2f20-40c6-8ac4-dbea6bab81da",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:01:44.358Z",
+      "lastObservedAt": "2026-10-26T07:02:17.106Z",
+      "lastSimTick": 1957,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "1329bc79-49c3-4b4b-b9cb-8e00501b239c",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:02:17.440Z",
+      "lastObservedAt": "2026-10-26T07:02:46.505Z",
+      "lastSimTick": 1742,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "b7ad7e74-c770-48cb-a8da-15983a8bb3bd",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:02:46.895Z",
+      "lastObservedAt": "2026-10-26T07:03:03.198Z",
+      "lastSimTick": 969,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "cfc822a1-30d2-44fa-97c1-627808da68a2",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:03:03.573Z",
+      "lastObservedAt": "2026-10-26T07:03:28.256Z",
+      "lastSimTick": 1478,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "b77c375d-c082-41d2-a323-e3f76efe636a",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:03:28.757Z",
+      "lastObservedAt": "2026-10-26T07:03:53.657Z",
+      "lastSimTick": 1497,
+      "outcome": "lost"
+    },
+    {
+      "attemptId": "8087a742-ab18-44bc-bee4-b4b7c3d27fd2",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:03:53.988Z",
+      "lastObservedAt": "2026-10-26T07:04:19.599Z",
+      "lastSimTick": 1535,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "b637106a-98f9-46c7-9be5-a53643ba6186",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:04:19.957Z",
+      "lastObservedAt": "2026-10-26T07:04:40.488Z",
+      "lastSimTick": 1231,
+      "outcome": "lost"
+    },
+    {
+      "attemptId": "79bf1034-5c17-4b5b-8d78-2e9472f64b2d",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:04:40.804Z",
+      "lastObservedAt": "2026-10-26T07:05:00.076Z",
+      "lastSimTick": 1146,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "f3028a6c-7e1c-4c0d-8fb8-bab3dbd132d8",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:05:00.538Z",
+      "lastObservedAt": "2026-10-26T07:05:34.752Z",
+      "lastSimTick": 2053,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "4e51eb82-caeb-41e5-9af1-191a3217013b",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:05:35.220Z",
+      "lastObservedAt": "2026-10-26T07:06:01.858Z",
+      "lastSimTick": 1595,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "04de354c-2cac-4c8c-b10d-2ad3474b4f73",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:06:02.187Z",
+      "lastObservedAt": "2026-10-26T07:06:27.624Z",
+      "lastSimTick": 1515,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "94560a3a-eb6c-4e80-bef2-bf49d1a1e8ec",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:06:27.972Z",
+      "lastObservedAt": "2026-10-26T07:06:51.424Z",
+      "lastSimTick": 1403,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "2cdd00c0-1124-4690-ab5b-5a646feef033",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:06:51.773Z",
+      "lastObservedAt": "2026-10-26T07:07:16.033Z",
+      "lastSimTick": 1452,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "6198bc3a-0c25-4559-b1d3-539d9fe46d71",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:07:16.372Z",
+      "lastObservedAt": "2026-10-26T07:07:30.676Z",
+      "lastSimTick": 855,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "6bd87288-2dbc-4606-801b-2e420cda7669",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:07:31.155Z",
+      "lastObservedAt": "2026-10-26T07:07:44.405Z",
+      "lastSimTick": 794,
+      "outcome": "lost"
+    },
+    {
+      "attemptId": "292a0646-46a8-4343-a4b2-bbc53a40b084",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:07:44.781Z",
+      "lastObservedAt": "2026-10-26T07:08:08.661Z",
+      "lastSimTick": 1431,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "00edbef7-e563-439a-a71f-6b1ae274e35e",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:08:09.138Z",
+      "lastObservedAt": "2026-10-26T07:08:17.944Z",
+      "lastSimTick": 533,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "a47bc51a-9d8a-48ab-873a-c6b93b136c5e",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:08:18.289Z",
+      "lastObservedAt": "2026-10-26T07:08:48.212Z",
+      "lastSimTick": 1793,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "6f26594f-4d78-434f-93c0-3eda0bbbb376",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:08:48.539Z",
+      "lastObservedAt": "2026-10-26T07:09:10.912Z",
+      "lastSimTick": 1339,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "216ecd00-6cda-43fe-a741-018c9112e2e7",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:09:11.406Z",
+      "lastObservedAt": "2026-10-26T07:09:23.424Z",
+      "lastSimTick": 725,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "93523d9a-f01b-44bd-8117-25ed786df062",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:09:23.807Z",
+      "lastObservedAt": "2026-10-26T07:09:44.132Z",
+      "lastSimTick": 1216,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "4d01b360-f39a-4f98-a03a-48a8f38f191c",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:09:44.503Z",
+      "lastObservedAt": "2026-10-26T07:09:54.395Z",
+      "lastSimTick": 591,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "78656cab-4462-4755-be8b-25e3dd9f1652",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:09:54.724Z",
+      "lastObservedAt": "2026-10-26T07:10:09.190Z",
+      "lastSimTick": 856,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "b5ae54b1-669f-47bf-a80e-b91d00d2f52f",
+      "recipeHash": "22efb62fcde777d20285cdabe8d2a17ecedede8f8a76aaf32dd325b4177875c1",
+      "preset": 1,
+      "firstObservedAt": "2026-10-26T07:10:09.619Z",
+      "lastObservedAt": "2026-10-26T07:10:18.708Z",
+      "lastSimTick": 545,
+      "outcome": null
+    },
+    {
+      "attemptId": "5d851a33-cd82-4e34-9821-adbf07bb24bd",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:10:19.204Z",
+      "lastObservedAt": "2026-10-26T07:10:41.099Z",
+      "lastSimTick": 1310,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "e4ace9e3-6c86-4b8d-b363-cf2b9d673f58",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:10:41.471Z",
+      "lastObservedAt": "2026-10-26T07:10:58.754Z",
+      "lastSimTick": 1025,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "3357b07b-871b-4431-8f80-3423d3dd090d",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:10:59.089Z",
+      "lastObservedAt": "2026-10-26T07:11:16.263Z",
+      "lastSimTick": 1028,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "73fa6a8e-b1bb-4953-8421-0c5b2fc9072a",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:11:16.604Z",
+      "lastObservedAt": "2026-10-26T07:11:39.238Z",
+      "lastSimTick": 1357,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "68e138bf-9908-4c1f-8adb-7edb92794eab",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:11:39.785Z",
+      "lastObservedAt": "2026-10-26T07:11:54.684Z",
+      "lastSimTick": 901,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "bd992896-f984-48b1-b08d-7b5acf3bc6ea",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:11:55.025Z",
+      "lastObservedAt": "2026-10-26T07:12:12.337Z",
+      "lastSimTick": 1035,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "41d19fc9-a606-4575-b774-9c81e8cb764e",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:12:12.850Z",
+      "lastObservedAt": "2026-10-26T07:12:28.287Z",
+      "lastSimTick": 931,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "d5149f71-0ba1-454c-bcd1-f1577c1f6047",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:12:28.633Z",
+      "lastObservedAt": "2026-10-26T07:12:42.452Z",
+      "lastSimTick": 824,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "83514226-ac33-413d-aada-cdb3319bdbdb",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:12:42.753Z",
+      "lastObservedAt": "2026-10-26T07:13:02.437Z",
+      "lastSimTick": 1184,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "be8763f1-f543-4f9c-8f37-d292e1b55650",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:13:02.774Z",
+      "lastObservedAt": "2026-10-26T07:13:17.339Z",
+      "lastSimTick": 872,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "fa1a49aa-ffcf-4bcb-86b6-dce37c7ecee8",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:13:17.718Z",
+      "lastObservedAt": "2026-10-26T07:13:38.072Z",
+      "lastSimTick": 1218,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "b64bdb9d-d60a-4f94-9eb0-00948e34ed8c",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:13:38.399Z",
+      "lastObservedAt": "2026-10-26T07:13:52.167Z",
+      "lastSimTick": 822,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "e5557fa4-611c-40cc-a503-66835ee75fc6",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:13:52.571Z",
+      "lastObservedAt": "2026-10-26T07:14:12.524Z",
+      "lastSimTick": 1195,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "644e2335-65c5-46e5-8676-989ccc8ba3fc",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:14:13.038Z",
+      "lastObservedAt": "2026-10-26T07:14:28.820Z",
+      "lastSimTick": 951,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "734931a2-627d-4813-806e-8a705ad5bf55",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:14:29.185Z",
+      "lastObservedAt": "2026-10-26T07:14:50.493Z",
+      "lastSimTick": 1275,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "a95c8dc5-ec66-4631-9008-b97944fef780",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:14:51.019Z",
+      "lastObservedAt": "2026-10-26T07:15:04.871Z",
+      "lastSimTick": 828,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "d10893b0-190f-4126-b87b-3a35987ad129",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:15:05.485Z",
+      "lastObservedAt": "2026-10-26T07:15:24.300Z",
+      "lastSimTick": 1128,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "e35ebaa4-6d5b-4878-82c6-411f03447a00",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:15:25.059Z",
+      "lastObservedAt": "2026-10-26T07:15:39.515Z",
+      "lastSimTick": 876,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "d7c3d71a-b4a8-4d47-b61b-118f5f814f71",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:15:40.035Z",
+      "lastObservedAt": "2026-10-26T07:15:55.126Z",
+      "lastSimTick": 897,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "627497fb-b4e1-452d-8e69-81f8248540f7",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:15:55.534Z",
+      "lastObservedAt": "2026-10-26T07:16:19.681Z",
+      "lastSimTick": 1445,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "d27e14ae-df41-473e-83af-7f24b9d44178",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:16:20.836Z",
+      "lastObservedAt": "2026-10-26T07:16:40.626Z",
+      "lastSimTick": 1202,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "72c962fc-1b08-41e6-9503-42d925296e4c",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:16:41.297Z",
+      "lastObservedAt": "2026-10-26T07:16:55.088Z",
+      "lastSimTick": 828,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "c3caf8f4-1ee6-46cb-9c0c-19890d6f296f",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:16:55.660Z",
+      "lastObservedAt": "2026-10-26T07:17:16.350Z",
+      "lastSimTick": 1247,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "c67c09f8-f7c0-4b42-979e-e90846a2998d",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:17:16.676Z",
+      "lastObservedAt": "2026-10-26T07:17:30.687Z",
+      "lastSimTick": 837,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "13a950cd-9107-4dfb-b23c-94449ecc391e",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:17:31.175Z",
+      "lastObservedAt": "2026-10-26T07:17:48.069Z",
+      "lastSimTick": 1010,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "d00f5db9-7db3-418e-9b5c-8f81ecec539f",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:17:48.510Z",
+      "lastObservedAt": "2026-10-26T07:18:05.628Z",
+      "lastSimTick": 1018,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "ede6dd87-db8c-4060-b73a-afd7437e2b94",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:18:06.260Z",
+      "lastObservedAt": "2026-10-26T07:18:18.424Z",
+      "lastSimTick": 654,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "06a540be-6a03-4798-a4b1-ec998255d2d8",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:18:18.771Z",
+      "lastObservedAt": "2026-10-26T07:18:38.730Z",
+      "lastSimTick": 1186,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "51dfc3bb-481f-4b8a-86b2-4ade6f7c83b1",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:18:39.208Z",
+      "lastObservedAt": "2026-10-26T07:18:54.606Z",
+      "lastSimTick": 913,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "d48b27fc-4e3c-49db-b03d-f84f9186225f",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:18:55.040Z",
+      "lastObservedAt": "2026-10-26T07:19:22.689Z",
+      "lastSimTick": 1649,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "82e75edc-7303-419d-9649-8757bb94be51",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:19:23.054Z",
+      "lastObservedAt": "2026-10-26T07:19:42.069Z",
+      "lastSimTick": 1131,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "9c3262af-2265-43d1-98ee-1a434c88e64f",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:19:42.722Z",
+      "lastObservedAt": "2026-10-26T07:20:02.533Z",
+      "lastSimTick": 1192,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "69a44814-a0e0-42da-8112-5d6584012325",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:20:03.065Z",
+      "lastObservedAt": "2026-10-26T07:20:17.692Z",
+      "lastSimTick": 879,
+      "outcome": "won"
+    },
+    {
+      "attemptId": "e668a4a5-d5d6-452e-a3e4-a87b5a2a9184",
+      "recipeHash": "0ce292a988b72611f81e679b1d8db7c1badf318555503f56778b1acff41f16e4",
+      "preset": 2,
+      "firstObservedAt": "2026-10-26T07:20:18.070Z",
+      "lastObservedAt": "2026-10-26T07:20:18.660Z",
+      "lastSimTick": 33,
+      "outcome": null
+    }
+  ],
+  "presentationReports": [
+    {
+      "index": 1,
+      "reason": "actual-outcome-won",
+      "attemptId": "5effd60c-d5a7-4a03-9d88-14a72f945c94",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:50:49.567Z",
+        "observationSpanMs": 179843.90000000596,
+        "activeFrameSamples": 919,
+        "pausedFrames": 2215,
+        "meanFrameMs": 33.348095756263284,
+        "p95FrameMs": 34,
+        "longestFrameMs": 48.29999999701977,
+        "peakVisibleTriangles": 46751,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 2,
+      "reason": "actual-outcome-lost",
+      "attemptId": "dd99937d-07ed-4669-85e8-15d5802ac1de",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:51:37.938Z",
+        "observationSpanMs": 48328.59999999404,
+        "activeFrameSamples": 1435,
+        "pausedFrames": 7,
+        "meanFrameMs": 33.34327526131989,
+        "p95FrameMs": 34,
+        "longestFrameMs": 49.29999999701977,
+        "peakVisibleTriangles": 40947,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 3,
+      "reason": "actual-outcome-won",
+      "attemptId": "d4d8c47f-ae22-4987-ab45-8a35416c7574",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:51:53.571Z",
+        "observationSpanMs": 15616.60000000894,
+        "activeFrameSamples": 455,
+        "pausedFrames": 6,
+        "meanFrameMs": 33.364175824182375,
+        "p95FrameMs": 34,
+        "longestFrameMs": 47.29999999701977,
+        "peakVisibleTriangles": 40951,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 4,
+      "reason": "actual-outcome-won",
+      "attemptId": "5bc0bde2-9f94-4049-816a-16858f7c40f2",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:52:16.272Z",
+        "observationSpanMs": 22690.79999999702,
+        "activeFrameSamples": 675,
+        "pausedFrames": 1,
+        "meanFrameMs": 33.35703703703704,
+        "p95FrameMs": 49,
+        "longestFrameMs": 51,
+        "peakVisibleTriangles": 41491,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 5,
+      "reason": "actual-outcome-won",
+      "attemptId": "c0e3df0d-a386-43d7-bf1e-87102cbc393a",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:52:37.969Z",
+        "observationSpanMs": 21681.20000000298,
+        "activeFrameSamples": 644,
+        "pausedFrames": 2,
+        "meanFrameMs": 33.33354037266618,
+        "p95FrameMs": 34,
+        "longestFrameMs": 34.79999999701977,
+        "peakVisibleTriangles": 41491,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 6,
+      "reason": "actual-outcome-won",
+      "attemptId": "9513428c-0574-4b47-b4b5-11712b8993c3",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:52:55.027Z",
+        "observationSpanMs": 17044.59999999404,
+        "activeFrameSamples": 499,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.35931863726858,
+        "p95FrameMs": 34,
+        "longestFrameMs": 46.19999998807907,
+        "peakVisibleTriangles": 46751,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 7,
+      "reason": "actual-outcome-won",
+      "attemptId": "7b4adc02-2eec-49f4-abfe-d0401021e8e0",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:53:15.229Z",
+        "observationSpanMs": 20233.40000000596,
+        "activeFrameSamples": 596,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.33204697987577,
+        "p95FrameMs": 34,
+        "longestFrameMs": 50.400000005960464,
+        "peakVisibleTriangles": 40951,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 8,
+      "reason": "actual-outcome-won",
+      "attemptId": "56a62d69-7c37-4adb-b67b-157ec56ca7d5",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:53:35.202Z",
+        "observationSpanMs": 19956.80000001192,
+        "activeFrameSamples": 588,
+        "pausedFrames": 2,
+        "meanFrameMs": 33.332312925180204,
+        "p95FrameMs": 34,
+        "longestFrameMs": 50.20000000298023,
+        "peakVisibleTriangles": 40947,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 9,
+      "reason": "actual-outcome-won",
+      "attemptId": "de1d4cdc-12bb-40cf-b2c6-2e6ed13234e0",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:53:49.367Z",
+        "observationSpanMs": 14152.70000000298,
+        "activeFrameSamples": 411,
+        "pausedFrames": 7,
+        "meanFrameMs": 33.371289537698395,
+        "p95FrameMs": 50,
+        "longestFrameMs": 51.099999994039536,
+        "peakVisibleTriangles": 45407,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 10,
+      "reason": "actual-outcome-won",
+      "attemptId": "2ed44333-d577-4041-afd2-406734011800",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:53:59.639Z",
+        "observationSpanMs": 10257.5,
+        "activeFrameSamples": 296,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.330743243213035,
+        "p95FrameMs": 50,
+        "longestFrameMs": 51,
+        "peakVisibleTriangles": 38807,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 11,
+      "reason": "actual-outcome-won",
+      "attemptId": "007ca5a3-a82e-469a-9aae-e0b6181cfc90",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:54:09.308Z",
+        "observationSpanMs": 9650,
+        "activeFrameSamples": 276,
+        "pausedFrames": 7,
+        "meanFrameMs": 33.335144927536234,
+        "p95FrameMs": 34,
+        "longestFrameMs": 35,
+        "peakVisibleTriangles": 38391,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 12,
+      "reason": "actual-outcome-won",
+      "attemptId": "407b13d5-3968-4518-8a1c-54308f037c92",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T06:54:28.635Z",
+        "observationSpanMs": 19312,
+        "activeFrameSamples": 567,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.361728395051216,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.70000000298023,
+        "peakVisibleTriangles": 41491,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 13,
+      "reason": "preset-segment-ended",
+      "attemptId": "c6678870-b813-4345-a753-00911dd4356f",
+      "preset": 0,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:00:18.836Z",
+        "observationSpanMs": 350174.10000000894,
+        "activeFrameSamples": 10495,
+        "pausedFrames": 2,
+        "meanFrameMs": 33.33414006669815,
+        "p95FrameMs": 34,
+        "longestFrameMs": 50.79999999701977,
+        "peakVisibleTriangles": 46475,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 14,
+      "reason": "actual-outcome-lost",
+      "attemptId": "84c8c7bf-8742-4724-9f3d-d1f8fb8394ba",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:00:42.611Z",
+        "observationSpanMs": 23697.69999998808,
+        "activeFrameSamples": 696,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.332040229897906,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.900000005960464,
+        "peakVisibleTriangles": 41221,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 15,
+      "reason": "actual-outcome-won",
+      "attemptId": "06a9ed5e-80e6-41bd-9598-4898e2673b7f",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:01:03.127Z",
+        "observationSpanMs": 20464.40000000596,
+        "activeFrameSamples": 603,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.343117744620166,
+        "p95FrameMs": 34,
+        "longestFrameMs": 39.20000000298023,
+        "peakVisibleTriangles": 37648,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 16,
+      "reason": "actual-outcome-won",
+      "attemptId": "4708e942-3f5e-428d-8381-e5c0601cb186",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:01:32.405Z",
+        "observationSpanMs": 29259.79999999702,
+        "activeFrameSamples": 868,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.333064516122164,
+        "p95FrameMs": 34,
+        "longestFrameMs": 49.8999999910593,
+        "peakVisibleTriangles": 36424,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 17,
+      "reason": "actual-outcome-won",
+      "attemptId": "53d59bcf-ad9b-40f5-805d-4a45230362f0",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:01:44.031Z",
+        "observationSpanMs": 11610.10000000894,
+        "activeFrameSamples": 335,
+        "pausedFrames": 6,
+        "meanFrameMs": 33.332835820895525,
+        "p95FrameMs": 34,
+        "longestFrameMs": 49.29999999701977,
+        "peakVisibleTriangles": 37551,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 18,
+      "reason": "actual-outcome-won",
+      "attemptId": "8c485ac9-2f20-40c6-8ac4-dbea6bab81da",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:02:17.108Z",
+        "observationSpanMs": 33057.10000000894,
+        "activeFrameSamples": 980,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.33265306122449,
+        "p95FrameMs": 34,
+        "longestFrameMs": 50.29999999701977,
+        "peakVisibleTriangles": 38809,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 19,
+      "reason": "actual-outcome-won",
+      "attemptId": "1329bc79-49c3-4b4b-b9cb-8e00501b239c",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:02:46.507Z",
+        "observationSpanMs": 29385,
+        "activeFrameSamples": 872,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.33348623852869,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.900000005960464,
+        "peakVisibleTriangles": 41205,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 20,
+      "reason": "actual-outcome-won",
+      "attemptId": "b7ad7e74-c770-48cb-a8da-15983a8bb3bd",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:03:03.200Z",
+        "observationSpanMs": 16668.70000000298,
+        "activeFrameSamples": 487,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.36365503081918,
+        "p95FrameMs": 35,
+        "longestFrameMs": 50,
+        "peakVisibleTriangles": 37551,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 21,
+      "reason": "actual-outcome-won",
+      "attemptId": "cfc822a1-30d2-44fa-97c1-627808da68a2",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:03:28.259Z",
+        "observationSpanMs": 25042.29999999702,
+        "activeFrameSamples": 740,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.332162162158134,
+        "p95FrameMs": 50,
+        "longestFrameMs": 51.099999994039536,
+        "peakVisibleTriangles": 36424,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 22,
+      "reason": "actual-outcome-lost",
+      "attemptId": "b77c375d-c082-41d2-a323-e3f76efe636a",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:03:53.660Z",
+        "observationSpanMs": 25387.10000000894,
+        "activeFrameSamples": 752,
+        "pausedFrames": 2,
+        "meanFrameMs": 33.33417553191093,
+        "p95FrameMs": 35,
+        "longestFrameMs": 50.5,
+        "peakVisibleTriangles": 36732,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 23,
+      "reason": "actual-outcome-won",
+      "attemptId": "8087a742-ab18-44bc-bee4-b4b7c3d27fd2",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:04:19.602Z",
+        "observationSpanMs": 25928.70000000298,
+        "activeFrameSamples": 768,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.33281249999224,
+        "p95FrameMs": 34,
+        "longestFrameMs": 51,
+        "peakVisibleTriangles": 41301,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 24,
+      "reason": "actual-outcome-lost",
+      "attemptId": "b637106a-98f9-46c7-9be5-a53643ba6186",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:04:40.490Z",
+        "observationSpanMs": 20873.79999999702,
+        "activeFrameSamples": 616,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.332629870115355,
+        "p95FrameMs": 49,
+        "longestFrameMs": 50.70000000298023,
+        "peakVisibleTriangles": 36732,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 25,
+      "reason": "actual-outcome-won",
+      "attemptId": "79bf1034-5c17-4b5b-8d78-2e9472f64b2d",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:05:00.079Z",
+        "observationSpanMs": 19569,
+        "activeFrameSamples": 575,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.36,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.8999999910593,
+        "peakVisibleTriangles": 36424,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 26,
+      "reason": "actual-outcome-won",
+      "attemptId": "f3028a6c-7e1c-4c0d-8fb8-bab3dbd132d8",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:05:34.754Z",
+        "observationSpanMs": 34654.79999999702,
+        "activeFrameSamples": 1028,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.33287937742031,
+        "p95FrameMs": 34,
+        "longestFrameMs": 50.400000005960464,
+        "peakVisibleTriangles": 36424,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 27,
+      "reason": "actual-outcome-won",
+      "attemptId": "4e51eb82-caeb-41e5-9af1-191a3217013b",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:06:01.861Z",
+        "observationSpanMs": 27096.90000000596,
+        "activeFrameSamples": 800,
+        "pausedFrames": 6,
+        "meanFrameMs": 33.33299999998882,
+        "p95FrameMs": 34,
+        "longestFrameMs": 50.3999999910593,
+        "peakVisibleTriangles": 41301,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 28,
+      "reason": "actual-outcome-won",
+      "attemptId": "04de354c-2cac-4c8c-b10d-2ad3474b4f73",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:06:27.627Z",
+        "observationSpanMs": 25754,
+        "activeFrameSamples": 759,
+        "pausedFrames": 6,
+        "meanFrameMs": 33.35401844532672,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.8999999910593,
+        "peakVisibleTriangles": 36732,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 29,
+      "reason": "actual-outcome-won",
+      "attemptId": "94560a3a-eb6c-4e80-bef2-bf49d1a1e8ec",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:06:51.428Z",
+        "observationSpanMs": 23789.5,
+        "activeFrameSamples": 704,
+        "pausedFrames": 2,
+        "meanFrameMs": 33.334090909095146,
+        "p95FrameMs": 34,
+        "longestFrameMs": 50.1000000089407,
+        "peakVisibleTriangles": 36183.33333333333,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 30,
+      "reason": "actual-outcome-won",
+      "attemptId": "2cdd00c0-1124-4690-ab5b-5a646feef033",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:07:16.038Z",
+        "observationSpanMs": 24575.40000000596,
+        "activeFrameSamples": 728,
+        "pausedFrames": 2,
+        "meanFrameMs": 33.33543956044365,
+        "p95FrameMs": 47,
+        "longestFrameMs": 51.900000005960464,
+        "peakVisibleTriangles": 35248,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 31,
+      "reason": "actual-outcome-won",
+      "attemptId": "6198bc3a-0c25-4559-b1d3-539d9fe46d71",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:07:30.679Z",
+        "observationSpanMs": 14627.09999999404,
+        "activeFrameSamples": 428,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.33224299066117,
+        "p95FrameMs": 49,
+        "longestFrameMs": 50.5,
+        "peakVisibleTriangles": 36183.33333333333,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 32,
+      "reason": "actual-outcome-lost",
+      "attemptId": "6bd87288-2dbc-4606-801b-2e420cda7669",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:07:44.407Z",
+        "observationSpanMs": 13705.29999999702,
+        "activeFrameSamples": 400,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.33300000000745,
+        "p95FrameMs": 35,
+        "longestFrameMs": 50.70000000298023,
+        "peakVisibleTriangles": 36183.33333333333,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 33,
+      "reason": "actual-outcome-won",
+      "attemptId": "292a0646-46a8-4343-a4b2-bbc53a40b084",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:08:08.664Z",
+        "observationSpanMs": 24245.89999999106,
+        "activeFrameSamples": 716,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.33254189943302,
+        "p95FrameMs": 50,
+        "longestFrameMs": 51.400000005960464,
+        "peakVisibleTriangles": 36732,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 34,
+      "reason": "actual-outcome-won",
+      "attemptId": "00edbef7-e563-439a-a71f-6b1ae274e35e",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:08:17.946Z",
+        "observationSpanMs": 9267.90000000596,
+        "activeFrameSamples": 267,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.32996254684996,
+        "p95FrameMs": 50,
+        "longestFrameMs": 51.900000005960464,
+        "peakVisibleTriangles": 37551,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 35,
+      "reason": "actual-outcome-won",
+      "attemptId": "a47bc51a-9d8a-48ab-873a-c6b93b136c5e",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:08:48.215Z",
+        "observationSpanMs": 30244.89999999106,
+        "activeFrameSamples": 896,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.33270089285049,
+        "p95FrameMs": 50,
+        "longestFrameMs": 51.099999994039536,
+        "peakVisibleTriangles": 36183.33333333333,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 36,
+      "reason": "actual-outcome-won",
+      "attemptId": "6f26594f-4d78-434f-93c0-3eda0bbbb376",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:09:10.914Z",
+        "observationSpanMs": 22689.60000000894,
+        "activeFrameSamples": 672,
+        "pausedFrames": 2,
+        "meanFrameMs": 33.33437499998226,
+        "p95FrameMs": 36,
+        "longestFrameMs": 50.70000000298023,
+        "peakVisibleTriangles": 37551,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 37,
+      "reason": "actual-outcome-won",
+      "attemptId": "216ecd00-6cda-43fe-a741-018c9112e2e7",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:09:23.426Z",
+        "observationSpanMs": 12501.699999988079,
+        "activeFrameSamples": 364,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.336263736239175,
+        "p95FrameMs": 37,
+        "longestFrameMs": 51.29999999701977,
+        "peakVisibleTriangles": 37648,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 38,
+      "reason": "actual-outcome-won",
+      "attemptId": "93523d9a-f01b-44bd-8117-25ed786df062",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:09:44.134Z",
+        "observationSpanMs": 20680.70000000298,
+        "activeFrameSamples": 608,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.33240131580418,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.8999999910593,
+        "peakVisibleTriangles": 35248,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 39,
+      "reason": "actual-outcome-won",
+      "attemptId": "4d01b360-f39a-4f98-a03a-48a8f38f191c",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:09:54.399Z",
+        "observationSpanMs": 10252.90000000596,
+        "activeFrameSamples": 295,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.385084745793016,
+        "p95FrameMs": 48,
+        "longestFrameMs": 51.5,
+        "peakVisibleTriangles": 35955.33333333333,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 40,
+      "reason": "actual-outcome-won",
+      "attemptId": "78656cab-4462-4755-be8b-25e3dd9f1652",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:10:09.195Z",
+        "observationSpanMs": 14783.29999999702,
+        "activeFrameSamples": 431,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.3693735498909,
+        "p95FrameMs": 50,
+        "longestFrameMs": 51.79999999701977,
+        "peakVisibleTriangles": 37648,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 41,
+      "reason": "preset-segment-ended",
+      "attemptId": "b5ae54b1-669f-47bf-a80e-b91d00d2f52f",
+      "preset": 1,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:10:18.857Z",
+        "observationSpanMs": 9643.89999999106,
+        "activeFrameSamples": 278,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.33309352515842,
+        "p95FrameMs": 36,
+        "longestFrameMs": 50.099999994039536,
+        "peakVisibleTriangles": 41301,
+        "peakObservedDrawCalls": 71,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "charge-snappy",
+          "echo-long"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 42,
+      "reason": "actual-outcome-won",
+      "attemptId": "5d851a33-cd82-4e34-9821-adbf07bb24bd",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:10:41.103Z",
+        "observationSpanMs": 22232.40000000596,
+        "activeFrameSamples": 656,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.33246951220875,
+        "p95FrameMs": 48,
+        "longestFrameMs": 50.70000000298023,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 43,
+      "reason": "actual-outcome-won",
+      "attemptId": "e4ace9e3-6c86-4b8d-b363-cf2b9d673f58",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:10:58.756Z",
+        "observationSpanMs": 17641.70000000298,
+        "activeFrameSamples": 516,
+        "pausedFrames": 6,
+        "meanFrameMs": 33.333333333333336,
+        "p95FrameMs": 35,
+        "longestFrameMs": 50.5,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 44,
+      "reason": "actual-outcome-won",
+      "attemptId": "3357b07b-871b-4431-8f80-3423d3dd090d",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:11:16.267Z",
+        "observationSpanMs": 17497.5,
+        "activeFrameSamples": 516,
+        "pausedFrames": 2,
+        "meanFrameMs": 33.33662790698252,
+        "p95FrameMs": 36,
+        "longestFrameMs": 51.80000001192093,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 45,
+      "reason": "actual-outcome-won",
+      "attemptId": "73fa6a8e-b1bb-4953-8421-0c5b2fc9072a",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:11:39.244Z",
+        "observationSpanMs": 22960.29999999702,
+        "activeFrameSamples": 680,
+        "pausedFrames": 2,
+        "meanFrameMs": 33.332499999991235,
+        "p95FrameMs": 49,
+        "longestFrameMs": 51.6000000089407,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 46,
+      "reason": "actual-outcome-won",
+      "attemptId": "68e138bf-9908-4c1f-8adb-7edb92794eab",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:11:54.687Z",
+        "observationSpanMs": 15420.10000000894,
+        "activeFrameSamples": 452,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.334955752192606,
+        "p95FrameMs": 36,
+        "longestFrameMs": 36.5,
+        "peakVisibleTriangles": 40996.33333333333,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 47,
+      "reason": "actual-outcome-won",
+      "attemptId": "bd992896-f984-48b1-b08d-7b5acf3bc6ea",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:12:12.341Z",
+        "observationSpanMs": 17642.60000000894,
+        "activeFrameSamples": 520,
+        "pausedFrames": 2,
+        "meanFrameMs": 33.333653846153844,
+        "p95FrameMs": 49,
+        "longestFrameMs": 50.70000000298023,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 48,
+      "reason": "actual-outcome-won",
+      "attemptId": "41d19fc9-a606-4575-b774-9c81e8cb764e",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:12:28.290Z",
+        "observationSpanMs": 15924.10000000894,
+        "activeFrameSamples": 467,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.33126338330403,
+        "p95FrameMs": 50,
+        "longestFrameMs": 52,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 49,
+      "reason": "actual-outcome-won",
+      "attemptId": "d5149f71-0ba1-454c-bcd1-f1577c1f6047",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:12:42.454Z",
+        "observationSpanMs": 14149,
+        "activeFrameSamples": 411,
+        "pausedFrames": 6,
+        "meanFrameMs": 33.375182481759076,
+        "p95FrameMs": 49,
+        "longestFrameMs": 50.79999999701977,
+        "peakVisibleTriangles": 41793,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 50,
+      "reason": "actual-outcome-won",
+      "attemptId": "83514226-ac33-413d-aada-cdb3319bdbdb",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:13:02.439Z",
+        "observationSpanMs": 19966.79999999702,
+        "activeFrameSamples": 591,
+        "pausedFrames": 2,
+        "meanFrameMs": 33.36091370557871,
+        "p95FrameMs": 47,
+        "longestFrameMs": 51.5,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 51,
+      "reason": "actual-outcome-won",
+      "attemptId": "be8763f1-f543-4f9c-8f37-d292e1b55650",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:13:17.341Z",
+        "observationSpanMs": 14880.29999999702,
+        "activeFrameSamples": 436,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.33417431189926,
+        "p95FrameMs": 49,
+        "longestFrameMs": 51.20000000298023,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 52,
+      "reason": "actual-outcome-won",
+      "attemptId": "fa1a49aa-ffcf-4bcb-86b6-dce37c7ecee8",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:13:38.075Z",
+        "observationSpanMs": 20721.09999999404,
+        "activeFrameSamples": 612,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.333169934625914,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.599999994039536,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 53,
+      "reason": "actual-outcome-won",
+      "attemptId": "b64bdb9d-d60a-4f94-9eb0-00948e34ed8c",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:13:52.169Z",
+        "observationSpanMs": 14078.40000000596,
+        "activeFrameSamples": 411,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.36812652071027,
+        "p95FrameMs": 36,
+        "longestFrameMs": 51.20000000298023,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 54,
+      "reason": "actual-outcome-won",
+      "attemptId": "e5557fa4-611c-40cc-a503-66835ee75fc6",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:14:12.527Z",
+        "observationSpanMs": 20345.5,
+        "activeFrameSamples": 599,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.3559265442205,
+        "p95FrameMs": 36,
+        "longestFrameMs": 47.8999999910593,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 55,
+      "reason": "actual-outcome-won",
+      "attemptId": "644e2335-65c5-46e5-8676-989ccc8ba3fc",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:14:28.823Z",
+        "observationSpanMs": 16266.59999999404,
+        "activeFrameSamples": 476,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.332352941182734,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.70000000298023,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 56,
+      "reason": "actual-outcome-won",
+      "attemptId": "734931a2-627d-4813-806e-8a705ad5bf55",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:14:50.501Z",
+        "observationSpanMs": 21662.79999999702,
+        "activeFrameSamples": 639,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.35821596245064,
+        "p95FrameMs": 48,
+        "longestFrameMs": 51.80000001192093,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 57,
+      "reason": "actual-outcome-won",
+      "attemptId": "a95c8dc5-ec66-4631-9008-b97944fef780",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:15:04.883Z",
+        "observationSpanMs": 14312.09999999404,
+        "activeFrameSamples": 415,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.35373493978776,
+        "p95FrameMs": 34,
+        "longestFrameMs": 49.900000005960464,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 58,
+      "reason": "actual-outcome-won",
+      "attemptId": "d10893b0-190f-4126-b87b-3a35987ad129",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:15:24.321Z",
+        "observationSpanMs": 19394.10000000894,
+        "activeFrameSamples": 563,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.342095914731864,
+        "p95FrameMs": 34,
+        "longestFrameMs": 51.5,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 59,
+      "reason": "actual-outcome-won",
+      "attemptId": "e35ebaa4-6d5b-4878-82c6-411f03447a00",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:15:39.521Z",
+        "observationSpanMs": 15138.59999999404,
+        "activeFrameSamples": 439,
+        "pausedFrames": 1,
+        "meanFrameMs": 33.366059225519315,
+        "p95FrameMs": 34,
+        "longestFrameMs": 61,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 60,
+      "reason": "actual-outcome-won",
+      "attemptId": "d7c3d71a-b4a8-4d47-b61b-118f5f814f71",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:15:55.130Z",
+        "observationSpanMs": 15545.5,
+        "activeFrameSamples": 452,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.33230088496234,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.900000005960464,
+        "peakVisibleTriangles": 40996.33333333333,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 61,
+      "reason": "actual-outcome-won",
+      "attemptId": "627497fb-b4e1-452d-8e69-81f8248540f7",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:16:19.708Z",
+        "observationSpanMs": 24564.70000000298,
+        "activeFrameSamples": 723,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.35491009681056,
+        "p95FrameMs": 49,
+        "longestFrameMs": 52.29999999701977,
+        "peakVisibleTriangles": 41349,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 62,
+      "reason": "actual-outcome-won",
+      "attemptId": "d27e14ae-df41-473e-83af-7f24b9d44178",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:16:40.633Z",
+        "observationSpanMs": 20835.59999999404,
+        "activeFrameSamples": 602,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.406810631214384,
+        "p95FrameMs": 34,
+        "longestFrameMs": 55.5,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 63,
+      "reason": "actual-outcome-won",
+      "attemptId": "72c962fc-1b08-41e6-9503-42d925296e4c",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:16:55.090Z",
+        "observationSpanMs": 14400.20000000298,
+        "activeFrameSamples": 415,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.34722891568419,
+        "p95FrameMs": 34,
+        "longestFrameMs": 39.79999999701977,
+        "peakVisibleTriangles": 41365,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 64,
+      "reason": "actual-outcome-won",
+      "attemptId": "c3caf8f4-1ee6-46cb-9c0c-19890d6f296f",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:17:16.352Z",
+        "observationSpanMs": 21239.20000000298,
+        "activeFrameSamples": 624,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.332371794857465,
+        "p95FrameMs": 49,
+        "longestFrameMs": 50.6000000089407,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 65,
+      "reason": "actual-outcome-won",
+      "attemptId": "c67c09f8-f7c0-4b42-979e-e90846a2998d",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:17:30.689Z",
+        "observationSpanMs": 14323.5,
+        "activeFrameSamples": 420,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.33238095236676,
+        "p95FrameMs": 34,
+        "longestFrameMs": 50.400000005960464,
+        "peakVisibleTriangles": 40996.33333333333,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 66,
+      "reason": "actual-outcome-won",
+      "attemptId": "13a950cd-9107-4dfb-b23c-94449ecc391e",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:17:48.073Z",
+        "observationSpanMs": 17372.40000000596,
+        "activeFrameSamples": 508,
+        "pausedFrames": 6,
+        "meanFrameMs": 33.332283464561066,
+        "p95FrameMs": 34,
+        "longestFrameMs": 50.900000005960464,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 67,
+      "reason": "actual-outcome-won",
+      "attemptId": "d00f5db9-7db3-418e-9b5c-8f81ecec539f",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:18:05.637Z",
+        "observationSpanMs": 17551.20000000298,
+        "activeFrameSamples": 512,
+        "pausedFrames": 4,
+        "meanFrameMs": 33.33437499997672,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.900000005960464,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 68,
+      "reason": "actual-outcome-won",
+      "attemptId": "ede6dd87-db8c-4060-b73a-afd7437e2b94",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:18:18.426Z",
+        "observationSpanMs": 12736.70000000298,
+        "activeFrameSamples": 324,
+        "pausedFrames": 27,
+        "meanFrameMs": 33.45771604941951,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.70000000298023,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 69,
+      "reason": "actual-outcome-won",
+      "attemptId": "06a540be-6a03-4798-a4b1-ec998255d2d8",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:18:38.733Z",
+        "observationSpanMs": 20293,
+        "activeFrameSamples": 595,
+        "pausedFrames": 6,
+        "meanFrameMs": 33.35680672268407,
+        "p95FrameMs": 48,
+        "longestFrameMs": 50.900000005960464,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 70,
+      "reason": "actual-outcome-won",
+      "attemptId": "51dfc3bb-481f-4b8a-86b2-4ade6f7c83b1",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:18:54.608Z",
+        "observationSpanMs": 15850.59999999404,
+        "activeFrameSamples": 459,
+        "pausedFrames": 6,
+        "meanFrameMs": 33.33115468409586,
+        "p95FrameMs": 50,
+        "longestFrameMs": 50.80000001192093,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 71,
+      "reason": "actual-outcome-won",
+      "attemptId": "d48b27fc-4e3c-49db-b03d-f84f9186225f",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:19:22.692Z",
+        "observationSpanMs": 28069.89999999106,
+        "activeFrameSamples": 828,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.332729468599034,
+        "p95FrameMs": 49,
+        "longestFrameMs": 50.900000005960464,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 72,
+      "reason": "actual-outcome-won",
+      "attemptId": "82e75edc-7303-419d-9649-8757bb94be51",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:19:42.081Z",
+        "observationSpanMs": 19363.90000000596,
+        "activeFrameSamples": 568,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.33239436621817,
+        "p95FrameMs": 35,
+        "longestFrameMs": 50.79999999701977,
+        "peakVisibleTriangles": 41793,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 73,
+      "reason": "actual-outcome-won",
+      "attemptId": "9c3262af-2265-43d1-98ee-1a434c88e64f",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:20:02.549Z",
+        "observationSpanMs": 20424.5,
+        "activeFrameSamples": 596,
+        "pausedFrames": 7,
+        "meanFrameMs": 33.33355704697487,
+        "p95FrameMs": 34,
+        "longestFrameMs": 50.70000000298023,
+        "peakVisibleTriangles": 40996.333333333336,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 74,
+      "reason": "actual-outcome-won",
+      "attemptId": "69a44814-a0e0-42da-8112-5d6584012325",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:20:17.696Z",
+        "observationSpanMs": 15107.79999999702,
+        "activeFrameSamples": 439,
+        "pausedFrames": 5,
+        "meanFrameMs": 33.36879271071973,
+        "p95FrameMs": 50,
+        "longestFrameMs": 51.1000000089407,
+        "peakVisibleTriangles": 39172,
+        "peakObservedDrawCalls": 68,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    },
+    {
+      "index": 75,
+      "reason": "session-ended-paused",
+      "attemptId": "e668a4a5-d5d6-452e-a3e4-a87b5a2a9184",
+      "preset": 2,
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-26T07:20:18.786Z",
+        "observationSpanMs": 1053.4000000059605,
+        "activeFrameSamples": 22,
+        "pausedFrames": 3,
+        "meanFrameMs": 33.29090909118002,
+        "p95FrameMs": 34,
+        "longestFrameMs": 34.20000000298023,
+        "peakVisibleTriangles": 33656,
+        "peakObservedDrawCalls": 59,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1170,
+          "height": 648
+        },
+        "profiles": [
+          "steam-narrow",
+          "echo-short"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 30,
+        "quality": "high"
+      },
+      "error": null
+    }
+  ],
+  "limits": [
+    "AI-led gameplay; not human broadcaster or viewer acceptance",
+    "Local M1/OBS evidence; not genuine Twitch integration",
+    "Output file frame rate is separate from game presentation cadence",
+    "Raw footage and browser profile remain ignored and local; no recording uploaded",
+    "Unpaused presentation telemetry includes AI navigation stalls and idle final-strike waits; not continuous peak offensive load",
+    "Owner silence request arrived after full duration. SIGTERM paused/preserved the window; OBS finalized before context closure",
+    "Encoded audio silence does not establish muted speakers. Earlier speaker audio was audible; corrected future policy is separate"
+  ],
+  "reviewedFrames": [
+    "evidence/browser/obs-1080p-30fps-charge-steam.png",
+    "evidence/browser/obs-1080p-30fps-charge-echo.png",
+    "evidence/browser/obs-1080p-30fps-steam-echo.png"
+  ],
+  "presentationProfileAccepted": {
+    "kind": "local-M1-technical-profile",
+    "output": "1920x1080 at30fps",
+    "gameQuality": "high",
+    "gamePresentationFps": 30,
+    "simulationHz": 60,
+    "measuredMeanFps": 29.99277962079868,
+    "limits": "Recommended measured fallback for this M1. Occasional drops remain; worst per-attemptp95=50ms, longest61ms. No human readability/comprehension acceptance."
+  }
+}

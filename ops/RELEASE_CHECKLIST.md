@@ -27,16 +27,16 @@ Local release candidate is prepared. This checklist records actual provider/host
 
 ## Actual M1 OBS session
 
-OBS33.0.0 is installed in.runtime/OBS.app; official SHA256/signature and approved Screen Recording are verified. Microphone device is Disabled; capture audio is muted. One actual30minute1080p run completed with88wins/no browser errors, but recorded-frame review found instrumentation download-panel obstruction/scrollcrop; OBS also recorded1.9%render lag/0.3%encoder lag. It is diagnostic evidence, not clean60fps/capture acceptance (evidence/obs-1080p-session.json and ops/PERFORMANCE_REPORT.md). The repaired driver reads telemetry without downloads and guards full-stage bounds. The clean post-fix results are recorded below. Earlier short clips remain separate. No camera/microphone capture occurred.
+Completed actual30minute720p60 and1080p30captures; see ops/PERFORMANCE_REPORT.md and the separately versioned receipts. Recommended measured M1 profile: Standard quality/30fps presentation, OBS1080p30; fixed60Hzsimulation unchanged.1080p mean29.993fps,34render-lag frames/3encoder-lag frames;67wins/5defeats/3unfinished.720p averaged56.50fps and is not accepted as steady60fps. Actual encoded frames at5/15/25minutes pass sampled framing; human comprehension is still unverified.
 
-Post-fix720p run completed30minutes on57f86bd:73wins/3defeats/3unfinished,0browser errors,0downloads and0cropped samples. Actual encoded5/15/25minute frames show the entire public stage; full audio audit is silence. OBS0.6%render lag,0.0463%encoder lag; game presentation17.700ms weighted mean(~56.50fps), so steady60fps remains unaccepted. The first clean1080p attempt was stopped for final-strike aim assistance; the corrected build is verified and the1080p30fps fallback capture is next. `evidence/obs-720p-session.json` records the finished720p result.
+The owner reported audible game speakers despite the muted recording. Test windows/OBS are closed. Future automated Chrome launches are muted from startup and the headed driver verifies game mute before play; actual preflight in evidence/silent-test-policy.json. Public preview is muted and at a fresh curtain.
 
-- [x] Record actual macOS/M1/browser/OBS versions, source and encoder settings.
-- [x] Capture only the public play window; exclude backstage and unrelated desktop content. Actual720p frames and391canvas-bounds samples pass; no camera/microphone content.
-- [x] Complete the720p30minute duration and inspect finalized media/frames/audio/counters; retain performance limits above.
-- [ ] Run30minutes at1080p and30minutes at720p, with active mechanics and real input. Record crashes, missed tells, dropped frames and exact simulation/presentation timing.
-- [ ] Evaluate60fps target. If necessary document a30fps presentation profile with unchanged60Hzsimulation; do not silently change game timing.
-- [ ] Retain measured geometry/drawcalls/art payload and a small stream-preview readability capture.
+- [x] Record actual device/browser/OBS/source/encoder settings.
+- [x] Capture only the public game window; exclude backstage/unrelated desktop/camera/microphone content.
+- [x] Complete30minutes at720p and30minutes at1080p; retain exact source/media/timing/outcomes/errors.
+- [x] Evaluate60fps target and document measured30fps fallback with unchanged60Hzsimulation.
+- [x] Retain measured geometry/drawcalls/art payload and actual encoded readability frames.
+- [x] Stop/finalize capture before releasing its window; no test/encoder job remains.
 
 ## Genuine audience sessions
 
