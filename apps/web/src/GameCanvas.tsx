@@ -45,11 +45,13 @@ export function GameCanvas(props: Props) {
     const visibility=()=>{if(document.hidden)blur();};
     const unlock=()=>{void audio?.unlock();};
     const resize=()=>stage?.resize();
-    const exportPerformance=()=>telemetry.download({resolution:canvas.current?{width:canvas.current.width,height:canvas.current.height}:null,profiles:props.recipe.modules.map(m=>m.profileId),mechanicLibraryVersion:props.recipe.mechanicLibraryVersion,artKitVersion:props.recipe.artKitVersion,presentationFps:latest.current.preferences.presentationFps,quality:latest.current.preferences.quality});
+    const performanceMetadata=()=>({resolution:canvas.current?{width:canvas.current.width,height:canvas.current.height}:null,profiles:props.recipe.modules.map(m=>m.profileId),mechanicLibraryVersion:props.recipe.mechanicLibraryVersion,artKitVersion:props.recipe.artKitVersion,presentationFps:latest.current.preferences.presentationFps,quality:latest.current.preferences.quality});
+    const exportPerformance=()=>telemetry.download(performanceMetadata());
+    const reportPerformance=()=>window.dispatchEvent(new CustomEvent('aragoz:performance-report',{detail:telemetry.report(performanceMetadata())}));
     let observer:ResizeObserver|null=null;
     const release=()=>{
       if(released)return;released=true;
-      observer?.disconnect();channel?.close();window.removeEventListener('keydown',keydown);window.removeEventListener('keyup',keyup);window.removeEventListener('pointerup',up);window.removeEventListener('blur',blur);window.removeEventListener('aragoz:request-pause',blur);window.removeEventListener('aragoz:export-performance',exportPerformance);window.removeEventListener('pointerdown',unlock);window.removeEventListener('keydown',unlock);document.removeEventListener('visibilitychange',visibility);element?.removeEventListener('pointerdown',down);element?.removeEventListener('pointermove',pointer);element?.removeEventListener('blur',blur);audio?.dispose();stage?.dispose();
+      observer?.disconnect();channel?.close();window.removeEventListener('keydown',keydown);window.removeEventListener('keyup',keyup);window.removeEventListener('pointerup',up);window.removeEventListener('blur',blur);window.removeEventListener('aragoz:request-pause',blur);window.removeEventListener('aragoz:export-performance',exportPerformance);window.removeEventListener('aragoz:request-performance',reportPerformance);window.removeEventListener('pointerdown',unlock);window.removeEventListener('keydown',unlock);document.removeEventListener('visibilitychange',visibility);element?.removeEventListener('pointerdown',down);element?.removeEventListener('pointermove',pointer);element?.removeEventListener('blur',blur);audio?.dispose();stage?.dispose();
       if(stageRef.current===stage)stageRef.current=null;if(audioRef.current===audio)audioRef.current=null;
     };
     const fail=(message:string)=>{
@@ -66,7 +68,7 @@ export function GameCanvas(props: Props) {
         if(props.previewChannel&&typeof BroadcastChannel!=='undefined'){
           channel=new BroadcastChannel(props.previewChannel);channel.onmessage=e=>{if(e.data?.type==='request-preview')previewRequested=true;};
         }
-        window.addEventListener('keydown',keydown);window.addEventListener('keyup',keyup);window.addEventListener('pointerup',up);window.addEventListener('blur',blur);window.addEventListener('aragoz:request-pause',blur);window.addEventListener('aragoz:export-performance',exportPerformance);document.addEventListener('visibilitychange',visibility);
+        window.addEventListener('keydown',keydown);window.addEventListener('keyup',keyup);window.addEventListener('pointerup',up);window.addEventListener('blur',blur);window.addEventListener('aragoz:request-pause',blur);window.addEventListener('aragoz:export-performance',exportPerformance);window.addEventListener('aragoz:request-performance',reportPerformance);document.addEventListener('visibilitychange',visibility);
         element.addEventListener('pointerdown',down);element.addEventListener('pointermove',pointer);element.addEventListener('blur',blur);window.addEventListener('pointerdown',unlock,{once:true});window.addEventListener('keydown',unlock,{once:true});
         observer=new ResizeObserver(resize);observer.observe(element);await stage.loadApprovedAssets();if(cancelled||failed)return;
         presentationReady=!props.assemble;simulation.setPaused(latest.current.paused||!presentationReady);wasPaused=latest.current.paused||!presentationReady;previousSnapshot=simulation.snapshot();last=performance.now();assemblyStarted=last;

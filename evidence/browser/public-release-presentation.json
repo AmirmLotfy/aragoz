@@ -1,0 +1,36 @@
+{
+  "kind": "actual-public-HTTPS-keyboard-rehearsal",
+  "revision": "eedfd1e97d37bc18e3c6b67dbcb90b15dfcfd420",
+  "url": "https://rid-structures-pursuant-owners.trycloudflare.com/rehearse",
+  "before": {
+    "hero": {
+      "x": 0,
+      "z": 2.8
+    },
+    "tick": 312
+  },
+  "after": {
+    "hero": {
+      "x": 1.680000000000001,
+      "z": 2.8
+    },
+    "paused": "false",
+    "tick": 352
+  },
+  "metadata": {
+    "buffer": {
+      "height": 870,
+      "width": 583
+    },
+    "css": {
+      "height": 580,
+      "width": 388.5625
+    },
+    "geometry": "5 approved assets loaded",
+    "ready": "true",
+    "scripts": [
+      "index-DTO2P5kB.js"
+    ]
+  },
+  "scope": "AI-led public rehearsal movement/start/pause and current build identity; not Twitch, OBS duration, or human acceptance."
+}

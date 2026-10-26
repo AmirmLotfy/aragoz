@@ -5,7 +5,7 @@ Local release candidate is prepared. This checklist records actual provider/host
 ## Current deliverable
 
 - [x] Pinned Node24.19.0, lockfile and successful clean npmci.
-- [x] Current typecheck,116unit/server tests,release-asset build and13browser flows (1.4minutes). Includes actual assembly frames at tick0 and correct readiness.62asset fixtures passed in the earlier Linux validation.
+- [x] Current typecheck,116unit/server tests,release-asset build and14browser cases covered across13passes plus one corrected live-case rerun. Includes no-download telemetry, actual assembly at tick0 and replacement-attempt readiness.62asset fixtures passed in the earlier Linux validation.
 - [x] Seven original Blender/GLB assets, rights and actual Babylon inspection.
 - [x] Real keyboard counter/break/final-strike/Encore playthrough, labelled AI-led.
 - [x] Production-only dependency package starts and serves API/frontend/assets/licenses.
@@ -27,9 +27,9 @@ Local release candidate is prepared. This checklist records actual provider/host
 
 ## Actual M1 OBS session
 
-OBS33.0.0 is installed in.runtime/OBS.app; official SHA256/signature and approved Screen Recording are verified. The dedicated scene captures only the uniquely titled ARAGOZ game window. Mic/Aux and capture audio are muted. Two interrupted diagnostic clips are retained separately (evidence/obs-diagnostics.json); zero complete30minute runs. The driver now synchronizes Encore with actual advancing ticks. Camera/mic/input-monitoring access was not requested. Short diagnostics and the Metal smoke sample do not replace this test.
+OBS33.0.0 is installed in.runtime/OBS.app; official SHA256/signature and approved Screen Recording are verified. Microphone device is Disabled; capture audio is muted. One actual30minute1080p run completed with88wins/no browser errors, but recorded-frame review found instrumentation download-panel obstruction/scrollcrop; OBS also recorded1.9%render lag/0.3%encoder lag. It is diagnostic evidence, not clean60fps/capture acceptance (evidence/obs-1080p-session.json and ops/PERFORMANCE_REPORT.md). The repaired driver reads telemetry without downloads and guards full-stage bounds. Clean720p and1080p runs remain. Earlier short clips remain separate. No camera/microphone capture occurred.
 
-- [ ] Record actual macOS/M1/browser/OBS versions, source and encoder settings.
+- [x] Record actual macOS/M1/browser/OBS versions, source and encoder settings.
 - [ ] Capture only the public play window; exclude backstage and unrelated desktop content.
 - [ ] Run30minutes at1080p and30minutes at720p, with active mechanics and real input. Record crashes, missed tells, dropped frames and exact simulation/presentation timing.
 - [ ] Evaluate60fps target. If necessary document a30fps presentation profile with unchanged60Hzsimulation; do not silently change game timing.

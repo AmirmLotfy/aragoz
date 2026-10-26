@@ -24,6 +24,21 @@ test('actual movement, pause and resume use the same fixed-step encounter',async
   await page.getByRole('button',{name:'Back onstage'}).click();await expect.poll(async()=>Number(await canvas.getAttribute('data-sim-tick'))).toBeGreaterThan(Number(pausedTick));
 });
 
+test('capture telemetry snapshots do not open a browser download or interrupt combat',async({page})=>{
+  const downloads:string[]=[];page.on('download',d=>downloads.push(d.suggestedFilename()));
+  await page.goto('/rehearse');await page.getByRole('button',{name:'Raise the curtain'}).click();
+  const canvas=page.getByTestId('game-canvas');
+  await expect.poll(async()=>Number(await canvas.getAttribute('data-sim-tick'))).toBeGreaterThan(5);
+  const tick=Number(await canvas.getAttribute('data-sim-tick'));
+  const report=await page.evaluate(()=>new Promise<{activeFrameSamples:number;quality:string;presentationFps:number;schemaVersion:number}>(resolve=>{
+    window.addEventListener('aragoz:performance-report',event=>resolve((event as CustomEvent).detail),{once:true});
+    window.dispatchEvent(new Event('aragoz:request-performance'));
+  }));
+  expect(report).toMatchObject({schemaVersion:1,quality:'high',presentationFps:60});expect(report.activeFrameSamples).toBeGreaterThan(0);
+  await expect.poll(async()=>Number(await canvas.getAttribute('data-sim-tick'))).toBeGreaterThan(tick);
+  expect(downloads).toEqual([]);await expect(canvas).toHaveAttribute('data-paused','false');
+});
+
 test('configuration switch changes actual mechanic families and preserves House attribution',async({page})=>{
   await page.goto('/rehearse');await expect(page.getByRole('button',{name:'Raise the curtain'})).toBeEnabled();
   await expect(page.getByTestId('game-canvas')).toHaveAttribute('data-families','charge,steam');

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Authoring this script is not OBS evidence. Run only under the coordinator's
 // browser/OBS ownership; this creates a fresh task-only headed Chrome context.
-// Usage: node scripts/obs-gameplay-session.mjs --run-id=obs-1080p --label=1080p
+// Usage: node scripts/obs-gameplay-session.mjs --run-id=obs-1080p --label=1080p --quality=high
 // Read ready.json, select ONLY its titled window in OBS, start recording, then
 // create the reported start marker. After the paused receipt, stop OBS first,
 // then create the stop marker. SIGTERM/SIGINT pause/checkpoint and preserve this
@@ -9,7 +9,7 @@
 import { chromium } from '@playwright/test';
 import { createHash } from 'node:crypto';
 import { existsSync, watch } from 'node:fs';
-import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
+import { mkdir, rename, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { performance } from 'node:perf_hooks';
@@ -19,11 +19,12 @@ const SESSION_MS=30*60*1000,SEGMENT_MS=10*60*1000,START_WAIT_MS=20*60*1000;
 const PRESETS=['The Teapot Tyrant','The Copycat’s Comeback','A Very Bad Reflection'];
 const CHROME='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const options=Object.fromEntries(process.argv.slice(2).map(argument=>{
-  const match=argument.match(/^--(run-id|label|url)=(.*)$/);if(!match)throw new Error('Use only --run-id=, --label= or --url= options');return [match[1],match[2]];
+  const match=argument.match(/^--(run-id|label|url|quality)=(.*)$/);if(!match)throw new Error('Use only --run-id=, --label=, --url= or --quality= options');return [match[1],match[2]];
 }));
 const runId=options['run-id']??new Date().toISOString().replace(/[:.]/g,'-')+'-'+process.pid;
 if(!/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,95}$/.test(runId))throw new Error('run-id must be a short filesystem-safe identifier');
 if(options.label&&!/^[a-zA-Z0-9 _.-]{1,64}$/.test(options.label))throw new Error('label must be a short operator label');
+if(options.quality&&!['high','low'].includes(options.quality))throw new Error('quality must be high or low');
 const target=new URL(options.url??'http://127.0.0.1:3000/rehearse');
 if(target.protocol!=='http:'||target.hostname!=='127.0.0.1'||target.pathname!=='/rehearse'||target.username||target.password||target.search||target.hash)throw new Error('Use an uncredentialed http://127.0.0.1:PORT/rehearse URL without query or fragment');
 const directory=join(ROOT,'.runtime/evidence/obs',runId);
@@ -32,13 +33,13 @@ await mkdir(dirname(directory),{recursive:true});await mkdir(directory);
 const paths={directory,startMarker,stopMarker,progress:join(directory,'progress.json'),receipt:join(directory,'receipt.json'),ready:join(directory,'ready.json')};
 const evidence={schemaVersion:1,evidenceKind:'AI-led headed local keyboard gameplay during an operator-controlled OBS session',
   limits:'Not human, genuine Twitch, hosted, or independently verified OBS/encoder acceptance. Operator output labels do not establish game or recording resolution.',
-  runId,operatorLabel:options.label??null,target:target.toString(),pid:process.pid,createdAt:new Date().toISOString(),
+  runId,operatorLabel:options.label??null,requestedQuality:options.quality??'high',target:target.toString(),pid:process.pid,createdAt:new Date().toISOString(),
   requestedDurationMs:SESSION_MS,requestedPresetSegmentMs:SEGMENT_MS,status:'preparing',paths,
   processOwnership:'Only the fresh Chrome context/profile created by this script; never an existing user profile or unrelated browser.',
   profilePath:join(directory,'chrome-profile'),chromeExecutable:CHROME,headless:false,
   browser:null,startMarkerObservedAt:null,startedAt:null,scheduledEndAt:null,endedAt:null,observedDurationMs:null,
   completedScheduledDuration:false,pausedAfterRun:null,stopMarkerObservedAt:null,contextClosedAt:null,
-  presets:[],attempts:[],samples:[],exports:[],errors:[],pageErrors:[],inputOperations:0,rafTiming:null};
+  presets:[],attempts:[],samples:[],exports:[],errors:[],pageErrors:[],unexpectedDownloads:0,inputOperations:0,rafTiming:null};
 let context=null,page=null,held=new Set(),interrupted=null,rootStopRequested=false,durationReached=false;
 let startClock=null,lastProgress=0,lastSample=0,lastDodge=0,currentPreset=0,currentAttempt=null;
 let pausePromise=null,deadlineTimer=null;
@@ -83,7 +84,7 @@ async function readState(){
       stage:canvas.dataset.bossStage??null,activeSlot:canvas.dataset.activeSlot||null,hero:value('heroPosition'),boss:value('bossPosition'),facing:value('bossFacing'),modules:value('modules'),
       families:(canvas.dataset.families??'').split(','),geometry:canvas.dataset.geometry??null,stageError:canvas.dataset.stageError==='true',
       displayedGameFps:gameFps?Number(gameFps[1]):null,triangles:Number(canvas.dataset.triangles??0),drawCalls:Number(canvas.dataset.drawCalls??0),
-      viewport:{width:innerWidth,height:innerHeight,devicePixelRatio},canvasCss:{width:rectangle.width,height:rectangle.height},canvasBuffer:{width:canvas.width,height:canvas.height}};
+      viewport:{width:innerWidth,height:innerHeight,devicePixelRatio},canvasCss:{x:rectangle.x,y:rectangle.y,width:rectangle.width,height:rectangle.height,fullyWithinViewport:rectangle.x>=-1&&rectangle.y>=-1&&rectangle.right<=innerWidth+1&&rectangle.bottom<=innerHeight+1},canvasBuffer:{width:canvas.width,height:canvas.height}};
   },undefined,{timeout:3000});
 }
 async function pauseSafely(reason){
@@ -106,21 +107,24 @@ async function exportPerformance(reason){
   const index=evidence.exports.length+1,record={index,reason,attemptId:currentAttempt?.attemptId??null,preset:currentPreset,requestedAt:new Date().toISOString(),path:null,report:null,error:null};
   evidence.exports.push(record);
   try{
-    const pending=page.waitForEvent('download',{timeout:5000});
-    await page.evaluate(()=>window.dispatchEvent(new Event('aragoz:export-performance')));
-    const download=await pending,downloadPath=await download.path();if(!downloadPath)throw new Error('Performance export did not yield a local file');
-    const report=JSON.parse(await readFile(downloadPath,'utf8'));
+    const report=await page.evaluate(()=>new Promise((resolveReport,rejectReport)=>{
+      const receive=event=>{clearTimeout(timer);resolveReport(event.detail);};
+      const timer=setTimeout(()=>{window.removeEventListener('aragoz:performance-report',receive);rejectReport(new Error('Performance snapshot did not respond'));},2000);
+      window.addEventListener('aragoz:performance-report',receive,{once:true});
+      window.dispatchEvent(new Event('aragoz:request-performance'));
+    }));
     // Preserve only the documented app presentation telemetry, never arbitrary
     // downloaded payloads or profile/session contents.
     const allowed=['schemaVersion','evidence','createdAt','observationSpanMs','activeFrameSamples','pausedFrames','meanFrameMs','p95FrameMs','longestFrameMs','peakVisibleTriangles','peakObservedDrawCalls','userAgent','resolution','profiles','mechanicLibraryVersion','artKitVersion','presentationFps','quality'];
     record.report=Object.fromEntries(allowed.filter(key=>key in report).map(key=>[key,report[key]]));
     record.path=join(directory,'presentation-'+String(index).padStart(3,'0')+'.json');
     await atomicJson(record.path,{evidenceKind:'actual application presentation telemetry for one local attempt; separate from rAF and OBS encoder timing',reason,attemptId:record.attemptId,preset:record.preset,report:record.report});
-    await download.delete().catch(()=>{});
   }catch(error){record.error=errorRecord(error,'performance-export');}
 }
 async function observe(force=false){
   const state=await readState();if(state.stageError)throw new Error('The actual playable canvas reports a graphics failure');
+  if(evidence.unexpectedDownloads)throw new Error('An unexpected browser download can obscure the captured stage');
+  if(!state.canvasCss.fullyWithinViewport)throw new Error('The captured stage is not fully inside the actual viewport');
   if(!state.attemptId||!state.hero||!state.boss||!state.facing||!Array.isArray(state.modules))throw new Error('Playable diagnostics are unavailable');
   if(!currentAttempt||currentAttempt.attemptId!==state.attemptId){
     currentAttempt={attemptId:state.attemptId,recipeHash:state.recipeHash,preset:currentPreset,firstObservedAt:state.at,lastObservedAt:state.at,lastSimTick:state.simTick,outcome:null};evidence.attempts.push(currentAttempt);force=true;
@@ -144,6 +148,7 @@ async function raiseCurtain(){
     const canvas=document.querySelector('[data-testid="game-canvas"]');
     return canvas?.getAttribute('data-paused')==='false'&&Number(canvas.getAttribute('data-sim-tick'))>0;
   },null,{timeout:4000});
+  if(running())await page.locator('.stage-frame').scrollIntoViewIfNeeded({timeout:3000});
 }
 async function selectPreset(index){
   await releaseKeys();if(currentAttempt)await exportPerformance('preset-segment-ended');
@@ -199,11 +204,18 @@ try{
   const pages=context.pages();page=pages.find(candidate=>candidate.url().startsWith(target.origin+'/rehearse'))??pages[0]??await context.newPage();
   for(const candidate of pages)if(candidate!==page)await candidate.close();
   page.on('pageerror',error=>evidence.pageErrors.push({at:new Date().toISOString(),messageSha256:createHash('sha256').update(error.message).digest('hex')}));
+  page.on('download',()=>{evidence.unexpectedDownloads++;});
   context.on('page',newPage=>{if(newPage!==page)void newPage.close().catch(()=>{});});
   page.setDefaultTimeout(3000);
   if(!page.url().startsWith(target.origin+'/rehearse'))await page.goto(target.toString(),{waitUntil:'domcontentloaded',timeout:20000});
   await page.getByRole('button',{name:'Raise the curtain',exact:true}).waitFor({state:'visible',timeout:15000});
   await page.waitForFunction(()=>[...document.querySelectorAll('button')].some(button=>button.textContent==='Raise the curtain'&&!button.disabled),null,{timeout:15000});
+  if(options.quality==='low'){
+    await page.getByRole('button',{name:'Sound & controls',exact:true}).focus();await page.keyboard.press('Enter');
+    await page.getByRole('combobox',{name:'Quality',exact:true}).selectOption('low');
+    await page.getByRole('button',{name:'Back to the show',exact:true}).focus();await page.keyboard.press('Enter');
+    await page.waitForFunction(()=>{const canvas=document.querySelector('[data-testid="game-canvas"]');return canvas&&canvas.width/canvas.getBoundingClientRect().width<1.1;},null,{timeout:5000});
+  }
   const windowTitle='ARAGOZ · OBS AI-led · '+runId;
   await page.evaluate(title=>{document.title=title;},windowTitle);
   evidence.browser=await page.getByTestId('game-canvas').evaluate(canvas=>{

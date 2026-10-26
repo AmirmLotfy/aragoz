@@ -128,6 +128,7 @@ test('[FIXTURE] real live UI commits both audience contracts, hides private raw 
   await expect.poll(() => harness.state().phase).toBe('combat');
   expect(harness.state().recipe!.hash).toBe(recipeHash);
   expect(harness.state().results.find(result => result.attemptId === oldAttempt)?.outcome).toBe('abandoned');
+  await expect.poll(async()=>play.getByTestId('game-canvas').evaluate(canvas=>({attempt:canvas.getAttribute('data-attempt-id'),ready:canvas.getAttribute('data-presentation-ready')})),{timeout:12000,message:'The replacement attempt finishes its eight-second asset budget and assembly before combat'}).toEqual({attempt:harness.state().attempt!.id,ready:'true'});
   await expect.poll(async () => Number(await play.getByTestId('game-canvas').getAttribute('data-sim-tick'))).toBeGreaterThan(0);
 });
 

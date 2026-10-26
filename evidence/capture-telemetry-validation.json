@@ -1,0 +1,33 @@
+{
+  "kind": "local-capture-instrumentation-validation",
+  "createdAt": "2026-10-26T05:29:03.325Z",
+  "unitTests": 116,
+  "browserCases": 14,
+  "browserEvidence": "13passed/1failed initial run; corrected live case passed targeted rerun32.2s. Wait now binds readiness to replacement attempt and declared asset+assembly budget. Not one14-pass run.",
+  "typecheck": "passed",
+  "releaseBuild": "passed",
+  "readOnlyReview": "No blocking event lifecycle/serialization issue found",
+  "files": [
+    {
+      "path": "evidence/capture-telemetry-typecheck.log",
+      "sha256": "44273af087ef4f08e29c7fecd416d59e1d6d5c2ebde0ce2b97d242b784abacd9"
+    },
+    {
+      "path": "evidence/capture-telemetry-tests.log",
+      "sha256": "f127522800d620da6643658bbd83e47d45de4e428461d6a816aa4040219718ba"
+    },
+    {
+      "path": "evidence/capture-telemetry-build.log",
+      "sha256": "8b557233a7c90d960d148fedbf2067326f4ee3eb6d4562b02ea01af4e3cdf363"
+    },
+    {
+      "path": "evidence/capture-telemetry-browser.log",
+      "sha256": "d904261a977acbda055357ef075cd0d34d558643cf52457bbac02ea7a0c21677"
+    },
+    {
+      "path": "evidence/capture-telemetry-live-rerun.log",
+      "sha256": "7b3d5625c725f00bad00354c847ee860d2fea7e777765f2db9897b46c40d0d1d"
+    }
+  ],
+  "scope": "Local unit/browser/fixture evidence.30minute1080duration is separately diagnostic due measured lag and capture obstruction; clean720and1080 measurements pending. No Twitch/human acceptance."
+}

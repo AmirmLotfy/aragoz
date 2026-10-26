@@ -1,5 +1,13 @@
 # Build journal
 
+## 2026-10-26 — actual thirty-minute OBS diagnosis and capture repair
+
+- Completed1800003.736ms of actual M1/OBS1080p60 recording with95AI-led attempts:88wins,4defeats,3unfinished; no driver/browser errors. Apple VideoToolbox hardware H.264 confirmed. Finalized video1813.183333s/147086157bytes; raw footage stays ignored/local. Full audio audit measured digital silence (-91dB max/mean).
+- Active presentation100112samples averaged17.402ms (~57.46fps). OBS reports1.9%render lag/0.3%encoding lag; peak46751triangles/71drawcalls. This high profile is not accepted as clean sustained60fps.
+- Actual frame review exposed Chrome download-popover obstruction and page scrollcrop from the measurement driver. Kept the evidence unchanged and marked capture readability unaccepted. Replaced automatic downloads with synchronous telemetry-report events, retaining the user's explicit export control. Added full-viewport bounds/download guards, stage scrolling and a quality selector for the720p low-resolution profile. No simulation/health mutation.
+- New no-download regression passes. Current typecheck/116unit tests/releasebuild pass.14browser cases covered across a13-pass/1-fail run and the corrected live-case rerun; the test now waits the actual replacement attempt's asset admission/assembly budget before expecting advancing ticks. Read-only reviewer found no blocking telemetry issue. OBS720p60 output is saved after owner opened Video; capture is currently stopped.
+- Source baseline eedfd1e97d37bc18e3c6b67dbcb90b15dfcfd420 is privately pushed. Root owns all source; no active specialist. No paid action. Twitch SMS setup is explicitly deferred per owner; phone data were not copied into repo/evidence. Next: freeze this capture packet, run clean720p30minutes, then clean1080p repeat; real Twitch/human gates remain open.
+
 ## 2026-10-26 — Retina validation and actual OBS measurement
 
 - Headed M1 Metal preflight exposed half-resolution Retina sizing:681×376CSS rendered510×282. Corrected the shared Babylon scale to1.5pixels/CSS atDPR2 (1021×564actual), with low quality1pixel/CSS. Current typecheck/release build pass.
