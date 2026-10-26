@@ -1,0 +1,11 @@
+{
+  "decision": "admitted emergency asset-recovery fallback",
+  "reviewedAt": "2026-10-25T22:25:54.696226+00:00",
+  "source": "apps/web/src/theatre.ts",
+  "sourceSha256": "086410fde8a378335fa6f6d7d05880af0bb4a94f6bd9d9d9631a398eb95c92d7",
+  "rights": "Original project-authored procedural geometry and materials; no third-party asset source",
+  "capture": "evidence/browser/fallback-stage.png",
+  "browserEvidence": "Actual missing-GLB 404 browser test passed; fixed simulation families unchanged",
+  "review": "Root visually inspected performer, shell, attachments, marked blocks, orthographic framing, hazard shapes and UI contrast. Simplified geometry is intentionally labelled asset recovery.",
+  "limitations": "Fallback recovery acceptance only; primary local-kit-v1 assets remain the normal presentation."
+}

@@ -1,0 +1,1 @@
+{"pid": 28862, "state": "completed", "argv": ["/Applications/Blender.app/Contents/MacOS/Blender", "--background", "--threads", "2", "--python", "scripts/blender/build_local_kit.py", "--", "--render", "--contact-sheet"], "cwd": "/Users/frameless/Desktop/Aragoz"}

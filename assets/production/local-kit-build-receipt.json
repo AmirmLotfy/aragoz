@@ -1,0 +1,289 @@
+{
+  "status": "candidate-pending-review",
+  "blenderVersion": "5.2.1 LTS",
+  "pid": 28720,
+  "assets": [
+    {
+      "id": "hero",
+      "source": "assets/source/local-kit-v1/hero.blend",
+      "candidate": "assets/candidates/runtime/hero.glb",
+      "blenderMeshTriangles": 10492,
+      "normalization": {
+        "correction": [
+          1.1194030046463013,
+          1.26262629032135,
+          1.1066824197769165
+        ],
+        "sourceBounds": [
+          [
+            -0.4020000100135803,
+            -0.3479999899864197,
+            0.13500002026557922
+          ],
+          [
+            0.4020000100135803,
+            0.20639999210834503,
+            1.779554843902588
+          ]
+        ]
+      },
+      "socketPositionsRuntime": {
+        "hand-baton": [
+          0.33582091331481934,
+          0.5478078126907349,
+          -0.06666667014360428
+        ]
+      },
+      "authorship": "Original Blender/Python authored geometry and256px tile textures, no provider generation or imported geometry",
+      "animationMode": "Rigid object TRS; NLA tracks named per contract",
+      "processId": 28469
+    },
+    {
+      "id": "stage",
+      "source": "assets/source/local-kit-v1/stage.blend",
+      "candidate": "assets/candidates/runtime/stage.glb",
+      "blenderMeshTriangles": 10815,
+      "normalization": {
+        "correction": [
+          1,
+          1,
+          1
+        ],
+        "sourceBounds": [
+          [
+            -7.650000095367432,
+            -4.349999904632568,
+            -0.20999999344348907
+          ],
+          [
+            7.650000095367432,
+            4.367819786071777,
+            5.300000190734863
+          ]
+        ]
+      },
+      "socketPositionsRuntime": {
+        "block-west": [
+          -3.0999999046325684,
+          0.0,
+          -0.20000000298023224
+        ],
+        "block-east": [
+          3.0999999046325684,
+          0.0,
+          0.8999999761581421
+        ]
+      },
+      "authorship": "Original Blender/Python authored geometry and256px tile textures, no provider generation or imported geometry",
+      "animationMode": "Rigid object TRS; NLA tracks named per contract",
+      "processId": 28469
+    },
+    {
+      "id": "shell-teapot",
+      "source": "assets/source/local-kit-v1/shell-teapot.blend",
+      "candidate": "assets/candidates/runtime/shell-teapot.glb",
+      "blenderMeshTriangles": 8676,
+      "normalization": {
+        "correction": [
+          0.9803227782249451,
+          1.1383758783340454,
+          0.9956709146499634
+        ],
+        "sourceBounds": [
+          [
+            -1.2897578477859497,
+            -0.8420000076293945,
+            0.0
+          ],
+          [
+            1.2604225873947144,
+            0.7391999959945679,
+            2.31000018119812
+          ]
+        ]
+      },
+      "socketPositionsRuntime": {
+        "left": [
+          -1.0499999523162842,
+          0.0,
+          0.20000000298023224
+        ],
+        "right": [
+          1.0500000715255737,
+          0.0,
+          0.20000000298023224
+        ]
+      },
+      "authorship": "Original Blender/Python authored geometry and256px tile textures, no provider generation or imported geometry",
+      "animationMode": "Rigid object TRS; NLA tracks named per contract",
+      "processId": 28469
+    },
+    {
+      "id": "shell-mirror",
+      "source": "assets/source/local-kit-v1/shell-mirror.blend",
+      "candidate": "assets/candidates/runtime/shell-mirror.glb",
+      "blenderMeshTriangles": 7205,
+      "normalization": {
+        "correction": [
+          1.0106382369995117,
+          1.5007504224777222,
+          1.0
+        ],
+        "sourceBounds": [
+          [
+            -0.940000057220459,
+            -0.36959999799728394,
+            0.0
+          ],
+          [
+            0.940000057220459,
+            0.4300000071525574,
+            2.5999999046325684
+          ]
+        ]
+      },
+      "socketPositionsRuntime": {
+        "left": [
+          -1.0499999523162842,
+          0.0,
+          0.20000000298023224
+        ],
+        "right": [
+          1.0499999523162842,
+          0.0,
+          0.20000000298023224
+        ]
+      },
+      "authorship": "Original Blender/Python authored geometry and256px tile textures, no provider generation or imported geometry",
+      "animationMode": "Rigid object TRS; NLA tracks named per contract",
+      "processId": 28469
+    },
+    {
+      "id": "module-charge",
+      "source": "assets/source/local-kit-v1/module-charge.blend",
+      "candidate": "assets/candidates/runtime/module-charge.glb",
+      "blenderMeshTriangles": 2512,
+      "normalization": {
+        "correction": [
+          0.9230769276618958,
+          0.9210526347160339,
+          1.0526316165924072
+        ],
+        "sourceBounds": [
+          [
+            -0.6499999761581421,
+            -0.3799999952316284,
+            0.02000001072883606
+          ],
+          [
+            0.6499999761581421,
+            0.3799999952316284,
+            0.7799999713897705
+          ]
+        ]
+      },
+      "socketPositionsRuntime": {
+        "axle": [
+          0.0,
+          0.40000003576278687,
+          -0.0
+        ],
+        "wheel-left": [
+          -0.4338461458683014,
+          0.40000003576278687,
+          -0.0
+        ],
+        "wheel-right": [
+          0.4338461458683014,
+          0.40000003576278687,
+          -0.0
+        ]
+      },
+      "authorship": "Original Blender/Python authored geometry and256px tile textures, no provider generation or imported geometry",
+      "animationMode": "Rigid object TRS; NLA tracks named per contract",
+      "processId": 28469
+    },
+    {
+      "id": "module-steam",
+      "source": "assets/source/local-kit-v1/module-steam.blend",
+      "candidate": "assets/candidates/runtime/module-steam.glb",
+      "blenderMeshTriangles": 2844,
+      "normalization": {
+        "correction": [
+          0.9641095399856567,
+          0.9155129790306091,
+          1.0396716594696045
+        ],
+        "sourceBounds": [
+          [
+            -0.31116795539855957,
+            -0.34337031841278076,
+            0.0
+          ],
+          [
+            0.31116795539855957,
+            0.31199997663497925,
+            1.8274999856948853
+          ]
+        ]
+      },
+      "socketPositionsRuntime": {
+        "valve": [
+          0.0,
+          0.0,
+          -0.014359977096319199
+        ],
+        "valve-lid": [
+          0.0,
+          1.4035568237304688,
+          -0.014359977096319199
+        ]
+      },
+      "authorship": "Original Blender/Python authored geometry and256px tile textures, no provider generation or imported geometry",
+      "animationMode": "Rigid object TRS; NLA tracks named per contract",
+      "processId": 28720
+    },
+    {
+      "id": "module-echo",
+      "source": "assets/source/local-kit-v1/module-echo.blend",
+      "candidate": "assets/candidates/runtime/module-echo.glb",
+      "blenderMeshTriangles": 2252,
+      "normalization": {
+        "correction": [
+          1.0000003576278687,
+          1.0578724145889282,
+          1.01694917678833
+        ],
+        "sourceBounds": [
+          [
+            -0.3499998152256012,
+            -0.19811740517616272,
+            0.0
+          ],
+          [
+            0.34999993443489075,
+            0.18000000715255737,
+            1.7699999809265137
+          ]
+        ]
+      },
+      "socketPositionsRuntime": {
+        "mirror": [
+          -5.96046660916727e-08,
+          0.0,
+          -0.009582947939634323
+        ],
+        "mirror-face": [
+          -5.96046660916727e-08,
+          1.1898305416107178,
+          0.1438085436820984
+        ]
+      },
+      "authorship": "Original Blender/Python authored geometry and256px tile textures, no provider generation or imported geometry",
+      "animationMode": "Rigid object TRS; NLA tracks named per contract",
+      "processId": 28469
+    }
+  ],
+  "providerCalls": 0,
+  "paidCredits": 0
+}

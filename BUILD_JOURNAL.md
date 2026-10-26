@@ -1,0 +1,82 @@
+# Build journal
+
+## 2026-10-26 — full release completion packet and zero-cost preview
+
+- Owner approved private AmirmLotfy/aragoz publication and prohibited every paid action. Created and verified the private repository. Archived the unapproved Render blueprint; no cloud/model/Meshy spending or billable CI enabled.
+- Closed7backend regressions: all raw chat expires after24h, OAuth renewal invalidates interrupted ballots, authenticated channel quotas work behind a proxy while forged cookies/forwarded IPs do not bypass them, and static files do not consume API quota. Added one static-encoding regression. Closed native menu keyboard interception/remap collisions and complete historical showbill attribution/results; added6web regressions.
+- Current typecheck passed;112unit/server tests across7files passed; all11actual Playwright flows passed on the current compressed build (3.3minutes). The earlier browser-control restriction was rechecked and browser access is now available. Current logs use evidence/release-completion-*.log.
+- Added Brotli/gzip alternate static encodings with byte-preserving fallback and Vary.18public files total9,418,149raw bytes become3,497,359Brotli /3,987,764gzip bytes. Actual public transport fetched all five GLBs correctly; final browser reload observed5approved assets/35,387triangles/61drawcalls. Earlier transient first-load fallback is retained separately.
+- Created an isolated task-owned Colima aragoz-release VM, built the real Linux ARM64 Docker image with pinned base/clean install/full checks, and passed12container smoke checks including non-root permissions, compressed GLB, private API denial, replacement persistence, online backup and separate restore. Retained exact image/source metadata and receipts; removed only this task VM/data/test volumes after ownership checks. Existing egytric profile was preserved.
+- Verified and installed official cloudflared2026.10.3; launched a zero-cost public HTTPS preview with persistent local SQLite/private0600encryption key. Current URL/processes are in evidence/public-preview.json and .runtime/public-preview.json. Configuration SIGHUP reload changed the game process while preserving URL/tunnel/key; models are forced off. No secrets entered logs/source.
+- Owner created Twitch account; browser observed @amirmolotfy signed in. The developer console requests fresh login; app registration/credentials/game consent/chat remain pending. No account, viewer message or genuine acceptance was fabricated.
+- Installed official signed OBS33.0.0 locally. Screen Recording approved by owner, but computer-control guard rejected native toggle as changed state; manual owner toggle requested. Other recording/input permissions remain off. No OBS session or human acceptance claimed.
+- Root owns all source; both specialist source packets collected, container helper completed by root after a specialist capacity error. No heavy check remains. Local preview PID84702/session44035; public supervisor84937/session51248, tunnel84938, current server92463. OBS/settings windows are intentionally left for owner setup. No unrelated cleanup or process termination occurred.
+
+## 2026-10-26 — bounded startup recovery follow-up
+
+- On continuation, the recorded preview PID48937 was absent and port3000 had no listener. Restarted the existing built app using the same loopback origin/database; current owned PID82684, exec session90103. HTTP readiness/rehearsal200; hosting/model calls remain disabled. The reason the old process stopped is not established.
+- Added one eight-second asset batch deadline, manifest cancellation, late-container disposal and no late geometry admission. Added a permanent stopped/paused guard and shared cleanup for initialization/render/WebGL context failure; readiness becomes false and a reload action appears above opening cards. Preset switches no longer prepare an old recipe under a new attempt.
+- Current checks: TypeScriptpassed;98unit/server tests across5files passed, including5new asset-deadline cases; releasebuildpassed with7admitted GLBs; source-only specialist review found no actionable defect. Receipts in evidence/startup-recovery.json and its hashed logs.
+- Four browser regression cases were authored for stalled manifest/late GLB/error-screen clickability/context-loss event recovery. They have NOT run: local browser control is disabled in Work settings; no bypass was attempted. Earlier7browser passes predate this packet and do not validate the new recovery interface.
+- Root owns all files; specialist review completed. Source changes: apps/web/src/{asset-loading.ts,asset-loading.test.ts,GameCanvas.tsx,RehearsalView.tsx,Live.tsx,theatre.ts,styles.css}, tests/browser/rehearsal.spec.ts, vitest.config.ts, and status/evidence documents. Main/unborn, all project source remains untracked; no publication/provisioning/spending. Latest bounded build estimate admitted at6.09GiBfree.
+- Next: user can reload the live local rehearsal. When browser control is available, execute the new recovery cases before treating current UI recovery as browser-validated. Paid private-repo/Render approval remains unanswered; real Twitch/hosted/OBS/human acceptance remains open.
+
+## 2026-10-26 — local release candidate verified
+
+- User storage override carried through: clean lockfile install, actual tests/build/browser and original Blender production completed in the same workspace. Latest5.90GiBfree; no unrelated cleanup.
+- Admitted7original Blender GLBs after static and actual Babylon review;44,796kit triangles/1,345,615gzipbytes. Fixed header framing, connected rigid clips/physical detach, packaged Noto/OFL and software notices. No Meshy spending.
+- Closed observed moderation/reconnect/native-package/peer-placement/settings/Encore/paused-diagnostic problems. Direct Babylon imports halved compressed engine payload to835KB. Paused idle renders at15fps; active combat retains60Hz timing.
+- Added runtime/version validation for room storage/HTTP/WS/private/showbill and asset metadata; legacy preview room upgrade and future/corrupt contract rejection are tested. New recipes pin admitted art; unknown art/shell identities reject.
+- Current verification: clean npmci142packages/5s; typecheckpassed;93unit tests;62asset fixtures;7actual browser flows; releasebuildpassed. Current native production-only dependency package32MB starts and serves app/API/assets/licenses. Docker registry digest verified; Linux container build unperformed because no daemon.
+- AI-led actual keyboard play demonstrated counter→physical break→no further charge→steam break→final-strike win→Encore reset. Short M1 Metal samples are separately labelled and do not replace OBS/human acceptance. Actual release screenshots retained.
+- Root owns all outputs; no specialist/Blender/test job remains. Local preview PID48937 on127.0.0.1:3000 remains available. Candidate Vite process stopped after ownership check.
+- Exact private-repo/Render cost approval requested asynchronously; unanswered. Nothing provisioned/published and no real Twitch/game-model call or human session is claimed. ops/RELEASE_CHECKLIST.md and blank human acceptance records are ready for the next authorized stage.
+
+## 2026-10-26 — runtime validation and original kit
+
+- Resolved the pinned npm workspace and lockfile with Node24.19.0. Repaired the exact corrupt rolldown native binding left by the interrupted first install; direct binding load passes. No unrelated dependency tree was modified.
+- Full typecheck passed after Fastify unknown-error narrowing and the Vite8 manualChunks function update. Server mocked-provider suite passed56tests/2files, exit0. Actual log /tmp/aragoz-server-validation.log. Full combat/browser/build validation follows.
+- Hardened rejection persistence, token revocation, transient reconnects, failed handoffs and deleted-room callback races. Added strict catalogue fallback preserving genuine source lineage, visibly labelled and host reviewed, without model requests.
+- Original Blender-authored kit passed all7static role budgets/dimensions/nodes/clips:44796total triangles and1345615gzipbytes. Candidates await actual Babylon inspection; CPU2thread orthographic renders are active under asset specialist ownership. No Meshy/provider spend.
+- Packaged official unmodified Noto Sans and Noto Sans Arabic variable fonts plus OFL notices, with URL/hash provenance. Added actual per-frame Babylon draw-call instrumentation. Local live browser fixture packet is being prepared; no production auth bypass.
+
+## 2026-10-26 — full-team execution override
+
+- User explicitly superseded storage/external-gate stalls and requested autonomous full-stack development. Replaced the fixed10GiB floor with bounded per-job estimates and a256MiB working reserve; actual ENOSPC affects only the failed action, not all independent progress.
+- Existing7.1GiB is sufficient for the estimated installation batch. Starting actual dependency resolution and validation, then browser/art work. No unrelated files/processes are cleaned or stopped.
+
+## 2026-10-26 — direction approved; same workspace retained
+
+- User approved the concept direction and selected keeping /Users/frameless/Desktop/Aragoz while they free storage. Recorded approval without treating it as paid-generation or final-asset acceptance.
+- Initial recheck: 4.92 GiB free, below the accepted 10 GiB gate. Installation/build/final-asset batches remain unstarted; no unrelated cleanup authorized or attempted.
+- Preparing asset specifications and production commands is independent of the blocked heavy batches. Source validation and final-art acceptance remain open.
+- Prepared the seven-role production contract, an isolated kettle-reference prompt and an unsubmitted zero-authorized-credit Meshy draft. No image reference/3D production batch started.
+- Added local Vite-only candidate review, with explicit candidate banner and no production copying of unadmitted art. Static GLB inspection runs before candidate bytes are served. Renderer now applies imported hero/boss root motion and selects the authored run animation.
+- Added static GLB admission and local-review tests. Bundled Node24 ran62small authored fixture cases with62passes/0failures in269.217ms; TAP receipt is evidence/asset-format.tap. This is not gameplay, provider, browser, GPU or final-art validation.
+- Source-only parser recheck passed33TS/TSX files. Resource recheck4.83GiB remains below10GiB; no dependency installation or build began.
+- Final recheck6.19GiB: guard exited75, so installation/build/production remain unstarted. Direction approval is complete; user retains the workspace and is freeing space. No further direction confirmation is required.
+- Release-asset audit exited1 as expected with7pending assets/0admittedGLBs. Actual report: evidence/final-asset-audit.json. Docker source now preserves build-time admission evidence without copying concept/candidate/source art into the final service image; no Docker build has run.
+
+## 2026-10-25 — foundation started
+
+- User explicitly authorized implementation of the complete accepted plan, with flexible dates and hosted technical preview before human acceptance.
+- Initial cwd /Users/frameless/Desktop/Aragoz contained only ARAGOZ_Full_Game_Brief.md. No parent/project AGENTS or handoff existed. Initialized local Git main; no commit yet.
+- Initial storage6.2GiB free, below agreed10GiB admission floor. No dependency install/build/asset-production batch started. Registry metadata reads are not validation.
+- Created root workspace configuration and shared strict schemas/catalogue/recipe hashing. Established documentation, resource admission and source ownership.
+- Combat specialist owns packages/combat; server specialist owns apps/server. Coordinator owns shared contracts, browser app, integration and checks. Specialists instructed not to run heavy checks or install dependencies.
+- Planning research verified Twitch/OpenAI/Babylon/Render docs. Current implementation uses mocks only until genuine credentials/consent and budget are available.
+
+Evidence status: source work in progress; no passing test/build/browser/provider/hosted/OBS/human claim.
+
+## 2026-10-25 — source integration checkpoint
+
+- Browser source includes the Babylon stage, public rehearsal for all three family pairs, tutorial/health/module HUD, results, same-recipe Encore, one-slot Remix, private backstage with bitmap preview, host setup with actual incoming command challenge, settings/remapping, synchronized mute and local performance-report export.
+- Server source includes SQLite migrations/backup, encrypted credentials, OAuth/EventSub adapters, invitations and global3show admission, round-code ballots, bounded moderation/compiler, control takeover, immutable recipes, offline event consistency, safe restarts, three acts and recipe/result retrieval. No live provider call was made.
+- Combat source includes pure60Hz analytic movement/collision, three families/six profiles, five health/dodge/immunity, physical attachment strikes, protected counter windows, chip progress, immediate broken-ability cancellation, actual final strike and seeded scheduling.
+- Both specialists completed and returned ownership. Source review corrected double pointer scaling, collision-clipped warnings, burst-gap visibility, paused takeover IDs, one-slot rehearsal Remix, socket aiming, cached echo previews and cross-window audio preference propagation.
+- Built-in imagegen produced one2.7MB concept sheet at assets/concepts/target-sheet-v1.png; exact prompt and pending approval retained. No final kit, Meshy/Blender production, asset spend or external publication.
+- Global TypeScript5.9.3 parser via bundled Node24.19.0 parsed all31TS/TSX files with zero syntax diagnostics. evidence/source-syntax.json labels this syntax-only; it is not the target TypeScript7 typecheck.
+- Asset provenance audit ran and reports0approved assets and7pending development assets. It establishes no in-engine/final art acceptance.
+- Test sources cover contracts, combat, mocked server/provider states and browser rehearsal. Install, package-lock resolution, typecheck, Vitest, build, Playwright, Docker, real providers, hosted, OBS and human checks remain unrun.
+- Storage remains below10GiB (last observed approximately3.95GiB). Task source occupies about3.3MB. No unrelated cleanup attempted; storage and concept questions remain pending.
+- Dockerfile/render.yaml/DEPLOYMENT_REVIEW.md prepared; no hosting/public repository created. Local Git main has unborn HEAD and untracked project source.

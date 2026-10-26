@@ -1,0 +1,15 @@
+.git
+node_modules
+**/node_modules
+.env
+.env.*
+data
+.runtime
+test-results
+playwright-report
+coverage
+assets/candidates
+assets/source
+assets/production
+**/dist
+*.log

@@ -1,0 +1,8 @@
+{
+  "name": "@aragoz/combat",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": { "@aragoz/contracts": "0.1.0" }
+}

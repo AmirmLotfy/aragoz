@@ -1,0 +1,50 @@
+{
+  "recordedAt": "2026-10-26T02:39:46.374986+00:00",
+  "fullFirstReleaseScopePreserved": true,
+  "localImplementationVerified": true,
+  "releaseReady": false,
+  "spendingAuthorized": false,
+  "privateRepositoryApproved": true,
+  "repository": "https://github.com/AmirmLotfy/aragoz",
+  "publicPreview": "https://rid-structures-pursuant-owners.trycloudflare.com/rehearse",
+  "checks": {
+    "typecheck": {
+      "passed": true
+    },
+    "unit": {
+      "passed": 112,
+      "failed": 0,
+      "files": 7,
+      "log": "evidence/release-completion-tests.log"
+    },
+    "assetFixtures": {
+      "passed": 62,
+      "failed": 0,
+      "scope": "current Docker build stage plus retained TAP receipt"
+    },
+    "browser": {
+      "passed": 11,
+      "failed": 0,
+      "workers": 1,
+      "log": "evidence/release-completion-browser.log"
+    },
+    "releaseBuild": {
+      "passed": true,
+      "admittedRuntimeAssets": 7,
+      "log": "evidence/release-completion-build.log"
+    },
+    "linuxContainer": {
+      "passed": true,
+      "platform": "linux/arm64",
+      "checks": 12,
+      "receipt": "evidence/linux-container-smoke.json"
+    }
+  },
+  "remainingGates": {
+    "realTwitchCausalChain": "Developer fresh login/app registration/consent and genuine chat pending",
+    "hostedProviderRecovery": "Requires configured genuine account; local/container recovery separately passed",
+    "obsPerformance": "OBS33installed and signed; screen access approved, native toggle control rejected as changed window; owner manual toggle pending. No recording yet.",
+    "humanAcceptance": "0 of3first-time hosts;0genuine-viewer sessions recorded"
+  },
+  "noFabrication": "Unit fixtures, AI-led input, actual HTTPS, local Linux, genuine provider and human evidence remain distinct."
+}

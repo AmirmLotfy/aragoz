@@ -1,0 +1,14 @@
+{
+  "version": "33.0.0",
+  "source": "https://github.com/obsproject/obs-studio/releases/download/33.0.0/OBS-Studio-33.0.0-macOS-Apple.dmg",
+  "sha256": "b36f4e9da5f2f17c733ba711c8fe0656d6b0cd573cfe96eeb3e68325cffef739",
+  "verifiedAgainst": "Official GitHub release asset digest",
+  "cost": 0,
+  "capturePerformed": false,
+  "installedPath": "/Users/frameless/Desktop/Aragoz/.runtime/OBS.app",
+  "codesignVerified": true,
+  "screenRecordingAuthorizedByOwner": true,
+  "permissionEnabledVerified": false,
+  "nativeControl": "System Settings rejected changes as stale/changed window; owner manual toggle requested",
+  "cameraMicrophoneInputMonitoringRequested": false
+}

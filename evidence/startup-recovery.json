@@ -1,0 +1,74 @@
+{
+  "recordedAt": "2026-10-26T01:32:50Z",
+  "scope": "bounded local stage startup and graphics-failure recovery",
+  "evidenceKind": "source review, unit, typecheck, build and HTTP; browser recovery not executed",
+  "changes": [
+    "One eight-second budget covers manifest and GLB loading; timed-out work retains shipped approved fallback geometry.",
+    "Late decoded containers are disposed without scene replacement; stage disposal cancels pending admission.",
+    "Initialization, rendering failure and WebGL context-loss paths clear inputs, pause the simulation, reset readiness and release resources.",
+    "Recovery alert appears above opening/pause cards with a reload action; live reload keeps the safe restart flow.",
+    "Rehearsal preset changes unmount old geometry while preparing the new recipe."
+  ],
+  "checks": {
+    "typecheck": {
+      "passed": true
+    },
+    "unit": {
+      "passed": 98,
+      "failed": 0,
+      "files": 5,
+      "newAssetDeadlineCases": 5
+    },
+    "releaseBuild": {
+      "passed": true,
+      "admittedRuntimeAssets": 7
+    },
+    "sourceReview": {
+      "passed": true,
+      "owner": "startup_recovery_review",
+      "limit": "source-level only"
+    },
+    "http": {
+      "readiness": 200,
+      "rehearsal": 200,
+      "hostingConfigured": false,
+      "modelEnabled": false
+    }
+  },
+  "browser": {
+    "executed": false,
+    "newCases": 4,
+    "reason": "Local browser control disabled in Work settings; no alternate browser automation used.",
+    "previousEvidence": "Seven browser flows passed before this packet. Those results do not validate the changed recovery UI."
+  },
+  "process": {
+    "pid": 82684,
+    "execSession": 90103,
+    "command": "node apps/server/src/index.ts",
+    "cwd": "/Users/frameless/Desktop/Aragoz",
+    "origin": "http://127.0.0.1:3000",
+    "database": ".runtime/preview.sqlite"
+  },
+  "spend": {
+    "paidHostedResourcesCreated": 0,
+    "gameOpenAIRequests": 0,
+    "meshyCredits": 0
+  },
+  "artifacts": [
+    {
+      "path": "evidence/startup-recovery-typecheck.log",
+      "bytes": 42,
+      "sha256": "44273af087ef4f08e29c7fecd416d59e1d6d5c2ebde0ce2b97d242b784abacd9"
+    },
+    {
+      "path": "evidence/startup-recovery-tests.log",
+      "bytes": 442,
+      "sha256": "d4c37b9eecbb3b07fae451094ac34425dea320f0b04475fd6cdc936694c000a5"
+    },
+    {
+      "path": "evidence/startup-recovery-build.log",
+      "bytes": 24482,
+      "sha256": "a6f22c952532896f5907d88525977bd6d3072a6a563b63e17e69eebd1be1428a"
+    }
+  ]
+}

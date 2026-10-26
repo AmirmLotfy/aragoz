@@ -1,0 +1,15 @@
+{
+  "kind": "AI-led browser input through actual public HTTPS preview",
+  "origin": "https://reproduce-instruction-valley-caught.trycloudflare.com",
+  "before": {
+    "x": 0,
+    "z": 2.8
+  },
+  "after": {
+    "x": 1.750000000000001,
+    "z": 2.8
+  },
+  "paused": "true",
+  "tick": "1247",
+  "limit": "Not genuine viewer or human acceptance; first load used partial admitted assets plus approved fallbacks."
+}

@@ -1,0 +1,10 @@
+{
+  "kind": "actual local supervisor restart with unchanged HTTPS tunnel",
+  "origin": "https://rid-structures-pursuant-owners.trycloudflare.com",
+  "serverPidBefore": 85823,
+  "serverPidAfter": 92463,
+  "tunnelPid": 84938,
+  "passed": true,
+  "modelEnabled": false,
+  "limit": "No genuine Twitch credentials configured yet."
+}

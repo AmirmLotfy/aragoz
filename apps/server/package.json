@@ -1,0 +1,5 @@
+{
+  "name": "@aragoz/server", "version": "0.1.0", "private": true, "type": "module",
+  "scripts": { "dev": "node --env-file-if-exists=../../.env --watch src/index.ts", "start": "node --env-file-if-exists=../../.env src/index.ts", "build": "tsc --noEmit -p tsconfig.json", "test": "vitest run test --maxWorkers=1" },
+  "dependencies": { "@aragoz/contracts": "*", "fastify": "5.12.7", "@fastify/cookie": "11.1.3", "@fastify/static": "10.1.7", "@fastify/websocket": "11.3.4", "@fastify/rate-limit": "11.2.1" }
+}

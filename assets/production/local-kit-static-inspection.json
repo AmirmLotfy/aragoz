@@ -1,0 +1,528 @@
+{
+  "status": "static-candidates-pass",
+  "measuredAt": "2026-10-25T21:52:24.541Z",
+  "provenance": "Original Blender authored geometry and deterministic authored color tiles",
+  "checks": [
+    {
+      "id": "hero",
+      "sha256": "ef5cf1bb8186a5a22c96f4b26cda6497a267c88e12ffc50238348234ec3c2f6f",
+      "byteLength": 540388,
+      "triangles": 10492,
+      "sceneTriangles": 10492,
+      "primitiveCount": 31,
+      "materialCount": 7,
+      "dimensions": [
+        0.9000000631746969,
+        1.8199998457149924,
+        0.6999999927465357
+      ],
+      "bounds": {
+        "min": [
+          -0.4500000274172473,
+          -4.035646838929097e-8,
+          -0.34999999990631814
+        ],
+        "max": [
+          0.4500000357574496,
+          1.819999805358524,
+          0.34999999284021754
+        ]
+      },
+      "nodeNames": [
+        "carved-head-crafted-surfaces",
+        "carved-head",
+        "hip-1-crafted-surfaces",
+        "hip-1",
+        "hip--1-crafted-surfaces",
+        "hip--1",
+        "performer-body-crafted-surfaces",
+        "hand-baton-crafted-surfaces",
+        "hand-baton",
+        "shoulder-1-crafted-surfaces",
+        "shoulder-1",
+        "open-hand-crafted-surfaces",
+        "open-hand",
+        "shoulder--1-crafted-surfaces",
+        "shoulder--1",
+        "performer-body",
+        "hero"
+      ],
+      "animationNames": [
+        "idle",
+        "run",
+        "strike",
+        "dodge",
+        "hurt",
+        "victory",
+        "defeat"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 1853
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 18270
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15475
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        }
+      ],
+      "gzipBytes": 271667,
+      "requiredNodesPassed": true,
+      "requiredAnimationsPassed": true,
+      "materialBudgetPassed": true
+    },
+    {
+      "id": "stage",
+      "sha256": "8e7be36a5bdf5bdec994d293304cec30d80e87d4d1b5b3460ffc716fa2b11688",
+      "byteLength": 639552,
+      "triangles": 10815,
+      "sceneTriangles": 10815,
+      "primitiveCount": 12,
+      "materialCount": 7,
+      "dimensions": [
+        15.300000190734863,
+        5.510000206530094,
+        8.717819690704346
+      ],
+      "bounds": {
+        "min": [
+          -7.650000095367432,
+          -0.20999999344348907,
+          -4.367819786071777
+        ],
+        "max": [
+          7.650000095367432,
+          5.300000213086605,
+          4.349999904632568
+        ]
+      },
+      "nodeNames": [
+        "block-east-crafted-surfaces",
+        "block-east",
+        "block-west-crafted-surfaces",
+        "block-west",
+        "stage-crafted-surfaces",
+        "stage"
+      ],
+      "animationNames": [],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 18270
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 20831
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15475
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        }
+      ],
+      "gzipBytes": 285928,
+      "requiredNodesPassed": true,
+      "requiredAnimationsPassed": true,
+      "materialBudgetPassed": true
+    },
+    {
+      "id": "shell-teapot",
+      "sha256": "67f0c21dc6242752386d8535f6486844fdf93eefa1b6166f6746a38273fc54ce",
+      "byteLength": 360684,
+      "triangles": 8676,
+      "sceneTriangles": 8676,
+      "primitiveCount": 5,
+      "materialCount": 5,
+      "dimensions": [
+        2.489941403831544,
+        2.299999874561891,
+        1.799999942947224
+      ],
+      "bounds": {
+        "min": [
+          -1.239941389604967,
+          -7.418326397612418e-9,
+          -0.8999999722004617
+        ],
+        "max": [
+          1.2500000142265772,
+          2.2999998671435646,
+          0.8999999707467623
+        ]
+      },
+      "nodeNames": [
+        "kettle-body-crafted-surfaces",
+        "kettle-body",
+        "left",
+        "right",
+        "shell-teapot"
+      ],
+      "animationNames": [
+        "idle"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 1853
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 18270
+        }
+      ],
+      "gzipBytes": 206421,
+      "requiredNodesPassed": true,
+      "requiredAnimationsPassed": true,
+      "materialBudgetPassed": true
+    },
+    {
+      "id": "shell-mirror",
+      "sha256": "c540a9c1c87b28003d8133b693fb47a42db5d4e92d52afd6e1af34b2d96ce9f7",
+      "byteLength": 352672,
+      "triangles": 7205,
+      "sceneTriangles": 7205,
+      "primitiveCount": 5,
+      "materialCount": 5,
+      "dimensions": [
+        1.899999971098083,
+        2.59999980032444,
+        1.200000090267661
+      ],
+      "bounds": {
+        "min": [
+          -0.9499999704893582,
+          0,
+          -0.6000000693181313
+        ],
+        "max": [
+          0.9500000006087248,
+          2.59999980032444,
+          0.6000000209495298
+        ]
+      },
+      "nodeNames": [
+        "braggart-body-crafted-surfaces",
+        "braggart-body",
+        "left",
+        "right",
+        "shell-mirror"
+      ],
+      "animationNames": [
+        "idle"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 47168
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 1853
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15475
+        }
+      ],
+      "gzipBytes": 219121,
+      "requiredNodesPassed": true,
+      "requiredAnimationsPassed": true,
+      "materialBudgetPassed": true
+    },
+    {
+      "id": "module-charge",
+      "sha256": "bbc7d9fce10877a8edccb1e534fd9b1a894f1ca5a4942b4a459dc25026631d72",
+      "byteLength": 171804,
+      "triangles": 2512,
+      "sceneTriangles": 2512,
+      "primitiveCount": 7,
+      "materialCount": 3,
+      "dimensions": [
+        1.2000000719840713,
+        0.8000000185715521,
+        0.6999999936003434
+      ],
+      "bounds": {
+        "min": [
+          -0.6000000359920357,
+          3.1339496331384e-8,
+          -0.3499999968001717
+        ],
+        "max": [
+          0.6000000359920357,
+          0.8000000499110484,
+          0.3499999968001717
+        ]
+      },
+      "nodeNames": [
+        "axle-crafted-surfaces",
+        "wheel-left-crafted-surfaces",
+        "wheel-left",
+        "wheel-right-crafted-surfaces",
+        "wheel-right",
+        "axle",
+        "module-charge"
+      ],
+      "animationNames": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        }
+      ],
+      "gzipBytes": 115685,
+      "requiredNodesPassed": true,
+      "requiredAnimationsPassed": true,
+      "materialBudgetPassed": true
+    },
+    {
+      "id": "module-steam",
+      "sha256": "a1ccdfb139e6b910ca35706b7452925d9b5a86a39f499e93abc31088b641c719",
+      "byteLength": 175384,
+      "triangles": 2844,
+      "sceneTriangles": 2844,
+      "primitiveCount": 4,
+      "materialCount": 3,
+      "dimensions": [
+        0.5999999886751652,
+        1.9000001442081746,
+        0.600000011187344
+      ],
+      "bounds": {
+        "min": [
+          -0.2999999943375826,
+          1.5492314986431666e-8,
+          -0.3000000051628895
+        ],
+        "max": [
+          0.2999999943375826,
+          1.9000001597004896,
+          0.30000000602445454
+        ]
+      },
+      "nodeNames": [
+        "valve-crafted-surfaces",
+        "valve-lid-crafted-surfaces",
+        "valve-lid",
+        "valve",
+        "module-steam"
+      ],
+      "animationNames": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        }
+      ],
+      "gzipBytes": 109473,
+      "requiredNodesPassed": true,
+      "requiredAnimationsPassed": true,
+      "materialBudgetPassed": true
+    },
+    {
+      "id": "module-echo",
+      "sha256": "7758967247b47b334fe17c8ced0c91bc498d56b64207a2e715a551a5de2505d1",
+      "byteLength": 184584,
+      "triangles": 2252,
+      "sceneTriangles": 2252,
+      "primitiveCount": 5,
+      "materialCount": 3,
+      "dimensions": [
+        0.6999997496604919,
+        1.8000000917103343,
+        0.3999999720965368
+      ],
+      "bounds": {
+        "min": [
+          -0.3499998152256012,
+          7.576861804636792e-9,
+          -0.19999999013213454
+        ],
+        "max": [
+          0.34999993443489075,
+          1.800000099287196,
+          0.19999998196440227
+        ]
+      },
+      "nodeNames": [
+        "mirror-crafted-surfaces",
+        "mirror-face-crafted-surfaces",
+        "mirror-face",
+        "mirror",
+        "module-echo"
+      ],
+      "animationNames": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 47168
+        }
+      ],
+      "gzipBytes": 137320,
+      "requiredNodesPassed": true,
+      "requiredAnimationsPassed": true,
+      "materialBudgetPassed": true
+    }
+  ],
+  "totalSceneTriangles": 44796,
+  "totalGzipBytes": 1345615,
+  "engineAcceptanceEstablished": false,
+  "note": "Static rest-pose structure/bounds/embedded-image inspection only. Actual Babylon import, animated envelope, gameplay camera, draw calls, OBS and human review remain separate."
+}

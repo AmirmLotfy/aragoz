@@ -1,0 +1,34 @@
+# NOT AUTHORIZED: owner prohibited all spending on 26 October 2026.
+# Historical paid Render design retained for reference only. Do not apply.
+services:
+  - type: web
+    name: aragoz-preview
+    runtime: docker
+    plan: 0.5c-512mb
+    region: frankfurt
+    numInstances: 1
+    autoDeployTrigger: 'off'
+    healthCheckPath: /api/readiness
+    disk:
+      name: aragoz-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PUBLIC_ORIGIN
+        sync: false
+      - key: CREDENTIAL_ENCRYPTION_KEY
+        sync: false
+      - key: TWITCH_CLIENT_ID
+        sync: false
+      - key: TWITCH_CLIENT_SECRET
+        sync: false
+      - key: TWITCH_REDIRECT_URI
+        sync: false
+      - key: INVITED_BROADCASTER_IDS
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: MODEL_DAILY_REQUEST_LIMIT
+        value: "0"
+      - key: MAX_ACTIVE_SHOWS
+        value: "3"

@@ -1,0 +1,10 @@
+{
+  "workspace": "/Users/frameless/Desktop/Aragoz",
+  "job": "inspect",
+  "freeGiB": 5.9,
+  "estimatedMiB": 0,
+  "reserveMiB": 256,
+  "minimumGiB": 0.25,
+  "admitted": true,
+  "policy": "26Oct user override: bounded next-job estimate, no fixed10GiB floor"
+}

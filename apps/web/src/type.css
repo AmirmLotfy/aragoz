@@ -1,0 +1,5 @@
+/* Unmodified upstream Noto variable fonts, self-hosted under SIL OFL 1.1.
+   Full copyright/license notices ship in /fonts and provenance in assets/fonts. */
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:100 900;font-display:swap;src:url('/fonts/NotoSans.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Arabic';font-style:normal;font-weight:100 900;font-display:swap;src:url('/fonts/NotoSansArabic.ttf') format('truetype')}
+code{font-family:inherit}input,select{color:inherit}::selection{background:#d5a43b;color:#24231f}

@@ -1,0 +1,22 @@
+{
+  "evidenceKind": "genuine-human-session",
+  "status": "unrecorded",
+  "sessionId": null,
+  "consentRecord": null,
+  "date": null,
+  "hostPseudonym": null,
+  "firstTimeHost": null,
+  "genuineViewerCount": null,
+  "hostedUrl": null,
+  "deployedRevision": null,
+  "deviceAndSoftware": null,
+  "recipeHash": null,
+  "selectedAuthorEvidence": null,
+  "counterOpportunities": [],
+  "triggeredWithinTwoOpportunities": null,
+  "viewerComprehensionResponses": [],
+  "correctRuleAndEffectCount": null,
+  "recordingReference": null,
+  "assistanceAfterScoredTrials": [],
+  "observationsAndFailures": []
+}

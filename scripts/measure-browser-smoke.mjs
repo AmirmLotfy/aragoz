@@ -1,0 +1,9 @@
+import {chromium} from 'playwright';import {readFile,writeFile}from'node:fs/promises';
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}),results=[];
+try{for(const viewport of [{width:1920,height:1080},{width:1280,height:720}]){
+ const page=await browser.newPage({viewport,acceptDownloads:true});await page.goto('http://127.0.0.1:3000/rehearse');await page.waitForFunction(()=>document.querySelector('canvas')?.dataset.geometry?.includes('5 approved assets'));
+ const canvas=page.getByTestId('game-canvas');await page.getByRole('button',{name:'Raise the curtain',exact:true}).click();const start=performance.now();await page.waitForTimeout(8500);
+ const info=await canvas.evaluate(c=>({tick:Number(c.dataset.simTick),triangles:Number(c.dataset.triangles),drawCalls:Number(c.dataset.drawCalls),renderWidth:c.width,renderHeight:c.height,outcome:c.dataset.outcome,renderer:(()=>{const gl=c.getContext('webgl2')??c.getContext('webgl'),ext=gl.getExtension('WEBGL_debug_renderer_info');return ext?gl.getParameter(ext.UNMASKED_RENDERER_WEBGL):null;})()}));
+ const download=page.waitForEvent('download');await page.evaluate(()=>window.dispatchEvent(new Event('aragoz:export-performance')));const file=await download;const report=JSON.parse(await readFile(await file.path(),'utf8'));
+ results.push({viewport,wallTimeMs:performance.now()-start,...info,report});await page.close();
+}const result={evidence:'Short headless local M1 Metal browser smoke; no OBS or human acceptance; uncontrolled shared host',at:new Date().toISOString(),results};await writeFile('evidence/browser/performance-smoke.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));}finally{await browser.close();}

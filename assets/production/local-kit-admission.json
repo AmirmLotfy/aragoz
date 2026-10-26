@@ -1,0 +1,30 @@
+{
+  "revision": "local-kit-v1",
+  "decision": "admitted for the technical preview",
+  "reviewedAt": "2026-10-25T22:13:07.377Z",
+  "reviewer": "Codex integration owner, visual and engine inspection",
+  "directionApproval": "assets/concepts/approval.json",
+  "sources": "assets/source/local-kit-v1",
+  "staticEvidence": "assets/production/local-kit-static-inspection.json",
+  "runtimeEvidence": "evidence/browser/candidate-inspection.json",
+  "causalPlayEvidence": "evidence/browser/causal-counter.json",
+  "capturesReviewed": [
+    "evidence/browser/candidate-pair-0.png",
+    "evidence/browser/candidate-pair-1.png",
+    "evidence/browser/candidate-home.png",
+    "evidence/browser/candidate-home-mobile.png",
+    "evidence/browser/charge-broken.png"
+  ],
+  "checks": {
+    "embeddedResources": true,
+    "metreScale": true,
+    "shellSockets": true,
+    "allThreePairsImported": true,
+    "physicalBreakAndAbilityRemoval": true,
+    "headerFramingCorrected": true,
+    "readableAtCaptureSize": true,
+    "originalGeometryAndTextures": true,
+    "paidProviderCalls": 0
+  },
+  "limits": "Local static, actual engine and AI-led gameplay evidence. No genuine host/viewer, OBS, hosted or release-readiness acceptance is implied."
+}

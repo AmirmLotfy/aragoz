@@ -1,0 +1,37 @@
+{
+  "recordedAt": "2026-10-26T02:39:46.374986+00:00",
+  "kind": "actual temporary HTTPS self-hosted technical preview",
+  "origin": "https://rid-structures-pursuant-owners.trycloudflare.com",
+  "rehearsal": "https://rid-structures-pursuant-owners.trycloudflare.com/rehearse",
+  "host": "Owner Mac with loopback-only server and account-free Cloudflare tunnel",
+  "database": "data/public-preview/aragoz.sqlite",
+  "encryptionKeyFile": "data/public-preview/credentials.key (private; value excluded)",
+  "processes": {
+    "status": "ready",
+    "origin": "https://rid-structures-pursuant-owners.trycloudflare.com",
+    "port": 3010,
+    "database": "/Users/frameless/Desktop/Aragoz/data/public-preview/aragoz.sqlite",
+    "supervisorPid": 84937,
+    "serverPid": 92463,
+    "tunnelPid": 84938,
+    "modelEnabled": false
+  },
+  "readiness": {
+    "ready": true,
+    "hostingConfigured": false,
+    "modelEnabled": false
+  },
+  "approvedAssetsObserved": 5,
+  "visibleTrianglesObserved": 35387,
+  "drawCallsObserved": 61,
+  "browserScreenshot": "evidence/browser/public-release-stage.png",
+  "sourceInputEvidence": "evidence/browser/public-preview-input.json",
+  "reloadEvidence": "evidence/public-preview-reload.json",
+  "cost": 0,
+  "limits": [
+    "Temporary URL; Mac and tunnel process must remain running.",
+    "User-created Twitch account @amirmolotfy observed; developer reauthentication and app registration pending.",
+    "No genuine OAuth/chat, OBS session, or human acceptance evidence.",
+    "Earlier first-load fallback during transient network/CPU load was preserved; final browser reload admitted all5assets."
+  ]
+}

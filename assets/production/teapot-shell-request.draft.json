@@ -1,0 +1,15 @@
+{
+  "status": "draft-not-authorized-not-submitted",
+  "purpose": "One initial kettle shell geometry trial, followed by local inspection and Blender cleanup before any second asset request.",
+  "reference": { "approvedDirection": "assets/concepts/target-sheet-v1.png", "isolatedImage": "assets/references/teapot-shell-v1.png", "isolatedImageExists": false },
+  "tool": "mcp__meshy__meshy_image_to_3d",
+  "request": {
+    "ai_model": "meshy-6", "model_type": "standard", "topology": "triangle", "target_polycount": 10000,
+    "should_remesh": true, "should_texture": false, "enable_pbr": false, "image_enhancement": false,
+    "target_formats": ["glb"], "file_path": "/Users/frameless/Desktop/Aragoz/assets/references/teapot-shell-v1.png", "response_format": "json"
+  },
+  "pricing": { "checkedOn": "2026-10-26", "source": "https://docs.meshy.ai/en/api/pricing", "creditsPerRequest": 20, "reason": "Pinned Meshy 6 geometry only. Textures/material palette are authored in Blender; no separate rig/remesh/texture requests are included." },
+  "authorization": { "approved": false, "authorizedCredits": 0, "submissionCount": 0, "retryAuthorized": false },
+  "requiredBeforeSubmit": ["10 GiB resource admission", "create and review the isolated source reference", "present exact source/settings/upload disclosure and 20-credit cap for user approval", "verify current pricing and account access", "record returned task ID immediately without repeating an unresolved call"],
+  "note": "The connector's latest/model-5 descriptions lag current official docs. Pin Meshy 6 rather than relying on latest; user model/spend confirmation is still required. This draft creates no provider task."
+}

@@ -1,0 +1,13 @@
+{
+  "asset": "target-sheet-v1.png",
+  "kind": "concept-only",
+  "tool": "built-in image_gen",
+  "prompt": "target-sheet-v1.prompt.txt",
+  "approval": "approved-direction",
+  "finalKitProduction": "local-kit-v1-admitted-for-technical-preview",
+  "approvedBy": "user",
+  "approvedOn": "2026-10-26",
+  "approvalScope": "Visual direction for the final asset kit. Paid generation, final assets and in-engine acceptance remain separate gates.",
+  "note": "User approved the direction in chat on 26 October 2026. Generated concept is not playable gameplay or final in-engine asset acceptance.",
+  "finalKitAdmissionRecord": "assets/production/local-kit-admission.json"
+}

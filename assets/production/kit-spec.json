@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "status": "local-kit-v1-admitted-for-technical-preview",
+  "directionApproval": {
+    "record": "assets/concepts/approval.json",
+    "scope": "visual-direction",
+    "approvedOn": "2026-10-26"
+  },
+  "resourcePolicy": "26 October user override: bounded next-job estimates; one heavy job at a time",
+  "coordinateContract": {
+    "runtime": "metres; right-handed; Y up; gameplay on XZ; front +Z",
+    "blender": "metres; Z up; semantic front -Y; use glTF Y-up export conversion exactly once",
+    "actorRoot": "floor-level origin, centred in XZ; no engine-side rescaling or corrective mirroring",
+    "socketOffsetsRuntime": {
+      "left": [
+        -1.05,
+        0,
+        0.2
+      ],
+      "right": [
+        1.05,
+        0,
+        0.2
+      ]
+    },
+    "collision": "shipped analytic simulation shapes; visual geometry never changes game rules"
+  },
+  "palette": {
+    "canvas": "#F2E6CA",
+    "soot": "#24231F",
+    "vermilion": "#C74632",
+    "cobalt": "#244A9A",
+    "ochre": "#D5A43B"
+  },
+  "assets": [
+    {
+      "id": "hero",
+      "source": "Blender authored against approved direction",
+      "dimensions": [
+        0.9,
+        1.82,
+        0.7
+      ],
+      "triangleTarget": 12000,
+      "materialTarget": 7,
+      "textureMaxDimension": 1024,
+      "requiredNodes": [
+        "hand-baton"
+      ],
+      "animations": [
+        "idle",
+        "run",
+        "strike",
+        "dodge",
+        "hurt",
+        "victory",
+        "defeat"
+      ],
+      "purpose": "Compact wooden performer with red cap, chalk cloth, cobalt sash, broad hands and baton. Rigid limb pivots, no detailed fingers or cloth simulation."
+    },
+    {
+      "id": "stage",
+      "source": "Blender authored geometry",
+      "dimensions": [
+        15.3,
+        5.5,
+        8.7
+      ],
+      "triangleTarget": 18000,
+      "materialTarget": 7,
+      "textureMaxDimension": 1024,
+      "requiredNodes": [
+        "block-west",
+        "block-east"
+      ],
+      "animations": [],
+      "purpose": "Portable timber proscenium with quiet floor, red/cobalt cloth and readable marked blocks. Keep exact ARENA block positions and playable clearances."
+    },
+    {
+      "id": "shell-teapot",
+      "source": "Original Blender authored shell; optional paid Meshy comparison later",
+      "dimensions": [
+        2.5,
+        2.3,
+        1.8
+      ],
+      "triangleTarget": 10000,
+      "materialTarget": 5,
+      "textureMaxDimension": 1024,
+      "requiredNodes": [
+        "left",
+        "right"
+      ],
+      "animations": [
+        "idle"
+      ],
+      "purpose": "Kettle shell and expressive face. Functional wheels, steam valve and mirror are separate modules. The concept's decorative spoon/staff is omitted to avoid suggesting an unimplemented attack."
+    },
+    {
+      "id": "shell-mirror",
+      "source": "Blender authored; optional later Meshy shell only after first asset acceptance",
+      "dimensions": [
+        1.9,
+        2.6,
+        1.2
+      ],
+      "triangleTarget": 10000,
+      "materialTarget": 5,
+      "textureMaxDimension": 1024,
+      "requiredNodes": [
+        "left",
+        "right"
+      ],
+      "animations": [
+        "idle"
+      ],
+      "purpose": "A wooden mirrored braggart in the same craft language; no realtime reflection pass. Same socket and collision contract as the kettle shell."
+    },
+    {
+      "id": "module-charge",
+      "source": "Blender authored rigid mechanical assembly",
+      "dimensions": [
+        1.2,
+        0.8,
+        0.7
+      ],
+      "triangleTarget": 3500,
+      "materialTarget": 3,
+      "textureMaxDimension": 1024,
+      "requiredNodes": [
+        "axle",
+        "wheel-left",
+        "wheel-right"
+      ],
+      "animations": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "purpose": "Clearly visible wheel and axle. Jam and physical detach correspond to the real charge state; no residual charge after break."
+    },
+    {
+      "id": "module-steam",
+      "source": "Blender authored rigid kettle valve",
+      "dimensions": [
+        0.6,
+        1.9,
+        0.6
+      ],
+      "triangleTarget": 3000,
+      "materialTarget": 3,
+      "textureMaxDimension": 1024,
+      "requiredNodes": [
+        "valve",
+        "valve-lid"
+      ],
+      "animations": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "purpose": "Brass vessel, red valve and lifting lid. Steam visibility must use actual boss.damageActive, including safe gaps."
+    },
+    {
+      "id": "module-echo",
+      "source": "Blender authored rigid mirror attachment",
+      "dimensions": [
+        0.7,
+        1.8,
+        0.4
+      ],
+      "triangleTarget": 2500,
+      "materialTarget": 3,
+      "textureMaxDimension": 1024,
+      "requiredNodes": [
+        "mirror",
+        "mirror-face"
+      ],
+      "animations": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "purpose": "Distinct framed matte mirror with authored crack/break state. No expensive reflection or ghost particles obscuring the copied trail."
+    }
+  ],
+  "admission": {
+    "outputFormat": "GLB2, triangles, embedded buffers/images, no external URLs or codec downloads",
+    "candidateState": "pending-approval",
+    "requiredEvidence": [
+      "source and rights record",
+      "static GLB inspection",
+      "actual Babylon import and capture",
+      "socket/collider parity",
+      "silhouette at stream-preview size",
+      "payload/draw-call/triangle measurement"
+    ],
+    "finalState": "approved only after evidence is recorded; direction approval alone does not admit a GLB"
+  }
+}

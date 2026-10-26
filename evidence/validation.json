@@ -1,0 +1,171 @@
+{
+  "recordedAt": "2026-10-26T02:39:46.374986+00:00",
+  "evidenceKind": "Current local, mocked-provider, AI-led browser, actual HTTPS rehearsal and Linux container validation; no genuine Twitch/OBS/human acceptance",
+  "node": "v24.19.0",
+  "git": {
+    "branch": "main",
+    "head": null,
+    "state": "pre-initial-commit checkpoint; private repository created and approved; source publication in progress"
+  },
+  "checks": {
+    "cleanInstall": {
+      "passed": true,
+      "packages": 142
+    },
+    "typecheck": {
+      "passed": true
+    },
+    "unit": {
+      "passed": 112,
+      "failed": 0,
+      "files": 7,
+      "log": "evidence/release-completion-tests.log"
+    },
+    "assetFixtures": {
+      "passed": 62,
+      "failed": 0,
+      "scope": "current Docker build stage plus retained TAP receipt"
+    },
+    "browser": {
+      "passed": 11,
+      "failed": 0,
+      "workers": 1,
+      "log": "evidence/release-completion-browser.log"
+    },
+    "releaseBuild": {
+      "passed": true,
+      "admittedRuntimeAssets": 7,
+      "log": "evidence/release-completion-build.log"
+    },
+    "productionOnlyPackage": {
+      "passed": true,
+      "dependencyPackages": 86,
+      "dependencyMiB": 32
+    },
+    "linuxContainer": {
+      "passed": true,
+      "platform": "linux/arm64",
+      "checks": 12,
+      "receipt": "evidence/linux-container-smoke.json"
+    }
+  },
+  "additionalEvidence": {
+    "assetAdmission": "assets/production/local-kit-admission.json",
+    "actualKeyboardPlay": "evidence/browser/causal-counter.json",
+    "shortM1Sample": "evidence/browser/performance-smoke.json",
+    "releaseCaptures": "evidence/browser/release-capture.json",
+    "baseImageManifest": "evidence/base-image-manifest.json",
+    "startupRecovery": "evidence/startup-recovery.json",
+    "publicPreview": "evidence/public-preview.json",
+    "linuxBuild": "evidence/linux-container-build.json",
+    "linuxSmoke": "evidence/linux-container-smoke.json",
+    "releaseReadiness": "evidence/release-readiness.json"
+  },
+  "notPerformed": [
+    "Genuine broadcaster OAuth/chat and game model calls",
+    "Actual30minute OBS sessions at1080p/720p",
+    "Genuine human acceptance sessions"
+  ],
+  "spend": {
+    "meshyCredits": 0,
+    "gameOpenAIRequests": 0,
+    "paidHostedResourcesCreated": 0
+  },
+  "pendingApproval": null,
+  "artifacts": [
+    {
+      "path": "evidence/typecheck.log",
+      "bytes": 42,
+      "sha256": "44273af087ef4f08e29c7fecd416d59e1d6d5c2ebde0ce2b97d242b784abacd9"
+    },
+    {
+      "path": "evidence/unit-tests.log",
+      "bytes": 243,
+      "sha256": "ae0b68d59b34ec2f835267d43a64f3b03d357266dd08380b9a82c4d4c7f99f2e"
+    },
+    {
+      "path": "evidence/asset-format.tap",
+      "bytes": 4093,
+      "sha256": "4d50f7caab176f1dfbc4981185e934a5b88413783ad9d382e34d77bce63b99c5"
+    },
+    {
+      "path": "evidence/browser-tests.log",
+      "bytes": 1279,
+      "sha256": "5e5aad5adc63e5ff90b8255091db0678d34e1ce29527bd8a9e003834926880c2"
+    },
+    {
+      "path": "evidence/release-build.log",
+      "bytes": 24482,
+      "sha256": "0af6681134081687b35e71424773e2cf458d449c9789ba47180367383fd37c2c"
+    },
+    {
+      "path": "evidence/runtime-package-check.log",
+      "bytes": 181,
+      "sha256": "a1e8e2e2611abe27aa4eb54e548d0d8c8da47c84333f059bfe60c7744efe4206"
+    },
+    {
+      "path": "evidence/final-clean-install.log",
+      "bytes": 26,
+      "sha256": "d541f72b784bcc3f7831fefa035a6cdbe347d6a2e9b331e5e7b50b819ea91aa9"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 68935,
+      "sha256": "4d5fda594eff9c1ddf3af928377b4488b559548a766a888c3e135787c9959d88"
+    },
+    {
+      "path": "assets/manifest.json",
+      "bytes": 6491,
+      "sha256": "e0560c812584c67870825589fe25870d3d536d7086b9200fd2e8ff436c89dfb0"
+    },
+    {
+      "path": "evidence/startup-recovery-typecheck.log",
+      "bytes": 42,
+      "sha256": "44273af087ef4f08e29c7fecd416d59e1d6d5c2ebde0ce2b97d242b784abacd9"
+    },
+    {
+      "path": "evidence/startup-recovery-tests.log",
+      "bytes": 442,
+      "sha256": "d4c37b9eecbb3b07fae451094ac34425dea320f0b04475fd6cdc936694c000a5"
+    },
+    {
+      "path": "evidence/startup-recovery-build.log",
+      "bytes": 24482,
+      "sha256": "a6f22c952532896f5907d88525977bd6d3072a6a563b63e17e69eebd1be1428a"
+    },
+    {
+      "path": "evidence/release-completion-typecheck.log",
+      "bytes": 42,
+      "sha256": "44273af087ef4f08e29c7fecd416d59e1d6d5c2ebde0ce2b97d242b784abacd9"
+    },
+    {
+      "path": "evidence/release-completion-tests.log",
+      "bytes": 443,
+      "sha256": "670fa803d528f9bc79020f694cde834313b503894d5a8d3791a85035f389a4fc"
+    },
+    {
+      "path": "evidence/release-completion-browser.log",
+      "bytes": 1801,
+      "sha256": "2096b4d9cf203ff3c400a87f28d2dc31923a43abb512c531d7443bbd8ce17179"
+    },
+    {
+      "path": "evidence/release-completion-build.log",
+      "bytes": 24626,
+      "sha256": "9382800d62ebab2fd406216f687cb698db858c2aad17285b74ef86c17de2e66b"
+    },
+    {
+      "path": "evidence/linux-container-build.log",
+      "bytes": 35072,
+      "sha256": "d2f9a07c765033f189521a985f327029a5acef26c78a4e0096b018794b65b6a3"
+    },
+    {
+      "path": "evidence/linux-container-smoke.json",
+      "bytes": 837,
+      "sha256": "93697e97dbe0b5fe9c91ddcecaa183721a2f11e10b0c4a911a7b550d04efb6c7"
+    }
+  ],
+  "currentOwnerPrerequisites": [
+    "Finish Twitch developer fresh login",
+    "Manually enable approved OBS Screen Recording after native-control guard rejected toggle"
+  ]
+}

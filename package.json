@@ -1,0 +1,36 @@
+{
+  "name": "aragoz",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --watch apps/server/src/index.ts",
+    "dev:web": "npm run dev --workspace @aragoz/web",
+    "build": "node scripts/generate-notices.mjs && node scripts/check-assets.mjs && node scripts/sync-assets.mjs && npm run build --workspace @aragoz/web && node scripts/precompress-web.mjs && npm run build --workspace @aragoz/server",
+    "build:release": "node scripts/check-assets.mjs --require-final && npm run build",
+    "start": "node --env-file-if-exists=.env apps/server/src/index.ts",
+    "preview:public": "node --env-file-if-exists=.env scripts/start-public-preview.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --maxWorkers=1",
+    "test:browser": "playwright test --workers=1",
+    "test:assets": "node --test --test-concurrency=1 tests/assets/*.test.mjs",
+    "test:container": "node tests/container/smoke.mjs",
+    "check:resources": "node scripts/check-resources.mjs",
+    "check:assets": "node scripts/check-assets.mjs"
+  },
+  "devDependencies": {
+    "@babylonjs/core": "9.32.0",
+    "@playwright/test": "1.64.1",
+    "@types/node": "24.10.1",
+    "@types/ws": "8.18.2",
+    "typescript": "7.0.2",
+    "vitest": "5.0.5"
+  }
+}

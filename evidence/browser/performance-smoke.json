@@ -1,0 +1,86 @@
+{
+  "evidence": "Short headless local M1 Metal browser smoke; no OBS or human acceptance; uncontrolled shared host",
+  "at": "2026-10-25T22:16:46.237Z",
+  "results": [
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "wallTimeMs": 8690.185583,
+      "tick": 526,
+      "triangles": 37203,
+      "drawCalls": 61,
+      "renderWidth": 1492,
+      "renderHeight": 832,
+      "outcome": "",
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-25T22:16:36.285Z",
+        "observationSpanMs": 9312.20000000298,
+        "activeFrameSamples": 505,
+        "pausedFrames": 4,
+        "meanFrameMs": 17.688514851461544,
+        "p95FrameMs": 18,
+        "longestFrameMs": 409.59999999403954,
+        "peakVisibleTriangles": 40951,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1492,
+          "height": 832
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 60,
+        "quality": "high"
+      }
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "wallTimeMs": 8599.765041,
+      "tick": 516,
+      "triangles": 37203,
+      "drawCalls": 61,
+      "renderWidth": 1203,
+      "renderHeight": 669,
+      "outcome": "",
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Unspecified Version)",
+      "report": {
+        "schemaVersion": 1,
+        "evidence": "local browser telemetry; OBS and human acceptance unverified",
+        "createdAt": "2026-10-25T22:16:46.062Z",
+        "observationSpanMs": 8988.199999988079,
+        "activeFrameSamples": 503,
+        "pausedFrames": 5,
+        "meanFrameMs": 17.163618290252526,
+        "p95FrameMs": 18,
+        "longestFrameMs": 81.40000000596046,
+        "peakVisibleTriangles": 40951,
+        "peakObservedDrawCalls": 70,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "resolution": {
+          "width": 1203,
+          "height": 669
+        },
+        "profiles": [
+          "charge-deliberate",
+          "steam-wide"
+        ],
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "presentationFps": 60,
+        "quality": "high"
+      }
+    }
+  ]
+}

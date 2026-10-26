@@ -1,0 +1,71 @@
+{
+  "recordedAt": "2026-10-26T02:20:13.911209+00:00",
+  "kind": "actual-local-linux-container-build",
+  "imageId": "sha256:ecd852c4dddee9a6f55af0c79e99de083d14cc4598ff1cac577f682c34a10e4c",
+  "platform": "linux/arm64",
+  "runtimeUser": "node",
+  "node": "v24.19.0",
+  "sourceHashes": [
+    {
+      "path": "Dockerfile",
+      "sha256": "952bb9afe6b4d77b01da36faa8d450ea4276857f6abc24ac9e0a17405578959f"
+    },
+    {
+      "path": "apps/server/src/app.ts",
+      "sha256": "10a6a0eecbabf596b3c1526efd16397ddc6fe91440501206d6a813c00a4610cf"
+    },
+    {
+      "path": "apps/server/src/backup.ts",
+      "sha256": "67441e02dc12e18f3790e6217ab8d8a77abe3542e75536caf4e8bb48d015e3c2"
+    },
+    {
+      "path": "apps/server/src/compiler.ts",
+      "sha256": "ddd8b2ebadf098356c3d720f0a2a9d14d616a3698b207515bc689be46b4f7b15"
+    },
+    {
+      "path": "apps/server/src/config.ts",
+      "sha256": "8dedbe05a894726790de897705d771bd3830232f84cdb7bd742027cf9f40f1e9"
+    },
+    {
+      "path": "apps/server/src/connection.ts",
+      "sha256": "f1dc6c03ef558eada174c43f5a5d5bb3ec303b9134a6b89f1ae5b90337bad816"
+    },
+    {
+      "path": "apps/server/src/engine.ts",
+      "sha256": "2f84e3d145c64135fa0c695b97a0582bf968477d61ed489df87ef8a46acdb80c"
+    },
+    {
+      "path": "apps/server/src/index.ts",
+      "sha256": "15db0cf347d5425489369d1fe65e79efaa03adf776bca42e9af10b3462086d24"
+    },
+    {
+      "path": "apps/server/src/store.ts",
+      "sha256": "04bbd1ee2c3eca364e34ed7488ee81252acdccfadef1c72dddc574f3344a1088"
+    },
+    {
+      "path": "apps/server/src/twitch.ts",
+      "sha256": "46e9abcd47b4f2dc240820d8181f43fd06b40c17410a515b4b74a2fe4dffb17f"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "4d5fda594eff9c1ddf3af928377b4488b559548a766a888c3e135787c9959d88"
+    },
+    {
+      "path": "package.json",
+      "sha256": "fa7b029b52d6ad040917f7107eec25f3f2689cb7210dc2797a29cd455bc54844"
+    },
+    {
+      "path": "packages/contracts/src/index.test.ts",
+      "sha256": "0e740f09d3631f81b1e9246075655ef7635904b11c87b7ccb22f20b666217086"
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "sha256": "002c5bfe74ed743f3a8e658768a6418c24889ab6b4d4565b6c9550c7cc629b4c"
+    }
+  ],
+  "smoke": "evidence/linux-container-smoke.json",
+  "builder": "Docker classic builder; installed client lacks buildx",
+  "paidResources": 0,
+  "retainedImage": false,
+  "note": "Task-created aragoz-release VM removed after checks to reclaim only this task runtime; source and receipts retained. Not hosted/provider/human acceptance."
+}

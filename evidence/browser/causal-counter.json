@@ -1,0 +1,188 @@
+{
+  "evidence": "AI-led local browser play using keyboard inputs; not human or Twitch acceptance",
+  "at": "2026-10-25T22:10:43.327Z",
+  "states": [
+    {
+      "point": "charge counter exposed",
+      "tick": 166,
+      "hero": {
+        "x": -5.22537625946986,
+        "z": 1.1665833354590753
+      },
+      "boss": {
+        "x": -1.7700921861839383,
+        "z": -0.8611972553094771
+      },
+      "facing": {
+        "x": -0.8624507521847371,
+        "z": 0.5061409883184537
+      },
+      "stage": "exposed",
+      "active": "left",
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "charge",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "outcome": ""
+    },
+    {
+      "point": "after real strikes",
+      "tick": 310,
+      "hero": {
+        "x": -2.129999995050253,
+        "z": -0.4173357851023288
+      },
+      "boss": {
+        "x": -1.7700921861839383,
+        "z": -0.8611972553094771
+      },
+      "facing": {
+        "x": -0.8624507521847371,
+        "z": 0.5061409883184537
+      },
+      "stage": "recovery",
+      "active": "left",
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "charge",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 5,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "outcome": ""
+    },
+    {
+      "point": "six seconds after break",
+      "tick": 694,
+      "hero": {
+        "x": -2.129999995050253,
+        "z": -0.4173357851023288
+      },
+      "boss": {
+        "x": -1.7700921861839383,
+        "z": -0.8611972553094771
+      },
+      "facing": {
+        "x": -0.6298232124960821,
+        "z": 0.7767385152038715
+      },
+      "stage": "exposed",
+      "active": "right",
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "charge",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 5,
+          "broken": false,
+          "exposed": true
+        }
+      ],
+      "outcome": ""
+    },
+    {
+      "point": "actual final strike and result",
+      "tick": 762,
+      "hero": {
+        "x": -2.129999995050253,
+        "z": -0.4173357851023288
+      },
+      "boss": {
+        "x": -1.7700921861839383,
+        "z": -0.8611972553094771
+      },
+      "facing": {
+        "x": -0.6298232124960821,
+        "z": 0.7767385152038715
+      },
+      "stage": "finished",
+      "active": "",
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "charge",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        }
+      ],
+      "outcome": "won"
+    },
+    {
+      "point": "Encore resets both modules",
+      "tick": 0,
+      "hero": {
+        "x": 0,
+        "z": 2.8
+      },
+      "boss": {
+        "x": 0,
+        "z": -1.9
+      },
+      "facing": {
+        "x": 0,
+        "z": 1
+      },
+      "stage": "idle",
+      "active": "",
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "charge",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "outcome": ""
+    }
+  ],
+  "captures": [
+    "evidence/browser/charge-exposed.png",
+    "evidence/browser/charge-broken.png",
+    "evidence/browser/charge-removed.png",
+    "evidence/browser/rehearsal-won.png"
+  ],
+  "passed": true
+}

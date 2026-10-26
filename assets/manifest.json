@@ -1,0 +1,241 @@
+[
+  {
+    "schemaVersion": 1,
+    "id": "hero",
+    "revision": "local-kit-v1",
+    "source": "Original Blender/Python authored geometry and256px color tiles; assets/source/local-kit-v1/hero.blend",
+    "rights": "Original project-authored source. No provider generation, stock geometry or third-party textures.",
+    "approvedConcept": "assets/concepts/target-sheet-v1.png",
+    "glbPath": "/assets/runtime/hero.glb",
+    "materials": [
+      "wood",
+      "wood-dark",
+      "soot",
+      "canvas",
+      "red",
+      "blue",
+      "brass"
+    ],
+    "dimensions": [
+      0.9,
+      1.82,
+      0.7
+    ],
+    "sockets": [
+      "hand-baton"
+    ],
+    "animations": [
+      "idle",
+      "run",
+      "strike",
+      "dodge",
+      "hurt",
+      "victory",
+      "defeat"
+    ],
+    "collider": "analytic circle r0.32 on XZ plane",
+    "triangles": 10492,
+    "textureBytes": 141207,
+    "engineEvidence": "evidence/browser/candidate-pair-0.png",
+    "acceptance": "approved"
+  },
+  {
+    "schemaVersion": 1,
+    "id": "stage",
+    "revision": "local-kit-v1",
+    "source": "Original Blender/Python authored geometry and256px color tiles; assets/source/local-kit-v1/stage.blend",
+    "rights": "Original project-authored source. No provider generation, stock geometry or third-party textures.",
+    "approvedConcept": "assets/concepts/target-sheet-v1.png",
+    "glbPath": "/assets/runtime/stage.glb",
+    "materials": [
+      "wood",
+      "wood-dark",
+      "canvas",
+      "backdrop",
+      "brass",
+      "blue",
+      "red"
+    ],
+    "dimensions": [
+      15.3,
+      5.5,
+      8.7
+    ],
+    "sockets": [
+      "block-west",
+      "block-east"
+    ],
+    "animations": [],
+    "collider": "ARENA boundaries and two immutable AABBs",
+    "triangles": 10815,
+    "textureBytes": 160185,
+    "engineEvidence": "evidence/browser/candidate-pair-0.png",
+    "acceptance": "approved"
+  },
+  {
+    "schemaVersion": 1,
+    "id": "shell-teapot",
+    "revision": "local-kit-v1",
+    "source": "Original Blender/Python authored geometry and256px color tiles; assets/source/local-kit-v1/shell-teapot.blend",
+    "rights": "Original project-authored source. No provider generation, stock geometry or third-party textures.",
+    "approvedConcept": "assets/concepts/target-sheet-v1.png",
+    "glbPath": "/assets/runtime/shell-teapot.glb",
+    "materials": [
+      "wood",
+      "red",
+      "brass",
+      "soot",
+      "canvas"
+    ],
+    "dimensions": [
+      2.5,
+      2.3,
+      1.8
+    ],
+    "sockets": [
+      "left",
+      "right"
+    ],
+    "animations": [
+      "idle"
+    ],
+    "collider": "analytic circle r0.68",
+    "triangles": 8676,
+    "textureBytes": 112819,
+    "engineEvidence": "evidence/browser/candidate-pair-0.png",
+    "acceptance": "approved"
+  },
+  {
+    "schemaVersion": 1,
+    "id": "shell-mirror",
+    "revision": "local-kit-v1",
+    "source": "Original Blender/Python authored geometry and256px color tiles; assets/source/local-kit-v1/shell-mirror.blend",
+    "rights": "Original project-authored source. No provider generation, stock geometry or third-party textures.",
+    "approvedConcept": "assets/concepts/target-sheet-v1.png",
+    "glbPath": "/assets/runtime/shell-mirror.glb",
+    "materials": [
+      "wood",
+      "brass",
+      "mirror",
+      "soot",
+      "blue"
+    ],
+    "dimensions": [
+      1.9,
+      2.6,
+      1.2
+    ],
+    "sockets": [
+      "left",
+      "right"
+    ],
+    "animations": [
+      "idle"
+    ],
+    "collider": "analytic circle r0.68",
+    "triangles": 7205,
+    "textureBytes": 141276,
+    "engineEvidence": "evidence/browser/candidate-pair-1.png",
+    "acceptance": "approved"
+  },
+  {
+    "schemaVersion": 1,
+    "id": "module-charge",
+    "revision": "local-kit-v1",
+    "source": "Original Blender/Python authored geometry and256px color tiles; assets/source/local-kit-v1/module-charge.blend",
+    "rights": "Original project-authored source. No provider generation, stock geometry or third-party textures.",
+    "approvedConcept": "assets/concepts/target-sheet-v1.png",
+    "glbPath": "/assets/runtime/module-charge.glb",
+    "materials": [
+      "brass",
+      "wood-dark",
+      "wood"
+    ],
+    "dimensions": [
+      1.2,
+      0.8,
+      0.7
+    ],
+    "sockets": [
+      "axle",
+      "wheel-left",
+      "wheel-right"
+    ],
+    "animations": [
+      "windup",
+      "exposed",
+      "break"
+    ],
+    "collider": "simulation module logic; visual geometry does not change game rules",
+    "triangles": 2512,
+    "textureBytes": 89693,
+    "engineEvidence": "evidence/browser/candidate-pair-0.png",
+    "acceptance": "approved"
+  },
+  {
+    "schemaVersion": 1,
+    "id": "module-steam",
+    "revision": "local-kit-v1",
+    "source": "Original Blender/Python authored geometry and256px color tiles; assets/source/local-kit-v1/module-steam.blend",
+    "rights": "Original project-authored source. No provider generation, stock geometry or third-party textures.",
+    "approvedConcept": "assets/concepts/target-sheet-v1.png",
+    "glbPath": "/assets/runtime/module-steam.glb",
+    "materials": [
+      "wood-dark",
+      "brass",
+      "red"
+    ],
+    "dimensions": [
+      0.6,
+      1.9,
+      0.6
+    ],
+    "sockets": [
+      "valve",
+      "valve-lid"
+    ],
+    "animations": [
+      "windup",
+      "exposed",
+      "break"
+    ],
+    "collider": "simulation module logic; visual geometry does not change game rules",
+    "triangles": 2844,
+    "textureBytes": 74823,
+    "engineEvidence": "evidence/browser/candidate-pair-0.png",
+    "acceptance": "approved"
+  },
+  {
+    "schemaVersion": 1,
+    "id": "module-echo",
+    "revision": "local-kit-v1",
+    "source": "Original Blender/Python authored geometry and256px color tiles; assets/source/local-kit-v1/module-echo.blend",
+    "rights": "Original project-authored source. No provider generation, stock geometry or third-party textures.",
+    "approvedConcept": "assets/concepts/target-sheet-v1.png",
+    "glbPath": "/assets/runtime/module-echo.glb",
+    "materials": [
+      "wood-dark",
+      "brass",
+      "mirror"
+    ],
+    "dimensions": [
+      0.7,
+      1.8,
+      0.4
+    ],
+    "sockets": [
+      "mirror",
+      "mirror-face"
+    ],
+    "animations": [
+      "windup",
+      "exposed",
+      "break"
+    ],
+    "collider": "simulation module logic; visual geometry does not change game rules",
+    "triangles": 2252,
+    "textureBytes": 106075,
+    "engineEvidence": "evidence/browser/candidate-pair-1.png",
+    "acceptance": "approved"
+  }
+]
