@@ -1,11 +1,11 @@
 {
-  "recordedAt": "2026-10-26T02:39:46.374986+00:00",
+  "recordedAt": "2026-10-26T03:12:08.228656+00:00",
   "evidenceKind": "Current local, mocked-provider, AI-led browser, actual HTTPS rehearsal and Linux container validation; no genuine Twitch/OBS/human acceptance",
   "node": "v24.19.0",
   "git": {
     "branch": "main",
-    "head": null,
-    "state": "pre-initial-commit checkpoint; private repository created and approved; source publication in progress"
+    "headAtCheckpoint": "e256d088443b62873e3e851ef1566cf2812e4974",
+    "state": "Baseline pushed to private origin; bounded720p correction checkpoint follows"
   },
   "checks": {
     "cleanInstall": {
@@ -27,7 +27,7 @@
       "scope": "current Docker build stage plus retained TAP receipt"
     },
     "browser": {
-      "passed": 11,
+      "passed": 12,
       "failed": 0,
       "workers": 1,
       "log": "evidence/release-completion-browser.log"
@@ -59,7 +59,8 @@
     "publicPreview": "evidence/public-preview.json",
     "linuxBuild": "evidence/linux-container-build.json",
     "linuxSmoke": "evidence/linux-container-smoke.json",
-    "releaseReadiness": "evidence/release-readiness.json"
+    "releaseReadiness": "evidence/release-readiness.json",
+    "stageFit720p": "evidence/browser/stage-fit-720p.json"
   },
   "notPerformed": [
     "Genuine broadcaster OAuth/chat and game model calls",
@@ -134,24 +135,9 @@
       "sha256": "a6f22c952532896f5907d88525977bd6d3072a6a563b63e17e69eebd1be1428a"
     },
     {
-      "path": "evidence/release-completion-typecheck.log",
-      "bytes": 42,
-      "sha256": "44273af087ef4f08e29c7fecd416d59e1d6d5c2ebde0ce2b97d242b784abacd9"
-    },
-    {
       "path": "evidence/release-completion-tests.log",
       "bytes": 443,
       "sha256": "670fa803d528f9bc79020f694cde834313b503894d5a8d3791a85035f389a4fc"
-    },
-    {
-      "path": "evidence/release-completion-browser.log",
-      "bytes": 1801,
-      "sha256": "2096b4d9cf203ff3c400a87f28d2dc31923a43abb512c531d7443bbd8ce17179"
-    },
-    {
-      "path": "evidence/release-completion-build.log",
-      "bytes": 24626,
-      "sha256": "9382800d62ebab2fd406216f687cb698db858c2aad17285b74ef86c17de2e66b"
     },
     {
       "path": "evidence/linux-container-build.log",
@@ -162,10 +148,24 @@
       "path": "evidence/linux-container-smoke.json",
       "bytes": 837,
       "sha256": "93697e97dbe0b5fe9c91ddcecaa183721a2f11e10b0c4a911a7b550d04efb6c7"
+    },
+    {
+      "path": "evidence/release-completion-typecheck.log",
+      "bytes": 42,
+      "sha256": "44273af087ef4f08e29c7fecd416d59e1d6d5c2ebde0ce2b97d242b784abacd9"
+    },
+    {
+      "path": "evidence/release-completion-browser.log",
+      "bytes": 1908,
+      "sha256": "07a71c09231c4421c41b7f555fda8dbdc6ebddf4599de62400aad525f496a426"
+    },
+    {
+      "path": "evidence/release-completion-build.log",
+      "bytes": 24626,
+      "sha256": "d1d2156e060136744146fc266992cef7ab7e715d3ebaf885cd648f6ccc6e9e4f"
     }
   ],
   "currentOwnerPrerequisites": [
-    "Finish Twitch developer fresh login",
-    "Manually enable approved OBS Screen Recording after native-control guard rejected toggle"
+    "Finish Twitch developer fresh login"
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "kind": "actual public browser DOM geometry",
+  "canvas": {
+    "bottom": 655.6796875,
+    "height": 463.9921875,
+    "width": 837.328125,
+    "x": 221.3359375,
+    "y": 191.6875
+  },
+  "fits": true,
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}

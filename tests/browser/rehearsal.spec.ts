@@ -41,6 +41,16 @@ test('settings pause the action and expose keyboard and comfort controls',async(
   await expect(page.getByRole('heading',{name:'Take your time.'})).toBeVisible();
 });
 
+test('the entire arena fits a 720p desktop play window',async({page})=>{
+  await page.setViewportSize({width:1280,height:720});
+  await page.goto('/rehearse');await page.getByRole('button',{name:'Raise the curtain'}).click();
+  const canvas=page.getByTestId('game-canvas'),bounds=await canvas.boundingBox();
+  expect(bounds).not.toBeNull();expect(bounds!.y).toBeGreaterThanOrEqual(0);
+  expect(bounds!.y+bounds!.height).toBeLessThanOrEqual(720);
+  expect(bounds!.x).toBeGreaterThanOrEqual(0);expect(bounds!.x+bounds!.width).toBeLessThanOrEqual(1280);
+  await expect(page.getByRole('img',{name:'5 of 5 health stitches'})).toBeVisible();
+});
+
 test('missing approved asset uses the shipped development geometry without changing mechanics',async({page})=>{
   const entries=JSON.parse(await readFile('assets/manifest.json','utf8'));
   const hero={...entries.find((entry:{id:string})=>entry.id==='hero'),glbPath:'/assets/runtime/missing.glb'};

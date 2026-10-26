@@ -24,7 +24,7 @@
   "approvedAssetsObserved": 5,
   "visibleTrianglesObserved": 35387,
   "drawCallsObserved": 61,
-  "browserScreenshot": "evidence/browser/public-release-stage.png",
+  "browserScreenshot": "evidence/browser/public-release-stage-720p.png",
   "sourceInputEvidence": "evidence/browser/public-preview-input.json",
   "reloadEvidence": "evidence/public-preview-reload.json",
   "cost": 0,
@@ -33,5 +33,6 @@
     "User-created Twitch account @amirmolotfy observed; developer reauthentication and app registration pending.",
     "No genuine OAuth/chat, OBS session, or human acceptance evidence.",
     "Earlier first-load fallback during transient network/CPU load was preserved; final browser reload admitted all5assets."
-  ]
+  ],
+  "stageFit": "evidence/browser/stage-fit-720p.json"
 }

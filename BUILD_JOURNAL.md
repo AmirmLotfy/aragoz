@@ -1,5 +1,11 @@
 # Build journal
 
+## 2026-10-26 —720p framing and source publication
+
+- Baseline203files were credential/path checked, committed and pushed privately as e256d088443b62873e3e851ef1566cf2812e4974. Upstream font/software license whitespace was preserved unchanged. No credentials/data/dependencies were staged.
+- Actual public720p screenshot revealed a vertically cropped arena. Bounded desktop stage width by available viewport height; added a meaningful browser bounds regression. Current typecheck/releasebuild and12actual browser tests passed (1.9minutes). Public DOM now confirms the entire canvas inside720p; current full-stage capture retained. No gameplay/server/dependency change in this correction.
+- OBS screen permission is now verified enabled. Reconnected native control after a pipe interruption. Mic/Aux mute is checked, sources empty, stream/record time zero. Recording-only wizard applied estimated Apple H.264/1920x1080/60fps settings; source/output and actual sessions remain pending. No capture or stream started. OS camera/mic/input-monitoring grants were observed later without root requesting them; restrict capture to game window and keep mic/camera out.
+
 ## 2026-10-26 — full release completion packet and zero-cost preview
 
 - Owner approved private AmirmLotfy/aragoz publication and prohibited every paid action. Created and verified the private repository. Archived the unapproved Render blueprint; no cloud/model/Meshy spending or billable CI enabled.

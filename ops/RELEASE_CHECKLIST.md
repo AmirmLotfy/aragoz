@@ -5,7 +5,7 @@ Local release candidate is prepared. This checklist records actual provider/host
 ## Current deliverable
 
 - [x] Pinned Node24.19.0, lockfile and successful clean npmci.
-- [x] Typecheck,112unit/server tests,62asset fixtures,11browser flows and release-asset build.
+- [x] Typecheck,112unit/server tests,62asset fixtures,12browser flows and release-asset build.
 - [x] Seven original Blender/GLB assets, rights and actual Babylon inspection.
 - [x] Real keyboard counter/break/final-strike/Encore playthrough, labelled AI-led.
 - [x] Production-only dependency package starts and serves API/frontend/assets/licenses.

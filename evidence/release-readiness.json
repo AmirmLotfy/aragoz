@@ -1,5 +1,5 @@
 {
-  "recordedAt": "2026-10-26T02:39:46.374986+00:00",
+  "recordedAt": "2026-10-26T03:12:08.228656+00:00",
   "fullFirstReleaseScopePreserved": true,
   "localImplementationVerified": true,
   "releaseReady": false,
@@ -23,7 +23,7 @@
       "scope": "current Docker build stage plus retained TAP receipt"
     },
     "browser": {
-      "passed": 11,
+      "passed": 12,
       "failed": 0,
       "workers": 1,
       "log": "evidence/release-completion-browser.log"
@@ -43,7 +43,7 @@
   "remainingGates": {
     "realTwitchCausalChain": "Developer fresh login/app registration/consent and genuine chat pending",
     "hostedProviderRecovery": "Requires configured genuine account; local/container recovery separately passed",
-    "obsPerformance": "OBS33installed and signed; screen access approved, native toggle control rejected as changed window; owner manual toggle pending. No recording yet.",
+    "obsPerformance": "Screen Recording enabled; idle hardware1080p60 configuration prepared, game-only source/output and two actual30minute sessions still pending",
     "humanAcceptance": "0 of3first-time hosts;0genuine-viewer sessions recorded"
   },
   "noFabrication": "Unit fixtures, AI-led input, actual HTTPS, local Linux, genuine provider and human evidence remain distinct."

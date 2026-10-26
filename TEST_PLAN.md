@@ -8,7 +8,7 @@ Current local evidence is recorded below. Local, mocked provider and AI-led chec
 - `npm run typecheck`:passed with TypeScript7 under Node24.19.0.
 - `npm test`:112passed across7files after release completion fixes:36combat/contracts,65server and11web helper/render cases. Current log evidence/release-completion-tests.log; earlier receipts retained.
 - `npm run test:assets`:62small GLB-format/local-serving fixtures previously passed; evidence/asset-format.tap. Static bounds are rest-pose evidence.
-- `npm run test:browser`:11passed,1worker,3.3minutes on the current compression build after browser access became available. Actual log evidence/release-completion-browser.log. The stalled-manifest, late-container, covered-error and context-loss regressions now run and pass. Includes public offline rehearsal, real inputs/pause, settings, all pairs, actual missing-GLB fallback and fixture-only live authoring/vote/HTTP/WS/control recovery.
+- `npm run test:browser`:11passed,1worker,1.9minutes on the current compression build after browser access became available. Actual log evidence/release-completion-browser.log. The stalled-manifest, late-container, covered-error and context-loss regressions now run and pass. Includes public offline rehearsal, real inputs/pause, settings, all pairs, actual missing-GLB fallback and fixture-only live authoring/vote/HTTP/WS/control recovery.
 - `npm run build:release`:passed with all7runtime GLBs admitted. Original Blender sources,256px authored tiles, sockets and rigid clips retained;1,345,615compressed GLB bytes and44,796triangles across the full kit. Actual three-pair scenes were33–35kvisible triangles/59–62drawcalls at rest; active hazards peaked40,951triangles/70drawcalls in the short sample.
 - Actual M1 Metal headless browser samples at1920x1080 and1280x720 viewports:8.5seconds each, mean17.69/17.16ms presentation intervals, p9518ms. Actual canvas buffers were1492x832 and1203x669 due to the page layout. These short samples are NOT full1080p/720p OBS tests. evidence/browser/performance-smoke.json records exact dimensions and a409.6ms initial high-resolution outlier.
 - AI-led keyboard browser play baited the charge, exploited the block, broke the physical axle, observed six seconds without another charge, broke steam, won through the final strike and reset both modules with Encore. evidence/browser/causal-counter.json. No genuine viewer is claimed.
@@ -36,7 +36,7 @@ After hosted technical preview: three first-time hosts with at least three genui
 |---|---|---|
 | Foundation | locally verified | Source brief, lockfile, contracts, tests, rights log and handoff exist |
 | Real Twitch causal chain | pending | Genuine consent/chat not tested; fixture and AI-led chains are separate |
-| Complete show/mechanics | locally verified |112unit tests;11browser flows and keyboard counter/final-strike/Encore; provider acceptance remains open |
+| Complete show/mechanics | locally verified |112unit tests;12browser flows and keyboard counter/final-strike/Encore; provider acceptance remains open |
 | Finished art | admitted for technical preview | User direction approved;7original GLBs statically checked and rendered in Babylon; long OBS check remains open |
 | Hosted technical preview | temporary HTTPS rehearsal running; provider checks pending | Free Mac/tunnel host, reload and local Linux persistence/backup verified; actual Twitch consent/chat/isolation remain open |
 | Human acceptance | unperformed | ops/acceptance contains blank protocols/templates; must follow hosted preview |

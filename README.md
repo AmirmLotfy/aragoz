@@ -4,7 +4,7 @@ Chat makes the monster. You find the loophole.
 
 ARAGOZ is a browser action game where Twitch viewers propose powers with built-in flaws. The selected contract attaches a physical module; exploiting the flaw opens a counter and breaking the module removes its ability.
 
-**Status:** full first-release implementation is available as a technical preview. TypeScript,112unit/server tests,62asset fixtures,11browser flows, the release build and an actual Linux ARM64 container/persistence/backup/restore check pass. Seven original Blender assets are admitted. Real Twitch application consent/chat, actual OBS sessions and genuine human acceptance remain open. See TEST_PLAN.md and CURRENT_HANDOFF.md.
+**Status:** full first-release implementation is available as a technical preview. TypeScript,112unit/server tests,62asset fixtures,12browser flows, the release build and an actual Linux ARM64 container/persistence/backup/restore check pass. Seven original Blender assets are admitted. Real Twitch application consent/chat, actual OBS sessions and genuine human acceptance remain open. See TEST_PLAN.md and CURRENT_HANDOFF.md.
 
 **No spending:** the owner approved the private repository and prohibited payments on26October2026. Model/Meshy calls remain off. Use the existing Mac plus the temporary HTTPS tunnel in [the no-cost hosting runbook](ops/NO_COST_HOSTING.md). The paid Render design is archived and unapproved; no automatic billable CI is configured.
 
