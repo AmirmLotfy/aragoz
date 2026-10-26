@@ -46,8 +46,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 34729,
-      "sha256": "e76a8b2121585c232c6cf18cddea5289fc30eebba4cbcd03b79f7caf5ffd0397"
+      "bytes": 36320,
+      "sha256": "8e00fd572528f61ce0240b470e3e4c99c366547f3dc8d498a40dec2bd854eda9"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -56,8 +56,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 11466,
-      "sha256": "1abd5b6454b7b9e603e80308997779202bbd9cd6437362fc204ca06612aa6545"
+      "bytes": 12926,
+      "sha256": "3016fdfdca25e326678a078337f5d92e06d2aefe66607d7a80f0ff9a2837d385"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -88,6 +88,11 @@
       "path": "README.md",
       "bytes": 7901,
       "sha256": "ce18baf716dfc4a4383c069b00286c30b6fa38eee3911ffb21d091832ec5e572"
+    },
+    {
+      "path": "REMAINING_WORK.md",
+      "bytes": 10327,
+      "sha256": "1637352fa950ab1bf7eeb4f2974c28d7709eb68a9d12e923629fcb0af2ad4f32"
     },
     {
       "path": "SOURCE_LOG.md",

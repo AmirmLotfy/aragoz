@@ -1,5 +1,12 @@
 # Build journal
 
+## 2026-10-27 — remaining-phase audit, blockers ordered last
+
+- Owner requested all remaining phases/steps/tasks and all blockers at the very end, then said continue. Root audited source, accepted plan, original brief, test plan, rights/admission and versioned evidence; two bounded read-only gameplay/ops reviewers completed their packets. No app/provider/runtime/test/asset change or heavy job occurred.
+- Added REMAINING_WORK.md with six-gate status, five free local packets and five subsequent release-acceptance packets. Concrete implementation gap: family-specific advance windup/recording sound cues; current audio uses one generic attack-started cue after windup. Missing targeted evidence: downscaled stream/contrast/sound-off signoff, bounded synthetic chat load, explicit12seconddeadline/refusal regressions. Current status docs also contain old112/12test/pre-OBS/pre-2FA wording. Prior146unit/25browser/source-bound build, actual publicHouse/localecho, assets, Linux and OBS passes stay completed.
+- All account/participant/spending/availability constraints are retained at the very end of the new inventory. Optional competition/later features remain separate; no fresh external deadline claim or paid/provider gate was invented. cwd/Users/frameless/Desktop/Aragoz,main,pre-auditHEAD0f124770659ae128aa3a953737d40cbd1ccc6043, clean at start. Root owns only this new inventory, handoff/journal and source-manifest update. Final private checkpoint/currentHEAD is recorded in.runtime/delivery-state.json; application build remains0f12477. No unrelated work/process was touched.
+
+
 ## 2026-10-27 — autonomous judgment, release hardening and actual public show
 
 - Owner said to handle everything and judge while busy. Root continued without routine questions, retained no-spending/Twitch-pending boundaries, and used two bounded disjoint specialists for source audit/UI storage fixes. Root owned backend/root configuration, integration, all heavy checks and final judgment. Both specialists completed; no standing team remains.

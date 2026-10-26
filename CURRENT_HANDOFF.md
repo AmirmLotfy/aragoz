@@ -2,6 +2,13 @@
 
 Updated 27 October 2026. Root integration chat owns the complete first release. The free technical preview includes a complete three-act solo House show. Genuine Twitch/provider and human acceptance remain open; do not describe the entire release as release-ready.
 
+
+## Latest remaining-work audit
+
+The owner requested a complete remaining-phase/task inventory with all blockers last, then said continue. Root and two bounded read-only reviewers cross-checked the actual source/brief/evidence at applicationHEAD0f124770659ae128aa3a953737d40cbd1ccc6043. [REMAINING_WORK.md](REMAINING_WORK.md) is the ordered inventory: five free local packets (advance family audio tells, stream-scale/contrast signoff, synthetic audience load, explicit compiler deadline/refusal tests, status-document reconciliation), followed by genuine release acceptance and the final blocker section. Audio is a proven brief-alignment implementation gap; the other new local items are missing specific evidence/coverage or stale current summaries, not claims the already verified game loop failed. Do not call the entire first release complete merely because the solo technical preview is approved.
+
+This audit changes documentation/manifest only. No app/source, runtime, provider, asset or test job changed; no validation was rerun. Original146/25/build evidence remains scoped to0f12477. The actual checkout was clean before this documentation packet; root owns it. No reviewer remains active. Runtime/process details below were recorded in the prior packet, not reverified by this inventory. The smallest next implementation packet is A01, then A02–A05; external dependencies are grouped at the end of the inventory so they do not stall local work.
+
 ## Checkout, ownership and boundaries
 
 - cwd `/Users/frameless/Desktop/Aragoz`; branch `main`. Actual HEAD before this checkpoint: `d7647947d49e162c7c79c0999e62abe54a26fc6e`. Current changes belong to the autonomous audit/repair packet. The owner delegated routine implementation and judgment while busy; no routine review question is pending. Final pushed HEAD/clean status is recorded in ignored `.runtime/delivery-state.json`; verify Git before any new work. Source manifest inventories tracked/non-ignored files, excluding itself; hashes establish identity only.
