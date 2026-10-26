@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Authoring this script is not OBS evidence. Run only under the coordinator's
 // browser/OBS ownership; this creates a fresh task-only headed Chrome context.
-// Usage: node scripts/obs-gameplay-session.mjs --run-id=obs-1080p --label=1080p --quality=high
+// Usage: node scripts/obs-gameplay-session.mjs --run-id=obs-1080p --label=1080p --quality=high --fps=30
 // Read ready.json, select ONLY its titled window in OBS, start recording, then
 // create the reported start marker. After the paused receipt, stop OBS first,
 // then create the stop marker. SIGTERM/SIGINT pause/checkpoint and preserve this
@@ -19,12 +19,13 @@ const SESSION_MS=30*60*1000,SEGMENT_MS=10*60*1000,START_WAIT_MS=20*60*1000;
 const PRESETS=['The Teapot Tyrant','The Copycat’s Comeback','A Very Bad Reflection'];
 const CHROME='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const options=Object.fromEntries(process.argv.slice(2).map(argument=>{
-  const match=argument.match(/^--(run-id|label|url|quality)=(.*)$/);if(!match)throw new Error('Use only --run-id=, --label=, --url= or --quality= options');return [match[1],match[2]];
+  const match=argument.match(/^--(run-id|label|url|quality|fps)=(.*)$/);if(!match)throw new Error('Use only --run-id=, --label=, --url=, --quality= or --fps= options');return [match[1],match[2]];
 }));
 const runId=options['run-id']??new Date().toISOString().replace(/[:.]/g,'-')+'-'+process.pid;
 if(!/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,95}$/.test(runId))throw new Error('run-id must be a short filesystem-safe identifier');
 if(options.label&&!/^[a-zA-Z0-9 _.-]{1,64}$/.test(options.label))throw new Error('label must be a short operator label');
 if(options.quality&&!['high','low'].includes(options.quality))throw new Error('quality must be high or low');
+if(options.fps&&!['30','60'].includes(options.fps))throw new Error('fps must be30 or60');
 const target=new URL(options.url??'http://127.0.0.1:3000/rehearse');
 if(target.protocol!=='http:'||target.hostname!=='127.0.0.1'||target.pathname!=='/rehearse'||target.username||target.password||target.search||target.hash)throw new Error('Use an uncredentialed http://127.0.0.1:PORT/rehearse URL without query or fragment');
 const directory=join(ROOT,'.runtime/evidence/obs',runId);
@@ -33,7 +34,7 @@ await mkdir(dirname(directory),{recursive:true});await mkdir(directory);
 const paths={directory,startMarker,stopMarker,progress:join(directory,'progress.json'),receipt:join(directory,'receipt.json'),ready:join(directory,'ready.json')};
 const evidence={schemaVersion:1,evidenceKind:'AI-led headed local keyboard gameplay during an operator-controlled OBS session',
   limits:'Not human, genuine Twitch, hosted, or independently verified OBS/encoder acceptance. Operator output labels do not establish game or recording resolution.',
-  runId,operatorLabel:options.label??null,requestedQuality:options.quality??'high',target:target.toString(),pid:process.pid,createdAt:new Date().toISOString(),
+  runId,operatorLabel:options.label??null,requestedQuality:options.quality??'high',requestedPresentationFps:Number(options.fps??60),target:target.toString(),pid:process.pid,createdAt:new Date().toISOString(),
   requestedDurationMs:SESSION_MS,requestedPresetSegmentMs:SEGMENT_MS,status:'preparing',paths,
   processOwnership:'Only the fresh Chrome context/profile created by this script; never an existing user profile or unrelated browser.',
   profilePath:join(directory,'chrome-profile'),chromeExecutable:CHROME,headless:false,
@@ -210,11 +211,12 @@ try{
   if(!page.url().startsWith(target.origin+'/rehearse'))await page.goto(target.toString(),{waitUntil:'domcontentloaded',timeout:20000});
   await page.getByRole('button',{name:'Raise the curtain',exact:true}).waitFor({state:'visible',timeout:15000});
   await page.waitForFunction(()=>[...document.querySelectorAll('button')].some(button=>button.textContent==='Raise the curtain'&&!button.disabled),null,{timeout:15000});
-  if(options.quality==='low'){
+  if(options.quality==='low'||options.fps==='30'){
     await page.getByRole('button',{name:'Sound & controls',exact:true}).focus();await page.keyboard.press('Enter');
-    await page.getByRole('combobox',{name:'Quality',exact:true}).selectOption('low');
+    await page.getByRole('combobox',{name:'Quality',exact:true}).selectOption(options.quality??'high');
+    await page.getByRole('combobox',{name:'Presentation frame rate',exact:true}).selectOption(options.fps??'60');
     await page.getByRole('button',{name:'Back to the show',exact:true}).focus();await page.keyboard.press('Enter');
-    await page.waitForFunction(()=>{const canvas=document.querySelector('[data-testid="game-canvas"]');return canvas&&canvas.width/canvas.getBoundingClientRect().width<1.1;},null,{timeout:5000});
+    if(options.quality==='low')await page.waitForFunction(()=>{const canvas=document.querySelector('[data-testid="game-canvas"]');return canvas&&canvas.width/canvas.getBoundingClientRect().width<1.1;},null,{timeout:5000});
   }
   const windowTitle='ARAGOZ · OBS AI-led · '+runId;
   await page.evaluate(title=>{document.title=title;},windowTitle);

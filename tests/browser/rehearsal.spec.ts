@@ -34,9 +34,38 @@ test('capture telemetry snapshots do not open a browser download or interrupt co
     window.addEventListener('aragoz:performance-report',event=>resolve((event as CustomEvent).detail),{once:true});
     window.dispatchEvent(new Event('aragoz:request-performance'));
   }));
-  expect(report).toMatchObject({schemaVersion:1,quality:'high',presentationFps:60});expect(report.activeFrameSamples).toBeGreaterThan(0);
+  expect(report).toMatchObject({schemaVersion:1,quality:'high',presentationFps:60});
+  // A slow software-rendered first callback can advance several simulation
+  // ticks before a complete unpaused-to-unpaused render interval exists.
+  await expect.poll(()=>page.evaluate(()=>new Promise<number>(resolve=>{
+    window.addEventListener('aragoz:performance-report',event=>resolve((event as CustomEvent).detail.activeFrameSamples),{once:true});
+    window.dispatchEvent(new Event('aragoz:request-performance'));
+  }))).toBeGreaterThan(0);
   await expect.poll(async()=>Number(await canvas.getAttribute('data-sim-tick'))).toBeGreaterThan(tick);
   expect(downloads).toEqual([]);await expect(canvas).toHaveAttribute('data-paused','false');
+});
+
+test('30fps presentation keeps combat advancing independently at60Hz',async({page})=>{
+  await page.goto('/rehearse');await page.getByRole('button',{name:'Sound & controls',exact:true}).click();
+  await page.getByRole('combobox',{name:'Presentation frame rate',exact:true}).selectOption('30');
+  await page.getByRole('button',{name:'Back to the show',exact:true}).click();
+  await page.getByRole('button',{name:'Raise the curtain',exact:true}).click();
+  const canvas=page.getByTestId('game-canvas');
+  await expect.poll(async()=>Number(await canvas.getAttribute('data-sim-tick'))).toBeGreaterThan(5);
+  const sample=()=>page.evaluate(()=>new Promise<{tick:number;frames:number;fps:number}>(resolve=>{
+    window.addEventListener('aragoz:performance-report',event=>{
+      const report=(event as CustomEvent).detail;
+      resolve({tick:Number(document.querySelector('[data-testid="game-canvas"]')?.getAttribute('data-sim-tick')),frames:report.activeFrameSamples,fps:report.presentationFps});
+    },{once:true});
+    window.dispatchEvent(new Event('aragoz:request-performance'));
+  }));
+  const before=await sample();
+  // Observe actual presentation progress rather than benchmarking SwiftShader
+  // against a hardware cadence. Device fps acceptance is recorded separately.
+  await expect.poll(async()=>(await sample()).frames-before.frames,{timeout:8000}).toBeGreaterThan(10);
+  const after=await sample();expect(after.fps).toBe(30);
+  expect(after.tick-before.tick).toBeGreaterThan((after.frames-before.frames)*1.6);
+  await expect(canvas).toHaveAttribute('data-paused','false');
 });
 
 test('configuration switch changes actual mechanic families and preserves House attribution',async({page})=>{

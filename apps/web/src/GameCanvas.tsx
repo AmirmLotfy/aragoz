@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { CombatSimulation } from '@aragoz/combat';
 import type { CombatSnapshot, PlayerInput } from '@aragoz/combat';
-import { moduleWorldPosition, validateRecipe } from '@aragoz/contracts';
+import { validateRecipe } from '@aragoz/contracts';
 import type { BossRecipe, EncounterEvent } from '@aragoz/contracts';
 import { Theatre } from './theatre';
 import type { StageMetrics } from './theatre';
@@ -12,6 +12,7 @@ import { controlDescription, ownsGameKeyboard } from './controls';
 import { hardwareScalingLevel } from './rendering';
 import { assemblyProgress } from './assembly';
 import { PresentationClock } from './presentation';
+import { resolveStrikeAim } from './aim-assist';
 
 interface Props {
   recipe: BossRecipe; attemptId: string; paused: boolean; preferences: Preferences; previewChannel?: string; assemble?: boolean;
@@ -90,13 +91,7 @@ export function GameCanvas(props: Props) {
             const k=p.preferences.keys;
             const moveX=Number(keys.has(k.right)||keys.has('ArrowRight'))-Number(keys.has(k.left)||keys.has('ArrowLeft'));
             const moveZ=Number(keys.has(k.down)||keys.has('ArrowDown'))-Number(keys.has(k.up)||keys.has('ArrowUp'));
-            const h=previous.hero.position;
-            let ax=aim?aim.x-h.x:previous.boss.position.x-h.x,az=aim?aim.z-h.z:previous.boss.position.z-h.z;
-            if(p.preferences.aimAssist){
-              const targets=previous.modules.filter(m=>!m.broken).map(m=>({module:m,position:moduleWorldPosition(previous.boss.position,previous.boss.facing,m.slotId)}))
-                .filter(t=>Math.hypot(t.position.x-h.x,t.position.z-h.z)<2.1).sort((a,b)=>Number(b.module.exposed)-Number(a.module.exposed)||Math.hypot(a.position.x-h.x,a.position.z-h.z)-Math.hypot(b.position.x-h.x,b.position.z-h.z));
-              if(targets[0]){ax=targets[0].position.x-h.x;az=targets[0].position.z-h.z;}
-            }
+            const {x:ax,z:az}=resolveStrikeAim(previous,aim,p.preferences.aimAssist);
             const input:PlayerInput={moveX,moveZ,aimX:ax,aimZ:az,strike:pointerDown||keys.has(k.strike),dodge};dodge=false;
             simulation.step(input);accumulator-=1/60;
           }

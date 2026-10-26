@@ -5,7 +5,7 @@ Local release candidate is prepared. This checklist records actual provider/host
 ## Current deliverable
 
 - [x] Pinned Node24.19.0, lockfile and successful clean npmci.
-- [x] Current typecheck,122unit/server tests across9files,release-asset build and14browser flows all pass. Includes phase-preserving presentation pacing, no-download telemetry, assembly at tick0 and replacement-attempt readiness.62asset fixtures passed in the earlier Linux validation.
+- [x] Current typecheck,129unit/server tests across10files,release-asset build and15browser cases (13initial passes plus2focused passes after test synchronization) all pass. Includes phase-preserving presentation pacing, no-download telemetry, assembly at tick0 and replacement-attempt readiness.62asset fixtures passed in the earlier Linux validation.
 - [x] Seven original Blender/GLB assets, rights and actual Babylon inspection.
 - [x] Real keyboard counter/break/final-strike/Encore playthrough, labelled AI-led.
 - [x] Production-only dependency package starts and serves API/frontend/assets/licenses.
@@ -27,10 +27,13 @@ Local release candidate is prepared. This checklist records actual provider/host
 
 ## Actual M1 OBS session
 
-OBS33.0.0 is installed in.runtime/OBS.app; official SHA256/signature and approved Screen Recording are verified. Microphone device is Disabled; capture audio is muted. One actual30minute1080p run completed with88wins/no browser errors, but recorded-frame review found instrumentation download-panel obstruction/scrollcrop; OBS also recorded1.9%render lag/0.3%encoder lag. It is diagnostic evidence, not clean60fps/capture acceptance (evidence/obs-1080p-session.json and ops/PERFORMANCE_REPORT.md). The repaired driver reads telemetry without downloads and guards full-stage bounds. Clean720p and1080p runs remain. Earlier short clips remain separate. No camera/microphone capture occurred.
+OBS33.0.0 is installed in.runtime/OBS.app; official SHA256/signature and approved Screen Recording are verified. Microphone device is Disabled; capture audio is muted. One actual30minute1080p run completed with88wins/no browser errors, but recorded-frame review found instrumentation download-panel obstruction/scrollcrop; OBS also recorded1.9%render lag/0.3%encoder lag. It is diagnostic evidence, not clean60fps/capture acceptance (evidence/obs-1080p-session.json and ops/PERFORMANCE_REPORT.md). The repaired driver reads telemetry without downloads and guards full-stage bounds. The clean post-fix results are recorded below. Earlier short clips remain separate. No camera/microphone capture occurred.
+
+Post-fix720p run completed30minutes on57f86bd:73wins/3defeats/3unfinished,0browser errors,0downloads and0cropped samples. Actual encoded5/15/25minute frames show the entire public stage; full audio audit is silence. OBS0.6%render lag,0.0463%encoder lag; game presentation17.700ms weighted mean(~56.50fps), so steady60fps remains unaccepted. The first clean1080p attempt was stopped for final-strike aim assistance; the corrected build is verified and the1080p30fps fallback capture is next. `evidence/obs-720p-session.json` records the finished720p result.
 
 - [x] Record actual macOS/M1/browser/OBS versions, source and encoder settings.
-- [ ] Capture only the public play window; exclude backstage and unrelated desktop content.
+- [x] Capture only the public play window; exclude backstage and unrelated desktop content. Actual720p frames and391canvas-bounds samples pass; no camera/microphone content.
+- [x] Complete the720p30minute duration and inspect finalized media/frames/audio/counters; retain performance limits above.
 - [ ] Run30minutes at1080p and30minutes at720p, with active mechanics and real input. Record crashes, missed tells, dropped frames and exact simulation/presentation timing.
 - [ ] Evaluate60fps target. If necessary document a30fps presentation profile with unchanged60Hzsimulation; do not silently change game timing.
 - [ ] Retain measured geometry/drawcalls/art payload and a small stream-preview readability capture.

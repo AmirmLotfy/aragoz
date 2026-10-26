@@ -1,0 +1,67 @@
+{
+  "kind": "actual-local-source-unit-build-and-browser-validation",
+  "recordedAt": "2026-10-26T06:47:00.633Z",
+  "typecheck": {
+    "exitCode": 0
+  },
+  "unitServer": {
+    "exitCode": 0,
+    "files": 10,
+    "passed": 129
+  },
+  "releaseBuild": {
+    "exitCode": 0,
+    "admittedGlbs": 7
+  },
+  "browser": {
+    "casesCovered": 15,
+    "initial": {
+      "exitCode": 1,
+      "passed": 13,
+      "failed": 2
+    },
+    "focusedAfterTestSynchronization": {
+      "exitCode": 0,
+      "passed": 2,
+      "durationSeconds": 19.4
+    },
+    "limit": "Two initial test assumptions failed under software rendering: no complete active interval yet and fixed1.2second frame expectation. Corrected to wait actual progress. App build unchanged between browser invocations; first failure logs retained. Not a single15pass run."
+  },
+  "regressions": [
+    "Actual legitimate-input combat route reproduces stale-pointer misses after both breaks, then assisted final strike wins",
+    "Disabled manual aim and exposed/nearest socket priority retained",
+    "Browser30fps setting keeps simulation advancing independently from render samples"
+  ],
+  "logs": [
+    {
+      "path": "evidence/final-aim-typecheck.log",
+      "sha256": "44273af087ef4f08e29c7fecd416d59e1d6d5c2ebde0ce2b97d242b784abacd9",
+      "bytes": 42
+    },
+    {
+      "path": "evidence/final-aim-tests.log",
+      "sha256": "8bfcaba15cd58fc8f51f75de86ab0d100af5f77322d2017e50cf9f7af4a8f87c",
+      "bytes": 446
+    },
+    {
+      "path": "evidence/final-aim-build.log",
+      "sha256": "600304f35b8a5b866f1f320d7ccab363a0ad8f4dcfeab3b11cfba3e8b7ab78ce",
+      "bytes": 24626
+    },
+    {
+      "path": "evidence/final-aim-browser.log",
+      "sha256": "166ad85acc4005d5a4e9f9f04bf177a3aa61026b606a1798e3cc2d7b2319906a",
+      "bytes": 7465
+    },
+    {
+      "path": "evidence/final-aim-browser-rerun.log",
+      "sha256": "752c24e1a801984ff13cedcdce918d014ecd845304cd3f15f6f96559620ce71f",
+      "bytes": 577
+    }
+  ],
+  "limits": [
+    "Local unit and browser evidence; not genuine Twitch or human acceptance",
+    "Hardware OBS performance is a separate timed capture",
+    "Earlier Linux image proof predates this frontend-only packet"
+  ]
+}

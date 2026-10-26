@@ -4,14 +4,14 @@
   "sha256": "b36f4e9da5f2f17c733ba711c8fe0656d6b0cd573cfe96eeb3e68325cffef739",
   "verifiedAgainst": "Official GitHub release asset digest",
   "cost": 0,
-  "capturePerformed": false,
+  "capturePerformed": true,
   "installedPath": "/Users/frameless/Desktop/Aragoz/.runtime/OBS.app",
   "codesignVerified": true,
   "screenRecordingAuthorizedByOwner": true,
   "permissionEnabledVerified": true,
   "nativeControl": "Reconnected using cua_repl reset; AX/native keys work, coordinates report noWindowsAvailable in Qt.",
   "cameraMicrophoneInputMonitoringRequested": false,
-  "currentSetup": {
+  "initialSetup": {
     "sourceCount": 0,
     "microphoneMuteChecked": true,
     "streamTime": "00:00:00",
@@ -22,6 +22,14 @@
       "output": "1920x1080",
       "fps": 60
     },
-    "limits": "Estimated configuration only; no OBS performance measurement."
+    "limits": "Historical initial setup before actual recording; see finalized session receipts for measurement."
+  },
+  "latestCompletedCapture": {
+    "runId": "obs-720p-paced-20261026",
+    "evidence": "evidence/obs-720p-session.json",
+    "durationCompleted": true,
+    "captureFramingReviewed": true,
+    "steady60fpsAccepted": false,
+    "limits": "AI-led, not genuine Twitch or human acceptance"
   }
 }

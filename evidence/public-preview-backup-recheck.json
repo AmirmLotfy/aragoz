@@ -1,0 +1,28 @@
+{
+  "kind": "actual-online-public-preview-backup-and-readonly-reopen",
+  "sourceRole": "public launcher database verified against live metadata",
+  "performedAt": "2026-10-26T06:24:09.032Z",
+  "source": {
+    "integrity": {
+      "integrity_check": "ok"
+    },
+    "userVersion": {
+      "user_version": 1
+    },
+    "tableCount": 11
+  },
+  "isolatedBackup": {
+    "integrity": {
+      "integrity_check": "ok"
+    },
+    "userVersion": {
+      "user_version": 1
+    },
+    "tableCount": 11
+  },
+  "limits": [
+    "No Twitch credentials exist yet; encrypted credential recovery is not established by this reopen",
+    "The running service was not stopped or replaced",
+    "Private backup and encryption key remain local and ignored"
+  ]
+}

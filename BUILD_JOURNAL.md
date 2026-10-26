@@ -1,5 +1,20 @@
 # Build journal
 
+## 2026-10-26 — final-strike aim assistance verified
+
+- A post-pacing1080p60diagnostic was stopped safely after542884.892ms.8attempts/7wins/1unfinished,0browser/errors/downloads/crop. One both-broken posture stayed0.923m from the body for365seconds. Source inspection found assist targeted only intact sockets, preserving stale pointer direction for final strike. Diagnostic does not itself record pointer/facing; evidence/obs-1080p-aim-diagnostic.json labels that limit.
+- Added resolveStrikeAim and seven tests. Existing exposed-first/closest intact sockets and disabled manual aim are retained; assisted final strike selects nearby body once both modules break. Legitimate-input combat route demonstrates2real breaks,120missed held manual strikes and a real assisted final win. Root integrated; specialist completed without running heavy jobs.
+- Current typecheck/129unit-server tests in10files/releasebuild pass. Browser13/15initially passed; two telemetry/timing assumptions failed under SwiftShader. Tests now await actual active frame progress. Focused2/2pass in19.4seconds; all15cases covered on unchanged app bytes. Full failed log and focused log retained/hashes in evidence/final-aim-validation.json; do not call this a single15pass run.
+- Added real Settings-based --fps=30driver selection and a browser assertion that simulation progresses independently from rendered30fps samples. OBSVideo1080p30saved; microphoneDisabled. All recording/driver processes stopped. Next: freeze/push source, one final30minute1080p30capture and inspectactual media/counters/readability. No new paid/provider action.
+
+## 2026-10-26 — clean720p duration and public backup verified
+
+- Frozen game source57f86bd completed1800001.097ms of AI-led M1 keyboard play across all3pairs:79attempts/73wins/3defeats/3unfinished;0driver/browser errors,0downloads and0cropped samples. OBS finalized before driver stop marker/context closure; exec24746 exited0.
+- Actual1280×720/60fps hardwareH.264 clip is1835.300s/93661837bytes. Full audio audit is silence(-91dB). Actual5/15/25minute frames show the whole public stage without popovers.391bounds samples pass; spectator comprehension remains human-unverified.
+-100176active frame samples average17.700ms(~56.50fps); worst individual-attemptp95=34ms, not globalp95. OBS613/110136renderlagframes(0.6%reported),51/110135encoderframes(0.0463%calculated); peak46475triangles/71drawcalls. Steady60fps is not accepted. evidence/obs-720p-session.json retains actual metadata/hash/counters/reports; raw footage remains ignored/local.
+- Read-only ops review found the generic backup command could target local rehearsal instead of the public launcher database. Documented explicit DATABASE_PATH in public/server/root instructions and verified an online backup against live launcher metadata. Read-only reopen passes integrity_check with matching schema1/11tables; evidence/public-preview-backup-recheck.json. No Twitch credentials exist, so real encrypted-token recovery is not established by this check. No key exposed/copied.
+- Root consolidated handoff and corrected stale installation/capture metadata. Reached OBSVideo without owner intervention by using initial category-list focus and5Down fromGeneral; set/save1920×1080/60. New source5 captures only exact obs-1080p-paced-20261026title, mute1/microphoneDisabled. Current driverPID23865/exec80277 startedUTC06:26:28.705; deadline06:56:28.705. No other heavy job/source build during capture. Twitch SMS/genuine human gates and no-spend boundary remain.
+
 ## 2026-10-26 — confirmed render-deadline drift corrected
 
 - Clean-framing720p diagnostic ran522635.494ms before deliberate stop: zero downloads/cropped samples/browser errors. OBS1280×720/60fps recorded0.8%render lag/0.1%encoder lag. It is not30minute acceptance; evidence/obs-720p-diagnostic.json retains actual metadata/samples/counters.

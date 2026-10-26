@@ -31,6 +31,14 @@ When registering the Twitch app during an existing tunnel session, put its crede
 
 ## Backups and evidence
 
-Use the online SQLite backup command in apps/server/README.md while the server is running. Verify restoration in a separate local data directory with the same encryption key; never overwrite the active database during a show. Record actual URL, revision, restart, backup and provider results. Keep synthetic fixtures separately labelled. Three first-time hosts with genuine viewers and actual OBS performance sessions remain required before release-ready claims.
+From the repository root, explicitly select the public preview database when taking an online backup while the server is running:
+
+```sh
+DATABASE_PATH="$PWD/data/public-preview/aragoz.sqlite" node --env-file-if-exists=.env apps/server/src/backup.ts /absolute/new-backup.sqlite
+```
+
+The destination must be new. Confirm the source matches the `database` path recorded in `.runtime/public-preview.json`. The generic server command inherits its own environment and can otherwise select the separate local rehearsal database. Preserve the matching private encryption key securely; the SQLite backup contains encrypted tokens but does not include that key. Do not put either file in Git, screenshots, or public evidence.
+
+Verify restoration in a separate local data directory with the same encryption key; never overwrite the active database during a show. Record actual URL, revision, restart, backup and provider results. Keep synthetic fixtures separately labelled. Three first-time hosts with genuine viewers and actual OBS performance sessions remain required before release-ready claims.
 
 Official references checked 26 October 2026: [Cloudflare Quick Tunnels](https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/) and [Render free-service limits](https://render.com/docs/free).

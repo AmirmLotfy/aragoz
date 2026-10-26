@@ -4,7 +4,7 @@ Chat makes the monster. You find the loophole.
 
 ARAGOZ is a browser action game where Twitch viewers propose powers with built-in flaws. The selected contract attaches a physical module; exploiting the flaw opens a counter and breaking the module removes its ability.
 
-**Status:** full first-release implementation is available as a technical preview. TypeScript,112unit/server tests,62asset fixtures,12browser flows, the release build and an actual Linux ARM64 container/persistence/backup/restore check pass. Seven original Blender assets are admitted. Real Twitch application consent/chat, actual OBS sessions and genuine human acceptance remain open. See TEST_PLAN.md and CURRENT_HANDOFF.md.
+**Status:** full first-release implementation is available as a technical preview. Current typecheck,129unit/server tests,15browser cases (13initial passes plus2focused passes after test synchronization) and release build pass. Seven original Blender assets are admitted;62asset fixtures and an actual Linux ARM64 container/persistence/backup/restore check passed before the latest frontend presentation changes. An actual30minute720pOBS run passes sampled capture framing, with performance limits in [the measurement report](ops/PERFORMANCE_REPORT.md); the final1080p30fps fallback capture is next. Real Twitch application consent/chat, an accepted presentation profile and genuine human acceptance remain open. See TEST_PLAN.md and CURRENT_HANDOFF.md.
 
 **No spending:** the owner approved the private repository and prohibited payments on26October2026. Model/Meshy calls remain off. Use the existing Mac plus the temporary HTTPS tunnel in [the no-cost hosting runbook](ops/NO_COST_HOSTING.md). The paid Render design is archived and unapproved; no automatic billable CI is configured.
 
@@ -38,7 +38,7 @@ OpenAI calls stay off until OPENAI_API_KEY and a nonzero approved MODEL_DAILY_RE
 - `npm run test:container`: actual Linux image startup, static compression, private API denial, durable volume replacement, online backup and isolated restoration. Requires a Docker context/image; defaults are documented in tests/container/smoke.mjs.
 - `npm run preview:public`: zero-cost public HTTPS preview on this computer; see ops/NO_COST_HOSTING.md.
 - `npm run check:resources`: the bounded local next-job estimate.
-- `node --env-file-if-exists=.env apps/server/src/backup.ts /absolute/new-backup.sqlite`: online backup to a fresh path. Follow apps/server/README.md for safe restoration.
+- `node --env-file-if-exists=.env apps/server/src/backup.ts /absolute/new-backup.sqlite`: online backup of this command's configured database to a fresh path. For the public launcher, explicitly select its database using [the public backup instructions](ops/NO_COST_HOSTING.md#backups-and-evidence). Follow apps/server/README.md for safe restoration.
 
 Short M1 Metal browser samples and a keyboard-driven counter/break/final-strike/Encore playthrough are in evidence/browser. They are labelled local/AI-led and establish no hosted/OBS/human acceptance. A paused stage renders at15fps to reduce idle GPU work; active combat retains fixed60Hz simulation and the selected60/30fps presentation setting.
 
