@@ -1,5 +1,11 @@
 # Build journal
 
+## 2026-10-27 — Twitch recheck and free preview restored
+
+- Owner supplied official app-registration URL. Existing signed-in amirmolotfy console showed zero apps. Prepared approved ARAGOZ Theatre/GameIntegration/Confidential form and submitted one registration attempt; Twitch again rejected missing2FA. No app/ClientID/secret exists; no SMS retry/phone/code/support action. Actual rejection screenshot/JSON retained without private phone data.
+- Old preview PIDs/listeners absent, old hostname unreachable. Restarted approved no-cost public launcher with existing SQLite/key; exec63719,supervisor27890,tunnel27891,server27927. New https://paper-principles-detection-stephen.trycloudflare.com/rehearse and readiness both200; modelEnabled=false. Exact new callback is prepared in Twitch. No game/OBS/heavy test started and no paid call.
+- Root owns changes. Developer browser2/tab1 marked handoff with the visible rejection/form. Genuine provider/human gates remain open; await owner2FA resolution instead of retry loops. Application source/build unchanged; existing validation remains scoped to its recorded source.
+
 ## 2026-10-26 — final M1 profile completed; automated tests silenced
 
 - Source02f6b75 completed1800004.052ms of actual M1/OBS1080p30play:75attempts/67wins/5defeats/3unfinished,0driver/browser errors/downloads/cropped samples. OBS finalized before stop marker/context release. Driver exited0; OBS45543 and driver42776 are absent. User silence request arrived after full duration; SIGTERM changed the receipt's terminal status but did not shorten the completed capture.

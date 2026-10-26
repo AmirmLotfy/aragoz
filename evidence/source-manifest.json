@@ -46,8 +46,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 27281,
-      "sha256": "7e5a3ad2149c380cb74998dff143460908408a69b4b46756eaf0bbf7c7daa1bf"
+      "bytes": 28400,
+      "sha256": "ee244edcef2ed1b448dcfb5187329c866262cc8479ea614feb769eb559a5a1a9"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -56,8 +56,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 11125,
-      "sha256": "3410767f0505acda309c75daf9de74ea2b8514bc55859f083d008d06efe7d713"
+      "bytes": 12849,
+      "sha256": "e68b24e1fc37b0161b51e2bb947286545259ea8982c7554e92756b836bbd722e"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -895,6 +895,11 @@
       "sha256": "7cfd89fca5e45c1f844d0acb5571a39bf6107bef2c0d3018c67a51191b5d10e3"
     },
     {
+      "path": "evidence/browser/twitch-registration-block-20261027.png",
+      "bytes": 82835,
+      "sha256": "fcef30e20023356c1fe03f53d9dd983cc473072976f6d24ef9396fb6e573f878"
+    },
+    {
       "path": "evidence/capture-telemetry-validation.json",
       "bytes": 1460,
       "sha256": "2ea185afe55dc8544d4466bcef167cdba046a204515334e24fc9feada27d3ec9"
@@ -1013,6 +1018,11 @@
       "path": "evidence/startup-recovery.json",
       "bytes": 2509,
       "sha256": "b671f6fbf1814f3d914f21e685f67a1924358ce76f7d5762891423bd98312406"
+    },
+    {
+      "path": "evidence/twitch-registration-20261027.json",
+      "bytes": 1172,
+      "sha256": "fae028507412ec93d71f8b7cb5c3b3ccea4666fa711076370ec80c1705d654ea"
     },
     {
       "path": "evidence/validation.json",

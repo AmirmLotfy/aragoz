@@ -1,0 +1,30 @@
+{
+  "kind": "actual-Twitch-console-registration-attempt-and-free-preview-recovery",
+  "clientDate": "2026-10-27",
+  "observedAt": "2026-10-26T21:40:09.100Z",
+  "account": "amirmolotfy",
+  "applicationName": "ARAGOZ Theatre",
+  "category": "Game Integration",
+  "clientType": "Confidential",
+  "callback": "https://paper-principles-detection-stephen.trycloudflare.com/api/auth/twitch/callback",
+  "registeredAppsObservedBeforeAttempt": 0,
+  "creationAttemptsThisTurn": 1,
+  "result": "rejected",
+  "providerError": "user must have two factor auth enabled to perform this action",
+  "clientIdCreated": false,
+  "secretCreated": false,
+  "preview": {
+    "origin": "https://paper-principles-detection-stephen.trycloudflare.com",
+    "readinessStatus": 200,
+    "rehearsalStatus": 200,
+    "modelEnabled": false,
+    "existingDatabaseAndKeyPreserved": true
+  },
+  "screenshot": "evidence/browser/twitch-registration-block-20261027.png",
+  "limits": [
+    "Actual provider rejection, not OAuth/chat success",
+    "No phone/code was read or submitted; no SMS retries or support contact",
+    "No paid service/model/Meshy call",
+    "No gameplay test or recording started"
+  ]
+}
