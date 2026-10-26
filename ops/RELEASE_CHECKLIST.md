@@ -5,7 +5,7 @@ Local release candidate is prepared. This checklist records actual provider/host
 ## Current deliverable
 
 - [x] Pinned Node24.19.0, lockfile and successful clean npmci.
-- [x] Current typecheck, 144 unit/server tests across 11 files, release-asset build and 22 browser cases verified (21 full-run passes plus one focused synchronization fix). Account-free three-act House flow, saved recovery, explicit takeover, finite showbill, Encore/Remix and storage failures are covered. Live UI remains labelled fixture evidence. See evidence/house-show-validation.json. 62 asset fixtures passed in the earlier Linux validation.
+- [x] Current typecheck, 146 unit/server tests across 11 files, release-asset build and one complete25/25browser run pass. Account-free three-act House flow, saved recovery, explicit takeover, finite showbill, Encore/Remix and storage failures are covered. Live UI remains labelled fixture evidence. See ops/AUTONOMOUS_RELEASE_REVIEW.md and evidence/autonomous-release-validation.json. 62 asset fixtures passed in the earlier Linux validation.
 - [x] Seven original Blender/GLB assets, rights and actual Babylon inspection.
 - [x] Real keyboard counter/break/final-strike/Encore playthrough, labelled AI-led.
 - [x] Production-only dependency package starts and serves API/frontend/assets/licenses.
@@ -29,7 +29,7 @@ Local release candidate is prepared. This checklist records actual provider/host
 
 Completed actual30minute720p60 and1080p30captures; see ops/PERFORMANCE_REPORT.md and the separately versioned receipts. Recommended measured M1 profile: Standard quality/30fps presentation, OBS1080p30; fixed60Hzsimulation unchanged.1080p mean29.993fps,34render-lag frames/3encoder-lag frames;67wins/5defeats/3unfinished.720p averaged56.50fps and is not accepted as steady60fps. Actual encoded frames at5/15/25minutes pass sampled framing; human comprehension is still unverified.
 
-The owner reported audible game speakers despite the muted recording. Test windows/OBS are closed. Future automated Chrome launches are muted from startup and the headed driver verifies game mute before play; actual preflight in evidence/silent-test-policy.json. Public preview is muted and at a fresh curtain.
+The owner reported audible game speakers despite the muted recording. Test windows/OBS are closed. Future automated Chrome launches are muted from startup and the headed driver verifies game mute before play; actual preflight in evidence/silent-test-policy.json. Each automated browser was muted and closed after its check. No assumption is made about the owner’s current browser preferences.
 
 - [x] Record actual device/browser/OBS/source/encoder settings.
 - [x] Capture only the public game window; exclude backstage/unrelated desktop/camera/microphone content.

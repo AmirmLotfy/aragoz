@@ -398,3 +398,27 @@ describe('complete show progression', () => {
     expect(app.services.store.recipe(finalRecipe.id)).toEqual(finalRecipe);
   });
 });
+
+it('does not report a playable service ready until the built entry assets exist',async()=>{
+  const directory=mkdtempSync(join(tmpdir(),'aragoz-readiness-'));
+  const preview=await createApp({databasePath:':memory:',staticRoot:directory},{background:false,fetch:noFetch});
+  try{
+    expect((await preview.inject('/api/readiness')).statusCode).toBe(503);
+    writeFileSync(join(directory,'index.html'),'<script type="module" src="/assets/app.js"></script>');
+    expect((await preview.inject('/api/readiness')).statusCode).toBe(503);
+    const {mkdirSync}=await import('node:fs');mkdirSync(join(directory,'assets'));writeFileSync(join(directory,'assets/app.js'),'// fixture entry');
+    expect((await preview.inject('/api/readiness')).json()).toMatchObject({ready:true,frontendReady:true,modelEnabled:false});
+  }finally{await preview.close();rmSync(directory,{recursive:true,force:true});}
+});
+
+it('restricts opt-in proxy trust to loopback and stops at the nearest untrusted client',async()=>{
+  const proxy=await createApp({databasePath:':memory:',staticRoot:'/nonexistent',trustLoopbackProxy:true},{background:false,fetch:noFetch});
+  try{
+    for(let i=0;i<180;i++)expect((await proxy.inject({url:'/api/health',remoteAddress:'127.0.0.1',headers:{'x-forwarded-for':`192.0.2.${i}, 198.51.100.1`}})).statusCode).toBe(200);
+    // Changing a spoofed prefix does not escape the actual closest-client bucket.
+    expect((await proxy.inject({url:'/api/health',remoteAddress:'127.0.0.1',headers:{'x-forwarded-for':'203.0.113.9, 198.51.100.1'}})).statusCode).toBe(429);
+    expect((await proxy.inject({url:'/api/health',remoteAddress:'127.0.0.1',headers:{'x-forwarded-for':'198.51.100.2'}})).statusCode).toBe(200);
+    for(let i=0;i<180;i++)expect((await proxy.inject({url:'/api/health',remoteAddress:'203.0.113.50',headers:{'x-forwarded-for':`192.0.2.${i}`}})).statusCode).toBe(200);
+    expect((await proxy.inject({url:'/api/health',remoteAddress:'203.0.113.50',headers:{'x-forwarded-for':'198.51.100.3'}})).statusCode).toBe(429);
+  }finally{await proxy.close();}
+});

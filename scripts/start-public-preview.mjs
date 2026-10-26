@@ -4,11 +4,14 @@ import { createWriteStream, existsSync, mkdirSync, readFileSync, writeFileSync }
 import { resolve } from 'node:path';
 import { createServer } from 'node:net';
 import { parseEnv } from 'node:util';
+import { webBuildReady } from '../apps/server/src/readiness.ts';
 
 // This preview uses the owner's existing computer and an account-free tunnel.
 // Paid providers and game model requests are deliberately never enabled here.
 const root=resolve(import.meta.dirname,'..');
 const operatorEnv=()=>existsSync(resolve(root,'.env'))?parseEnv(readFileSync(resolve(root,'.env'),'utf8')):{};
+const buildRoot=operatorEnv().WEB_DIST_PATH??process.env.WEB_DIST_PATH??resolve(root,'apps/web/dist');
+if(!webBuildReady(buildRoot))throw new Error('Build the complete game with npm run build:release before starting the public preview.');
 const port=Number(process.env.ARAGOZ_PREVIEW_PORT??3010);
 if(!Number.isSafeInteger(port)||port<1024||port>65535)throw new Error('Choose a preview port from 1024 to 65535.');
 await new Promise((resolve,reject)=>{const probe=createServer();probe.once('error',()=>reject(new Error('The public-preview loopback port is occupied. Choose ARAGOZ_PREVIEW_PORT.')));probe.listen(port,'127.0.0.1',()=>probe.close(resolve));});
@@ -50,7 +53,9 @@ const openServer=async()=>{
   for(let attempt=0;attempt<40&&!stopping;attempt++){
     try{
       const response=await fetch(`http://127.0.0.1:${port}/api/readiness`,{signal:AbortSignal.timeout(1000)});
-      if(response.ok){clearTimeout(deadline);save('ready');console.log(`Public technical preview: ${origin}/rehearse`);console.log(`Twitch callback for this session: ${origin}/api/auth/twitch/callback`);console.log('No paid services or game model calls are enabled. Keep this process and the Mac running.');return;}
+      const health=await response.json();
+      const frontend=response.ok&&health.ready===true&&health.frontendReady===true?await fetch(`http://127.0.0.1:${port}/house-show`,{signal:AbortSignal.timeout(1000)}):null;
+      if(frontend?.ok&&(await frontend.text()).includes('type="module"')){clearTimeout(deadline);save('ready');console.log(`Public technical preview: ${origin}/house-show`);console.log(`Twitch callback for this session: ${origin}/api/auth/twitch/callback`);console.log('No paid services or game model calls are enabled. Keep this process and the Mac running.');return;}
     }catch{/* Wait only for this process-owned server to boot. */}
     await new Promise(resolve=>setTimeout(resolve,250));
   }

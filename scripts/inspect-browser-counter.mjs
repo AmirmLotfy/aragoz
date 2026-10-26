@@ -1,12 +1,12 @@
 import {chromium} from 'playwright';import {writeFile}from'node:fs/promises';
-const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',args:['--mute-audio']});
 const evidence={evidence:'AI-led local browser play using keyboard inputs; not human or Twitch acceptance',at:new Date().toISOString(),states:[],captures:[]};
 try{
  const page=await browser.newPage({viewport:{width:1440,height:1000}}),held=new Set();
  const keys=async next=>{for(const k of held)if(!next.includes(k)){await page.keyboard.up(k);held.delete(k);}for(const k of next)if(!held.has(k)){await page.keyboard.down(k);held.add(k);}};
  const state=()=>page.getByTestId('game-canvas').evaluate(c=>({tick:Number(c.dataset.simTick),hero:JSON.parse(c.dataset.heroPosition),boss:JSON.parse(c.dataset.bossPosition),facing:JSON.parse(c.dataset.bossFacing),stage:c.dataset.bossStage,active:c.dataset.activeSlot,modules:JSON.parse(c.dataset.modules),outcome:c.dataset.outcome}));
  const move=async(target,timeout=2500,strike=false)=>{const end=Date.now()+timeout;while(Date.now()<end){const s=await state();if(s.outcome)throw Error('Encounter ended before counter');const dx=target.x-s.hero.x,dz=target.z-s.hero.z;if(Math.hypot(dx,dz)<.45){await keys(strike?['KeyJ']:[]);return;}const next=[];if(Math.abs(dx)>.17)next.push(dx<0?'KeyA':'KeyD');if(Math.abs(dz)>.17)next.push(dz<0?'KeyW':'KeyS');if(strike)next.push('KeyJ');await keys(next);await page.waitForTimeout(35);}throw Error('Waypoint not reached '+JSON.stringify({target,state:await state()}));};
- await page.goto('http://127.0.0.1:5173/rehearse?reviewAssets=1');await page.waitForFunction(()=>document.querySelector('canvas')?.dataset.geometry?.includes('5 candidate'));
+ await page.addInitScript(()=>localStorage.setItem('aragoz.preferences.v1',JSON.stringify({muted:true})));await page.goto('http://127.0.0.1:5173/rehearse?reviewAssets=1');await page.waitForFunction(()=>document.querySelector('canvas')?.dataset.geometry?.includes('5 candidate'));
  await page.getByRole('button',{name:'Raise the curtain',exact:true}).click();await move({x:-5.3,z:1});await keys([]);
  await page.waitForFunction(()=>{const c=document.querySelector('canvas');return c?.dataset.bossStage==='exposed'&&c.dataset.activeSlot==='left';},{},{timeout:18000});
  evidence.states.push({point:'charge counter exposed',...await state()});await page.screenshot({path:'evidence/browser/charge-exposed.png'});evidence.captures.push('evidence/browser/charge-exposed.png');

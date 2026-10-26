@@ -28,7 +28,7 @@ try{
   check('Linux image and non-root runtime',()=>{receipt.platform=docker('image','inspect',image,'--format','{{.Os}}/{{.Architecture}}');assert.match(receipt.platform,/^linux\//);assert.equal(docker('image','inspect',image,'--format','{{.Config.User}}'),'node');});
   docker('volume','create',volume);volumeCreated=true;
   const origin=await boot();
-  for(const path of ['/api/health','/api/readiness','/rehearse','/assets/manifest.json','/fonts/NotoSans-OFL.txt']){
+  for(const path of ['/api/health','/api/readiness','/rehearse','/house-show','/assets/manifest.json','/fonts/NotoSans-OFL.txt']){
     const response=await fetch(origin+path,{signal:AbortSignal.timeout(5000)});check('HTTP 200 '+path,()=>assert.equal(response.status,200));await response.body?.cancel();
   }
   const denied=await fetch(origin+'/api/shows',{signal:AbortSignal.timeout(5000)});check('Unauthenticated private API denied',()=>assert.equal(denied.status,401));await denied.body?.cancel();

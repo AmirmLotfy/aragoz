@@ -47,3 +47,9 @@ Official references checked 26 October 2026: [Cloudflare Quick Tunnels](https://
 ## Account-free three-act show
 
 Open `/house-show` at the current preview origin to choose two House-authored contracts per act, play three acts, Encore or Remix, and keep the cumulative showbill. `/rehearse` remains the one-encounter practice route. Neither route requires Twitch or model calls. House saves live in that browser and origin, independently from the server database; another browser/device or a new temporary hostname has a separate save. Download the showbill before replacing a save or changing the tunnel origin. Local attempt history is not externally verified competition or human-acceptance evidence.
+
+## Restricted proxy and current review
+
+The Mac origin binds127.0.0.1. Set the nonsecret `TRUST_LOOPBACK_PROXY=true` only when that loopback peer is your trusted tunnel; the default is false. This uses Fastify's IP allowlist, not blanket trust or a hop count. Cloudflare appends its connecting client's address to forwarded chains; the nearest untrusted client remains the anonymous rate key, while authenticated channels retain their own limits. Never expose the origin directly with blanket proxy trust or log visitor IPs for these checks.
+
+Readiness now returns503 when the built index or entry assets are missing. A fresh launcher also fails before spawning a tunnel if its build is absent and requests the real House frontend before reporting ready. Existing same-hostname supervisors need not be restarted just to exercise the new bootstrap. The27October audit observed a Cloudflare1033/reconnect and a browser load timeout despite a healthy game origin. Keep the local3000House route available; no uptime guarantee applies to the free public hostname. See AUTONOMOUS_RELEASE_REVIEW.md for the actual evidence and judgment.

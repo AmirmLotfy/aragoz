@@ -19,6 +19,7 @@ function envelope(raw:string):SaveEnvelope {
   return v as SaveEnvelope;
 }
 const ACTS=['I','II','III'];
+const SAVE_WARNING='Saving is unavailable in this browser. You can keep playing, but your latest progress will not be saved. Refreshing may restore an older show or start a new one.';
 
 export function HouseShowView({preferences,navigate,onSettings}:{preferences:Preferences;navigate:(path:string)=>void;onSettings:()=>void}){
   const [show,setShow]=useState<HouseShow|null>(null),[owned,setOwned]=useState(false),[paused,setPaused]=useState(true),[ready,setReady]=useState(false);
@@ -34,9 +35,10 @@ export function HouseShowView({preferences,navigate,onSettings}:{preferences:Pre
     if(storageAvailable.current){
       try{
         const raw=localStorage.getItem(HOUSE_STORAGE_KEY);
+        if(!force&&!raw){++loadGeneration.current;loseControl();state.current=null;setShow(null);setError('The saved House show was removed. Start a fresh show to continue.');return false;}
         if(!force&&raw&&envelope(raw).writerId!==writerId.current){loseControl();return false;}
         localStorage.setItem(HOUSE_STORAGE_KEY,JSON.stringify({version:1,writerId:writerId.current,show:next} satisfies SaveEnvelope));
-      }catch{storageAvailable.current=false;setSaveWarning('Saving is unavailable in this browser. You can play here; refreshing will start a new show.');}
+      }catch{storageAvailable.current=false;setSaveWarning(SAVE_WARNING);}
     }
     state.current=next;setShow(next);return true;
   }
@@ -45,16 +47,16 @@ export function HouseShowView({preferences,navigate,onSettings}:{preferences:Pre
     const load=async()=>{
       try{
         let raw:string|null;
-        try{raw=localStorage.getItem(HOUSE_STORAGE_KEY);}catch{storageAvailable.current=false;setSaveWarning('Saving is unavailable in this browser. You can play here; refreshing will start a new show.');raw=null;}
+        try{raw=localStorage.getItem(HOUSE_STORAGE_KEY);}catch{storageAvailable.current=false;setSaveWarning(SAVE_WARNING);raw=null;}
         if(raw){const saved=envelope(raw);const parsed=await parseHouseShow(JSON.stringify(saved.show));if(!active)return;state.current=parsed;setShow(parsed);}
         else if(active){controller.current=true;setOwned(true);publish(createHouseShow(),true);}
       }catch{if(active)setError('The saved House show is damaged or belongs to a newer version. Start a fresh show to continue.');}
       finally{if(active)setLoading(false);}
     };
     const external=(event:StorageEvent)=>{
-      if(event.key!==HOUSE_STORAGE_KEY)return;
+      if(event.key!==HOUSE_STORAGE_KEY&&event.key!==null)return;
       ++loadGeneration.current;loseControl();setError(null);
-      if(!event.newValue){state.current=null;setShow(null);return;}
+      if(!event.newValue){state.current=null;setShow(null);setError('The saved House show was removed. Start a fresh show to continue.');return;}
       try{const saved=envelope(event.newValue);const generation=loadGeneration.current;void parseHouseShow(JSON.stringify(saved.show)).then(parsed=>{if(active&&generation===loadGeneration.current){state.current=parsed;setShow(parsed);}}).catch(()=>{if(active)setError('The saved House show could not be read. Start a fresh show to continue.');});}
       catch{setError('The saved House show could not be read. Start a fresh show to continue.');}
     };
@@ -68,7 +70,7 @@ export function HouseShowView({preferences,navigate,onSettings}:{preferences:Pre
     setBusy(true);setError(null);const generation=++loadGeneration.current;
     try{
       let next=state.current,raw:string|null=null;
-      if(storageAvailable.current){try{raw=localStorage.getItem(HOUSE_STORAGE_KEY);}catch{storageAvailable.current=false;setSaveWarning('Saving is unavailable in this browser. You can play here; refreshing will start a new show.');}}
+      if(storageAvailable.current){try{raw=localStorage.getItem(HOUSE_STORAGE_KEY);}catch{storageAvailable.current=false;setSaveWarning(SAVE_WARNING);}}
       if(raw){const saved=envelope(raw);next=await parseHouseShow(JSON.stringify(saved.show));if(localStorage.getItem(HOUSE_STORAGE_KEY)!==raw)throw new Error('The saved show just changed. Choose Continue again to use its latest state.');}
       if(!mounted.current||generation!==loadGeneration.current)return;
       const resumed=next?recoverHouseShow(next):createHouseShow();controller.current=true;setOwned(true);setPaused(true);setReady(false);setSnapshot(null);setMetrics(null);lastProgressTick.current=0;publish(resumed,true);

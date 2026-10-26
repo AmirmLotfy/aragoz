@@ -18,6 +18,7 @@ import { Engine, HttpError } from './engine.ts';
 import { Twitch } from './twitch.ts';
 import type { SocketFactory } from './twitch.ts';
 import { ConnectionTests } from './connection.ts';
+import { webBuildReady } from './readiness.ts';
 
 export interface Dependencies { now?:()=>number; fetch?:Fetcher; socketFactory?:SocketFactory; store?:Store; background?:boolean; }
 export interface Services { store:Store;engine:Engine;compiler:Compiler;twitch:Twitch;config:Config; }
@@ -26,7 +27,7 @@ const COOKIE='aragoz_session';
 function same(a:string,b:string){const aa=Buffer.from(a),bb=Buffer.from(b);return aa.length===bb.length&&timingSafeEqual(aa,bb);}
 export async function createApp(overrides:Partial<Config>={},deps:Dependencies={}):Promise<AragozApp>{
   const config={...configFromEnv(),...overrides};const now=deps.now??Date.now,fetcher=deps.fetch??fetch;
-  const store=deps.store??new Store(config.databasePath,config.tokenEncryptionKey);const app=Fastify({logger:false,bodyLimit:128*1024,trustProxy:false}) as unknown as AragozApp;
+  const store=deps.store??new Store(config.databasePath,config.tokenEncryptionKey);const app=Fastify({logger:false,bodyLimit:128*1024,trustProxy:config.trustLoopbackProxy?['127.0.0.1','::1']:false}) as unknown as AragozApp;
   await app.register(cookie);await app.register(rateLimit,{max:180,timeWindow:'1 minute',
     allowList:req=>!req.url.startsWith('/api/'),
     keyGenerator:req=>{const s=req.cookies[COOKIE]?store.session(req.cookies[COOKIE]!,now()):null;return s?.channelId?`channel:${s.channelId}`:`ip:${req.ip}`;},
@@ -52,7 +53,7 @@ export async function createApp(overrides:Partial<Config>={},deps:Dependencies={
   });
   app.setErrorHandler((error,_req,reply)=>{const suppliedStatus=typeof error==='object'&&error!==null&&'statusCode' in error&&typeof error.statusCode==='number'?error.statusCode:500;const status=error instanceof HttpError?error.statusCode:suppliedStatus>=400&&suppliedStatus<500?suppliedStatus:500;reply.code(status).send({error:status===500?'The show could not complete this request':error instanceof HttpError?error.message:status===429?'Too many requests. Please wait.':'Invalid request'});});
   app.get('/api/health',async()=>({ok:true}));
-  app.get('/api/readiness',async(_req,reply)=>{try{store.db.prepare('SELECT 1').get();return {ready:true,hostingConfigured:hostingConfigured(config),modelEnabled:compiler.enabled()};}catch{reply.code(503);return {ready:false};}});
+  app.get('/api/readiness',async(_req,reply)=>{try{store.db.prepare('SELECT 1').get();const frontendReady=webBuildReady(config.staticRoot);if(!frontendReady)reply.code(503);return {ready:frontendReady,frontendReady,hostingConfigured:hostingConfigured(config),modelEnabled:compiler.enabled()};}catch{reply.code(503);return {ready:false};}});
   app.get('/api/session',async(req,reply):Promise<SessionInfo>=>{const s=session(req,reply,true);const channel=s.channelId?store.channel(s.channelId):null;const authenticated=Boolean(channel&&store.credential(channel.id));return {authenticated,csrfToken:s.csrf,channel:authenticated?channel:null,invited:Boolean(channel&&isInvited(config,channel)),hostingConfigured:hostingConfigured(config),modelEnabled:compiler.enabled()};});
   app.get('/api/auth/twitch/start',{config:{rateLimit:{max:10,timeWindow:'1 minute'}}},async(req,reply)=>{
     if(!hostingConfigured(config))throw new HttpError(503,'Twitch hosting is not configured');const s=session(req,reply,true);const query=req.query as {chatHelp?:string};if(query.chatHelp!==undefined&&!['true','false'].includes(query.chatHelp))throw new HttpError(400,'Invalid chat help preference');

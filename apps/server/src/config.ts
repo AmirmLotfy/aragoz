@@ -2,6 +2,7 @@ import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export interface Config {
+  trustLoopbackProxy?: boolean;
   origin: string; port: number; host: string; databasePath: string; secureCookies: boolean;
   twitchClientId: string; twitchClientSecret: string; twitchRedirectUri: string;
   tokenEncryptionKey: string; invitedChannels: string[];
@@ -12,6 +13,7 @@ export function configFromEnv(env: NodeJS.ProcessEnv = process.env): Config {
   const limit = Number(env.MODEL_DAILY_REQUEST_LIMIT ?? 0);
   const maxShows = Number(env.MAX_ACTIVE_SHOWS ?? 3);
   return {
+    trustLoopbackProxy: env.TRUST_LOOPBACK_PROXY === 'true',
     origin: new URL(origin).origin, port: Number(env.PORT ?? 3000), host: env.HOST ?? '127.0.0.1',
     databasePath: env.DATABASE_PATH ?? resolve('data/aragoz.sqlite'), secureCookies: origin.startsWith('https:'),
     twitchClientId: env.TWITCH_CLIENT_ID ?? '', twitchClientSecret: env.TWITCH_CLIENT_SECRET ?? '',

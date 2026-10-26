@@ -1,0 +1,273 @@
+{
+  "kind": "Autonomous engineering and visual judgment; actual AI-led gameplay separately labelled; not genuine Twitch/human acceptance",
+  "at": "2026-10-26T22:52:37.490Z",
+  "baseHead": "d7647947d49e162c7c79c0999e62abe54a26fc6e",
+  "decision": {
+    "solo": "Approved for free desktop technical preview",
+    "fullTwitchRelease": "Not accepted: owner-deferred provider and genuine human gates remain",
+    "humanSessions": 0,
+    "spending": 0
+  },
+  "checks": {
+    "typecheck": "pass",
+    "unit": {
+      "passed": 146,
+      "files": 11,
+      "seconds": 2.28
+    },
+    "releaseBuild": "pass",
+    "browser": {
+      "passed": 25,
+      "failed": 0,
+      "method": "One complete run, all muted",
+      "duration": "2.5min"
+    },
+    "missingBuildLauncher": "Actually rejected before tunnel creation",
+    "syntax": "Standalone changed diagnostics and launcher checked with node --check"
+  },
+  "actualPublicShow": {
+    "receipt": "evidence/browser/autonomous-house/receipt.json",
+    "wins": 3,
+    "attempts": 3,
+    "breaks": 6,
+    "openings": 5,
+    "pageErrors": 0,
+    "tickDurations": [
+      615,
+      1358,
+      776
+    ],
+    "note": "Actual keyboard controls against public HTTPS build; no state injection. Diagnostic-informed AI plus aim assist, not human skill or comprehension."
+  },
+  "actualLocalEcho": {
+    "receipt": "evidence/browser/autonomous-echo/receipt.json",
+    "exposedAt": 1040,
+    "breakAt": 1136,
+    "exposedMeters": [
+      0,
+      40,
+      80
+    ],
+    "disabledTicksAfterBreak": 360,
+    "note": "Actual recording/replay/block collision, real exposed strikes and six simulation seconds of cancellation, not six wall-clock seconds or Twitch proof."
+  },
+  "rejectedDiagnostics": [
+    "autonomous-echo-first: mirror counter/break observed but player lost to steam before extra observation window",
+    "autonomous-echo-local-navigation: driver stuck because waypoint clearance was smaller than input tolerance; driver corrected",
+    "autonomous-echo-network: real Cloudflare1033 before app startup",
+    "autonomous-echo-network-timeout: fresh browser load timeout, no gameplay"
+  ],
+  "hosting": {
+    "status": {
+      "local": {
+        "origin": "http://127.0.0.1:3000",
+        "readinessStatus": 200,
+        "readiness": {
+          "ready": true,
+          "frontendReady": true,
+          "hostingConfigured": false,
+          "modelEnabled": false
+        },
+        "frontendStatus": 200,
+        "indexMatchesBuild": true
+      },
+      "public": {
+        "origin": "https://paper-principles-detection-stephen.trycloudflare.com",
+        "readinessStatus": 200,
+        "readiness": {
+          "ready": true,
+          "frontendReady": true,
+          "hostingConfigured": false,
+          "modelEnabled": false
+        },
+        "frontendStatus": 200,
+        "indexMatchesBuild": true
+      }
+    },
+    "publicServerReload": "Exact supervisor SIGHUP preserved hostname/key/database; new public server56320",
+    "proxyTrust": "Explicit loopback-only opt-in in private config; no visitor IP logging; separation/spoof checks are local fixtures",
+    "limits": "Observed temporary tunnel disconnect; no uptime guarantee. Local fallback intentionally remains available. Existing supervisor retained; new launcher bootstrap tested by missing-build preflight, not a fresh tunnel start."
+  },
+  "limits": [
+    "No new OBS duration measurement or Linux container rebuild; earlier evidence retains its own source limits.",
+    "No Twitch registration/OAuth/chat, phone/SMS retry, human outreach, billableCI, paid model/Meshy/provider action or recording publication."
+  ],
+  "sources": [
+    {
+      "path": ".env.example",
+      "sha256": "6f05ad906877c0a584f3ecf2a1d865589c7be399f09982fe2d629c0950154e49"
+    },
+    {
+      "path": "apps/server/src/app.ts",
+      "sha256": "88b13041ef805e45fce3c32053f63362550ad68cf920f270e16512bd1a09eda2"
+    },
+    {
+      "path": "apps/server/src/config.ts",
+      "sha256": "908f6710b62c1f3cb8be33c857fee6dd35bb2c8ae40e18dbbd1d7da92784b794"
+    },
+    {
+      "path": "apps/server/src/readiness.ts",
+      "sha256": "2952fe4141b97a85541a991fe6853e98e5b61b1f6d421344c3cfae8dc37acda1"
+    },
+    {
+      "path": "apps/server/test/hardening.test.ts",
+      "sha256": "379f66b6aeade50ef3cb7bc13091ada1a1037bce35ce243efefa6c8934b1215b"
+    },
+    {
+      "path": "apps/web/src/HouseShowView.tsx",
+      "sha256": "e9a068ac16c7e4d57afd22939be045194f4a8d2d40a6d827780092a8363731e2"
+    },
+    {
+      "path": "tests/browser/house-show.spec.ts",
+      "sha256": "f432f2745c30cbf5f6178589900f1b593963cbbbe895862686eee80cf6818c2c"
+    },
+    {
+      "path": "tests/container/smoke.mjs",
+      "sha256": "c01a3144e683162de0c9a09b7e2e79079b60d61cd08c8d3b23de87955facb4e9"
+    },
+    {
+      "path": "scripts/start-public-preview.mjs",
+      "sha256": "0ce911540c2ffe1f2a3972f43b8925bfb0bec86a1536bae00aadfce516f0819b"
+    },
+    {
+      "path": "scripts/inspect-browser-counter.mjs",
+      "sha256": "6fecf9194907f7347ac930ef36ef9e79991f2b827f2f81dddbe7214ac4f78347"
+    },
+    {
+      "path": "scripts/inspect-browser-stage.mjs",
+      "sha256": "90e99b99b6d3804bc2c260d020346c7ebaf520cee1002e796459c545502fc197"
+    },
+    {
+      "path": "scripts/measure-browser-smoke.mjs",
+      "sha256": "84981c27d956f6500b54115fb22dff9f593a40e0e9873100dfa916008235d887"
+    },
+    {
+      "path": "scripts/obs-gameplay-session.mjs",
+      "sha256": "1ac38bc56953dd0a23a2f57271e4f180eb1f95884034dfd854de6c8c61ad47dc"
+    },
+    {
+      "path": "scripts/inspect-house-show.mjs",
+      "sha256": "dd974646af1c25a6e85a081eae533ad6b50ba6995478dff1d5f44add5c43ddb4"
+    },
+    {
+      "path": "scripts/inspect-echo-counter.mjs",
+      "sha256": "198805b4dd96a8be6a2cb774894cb03a17404c5d98970e4cf61d9d5262eada57"
+    }
+  ],
+  "localIgnoredLogs": [
+    {
+      "path": "evidence/autonomous-typecheck.log",
+      "sha256": "44273af087ef4f08e29c7fecd416d59e1d6d5c2ebde0ce2b97d242b784abacd9"
+    },
+    {
+      "path": "evidence/autonomous-unit.log",
+      "sha256": "02e8e523ff773848d7d1c1f70031cd8024f8059ada7c5be6fc82fabf31f3e8e5"
+    },
+    {
+      "path": "evidence/autonomous-build.log",
+      "sha256": "8b5750fa0dff1726fb727b753d3694c76319a5ae5c0d027cabe9011f95520251"
+    },
+    {
+      "path": "evidence/autonomous-browser.log",
+      "sha256": "965c7be1af66460d3b5f0ca8bdd3f92a20cfccbb8364fd3355816bafe5681bd7"
+    },
+    {
+      "path": "evidence/autonomous-missing-build.log",
+      "sha256": "c340436e9bc7829b76a03ae4034a6134c36f9be7eb0be2779a3e574d566f282e"
+    }
+  ],
+  "buildIndex": {
+    "path": "apps/web/dist/index.html",
+    "sha256": "9b8650840ab5c60a90532ea1f0f01bbce8ba3c31a8ea12c3c300aaeb9c53adde"
+  },
+  "artifacts": [
+    {
+      "path": "evidence/browser/autonomous-echo/echo-broken.png",
+      "sha256": "9a0df74764b756e7932084f33dab1cb725582629e2846965469cfb8456e2f40d"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo/echo-exposed.png",
+      "sha256": "2232a262801b2fff380763815588645f7e4afc32b61bb138e62ae4048cfb478d"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo/receipt.json",
+      "sha256": "3e61c46176fa1991d8e73cccb92af0b66e354ddf19e05d7e21780dcb274c5707"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo-first/echo-broken.png",
+      "sha256": "22476b85e8083f01e6243ae3bd5f01d9f41a0ffb25eb063fe157bab9fc531e4f"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo-first/echo-exposed.png",
+      "sha256": "e57786420983cad117a3f411d026b537c2e06911d747caea1641d2ba10263b51"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo-first/receipt.json",
+      "sha256": "55372ca39541a48c5d7631126d4649620810a9d0feeb9e36b6603ba749d946b1"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo-first/review-stopped.png",
+      "sha256": "d29342571e6a81f715602e4fbcb39b2b6e749993a3658682f9e451184d66ddff"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo-local-navigation/echo-exposed.png",
+      "sha256": "668bfafb1b6fc19cd46b6d035b782e32b5de5134ccb522cf2e10dbb799d48041"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo-local-navigation/receipt.json",
+      "sha256": "ec13fada9042b48fc5ced61f77eb240797422aee09be3b42b7d622fd0e47c182"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo-local-navigation/review-stopped.png",
+      "sha256": "530cc10a64345010edc0ba31fc65d7e452de50db772c5413728aa0eeec192ba5"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo-network/receipt.json",
+      "sha256": "a350473babf109284307b8f4d011978f0f77e873dd4189ed787582629dcdc764"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo-network/review-stopped.png",
+      "sha256": "0b766c8433211e85be8cc3f6cada2e65e1efaaed2a0d73903f572ce7f7f2c3ac"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo-network-timeout/receipt.json",
+      "sha256": "d5701072fe8651a3b8472737c11e8eaf45ce8b1a0e6c8d3f3d908f42284bef54"
+    },
+    {
+      "path": "evidence/browser/autonomous-echo-network-timeout/review-stopped.png",
+      "sha256": "bba6756a8caf03e77f2f96bcf3ffa2fad10e96a6fcf349602232fc2b0eda4235"
+    },
+    {
+      "path": "evidence/browser/autonomous-house/act-1-won.png",
+      "sha256": "5a5c0a0b1d08cd52d650dcdf7c91c9b1b19f10b381b1682ae3b001a93de5444b"
+    },
+    {
+      "path": "evidence/browser/autonomous-house/act-2-won.png",
+      "sha256": "8d55cabacbfa9232ace288ae397763be875afd3806c12133b1afbe3e3dfdfe14"
+    },
+    {
+      "path": "evidence/browser/autonomous-house/act-3-won.png",
+      "sha256": "bcda0e1145e115938ac051458aad9f253f2474303b1ce472f4d4ac79abb3dc1f"
+    },
+    {
+      "path": "evidence/browser/autonomous-house/receipt.json",
+      "sha256": "5078fb786fc7a8c0adbbf8ae5846e020cd02bd98e2c087f7bd6d88a3a49d15bc"
+    },
+    {
+      "path": "evidence/browser/autonomous-house/showbill.png",
+      "sha256": "60ab989a4a9a5d13b1a6c6135158483ed19fbfcb90396da70e0110f6061e8682"
+    },
+    {
+      "path": "evidence/browser/autonomous-regressions/fallback-stage.png",
+      "sha256": "409c837056ddcc84b8ae15346ee93d20dfcfa96f0e6d73716b452d61dc17aa63"
+    },
+    {
+      "path": "evidence/browser/autonomous-regressions/house-actual-result.json",
+      "sha256": "78b85ba52a47f6e0f892b853b30721c888b7e19eaff8e3ae3aa93eb4e28ca649"
+    },
+    {
+      "path": "evidence/browser/autonomous-regressions/house-ready-720p.png",
+      "sha256": "e85cae5dd256723551d8fedc8306ab9d09eef27b11a8d1a945f1c1518ef379e2"
+    }
+  ]
+}

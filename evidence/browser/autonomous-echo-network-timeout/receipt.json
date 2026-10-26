@@ -1,0 +1,11 @@
+{
+  "kind": "AI-led actual browser keyboard play; not human, Twitch or OBS acceptance",
+  "url": "https://paper-principles-detection-stephen.trycloudflare.com/house-show",
+  "at": "2026-10-26T22:45:06.188Z",
+  "muted": true,
+  "attempts": [],
+  "observations": [],
+  "pageErrorHashes": [],
+  "passed": false,
+  "failure": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://paper-principles-detection-stephen.trycloudflare.com/house-show\", waiting until \"load\"\u001b[22m\n"
+}

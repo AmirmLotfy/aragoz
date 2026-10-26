@@ -109,6 +109,55 @@ test('corrupt saves require explicit replacement and storage failure remains pla
   await expect(page.getByRole('status')).toContainText('Saving is unavailable');await selectContracts(page);
 });
 
+test('a failed write warns about lost progress and refresh restores the older readable save',async({page})=>{
+  await page.goto('/house-show');
+  await page.locator('.placards button').first().click();
+  await expect(page.getByText('ALREADY CHOSEN',{exact:true})).toBeVisible();
+  const previous=await saved(page);
+  // A write-only quota fixture leaves the existing save readable and unchanged.
+  // It applies to this document only, so reloading restores ordinary storage access.
+  await page.evaluate(()=>{const set=Storage.prototype.setItem;Storage.prototype.setItem=function(key,value){if(key==='aragoz.house-show.v1')throw new DOMException('Fixture quota','QuotaExceededError');return set.call(this,key,value);};});
+  await page.locator('.placards button').first().click();
+  await expect(page.getByRole('button',{name:'Raise the curtain',exact:true})).toBeEnabled({timeout:20000});
+  await expect(page.getByRole('status')).toContainText('your latest progress will not be saved');
+  await expect(page.getByRole('status')).toContainText('Refreshing may restore an older show');
+  expect(await saved(page)).toEqual(previous);
+  await page.reload();await page.getByRole('button',{name:'Continue in this window'}).click();
+  await expect(page.getByText('ALREADY CHOSEN',{exact:true})).toBeVisible();
+  await expect(page.getByTestId('house-show')).toHaveAttribute('data-house-phase','choose');
+  await expect(page.getByTestId('game-canvas')).toHaveCount(0);
+  expect(await saved(page)).toEqual(previous);
+});
+
+test('external storage clearing removes the playing window and cannot resurrect its show',async({page,context})=>{
+  await page.goto('/house-show');await selectContracts(page);
+  await page.getByRole('button',{name:'Raise the curtain',exact:true}).click();
+  await expect.poll(async()=>Number(await page.getByTestId('game-canvas').getAttribute('data-sim-tick'))).toBeGreaterThan(0);
+  const other=await context.newPage();
+  try{
+    await other.goto('/house-show');
+    await expect(other.getByRole('button',{name:'Continue in this window'})).toBeVisible();
+    await other.evaluate(()=>localStorage.clear());
+    await expect(page.getByRole('alert')).toContainText('saved House show was removed');
+    await expect(page.getByTestId('game-canvas')).toHaveCount(0);
+    await expect(page.getByRole('button',{name:'Continue in this window'})).toHaveCount(0);
+    expect(await page.evaluate(key=>localStorage.getItem(key),SAVE)).toBeNull();
+  }finally{await other.close();}
+});
+
+test('a missing save is detected before publishing even without a storage event',async({page})=>{
+  await page.goto('/house-show');
+  await expect(page.locator('.placards button')).toHaveCount(3);
+  // Storage changes in this document produce no storage event in this window.
+  // This exercises the publish guard before an external-clear event could arrive.
+  await page.evaluate(key=>localStorage.removeItem(key),SAVE);
+  await page.locator('.placards button').first().click();
+  await expect(page.getByRole('alert')).toContainText('saved House show was removed');
+  await expect(page.locator('.placards button')).toHaveCount(0);
+  await expect(page.getByRole('button',{name:'Continue in this window'})).toHaveCount(0);
+  expect(await page.evaluate(key=>localStorage.getItem(key),SAVE)).toBeNull();
+});
+
 test('narrow layout keeps choices and keyboard focus within the page',async({page})=>{
   await page.setViewportSize({width:390,height:844});await page.goto('/house-show');
   await expect(page.locator('.placards button')).toHaveCount(3);

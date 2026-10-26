@@ -1,0 +1,6853 @@
+{
+  "kind": "AI-led actual browser keyboard play; not human, Twitch or OBS acceptance",
+  "url": "http://127.0.0.1:3000/house-show",
+  "at": "2026-10-26T22:48:01.309Z",
+  "muted": true,
+  "attempts": [],
+  "observations": [
+    {
+      "tick": 9,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 0,
+        "z": 2.8
+      },
+      "boss": {
+        "x": 0,
+        "z": -1.9
+      },
+      "facing": {
+        "x": 0,
+        "z": 1
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 56,
+      "paused": false,
+      "stage": "recording",
+      "active": "left",
+      "hero": {
+        "x": 2.129999995050253,
+        "z": 0.5231161794285593
+      },
+      "boss": {
+        "x": 0,
+        "z": -1.9
+      },
+      "facing": {
+        "x": 0.6526647458536398,
+        "z": 0.7576468369364473
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 121,
+      "paused": false,
+      "stage": "windup",
+      "active": "left",
+      "hero": {
+        "x": 2.129999995050253,
+        "z": 0.4241212399619372
+      },
+      "boss": {
+        "x": 0,
+        "z": -1.9
+      },
+      "facing": {
+        "x": 0,
+        "z": -0.9999999999999999
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 185,
+      "paused": false,
+      "stage": "active",
+      "active": "left",
+      "hero": {
+        "x": 2.431959589979186,
+        "z": -2.2797979498959293
+      },
+      "boss": {
+        "x": 0,
+        "z": -2.048492409199933
+      },
+      "facing": {
+        "x": 0,
+        "z": -0.9999999999999999
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 248,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": 2.431959589979186,
+        "z": -2.2797979498959293
+      },
+      "boss": {
+        "x": 0,
+        "z": -2.048492409199933
+      },
+      "facing": {
+        "x": 0,
+        "z": -0.9999999999999999
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 296,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 2.431959589979186,
+        "z": -2.2797979498959293
+      },
+      "boss": {
+        "x": 0,
+        "z": -2.048492409199933
+      },
+      "facing": {
+        "x": 0,
+        "z": -0.9999999999999999
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 344,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 2.431959589979186,
+        "z": -2.2797979498959293
+      },
+      "boss": {
+        "x": 0,
+        "z": -2.048492409199933
+      },
+      "facing": {
+        "x": 0.9955074282226903,
+        "z": -0.09468347455308698
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 416,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 4.833919184908121,
+        "z": -3.0717575448248624
+      },
+      "boss": {
+        "x": 0,
+        "z": -2.048492409199933
+      },
+      "facing": {
+        "x": 0.9783207908851205,
+        "z": -0.20709521993979688
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 600,
+      "paused": false,
+      "stage": "exposed",
+      "active": "right",
+      "hero": {
+        "x": 4.833919184908121,
+        "z": -3.0717575448248624
+      },
+      "boss": {
+        "x": 0,
+        "z": -2.048492409199933
+      },
+      "facing": {
+        "x": 0.9783207908851205,
+        "z": -0.20709521993979688
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 776,
+      "paused": false,
+      "stage": "recovery",
+      "active": "right",
+      "hero": {
+        "x": 3.2464823178316573,
+        "z": -2.6262802726773375
+      },
+      "boss": {
+        "x": 0,
+        "z": -2.048492409199933
+      },
+      "facing": {
+        "x": 0.9783207908851205,
+        "z": -0.20709521993979688
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 824,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 3.2464823178316573,
+        "z": -2.6262802726773375
+      },
+      "boss": {
+        "x": 0,
+        "z": -2.048492409199933
+      },
+      "facing": {
+        "x": 0.9783207908851205,
+        "z": -0.20709521993979688
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 872,
+      "paused": false,
+      "stage": "recording",
+      "active": "left",
+      "hero": {
+        "x": 3.2464823178316573,
+        "z": -2.6262802726773375
+      },
+      "boss": {
+        "x": 0,
+        "z": -2.048492409199933
+      },
+      "facing": {
+        "x": 0.9845292805896494,
+        "z": -0.17522013486362586
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 936,
+      "paused": false,
+      "stage": "windup",
+      "active": "left",
+      "hero": {
+        "x": 0.12814141279898328,
+        "z": 0.49206063235533654
+      },
+      "boss": {
+        "x": 0,
+        "z": -2.048492409199933
+      },
+      "facing": {
+        "x": -0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1000,
+      "paused": false,
+      "stage": "active",
+      "active": "left",
+      "hero": {
+        "x": 2.3060302988535493,
+        "z": -2.245828253699229
+      },
+      "boss": {
+        "x": -0.04949747468305832,
+        "z": -1.9989949345168747
+      },
+      "facing": {
+        "x": -0.7071067811865475,
+        "z": 0.7071067811865475
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1040,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 2.3060302988535493,
+        "z": -2.245828253699229
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1040,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 2.3060302988535493,
+        "z": -2.245828253699229
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1048,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 2.108040400121316,
+        "z": -2.047838354966996
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1048,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 2.108040400121316,
+        "z": -2.047838354966996
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1048,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 2.108040400121316,
+        "z": -2.047838354966996
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1056,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 1.7120606026568495,
+        "z": -1.6518585575025293
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1056,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 1.7120606026568495,
+        "z": -1.6518585575025293
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1056,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 1.7120606026568495,
+        "z": -1.6518585575025293
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1064,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 1.316080805192383,
+        "z": -1.2558787600380628
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1064,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 1.316080805192383,
+        "z": -1.2558787600380628
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1064,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 1.316080805192383,
+        "z": -1.2558787600380628
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1072,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 0.9201010077279164,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1072,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 0.9201010077279164,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1072,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 0.9201010077279164,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1080,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 0.360101007727916,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1080,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 0.360101007727916,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1080,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": 0.360101007727916,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1088,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -0.19989899227208408,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1088,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -0.19989899227208408,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1088,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -0.19989899227208408,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1096,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -0.7598989922720842,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1096,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -0.7598989922720842,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1096,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -0.7598989922720842,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1096,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -0.7598989922720842,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1104,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -1.3198989922720847,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 40,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1104,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -1.3198989922720847,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 40,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1104,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -1.3198989922720847,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 40,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1112,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -1.8798989922720852,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 40,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1112,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -1.8798989922720852,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 40,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1112,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -1.8798989922720852,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 40,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1120,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -2.4398989922720844,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 80,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1120,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -2.4398989922720844,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 80,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1120,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -2.4398989922720844,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 80,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1128,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -2.999898992272083,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 80,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1128,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -2.999898992272083,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 80,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1128,
+      "paused": false,
+      "stage": "exposed",
+      "active": "left",
+      "hero": {
+        "x": -2.999898992272083,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 80,
+          "broken": false,
+          "exposed": true
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1136,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -2.7198989922720838,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1136,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -2.7198989922720838,
+        "z": -1.5528636081364127
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1144,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -2.431406568222909,
+        "z": -1.7013560321855876
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1144,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -2.431406568222909,
+        "z": -1.7013560321855876
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1144,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -2.431406568222909,
+        "z": -1.7013560321855876
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1152,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -2.0354267707584426,
+        "z": -2.097335829650054
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1152,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -2.0354267707584426,
+        "z": -2.097335829650054
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1152,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -2.0354267707584426,
+        "z": -2.097335829650054
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1160,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -1.639446973293976,
+        "z": -2.4933156271145207
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1160,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -1.639446973293976,
+        "z": -2.4933156271145207
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1160,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -1.639446973293976,
+        "z": -2.4933156271145207
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1168,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -1.2434671758295095,
+        "z": -2.8892954245789872
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1168,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -1.2434671758295095,
+        "z": -2.8892954245789872
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1168,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -1.2434671758295095,
+        "z": -2.8892954245789872
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1176,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -0.847487378365043,
+        "z": -3.285275222043454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1176,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -0.847487378365043,
+        "z": -3.285275222043454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1176,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -0.847487378365043,
+        "z": -3.285275222043454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1184,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -0.4515075809005764,
+        "z": -3.6812550195079203
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1184,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -0.4515075809005764,
+        "z": -3.6812550195079203
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1184,
+      "paused": false,
+      "stage": "recovery",
+      "active": "left",
+      "hero": {
+        "x": -0.4515075809005764,
+        "z": -3.6812550195079203
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1192,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": -0.05552778343610986,
+        "z": -3.3842701714095704
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1192,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": -0.05552778343610986,
+        "z": -3.3842701714095704
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1192,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": -0.05552778343610986,
+        "z": -3.3842701714095704
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1200,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 0.4839696912469485,
+        "z": -3.334772696726512
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1200,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 0.4839696912469485,
+        "z": -3.334772696726512
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1200,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 0.4839696912469485,
+        "z": -3.334772696726512
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1208,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 0.8799494887114151,
+        "z": -3.7307524941909787
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1208,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 0.8799494887114151,
+        "z": -3.7307524941909787
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1208,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 0.8799494887114151,
+        "z": -3.7307524941909787
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1208,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 0.8799494887114151,
+        "z": -3.7307524941909787
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1216,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 1.2759292861758817,
+        "z": -3.334772696726512
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1216,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 1.2759292861758817,
+        "z": -3.334772696726512
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1224,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 1.6719090836403483,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1224,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 1.6719090836403483,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1224,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 1.6719090836403483,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1224,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 1.6719090836403483,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1232,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 2.231909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1232,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 2.231909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1232,
+      "paused": false,
+      "stage": "idle",
+      "active": "",
+      "hero": {
+        "x": 2.231909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": -0.707106781186547,
+        "z": 0.707106781186548
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1240,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 2.7919090836403466,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.8140908778290791,
+        "z": -0.5807374989058992
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1240,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 2.7919090836403466,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.8140908778290791,
+        "z": -0.5807374989058992
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1240,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 2.7919090836403466,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.8140908778290791,
+        "z": -0.5807374989058992
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1248,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 3.3519090836403453,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.8440439187484978,
+        "z": -0.5362740560792395
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1248,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 3.3519090836403453,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.8440439187484978,
+        "z": -0.5362740560792395
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1248,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 3.3519090836403453,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.8440439187484978,
+        "z": -0.5362740560792395
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1256,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 3.911909083640344,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.8677516107472973,
+        "z": -0.49699813082693883
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1256,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 3.911909083640344,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.8677516107472973,
+        "z": -0.49699813082693883
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1256,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 3.911909083640344,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.8677516107472973,
+        "z": -0.49699813082693883
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1264,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 4.4719090836403455,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.886723348804438,
+        "z": -0.4623004463387886
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1264,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 4.4719090836403455,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.886723348804438,
+        "z": -0.4623004463387886
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1264,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 4.4719090836403455,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.886723348804438,
+        "z": -0.4623004463387886
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1272,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.031909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9020731342182328,
+        "z": -0.4315832023164179
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1272,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.031909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9020731342182328,
+        "z": -0.4315832023164179
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1272,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.031909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9020731342182328,
+        "z": -0.4315832023164179
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1280,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1280,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1280,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1288,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1288,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1288,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1296,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1296,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1296,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1304,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1304,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1304,
+      "paused": false,
+      "stage": "windup",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1312,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1312,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1312,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1320,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1320,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1320,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1328,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1328,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1328,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1336,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1336,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1336,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1344,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1344,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1344,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1344,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1352,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1352,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1352,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1360,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1360,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1360,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1368,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1368,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1368,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1376,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1376,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1376,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1384,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1384,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1384,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1392,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1392,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1392,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1400,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1400,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1400,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1400,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1408,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1408,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1408,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1416,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1416,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1416,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1424,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1424,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1424,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1432,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1432,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1432,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1440,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1440,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1440,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1448,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1448,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1448,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1456,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1456,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1456,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1456,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1464,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1464,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1464,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1472,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1472,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1472,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1480,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1480,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1480,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1488,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1488,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1488,
+      "paused": false,
+      "stage": "active",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": false
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    },
+    {
+      "tick": 1496,
+      "paused": false,
+      "stage": "exposed",
+      "active": "right",
+      "hero": {
+        "x": 5.101909083640348,
+        "z": -3.5327625954587454
+      },
+      "boss": {
+        "x": -1.7699999950502525,
+        "z": -0.27849241414968046
+      },
+      "facing": {
+        "x": 0.9037808111312166,
+        "z": -0.42799561379878664
+      },
+      "modules": [
+        {
+          "slotId": "left",
+          "mechanicId": "echo",
+          "breakMeter": 100,
+          "broken": true,
+          "exposed": false
+        },
+        {
+          "slotId": "right",
+          "mechanicId": "steam",
+          "breakMeter": 0,
+          "broken": false,
+          "exposed": true
+        }
+      ],
+      "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+      "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+    }
+  ],
+  "pageErrorHashes": [],
+  "passed": true,
+  "finalState": {
+    "tick": 1496,
+    "paused": false,
+    "stage": "exposed",
+    "active": "right",
+    "hero": {
+      "x": 5.101909083640348,
+      "z": -3.5327625954587454
+    },
+    "boss": {
+      "x": -1.7699999950502525,
+      "z": -0.27849241414968046
+    },
+    "facing": {
+      "x": 0.9037808111312166,
+      "z": -0.42799561379878664
+    },
+    "modules": [
+      {
+        "slotId": "left",
+        "mechanicId": "echo",
+        "breakMeter": 100,
+        "broken": true,
+        "exposed": false
+      },
+      {
+        "slotId": "right",
+        "mechanicId": "steam",
+        "breakMeter": 0,
+        "broken": false,
+        "exposed": true
+      }
+    ],
+    "attemptId": "7d5160c1-6a7b-4cce-8472-e75bb5cf5984",
+    "hash": "a783afb49a6bef2066d98d098a002962dfc6116196401b56f8f3a5dc4b164d07"
+  },
+  "criterion": "Actual hero recording replays into a stage block, exposes echo, real strikes break it, and it stays unable to activate for360simulationticks.",
+  "driverSha256": "198805b4dd96a8be6a2cb774894cb03a17404c5d98970e4cf61d9d5262eada57"
+}
