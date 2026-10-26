@@ -1,5 +1,12 @@
 # Build journal
 
+## 2026-10-26 — confirmed render-deadline drift corrected
+
+- Clean-framing720p diagnostic ran522635.494ms before deliberate stop: zero downloads/cropped samples/browser errors. OBS1280×720/60fps recorded0.8%render lag/0.1%encoder lag. It is not30minute acceptance; evidence/obs-720p-diagnostic.json retains actual metadata/samples/counters.
+- Similar frame times at high/low pixel loads led to a bounded pacing review. Confirmed counterexample: callbacks0,18,33.333,50ms caused the old gate to skip33.333ms because its anchor drifted to18ms. Replaced callback-anchored deadlines with a phase-preserving presentation clock, skipping missed slots without catch-up draws and resetting immediately across15/30/60fps changes. Actual render timestamps remain actual; the1/60simulation accumulator is unchanged. Telemetry now excludes intervals touching paused frames.
+- Current typecheck/122unit tests in9files/releasebuild/14browser flows all pass (browser1.8minutes). Six pacing cases cover the concrete jitter defect,120Hzcallbacks,30/15fps, stalls, cadence changes and assembly forcing. Read-only integration review found no concrete mistake. Actual post-fixM1performance still needs measurement.
+- OBS is stopped; diagnostic Chrome context closed only after capture finalized.720p60 output remains configured. Root owns all files; no active specialist/heavy check. Next: checkpoint pacing fix and run final clean720p/1080p captures. Twitch SMS and genuine human acceptance stay pending; all spending remains off.
+
 ## 2026-10-26 — actual thirty-minute OBS diagnosis and capture repair
 
 - Completed1800003.736ms of actual M1/OBS1080p60 recording with95AI-led attempts:88wins,4defeats,3unfinished; no driver/browser errors. Apple VideoToolbox hardware H.264 confirmed. Finalized video1813.183333s/147086157bytes; raw footage stays ignored/local. Full audio audit measured digital silence (-91dB max/mean).

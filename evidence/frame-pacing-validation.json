@@ -1,0 +1,32 @@
+{
+  "kind": "local-frame-pacing-regression-validation",
+  "createdAt": "2026-10-26T05:46:15.062Z",
+  "typecheck": "passed",
+  "unitTests": 122,
+  "unitFiles": 9,
+  "browserTests": 14,
+  "browserDuration": "1.8minutes",
+  "releaseBuild": "passed",
+  "regression": "At60fps callbacks18ms then33.333ms must both render; late callbacks no longer shift deadlines and suppress healthy frames.",
+  "review": "No concrete integration mistake found by bounded read-only specialist review.",
+  "simulation": "Fixed1/60 accumulator unchanged; presentation deadlines separate from actual render timestamps. Telemetry excludes intervals touching paused frames.",
+  "files": [
+    {
+      "path": "evidence/frame-pacing-typecheck.log",
+      "sha256": "44273af087ef4f08e29c7fecd416d59e1d6d5c2ebde0ce2b97d242b784abacd9"
+    },
+    {
+      "path": "evidence/frame-pacing-tests.log",
+      "sha256": "c60bc9e2b8858e3dd27826ea4681d8e7ee6f396c7a492f78bfbaec95a79bc4ac"
+    },
+    {
+      "path": "evidence/frame-pacing-build.log",
+      "sha256": "5d2d2067c0fbbdccdeca2950b0709e9fb9b5a68e1af77bfd5f1273bc9c8e18f6"
+    },
+    {
+      "path": "evidence/frame-pacing-browser.log",
+      "sha256": "081b5fd508a70033533e575b9583887f9cfd9ddce0bb1bdb6fdf1b95de4f7708"
+    }
+  ],
+  "scope": "Local checks pass. Actual post-fixM1/OBS performance and clean30minute captures remain to be measured. Not provider/human acceptance."
+}

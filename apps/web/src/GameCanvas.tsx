@@ -11,6 +11,7 @@ import { PerformanceRecorder } from './telemetry';
 import { controlDescription, ownsGameKeyboard } from './controls';
 import { hardwareScalingLevel } from './rendering';
 import { assemblyProgress } from './assembly';
+import { PresentationClock } from './presentation';
 
 interface Props {
   recipe: BossRecipe; attemptId: string; paused: boolean; preferences: Preferences; previewChannel?: string; assemble?: boolean;
@@ -73,6 +74,8 @@ export function GameCanvas(props: Props) {
         observer=new ResizeObserver(resize);observer.observe(element);await stage.loadApprovedAssets();if(cancelled||failed)return;
         presentationReady=!props.assemble;simulation.setPaused(latest.current.paused||!presentationReady);wasPaused=latest.current.paused||!presentationReady;previousSnapshot=simulation.snapshot();last=performance.now();assemblyStarted=last;
         stage.render(previousSnapshot,last/1000,latest.current.preferences,assembly);lastRender=last;
+        const presentationClock=new PresentationClock(last,presentationReady&&previousSnapshot.paused&&!previousSnapshot.outcome?15:latest.current.preferences.presentationFps);
+        let lastPresentedPaused=previousSnapshot.paused;
         if(!latest.current.paused&&presentationReady)element.focus({preventScroll:true});
         updateDiagnostics(previousSnapshot);if(presentationReady)latest.current.onReadyChange?.(true);latest.current.onSnapshot?.(previousSnapshot);
         stage.engine.runRenderLoop(()=>{
@@ -100,7 +103,7 @@ export function GameCanvas(props: Props) {
           const events=simulation.drainEvents();if(events.length){events.forEach(e=>audio?.event(e));p.onEvents?.(events);}
           const snapshot=simulation.snapshot();previousSnapshot=snapshot;
           const presentationFps=presentationReady&&paused&&!snapshot.outcome?Math.min(15,p.preferences.presentationFps):p.preferences.presentationFps;
-          if(now-lastRender>=1000/presentationFps-1||!presentationReady&&assembly===1){const interval=lastRender?now-lastRender:null;stage.render(snapshot,now/1000,p.preferences,assembly);lastRender=now;if(interval!==null)telemetry.frame(interval,paused,lastMetrics);
+          if(presentationClock.due(now,presentationFps,!presentationReady&&assembly===1)){const interval=lastRender?now-lastRender:null;stage.render(snapshot,now/1000,p.preferences,assembly);lastRender=now;if(interval!==null)telemetry.frame(interval,paused||lastPresentedPaused,lastMetrics);lastPresentedPaused=paused;
             if(!presentationReady){
               // Readiness follows the actual seated frame, never the server's short assembly phase.
               if(assembly===1){presentationReady=true;keys.clear();pointerDown=false;dodge=false;p.onReadyChange?.(true);}

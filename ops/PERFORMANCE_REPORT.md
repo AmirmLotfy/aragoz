@@ -46,6 +46,16 @@ requests no downloads, scrolls the entire stage into view and rejects any
 out-of-viewport sample or unexpected download. A clean1080p capture remains
 required after the720p run.
 
+A clean-framing720p diagnostic then ran522.635seconds with zero unexpected
+downloads/cropped samples,0.8%OBSrender lag and0.1%encoder lag. It was stopped
+deliberately after source review confirmed avoidable deadline drift: a callback
+at18ms shifted the old60fps gate enough to skip the healthy33.333ms callback.
+The corrected clock retains deadline phase, handles15/30/60fps transitions and
+leaves the60Hzsimulation accumulator unchanged. Six new regression cases and
+all122unit/14browser tests pass. Final post-fix device measurements are pending;
+do not infer their result from the local checks. Updated telemetry excludes
+intervals touching paused frames, so comparisons must retain their source version.
+
 The1080p browser's logical window was1280×720, viewport1280×688 atDPR2; actual
 game canvas780.445×432CSS pixels and1170×648drawing-buffer pixels. Recording
 resolution does not mean the inner game canvas occupied the full frame.
