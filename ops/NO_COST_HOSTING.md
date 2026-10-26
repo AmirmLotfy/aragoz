@@ -42,3 +42,8 @@ The destination must be new. Confirm the source matches the `database` path reco
 Verify restoration in a separate local data directory with the same encryption key; never overwrite the active database during a show. Record actual URL, revision, restart, backup and provider results. Keep synthetic fixtures separately labelled. Three first-time hosts with genuine viewers and actual OBS performance sessions remain required before release-ready claims.
 
 Official references checked 26 October 2026: [Cloudflare Quick Tunnels](https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/) and [Render free-service limits](https://render.com/docs/free).
+
+
+## Account-free three-act show
+
+Open `/house-show` at the current preview origin to choose two House-authored contracts per act, play three acts, Encore or Remix, and keep the cumulative showbill. `/rehearse` remains the one-encounter practice route. Neither route requires Twitch or model calls. House saves live in that browser and origin, independently from the server database; another browser/device or a new temporary hostname has a separate save. Download the showbill before replacing a save or changing the tunnel origin. Local attempt history is not externally verified competition or human-acceptance evidence.

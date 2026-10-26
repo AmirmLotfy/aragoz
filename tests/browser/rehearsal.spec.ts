@@ -22,6 +22,8 @@ test('actual movement, pause and resume use the same fixed-step encounter',async
   await expect(canvas).toHaveAttribute('data-paused','true');
   const pausedTick=await canvas.getAttribute('data-sim-tick');await page.waitForTimeout(350);expect(await canvas.getAttribute('data-sim-tick')).toBe(pausedTick);
   await page.getByRole('button',{name:'Back onstage'}).click();await expect.poll(async()=>Number(await canvas.getAttribute('data-sim-tick'))).toBeGreaterThan(Number(pausedTick));
+  await page.getByRole('button',{name:'Pause',exact:true}).click();await expect(page.getByRole('heading',{name:'Take your time.'})).toBeVisible();
+  await expect(canvas).toHaveAttribute('data-paused','true');
 });
 
 test('capture telemetry snapshots do not open a browser download or interrupt combat',async({page})=>{

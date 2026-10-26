@@ -29,3 +29,10 @@ Follow ART_BIBLE.md. Built-in image generation creates one concept target sheet 
 Gate1 foundation; gate2 real Twitch causal chain; gate3 complete show/mechanics; gate4 finished approved presentation; gate5 hosted technical preview; gate6 human acceptance. Keep pending gates pending if external evidence is absent. Three first-time hosts, at least three real viewers/session; count actual counter attempts and comprehension. Thirty-minute OBS check on actual M1 host at1080p/720p;60fps target,30fps presentation fallback with60Hzsimulation. Art targets25MB compressed/120ktriangles/about80drawcalls.
 
 Use bounded per-job estimates under the26October user override. No unrelated cleanup. Render single paid Node service plus1GB persistent SQLite disk; prepare exact cost review before provisioning. Review quoted Meshy batches before spending. Record costs and configuration without secrets. Keep this chat integration owner and maintain durable handoffs.
+
+
+## 27 October owner-directed account-free continuation
+
+The owner explicitly deferred Twitch while SMS fails, asked to continue the complete game without it, and retained the Twitch app task as pending. Add `/house-show` beside `/rehearse`: a finite three-act solo show with two curated House contract choices per act, physical assembly/combat, distinct outcomes, immutable Encore, one-slot Remix and a cumulative downloadable showbill. House authorship is explicit; no simulated ballots, viewers or provider success.
+
+Versioned browser storage retains recipes/results. Refreshing an unfinished fight records abandonment and prepares the same recipe with a new paused attempt. Another window requires explicit takeover. Invalid saves require explicit replacement; unavailable storage permits memory-only play with a visible warning. These local records never advance a server-owned Twitch show. The original real Twitch causal-chain and genuine human acceptance gates remain pending, and all spending stays prohibited.

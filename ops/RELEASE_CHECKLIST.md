@@ -5,7 +5,7 @@ Local release candidate is prepared. This checklist records actual provider/host
 ## Current deliverable
 
 - [x] Pinned Node24.19.0, lockfile and successful clean npmci.
-- [x] Current typecheck,129unit/server tests across10files,release-asset build and15browser cases (13initial passes plus2focused passes after test synchronization) all pass. Includes phase-preserving presentation pacing, no-download telemetry, assembly at tick0 and replacement-attempt readiness.62asset fixtures passed in the earlier Linux validation.
+- [x] Current typecheck, 144 unit/server tests across 11 files, release-asset build and 22 browser cases verified (21 full-run passes plus one focused synchronization fix). Account-free three-act House flow, saved recovery, explicit takeover, finite showbill, Encore/Remix and storage failures are covered. Live UI remains labelled fixture evidence. See evidence/house-show-validation.json. 62 asset fixtures passed in the earlier Linux validation.
 - [x] Seven original Blender/GLB assets, rights and actual Babylon inspection.
 - [x] Real keyboard counter/break/final-strike/Encore playthrough, labelled AI-led.
 - [x] Production-only dependency package starts and serves API/frontend/assets/licenses.

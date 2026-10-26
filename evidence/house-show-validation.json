@@ -1,0 +1,160 @@
+{
+  "kind": "Local source, unit, muted browser and free HTTP technical-preview evidence; not provider or human acceptance",
+  "recordedAt": "2026-10-26T22:14:46.779Z",
+  "baseHead": "428889b5be2d70e4a2033007ee33d01915cc2447",
+  "scope": "Complete account-free three-act House show alongside rehearsal and invited Twitch hosting",
+  "checks": {
+    "typecheck": {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "log": "evidence/house-show-typecheck.log"
+    },
+    "unit": {
+      "command": "npm test",
+      "exitCode": 0,
+      "files": 11,
+      "passed": 144,
+      "log": "evidence/house-show-unit.log"
+    },
+    "releaseBuild": {
+      "command": "npm run build:release",
+      "exitCode": 0,
+      "log": "evidence/house-show-build.log",
+      "note": "Existing Babylon chunk-size advisory remains; no new art payload."
+    },
+    "browser": {
+      "fullRun": {
+        "command": "npm run test:browser",
+        "passed": 21,
+        "failed": 1,
+        "log": "evidence/house-show-browser.log",
+        "failure": "Movement key preceded unpause input reset; test now waits for actual advancing simulation tick."
+      },
+      "focused": {
+        "command": "npm run test:browser -- tests/browser/house-show.spec.ts -g 'account-free House choices'",
+        "passed": 1,
+        "failed": 0,
+        "seconds": 15.8,
+        "log": "evidence/house-show-browser-focused.log"
+      },
+      "uniqueCasesCovered": 22,
+      "note": "21 full-run passes plus 1 focused pass on unchanged application bytes; not a single 22-pass run. Test-only synchronization changed before focused pass.",
+      "earlierIssues": [
+        "Pause click focus/blur toggle race fixed in House show and rehearsal.",
+        "Fixture teardown now terminates only its own sockets before stopping its ephemeral server."
+      ],
+      "mute": "--mute-audio in launch config; new House tests persist muted preferences before play."
+    },
+    "publicHttp": {
+      "url": "https://paper-principles-detection-stephen.trycloudflare.com/house-show",
+      "status": 200,
+      "readiness": {
+        "ready": true,
+        "hostingConfigured": false,
+        "modelEnabled": false
+      },
+      "note": "Public index matches the current local build. Actual House gameplay checked locally; this HTTP check is not a new public gameplay session."
+    }
+  },
+  "sources": [
+    {
+      "path": "apps/web/src/App.tsx",
+      "sha256": "c1587215b6fee90e224d7074fa96a93384b56b908713618955b06fe415020a93"
+    },
+    {
+      "path": "apps/web/src/RehearsalView.tsx",
+      "sha256": "69a13b5b0c42db8d990033fd61fde72f5e6f08f2707f7d2803479a6471551974"
+    },
+    {
+      "path": "apps/web/src/HouseShowView.tsx",
+      "sha256": "ae597bd0fdd5dd707aae9467147fc84a3b795ff00a070478574da85a2853f213"
+    },
+    {
+      "path": "apps/web/src/house-show.ts",
+      "sha256": "33d46030ba6705c7fb4e6be1d84025b2153a118e36fc0d2378e68f088957a3df"
+    },
+    {
+      "path": "apps/web/src/house-show.test.ts",
+      "sha256": "15dbee25c73cb97d3671bcd8730bc150bbb9788ebb0ab1e358ca721473825cf0"
+    },
+    {
+      "path": "apps/web/src/styles.css",
+      "sha256": "5b8f211136e57bc456de8aeb59d36b79bc60a16b5a4c396cec8ab6b3edc01879"
+    },
+    {
+      "path": "tests/browser/house-show.spec.ts",
+      "sha256": "b7885fc7397524ff1f46f6471b47b6047fad12b3d78debf2a33389605514bd28"
+    },
+    {
+      "path": "tests/browser/rehearsal.spec.ts",
+      "sha256": "4aceafd37e0eb83227d8876b5cf5aa2d8e6f72a60913655eabc46423cad6e934"
+    },
+    {
+      "path": "tests/support/live-harness.ts",
+      "sha256": "1c6e99f1c83f88c0aa97b48dbe05f002a2b4d8884ab52e55a927cb669383089f"
+    }
+  ],
+  "build": [
+    {
+      "path": "apps/web/dist/index.html",
+      "sha256": "97600fe7dc5c2daffcea357ff7d8dacb5ded3c9c0c8e04998a44f05dc58906ba"
+    },
+    {
+      "path": "apps/web/dist/assets/index-BRdZPDSQ.js",
+      "sha256": "5c868fe9e8aba7d4d5de769da15acacde418f11cb8b0d06ea868b347eb9f03b4"
+    },
+    {
+      "path": "apps/web/dist/assets/rolldown-runtime-4tVxZq34.js",
+      "sha256": "e1a1c25cf197ccd96571062973f07d34fb794a4745cd7284f8f64c63be00c578"
+    },
+    {
+      "path": "apps/web/dist/assets/ui-frLmuMBC.js",
+      "sha256": "513f8ffaacf39322fb7a44f81c2b1e48e23a3fa1860fce8fc177b08fd86f90c6"
+    },
+    {
+      "path": "apps/web/dist/assets/babylon-Cldp5xpI.js",
+      "sha256": "767a5e4cc1d1980271887ebe1f43cddf01006387b085e16e68ac9aa566c25f9f"
+    },
+    {
+      "path": "apps/web/dist/assets/index-CoTFMxP5.css",
+      "sha256": "ba229ce0071aa1c915af2085b1de4070942faa21cfafe5787290277a0701c859"
+    }
+  ],
+  "browserArtifacts": [
+    {
+      "path": "evidence/browser/house-ready-720p.png",
+      "sha256": "dade49a1a8aa57f1095f29dea250c8bc5bedef2425eddbf7146ad1d897a3e490"
+    },
+    {
+      "path": "evidence/browser/house-choices.png",
+      "sha256": "bbb2ce9746cb14309118206507d39b2af46126530b96eb0974d375683593698a"
+    },
+    {
+      "path": "evidence/browser/house-choice-narrow.png",
+      "sha256": "4ea954bc047363086b99b43432be6dc30ed8aeb1348b7c4b31093acc3604984c"
+    },
+    {
+      "path": "evidence/browser/house-showbill.png",
+      "sha256": "18c7c865101c662d50de8ce6046d508e80fd5c529ca305cac5e72f4658660701"
+    },
+    {
+      "path": "evidence/browser/house-actual-result.png",
+      "sha256": "5c4bcd9e5498502e09be98041a4410b3d2e78a5682ee323738d9ee8cea52e56e"
+    },
+    {
+      "path": "evidence/browser/house-actual-result.json",
+      "sha256": "86234536bfb79931d8a50698452da9bc5b208273b3b2d6f062e98516cd1d199c"
+    }
+  ],
+  "evidenceLimits": [
+    "Result-fixture Encore/Remix remains explicitly labelled fixture evidence.",
+    "Actual browser encounter recorded ordinary defeat at tick905, one exposure and zero module breaks; Encore restarted the same recipe.",
+    "Earlier actual OBS/M1 and Linux/container evidence predates this new House UI; no new duration/performance claim.",
+    "No new Twitch registration, OAuth, real chat, model call, Meshy job, paid service or genuine human session.",
+    "House saves belong to one browser and origin; they do not synchronize to Twitch/server or other devices."
+  ],
+  "pending": [
+    "Owner-deferred Twitch SMS/2FA and genuine provider causal-chain validation",
+    "Three genuine first-time hosts with at least three genuine viewers each and documented acceptance counts"
+  ]
+}

@@ -46,8 +46,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 28400,
-      "sha256": "ee244edcef2ed1b448dcfb5187329c866262cc8479ea614feb769eb559a5a1a9"
+      "bytes": 31982,
+      "sha256": "96b7ff33fda83a576740cafc71a1ea632bb6fba67a59cf3ceaad676d5355dedc"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -56,8 +56,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 12849,
-      "sha256": "e68b24e1fc37b0161b51e2bb947286545259ea8982c7554e92756b836bbd722e"
+      "bytes": 9726,
+      "sha256": "2bf240eee612960337c513cd2f2def5e530c87b266d89a446dcaf6d82f630cd4"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -75,14 +75,19 @@
       "sha256": "207b1997a523734545a96912a75ac1d9a8aa937d73b784d34f0e49cdd3f4cabe"
     },
     {
+      "path": "HOUSE_SHOW_DESIGN.md",
+      "bytes": 3444,
+      "sha256": "df6f36d024975801ccd4e101b267711c48b1c62f002cd9a62de32d97a086d5ca"
+    },
+    {
       "path": "IMPLEMENTATION_PLAN.md",
-      "bytes": 4813,
-      "sha256": "e6f359770acabf5a43a314135e3d24f805234b690bc7eec63b3017c919caaeea"
+      "bytes": 5834,
+      "sha256": "8d2db783e323d2c671c05e6559164ee65f03cecff8901af02c5010471683d1dc"
     },
     {
       "path": "README.md",
-      "bytes": 6876,
-      "sha256": "243ee0983d5c736b72e58c687b9b9228dbb3d45f903e2d9a3f08494b9e0fda14"
+      "bytes": 7720,
+      "sha256": "16d71d4de911117469a476c696afadb957ef53f4d5154ec282cac02a56d444c8"
     },
     {
       "path": "SOURCE_LOG.md",
@@ -246,13 +251,18 @@
     },
     {
       "path": "apps/web/src/App.tsx",
-      "bytes": 13549,
-      "sha256": "4a4c9c2ece424bb554a69f50a37050f5c7ca7ad89d9c0a144d637457aa4b7c38"
+      "bytes": 14012,
+      "sha256": "c1587215b6fee90e224d7074fa96a93384b56b908713618955b06fe415020a93"
     },
     {
       "path": "apps/web/src/GameCanvas.tsx",
       "bytes": 12747,
       "sha256": "5441926b1d7bf9d3e97ced034eb794f6578d0f3f66377b76bb2e50312e73a68f"
+    },
+    {
+      "path": "apps/web/src/HouseShowView.tsx",
+      "bytes": 18743,
+      "sha256": "ae597bd0fdd5dd707aae9467147fc84a3b795ff00a070478574da85a2853f213"
     },
     {
       "path": "apps/web/src/Live.tsx",
@@ -261,8 +271,8 @@
     },
     {
       "path": "apps/web/src/RehearsalView.tsx",
-      "bytes": 7093,
-      "sha256": "f31f0dedfcc85995a92460b5c8702ea65ea1b8ecfbd72bccb18504d6f6d68b08"
+      "bytes": 7139,
+      "sha256": "69a13b5b0c42db8d990033fd61fde72f5e6f08f2707f7d2803479a6471551974"
     },
     {
       "path": "apps/web/src/aim-assist.test.ts",
@@ -325,6 +335,16 @@
       "sha256": "08ddf48e33fd1df293e951189ddd7ac73d0b12b8622ea074ea70cd9b0ff4b351"
     },
     {
+      "path": "apps/web/src/house-show.test.ts",
+      "bytes": 19816,
+      "sha256": "15dbee25c73cb97d3671bcd8730bc150bbb9788ebb0ab1e358ca721473825cf0"
+    },
+    {
+      "path": "apps/web/src/house-show.ts",
+      "bytes": 14837,
+      "sha256": "33d46030ba6705c7fb4e6be1d84025b2153a118e36fc0d2378e68f088957a3df"
+    },
+    {
       "path": "apps/web/src/main.tsx",
       "bytes": 160,
       "sha256": "7fc8f1d210a1662292f96a2d289d8ab24c3de6ce9dbf27548f2b97ebad19a8c9"
@@ -371,8 +391,8 @@
     },
     {
       "path": "apps/web/src/styles.css",
-      "bytes": 25855,
-      "sha256": "ea62bc09d44a514529fa5aa3b5da353da96611c638a5477d373d026e37d59ec4"
+      "bytes": 28879,
+      "sha256": "5b8f211136e57bc456de8aeb59d36b79bc60a16b5a4c396cec8ab6b3edc01879"
     },
     {
       "path": "apps/web/src/telemetry.ts",
@@ -760,6 +780,36 @@
       "sha256": "b4226ef71625f11734369dd3dc1d358fcf5abb8b172eea5ff655236491b5821e"
     },
     {
+      "path": "evidence/browser/house-actual-result.json",
+      "bytes": 3163,
+      "sha256": "86234536bfb79931d8a50698452da9bc5b208273b3b2d6f062e98516cd1d199c"
+    },
+    {
+      "path": "evidence/browser/house-actual-result.png",
+      "bytes": 87576,
+      "sha256": "5c4bcd9e5498502e09be98041a4410b3d2e78a5682ee323738d9ee8cea52e56e"
+    },
+    {
+      "path": "evidence/browser/house-choice-narrow.png",
+      "bytes": 126632,
+      "sha256": "4ea954bc047363086b99b43432be6dc30ed8aeb1348b7c4b31093acc3604984c"
+    },
+    {
+      "path": "evidence/browser/house-choices.png",
+      "bytes": 123589,
+      "sha256": "bbb2ce9746cb14309118206507d39b2af46126530b96eb0974d375683593698a"
+    },
+    {
+      "path": "evidence/browser/house-ready-720p.png",
+      "bytes": 78025,
+      "sha256": "dade49a1a8aa57f1095f29dea250c8bc5bedef2425eddbf7146ad1d897a3e490"
+    },
+    {
+      "path": "evidence/browser/house-showbill.png",
+      "bytes": 95450,
+      "sha256": "18c7c865101c662d50de8ce6046d508e80fd5c529ca305cac5e72f4658660701"
+    },
+    {
       "path": "evidence/browser/obs-1080p-30fps-charge-echo.png",
       "bytes": 370957,
       "sha256": "83c397a25856e1715e1a157e699f3c856001294ddd764ef275a38a7eb229d5d2"
@@ -930,6 +980,11 @@
       "sha256": "3aee72a7a547eefe7dc4e9fc4b1a4c8bbbb075d9a3da5514bcbed2e41f19d6ad"
     },
     {
+      "path": "evidence/house-show-validation.json",
+      "bytes": 6325,
+      "sha256": "fd8d3f39abbc75abfcb0f0fc7c319afb8d78c8728d286925264a4fde572f82df"
+    },
+    {
       "path": "evidence/linux-container-build.json",
       "bytes": 2555,
       "sha256": "ccd5bc119c80c9ee5138b4cf4c2044d64d67fa8860867ccb90d5bfd9138c5651"
@@ -1031,8 +1086,8 @@
     },
     {
       "path": "ops/NO_COST_HOSTING.md",
-      "bytes": 5090,
-      "sha256": "3ee735ab7ab7b25abb1a92b67e6062040d326bef442265756568744419d30953"
+      "bytes": 5714,
+      "sha256": "b66aea1ecca68e9642b3f508020f829f5a459e6a898f634b9414111ac4ac9439"
     },
     {
       "path": "ops/PERFORMANCE_REPORT.md",
@@ -1041,8 +1096,8 @@
     },
     {
       "path": "ops/RELEASE_CHECKLIST.md",
-      "bytes": 5020,
-      "sha256": "d292b0cbb0bb09f6149c683e181bd178793954388e2f4480e1733a648b004eaa"
+      "bytes": 5116,
+      "sha256": "537dcf045b05cc2d517476dd8d0cae133245b196f7d59e8c099eda5a096a434e"
     },
     {
       "path": "ops/TWITCH_2FA_SUPPORT_DRAFT.md",
@@ -1200,14 +1255,19 @@
       "sha256": "b1717e836952f9e6173767c06e027676bacf6359a89bfe68075aecd5b0c972dd"
     },
     {
+      "path": "tests/browser/house-show.spec.ts",
+      "bytes": 11533,
+      "sha256": "b7885fc7397524ff1f46f6471b47b6047fad12b3d78debf2a33389605514bd28"
+    },
+    {
       "path": "tests/browser/live.spec.ts",
       "bytes": 13036,
       "sha256": "8bdf46c4320f9775d75f04becc0ab84a4ce026140f41e8eb38e0ab14a9175d9d"
     },
     {
       "path": "tests/browser/rehearsal.spec.ts",
-      "bytes": 13561,
-      "sha256": "b21861b7e12ea8696cb6db18f1b769ec9f6885be99598bed831727a6655fda78"
+      "bytes": 13770,
+      "sha256": "4aceafd37e0eb83227d8876b5cf5aa2d8e6f72a60913655eabc46423cad6e934"
     },
     {
       "path": "tests/container/smoke.mjs",
@@ -1216,8 +1276,8 @@
     },
     {
       "path": "tests/support/live-harness.ts",
-      "bytes": 4796,
-      "sha256": "597ad6011cc1806a2d268688294cd70d32f27ecb8ea8897b959477a0061693ee"
+      "bytes": 5105,
+      "sha256": "1c6e99f1c83f88c0aa97b48dbe05f002a2b4d8884ab52e55a927cb669383089f"
     },
     {
       "path": "tsconfig.json",

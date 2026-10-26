@@ -87,7 +87,13 @@ export async function createLiveHarness(): Promise<LiveHarness> {
         return state();
       },
       providerRequests: () => providerRequests,
-      close: () => app.close(),
+      close: async () => {
+        // These sockets belong only to the ephemeral fixture. Do not wait for a
+        // browser close handshake/reconnect race after its pages are gone.
+        for (const socket of app.websocketServer.clients) socket.terminate();
+        app.server.closeIdleConnections();
+        await app.close();
+      },
     };
   } catch (error) { await app.close(); throw error; }
 }
