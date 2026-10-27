@@ -279,3 +279,21 @@ claim. No ads/promotion spending, outreach or additional voice synthesis.
 Video URL saved/read back in existing Devpost; draft advanced from2/5to3/5. The
 owner will complete eligibility manually. Those declarations, final rules/Terms
 and Submit remain untouched. See evidence/youtube-publication-20261028.json.
+
+###28October — source and local delivery freeze
+
+Submission/media packet928380bbf7e25e9d1db8c4245b4d3712f0b1b6f5 is pushed
+to the owner-approved public repository. The source manifest and three Python
+script syntax/four current JSON checks passed; five gallery files still match
+their original source hashes. Clean-HEAD source/review ZIP export verified CRC
+and every source-file SHA256, excluded private paths/original voice/raw captures
+and found no configured secret values. This final documentation checkpoint is
+followed by a matching archive refresh; authoritative final HEAD/archive hashes
+are in ignored DELIVERY_BUNDLE_RECEIPT.json, avoiding a self-referential Git hash.
+No additional gameplay source or provider/human acceptance changed.
+
+The actual Devpost preview iframe subsequently loaded the matching YouTube title
+and Play video control without autoplay, resolving the standalone-referer probe
+as a context limitation. Its screenshot is retained; no full remote playback or
+human review is claimed. The owner-facing draft stays on Additional info for the
+manual declarations.

@@ -36,9 +36,16 @@
     "finalSubmitClicked": false
   },
   "limits": [
-    "Direct standalone embed check returned Error153 (HTTP Referer configuration); no external playback completion claim.",
+    "Standalone embed navigation returned referer-related Error153; the actual Devpost preview iframe then loaded the correct YouTube player/title/Play video control successfully. No full remote playback claim.",
     "Anonymous oEmbed and Studio publication verified; full local movie decode passed separately.",
     "No legal eligibility or final Devpost submission attested by the agent.",
     "No genuine human acceptance sessions."
-  ]
+  ],
+  "devpostEmbeddedPlayer": {
+    "loaded": true,
+    "titleMatches": true,
+    "playVideoButtonVisible": true,
+    "autoplay": false,
+    "actualPlaybackTested": false
+  }
 }

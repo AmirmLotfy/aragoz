@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 65773,
-      "sha256": "d1410c8b30c5df525af2631746decdcb1193cf2d5903447792fb5fe54dbcdb1b"
+      "bytes": 66868,
+      "sha256": "4d5dd073f1acdcc9824bbca9b6f6bf73f661ce26e759986146de93898c1b6359"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 13509,
-      "sha256": "735db4c6daf827c8fff8676291a95a1ca8508a8a784347806652deedeb3ba6d8"
+      "bytes": 14408,
+      "sha256": "8e68e06ee5a1537790ebcf4dd1d1dcdf4017542699e336bc53a6f5127e07f971"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -96,8 +96,8 @@
     },
     {
       "path": "REMAINING_WORK.md",
-      "bytes": 14253,
-      "sha256": "f0daba219bb27f090452ba6af288b3392941617e0ef049675596f68d0a8957fb"
+      "bytes": 14392,
+      "sha256": "4f4b14c135c9f28c72f7f12c6daf13530385ef1b2b7874ed9b5fb454fd3e0642"
     },
     {
       "path": "SOURCE_LOG.md",
@@ -1380,6 +1380,11 @@
       "sha256": "517bf2d6cd975f581a09cd30706cefc7d1e622ab333240ccbcc7e0447e41bc6d"
     },
     {
+      "path": "evidence/devpost-rendered-preview-20261028.jpg",
+      "bytes": 102291,
+      "sha256": "6483ad77600b848e8c71608cfa268a3e94b2866d149d6fe958a30da1b4723408"
+    },
+    {
       "path": "evidence/devpost-video-saved-20261028.jpg",
       "bytes": 72347,
       "sha256": "9506d655e98dfd0dd01339403c5bdc6fd13902cb9c14b3ca9b97e9a7b356188b"
@@ -1736,8 +1741,8 @@
     },
     {
       "path": "evidence/youtube-publication-20261028.json",
-      "bytes": 2067,
-      "sha256": "e4768f279c2adcd1e5dbdfe411e42a856a40cb11e6ac8a36896e45c802f6b7cc"
+      "bytes": 2329,
+      "sha256": "78c3aab3bcc26734f59d037dbd6e25b83708c79b7b941a398c8b7cf5771c62b1"
     },
     {
       "path": "ops/AUTONOMOUS_RELEASE_REVIEW.md",
@@ -1971,8 +1976,8 @@
     },
     {
       "path": "submission/DEVPOST_DRAFT_STATUS.md",
-      "bytes": 7270,
-      "sha256": "3b5b189aa52de7dc1e44e5938e8ccf28cdb86e7cfc29bb9ebb977a9e3bed62ed"
+      "bytes": 7396,
+      "sha256": "8b0769c3966c8b04c7c64ecec89395db4104554aa73d7de0aee1bdb51be9b9dc"
     },
     {
       "path": "submission/FINAL_CAPTURE_PACKET.md",

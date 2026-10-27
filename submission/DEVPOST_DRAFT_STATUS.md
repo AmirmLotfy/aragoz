@@ -96,7 +96,7 @@ motion; no post-fix real-combat or human acceptance is claimed. See
 
 ## Remaining actions and blockers
 
-Final source-review render and encoded-frame QA passed. Root must finish the manifest/bundle freeze.
+Final source-review render and encoded-frame QA passed. The clean-HEAD source/review bundles passed CRC/all-file-hash and privacy exclusion checks; the final documentation checkpoint is followed by a matching refreshed export.
 The saved draft remains 3/5, video URL saved, final Submit untouched. Remaining
 owner-held age/conflict/jurisdiction/rules/Terms answers and exact video-upload/
 final-entry approval stay open. Devpost connector remains `UNAUTHORIZED`, while
