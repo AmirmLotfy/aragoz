@@ -1,0 +1,9 @@
+{
+  "kind": "Configuration presence booleans only; no credential values or account/provider verification",
+  "at": "2026-10-27T00:34:06.528Z",
+  "fields": {
+    "TWITCH_CLIENT_ID": false,
+    "TWITCH_CLIENT_SECRET": false,
+    "INVITED_BROADCASTER_IDS": true
+  }
+}

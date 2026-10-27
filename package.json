@@ -23,7 +23,8 @@
     "test:assets": "node --test --test-concurrency=1 tests/assets/*.test.mjs",
     "test:container": "node tests/container/smoke.mjs",
     "check:resources": "node scripts/check-resources.mjs",
-    "check:assets": "node scripts/check-assets.mjs"
+    "check:assets": "node scripts/check-assets.mjs",
+    "test:ops": "node --test --test-reporter=tap --test-concurrency=1 tests/ops/*.test.mjs"
   },
   "devDependencies": {
     "@babylonjs/core": "9.32.0",

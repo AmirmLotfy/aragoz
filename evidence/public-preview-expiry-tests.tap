@@ -1,0 +1,26 @@
+
+> aragoz@0.1.0 test:ops
+> node --test --test-reporter=tap --test-concurrency=1 tests/ops/*.test.mjs
+
+TAP version 13
+# Subtest: expired tunnel exits instead of reporting ready; split=false
+ok 1 - expired tunnel exits instead of reporting ready; split=false
+  ---
+  duration_ms: 382.91925
+  type: 'test'
+  ...
+# Subtest: expired tunnel exits instead of reporting ready; split=true
+ok 2 - expired tunnel exits instead of reporting ready; split=true
+  ---
+  duration_ms: 328.052458
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 757.869542

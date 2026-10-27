@@ -63,7 +63,14 @@ const openServer=async()=>{
 };
 let tail='';
 const tunnelOutput=chunk=>{
+  if(stopping)return;
   log.write(chunk);tail=(tail+chunk.toString()).slice(-8192);
+  // A Quick Tunnel can expire while cloudflared stays alive retrying forever.
+  // Stop only our children; never silently change the public origin during a show.
+  if(/Unauthorized:\s*Tunnel not found/i.test(tail)){
+    console.error('The free tunnel expired. Start a new preview between shows; local data is preserved.');
+    shutdown(1);return;
+  }
   const match=tail.match(/https:\/\/[a-z0-9]+(?:-[a-z0-9]+)*\.trycloudflare\.com\b/);
   if(match&&!origin){origin=match[0];void openServer().catch(()=>shutdown(1));}
 };

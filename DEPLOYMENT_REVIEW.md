@@ -4,6 +4,10 @@ Updated 27 October 2026. On 26 October the owner approved private [AmirmLotfy/ar
 
 The public `/house-show` offers a complete account-free three-act show; `/rehearse` offers one-encounter practice. Actual AI-led HTTPS House gameplay completed three wins, six physical module breaks and a cumulative showbill. [Gameplay receipt](evidence/browser/autonomous-house/receipt.json). House authorship is explicit; no audience/provider activity is inferred. House saves belong to the browser and origin, independently of server-owned Twitch shows. Download the showbill before replacing a save or changing tunnel origin.
 
+## Current hosted operations
+
+The old paper-principles Quick Tunnel actually expired. The current owned public origin is `https://hunter-pin-talk-transactions.trycloudflare.com`, verified over real HTTPS/WSS before/after a same-origin backend reload. Existing local fallback/data/key are preserved. Two launcher-expiry process tests pass;19public checks before/19after reload and7actual anonymous backup/restore checks pass. [Steps6–10report](ops/STEPS_6_10_REPORT.md). These contain0channels/tokens/shows; genuine-account and human acceptance remain separate. Current supervisor uses project-local Node24and its reload was verified.
+
 ## Runtime configuration and readiness
 
 The server binds loopback by default. Forwarded IP identity is untrusted unless the operator explicitly sets the nonsecret `TRUST_LOOPBACK_PROXY=true` for the trusted loopback tunnel. That option trusts only `127.0.0.1`/`::1` through Fastify's IP allowlist. Authenticated API quotas use verified channel identity; anonymous quotas use the resolved client IP. Do not enable blanket proxy trust or expose the origin directly with that assumption.

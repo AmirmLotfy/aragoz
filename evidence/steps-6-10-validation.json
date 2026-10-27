@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "kind": "Actual hosting infrastructure and operations repair; no genuine Twitch or human acceptance",
+  "at": "2026-10-27T00:37:34.232794+00:00",
+  "cwd": "/Users/frameless/Desktop/Aragoz",
+  "branch": "main",
+  "baseHead": "7fabb610545365751fc06613afc002c05913b2e8",
+  "applicationBuildSource": "7fabb610545365751fc06613afc002c05913b2e8",
+  "tasks": {
+    "6GenuineTwitch": "blocked before provider access;tool denied even after user confirmation and connection reset;clientID/secret absent",
+    "7ProviderLifecycle": "not executed;needsconfiguredgenuineaccount",
+    "8HostingInfrastructure": "verified19public checks before/19after service reload and7anonymousbackup/restorechecks;realchannels/tokens/attemptsisolationpending",
+    "9HumanSessions": "0;owner explicitly answered none for participants",
+    "10FixFreezeJudge": "actual expiry repair verified;technicalpreviewapproved;fullreleaseunaccepted"
+  },
+  "newSources": [
+    {
+      "path": "scripts/start-public-preview.mjs",
+      "sha256": "98d78afc121cf3f6cbfd697faebdb607dd839ebb0175c11965ede614ca588c50"
+    },
+    {
+      "path": "scripts/verify-public-preview.mjs",
+      "sha256": "49642f8cd83da111e4292fd11a4a2477637f996ee24c224ef4f1c5814f3467cb"
+    },
+    {
+      "path": "scripts/verify-preview-persistence.mjs",
+      "sha256": "9a03c497d930f183f7dd929a25e40d0e7bcd62cff00476905e36fc1e0816c029"
+    },
+    {
+      "path": "tests/ops/public-preview.test.mjs",
+      "sha256": "8c47ef23e2f47347a2f2af7eadd6b833a0d03d96c9cea02a43bded7aa0cf6a03"
+    },
+    {
+      "path": "package.json",
+      "sha256": "26d84cce12fd4a7169cb3ab51ef42e4b6ccade76d64d0956f3e997fbeaadbc79"
+    }
+  ],
+  "checks": {
+    "operationsTests": {
+      "passed": 2,
+      "failed": 0,
+      "durationMs": 757.869542,
+      "receipt": "evidence/public-preview-expiry-tests.tap",
+      "method": "isolated actual child-process lifecycle;synthetic expiredtunnel output;no credentials"
+    },
+    "syntax": {
+      "passed": [
+        "scripts/start-public-preview.mjs",
+        "scripts/verify-public-preview.mjs",
+        "scripts/verify-preview-persistence.mjs"
+      ],
+      "runtime": "project-localNode24.19.0"
+    },
+    "publicBefore": {
+      "passed": 19,
+      "receipt": "evidence/hosted-boundary-before-reload-20261027.json"
+    },
+    "publicAfter": {
+      "passed": 19,
+      "receipt": "evidence/hosted-boundary-after-reload-20261027.json"
+    },
+    "reload": "evidence/hosted-reload-continuity-20261027.json",
+    "onlineBackupIsolatedRestore": {
+      "passed": 7,
+      "receipt": "evidence/hosted-backup-restore-20261027.json",
+      "counts": {
+        "anonymousSessions": 4,
+        "channels": 0,
+        "shows": 0,
+        "recipes": 0,
+        "results": 0,
+        "events": 0
+      },
+      "genuineTokenRestoreVerified": false
+    },
+    "gameplaySuites": "Not rerun;no app/frontend/combat changes. Prior171unit/28browser/4focused remain source7fabb61."
+  },
+  "runtime": {
+    "origin": "https://hunter-pin-talk-transactions.trycloudflare.com",
+    "supervisorPid": 88572,
+    "tunnelPid": 88573,
+    "serverPid": 88784,
+    "execution": 59138,
+    "localServerPid": 55962,
+    "localExecution": 81395,
+    "modelsEnabled": false,
+    "keyFileUnchanged": true,
+    "activeDBOverwritten": false,
+    "browserDataClearedOrMigrated": false,
+    "priorOwnedProcessesStopped": [
+      27890,
+      27891,
+      56320,
+      87774,
+      87776,
+      87780
+    ]
+  },
+  "providerAndPeople": {
+    "twitchAccessAttempts": "Rejected by Work browser tool before access, including reinitialization;no newer accountstate",
+    "ownerConfirmsBrowserEnabled": true,
+    "toolSettingMismatch": true,
+    "lastKnownTwitchState": "historical registration rejectedmissing2FA",
+    "clientIdConfigured": false,
+    "clientSecretConfigured": false,
+    "invitationListConfigured": true,
+    "participantsAvailable": 0,
+    "genuineSessions": 0,
+    "outreachPerformed": false,
+    "gameProviderCalls": 0,
+    "spending": 0
+  },
+  "decision": "Approve free technicalpreview;fullinvitedbroadcasterreleasependinggenuineproviderandhumanacceptance",
+  "blockersLast": [
+    "Work browser connection rejects access despite owner-confirmed setting;no bypass or repeated toggle request",
+    "Genuine Twitch app/OAuth/chat/lifecycle/tokenrestore/channelisolation unverified;last2FA/SMSissue not reobserved",
+    "Owner confirms no participants;3realfirsttimehosts/3viewerspersession andactualresultsneeded",
+    "Freepublichostname temporary;no uptime claim;allspendingprohibited"
+  ]
+}

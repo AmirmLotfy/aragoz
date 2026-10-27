@@ -1,0 +1,16 @@
+{
+  "kind": "Actual service reload continuity; unconfigured public deployment with anonymous session only",
+  "at": "2026-10-27T00:33:42.611429+00:00",
+  "origin": "https://hunter-pin-talk-transactions.trycloudflare.com",
+  "beforeServerPid": 88610,
+  "afterServerPid": 88784,
+  "supervisorPid": 88572,
+  "tunnelPid": 88573,
+  "sameOrigin": true,
+  "sameDatabasePath": true,
+  "privateKeyFileUnchanged": true,
+  "sameAnonymousSessionSurvived": true,
+  "genuineChannelCount": 0,
+  "genuineTokenRestoreVerified": false,
+  "houseBrowserSaves": "No browser data read, cleared or migrated;local3000origin preserved;old public origin records remain in their original browser storage."
+}

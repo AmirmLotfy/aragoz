@@ -1,0 +1,56 @@
+{
+  "kind": "Actual public SQLite online backup and isolated localhost restore; anonymous session only; no genuine token/channel restore claim",
+  "at": "2026-10-27T00:32:12.830Z",
+  "origin": "https://hunter-pin-talk-transactions.trycloudflare.com",
+  "checks": [
+    {
+      "name": "actual source database matches owned runtime",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "scope is genuinely unconfigured",
+      "pass": true,
+      "detail": {
+        "credentialRows": 0
+      }
+    },
+    {
+      "name": "isolated backup integrity",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "schema and all existing row counts preserved",
+      "pass": true,
+      "detail": {
+        "schema": 1,
+        "counts": {
+          "channels": 0,
+          "shows": 0,
+          "recipes": 0,
+          "results": 0,
+          "encounter_events": 0,
+          "sessions": 4
+        }
+      }
+    },
+    {
+      "name": "restored server actually starts with packaged frontend",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "existing public anonymous session survives isolated restore",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "no provider requests",
+      "pass": true,
+      "detail": {}
+    }
+  ],
+  "providerCalls": 0,
+  "complete": true
+}

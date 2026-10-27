@@ -2,6 +2,10 @@
 
 Updated 27 October 2026. Keep the complete first-release scope from the brief and IMPLEMENTATION_PLAN.md. The latest local checks and the historical receipts below have different source revisions and evidence scopes.
 
+## New operations-only verification
+
+Steps6–10packet: `npm run test:ops` passes2isolated process tests for expired/split-message tunnel shutdown. Three changed scripts pass Node24syntax checks. Actual public HTTP/WSS probes pass19before and19after same-origin backend reload. Seven actual online-backup/isolated-restored-server checks pass, including current anonymous session continuity. These use0channels/tokens/shows and4anonymous sessions; genuine token/channel acceptance remains separate. No combat/frontend/dependency source changed and the current171/28/fourfocused gameplay receipts below were not rerun or relabelled. [Operations report](ops/STEPS_6_10_REPORT.md), [receipt](evidence/steps-6-10-validation.json).
+
 ## Current local verification
 
 - `npm run typecheck`: passed for the A01–A04 sources.

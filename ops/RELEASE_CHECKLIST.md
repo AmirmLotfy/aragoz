@@ -5,13 +5,15 @@ Local release candidate is prepared. This checklist records actual provider/host
 ## Current deliverable
 
 - [x] Pinned Node24.19.0, lockfile and successful clean npmci.
-- [x] Current typecheck, 146 unit/server tests across 11 files, release-asset build and one complete25/25browser run pass. Account-free three-act House flow, saved recovery, explicit takeover, finite showbill, Encore/Remix and storage failures are covered. Live UI remains labelled fixture evidence. See ops/AUTONOMOUS_RELEASE_REVIEW.md and evidence/autonomous-release-validation.json. 62 asset fixtures passed in the earlier Linux validation.
+- [x] Current typecheck, 171 unit/server tests across14files, release-asset build and one complete28/28browser run plus4affected cases after final typography refinements pass. Account-free three-act House flow, saved recovery, explicit takeover, finite showbill, Encore/Remix and storage failures are covered. Live UI remains labelled fixture evidence. See ops/AUTONOMOUS_RELEASE_REVIEW.md and evidence/steps-1-10-validation.json. 62 asset fixtures passed in the earlier Linux validation.
 - [x] Seven original Blender/GLB assets, rights and actual Babylon inspection.
 - [x] Real keyboard counter/break/final-strike/Encore playthrough, labelled AI-led.
 - [x] Production-only dependency package starts and serves API/frontend/assets/licenses.
 - [x] Dockerfile with pinned base digest; free Mac/tunnel deployment launcher; paid Render design archived and unapproved.
 - [x] Actual Linux ARM64 Docker image build and non-root startup, HTTP/static encoding/private API denial, volume replacement persistence, online backup and isolated restoration; evidence/linux-container-smoke.json. Task-only VM/data removed after checks.
 - [x] Actual temporary public HTTPS rehearsal and AI-led keyboard input; not genuine Twitch/human acceptance.
+
+Current hosting infrastructure:19real public HTTP/WSS checks before and19after same-origin reload,7actual anonymous backup/restore checks,2launcher process tests. See ops/STEPS_6_10_REPORT.md. Genuine provider/channel/token gates remain unchecked.
 
 ## Authorized hosting procedure
 
@@ -40,4 +42,4 @@ The owner reported audible game speakers despite the muted recording. Test windo
 
 ## Genuine audience sessions
 
-Use ops/acceptance/README.md and template.json. Three first-time hosts, at least three genuine viewers/session; count actual counter opportunities and comprehension responses. No sessions are currently recorded. Owner authorization is needed before contacting people or publishing recordings.
+Use ops/acceptance/README.md and template.json. Three first-time hosts, at least three genuine viewers/session; count actual counter opportunities and comprehension responses. No sessions are currently recorded. The owner explicitly confirmed no participants are available in the27Octobersteps6–10packet. Owner authorization is needed before contacting people or publishing recordings.

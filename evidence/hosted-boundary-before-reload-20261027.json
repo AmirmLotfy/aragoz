@@ -1,0 +1,141 @@
+{
+  "kind": "Actual public HTTPS/WSS anonymous boundary checks; not browser gameplay, genuine OAuth/channel isolation or human acceptance",
+  "at": "2026-10-27T00:31:03.268Z",
+  "origin": "https://hunter-pin-talk-transactions.trycloudflare.com",
+  "resumed": false,
+  "checks": [
+    {
+      "name": "frontend/database ready",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "model calls disabled",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "public frontend equals packaged build",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "content security policy",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "entry asset referenced",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "entry asset matches packaged bytes",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "encoding": "gzip",
+        "sha256": "9b59aff55048f3b2b177bc72b5833f41498cb050d232a6a22d6a0a79287bd403"
+      }
+    },
+    {
+      "name": "private file unavailable: /.env",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "servedPublicShellOnly": true
+      }
+    },
+    {
+      "name": "private file unavailable: /data/public-preview/credentials.key",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "servedPublicShellOnly": true
+      }
+    },
+    {
+      "name": "private file unavailable: /.runtime/public-preview.json",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "servedPublicShellOnly": true
+      }
+    },
+    {
+      "name": "anonymous session cannot become a host",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "hostingConfigured": false
+      }
+    },
+    {
+      "name": "session cookie protected",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "anonymous host API denied: /api/shows",
+      "pass": true,
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "anonymous host API denied: /api/shows/unknown/backstage",
+      "pass": true,
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "anonymous host API denied: /api/connection",
+      "pass": true,
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "mutation without CSRF denied",
+      "pass": true,
+      "detail": {
+        "status": 403
+      }
+    },
+    {
+      "name": "foreign-origin mutation denied",
+      "pass": true,
+      "detail": {
+        "status": 403
+      }
+    },
+    {
+      "name": "valid anonymous CSRF cannot create show",
+      "pass": true,
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "WebSocket foreign origin denied",
+      "pass": true,
+      "detail": {
+        "status": 403
+      }
+    },
+    {
+      "name": "WebSocket anonymous same origin denied",
+      "pass": true,
+      "detail": {
+        "status": 401
+      }
+    }
+  ],
+  "providerCalls": 0,
+  "complete": true
+}
