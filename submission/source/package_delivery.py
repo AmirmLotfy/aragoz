@@ -48,21 +48,25 @@ def main():
             z.writestr('ARAGOZ-source/'+name,data);manifest.append({'path':name,'bytes':len(data),'sha256':sha(data)})
         snapshot={'kind':'source-identity-only-not-release-acceptance','head':head,'workingTreeDirty':bool(dirty),'dirtyPaths':dirty.splitlines(),'files':manifest,'excluded':['ignored settings/data/keys','original narration','raw recordings','browser profiles','dependency caches','voice-bearing exports'],'run':'Node24: npm ci --ignore-scripts; npm run build:release; npm start; open /house-show'}
         z.writestr('ARAGOZ-source/SOURCE_BUNDLE_MANIFEST.json',json.dumps(snapshot,indent=2)+'\n')
-        z.writestr('ARAGOZ-source/BUNDLE_README.txt','ARAGOZ source snapshot\n\n'+snapshot['run']+'\n\nThe game can run House without credentials. Do not enable paid model calls. Read submission/JUDGE_GUIDE.md. This ZIP does not grant private GitHub judge access or prove contest acceptance. Promotional narration inputs/raw footage are private and excluded.\n')
+        z.writestr('ARAGOZ-source/BUNDLE_README.txt','ARAGOZ source snapshot\n\n'+snapshot['run']+'\n\nThe game can run House without credentials. Do not enable paid model calls. Read submission/JUDGE_GUIDE.md. Public source access is verified separately; this ZIP does not prove contest acceptance. Promotional narration inputs/raw footage are private and excluded.\n')
     with zipfile.ZipFile(source_zip) as z:
         assert z.testzip() is None
         assert len(z.namelist())==len(manifest)+2
         for e in manifest:assert sha(z.read('ARAGOZ-source/'+e['path']))==e['sha256']
     review_files=[
-        'submission/local-review/aragoz-narrated-review.mp4',
-        'submission/local-review/aragoz-narrated-clean.mp4',
-        'submission/local-review/aragoz-narrated-en.srt',
+        'submission/local-review/aragoz-narrated-motion-review.mp4',
+        'submission/local-review/aragoz-narrated-motion-clean.mp4',
+        'submission/local-review/aragoz-narrated-motion-en.srt',
         'submission/artwork/aragoz-devpost-3x2.png',
         'submission/artwork/PROVENANCE.md',
         'submission/DEVPOST.md','devpost-submission.md','submission/JUDGE_GUIDE.md',
         'submission/YOUTUBE_UPLOAD.md','submission/FINAL_CAPTURE_PACKET.md','submission/DELIVERY.md',
         'submission/VOICE_INTEGRATION.md','submission/RESEARCH.md','submission/MEDIA_MANIFEST.json',
         'ops/CONTROLLER_RECOVERY_REHEARSAL.md','evidence/restored-controller-recovery-20261027.json',
+        'submission/DEVPOST_DRAFT_STATUS.md','ops/LIVE_PAUSE_QUEUE_FIX.md',
+        'evidence/twitch-motion-capture-20261028.json','evidence/devpost-draft-20261028.json',
+        'evidence/public-repo-preflight-20261028.json','evidence/submission-media-20261028.json',
+        'evidence/youtube-publication-20261028.json',
     ]+['submission/screenshots/'+name for name in [
         '01-real-twitch-vote.png','02-rule-activates.png','03-counter-opens.png','04-module-breaks.png','05-credited-showbill.png']]
     review_zip=OUT/'ARAGOZ-review-package.zip';review_manifest=[]
@@ -72,11 +76,11 @@ def main():
             dest='ARAGOZ-review/'+name.removeprefix('submission/').removeprefix('local-review/')
             z.writestr(dest,data);review_manifest.append({'file':dest,'sha256':sha(data),'bytes':len(data)})
         data=source_zip.read_bytes();dest='ARAGOZ-review/source/'+source_zip.name;z.writestr(dest,data);review_manifest.append({'file':dest,'sha256':sha(data),'bytes':len(data)})
-        z.writestr('ARAGOZ-review/READ_ME_FIRST.txt','ARAGOZ — local review package\n\nWatch aragoz-narrated-review.mp4 (captions) or aragoz-narrated-clean.mp4 with aragoz-narrated-en.srt. Both have the same reviewed narration/mix. Cover and five actual screenshots are included. Copy and upload descriptions remain drafts. Source ZIP has the runnable game.\n\nStill pending: stronger Twitch/Codex workflow footage, authenticated Devpost form/eligibility/session/judge access, and final upload/entry approval. Do not treat this package as a submitted entry or an instruction to share private media. Original voice, credentials and raw recordings are not included.\n')
+        z.writestr('ARAGOZ-review/READ_ME_FIRST.txt','ARAGOZ — local review package\n\nWatch aragoz-narrated-motion-review.mp4 (captions) or aragoz-narrated-motion-clean.mp4 with aragoz-narrated-motion-en.srt. Both have the same reviewed narration/mix. Cover and five actual screenshots are included. Copy and upload descriptions remain drafts. Source ZIP has the runnable game.\n\nActual Twitch and source-review footage are included. The Devpost draft and public source access are saved/verified. The approved captioned movie is public and saved in Devpost(Draft3/5). Still pending: owner-held eligibility/rules declarations and final entry. Do not treat this package as a submitted entry or an instruction to share private media. Original voice, credentials and raw recordings are not included.\n')
     with zipfile.ZipFile(review_zip) as z:
         assert z.testzip() is None
         for e in review_manifest:assert sha(z.read(e['file']))==e['sha256']
-    receipt={'kind':'local-review-and-runnable-source-bundles','head':head,'workingTreeDirty':bool(dirty),'sourceFiles':len(manifest),'sourceBytes':sum(e['bytes'] for e in manifest),'sourceZip':{'file':source_zip.name,'bytes':source_zip.stat().st_size,'sha256':sha(source_zip.read_bytes())},'reviewZip':{'file':review_zip.name,'bytes':review_zip.stat().st_size,'sha256':sha(review_zip.read_bytes()),'files':review_manifest},'archiveCRCAndAllSourceHashesVerified':True,'forbiddenPrivatePathsExcluded':True,'configuredSecretValuesAbsent':True,'voiceOriginalExcluded':True,'uploaded':False,'limits':'Source/archive identity and local media delivery only; not provider/human/contest acceptance. Required private repository access still must be verified.'}
+    receipt={'kind':'local-review-and-runnable-source-bundles','head':head,'workingTreeDirty':bool(dirty),'sourceFiles':len(manifest),'sourceBytes':sum(e['bytes'] for e in manifest),'sourceZip':{'file':source_zip.name,'bytes':source_zip.stat().st_size,'sha256':sha(source_zip.read_bytes())},'reviewZip':{'file':review_zip.name,'bytes':review_zip.stat().st_size,'sha256':sha(review_zip.read_bytes()),'files':review_manifest},'archiveCRCAndAllSourceHashesVerified':True,'forbiddenPrivatePathsExcluded':True,'configuredSecretValuesAbsent':True,'voiceOriginalExcluded':True,'uploaded':False,'limits':'Source/archive identity and local media delivery only; not provider/human/contest acceptance. Public source/video access is verified separately; final entry remains pending.'}
     (OUT/'DELIVERY_BUNDLE_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
     print(json.dumps({k:v for k,v in receipt.items() if k!='reviewZip'}|{'reviewZip':{k:v for k,v in receipt['reviewZip'].items() if k!='files'}}),flush=True)
 

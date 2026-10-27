@@ -57,7 +57,7 @@ def card(name, kicker, title, lines, code=False):
             y = block(d, line, 64, y, 32, 1270, C['soot']) + 28
     path = WORK / (name + '.png'); im.save(path); return str(path.relative_to(ROOT))
 
-def prepare(caption_overrides=None, voice_ready=False):
+def prepare(caption_overrides=None, voice_ready=False, scene_overrides=None, write_manifest=True, presentation_label=None):
     WORK.mkdir(parents=True, exist_ok=True); OUT.mkdir(parents=True, exist_ok=True)
     assert MOV.exists(), 'Original owned OBS recording is required; never substitute generated gameplay.'
     records = []
@@ -140,6 +140,9 @@ def prepare(caption_overrides=None, voice_ready=False):
     timeline=[]
     for i,(start,end,num,title,copy,kind,src,offset,crop,label) in enumerate(scenes):
         scene={'index':i,'start':start,'end':end,'chapter':num,'title':title,'copy':copy,'kind':kind,'source':src,'offset':offset,'crop':crop,'label':label}
+        if scene_overrides:
+            scene.update(scene_overrides.get(i, {}))
+            label = scene['label']
         intervals=sorted(set([start,end]+[max(start,min(end,c[k])) for c in cues for k in ['start','end'] if start<c[k]<end]))
         playlist=[]
         for j,(a,b) in enumerate(zip(intervals,intervals[1:])):
@@ -151,7 +154,7 @@ def prepare(caption_overrides=None, voice_ready=False):
             y=block(d,title,45,185,48,325,C['soot'],True)
             d.line((45,y+24,365,y+24),fill=C['soot'],width=2)
             block(d,copy,45,y+58,28,320,C['soot'])
-            block(d,'TECHNICAL PREVIEW\nREVIEW CUT · VO ALIGNED' if voice_ready else 'TECHNICAL PREVIEW\nREVIEW CUT · VO PENDING',45,795,19,320,C['soot'])
+            block(d,presentation_label or ('TECHNICAL PREVIEW\nREVIEW CUT · VO ALIGNED' if voice_ready else 'TECHNICAL PREVIEW\nREVIEW CUT · VO PENDING'),45,795,19,320,C['soot'])
             d.rectangle((416,0,W,99),fill=C['soot']);d.rectangle((416,896,W,H),fill=C['soot'])
             d.text((450,49),label,font=font(19,True),fill=C['cream'])
             if cue: block(d,cue['text'],455,925,32,1390,C['cream'],False,1.3)
@@ -162,7 +165,8 @@ def prepare(caption_overrides=None, voice_ready=False):
         path=WORK/f'overlays-{i:02}.ffconcat';path.write_text('\n'.join(playlist)+'\n');scene['overlayPlaylist']=str(path.relative_to(ROOT));timeline.append(scene)
     (OUT/'TIMELINE.json').write_text(json.dumps({'duration':TOTAL,'fps':FPS,'resolution':[W,H],'status':'voice-aligned-review-final-footage-pending' if voice_ready else 'review-cut-voice-and-final-footage-pending','scenes':timeline,'captions':cues},indent=2)+'\n')
     records.append({'file':str(MOV.relative_to(ROOT)),'sha256':sha(MOV),'evidence':'actual original M1 OBS; AI-led House rehearsal; source02f6b75','privateSource':True,'retention':'ignored local source, never copied or uploaded'})
-    (ROOT/'submission/MEDIA_MANIFEST.json').write_text(json.dumps({'created':'2026-10-27','status':'unpublished-production-packet','gallery':records,'cover':{'file':'submission/artwork/aragoz-devpost-3x2.png','sha256':sha(ROOT/'submission/artwork/aragoz-devpost-3x2.png'),'kind':'generated promotional key art, never gameplay'},'limits':['No genuine human acceptance sessions.','Review cut uses actual Twitch stills plus separate OBS rehearsal motion.','Build notes are editorial; actual Codex UI capture remains pending.','Final footage, upload/access and submission approval remain pending. Voice integration is documented separately.']},indent=2)+'\n')
+    if write_manifest:
+        (ROOT/'submission/MEDIA_MANIFEST.json').write_text(json.dumps({'created':'2026-10-27','status':'unpublished-production-packet','gallery':records,'cover':{'file':'submission/artwork/aragoz-devpost-3x2.png','sha256':sha(ROOT/'submission/artwork/aragoz-devpost-3x2.png'),'kind':'generated promotional key art, never gameplay'},'limits':['No genuine human acceptance sessions.','Review cut uses actual Twitch stills plus separate OBS rehearsal motion.','Build notes are editorial; actual Codex UI capture remains pending.','Final footage, upload/access and submission approval remain pending. Voice integration is documented separately.']},indent=2)+'\n')
     print(json.dumps({'preparedScenes':len(timeline),'captionCues':len(cues),'voiceWords':sum(len(t.split()) for t in texts),'gallery':len(gallery)}),flush=True)
 
 def run(args):

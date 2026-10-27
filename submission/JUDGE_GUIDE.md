@@ -4,7 +4,7 @@ Technical preview. English interface. Desktop keyboard recommended. No payment, 
 
 ## Try the complete account-free show
 
-Candidate public link: https://klein-wake-circle-favor.trycloudflare.com/house-show
+Candidate public link: https://star-dawn-phases-nevada.trycloudflare.com/house-show
 
 This free temporary tunnel depends on the creator's Mac and network; verify the link when publishing. The repository route below remains the reproducible test path. It is not a claim of guaranteed judging-period uptime.
 
@@ -17,7 +17,7 @@ House Suggestions are authored content and are labelled accordingly. They are no
 
 ## Reproduce locally from the repository
 
-Repository: https://github.com/AmirmLotfy/aragoz (private; judge access must be granted to the **verified official contact** before entry).
+Repository: https://github.com/AmirmLotfy/aragoz (public with owner approval; anonymous README access verified28October2026).
 
 Use Node.js24LTS and the committed lockfile. From the checkout:
 
@@ -40,7 +40,7 @@ After setup verifies an incoming `!aragoz CODE` test, use the separate private b
 ## What the evidence proves
 
 - Actual Twitch OAuth/EventSub/proposal/vote/credited encounter, real refresh, encrypted backup/restore and same-origin restart were tested with one genuine broadcaster account operated by the agent.
-- Actual OBS motion is House rehearsal footage from an earlier documented source. The review edit labels it separately from later Twitch stills.
+- Actual OBS motion is House rehearsal footage from an earlier documented source. The review edit labels it separately from later Twitch stills and the new28October actual Twitch motion. The latter captured real module breaks in lost Encore attempts, not a new victory.
 - Local unit/browser/synthetic tests, provider tests, OBS measurements and human acceptance are separate categories. Genuine first-time-host/viewer sessions remain0.
 
 See ops/TWITCH_LIVE_VALIDATION.md, ops/PERFORMANCE_REPORT.md, CURRENT_HANDOFF.md and REMAINING_WORK.md for exact receipts and open gates. The project is a functioning technical preview; it does not claim release acceptance or arbitrary live AI-generated mechanics.

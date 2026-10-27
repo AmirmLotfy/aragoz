@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-28",
+  "kind": "owner-approved-public-YouTube-publication-and-saved-Devpost-video",
+  "url": "https://youtu.be/ej-SDyRD6tE",
+  "videoId": "ej-SDyRD6tE",
+  "channel": "Frameless",
+  "channelId": "UCiF3FxqJVHBxD6h6xARnhoQ",
+  "title": "ARAGOZ \u2014 Chat makes the monster. You find the loophole.",
+  "ownerExplicitlyApproved": "Public, including supplied narration; uploader Terms/Community Guidelines acknowledgement accepted for this upload.",
+  "sourceFile": "submission/local-review/aragoz-narrated-motion-review.mp4",
+  "sourceSha256": "03b43c4ed88d61207f0303ca9fe86bac638a1c7bde9a007d4307fdc1ac5d8ccc",
+  "sourceSeconds": 160,
+  "youtubeDisplayedDuration": "2:41",
+  "visibility": "Public",
+  "studioObserved": "Video published",
+  "checksObserved": "Copyright check complete: No issues found; Community Guidelines check complete: No issues found",
+  "anonymousOEmbed": {
+    "status": 200,
+    "titleMatches": true,
+    "author": "Frameless",
+    "type": "video"
+  },
+  "captions": "Matching timed English SRT imported and saved as English by you",
+  "thumbnail": "Auto-generated frame1 from actual uploaded movie; promotional title artwork remains clearly labelled in picture",
+  "AIUseDisclosure": "Yes; conservative disclosure of AI-assisted media; supplied narration recording method is not inferred.",
+  "paidPromotion": false,
+  "audience": "General Twitch/game-development audience; not made for kids",
+  "devpost": {
+    "projectId": 1268295,
+    "videoURLSavedAndReadBack": true,
+    "state": "Draft",
+    "stepsDone": 3,
+    "stepsTotal": 5,
+    "eligibilityUntouched": true,
+    "ownerWillCompleteEligibilityManually": true,
+    "finalSubmitClicked": false
+  },
+  "limits": [
+    "Direct standalone embed check returned Error153 (HTTP Referer configuration); no external playback completion claim.",
+    "Anonymous oEmbed and Studio publication verified; full local movie decode passed separately.",
+    "No legal eligibility or final Devpost submission attested by the agent.",
+    "No genuine human acceptance sessions."
+  ]
+}

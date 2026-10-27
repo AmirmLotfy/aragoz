@@ -1,0 +1,172 @@
+{
+  "date": "2026-10-28",
+  "kind": "final-local-media-identity-and-decode",
+  "seconds": 160,
+  "resolution": "1920x1080",
+  "fps": 30,
+  "framesPerMovie": 4800,
+  "captionCues": 33,
+  "masters": [
+    {
+      "date": "2026-10-28",
+      "kind": "local-demo-review-with-actual-Twitch-and-source-footage",
+      "file": "submission/local-review/aragoz-narrated-motion-review.mp4",
+      "sha256": "03b43c4ed88d61207f0303ca9fe86bac638a1c7bde9a007d4307fdc1ac5d8ccc",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "nb_read_frames": "4800"
+          },
+          {
+            "codec_type": "audio",
+            "r_frame_rate": "0/0",
+            "nb_read_frames": "7500"
+          }
+        ],
+        "format": {
+          "duration": "160.000000",
+          "size": "8242323"
+        }
+      },
+      "audioPacketHash": "SHA256=5573eb7c680a51f1739be69b12dd99852786550accf72818fd6bec5252532238",
+      "audioIdenticalToPriorReview": true,
+      "fullDecodeNoErrors": true,
+      "captures": [
+        {
+          "capture": ".runtime/submission-capture/twitch-assembly-real-1793135837360",
+          "manifestSha256": "a82045f7cc0f8475aa95518ef74623772bd031ac9b4a0d3bc999445be705a238",
+          "frames": 46,
+          "spanSeconds": 7.667695045471191,
+          "movieSha256": "e5255da12daf428bc1138c16891c4fb37245fb153e755905a64b023fac330bbd"
+        },
+        {
+          "capture": ".runtime/submission-capture/encore-charge-break-strikes-1793136047637",
+          "manifestSha256": "d58eff6c6d5988d92be2b8da91e256358c715abb398f41cd7065c747f67ef82d",
+          "frames": 37,
+          "spanSeconds": 3.682304859161377,
+          "movieSha256": "b97d4da19a994a8fbcc8ae8ab55f2cb26752b101736cc06014c97b54329b6c06"
+        },
+        {
+          "capture": ".runtime/submission-capture/encore-steam-overheat-1793136071776",
+          "manifestSha256": "5603ef5c0e78a6ac57642feb68ef44ee150859cff91e3f0050c29584dee7ab05",
+          "frames": 84,
+          "spanSeconds": 6.41654109954834,
+          "movieSha256": "aba1b995d53a2d41755c8623c7a7b79d9af8c1eadacc89915991eac3fe4452e5"
+        },
+        {
+          "capture": ".runtime/submission-capture/codex-source-review-1793137679119",
+          "manifestSha256": "20bd2dd3dc12b6ace61007ac40c37ac5b7f86ab911b5e8de8d33796050f34901",
+          "frames": 7,
+          "spanSeconds": 8.81714415550232,
+          "movieSha256": "175d5e15ec9c26e87e3e66d31c8b8d55aa373a1029fcea4a8e092498c0e9c145"
+        }
+      ],
+      "montageSha256": "f31b3592dc4dad19971549e30b59e715714f52f626c373177ca21624449d3ae7",
+      "limits": [
+        "Not uploaded or entered.",
+        "Actual 28 October Twitch assembly/Encore 2 break footage plus separately labelled earlier House rehearsal and 27 October accepted-result still.",
+        "Three capture attempts lost; no captured victory is claimed. Manual pauses are omitted with chronological editorial cuts.",
+        "The build chapter records actual GitHub source/commit review of a Codex-built patch. It is explicitly not Codex app footage. Architecture/asset graphics remain editorial explanations.",
+        "Game captures precede the subsequent pause/upload queue fix; source review shows the actual fixed commit.",
+        "No genuine viewer acceptance or runtime model calls."
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "local-demo-review-with-actual-Twitch-and-source-footage",
+      "file": "submission/local-review/aragoz-narrated-motion-clean.mp4",
+      "sha256": "a5aa9e0a47472ef014149cbfc03c4e286a0fa21fc0708b9ca2205231499e5a2a",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "nb_read_frames": "4800"
+          },
+          {
+            "codec_type": "audio",
+            "r_frame_rate": "0/0",
+            "nb_read_frames": "7500"
+          }
+        ],
+        "format": {
+          "duration": "160.000000",
+          "size": "7946676"
+        }
+      },
+      "audioPacketHash": "SHA256=5573eb7c680a51f1739be69b12dd99852786550accf72818fd6bec5252532238",
+      "audioIdenticalToPriorReview": true,
+      "fullDecodeNoErrors": true,
+      "captures": [
+        {
+          "capture": ".runtime/submission-capture/twitch-assembly-real-1793135837360",
+          "manifestSha256": "a82045f7cc0f8475aa95518ef74623772bd031ac9b4a0d3bc999445be705a238",
+          "frames": 46,
+          "spanSeconds": 7.667695045471191,
+          "movieSha256": "e5255da12daf428bc1138c16891c4fb37245fb153e755905a64b023fac330bbd"
+        },
+        {
+          "capture": ".runtime/submission-capture/encore-charge-break-strikes-1793136047637",
+          "manifestSha256": "d58eff6c6d5988d92be2b8da91e256358c715abb398f41cd7065c747f67ef82d",
+          "frames": 37,
+          "spanSeconds": 3.682304859161377,
+          "movieSha256": "b97d4da19a994a8fbcc8ae8ab55f2cb26752b101736cc06014c97b54329b6c06"
+        },
+        {
+          "capture": ".runtime/submission-capture/encore-steam-overheat-1793136071776",
+          "manifestSha256": "5603ef5c0e78a6ac57642feb68ef44ee150859cff91e3f0050c29584dee7ab05",
+          "frames": 84,
+          "spanSeconds": 6.41654109954834,
+          "movieSha256": "aba1b995d53a2d41755c8623c7a7b79d9af8c1eadacc89915991eac3fe4452e5"
+        },
+        {
+          "capture": ".runtime/submission-capture/codex-source-review-1793137679119",
+          "manifestSha256": "20bd2dd3dc12b6ace61007ac40c37ac5b7f86ab911b5e8de8d33796050f34901",
+          "frames": 7,
+          "spanSeconds": 8.81714415550232,
+          "movieSha256": "175d5e15ec9c26e87e3e66d31c8b8d55aa373a1029fcea4a8e092498c0e9c145"
+        }
+      ],
+      "montageSha256": "f31b3592dc4dad19971549e30b59e715714f52f626c373177ca21624449d3ae7",
+      "limits": [
+        "Not uploaded or entered.",
+        "Actual 28 October Twitch assembly/Encore 2 break footage plus separately labelled earlier House rehearsal and 27 October accepted-result still.",
+        "Three capture attempts lost; no captured victory is claimed. Manual pauses are omitted with chronological editorial cuts.",
+        "The build chapter records actual GitHub source/commit review of a Codex-built patch. It is explicitly not Codex app footage. Architecture/asset graphics remain editorial explanations.",
+        "Game captures precede the subsequent pause/upload queue fix; source review shows the actual fixed commit.",
+        "No genuine viewer acceptance or runtime model calls."
+      ]
+    }
+  ],
+  "audioPacketHashesMatch": true,
+  "qaSamplesSeconds": [
+    34,
+    61,
+    64,
+    67,
+    71,
+    116,
+    120,
+    124
+  ],
+  "uploaded": true,
+  "limits": [
+    "Original supplied narration unchanged and original WAV excluded.",
+    "Actual GitHub source review is not Codex app UI.",
+    "Game footage predates source fix1f4231e; no post-fix genuine combat acceptance.",
+    "No human acceptance sessions; no captured new victory."
+  ],
+  "publicMovie": "https://youtu.be/ej-SDyRD6tE",
+  "publicationReceipt": "evidence/youtube-publication-20261028.json",
+  "note": "Nested render receipts retain their pre-publication creation-time status; the publication receipt records the later approved upload."
+}

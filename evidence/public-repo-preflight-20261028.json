@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-28",
+  "kind": "bounded-public-repository-preflight",
+  "head": "1f4231ee060c285b7e74eb28656542ad28a2b130",
+  "commits": 19,
+  "historyBlobs": 571,
+  "historyBytesScanned": 54342579,
+  "knownPrivateValueMatches": 0,
+  "commonCredentialPatternMatches": 0,
+  "forbiddenPrivateHistoryPaths": 0,
+  "currentKnownPrivateValueMatches": 0,
+  "automaticWorkflowsPresent": false,
+  "approvedVisibility": "public, explicitly authorized by owner 28 October",
+  "limits": [
+    "Checks known current secret values, selected common credential patterns and private path classes across reachable Git history; not a guarantee against every unknown secret.",
+    "No local credential value, raw narration, browser profile, private database or capture source is copied into this receipt.",
+    "Public code access does not constitute contest entry, video publication or human acceptance."
+  ],
+  "passed": true,
+  "visibilityChange": {
+    "ownerExplicitlyApproved": true,
+    "repository": "https://github.com/AmirmLotfy/aragoz",
+    "public": true,
+    "anonymousReadmeHTTPStatus": 200,
+    "writeCollaboratorInvitationSent": false
+  }
+}

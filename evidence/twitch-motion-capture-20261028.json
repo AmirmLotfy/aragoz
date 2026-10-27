@@ -1,0 +1,781 @@
+{
+  "date": "2026-10-28",
+  "evidence": "Actual Twitch OAuth/EventSub/operator browser capture; not human acceptance",
+  "origin": "https://manitoba-almost-exams-binary.trycloudflare.com",
+  "showId": "20c3bdf2-d30b-48e2-961b-18eb15196544",
+  "phase": "ended",
+  "recipes": [
+    {
+      "hash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "modules": [
+        {
+          "slot": "left",
+          "profile": "steam-narrow",
+          "credit": {
+            "authorId": null,
+            "displayName": "House Suggestion",
+            "source": "house",
+            "hidden": false
+          }
+        },
+        {
+          "slot": "right",
+          "profile": "charge-deliberate",
+          "credit": {
+            "authorId": "1592952060",
+            "displayName": "amirmolotfy",
+            "source": "viewer",
+            "hidden": false
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "recipeId": "f4fed55f-e40f-4f6c-af70-393fbbe35619",
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "actIndex": 1,
+      "outcome": "lost",
+      "durationTicks": 1414,
+      "brokenSlots": [],
+      "exploits": 2,
+      "finishedAt": "2026-10-27T21:18:26.452Z"
+    },
+    {
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "recipeId": "f4fed55f-e40f-4f6c-af70-393fbbe35619",
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "actIndex": 1,
+      "outcome": "lost",
+      "durationTicks": 1553,
+      "brokenSlots": [
+        "right"
+      ],
+      "exploits": 3,
+      "finishedAt": "2026-10-27T21:21:34.948Z"
+    },
+    {
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "recipeId": "f4fed55f-e40f-4f6c-af70-393fbbe35619",
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "actIndex": 1,
+      "outcome": "lost",
+      "durationTicks": 1140,
+      "brokenSlots": [
+        "left"
+      ],
+      "exploits": 2,
+      "finishedAt": "2026-10-27T21:25:43.600Z"
+    }
+  ],
+  "events": [
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 1,
+      "simTick": 54,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 2,
+      "simTick": 126,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 3,
+      "simTick": 309,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 4,
+      "simTick": 309,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "flaw-exposed",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 5,
+      "simTick": 575,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 6,
+      "simTick": 665,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 7,
+      "simTick": 683,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 8,
+      "simTick": 683,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "flaw-exposed",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 9,
+      "simTick": 798,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-broken",
+      "moduleSlot": "right",
+      "value": 100,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 10,
+      "simTick": 887,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 11,
+      "simTick": 959,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 12,
+      "simTick": 960,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "left",
+      "value": 4,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 13,
+      "simTick": 1032,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "left",
+      "value": 3,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 14,
+      "simTick": 1104,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "left",
+      "value": 2,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 15,
+      "simTick": 1142,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 16,
+      "simTick": 1142,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "flaw-exposed",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 17,
+      "simTick": 1408,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 18,
+      "simTick": 1480,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 19,
+      "simTick": 1481,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "left",
+      "value": 1,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 20,
+      "simTick": 1553,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "left",
+      "value": 0,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 21,
+      "simTick": 1553,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "4831506a-3d2a-44d0-a4b2-de197032fb9d",
+      "sequence": 22,
+      "simTick": 1553,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "outcome",
+      "moduleSlot": null,
+      "value": null,
+      "outcome": "lost"
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 1,
+      "simTick": 54,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 2,
+      "simTick": 126,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 3,
+      "simTick": 309,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 4,
+      "simTick": 309,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "flaw-exposed",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 5,
+      "simTick": 575,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 6,
+      "simTick": 665,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 7,
+      "simTick": 697,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "right",
+      "value": 4,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 8,
+      "simTick": 712,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 9,
+      "simTick": 802,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 10,
+      "simTick": 874,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 11,
+      "simTick": 875,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "left",
+      "value": 3,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 12,
+      "simTick": 947,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "left",
+      "value": 2,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 13,
+      "simTick": 1019,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "left",
+      "value": 1,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 14,
+      "simTick": 1057,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 15,
+      "simTick": 1057,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "flaw-exposed",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 16,
+      "simTick": 1323,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 17,
+      "simTick": 1413,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 18,
+      "simTick": 1414,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "right",
+      "value": 0,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 19,
+      "simTick": 1414,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "6d8f6367-af45-4c9f-9212-d779ad7b0f71",
+      "sequence": 20,
+      "simTick": 1414,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "outcome",
+      "moduleSlot": null,
+      "value": null,
+      "outcome": "lost"
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 1,
+      "simTick": 54,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 2,
+      "simTick": 126,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 3,
+      "simTick": 127,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "left",
+      "value": 4,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 4,
+      "simTick": 199,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "left",
+      "value": 3,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 5,
+      "simTick": 271,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "left",
+      "value": 2,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 6,
+      "simTick": 309,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 7,
+      "simTick": 309,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "flaw-exposed",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 8,
+      "simTick": 358,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-broken",
+      "moduleSlot": "left",
+      "value": 100,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 9,
+      "simTick": 443,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 10,
+      "simTick": 533,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 11,
+      "simTick": 551,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 12,
+      "simTick": 551,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "flaw-exposed",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 13,
+      "simTick": 809,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 14,
+      "simTick": 899,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 15,
+      "simTick": 900,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "right",
+      "value": 1,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 16,
+      "simTick": 940,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 17,
+      "simTick": 1026,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "module-activated",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 18,
+      "simTick": 1116,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-started",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 19,
+      "simTick": 1140,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "hero-damaged",
+      "moduleSlot": "right",
+      "value": 0,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 20,
+      "simTick": 1140,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "attack-ended",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "d250d19b-c200-4ad8-97fd-c4e4c2945823",
+      "sequence": 21,
+      "simTick": 1140,
+      "recipeHash": "1f73bef7c91e07e629f29265816b6488444f29cf9fa76035a3d629501ce70c89",
+      "kind": "outcome",
+      "moduleSlot": null,
+      "value": null,
+      "outcome": "lost"
+    }
+  ],
+  "priorAcceptedWin": {
+    "attemptId": "53fadd06-d6d6-4610-9ee3-2690408b334f",
+    "outcome": "won",
+    "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f"
+  },
+  "limits": [
+    "One AI-operated broadcaster; no genuine viewer sessions.",
+    "First ballot received no valid vote and selected labelled House steam. Second ballot received one valid charge vote.",
+    "Three capture attempts lost; Encore2 broke charge; Encore3 broke steam. No captured victory is asserted.",
+    "Manual pauses and edited separate Encore attempts must remain labelled.",
+    "Pause/upload revision race found; new source fix requires regression verification.",
+    "Raw motion files remain ignored locally."
+  ]
+}

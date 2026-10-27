@@ -72,6 +72,17 @@ The public probe stores its anonymous cookie/CSRF only in ignored0600`.runtime/h
 
 Current actual results:19public checks before/19after reload,7backup/restore checks,2process tests. These are anonymous infrastructure evidence. See [steps6–10report](STEPS_6_10_REPORT.md) for exact scope and final external dependencies. Public game/frontend remains source7fabb61; this packet changes only launcher/ops tooling and documentation.
 
-## Current real Twitch setup
+## Real Twitch setup —27October (historical origin)
 
 Current origin/callback: `https://klein-wake-circle-favor.trycloudflare.com` plus `/api/auth/twitch/callback`. The free ARAGOZ Theatre app is registered and the broadcaster granted only `user:read:chat`. Client credentials are in ignored0600`.env`; do not create a duplicate app or rotate the secret to change a tunnel URL. Genuine chat/operator play/refresh/encrypted backup/restart evidence is in [the provider report](TWITCH_LIVE_VALIDATION.md). Public setup is the hosting route; local3000remains account-free fallback. The anonymous-only persistence probe deliberately refuses configured shows and should not now be rerun unchanged. Models remainoff and human acceptance remainsopen.
+
+## Restored preview —28October
+
+The previous preview processes had stopped before the final packaging pass. Root
+verified no listeners/owned processes remained, then restarted the same database/key
+between shows. Current origin: https://star-dawn-phases-nevada.trycloudflare.com ;
+callback appends `/api/auth/twitch/callback`. Check `.runtime/public-preview.json`
+for authoritative status/PIDs. The account-free local3000House route was restored
+separately with empty Twitch/model configuration. No paid hosting or model call.
+The existing draft demo URL was saved to this origin; callback restoration is
+recorded in the current handoff after the actual Twitch UI save.

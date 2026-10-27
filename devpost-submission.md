@@ -22,7 +22,7 @@ Codex assisted development and agent-operated technical testing. Built-in image 
 
 ## How We Used Codex
 
-Codex helped implement the shared contracts, deterministic combat, Twitch OAuth/EventSub, server authority, persistence/recovery, original asset scripts, interface, tests and submission tooling. Concrete debugging included immediate damage cancellation at break, protected counter windows, stale-attempt rejection, bounded compiler deadlines, and a genuine authenticated restart/refresh/backup test. See BUILD_JOURNAL.md and ops/TWITCH_LIVE_VALIDATION.md. The build-notes graphics in the review cut are editorial source excerpts, not a recorded Codex interface.
+Codex helped implement the shared contracts, deterministic combat, Twitch OAuth/EventSub, server authority, persistence/recovery, original asset scripts, interface, tests and submission tooling. Concrete debugging included immediate damage cancellation at break, protected counter windows, stale-attempt rejection, bounded compiler deadlines, and a genuine authenticated restart/refresh/backup test. See BUILD_JOURNAL.md and ops/TWITCH_LIVE_VALIDATION.md. The build chapter records actual GitHub source/commit review of the Codex-built pause/upload fix. Architecture/asset graphics are editorial explanations; no native Codex app footage is claimed.
 
 ## Key Features
 
@@ -38,15 +38,15 @@ Use [submission/JUDGE_GUIDE.md](submission/JUDGE_GUIDE.md). Account-free `/house
 
 ## Public Demo Link
 
-Candidate: https://klein-wake-circle-favor.trycloudflare.com/house-show . Readiness was checked27October2026; it is a temporary Mac-hosted tunnel and must be rechecked before publication. Local fallback http://127.0.0.1:3000/house-show . The fallback URL only works on the host machine.
+Candidate: https://star-dawn-phases-nevada.trycloudflare.com/house-show . Readiness was checked28October2026; it is a temporary Mac-hosted tunnel and must be rechecked before publication. Local fallback http://127.0.0.1:3000/house-show . The fallback URL only works on the host machine.
 
 ## Public Repository Link
 
-https://github.com/AmirmLotfy/aragoz — **private**. Official judge contact and exact access grant remain pending; do not describe it as publicly accessible.
+https://github.com/AmirmLotfy/aragoz — **public**, explicitly approved by the owner28October2026. Anonymous README access returned HTTP200; no judge write invitation was needed.
 
 ## Demo Video
 
-Local captioned review: [submission/video/aragoz-review-160s.mp4](submission/video/aragoz-review-160s.mp4),160seconds,1920×1080/30fps. The supplied voice is now integrated in a local-only narrated160-second review; see submission/VOICE_INTEGRATION.md. Actual Twitch stills and separate OBS rehearsal motion are labelled; real Codex workflow footage and continuous Twitch motion should replace the provisional sections before declaring full video compliance. YouTube URL/upload approval pending.
+Local captioned review: [submission/video/aragoz-review-160s.mp4](submission/video/aragoz-review-160s.mp4),160seconds,1920×1080/30fps. The supplied voice is integrated in the final160-second movie; see submission/VOICE_INTEGRATION.md. The latest local-review/aragoz-narrated-motion-review.mp4 adds actual Twitch assembly and charge-break motion. Separate earlier rehearsal/result sources remain labelled. The build chapter contains actual source/commit review of a Codex-built patch; no native Codex app footage or continuous single-attempt victory is claimed. Public movie: https://youtu.be/ej-SDyRD6tE . Uploaded with explicit owner approval; English SRT saved; video URL saved/read back in Devpost.
 
 ## Screenshot Shot List
 
@@ -60,7 +60,7 @@ Files: submission/screenshots/01–05. Exact source hashes and captions: submiss
 
 ## Submission Readiness Notes
 
-Local copy, cover, gallery, timed VO script, edit plan and160-second review encode exist. [submission/DEVPOST.md](submission/DEVPOST.md) has the polished Devpost story and technology tags. [submission/RESEARCH.md](submission/RESEARCH.md) records current public requirements, three genuine past winning entries and source conflicts. The authenticated connector needs reauthentication; its actual form has not been inspected. No project, upload, access grant or competition entry was created by this packet.
+Local copy, cover, gallery, timed VO script, edit plan and160-second review encode exist. [submission/DEVPOST.md](submission/DEVPOST.md) has the polished Devpost story and technology tags. [submission/RESEARCH.md](submission/RESEARCH.md) records current public requirements, three genuine past winning entries and source conflicts. The connector still needs reauthentication, but supported browser access recovered. The existing draft was inspected and updated, and the approved cover/gallery were uploaded. Confirmed personal answers and primary session are saved. The repository was made public with explicit approval; no duplicate project, judge write invitation or final entry was created. The approved captioned movie is public on YouTube and the draft is3/5. See submission/DEVPOST_DRAFT_STATUS.md.
 
 ## Known Limitations
 
@@ -68,8 +68,8 @@ Technical preview; one real broadcaster account was operated by the agent, not a
 
 ## TODO Official Form Fields
 
-- Confirm entrant eligibility and rules acknowledgement through the actual account flow. No acknowledgement was fabricated or progress state initialized.
-- Confirm candidate primary build session `01a1746e-5b94-7b10-87dc-0f66a72f2e0f`, project context25–27October2026; owner confirmation still required before entry.
-- Verify authenticated questions and exact private-repository judge contact; approve the specific access change.
-- Owner VO is integrated locally. Add final genuine Twitch/Codex footage, final YouTube URL and link/access checks.
+- The owner will complete eligibility manually; final rules acknowledgement remains through the actual account flow. No acknowledgement was fabricated or progress state initialized.
+- Primary build session `01a1746e-5b94-7b10-87dc-0f66a72f2e0f` was confirmed by the owner28October and saved in Devpost.
+- Confirm remaining eligibility attestations. Public judge source access is resolved; no private invitation is required.
+- Owner VO is integrated locally. Actual Twitch and source-review footage are integrated. Public YouTube URL is saved and anonymous metadata access verified.
 - Obtain final submission approval, then verify the live submitted status. This draft is not an entry.

@@ -1,5 +1,15 @@
 # Build journal
 
+## 2026-10-28 — saved Devpost draft, public judge source, real motion and bounded pause fix
+
+- cwd `/Users/frameless/Desktop/Aragoz`, branch `main`, source-fix HEAD `1f4231ee060c285b7e74eb28656542ad28a2b130` pushed. Root is integration/Git/config/contracts/UI/media owner. One bounded source specialist wrote `apps/web/src/Live.tsx`, `apps/web/src/room-mutations.ts`, `apps/web/src/room-mutations.test.ts` and `tests/browser/live.spec.ts`; root verified. A separate checkpoint specialist owns only CURRENT_HANDOFF.md, BUILD_JOURNAL.md, REMAINING_WORK.md and submission/DEVPOST_DRAFT_STATUS.md, then stops. Final dirty/untracked inventory, source manifest and media/bundle freeze are root-owned; preserve concurrent README/submission notes/scripts/new sanitized receipts/screenshots and ops/LIVE_PAUSE_QUEUE_FIX.md.
+- Browser control recovered and worked; one long public reload timed out then eventually loaded. Existing Devpost 1268295 browser draft saved/read back title/tagline/story, 14 tags, repo/current demo, approved original cover and five actual screenshots with captions/corrected order. Owner expressly confirmed Individual / Egypt / A lot / Very likely and primary session `01a1746e-5b94-7b10-87dc-0f66a72f2e0f`; saved. Still DRAFT 2/5; video URL empty, age/conflict/jurisdiction/final rules/Terms untouched, Submit not clicked. Devpost connector remains UNAUTHORIZED; no duplicate project. These current facts supersede earlier browser-disabled/unsaved/unknown-contact statements, preserving historical entries as dated evidence.
+- Live form verified official private judge contact `testing@devpost.com`. Owner explicitly approved invitation and making the repo PUBLIC. Root scanned all 19 commits / 571 blobs / 54,342,579 bytes plus working tree: zero known-secret-value/common-credential-pattern/private-path matches; no workflows. Authorized `gh repo edit` succeeded, `isPrivate` false, anonymous raw README 200. Public source https://github.com/AmirmLotfy/aragoz resolves judge access; no collaborator invitation needed/made. Collaborators page asked for fresh verification, but existing authorized CLI completed visibility without code/password reads. Public approval supersedes prior private-only restriction for this repo; all spending remains off.
+- Expired tunnel deliberately restarted between shows with DB/key preserved; existing app callback updated to `https://manitoba-almost-exams-binary.trycloudflare.com`, no secret rotation. Genuine existing read-grant OAuth/channel challenge/proposal and one valid second-ballot charge vote; first late ballot correctly became House steam. Show `20c3bdf2-d30b-48e2-961b-18eb15196544` ended with three LOST attempts, Encore 2 charge break and Encore 3 steam break. Original 27 October win remains separate. Muted supported CDP screencast/ordinary keys, no injected gameplay/result. Receipt evidence/twitch-motion-capture-20261028.json; raw frames ignored .runtime/submission-capture. Zero genuine human sessions/participants; no outreach.
+- Genuine pre-fix Pause/event-upload revision 409 exposed the queue race; outbox retained. Shared per-room mutation queue now serializes actions/event uploads using latest revision and attempt/controller/recipe fences, with immediate local Pause. Root ran each with `PATH="$PWD/.runtime/node24/node-v24.19.0-darwin-arm64/bin:$PATH"`: `npm run typecheck`; `npm test -- apps/web/src/room-mutations.test.ts` (1/1); `npm run build:release`; `npm run test:browser -- tests/browser/live.spec.ts` (3/3, 55.8 seconds); all exited 0. Actual browser/HTTP with mocked provider fixture, no post-fix real combat/human acceptance claimed. Full older suites/OBS/Linux evidence retain their original dates/revisions; no redundant full-suite claim.
+- New local motion masters submission/local-review/aragoz-narrated-motion-review.mp4 and -clean.mp4 plus matching -en.srt: 160 seconds / 1080p30 / 4,800 frames, reviewed AAC voice and 33 cues preserved, motion-export full decodes pass. Root now rerendering build segment with actual allowed public GitHub source/commit review of 1f4231e, .runtime/submission-capture/codex-source-review-1793137679119/CAPTURE.json: 13.5 seconds requested / seven actual changed UI frames, recorded holds preserved. Explicit source-review category and factual TECHNICAL PREVIEW / BUILT WITH CODEX footer. Native com.openai.codex capture specifically denied even after fresh owner authorization; respected with no bypass. Source/commit review plus narration is authentic development explanation; no invented official native-Codex-only gate. Final size/hash/decode/bundle identities await root freeze; no intermediate sizes hardcoded. Existing YouTube Studio Frameless channel inspected; no movie upload, final upload approval pending.
+- Runtime reported public ready/hosting true/models false; supervisor 93502/tunnel 93504/server 93510:3010, exec 16314. Account-free local node 44075:3000, exec 27332, ready true/hosting false/models false. Both owned backends intentionally available; no active fight. Root's final media job is the only expected heavy work; no helper/heavy process should remain after completion. No private configuration/session/credential reads in docs packet, no spending/real model calls/outreach. Smallest next action: finish final source-review render/QA and exact source/media/bundle freeze, then concrete movie/draft review and remaining owner answers/final upload/entry approval. Provider lifecycle/multichannel/hosted control and human gates remain open, with blockers last in current status docs.
+
 ## 2026-10-27 — real-data isolated controller/offline-upload verification
 
 - Owner requested full continuation and reconfirmed browser controls enabled. Root made one freshCUAtabcheck and one directDevpostproject1268295read; bothstilldeny(browserWorksetting/appreauth). Treated as tool/settings mismatch, no repeated togglerequest orauthsetup/browserbypass. Continued a concrete backendverification gap withinB03 rather than repeating game suites or inventing provider/human acceptance.
@@ -237,3 +247,35 @@ Evidence status: source work in progress; no passing test/build/browser/provider
 - Test sources cover contracts, combat, mocked server/provider states and browser rehearsal. Install, package-lock resolution, typecheck, Vitest, build, Playwright, Docker, real providers, hosted, OBS and human checks remain unrun.
 - Storage remains below10GiB (last observed approximately3.95GiB). Task source occupies about3.3MB. No unrelated cleanup attempted; storage and concept questions remain pending.
 - Dockerfile/render.yaml/DEPLOYMENT_REVIEW.md prepared; no hosting/public repository created. Local Git main has unborn HEAD and untracked project source.
+
+###28October — final motion masters and preview restoration
+
+Root completed the captioned8,242,323-byte and clean7,946,676-byte160-second
+1080p30/4,800-frame exports. Both full FFmpeg decodes passed; AAC packet hashes
+match the earlier reviewed narration unchanged. Eight encoded samples cover
+assembly, charge break, aftermath, separately labelled result and actual GitHub
+source review. Sanitized identities/provenance: evidence/submission-media-20261028.json.
+No native Codex capture bypass, runtime model call, spending or invented outcome.
+
+Previous owned preview/local processes were absent; root restored the same public
+DB/key on a fresh free star-dawn-phases-nevada.trycloudflare.com origin. Readiness
+HTTP200 and supported-browser muted House page passed. Existing Twitch callback
+Save reported Success; the new demo URL was saved in the existing Devpost draft.
+Public/local runtime ownership is in CURRENT_HANDOFF.md. Owner approved public
+YouTube upload; action-time uploader terms acknowledgement and factual Devpost
+eligibility confirmations are pending, with file transfer/final entry untouched.
+
+###28October — approved public movie and saved video URL
+
+Owner answered the specific upload question **public**, then accepted the explicit
+YouTube uploader terms acknowledgement. Root uploaded the exact final captioned
+master(03b43c4e…), saved English SRT, replaced unrelated inherited tags, selected
+the actual title-frame thumbnail, and kept playback muted. Studio reported both
+initial checks complete/no issues, then Video published. Anonymous oEmbed200
+matched title/Frameless. Public URL: https://youtu.be/ej-SDyRD6tE . The direct
+standalone embed probe returned referer-related Error153; no external full-playback
+claim. No ads/promotion spending, outreach or additional voice synthesis.
+
+Video URL saved/read back in existing Devpost; draft advanced from2/5to3/5. The
+owner will complete eligibility manually. Those declarations, final rules/Terms
+and Submit remain untouched. See evidence/youtube-publication-20261028.json.

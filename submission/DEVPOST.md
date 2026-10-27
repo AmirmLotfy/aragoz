@@ -1,6 +1,6 @@
 # ARAGOZ — field-ready project story
 
-Local draft,27October2026. Nothing has been sent to Devpost. Public rules/web research is in RESEARCH.md; authenticated form fields remain unverified because the connector requires reauthentication. The labels below follow common Devpost story sections, not an assertion about this event's live form.
+Updated28October2026. The story, tags, links, approved cover/gallery and confirmed non-legal answers are saved in the existing Devpost draft through the authenticated browser. The entry is still Draft3/5; the approved public YouTube URL is saved and final submission remains untouched. Live fields/contact and exact remaining steps are in DEVPOST_DRAFT_STATUS.md. The connector still requires reauthentication, but browser access works.
 
 **Project name:** ARAGOZ
 
@@ -56,10 +56,10 @@ The next release gate is genuine broadcaster/viewer testing: whether first-time 
 
 ## Links and form values — confirm before pasting
 
-- Repository: https://github.com/AmirmLotfy/aragoz — **private; judge access not yet established**.
-- Demo candidate: https://klein-wake-circle-favor.trycloudflare.com/house-show — temporary Mac-hosted preview; recheck at publication. House play needs no account; invited Twitch hosting is separate.
-- Video: **owner VO integrated locally; pending final capture checks, upload and accessible YouTube URL**. Local review cut: video/aragoz-review-160s.mp4.
+- Repository: https://github.com/AmirmLotfy/aragoz — **public; owner-approved28October and anonymous README access verified**.
+- Demo candidate: https://star-dawn-phases-nevada.trycloudflare.com/house-show — temporary Mac-hosted preview; recheck at publication. House play needs no account; invited Twitch hosting is separate.
+- Video: https://youtu.be/ej-SDyRD6tE — public with owner approval; saved in the draft. Corresponding local master: local-review/aragoz-narrated-motion-review.mp4, with actual Twitch assembly/break motion and unchanged supplied narration.
 - Thumbnail: artwork/aragoz-devpost-3x2.png. Generated original promotional key art, not gameplay.
 - Gallery: screenshots/01–05, unchanged actual screenshots; captions in MEDIA_MANIFEST.json.
-- Candidate primary Codex session: `01a1746e-5b94-7b10-87dc-0f66a72f2e0f` (project build context25–27October2026). **Owner confirmation still pending; do not silently attest it is the required primary session.**
-- Entrant eligibility, rule agreement and any authenticated custom questions: owner/account step pending. Do not register, grant access or make a legal attestation from this document alone.
+- Candidate primary Codex session: `01a1746e-5b94-7b10-87dc-0f66a72f2e0f` (project build context25–27October2026). **Confirmed by the owner28October2026 and saved in the existing draft.**
+- Individual/Egypt/A lot/Very likely answers and technical/community explanations are saved. Entrant eligibility and final rule agreement remain owner/account steps. Do not register, grant access or make a legal attestation from this document alone.

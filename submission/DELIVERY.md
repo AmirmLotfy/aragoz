@@ -1,18 +1,18 @@
 # ARAGOZ — review delivery
 
-Prepared27October2026. Local files only; nothing has been sent to Devpost or YouTube. The game remains a technical preview. Final footage and account/publication steps stay separate from the completed preparation work.
+Updated28October2026. The approved cover/gallery, story, links and confirmed answers are saved in the existing Devpost draft. The approved captioned movie is public at https://youtu.be/ej-SDyRD6tE and saved in Devpost(Draft3/5); no final competition entry. The game remains a technical preview. See DEVPOST_DRAFT_STATUS.md for the current form/evidence boundary.
 
 ## One-file handoff
 
 `submission/local-review/ARAGOZ-review-package.zip` contains:
 
-- Captioned160second narrated review.
+- Latest captioned160second narrated motion review, including actual Twitch assembly and charge-break footage.
 - Matching clean-picture narrated master and English SRT.
 - Original3:2cover and five unchanged actual gameplay screenshots.
 - Devpost write-up, judge instructions, YouTube title/description/chapters and final capture shot list.
 - A source ZIP with the game code, assets, rights notices, pinned dependency lockfile and runnable instructions.
 
-The voice-bearing package is ignored/local until publication review. It deliberately excludes the original voice WAV, raw recordings, transcripts, credentials, databases, browser profiles and dependency caches. The source archive is separately available as `submission/local-review/ARAGOZ-source-review.zip`; it excludes all voice-bearing exports. Archive CRC and each source-file SHA256 are verified on export. The exact source commit, clean/dirty state and file inventory are inside the source ZIP. The ignored DELIVERY_BUNDLE_RECEIPT.json records both archive hashes.
+The downloadable voice-bearing package remains ignored/local; only the specifically approved captioned movie and English captions were uploaded to YouTube. It deliberately excludes the original voice WAV, raw recordings, transcripts, credentials, databases, browser profiles and dependency caches. The source archive is separately available as `submission/local-review/ARAGOZ-source-review.zip`; it excludes all voice-bearing exports. Archive CRC and each source-file SHA256 are verified on export. The exact source commit, clean/dirty state and file inventory are inside the source ZIP. The ignored DELIVERY_BUNDLE_RECEIPT.json records both archive hashes.
 
 ## Verified master pair
 
@@ -24,11 +24,27 @@ No autoplay or speaker test was used. All rendering and archive checks were loca
 
 A36-check actual localhost HTTP rehearsal on an isolated restore of genuine ARAGOZ account/session/recipe/result data passed controller takeover and stale/offline upload fences. The live database fingerprint and original win were preserved, with no provider calls or new authenticated session. See ops/CONTROLLER_RECOVERY_REHEARSAL.md and its sanitized receipt in the source bundle. This remains separate from public browser/provider/human acceptance.
 
-## Final external steps
+## Current media and remaining external steps
 
-1. Complete the intended Twitch/Codex footage upgrades when supported capture control is available. The official public rules request working-Twitch and Codex-build footage; they do not prescribe one uninterrupted take. Our stronger causal sequence is an editorial recommendation, not an invented official condition. See FINAL_CAPTURE_PACKET.md.
-2. Reconnect Devpost. The connector still returns reauthentication required. Owner approved opening sign-in; the prescribed CLI command exited immediately because no local MCP server nameddevpost exists. Plugin discovery returned no reconnect-capable result. No sign-in window or new authorization session was opened. Use the existing app connection's reconnect flow; do not install a duplicate or fabricate a successful login.
-3. Inspect the authenticated form, confirm entrant/rules/session values, verify the official private-repository judge contact and approve the exact access grant. The source ZIP is useful delivery material; it does not replace the required accessible repository URL.
-4. Review and approve the exact final video upload and competition entry. Verify actual accessible links and submitted status afterward. No synthetic human sessions or broader release acceptance are implied by this package.
+Latest files: local-review/aragoz-narrated-motion-review.mp4 and
+local-review/aragoz-narrated-motion-clean.mp4, with matching motion-en.srt.
+Both retain the exact reviewed AAC stream and pass full decode/4,800-frame checks.
+Earlier originals remain local; source/category labels distinguish28October
+Twitch motion from separate House rehearsal and the27October accepted result.
+No new recorded victory is asserted.
 
-Browser control still reports disabled. Native Codex capture was previously denied. Neither restriction was bypassed. No spending, outreach, public exposure or submission has been performed.
+1. The final build chapter contains actual GitHub source/commit review of the
+   Codex-built pause/upload fix. It is explicitly not native Codex app footage;
+   the app-specific Computer Use denial was respected without a capture bypass.
+2. The Devpost browser draft is saved with approved cover/gallery, confirmed
+   personal answers and main session. Legal/eligibility attestations are untouched.
+3. Public judge source access is resolved at https://github.com/AmirmLotfy/aragoz .
+   The owner approved public visibility; anonymous README access returned200.
+   No write collaborator invitation was needed or sent.
+4. Public YouTube upload is complete on Frameless, with English captions and
+   no-issues checks. The URL is saved/read back in Devpost(Draft3/5). The owner
+   will complete eligibility manually; final rules/entry remain untouched.
+
+Browser access works; the connector still requires reauthentication. No spending,
+outreach or final entry occurred. Human release acceptance and
+remaining provider lifecycle/isolation cases stay separate.

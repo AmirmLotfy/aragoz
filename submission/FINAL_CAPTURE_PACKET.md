@@ -1,4 +1,6 @@
-# Final footage replacement packet
+# Final footage packet —28October checkpoint
+
+The final local motion masters now include actual Twitch assembly/charge-break footage and actual GitHub source/commit review. Their sources and limits are recorded in MEDIA_MANIFEST.json. The earlier shot plan below documents the intended captures.
 
 This is the concrete shot plan for the existing160second narrated edit. The supplied voice is already integrated; no new VO is needed by default. Captures stay muted through the actual game setting and supported browser launch. Never record credentials, private backstage queues, unrelated apps or chat. No browser/native capture restriction is bypassed.
 
@@ -15,12 +17,12 @@ Only the public play window contains the3Dsimulation. Record private controls on
 
 ## Codex workflow — replace01:52–02:19
 
-Capture the actual ARAGOZ Codex thread and relevant source/review, without private settings or unrelated conversations. Show a concrete request/change and its actual source or verification result, such as same-step break cancellation. Do not reconstruct a chat UI, fake tool output, or use an editorial card as if it were recorded app footage. The existing code/architecture cards can remain brief explanatory inserts if their labels stay clear.
+Actual GitHub source/commit review of fix1f4231e is captured at01:52–02:05, followed by labelled asset/architecture explanation. Native Codex app capture was specifically denied and was not bypassed. The recorded source review is explicitly not native Codex UI. For any future authorized capture, exclude private settings and unrelated conversations. Show a concrete request/change and its actual source or verification result, such as same-step break cancellation. Do not reconstruct a chat UI, fake tool output, or use an editorial card as if it were recorded app footage. The existing code/architecture cards can remain brief explanatory inserts if their labels stay clear.
 
-Candidate primary session: `01a1746e-5b94-7b10-87dc-0f66a72f2e0f`. It is the documented project thread; confirm the form value with the owner before entry, rather than silently attesting it.
+Candidate primary session: `01a1746e-5b94-7b10-87dc-0f66a72f2e0f`. The owner confirmed this primary session28October2026; it is saved in the draft.
 
 ## Timing and evidence judgment
 
-Official public rules §4 call for Twitch-functionality and Codex-build footage. They do **not** specify one uninterrupted take. Our continuous causal sequence is a production/evidence recommendation, not an extra official rule. A shorter honest edited sequence can be used if it clearly demonstrates actual operation. Final media compliance is not asserted from the present still/editorial sections. Source: https://twitchcon-codex.devpost.com/rules (rechecked27October2026).
+Official public rules §4 call for Twitch-functionality and Codex-build footage. They do **not** specify one uninterrupted take. Our continuous causal sequence is a production/evidence recommendation, not an extra official rule. A shorter honest edited sequence can be used if it clearly demonstrates actual operation. The final edit preserves the distinct labels for actual Twitch motion, earlier accepted-result still, House rehearsal and actual source review. Source: https://twitchcon-codex.devpost.com/rules (rechecked27October2026).
 
-Browser access currently reports disabled in Work settings; native Codex capture was denied in the prior packet. Devpost needs reauthentication. Recheck only when the relevant state changes; do not retry the same blocked action in a loop. Local master/source packaging can proceed independently.
+Browser access now works and the existing Devpost draft is saved. Only the connector still needs reauthentication. The public repository is approved and accessible. The owner-approved captioned movie is public at https://youtu.be/ej-SDyRD6tE and saved in Devpost(Draft3/5). The owner will complete eligibility manually; legal rules/final submission remain untouched.

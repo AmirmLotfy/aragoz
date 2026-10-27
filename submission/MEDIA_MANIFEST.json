@@ -1,6 +1,6 @@
 {
   "created": "2026-10-27",
-  "status": "unpublished-production-packet",
+  "status": "cover-and-five-screenshots-saved-to-Devpost-draft;captioned-movie-public-on-YouTube",
   "gallery": [
     {
       "file": "submission/screenshots/01-real-twitch-vote.png",
@@ -56,9 +56,28 @@
     "kind": "generated promotional key art, never gameplay"
   },
   "limits": [
-    "No genuine human acceptance sessions.",
-    "Review cut uses actual Twitch stills plus separate OBS rehearsal motion.",
-    "Build notes are editorial; actual Codex UI capture remains pending.",
-    "Final footage, upload/access and submission approval remain pending. Voice integration is documented separately."
-  ]
+    "Zero genuine human acceptance sessions.",
+    "Actual28October assembly and charge-break motion comes from ordinary agent-operated Twitch play; captured attempts lost.",
+    "Earlier House rehearsal and27October accepted-result still are separately labelled.",
+    "Actual GitHub source review shows the Codex-built patch; architecture/asset graphics remain editorial.",
+    "Captioned movie publicly uploaded with owner approval; clean master stays local. Owner will complete Devpost eligibility manually; final entry remains untouched."
+  ],
+  "updated": "2026-10-28",
+  "motionMasters": {
+    "receipt": "evidence/submission-media-20261028.json",
+    "files": [
+      "submission/local-review/aragoz-narrated-motion-review.mp4",
+      "submission/local-review/aragoz-narrated-motion-clean.mp4"
+    ],
+    "sourceFix": "1f4231ee060c285b7e74eb28656542ad28a2b130",
+    "actualTwitchReceipt": "evidence/twitch-motion-capture-20261028.json",
+    "sourceReview": "actual GitHub commit/files capture; explicitly not native Codex app footage",
+    "audio": "Exact reviewed AAC stream retained in both masters; original narration WAV excluded"
+  },
+  "publication": {
+    "movieURL": "https://youtu.be/ej-SDyRD6tE",
+    "receipt": "evidence/youtube-publication-20261028.json",
+    "DevpostState": "Draft3/5",
+    "finalEntry": false
+  }
 }

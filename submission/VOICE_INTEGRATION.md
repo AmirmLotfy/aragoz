@@ -2,7 +2,7 @@
 
 Received `speech.wav` from the owner and preserved the Desktop original. A byte-identical working copy stays in ignored `.runtime/submission-work/voice/`. The speaker's identity or recording method is not inferred. No voice clone, synthesized replacement, paid speech API or audio-device playback was used.
 
-**Latest watchable file, local only:** `submission/local-review/aragoz-narrated-review.mp4`. Matching captions: `submission/local-review/aragoz-narrated-en.srt`. The folder is deliberately ignored until publication review; the voice-bearing export is not in the private repository or any external service. The earlier `video/aragoz-review-160s.mp4` remains the reproducible voice-free prototype.
+**27October watchable file (historical local review):** `submission/local-review/aragoz-narrated-review.mp4`. Matching captions: `submission/local-review/aragoz-narrated-en.srt`. The folder is deliberately ignored until publication review; the voice-bearing export is not in the private repository or any external service. The earlier `video/aragoz-review-160s.mp4` remains the reproducible voice-free prototype.
 
 ## Integration and checks
 
@@ -19,3 +19,16 @@ Editable source: source/build_voice_cut.py and source/build_video.py. Voice inpu
 ## Remaining final-publication actions
 
 The supplied narration is integrated; do not request another recording by default. Continuous actual Twitch motion and actual Codex-workflow footage still need to replace provisional still/editorial sections when capture control works. Devpost authentication/live fields/eligibility/session confirmation, verified private-repository judge access, final video-upload approval and final entry approval remain. No project has been entered and no voice-bearing recording has been externally uploaded. Genuine host/viewer acceptance remains a separate release gate.
+
+##28October publication update
+
+Actual Twitch motion and actual GitHub source/commit review now replace the
+provisional picture segments in the160-second final master pair. Their AAC packet
+hashes match the reviewed narration above unchanged. Identities and full decode
+evidence are in evidence/submission-media-20261028.json. The owner explicitly
+approved public upload, including the supplied narration, and YouTube's uploader
+terms acknowledgement. Captioned movie: https://youtu.be/ej-SDyRD6tE ; English
+SRT saved. The clean master, original WAV, transcripts and raw recordings remain
+ignored/local. Devpost video URL is saved(Draft3/5); owner will complete eligibility
+manually, and final entry remains untouched. Earlier status paragraphs retain
+their27October context. No new voice recording or paid audio/model API was used.

@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-28",
+  "kind": "observed-existing-Devpost-draft-not-entry",
+  "projectId": 1268295,
+  "url": "https://devpost.com/submit-to/31742-codex-x-twitchcon-hackathon/manage/submissions/1268295-aragoz/project_details/edit",
+  "state": "Draft",
+  "stepsDone": 3,
+  "stepsTotal": 5,
+  "saved": [
+    "title",
+    "tagline",
+    "story",
+    "14 technology tags",
+    "public repository URL",
+    "temporary House demo URL",
+    "technical requirement and Twitch community paragraphs"
+  ],
+  "ownerConfirmed": {
+    "entrant": "Individual",
+    "country": "Egypt",
+    "learning": "A lot",
+    "futureCodexUse": "Very likely",
+    "primarySession": "01a1746e-5b94-7b10-87dc-0f66a72f2e0f"
+  },
+  "media": {
+    "cover": 1,
+    "actualScreenshots": 5,
+    "ownerExplicitlyApprovedUploads": true,
+    "captionsAndChronologicalOrderSaved": true
+  },
+  "publicRepositoryVerifiedAnonymous": true,
+  "legalEligibilityCheckboxesUntouched": true,
+  "videoURL": "https://youtu.be/ej-SDyRD6tE",
+  "finalSubmitClicked": false,
+  "browserRoute": "working authenticated UI",
+  "connectorRoute": "UNAUTHORIZED; browser fallback used",
+  "limits": [
+    "Saved draft does not establish eligibility, accepted entry or human release acceptance.",
+    "No original voice, credentials, raw recordings, database or session contents uploaded."
+  ],
+  "demoURL": "https://star-dawn-phases-nevada.trycloudflare.com/house-show",
+  "videoURLSavedAndReadBack": true,
+  "ownerWillCompleteEligibilityManually": true
+}
