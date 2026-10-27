@@ -1,0 +1,15 @@
+
+> aragoz@0.1.0 test:browser
+> playwright test --workers=1 tests/browser/readability.spec.ts tests/browser/house-show.spec.ts --grep stream ballot|readable rule|settings retain|three skipped
+
+
+Running 4 tests using 1 worker
+
+(node:84375) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/house-show.spec.ts:49:1 › three skipped encounters produce a finite cumulative showbill and downloadable local record (11.9s)
+  ✓  2 tests/browser/readability.spec.ts:6:1 › stream ballot keeps command, timer, long credit and both contract choices within a720p capture (1.6s)
+  ✓  3 tests/browser/readability.spec.ts:31:1 › readable rule strip stays outside the arena and clear of each bottom webcam corner (4.7s)
+  ✓  4 tests/browser/readability.spec.ts:48:1 › settings retain keyboard focus and usable horizontal layout with doubled text (5.3s)
+
+  4 passed (26.0s)

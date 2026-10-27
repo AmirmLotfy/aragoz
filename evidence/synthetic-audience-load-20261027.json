@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "evidence": "synthetic local fixtures only; no provider/network/browser/human acceptance",
+  "complete": true,
+  "load": {
+    "evidence": "synthetic in-process Engine/SQLite; no Twitch, network, browser or human acceptance",
+    "channels": 3,
+    "counts": {
+      "initialProposal": 768,
+      "duplicateProposalDelivery": 48,
+      "replacementProposal": 48,
+      "reorderedProposal": 48,
+      "tieOlderProposal": 48,
+      "overAuthorLimitProposal": 48,
+      "wrongProposalCode": 3,
+      "crossChannelProposal": 3,
+      "beforeProposalOpen": 3,
+      "afterProposalSentCutoff": 3,
+      "exactProposalCutoff": 3,
+      "expiredProposalArrival": 3,
+      "initialVote": 600,
+      "duplicateVoteDelivery": 60,
+      "replacementVote": 60,
+      "reorderedVote": 60,
+      "tieOlderVote": 60,
+      "wrongVoteCode": 3,
+      "crossChannelVote": 3,
+      "beforeVoteOpen": 3,
+      "afterVoteSentCutoff": 3,
+      "exactVoteCutoff": 3,
+      "expiredVoteArrival": 3,
+      "closedVoteCode": 3
+    },
+    "totalMessages": 1887,
+    "retainedProposalsPerChannel": [
+      128,
+      128,
+      128
+    ],
+    "peakStoredProposals": 128,
+    "sampledPerChannel": [
+      12,
+      12,
+      12
+    ],
+    "effectiveVotesPerChannel": [
+      201,
+      201,
+      201
+    ],
+    "proposalWindowMs": 25000,
+    "voteWindowMs": 20000,
+    "durationMs": 851,
+    "messageCompletionP95Ms": 500,
+    "messageCompletionMaxMs": 619,
+    "failures": 0,
+    "invariants": [
+      "128 stored proposals/channel",
+      "12 eligible unique authors/sample",
+      "timestamp/message-id replacement",
+      "four proposal commands/author",
+      "delivery dedupe",
+      "channel isolation",
+      "latest vote/account",
+      "exact cutoff accepted; late receipt rejected",
+      "no provider calls",
+      "queues drained"
+    ]
+  },
+  "responsiveness": {
+    "evidence": "synthetic local pending compiler",
+    "channels": 3,
+    "otherChannelsReachedReview": 2,
+    "hostActionCompleted": true,
+    "extraTicks": 3,
+    "duplicateCompilations": 0,
+    "eventLoopAndHostActionMs": 1,
+    "failures": 0
+  }
+}

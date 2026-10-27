@@ -1,0 +1,39 @@
+
+> aragoz@0.1.0 test:browser
+> playwright test --workers=1
+
+
+Running 28 tests using 1 worker
+
+(node:80690) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/house-show.spec.ts:23:1 › account-free House choices assemble at tick zero, move, and recover after refresh (10.3s)
+  ✓   2 tests/browser/house-show.spec.ts:49:1 › three skipped encounters produce a finite cumulative showbill and downloadable local record (13.4s)
+  ✓   3 tests/browser/house-show.spec.ts:65:1 › a second window requires explicit takeover and the previous controller cannot write (7.9s)
+  ✓   4 tests/browser/house-show.spec.ts:78:1 › labelled local result fixture exercises immutable Encore and one-slot Remix (5.0s)
+  ✓   5 tests/browser/house-show.spec.ts:100:1 › corrupt saves require explicit replacement and storage failure remains playable (3.6s)
+  ✓   6 tests/browser/house-show.spec.ts:112:1 › a failed write warns about lost progress and refresh restores the older readable save (3.6s)
+  ✓   7 tests/browser/house-show.spec.ts:132:1 › external storage clearing removes the playing window and cannot resurrect its show (3.7s)
+  ✓   8 tests/browser/house-show.spec.ts:148:1 › a missing save is detected before publishing even without a storage event (929ms)
+  ✓   9 tests/browser/house-show.spec.ts:161:1 › narrow layout keeps choices and keyboard focus within the page (1.2s)
+  ✓  10 tests/browser/house-show.spec.ts:170:1 › an actual House encounter records defeat and Encore returns the same recipe to a paused curtain (21.8s)
+  ✓  11 tests/browser/live.spec.ts:78:1 › [FIXTURE] real live UI commits both audience contracts, hides private raw text and safely takes over after reload (21.8s)
+  ✓  12 tests/browser/live.spec.ts:135:1 › [FIXTURE] interrupted mock input discards the ballot and old round commands cannot enter its restarted private queue (7.3s)
+  ✓  13 tests/browser/readability.spec.ts:6:1 › stream ballot keeps command, timer, long credit and both contract choices within a720p capture (1.9s)
+  ✓  14 tests/browser/readability.spec.ts:29:1 › readable rule strip stays outside the arena and clear of each bottom webcam corner (3.7s)
+  ✓  15 tests/browser/readability.spec.ts:41:1 › settings retain keyboard focus and usable horizontal layout with doubled text (4.4s)
+  ✓  16 tests/browser/rehearsal.spec.ts:4:1 › public rehearsal survives unavailable hosting and opens an actual stage (5.0s)
+  ✓  17 tests/browser/rehearsal.spec.ts:13:1 › actual movement, pause and resume use the same fixed-step encounter (6.0s)
+  ✓  18 tests/browser/rehearsal.spec.ts:29:1 › capture telemetry snapshots do not open a browser download or interrupt combat (4.6s)
+  ✓  19 tests/browser/rehearsal.spec.ts:50:1 › 30fps presentation keeps combat advancing independently at60Hz (6.1s)
+  ✓  20 tests/browser/rehearsal.spec.ts:73:1 › configuration switch changes actual mechanic families and preserves House attribution (3.9s)
+  ✓  21 tests/browser/rehearsal.spec.ts:82:1 › settings pause the action and expose keyboard and comfort controls (3.3s)
+  ✓  22 tests/browser/rehearsal.spec.ts:90:1 › the entire arena fits a 720p desktop play window (2.5s)
+  ✓  23 tests/browser/rehearsal.spec.ts:102:3 › Retina presentation › standard quality preserves crisp pixels and low quality reduces resolution (4.7s)
+  ✓  24 tests/browser/rehearsal.spec.ts:116:1 › missing approved asset uses the shipped development geometry without changing mechanics (2.3s)
+  ✓  25 tests/browser/rehearsal.spec.ts:128:1 › a stalled manifest reaches the playable shipped fallback (9.8s)
+  ✓  26 tests/browser/rehearsal.spec.ts:142:1 › an asset arriving after the deadline cannot replace geometry during the fight (11.9s)
+  ✓  27 tests/browser/rehearsal.spec.ts:166:1 › unavailable WebGL exposes a clickable recovery screen above the opening card (3.1s)
+  ✓  28 tests/browser/rehearsal.spec.ts:180:1 › context loss permanently pauses this canvas until a safe reload (4.6s)
+
+  28 passed (3.1m)

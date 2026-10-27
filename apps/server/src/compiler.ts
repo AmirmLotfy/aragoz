@@ -69,9 +69,22 @@ export class Compiler {
   enabled() { return Boolean(this.config.openaiApiKey && this.config.modelDailyRequestLimit > 0); }
   mode(candidates: Candidate[]): CompilationMode { return this.modes.get(candidates) ?? (candidates.some(candidate => candidate.credit.source === 'viewer') ? 'catalogue' : 'house'); }
   async request(endpoint: string, body: unknown, signal: AbortSignal): Promise<unknown> {
+    signal.throwIfAborted();
     if (!this.store.modelRequest(this.now(), this.config.modelDailyRequestLimit)) throw new Error('Daily model request limit reached');
-    const result = await this.fetcher(`https://api.openai.com/v1/${endpoint}`, { method: 'POST', headers: { Authorization: `Bearer ${this.config.openaiApiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal });
-    if (!result.ok) throw new Error('Model service unavailable'); return result.json();
+    // Bound both transport and response-body reading, even if an injected transport
+    // ignores cancellation. All moderation/mapping attempts share the compile timer.
+    let onAbort!: () => void;
+    const aborted = new Promise<never>((_resolve, reject) => { onAbort = () => reject(signal.reason); signal.addEventListener('abort', onAbort, { once: true }); });
+    try {
+      const pending = (async () => {
+        const result = await this.fetcher(`https://api.openai.com/v1/${endpoint}`, { method: 'POST', headers: { Authorization: `Bearer ${this.config.openaiApiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal });
+        signal.throwIfAborted();
+        if (!result.ok) throw new Error('Model service unavailable'); return result.json();
+      })();
+      const result = await Promise.race([pending, aborted]);
+      signal.throwIfAborted();
+      return result;
+    } finally { signal.removeEventListener('abort', onAbort); }
   }
   async compile(proposals: Proposal[], excluded: RecipeModule[], hidden: boolean): Promise<Candidate[]> {
     const fallback = () => { const candidates = catalogueCandidates(proposals, excluded, hidden); this.modes.set(candidates, candidates.some(candidate => candidate.credit.source === 'viewer') ? 'catalogue' : 'house'); return candidates; };

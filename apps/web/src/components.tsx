@@ -7,6 +7,7 @@ import type { Preferences } from './settings';
 import { keyLabel } from './settings';
 import { canBindKey, movementKeyLabel } from './controls';
 import { showbillEntries } from './showbill';
+import { STREAM_COPY } from './stream-copy';
 
 export function Glyph({family,broken=false}:{family:FamilyId;broken?:boolean}){
   return <svg viewBox="0 0 48 48" className={'glyph '+(broken?'is-broken':'')} fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
@@ -28,10 +29,10 @@ export function Timer({deadline,opensAt,delayed=false}:{deadline:number|null;ope
   const target=delayed?opensAt:deadline;const remaining=target?Math.max(0,Math.ceil((target-now)/1000)):0;
   return <span className="timer" aria-label={(delayed?'Opens in ':'Closes in ')+remaining+' seconds'}>{delayed?'OPENS IN':'CLOSES IN'} <strong>{remaining}s</strong></span>;
 }
-export function Placards({candidates,hideAuthors,votes,privateControls}:{candidates:Candidate[];hideAuthors?:boolean;votes?:[number,number,number];privateControls?:(candidate:Candidate)=>ReactNode}){
-  return <div className="placards">{candidates.map((c,i)=>{const p=MECHANICS[c.profileId];return <article className="placard" key={c.id}>
+export function Placards({candidates,hideAuthors,votes,privateControls,stream=false}:{candidates:Candidate[];hideAuthors?:boolean;votes?:[number,number,number];privateControls?:(candidate:Candidate)=>ReactNode;stream?:boolean}){
+  return <div className={'placards'+(stream?' stream-placards':'')}>{candidates.map((c,i)=>{const p=MECHANICS[c.profileId],copy=stream?STREAM_COPY[c.profileId]:p;return <article className="placard" key={c.id}>
     <div className="placard-heading"><span className="choice-letter">{'ABC'[i]}</span><Glyph family={p.family}/><span className="family-label">{p.family}{candidates.filter(other=>MECHANICS[other.profileId].family===p.family).length>1?' · alternate tuning':''}</span></div>
-    <h3>{p.power}</h3><p className="flaw"><span>BUT</span> {p.flaw.toLowerCase()}.</p><p className="tradeoff">{p.tradeoff}</p>
+    <h3>{copy.power}</h3><p className="flaw"><span>BUT</span> {copy.flaw}.</p><p className="tradeoff">{copy.tradeoff}</p>
     <div className="placard-credit">{creditLabel(c.credit,hideAuthors)}</div>
     {votes&&<div className="vote-count">{votes[i]} {votes[i]===1?'vote':'votes'}</div>}
     {c.adaptation&&privateControls&&<p className="adaptation">Adaptation: {c.adaptation}</p>}{privateControls?.(c)}
@@ -63,7 +64,7 @@ export function CombatHud({snapshot,recipe,act,preferences,mode,notice}:{snapsho
     <div className="act-label"><span>{mode}</span><strong>ACT {['I','II','III'][Math.min(2,act-1)]}</strong></div>
     <div className="module-status"><span className="hud-eyebrow">{recipe.approvedName.toUpperCase()}</span>{recipe.modules.map(m=>{const state=snapshot?.modules.find(s=>s.slotId===m.slotId);return <div className={'module-meter '+(state?.broken?'broken':'')} key={m.slotId}><Glyph family={m.mechanicId} broken={state?.broken}/><div><span>{state?.broken?'BROKEN':m.mechanicId.toUpperCase()}</span><progress max={100} value={state?.breakMeter??0} aria-label={m.mechanicId+' break progress'}/></div></div>;})}</div>
     <div className={'rule-caption '+(exposed?'counter-open':'')} aria-live="polite">
-      {snapshot?.canFinish?<><strong>THE BOAST IS BROKEN.</strong><span>Step close. One final strike.</span></>:exposed?<><strong>{exposed.mechanicId==='charge'?'AXLE JAMMED':exposed.mechanicId==='steam'?'VALVE EXPOSED':'MIRROR EXPOSED'}</strong><span>Strike the attachment while the opening lasts.</span></>:removed?<><strong>{removed.mechanicId.toUpperCase()} REMOVED.</strong><span>That attachment cannot attack again.</span></>:active?<><strong>{MECHANICS[active.profileId].power}</strong><span>BUT {MECHANICS[active.profileId].flaw.toLowerCase()}.</span></>:<><strong>THE HOUSE IS WATCHING.</strong><span>Every boast has a loophole.</span></>}
+      {snapshot?.canFinish?<><strong>THE BOAST IS BROKEN.</strong><span>Step close. One final strike.</span></>:exposed?<><strong>{exposed.mechanicId==='charge'?'AXLE JAMMED':exposed.mechanicId==='steam'?'VALVE EXPOSED':'MIRROR EXPOSED'}</strong><span>Strike the exposed attachment.</span></>:removed?<><strong>{removed.mechanicId.toUpperCase()} REMOVED.</strong><span>That attachment cannot attack again.</span></>:active?<><strong>{active.mechanicId==='charge'?'CHARGE: CANNOT TURN':active.mechanicId==='steam'?'STEAM: WATCH THE CONE':snapshot?.boss.stage==='recording'?'ECHO: RECORDING YOU':'ECHO: COPIED PATH'}</strong><span>{active.mechanicId==='charge'?'Put a block in its path.':active.mechanicId==='steam'?'After bursts, strike the valve.':'Make its copy hit a block.'}</span></>:<><strong>THE HOUSE IS WATCHING.</strong><span>Every boast has a loophole.</span></>}
     </div>{notice&&<p className="connection-ribbon" role="status">{notice}</p>}
   </div>;
 }

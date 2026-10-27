@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "kind": "Local implementation and engineering signoff; fixtures, synthetic load, browser and historical provider/human evidence remain distinct",
+  "at": "2026-10-27T00:13:26.324930+00:00",
+  "baseHead": "8402266bab1a818a05183ac53c4d602c8a1bd8fd",
+  "cwd": "/Users/frameless/Desktop/Aragoz",
+  "branch": "main",
+  "decision": {
+    "freeDesktopTechnicalPreview": "approved",
+    "fullInvitedBroadcasterRelease": "not accepted; genuine provider and human gates remain",
+    "humanSessions": 0,
+    "spending": 0,
+    "newProviderRequests": 0
+  },
+  "tasks": {
+    "1Audio": "complete;13 silent regressions",
+    "2StreamAccessibility": "engineering review complete; eight actual captured views, three regressions",
+    "3SyntheticAudience": "complete;1887 messages/3 channels/0 invariant failures",
+    "4CompilerDeadlineRefusal": "complete;10 mocked regressions;real abort/body-read gap fixed",
+    "5Documents": "complete;historical evidence retained",
+    "6GenuineTwitchCausalChain": "pending;last registration rejected2FA;fresh UI unavailable before access",
+    "7GenuineProviderLifecycle": "pending;no configured account",
+    "8GenuineHostedAccountRestoreIsolation": "pending;no configured account",
+    "9GenuineHostViewerSessions": "pending;0sessions",
+    "10FixFreezeJudge": "local findings fixed;technical-preview source frozen;full release judgment follows genuine acceptance"
+  },
+  "checks": {
+    "unit": {
+      "passed": 171,
+      "files": 14,
+      "seconds": 3.51,
+      "includesAudio": 13,
+      "includesCompilerDeadline": 10,
+      "includesSyntheticLoad": 2
+    },
+    "typecheck": "pass on final TypeScript sources under project-local Node24.19.0",
+    "releaseBuild": "pass on final CSS/source under project-local Node24.19.0;existing Babylon chunk advisory",
+    "browserFull": {
+      "passed": 28,
+      "failed": 0,
+      "duration": "3.1min",
+      "method": "one full muted run before final showbill-only CSS refinements and stronger test assertions"
+    },
+    "browserAfterFinalRefinement": {
+      "passed": 4,
+      "failed": 0,
+      "seconds": 26.0,
+      "scope": "all3readability cases plus actual showbill/download flow",
+      "method": "targeted affected cases only;not a second full suite"
+    },
+    "capture": {
+      "complete": true,
+      "views": 8,
+      "widths": [
+        1280,
+        844,
+        390
+      ],
+      "sourceViewport": [
+        1280,
+        720
+      ],
+      "pageErrors": [],
+      "providerRequests": 0,
+      "minimumSampledSolidContrast": 5.328572874691705,
+      "note": "Native Chromium scale, actual UI; no generated retouching, no human comprehension claim"
+    },
+    "syntheticReceipt": "evidence/synthetic-audience-load-20261027.json"
+  },
+  "retainedFailures": [
+    {
+      "kind": "initial complete browser run",
+      "passed": 27,
+      "failed": 1,
+      "cause": "exact author-name assertion lost its separate element in compact retained-contract markup",
+      "repair": "restored separate author span;subsequent complete28-case pass"
+    },
+    {
+      "kind": "verification invocation before tests",
+      "cause": "bundled Node24 path disappeared;system Node22 lacks node:sqlite backup export",
+      "repair": "official Node24.19.0 ARM64 archive hash verified,project-local ignored runtime restored;no unrelated cache modified"
+    },
+    {
+      "kind": "baseline captures",
+      "cause": "ballot command off720p;combat and detailed showbill typography too small",
+      "repair": "command reordered;caption outsidearena;opaque plates;large showbill text;actual candidatecaptures inspected"
+    }
+  ],
+  "runtimePointCheck": "evidence/steps-1-10-runtime-point-check.json",
+  "sources": [
+    {
+      "path": "apps/web/src/audio.ts",
+      "sha256": "674d2158963baa43885b2e46d570bc27e8fb85fa909f31d0bc4143f144d76dab",
+      "bytes": 8538
+    },
+    {
+      "path": "apps/web/src/audio-cues.ts",
+      "sha256": "cf1244625323ac262ed2700be59af7dcb80d8b21e2393a91446a7ff12b17ae1a",
+      "bytes": 1789
+    },
+    {
+      "path": "apps/web/src/GameCanvas.tsx",
+      "sha256": "2f5cb5e286d5af46c31c25bc738778776375b9af248a4c8fc3beeff04d46df91",
+      "bytes": 12763
+    },
+    {
+      "path": "apps/web/src/Live.tsx",
+      "sha256": "5f2f1168cb1a158eb6481acbd6cf55b394dc4d07612084a1ff4d3c7af39b2879",
+      "bytes": 25908
+    },
+    {
+      "path": "apps/web/src/components.tsx",
+      "sha256": "8934271215438de344b372d090e9650c9fefbeab011a94c50010dce258846325",
+      "bytes": 13953
+    },
+    {
+      "path": "apps/web/src/styles.css",
+      "sha256": "d205fcce764a43559490061625a79ee7ca6a4079fcec26c59f36932ea9dd051c",
+      "bytes": 34351
+    },
+    {
+      "path": "apps/web/src/stream-copy.ts",
+      "sha256": "5c5dd2c6d3fc7cdac462ac1accfea7b59f2d8e08d55e21228f67bd2f5ca39c72",
+      "bytes": 1055
+    },
+    {
+      "path": "apps/server/src/compiler.ts",
+      "sha256": "41587b162d8360fc51ac28da2f9baa74ad2652de9cd861349b6572f7579ab06d",
+      "bytes": 13176
+    },
+    {
+      "path": "apps/web/src/audio-cues.test.ts",
+      "sha256": "8e8249794b00b8be9f668aa1d0bb4b63b91baad75afe33a28e0e54e936534299",
+      "bytes": 11021
+    },
+    {
+      "path": "apps/server/test/compiler-deadline.test.ts",
+      "sha256": "a6d4a67dc9059ee1d31a9161a5cd4abee49adfb7147de2555895947f6cf9915b",
+      "bytes": 9019
+    },
+    {
+      "path": "apps/server/test/audience-load.test.ts",
+      "sha256": "1231faf38e85e0d98a0fd8204a9c3fb97414c55779afae8500654e9d5ddb7e0d",
+      "bytes": 15204
+    },
+    {
+      "path": "tests/browser/readability.spec.ts",
+      "sha256": "e9bab4b90db0a5642c14c5c88b69be3ca5e7cc1aa6e5e0203ab7385da4152dab",
+      "bytes": 5705
+    },
+    {
+      "path": "scripts/inspect-stream-readability.mjs",
+      "sha256": "fb2a18331d895277e0bcc2c963e39f8a49e5c7d44ee4030e7c706b28cb0d2d08",
+      "bytes": 8659
+    }
+  ],
+  "logs": [
+    {
+      "path": "evidence/steps-1-4-unit.txt",
+      "sha256": "395d9fbb3d77f07ef619c8743935effb485daeff407d74c0a68354f75dedf3f0",
+      "bytes": 445
+    },
+    {
+      "path": "evidence/steps-1-4-targeted.txt",
+      "sha256": "1ea2a3fc00300fe0f8a7ab5ccecbe48f941a30dfb42eb771915e9051211a2463",
+      "bytes": 356
+    },
+    {
+      "path": "evidence/steps-1-5-browser.txt",
+      "sha256": "2172f8211b201e209953dca54e7e1af2b1150d3d708a3c1f431af71bfe461c2b",
+      "bytes": 8021
+    },
+    {
+      "path": "evidence/steps-1-5-browser-final.txt",
+      "sha256": "47d3526fb8fd5767318c642589e1fc88c685216311deabdb6884f54e3b501d41",
+      "bytes": 4175
+    },
+    {
+      "path": "evidence/steps-1-5-browser-readability-final.txt",
+      "sha256": "5d07b989f8730171b1dae7ad733be20341efc2f0cf7b95a7a363a2d1d508a7ab",
+      "bytes": 992
+    },
+    {
+      "path": "evidence/steps-1-10-typecheck.txt",
+      "sha256": "05658b9f5c793bdb26fb6fd7c6022a203162359015fbd18d1971e7de37837962",
+      "bytes": 41
+    },
+    {
+      "path": "evidence/steps-1-5-build.txt",
+      "sha256": "7f50e951fca47330f0234815c20691539e4f8466685259f00da0e8a1a8d9448e",
+      "bytes": 24624
+    }
+  ],
+  "historicalEvidence": {
+    "unchanged": [
+      "evidence/release-readiness.json",
+      "evidence/autonomous-release-validation.json",
+      "evidence/browser/autonomous-house/receipt.json",
+      "evidence/browser/autonomous-echo/receipt.json"
+    ],
+    "limits": "No new Linux/OBSduration/human/provider acceptance. Existing server processes retain prior inactive compiler code;new source tested via fixture servers. Full file identities in evidence/source-manifest.json."
+  },
+  "blockersLast": [
+    "Twitch2FA/SMSowner-deferred;fresh browser control disabled in Work settings;no app/clientID/secret",
+    "Genuine-account lifecycle,hostedisolation/tokenrestore await setup",
+    "0realparticipant sessions;consent and real attendance/comprehension required",
+    "Allspendingprohibited;freepublichostnamefailed latest DNSpointcheck;localready200;oldsupervisorfuture-reload executable path disappeared"
+  ],
+  "changedPaths": [
+    " M BUILD_JOURNAL.md",
+    " M CURRENT_HANDOFF.md",
+    " M DEPLOYMENT_REVIEW.md",
+    " M REMAINING_WORK.md",
+    " M TEST_PLAN.md",
+    " M apps/server/README.md",
+    " M apps/server/src/compiler.ts",
+    " M apps/web/src/GameCanvas.tsx",
+    " M apps/web/src/Live.tsx",
+    " M apps/web/src/audio.ts",
+    " M apps/web/src/components.tsx",
+    " M apps/web/src/styles.css",
+    " M ops/AUTONOMOUS_RELEASE_REVIEW.md",
+    "?? .impeccable.md",
+    "?? apps/server/test/audience-load.test.ts",
+    "?? apps/server/test/compiler-deadline.test.ts",
+    "?? apps/web/src/audio-cues.test.ts",
+    "?? apps/web/src/audio-cues.ts",
+    "?? apps/web/src/stream-copy.ts",
+    "?? evidence/browser/readability-baseline/ballot-1280.png",
+    "?? evidence/browser/readability-baseline/ballot-390.png",
+    "?? evidence/browser/readability-baseline/ballot-844.png",
+    "?? evidence/browser/readability-baseline/combat-1280.png",
+    "?? evidence/browser/readability-baseline/combat-390.png",
+    "?? evidence/browser/readability-baseline/combat-844.png",
+    "?? evidence/browser/readability-baseline/proposal-1280.png",
+    "?? evidence/browser/readability-baseline/proposal-390.png",
+    "?? evidence/browser/readability-baseline/proposal-844.png",
+    "?? evidence/browser/readability-baseline/receipt.json",
+    "?? evidence/browser/readability-baseline/settings-1280.png",
+    "?? evidence/browser/readability-baseline/settings-390.png",
+    "?? evidence/browser/readability-baseline/settings-844.png",
+    "?? evidence/browser/readability-candidate/ballot-1280.png",
+    "?? evidence/browser/readability-candidate/ballot-390.png",
+    "?? evidence/browser/readability-candidate/ballot-844.png",
+    "?? evidence/browser/readability-candidate/combat-1280.png",
+    "?? evidence/browser/readability-candidate/combat-390.png",
+    "?? evidence/browser/readability-candidate/combat-844.png",
+    "?? evidence/browser/readability-candidate/combat-no-colour-1280.png",
+    "?? evidence/browser/readability-candidate/combat-no-colour-390.png",
+    "?? evidence/browser/readability-candidate/combat-no-colour-844.png",
+    "?? evidence/browser/readability-candidate/proposal-1280.png",
+    "?? evidence/browser/readability-candidate/proposal-390.png",
+    "?? evidence/browser/readability-candidate/proposal-844.png",
+    "?? evidence/browser/readability-candidate/receipt.json",
+    "?? evidence/browser/readability-candidate/second-ballot-1280.png",
+    "?? evidence/browser/readability-candidate/second-ballot-390.png",
+    "?? evidence/browser/readability-candidate/second-ballot-844.png",
+    "?? evidence/browser/readability-candidate/settings-1280.png",
+    "?? evidence/browser/readability-candidate/settings-390.png",
+    "?? evidence/browser/readability-candidate/settings-844.png",
+    "?? evidence/browser/readability-candidate/showbill-1280.png",
+    "?? evidence/browser/readability-candidate/showbill-390.png",
+    "?? evidence/browser/readability-candidate/showbill-844.png",
+    "?? evidence/browser/readability-candidate/showbill-history-1280.png",
+    "?? evidence/browser/readability-candidate/showbill-history-390.png",
+    "?? evidence/browser/readability-candidate/showbill-history-844.png",
+    "?? evidence/browser/steps-1-5-regressions/README.md",
+    "?? evidence/browser/steps-1-5-regressions/fallback-stage.png",
+    "?? evidence/browser/steps-1-5-regressions/house-actual-result.json",
+    "?? evidence/browser/steps-1-5-regressions/house-actual-result.png",
+    "?? evidence/browser/steps-1-5-regressions/house-choice-narrow.png",
+    "?? evidence/browser/steps-1-5-regressions/house-choices.png",
+    "?? evidence/browser/steps-1-5-regressions/house-ready-720p.png",
+    "?? evidence/browser/steps-1-5-regressions/house-showbill.png",
+    "?? evidence/steps-1-10-runtime-point-check.json",
+    "?? evidence/steps-1-10-typecheck.txt",
+    "?? evidence/steps-1-10-validation.json",
+    "?? evidence/steps-1-4-targeted.txt",
+    "?? evidence/steps-1-4-unit.txt",
+    "?? evidence/steps-1-5-browser-final.txt",
+    "?? evidence/steps-1-5-browser-readability-final.txt",
+    "?? evidence/steps-1-5-browser.txt",
+    "?? evidence/steps-1-5-build.txt",
+    "?? evidence/synthetic-audience-load-20261027.json",
+    "?? ops/STREAM_ACCESSIBILITY_REVIEW.md",
+    "?? scripts/inspect-stream-readability.mjs",
+    "?? tests/browser/readability.spec.ts"
+  ],
+  "logExport": "Committed text copies normalize trailing whitespace only; original local .log files remain ignored."
+}

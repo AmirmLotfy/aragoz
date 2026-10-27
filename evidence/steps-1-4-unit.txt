@@ -1,0 +1,15 @@
+
+> aragoz@0.1.0 test
+> vitest run --maxWorkers=1
+
+
+ RUN  v5.0.5 /Users/frameless/Desktop/Aragoz
+
+
+ Test Files  14 passed (14)
+      Tests  171 passed (171)
+   Start at  02:50:39
+   Duration  3.51s (tests 72%, import 23%, transform 4%, worker 1%)
+
+    Isolate  14 workers spawned · ~62ms startup each (spawn + environment, per file)
+             at least ~800ms faster with isolate: false — reuses workers across files instead of one per file

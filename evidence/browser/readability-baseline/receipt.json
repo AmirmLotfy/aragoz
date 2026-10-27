@@ -1,0 +1,1093 @@
+{
+  "kind": "Local actual browser layout/contrast and native scaled captures; audience phases use labelled mock-input fixture; no human/Twitch/OBS acceptance",
+  "label": "baseline",
+  "at": "2026-10-26T23:45:59.972Z",
+  "sourceViewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "muted": true,
+  "views": [
+    {
+      "name": "proposal",
+      "text": [
+        {
+          "selector": ".audience-cue h2",
+          "text": "Give this villain a power… BUT give it a flaw.",
+          "fontPx": 57.6,
+          "weight": "800",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 156.875,
+            "y": 271.109375,
+            "width": 966.25,
+            "height": 122.09375
+          },
+          "phone390FontPx": 17.55
+        },
+        {
+          "selector": ".chat-command code",
+          "text": "!make 7619DB charges but cannot turn",
+          "fontPx": 30.72,
+          "weight": "800",
+          "color": "rgb(36, 74, 154)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 7.4670831536412035,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 355.015625,
+            "y": 450.8125,
+            "width": 569.96875,
+            "height": 42
+          },
+          "phone390FontPx": 9.36
+        },
+        {
+          "selector": ".timer strong",
+          "text": "22s",
+          "fontPx": 25.6,
+          "weight": "700",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 659.5,
+            "y": 531.078125,
+            "width": 39.09375,
+            "height": 35
+          },
+          "phone390FontPx": 7.8
+        },
+        {
+          "selector": ".chat-command>span",
+          "text": "IN TWITCH CHAT",
+          "fontPx": 10.4,
+          "weight": "700",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 87.453125,
+            "y": 425.203125,
+            "width": 1105.09375,
+            "height": 15.609375
+          },
+          "phone390FontPx": 3.16875
+        }
+      ],
+      "captures": [
+        {
+          "width": 1280,
+          "path": "evidence/browser/readability-baseline/proposal-1280.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        },
+        {
+          "width": 844,
+          "path": "evidence/browser/readability-baseline/proposal-844.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        },
+        {
+          "width": 390,
+          "path": "evidence/browser/readability-baseline/proposal-390.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        }
+      ]
+    },
+    {
+      "name": "ballot",
+      "text": [
+        {
+          "selector": ".audience-cue h2",
+          "text": "Which boast belongs onstage?",
+          "fontPx": 57.6,
+          "weight": "800",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 156.875,
+            "y": 271.109375,
+            "width": 966.25,
+            "height": 61.046875
+          },
+          "phone390FontPx": 17.55
+        },
+        {
+          "selector": ".chat-command code",
+          "text": "!vote 7619DB A",
+          "fontPx": 30.72,
+          "weight": "800",
+          "color": "rgb(36, 74, 154)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 7.4670831536412035,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 499.390625,
+            "y": 738.84375,
+            "width": 217.5625,
+            "height": 42
+          },
+          "phone390FontPx": 9.36
+        },
+        {
+          "selector": ".timer strong",
+          "text": "16s",
+          "fontPx": 25.6,
+          "weight": "700",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 659.5,
+            "y": 819.109375,
+            "width": 39.09375,
+            "height": 35
+          },
+          "phone390FontPx": 7.8
+        },
+        {
+          "selector": ".placard h3",
+          "text": "A fast, straight charge",
+          "fontPx": 25.6,
+          "weight": "800",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 12.19544939674895,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 109.25,
+            "y": 446.75,
+            "width": 310.90625,
+            "height": 28.140625
+          },
+          "phone390FontPx": 7.8
+        },
+        {
+          "selector": ".placard h3",
+          "text": "Three long, narrow steam bursts",
+          "fontPx": 25.6,
+          "weight": "800",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 12.19544939674895,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 484.546875,
+            "y": 446.75,
+            "width": 310.90625,
+            "height": 56.28125
+          },
+          "phone390FontPx": 7.8
+        },
+        {
+          "selector": ".placard h3",
+          "text": "Copies your last second of movement",
+          "fontPx": 25.6,
+          "weight": "800",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 12.19544939674895,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 859.84375,
+            "y": 446.75,
+            "width": 310.90625,
+            "height": 56.28125
+          },
+          "phone390FontPx": 7.8
+        },
+        {
+          "selector": ".placard .flaw",
+          "text": "BUT cannot turn; a stage block jams its axle.",
+          "fontPx": 19.2,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 12.19544939674895,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 109.25,
+            "y": 487.6875,
+            "width": 310.90625,
+            "height": 49.90625
+          },
+          "phone390FontPx": 5.85
+        },
+        {
+          "selector": ".placard .flaw",
+          "text": "BUT overheats after three bursts; the valve lifts.",
+          "fontPx": 19.2,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 12.19544939674895,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 484.546875,
+            "y": 515.828125,
+            "width": 310.90625,
+            "height": 49.90625
+          },
+          "phone390FontPx": 5.85
+        },
+        {
+          "selector": ".placard .flaw",
+          "text": "BUT must follow the marked copy; blocks expose its mirror.",
+          "fontPx": 19.2,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 12.19544939674895,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 859.84375,
+            "y": 515.828125,
+            "width": 310.90625,
+            "height": 49.90625
+          },
+          "phone390FontPx": 5.85
+        },
+        {
+          "selector": ".placard-credit",
+          "text": "FIXTURE Author",
+          "fontPx": 10.56,
+          "weight": "700",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 12.19544939674895,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 109.25,
+            "y": 597.515625,
+            "width": 310.90625,
+            "height": 14
+          },
+          "phone390FontPx": 3.2175000000000002
+        },
+        {
+          "selector": ".placard-credit",
+          "text": "House Suggestion",
+          "fontPx": 10.56,
+          "weight": "700",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 12.19544939674895,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 484.546875,
+            "y": 625.65625,
+            "width": 310.90625,
+            "height": 14
+          },
+          "phone390FontPx": 3.2175000000000002
+        },
+        {
+          "selector": ".placard-credit",
+          "text": "House Suggestion",
+          "fontPx": 10.56,
+          "weight": "700",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 12.19544939674895,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 859.84375,
+            "y": 625.65625,
+            "width": 310.90625,
+            "height": 14
+          },
+          "phone390FontPx": 3.2175000000000002
+        },
+        {
+          "selector": ".choice-letter",
+          "text": "A",
+          "fontPx": 43.2,
+          "weight": "900",
+          "color": "rgb(157, 51, 37)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 5.550191944389696,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 109.25,
+            "y": 387.546875,
+            "width": 28.78125,
+            "height": 43.203125
+          },
+          "phone390FontPx": 13.1625
+        },
+        {
+          "selector": ".choice-letter",
+          "text": "B",
+          "fontPx": 43.2,
+          "weight": "900",
+          "color": "rgb(157, 51, 37)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 5.550191944389696,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 484.546875,
+            "y": 387.546875,
+            "width": 26.53125,
+            "height": 43.203125
+          },
+          "phone390FontPx": 13.1625
+        },
+        {
+          "selector": ".choice-letter",
+          "text": "C",
+          "fontPx": 43.2,
+          "weight": "900",
+          "color": "rgb(157, 51, 37)",
+          "solidBackground": "rgb(239, 226, 189)",
+          "contrast": 5.550191944389696,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 859.84375,
+            "y": 387.546875,
+            "width": 25.453125,
+            "height": 43.203125
+          },
+          "phone390FontPx": 13.1625
+        }
+      ],
+      "captures": [
+        {
+          "width": 1280,
+          "path": "evidence/browser/readability-baseline/ballot-1280.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        },
+        {
+          "width": 844,
+          "path": "evidence/browser/readability-baseline/ballot-844.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        },
+        {
+          "width": 390,
+          "path": "evidence/browser/readability-baseline/ballot-390.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        }
+      ]
+    },
+    {
+      "name": "combat",
+      "text": [
+        {
+          "selector": ".rule-caption strong",
+          "text": "A fast, straight charge",
+          "fontPx": 16.64,
+          "weight": "700",
+          "color": "rgb(242, 230, 202)",
+          "solidBackground": "rgb(36, 35, 31)",
+          "contrast": null,
+          "imageBacked": true,
+          "insideCapture": true,
+          "bounds": {
+            "x": 268.03125,
+            "y": 580.03125,
+            "width": 264.75,
+            "height": 19.96875
+          },
+          "phone390FontPx": 5.07
+        },
+        {
+          "selector": ".rule-caption span",
+          "text": "BUT cannot turn; a stage block jams its axle.",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(242, 230, 202)",
+          "solidBackground": "rgb(36, 35, 31)",
+          "contrast": null,
+          "imageBacked": true,
+          "insideCapture": true,
+          "bounds": {
+            "x": 268.03125,
+            "y": 605.59375,
+            "width": 264.75,
+            "height": 17.90625
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".hud-eyebrow",
+          "text": "THE PERFORMER",
+          "fontPx": 9.6,
+          "weight": "700",
+          "color": "rgb(242, 230, 202)",
+          "solidBackground": "rgb(36, 35, 31)",
+          "contrast": null,
+          "imageBacked": true,
+          "insideCapture": true,
+          "bounds": {
+            "x": 246.4375,
+            "y": 210.203125,
+            "width": 124.75,
+            "height": 13
+          },
+          "phone390FontPx": 2.925
+        },
+        {
+          "selector": ".hud-eyebrow",
+          "text": "TEAPOT TYRANT",
+          "fontPx": 9.6,
+          "weight": "700",
+          "color": "rgb(242, 230, 202)",
+          "solidBackground": "rgb(36, 35, 31)",
+          "contrast": null,
+          "imageBacked": true,
+          "insideCapture": true,
+          "bounds": {
+            "x": 883.546875,
+            "y": 210.203125,
+            "width": 150,
+            "height": 13
+          },
+          "phone390FontPx": 2.925
+        },
+        {
+          "selector": ".module-meter span",
+          "text": "CHARGE",
+          "fontPx": 7.68,
+          "weight": "700",
+          "color": "rgb(242, 230, 202)",
+          "solidBackground": "rgb(36, 35, 31)",
+          "contrast": null,
+          "imageBacked": true,
+          "insideCapture": true,
+          "bounds": {
+            "x": 943.546875,
+            "y": 241.46875,
+            "width": 90,
+            "height": 10
+          },
+          "phone390FontPx": 2.34
+        },
+        {
+          "selector": ".module-meter span",
+          "text": "STEAM",
+          "fontPx": 7.68,
+          "weight": "700",
+          "color": "rgb(242, 230, 202)",
+          "solidBackground": "rgb(36, 35, 31)",
+          "contrast": null,
+          "imageBacked": true,
+          "insideCapture": true,
+          "bounds": {
+            "x": 943.546875,
+            "y": 285.609375,
+            "width": 90,
+            "height": 10
+          },
+          "phone390FontPx": 2.34
+        },
+        {
+          "selector": ".act-label strong",
+          "text": "ACT I",
+          "fontPx": 23.04,
+          "weight": "700",
+          "color": "rgb(242, 230, 202)",
+          "solidBackground": "rgb(36, 35, 31)",
+          "contrast": null,
+          "imageBacked": true,
+          "insideCapture": true,
+          "bounds": {
+            "x": 608.40625,
+            "y": 219.203125,
+            "width": 63.15625,
+            "height": 32
+          },
+          "phone390FontPx": 7.0200000000000005
+        }
+      ],
+      "captures": [
+        {
+          "width": 1280,
+          "path": "evidence/browser/readability-baseline/combat-1280.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        },
+        {
+          "width": 844,
+          "path": "evidence/browser/readability-baseline/combat-844.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        },
+        {
+          "width": 390,
+          "path": "evidence/browser/readability-baseline/combat-390.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        }
+      ]
+    },
+    {
+      "name": "settings",
+      "text": [
+        {
+          "selector": ".settings-dialog label",
+          "text": "Mute all game audio",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 301,
+            "y": 217.4375,
+            "width": 678,
+            "height": 19.1875
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "Music 16%",
+          "fontPx": 13.6,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 301,
+            "y": 251.015625,
+            "width": 678,
+            "height": 50.1875
+          },
+          "phone390FontPx": 4.14375
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "Effects 50%",
+          "fontPx": 13.6,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 301,
+            "y": 315.59375,
+            "width": 678,
+            "height": 50.1875
+          },
+          "phone390FontPx": 4.14375
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "Reduce decorative motion",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 301,
+            "y": 447.96875,
+            "width": 678,
+            "height": 19.1875
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "Reduce flashes",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 301,
+            "y": 479.953125,
+            "width": 678,
+            "height": 19.1875
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "Assist strikes toward nearby attachments",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 301,
+            "y": 511.9375,
+            "width": 678,
+            "height": 19.1875
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "Camera shake 10%",
+          "fontPx": 13.6,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 301,
+            "y": 545.515625,
+            "width": 678,
+            "height": 50.1875
+          },
+          "phone390FontPx": 4.14375
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "Camera-safe cornerBottom rightBottom leftTop rightNo reserved corner",
+          "fontPx": 13.6,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 301,
+            "y": 610.09375,
+            "width": 678,
+            "height": 39.59375
+          },
+          "phone390FontPx": 4.14375
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "upW",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 301,
+            "y": 768.265625,
+            "width": 327,
+            "height": 38
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "downS",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 652,
+            "y": 768.265625,
+            "width": 327,
+            "height": 38
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "leftA",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 301,
+            "y": 815.859375,
+            "width": 327,
+            "height": 38
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "rightD",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 652,
+            "y": 815.859375,
+            "width": 327,
+            "height": 38
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "strikeJ",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 301,
+            "y": 863.453125,
+            "width": 327,
+            "height": 38
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "dodgeSpace",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 652,
+            "y": 863.453125,
+            "width": 327,
+            "height": 38
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "QualityStandardLow resolution",
+          "fontPx": 13.6,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 301,
+            "y": 970.84375,
+            "width": 678,
+            "height": 39.59375
+          },
+          "phone390FontPx": 4.14375
+        },
+        {
+          "selector": ".settings-dialog label",
+          "text": "Presentation frame rate60 fps target30 fps fallback",
+          "fontPx": 13.6,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 301,
+            "y": 1024.828125,
+            "width": 678,
+            "height": 39.59375
+          },
+          "phone390FontPx": 4.14375
+        },
+        {
+          "selector": ".settings-dialog legend",
+          "text": "Sound",
+          "fontPx": 11.52,
+          "weight": "700",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 301,
+            "y": 173.640625,
+            "width": 65.734375,
+            "height": 15
+          },
+          "phone390FontPx": 3.5100000000000002
+        },
+        {
+          "selector": ".settings-dialog legend",
+          "text": "Comfort & clarity",
+          "fontPx": 11.52,
+          "weight": "700",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 301,
+            "y": 404.171875,
+            "width": 156.71875,
+            "height": 15
+          },
+          "phone390FontPx": 3.5100000000000002
+        },
+        {
+          "selector": ".settings-dialog legend",
+          "text": "Keys",
+          "fontPx": 11.52,
+          "weight": "700",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 301,
+            "y": 688.078125,
+            "width": 50.265625,
+            "height": 15
+          },
+          "phone390FontPx": 3.5100000000000002
+        },
+        {
+          "selector": ".settings-dialog legend",
+          "text": "Presentation",
+          "fontPx": 11.52,
+          "weight": "700",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 301,
+            "y": 925.453125,
+            "width": 117.78125,
+            "height": 15
+          },
+          "phone390FontPx": 3.5100000000000002
+        },
+        {
+          "selector": ".settings-dialog button",
+          "text": "×",
+          "fontPx": 22.4,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": true,
+          "bounds": {
+            "x": 943,
+            "y": 76.203125,
+            "width": 36,
+            "height": 36
+          },
+          "phone390FontPx": 6.825
+        },
+        {
+          "selector": ".settings-dialog button",
+          "text": "W",
+          "fontPx": 12,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(242, 230, 202)",
+          "contrast": 12.692386795428403,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 538,
+            "y": 768.265625,
+            "width": 90,
+            "height": 38
+          },
+          "phone390FontPx": 3.65625
+        },
+        {
+          "selector": ".settings-dialog button",
+          "text": "S",
+          "fontPx": 12,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(242, 230, 202)",
+          "contrast": 12.692386795428403,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 889,
+            "y": 768.265625,
+            "width": 90,
+            "height": 38
+          },
+          "phone390FontPx": 3.65625
+        },
+        {
+          "selector": ".settings-dialog button",
+          "text": "A",
+          "fontPx": 12,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(242, 230, 202)",
+          "contrast": 12.692386795428403,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 538,
+            "y": 815.859375,
+            "width": 90,
+            "height": 38
+          },
+          "phone390FontPx": 3.65625
+        },
+        {
+          "selector": ".settings-dialog button",
+          "text": "D",
+          "fontPx": 12,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(242, 230, 202)",
+          "contrast": 12.692386795428403,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 889,
+            "y": 815.859375,
+            "width": 90,
+            "height": 38
+          },
+          "phone390FontPx": 3.65625
+        },
+        {
+          "selector": ".settings-dialog button",
+          "text": "J",
+          "fontPx": 12,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(242, 230, 202)",
+          "contrast": 12.692386795428403,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 538,
+            "y": 863.453125,
+            "width": 90,
+            "height": 38
+          },
+          "phone390FontPx": 3.65625
+        },
+        {
+          "selector": ".settings-dialog button",
+          "text": "Space",
+          "fontPx": 12,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(242, 230, 202)",
+          "contrast": 12.692386795428403,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 889,
+            "y": 863.453125,
+            "width": 90,
+            "height": 38
+          },
+          "phone390FontPx": 3.65625
+        },
+        {
+          "selector": ".settings-dialog button",
+          "text": "Export local performance report",
+          "fontPx": 12.8,
+          "weight": "400",
+          "color": "rgb(36, 35, 31)",
+          "solidBackground": "rgb(251, 242, 219)",
+          "contrast": 14.099327600340892,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 301,
+            "y": 1133.40625,
+            "width": 193.078125,
+            "height": 32.34375
+          },
+          "phone390FontPx": 3.9
+        },
+        {
+          "selector": ".settings-dialog button",
+          "text": "Back to the show",
+          "fontPx": 14.4,
+          "weight": "700",
+          "color": "rgb(255, 246, 223)",
+          "solidBackground": "rgb(157, 51, 37)",
+          "contrast": 6.646472222469228,
+          "imageBacked": false,
+          "insideCapture": false,
+          "bounds": {
+            "x": 301,
+            "y": 1181.75,
+            "width": 168.046875,
+            "height": 47.1875
+          },
+          "phone390FontPx": 4.3875
+        }
+      ],
+      "captures": [
+        {
+          "width": 1280,
+          "path": "evidence/browser/readability-baseline/settings-1280.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        },
+        {
+          "width": 844,
+          "path": "evidence/browser/readability-baseline/settings-844.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        },
+        {
+          "width": 390,
+          "path": "evidence/browser/readability-baseline/settings-390.png",
+          "method": "Chromium native capture scale; layout remains1280x720, no generated retouching"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "providerRequests": 0,
+  "captureComplete": true
+}

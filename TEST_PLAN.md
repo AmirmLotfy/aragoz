@@ -1,42 +1,61 @@
 # Evidence and acceptance plan
 
-Current local evidence is recorded below. Local, mocked provider and AI-led checks do not advance real-provider, hosted, OBS or human gates.
+Updated 27 October 2026. Keep the complete first-release scope from the brief and IMPLEMENTATION_PLAN.md. The latest local checks and the historical receipts below have different source revisions and evidence scopes.
 
-## Actual local evidence —26October2026
+## Current local verification
 
-- `npm ci --ignore-scripts`:142packages installed from the lockfile. A subsequent explicit production-only workspace package installed86packages/32MB and served health, readiness, rehearsal, asset manifest and font license endpoints successfully.
-- `npm run typecheck`:passed with TypeScript7 under Node24.19.0.
-- `npm test`:112passed across7files after release completion fixes:36combat/contracts,65server and11web helper/render cases. Current log evidence/release-completion-tests.log; earlier receipts retained.
-- `npm run test:assets`:62small GLB-format/local-serving fixtures previously passed; evidence/asset-format.tap. Static bounds are rest-pose evidence.
-- `npm run test:browser`:11passed,1worker,1.9minutes on the current compression build after browser access became available. Actual log evidence/release-completion-browser.log. The stalled-manifest, late-container, covered-error and context-loss regressions now run and pass. Includes public offline rehearsal, real inputs/pause, settings, all pairs, actual missing-GLB fallback and fixture-only live authoring/vote/HTTP/WS/control recovery.
-- `npm run build:release`:passed with all7runtime GLBs admitted. Original Blender sources,256px authored tiles, sockets and rigid clips retained;1,345,615compressed GLB bytes and44,796triangles across the full kit. Actual three-pair scenes were33–35kvisible triangles/59–62drawcalls at rest; active hazards peaked40,951triangles/70drawcalls in the short sample.
-- Actual M1 Metal headless browser samples at1920x1080 and1280x720 viewports:8.5seconds each, mean17.69/17.16ms presentation intervals, p9518ms. Actual canvas buffers were1492x832 and1203x669 due to the page layout. These short samples are NOT full1080p/720p OBS tests. evidence/browser/performance-smoke.json records exact dimensions and a409.6ms initial high-resolution outlier.
-- AI-led keyboard browser play baited the charge, exploited the block, broke the physical axle, observed six seconds without another charge, broke steam, won through the final strike and reset both modules with Encore. evidence/browser/causal-counter.json. No genuine viewer is claimed.
-- An actual Linux ARM64 Docker build passed the full build-stage checks. Container smoke verified non-root startup, public/private routes, packaged compressed GLBs, persistent volume replacement, online backup and isolated restoration. evidence/linux-container-build.json and linux-container-smoke.json. Task-owned Colima VM/data were removed after checks; production code remains available to rebuild.
+- `npm run typecheck`: passed for the A01–A04 sources.
+- `npm test`: **171 tests across 14 files passed**, one worker, 3.51 seconds. [Full unit log](evidence/steps-1-4-unit.txt).
+- `npm run build:release`: passed with all seven final runtime GLBs admitted. The existing Babylon chunk-size advisory remains informational.
+- The final complete browser run passes **28/28 cases in 3.1 minutes**, all muted. [Final run](evidence/steps-1-5-browser-final.txt). The earlier 27-pass/one-failure run is retained; restoring a separate author credit span fixed its exact-name privacy assertion before this full rerun. After final showbill typography and stronger corner/long-credit assertions, the four affected cases passed separately in26.0seconds. No partial runs were combined.
+- A01 adds distinct advance charge/steam windup and echo recording/warning cues. Thirteen silent tests cover all six profiles before their real attack transitions, pause/break cancellation, deduplication, gesture unlock, mute and independent music/SFX controls. Web Audio stand-ins cannot reach speakers. [Audio tests](apps/web/src/audio-cues.test.ts).
+- A03/A04 add 12 server tests: two synthetic audience-load cases and ten compiler deadline/refusal cases. The earlier focused 23-test log predates two additional audio lifecycle regressions; the 171-test full run includes all 25 new cases. [Focused log](evidence/steps-1-4-targeted.txt), [load tests](apps/server/test/audience-load.test.ts), [compiler tests](apps/server/test/compiler-deadline.test.ts).
+- Actual local synthetic load delivered **1,887 messages across three channels**, retaining at most **128 proposals/channel**, sampling **12 unique authors/channel**, and retaining **201 effective votes/channel**, with zero recorded failures and drained queues. Measured local completion p95/max were 500/619 ms; total load duration was 851 ms. A separate pending-compiler case kept the other two channels and a host action responsive. These are in-process Engine/SQLite measurements. [Synthetic receipt](evidence/synthetic-audience-load-20261027.json).
+- Mock compiler regressions cover the shared 12-second moderation/mapping/repair deadline, pending transport and response-body cancellation, late-response suppression, at most one repair, refusal fallback, request caps and identity privacy. No model request was made.
+- A02 moves the public command above ballot cards, uses concise curated public copy, places the HUD caption below the arena and adds high-contrast plates. Actual muted Chromium baseline/candidate captures retain the 1280×720 layout at 1280, 844 and 390 pixel output widths. [Baseline receipt](evidence/browser/readability-baseline/receipt.json), [candidate receipt](evidence/browser/readability-candidate/receipt.json). Root completed the scoped [engineering review](ops/STREAM_ACCESSIBILITY_REVIEW.md); capture completion does not establish human comprehension.
+
+## Actual gameplay and historical receipts
+
+The account-free `/house-show` has actual AI-led public HTTPS gameplay evidence: three acts won in three attempts, six module breaks, five openings and zero page errors. A separate local echo run struck the block, exposed and broke the mirror, then observed 360 fixed ticks with echo disabled. [House receipt](evidence/browser/autonomous-house/receipt.json), [echo receipt](evidence/browser/autonomous-echo/receipt.json). These runs use diagnostic snapshots and aim assist; they are not first-time-human sessions.
+
+The preceding [autonomous validation](evidence/autonomous-release-validation.json) records 146 tests and one complete 25-case browser run at application revision `0f12477`. Earlier [release readiness](evidence/release-readiness.json) and [validation](evidence/validation.json) retain their original 112-test/12-browser results. The separate compression browser log records 11 cases. Keep those receipts unchanged; none certifies later source changes.
+
+The original asset kit remains seven admitted original GLBs, 44,796 whole-kit triangles and 1,345,615 gzip bytes, with Blender sources, authored tiles, sockets, rigid clips and rights/font notices. Earlier 62 asset-format/serving fixtures are recorded in `evidence/asset-format.tap`; static bounds describe rest poses. Short Metal browser samples and the earlier keyboard charge/steam counter proof remain in `evidence/browser/performance-smoke.json` and `evidence/browser/causal-counter.json`, with their original dimensions and duration limits.
+
+Actual Linux ARM64 container build and 12 smoke checks verified non-root startup, static serving/private-route denial, persistent volume replacement, online backup and isolated restore for their recorded revision. [Build receipt](evidence/linux-container-build.json), [smoke receipt](evidence/linux-container-smoke.json). The task-owned VM/image were removed after evidence collection. These are local container checks, separate from hosted genuine-token recovery.
+
+## Completed OBS measurement
+
+Actual 30-minute M1 OBS captures are complete for their recorded source revisions. The recommended measured profile is **Standard quality, 1080p OBS output at 30 fps, with the game set to its 30 fps presentation fallback and simulation fixed at 60 Hz**. Source `02f6b75` averaged 29.993 presented fps, with 0.061% rendering lag and 0.00538% encoding lag. The 720p/60 target at `57f86bd` averaged 56.50 fps and was not accepted as steady 60 fps. [Performance report](ops/PERFORMANCE_REPORT.md).
+
+These captures passed duration, stability and sampled framing; they predate the House UI and current audio/readability changes. They include menus and AI navigation/idle time, so they do not establish continuous peak combat load. Preserve rejected/short diagnostic captures separately. The recordings were silent but speakers were audible; subsequent test policy now mutes Chrome with `--mute-audio` and checks game mute before readiness. No new timed capture is implied by this documentation update.
 
 ## Bounded automated checks
 
-Run resource admission, then one check at a time: typecheck, Vitest (one worker), build, Playwright (one worker) and asset audit. Do not repeat a passing check without changed source or unresolved concern. Unit tests cover real state transitions instead of mirroring implementation.
+Run `node scripts/check-resources.mjs --job verify|build|browser` for the next bounded job, then one heavy check at a time. Reuse installed pinned dependencies. Repeat a passing check only after relevant changes or an unresolved concern. Launch automated browsers with `--mute-audio` and set game mute before play; keep unrelated application audio unchanged.
 
-- Combat: different charge/steam/echo behavior; reachable flaws on both shells; damage immunity; arena bounds; stationary/clipped echo; guaranteed full counter window; same-tick ability cancellation; chip progress; final strike; seeded fixed-step behavior.
-- Audience: replacement ordering, duplicate deliveries, expired codes, late/out-of-order commands, changed/restarted ballot generations, correct House labels and source credit.
-- Server: CSRF/origin/auth, channel isolation, room revisions, explicit control takeover, timer pause/resume, model refusal/timeout/semantic invalidity/budget-disabled fallbacks, offline/stale events and ended shows.
-- Persistence/provider: versioned migrations, backup restoration, startup safe recovery; mocked OAuth/refresh/EventSub welcome/reconnect/revocation; real connections separately required.
-- Browser: public rehearsal, controls/focus/settings, distinct configurations, backstage isolation, outcome/Encore/Remix, missing-asset/reconnect presentation and responsive capture layouts.
-
-## Performance and human gates
-
-Record actual M1 hardware/browser/OBS versions and captures. Thirty-minute OBS sessions at1080p and720p;60fps target and documented30fps presentation fallback with60Hz simulation. Measure frame times, crash count, draw calls, triangle count, compressed payload, silhouette and mobile stream readability. No performance claim before measurement.
-
-After hosted technical preview: three first-time hosts with at least three genuine viewers/session. At least two hosts trigger an intended counter within two opportunities; at least two viewers/session correctly identify selected rule/effect. Record denominators, outcomes, confusion, boredom, genuine commands and consent; do not manufacture a pass. Synthetic load is separate. A failed/absent human gate leaves the pilot a technical preview.
+- Combat: all families/profiles/pairs and both shells; reachable counters, damage immunity, arena bounds, echo behavior, full counter window, same-tick cancellation, chip progress, final strike and fixed-step determinism.
+- Audience: replacement ordering, duplicates, wrong/expired codes, cutoff boundaries, ballot generations, channel isolation, bounded storage/sampling, queue responsiveness and honest source credit.
+- Server/compiler: CSRF/origin/auth, revisions, control takeover, pause/resume, total compiler deadline/refusal/repair/caps/privacy and ended/stale events.
+- Persistence/provider mocks: migration/version rejection, startup recovery, backup restoration, OAuth/refresh/EventSub welcome/reconnect/revocation.
+- Browser: account-free rehearsal and three-act House show, actual combat input, save/takeover/storage recovery, settings/focus, outcomes/Encore/Remix, missing assets/context loss, fixture-live isolation and stream capture layouts.
+- Deployment source/fixtures: missing frontend entry assets yield readiness 503; a present frontend can be ready with Twitch unconfigured. Forwarded identity is untrusted by default; the explicit loopback-proxy option is fixture-tested separately.
 
 ## Gate status
 
-| Gate | State | Evidence |
+| Gate | State | Evidence scope |
 |---|---|---|
-| Foundation | locally verified | Source brief, lockfile, contracts, tests, rights log and handoff exist |
-| Real Twitch causal chain | pending | Genuine consent/chat not tested; fixture and AI-led chains are separate |
-| Complete show/mechanics | locally verified |112unit tests;12browser flows and keyboard counter/final-strike/Encore; provider acceptance remains open |
-| Finished art | admitted for technical preview | User direction approved;7original GLBs statically checked and rendered in Babylon; long OBS check remains open |
-| Hosted technical preview | temporary HTTPS rehearsal running; provider checks pending | Free Mac/tunnel host, reload and local Linux persistence/backup verified; actual Twitch consent/chat/isolation remain open |
-| Human acceptance | unperformed | ops/acceptance contains blank protocols/templates; must follow hosted preview |
+| Foundation | Locally verified | Current typecheck/build and 171 tests; contracts, lockfile, rights and handoff |
+| Real Twitch causal chain | Open | Actual AI-led House chain and fixture-live checks are separately recorded |
+| Complete show/mechanics | Locally verified | Three families/all pairs, both shells, three acts, physical breaks, outcomes, Encore/Remix and recovery; current browser result above |
+| Finished presentation | Admitted for technical preview; A02 engineering review complete | Seven original GLBs, actual Babylon captures, advance-audio tests, completed historical OBS and current readability captures |
+| Hosted technical preview | Free public/local route exercised | Actual public House gameplay, source-bound local Linux restore and public backup integrity; point checks do not establish uptime |
+| Human acceptance | 0 genuine sessions | Existing blank protocols/templates in ops/acceptance |
+
+## Blockers and constraints — kept at the very end
+
+1. The last actual Twitch registration attempt rejected missing 2FA: zero apps were observed and no Client ID/secret was created. [Provider rejection](evidence/twitch-registration-20261027.json). The fresh UI attempt in this packet failed before browser access with `Local browser use is disabled in Work settings`; it supplies no newer provider state. Owner-deferred SMS recovery remains pending; no new account, credential or Twitch call occurred.
+2. Genuine OAuth/chat/causal-chain, lifecycle, multichannel control and hosted credential recovery still need real provider evidence. Synthetic load and mocked compiler/provider checks do not advance those gates.
+3. Human acceptance requires three first-time hosts with at least three genuine viewers/session. At least two hosts must perform an intended counter within their first two unassisted opportunities, and at least two viewers in each session must identify the selected rule/effect. Record real denominators, assistance, confusion, accessibility and consent. No sessions were added; contacting people or publishing recordings needs authorization.
+4. Phone-sized stream captures establish engineering layout evidence only; mobile combat support and genuine viewer comprehension are not inferred.
+5. All spending remains prohibited, including paid hosting, model/Meshy calls and automatic billable CI. Keep credentials/configuration private. The temporary tunnel has had actual 1033/reconnect and page-load failures; the Mac/process/network must remain available, with local fallback preserved. The full release remains a technical preview until genuine provider and human acceptance pass.

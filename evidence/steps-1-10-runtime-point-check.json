@@ -1,0 +1,17 @@
+{
+  "kind": "HTTP point check only; not gameplay, uptime or genuine-account acceptance",
+  "observations": {
+    "local": {
+      "status": 200,
+      "readiness": {
+        "ready": true,
+        "frontendReady": true,
+        "hostingConfigured": false,
+        "modelEnabled": false
+      }
+    },
+    "public": {
+      "failure": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    }
+  }
+}

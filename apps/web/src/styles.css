@@ -22,3 +22,78 @@
 
 .house-result{width:min(100%,900px);margin:2rem auto;background:var(--paper)}
 @media(min-width:701px){.house-show-page>.stage-frame{width:min(100%,calc((100svh - 19rem)*16/9))}.house-show-page .instruction-card{width:min(720px,92%);padding:.8rem 1.1rem}.house-show-page .instruction-card h2{font-size:1.8rem;margin:.5rem 0 .7rem}.house-show-page .instruction-card .rule-list{margin:.5rem 0}.house-show-page .instruction-card .rule-list li{padding:.4rem 0}.house-show-page .instruction-card .control-legend{margin:.6rem 0 .8rem}.house-show-page .instruction-card>small{margin-top:.6rem}}
+
+/* Capture typography is scoped to the public performance, not private contracts. */
+@media(min-width:701px){
+  .app-shell:has(.performance-page>.stage-frame)>.site-header,
+  .app-shell:has(.performance-page>.public-cue-stage)>.site-header{display:none}
+  .performance-page:has(>.stage-frame),
+  .performance-page:has(>.public-cue-stage){padding-top:1rem}
+  .performance-page:has(>.stage-frame)>.performance-topline,
+  .performance-page:has(>.public-cue-stage)>.performance-topline{padding:.25rem 0 1rem}
+
+  /* Keep the original arena size; captions occupy the paper below its frame. */
+  .performance-page>.stage-frame:has(.game-hud){margin-bottom:8rem}
+  .stage-frame .rule-caption{top:calc(100% + 10px);bottom:auto;left:0;max-width:72%;padding:.5rem 1rem;background:var(--soot);border-left-color:var(--canvas);text-shadow:none}
+  .stage-frame .rule-caption strong{font-size:2rem;line-height:1.12;letter-spacing:-.025em}
+  .stage-frame .rule-caption span{font-size:1.875rem;line-height:1.15;margin-top:.3rem}
+  .stage-frame .rule-caption.counter-open{background:#e7d8a7;border-left-color:var(--red-dark)}
+  .stage-frame .game-hud[data-webcam=bottom-left] .rule-caption{left:auto;right:0}
+  .stage-frame .game-hud[data-webcam=none] .rule-caption,
+  .stage-frame .game-hud[data-webcam=top-right] .rule-caption{max-width:100%}
+
+  .stage-frame .health-panel,
+  .stage-frame .act-label,
+  .stage-frame .module-status{background:var(--soot);padding:.4rem .6rem;text-shadow:none}
+  .stage-frame .health-panel{top:3%;left:2%}
+  .stage-frame .health-panel .hud-eyebrow{font-size:1.5rem;line-height:1.1;letter-spacing:.02em}
+  .stage-frame .health-stitches{margin-top:.3rem}
+  .stage-frame .act-label{top:3%}
+  .stage-frame .act-label span{font-size:1rem;line-height:1.15;letter-spacing:.04em}
+  .stage-frame .act-label strong{font-size:1.75rem;line-height:1.15}
+  .stage-frame .module-status{top:3%;right:2%;min-width:0;max-width:30%}
+  .stage-frame .module-status>.hud-eyebrow{font-size:1.125rem;line-height:1.15;letter-spacing:.02em}
+  .stage-frame .module-meter{gap:.4rem;margin-top:.4rem}
+  .stage-frame .module-meter>div{width:9.2rem}
+  .stage-frame .module-meter>.glyph{width:2rem;height:2rem}
+  .stage-frame .module-meter span{font-size:1.5rem;line-height:1.05;letter-spacing:.025em;margin-bottom:.25rem}
+  .stage-frame .module-meter progress{height:6px}
+  .stage-frame .module-meter.broken{color:var(--canvas)}
+  .stage-frame .game-hud[data-webcam=top-right] .module-status{top:auto;bottom:3%}
+
+  .performance-page>.public-cue-stage{min-height:0;padding:1.5rem 2%;}
+  .public-cue-stage .audience-cue>.eyebrow{font-size:1.125rem;line-height:1.2;letter-spacing:.09em}
+  .public-cue-stage .audience-cue h2{font-size:2rem;line-height:1.12;margin:.4rem auto .65rem;max-width:none}
+  .public-cue-stage .audience-command-row{display:flex;align-items:center;justify-content:center;gap:2rem;margin:.4rem 0 1rem}
+  .public-cue-stage .audience-command-row .chat-command{margin:0;line-height:1.15}
+  .public-cue-stage .chat-command>span{font-size:1.125rem;line-height:1.2;letter-spacing:.04em;margin-bottom:.25rem}
+  .public-cue-stage .chat-command code{font-size:2.5rem;line-height:1.15}
+  .public-cue-stage .chat-command small{font-size:1.25rem}
+  .public-cue-stage .timer{font-size:1.25rem;line-height:1.2;letter-spacing:.025em;padding:.4rem .2rem;white-space:nowrap}
+  .public-cue-stage .timer strong{font-size:2.25rem;line-height:1.1}
+  .public-cue-stage .stream-placards{gap:1rem}
+  .public-cue-stage .stream-placards .placard{padding:.75rem;display:flex;flex-direction:column;min-width:0}
+  .public-cue-stage .stream-placards .placard-heading{gap:.5rem;margin-bottom:.5rem;flex-wrap:nowrap}
+  .public-cue-stage .stream-placards .choice-letter{font-size:2.5rem}
+  .public-cue-stage .stream-placards .placard-heading .glyph{width:2rem;height:2rem}
+  .public-cue-stage .stream-placards .family-label{font-size:1.125rem;line-height:1.15;letter-spacing:.02em;margin-left:auto}
+  .public-cue-stage .stream-placards h3{font-size:2rem;line-height:1.08;margin:0 0 .65rem}
+  .public-cue-stage .stream-placards .flaw{font-size:1.875rem;line-height:1.12;margin:0 0 .65rem}
+  .public-cue-stage .stream-placards .flaw>span{font-size:.67em}
+  .public-cue-stage .stream-placards .tradeoff{font-size:1.25rem;line-height:1.2;padding-top:.5rem;margin:0 0 .55rem}
+  .public-cue-stage .stream-placards .placard-credit{font-size:1.25rem;line-height:1.2;margin-top:auto}
+  .public-cue-stage .stream-placards .vote-count{font-size:1.25rem;line-height:1.2;margin-top:.4rem}
+  .public-cue-stage .stream-kept{font-size:1.25rem;line-height:1.2;margin:.25rem 0 .75rem;text-align:left}
+  .public-cue-stage>.muted{font-size:1rem;line-height:1.3;margin:.75rem 0 0}
+}
+
+@media(min-width:701px){.house-finale>p:first-of-type{font-size:2rem;line-height:1.2}.house-finale .button{font-size:1.25rem}}
+@media(min-width:701px){
+  .performance-page .showbill-history article>h3{font-size:2rem;line-height:1.15}
+  .performance-page .showbill-history .rule-list strong{font-size:1.875rem;line-height:1.2}
+  .performance-page .showbill-history .rule-list p{font-size:1.875rem;line-height:1.25}
+  .performance-page .showbill-history .rule-list small{font-size:1.5rem;line-height:1.2}
+  .performance-page .showbill-history .rule-list li{padding:1rem 0}
+  .performance-page .showbill-history .result-ledger{font-size:1.25rem;line-height:1.3}
+  .performance-page .showbill-history .result-ledger strong{font-size:1.5rem}
+}

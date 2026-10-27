@@ -41,11 +41,11 @@ export function GameCanvas(props: Props) {
     };
     const keyup=(e:KeyboardEvent)=>keys.delete(e.code);
     const pointer=(e:PointerEvent)=>{aim=stage?.pointerToWorld(e.clientX,e.clientY)??null;};
-    const down=(e:PointerEvent)=>{if(e.button===0&&!latest.current.paused&&presentationReady){pointerDown=true;pointer(e);void audio?.unlock();canvas.current?.focus({preventScroll:true});}};
+    const down=(e:PointerEvent)=>{if(e.button===0&&!latest.current.paused&&presentationReady){pointerDown=true;pointer(e);canvas.current?.focus({preventScroll:true});}};
     const up=()=>{pointerDown=false;};
     const blur=()=>{keys.clear();pointerDown=false;dodge=false;if(!latest.current.paused)latest.current.onAutoPause?.();};
     const visibility=()=>{if(document.hidden)blur();};
-    const unlock=()=>{void audio?.unlock();};
+    let releaseAudioGestures:(()=>void)|null=null;
     const resize=()=>stage?.resize();
     const performanceMetadata=()=>({resolution:canvas.current?{width:canvas.current.width,height:canvas.current.height}:null,profiles:props.recipe.modules.map(m=>m.profileId),mechanicLibraryVersion:props.recipe.mechanicLibraryVersion,artKitVersion:props.recipe.artKitVersion,presentationFps:latest.current.preferences.presentationFps,quality:latest.current.preferences.quality});
     const exportPerformance=()=>telemetry.download(performanceMetadata());
@@ -53,7 +53,7 @@ export function GameCanvas(props: Props) {
     let observer:ResizeObserver|null=null;
     const release=()=>{
       if(released)return;released=true;
-      observer?.disconnect();channel?.close();window.removeEventListener('keydown',keydown);window.removeEventListener('keyup',keyup);window.removeEventListener('pointerup',up);window.removeEventListener('blur',blur);window.removeEventListener('aragoz:request-pause',blur);window.removeEventListener('aragoz:export-performance',exportPerformance);window.removeEventListener('aragoz:request-performance',reportPerformance);window.removeEventListener('pointerdown',unlock);window.removeEventListener('keydown',unlock);document.removeEventListener('visibilitychange',visibility);element?.removeEventListener('pointerdown',down);element?.removeEventListener('pointermove',pointer);element?.removeEventListener('blur',blur);audio?.dispose();stage?.dispose();
+      observer?.disconnect();channel?.close();window.removeEventListener('keydown',keydown);window.removeEventListener('keyup',keyup);window.removeEventListener('pointerup',up);window.removeEventListener('blur',blur);window.removeEventListener('aragoz:request-pause',blur);window.removeEventListener('aragoz:export-performance',exportPerformance);window.removeEventListener('aragoz:request-performance',reportPerformance);releaseAudioGestures?.();document.removeEventListener('visibilitychange',visibility);element?.removeEventListener('pointerdown',down);element?.removeEventListener('pointermove',pointer);element?.removeEventListener('blur',blur);audio?.dispose();stage?.dispose();
       if(stageRef.current===stage)stageRef.current=null;if(audioRef.current===audio)audioRef.current=null;
     };
     const fail=(message:string)=>{
@@ -71,7 +71,7 @@ export function GameCanvas(props: Props) {
           channel=new BroadcastChannel(props.previewChannel);channel.onmessage=e=>{if(e.data?.type==='request-preview')previewRequested=true;};
         }
         window.addEventListener('keydown',keydown);window.addEventListener('keyup',keyup);window.addEventListener('pointerup',up);window.addEventListener('blur',blur);window.addEventListener('aragoz:request-pause',blur);window.addEventListener('aragoz:export-performance',exportPerformance);window.addEventListener('aragoz:request-performance',reportPerformance);document.addEventListener('visibilitychange',visibility);
-        element.addEventListener('pointerdown',down);element.addEventListener('pointermove',pointer);element.addEventListener('blur',blur);window.addEventListener('pointerdown',unlock,{once:true});window.addEventListener('keydown',unlock,{once:true});
+        element.addEventListener('pointerdown',down);element.addEventListener('pointermove',pointer);element.addEventListener('blur',blur);releaseAudioGestures=audio.listenForGestures(window);
         observer=new ResizeObserver(resize);observer.observe(element);await stage.loadApprovedAssets();if(cancelled||failed)return;
         presentationReady=!props.assemble;simulation.setPaused(latest.current.paused||!presentationReady);wasPaused=latest.current.paused||!presentationReady;previousSnapshot=simulation.snapshot();last=performance.now();assemblyStarted=last;
         stage.render(previousSnapshot,last/1000,latest.current.preferences,assembly);lastRender=last;
@@ -87,16 +87,19 @@ export function GameCanvas(props: Props) {
           if(!presentationReady)assembly=Math.max(assembly,assemblyProgress(now-assemblyStarted,p.preferences.reducedMotion));
           const paused=p.paused||!presentationReady,pauseChanged=paused!==wasPaused;wasPaused=paused;simulation.setPaused(paused);accumulator=paused?0:accumulator+dt;
           if(pauseChanged){keys.clear();pointerDown=false;dodge=false;if(!paused)element.focus({preventScroll:true});}
+          const events:EncounterEvent[]=[];
           while(accumulator>=1/60){
             const k=p.preferences.keys;
             const moveX=Number(keys.has(k.right)||keys.has('ArrowRight'))-Number(keys.has(k.left)||keys.has('ArrowLeft'));
             const moveZ=Number(keys.has(k.down)||keys.has('ArrowDown'))-Number(keys.has(k.up)||keys.has('ArrowUp'));
             const {x:ax,z:az}=resolveStrikeAim(previous,aim,p.preferences.aimAssist);
             const input:PlayerInput={moveX,moveZ,aimX:ax,aimZ:az,strike:pointerDown||keys.has(k.strike),dodge};dodge=false;
-            simulation.step(input);accumulator-=1/60;
+            simulation.step(input);
+            const stepEvents=simulation.drainEvents();audio?.sync(simulation.snapshot());
+            stepEvents.forEach(e=>audio?.event(e));events.push(...stepEvents);accumulator-=1/60;
           }
-          const events=simulation.drainEvents();if(events.length){events.forEach(e=>audio?.event(e));p.onEvents?.(events);}
-          const snapshot=simulation.snapshot();previousSnapshot=snapshot;
+          const snapshot=simulation.snapshot();audio?.sync(snapshot);previousSnapshot=snapshot;
+          if(events.length)p.onEvents?.(events);
           const presentationFps=presentationReady&&paused&&!snapshot.outcome?Math.min(15,p.preferences.presentationFps):p.preferences.presentationFps;
           if(presentationClock.due(now,presentationFps,!presentationReady&&assembly===1)){const interval=lastRender?now-lastRender:null;stage.render(snapshot,now/1000,p.preferences,assembly);lastRender=now;if(interval!==null)telemetry.frame(interval,paused||lastPresentedPaused,lastMetrics);lastPresentedPaused=paused;
             if(!presentationReady){

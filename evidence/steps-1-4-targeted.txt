@@ -1,0 +1,12 @@
+
+> aragoz@0.1.0 test
+> vitest run --maxWorkers=1 apps/web/src/audio-cues.test.ts apps/server/test/compiler-deadline.test.ts apps/server/test/audience-load.test.ts
+
+
+ RUN  v5.0.5 /Users/frameless/Desktop/Aragoz
+
+
+ Test Files  3 passed (3)
+      Tests  23 passed (23)
+   Start at  02:41:29
+   Duration  1.26s (tests 81%, import 13%, transform 6%, worker 1%)

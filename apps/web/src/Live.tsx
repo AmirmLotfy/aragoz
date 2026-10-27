@@ -6,6 +6,7 @@ import { api, ApiError } from './api';
 import { GameCanvas } from './GameCanvas';
 import { CombatHud, ControlLegend, Placards, QuickMute, RuleList, ShowbillHistory, Timer } from './components';
 import { EventOutbox, clientIdentity } from './offline';
+import { STREAM_COPY } from './stream-copy';
 import type { Preferences } from './settings';
 
 function useRoom(id:string){
@@ -38,13 +39,12 @@ function AudienceCue({room}:{room:RoomState}){
   const proposals=room.phase==='proposals'||room.phase==='proposal-delay';
   const voting=room.phase==='voting'||room.phase==='vote-delay';
   const proposalExample=room.selectedModules.some(m=>m.mechanicId==='charge')?'steam burst but overheats after three bursts':'charges but cannot turn';
-  return <section className="audience-cue"><span className="eyebrow">ACT {room.actIndex} · CONTRACT {room.ballotSlot+1} OF 2</span>
+  return <section className={'audience-cue'+(voting?' audience-ballot':'')}><span className="eyebrow">ACT {room.actIndex} · CONTRACT {room.ballotSlot+1} OF 2</span>
     <h2>{proposals?'Give this villain a power… BUT give it a flaw.':voting?'Which boast belongs onstage?':room.phase==='compiling'?'Turning your boasts into stage-ready choices.':room.phase==='review'?'The stage manager is checking the next three boasts.':'The curtain is being set.'}</h2>
-    {proposals&&<p className="chat-command"><span>IN TWITCH CHAT</span><code>!make {room.roundCode} {proposalExample}</code></p>}
-    {voting&&<><Placards candidates={room.candidates} hideAuthors={room.settings.hideAuthors} votes={room.votes}/><p className="chat-command"><span>ONE VOTE PER VIEWER · YOUR LATEST VOTE COUNTS</span><code>!vote {room.roundCode} A</code><small>or B or C</small></p></>}
-    {(proposals||voting)&&<Timer deadline={room.deadline} opensAt={room.opensAt} delayed={delayed}/>}
+    {(proposals||voting)&&<div className="audience-command-row"><p className="chat-command"><span>{proposals?'IN TWITCH CHAT':'LATEST VOTE COUNTS'}</span><code>{proposals?`!make ${room.roundCode} ${proposalExample}`:`!vote ${room.roundCode} A`}</code>{voting&&<small>or B or C</small>}</p><Timer deadline={room.deadline} opensAt={room.opensAt} delayed={delayed}/></div>}
+    {room.selectedModules.length>0&&<div className="selected-contracts stream-kept"><span>ALREADY IN THE ACT</span>{room.selectedModules.map(module=><p key={module.slotId}>{STREAM_COPY[module.profileId].power} — BUT {STREAM_COPY[module.profileId].flaw}. · <span>{creditLabel(module.credit,room.settings.hideAuthors)}</span></p>)}</div>}
+    {voting&&<Placards candidates={room.candidates} hideAuthors={room.settings.hideAuthors} votes={room.votes} stream/>}
     {room.phase==='review'&&<p>Only approved contracts appear on this public stage.</p>}
-    {room.selectedModules.length>0&&<div className="selected-contracts"><span>ALREADY IN THE ACT</span><RuleList modules={room.selectedModules} hideAuthors={room.settings.hideAuthors}/></div>}
   </section>;
 }
 

@@ -1,0 +1,85 @@
+
+> aragoz@0.1.0 test:browser
+> playwright test --workers=1
+
+
+Running 28 tests using 1 worker
+
+(node:77496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/house-show.spec.ts:23:1 › account-free House choices assemble at tick zero, move, and recover after refresh (10.0s)
+  ✓   2 tests/browser/house-show.spec.ts:49:1 › three skipped encounters produce a finite cumulative showbill and downloadable local record (8.6s)
+  ✓   3 tests/browser/house-show.spec.ts:65:1 › a second window requires explicit takeover and the previous controller cannot write (4.9s)
+  ✓   4 tests/browser/house-show.spec.ts:78:1 › labelled local result fixture exercises immutable Encore and one-slot Remix (4.6s)
+  ✓   5 tests/browser/house-show.spec.ts:100:1 › corrupt saves require explicit replacement and storage failure remains playable (3.2s)
+  ✓   6 tests/browser/house-show.spec.ts:112:1 › a failed write warns about lost progress and refresh restores the older readable save (3.1s)
+  ✓   7 tests/browser/house-show.spec.ts:132:1 › external storage clearing removes the playing window and cannot resurrect its show (3.8s)
+  ✓   8 tests/browser/house-show.spec.ts:148:1 › a missing save is detected before publishing even without a storage event (725ms)
+  ✓   9 tests/browser/house-show.spec.ts:161:1 › narrow layout keeps choices and keyboard focus within the page (741ms)
+  ✓  10 tests/browser/house-show.spec.ts:170:1 › an actual House encounter records defeat and Encore returns the same recipe to a paused curtain (20.7s)
+  ✘  11 tests/browser/live.spec.ts:78:1 › [FIXTURE] real live UI commits both audience contracts, hides private raw text and safely takes over after reload (8.6s)
+(node:77594) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 tests/browser/live.spec.ts:135:1 › [FIXTURE] interrupted mock input discards the ballot and old round commands cannot enter its restarted private queue (7.8s)
+  ✓  13 tests/browser/readability.spec.ts:6:1 › stream ballot keeps command, timer, long credit and both contract choices within a720p capture (1.4s)
+  ✓  14 tests/browser/readability.spec.ts:29:1 › readable rule strip stays outside the arena and clear of each bottom webcam corner (2.9s)
+  ✓  15 tests/browser/readability.spec.ts:41:1 › settings retain keyboard focus and usable horizontal layout with doubled text (2.9s)
+  ✓  16 tests/browser/rehearsal.spec.ts:4:1 › public rehearsal survives unavailable hosting and opens an actual stage (3.6s)
+  ✓  17 tests/browser/rehearsal.spec.ts:13:1 › actual movement, pause and resume use the same fixed-step encounter (5.9s)
+  ✓  18 tests/browser/rehearsal.spec.ts:29:1 › capture telemetry snapshots do not open a browser download or interrupt combat (4.7s)
+  ✓  19 tests/browser/rehearsal.spec.ts:50:1 › 30fps presentation keeps combat advancing independently at60Hz (5.5s)
+  ✓  20 tests/browser/rehearsal.spec.ts:73:1 › configuration switch changes actual mechanic families and preserves House attribution (4.0s)
+  ✓  21 tests/browser/rehearsal.spec.ts:82:1 › settings pause the action and expose keyboard and comfort controls (3.7s)
+  ✓  22 tests/browser/rehearsal.spec.ts:90:1 › the entire arena fits a 720p desktop play window (2.6s)
+  ✓  23 tests/browser/rehearsal.spec.ts:102:3 › Retina presentation › standard quality preserves crisp pixels and low quality reduces resolution (4.2s)
+  ✓  24 tests/browser/rehearsal.spec.ts:116:1 › missing approved asset uses the shipped development geometry without changing mechanics (3.4s)
+  ✓  25 tests/browser/rehearsal.spec.ts:128:1 › a stalled manifest reaches the playable shipped fallback (10.0s)
+  ✓  26 tests/browser/rehearsal.spec.ts:142:1 › an asset arriving after the deadline cannot replace geometry during the fight (11.6s)
+  ✓  27 tests/browser/rehearsal.spec.ts:166:1 › unavailable WebGL exposes a clickable recovery screen above the opening card (1.0s)
+  ✓  28 tests/browser/rehearsal.spec.ts:180:1 › context loss permanently pauses this canvas until a safe reload (3.2s)
+
+
+  1) tests/browser/live.spec.ts:78:1 › [FIXTURE] real live UI commits both audience contracts, hides private raw text and safely takes over after reload
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.selected-contracts').getByText('FIXTURE Charge Author', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.selected-contracts').getByText('FIXTURE Charge Author', { exact: true }) with timeout 5000ms
+      - waiting for locator('.selected-contracts').getByText('FIXTURE Charge Author', { exact: true })
+
+
+      81 |   const second = { authorId: 'fixture-steam-author', displayName: 'FIXTURE Steam Author', raw: 'steam burst BUT overheats after three bursts' };
+      82 |   const left = await audienceBallot(play, backstage, first);
+    > 83 |   await expect(play.locator('.selected-contracts').getByText(first.displayName, { exact: true })).toBeVisible();
+         |                                                                                                   ^
+      84 |   await backstage.getByLabel('Hide author display names').check();
+      85 |   await expect(play.locator('.selected-contracts').getByText('Audience author', { exact: true })).toBeVisible();
+      86 |   await expect(play.getByText(first.displayName, { exact: true })).toHaveCount(0);
+        at /Users/frameless/Desktop/Aragoz/tests/browser/live.spec.ts:83:99
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/live--FIXTURE-real-live-UI-c1437-ely-takes-over-after-reload/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/live--FIXTURE-real-live-UI-c1437-ely-takes-over-after-reload/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/live--FIXTURE-real-live-UI-c1437-ely-takes-over-after-reload/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/live--FIXTURE-real-live-UI-c1437-ely-takes-over-after-reload/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/live--FIXTURE-real-live-UI-c1437-ely-takes-over-after-reload/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/browser/live.spec.ts:78:1 › [FIXTURE] real live UI commits both audience contracts, hides private raw text and safely takes over after reload
+  27 passed (2.6m)
