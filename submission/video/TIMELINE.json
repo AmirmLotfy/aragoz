@@ -1,0 +1,441 @@
+{
+  "duration": 160,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "status": "review-cut-voice-and-final-footage-pending",
+  "scenes": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 8,
+      "chapter": "01",
+      "title": "The boast.",
+      "copy": "Real game. Real counterplay.",
+      "kind": "video",
+      "source": ".runtime/obs-recordings/2026-10-26 09-50-08.mov",
+      "offset": 10,
+      "crop": [
+        360,
+        322,
+        1196,
+        674
+      ],
+      "label": "ACTUAL OBS / HOUSE REHEARSAL / AI-OPERATED",
+      "overlayPlaylist": ".runtime/submission-work/overlays-00.ffconcat"
+    },
+    {
+      "index": 1,
+      "start": 8,
+      "end": 16,
+      "chapter": "01",
+      "title": "ARAGOZ",
+      "copy": "Chat makes the monster. You find the loophole.",
+      "kind": "still",
+      "source": "submission/artwork/aragoz-devpost-3x2.png",
+      "offset": 0,
+      "crop": null,
+      "label": "PROMOTIONAL KEY ART / NOT GAMEPLAY",
+      "overlayPlaylist": ".runtime/submission-work/overlays-01.ffconcat"
+    },
+    {
+      "index": 2,
+      "start": 16,
+      "end": 24,
+      "chapter": "02",
+      "title": "Written in chat.",
+      "copy": "One explicit proposal. One supported power and flaw.",
+      "kind": "still",
+      "source": ".runtime/submission-work/proposal-transcript.png",
+      "offset": 0,
+      "crop": null,
+      "label": "REAL TWITCH OPERATOR TEST / EDITORIAL TRANSCRIPT",
+      "overlayPlaylist": ".runtime/submission-work/overlays-02.ffconcat"
+    },
+    {
+      "index": 3,
+      "start": 24,
+      "end": 32,
+      "chapter": "02",
+      "title": "Chosen in chat.",
+      "copy": "A real vote. The actual author. House choices labelled.",
+      "kind": "still",
+      "source": "evidence/twitch-charge-vote-20261027.png",
+      "offset": 0,
+      "crop": null,
+      "label": "REAL TWITCH TEST / ACTUAL STILL / 1 OPERATOR VOTE",
+      "overlayPlaylist": ".runtime/submission-work/overlays-03.ffconcat"
+    },
+    {
+      "index": 4,
+      "start": 32,
+      "end": 38,
+      "chapter": "03",
+      "title": "Now find the loophole.",
+      "copy": "Charge cannot turn. A block jams its axle.",
+      "kind": "still",
+      "source": "evidence/twitch-charge-assembled-20261027.png",
+      "offset": 0,
+      "crop": null,
+      "label": "REAL TWITCH ASSEMBLY / ACTUAL STILL",
+      "overlayPlaylist": ".runtime/submission-work/overlays-04.ffconcat"
+    },
+    {
+      "index": 5,
+      "start": 38,
+      "end": 60,
+      "chapter": "03",
+      "title": "Turn the rule against it.",
+      "copy": "Bait the charge. Use the block. Strike the opening.",
+      "kind": "video",
+      "source": ".runtime/obs-recordings/2026-10-26 09-50-08.mov",
+      "offset": 257,
+      "crop": [
+        360,
+        322,
+        1196,
+        674
+      ],
+      "label": "ACTUAL OBS / SEPARATE HOUSE REHEARSAL / ORIGINAL SPEED",
+      "overlayPlaylist": ".runtime/submission-work/overlays-05.ffconcat"
+    },
+    {
+      "index": 6,
+      "start": 60,
+      "end": 68,
+      "chapter": "04",
+      "title": "Break the boast.",
+      "copy": "The attachment breaks. Its ability stops.",
+      "kind": "still",
+      "source": "evidence/twitch-charge-broken-20261027.png",
+      "offset": 0,
+      "crop": null,
+      "label": "REAL TWITCH ENCOUNTER / ACTUAL STILL",
+      "overlayPlaylist": ".runtime/submission-work/overlays-06.ffconcat"
+    },
+    {
+      "index": 7,
+      "start": 68,
+      "end": 75,
+      "chapter": "04",
+      "title": "Keep the credit.",
+      "copy": "The showbill preserves the author and the result.",
+      "kind": "still",
+      "source": "evidence/twitch-live-result-20261027.png",
+      "offset": 0,
+      "crop": [
+        0,
+        70,
+        1280,
+        820
+      ],
+      "label": "ACCEPTED TWITCH RESULT / ACTUAL STILL / AI-OPERATED",
+      "overlayPlaylist": ".runtime/submission-work/overlays-07.ffconcat"
+    },
+    {
+      "index": 8,
+      "start": 75,
+      "end": 86,
+      "chapter": "05",
+      "title": "Steam has a limit.",
+      "copy": "Wait out the bursts. Strike the overheated valve.",
+      "kind": "video",
+      "source": ".runtime/obs-recordings/2026-10-26 09-50-08.mov",
+      "offset": 238,
+      "crop": [
+        360,
+        322,
+        1196,
+        674
+      ],
+      "label": "ACTUAL OBS / HOUSE REHEARSAL / ORIGINAL SPEED",
+      "overlayPlaylist": ".runtime/submission-work/overlays-08.ffconcat"
+    },
+    {
+      "index": 9,
+      "start": 86,
+      "end": 97,
+      "chapter": "05",
+      "title": "Make the copy fail.",
+      "copy": "Echo repeats a real movement trail. Blocks expose its mirror.",
+      "kind": "video",
+      "source": ".runtime/obs-recordings/2026-10-26 09-50-08.mov",
+      "offset": 897,
+      "crop": [
+        360,
+        48,
+        1196,
+        674
+      ],
+      "label": "ACTUAL OBS / HOUSE REHEARSAL / ORIGINAL SPEED",
+      "overlayPlaylist": ".runtime/submission-work/overlays-09.ffconcat"
+    },
+    {
+      "index": 10,
+      "start": 97,
+      "end": 105,
+      "chapter": "06",
+      "title": "Three acts.",
+      "copy": "House Suggestions keep a quiet theatre playable.",
+      "kind": "still",
+      "source": "evidence/browser/steps-1-5-regressions/house-choices.png",
+      "offset": 0,
+      "crop": null,
+      "label": "ACTUAL LOCAL HOUSE UI / NO SYNTHETIC VIEWERS",
+      "overlayPlaylist": ".runtime/submission-work/overlays-10.ffconcat"
+    },
+    {
+      "index": 11,
+      "start": 105,
+      "end": 112,
+      "chapter": "06",
+      "title": "Encore. Or Remix.",
+      "copy": "Keep the recipe, or replace one module.",
+      "kind": "still",
+      "source": "evidence/browser/readability-candidate/showbill-1280.png",
+      "offset": 0,
+      "crop": null,
+      "label": "ACTUAL LOCAL SHOWBILL UI / PREPARED SAVE FIXTURE",
+      "overlayPlaylist": ".runtime/submission-work/overlays-11.ffconcat"
+    },
+    {
+      "index": 12,
+      "start": 112,
+      "end": 125,
+      "chapter": "07",
+      "title": "Built with Codex.",
+      "copy": "Code, assets, causal rules, and verification.",
+      "kind": "still",
+      "source": ".runtime/submission-work/combat-source.png",
+      "offset": 0,
+      "crop": null,
+      "label": "EDITORIAL BUILD NOTES / REAL SOURCE / NOT CODEX SCREEN FOOTAGE",
+      "overlayPlaylist": ".runtime/submission-work/overlays-12.ffconcat"
+    },
+    {
+      "index": 13,
+      "start": 125,
+      "end": 133,
+      "chapter": "07",
+      "title": "Contracts carry the idea.",
+      "copy": "Separate responsive combat from network decisions.",
+      "kind": "still",
+      "source": ".runtime/submission-work/architecture.png",
+      "offset": 0,
+      "crop": null,
+      "label": "EDITORIAL ARCHITECTURE / IMPLEMENTED SYSTEMS",
+      "overlayPlaylist": ".runtime/submission-work/overlays-13.ffconcat"
+    },
+    {
+      "index": 14,
+      "start": 133,
+      "end": 139,
+      "chapter": "07",
+      "title": "Made for this stage.",
+      "copy": "Original assets, packaged with the game.",
+      "kind": "still",
+      "source": ".runtime/submission-work/assets.png",
+      "offset": 0,
+      "crop": null,
+      "label": "EDITORIAL ASSET NOTES / DOCUMENTED SHIPPED KIT",
+      "overlayPlaylist": ".runtime/submission-work/overlays-14.ffconcat"
+    },
+    {
+      "index": 15,
+      "start": 139,
+      "end": 151,
+      "chapter": "08",
+      "title": "Host stays in control.",
+      "copy": "6 authored profiles. Runtime model calls are off.",
+      "kind": "still",
+      "source": "evidence/browser/readability-candidate/settings-1280.png",
+      "offset": 0,
+      "crop": null,
+      "label": "ACTUAL SETTINGS UI / SUPPORTED CATALOGUE / TECHNICAL PREVIEW",
+      "overlayPlaylist": ".runtime/submission-work/overlays-15.ffconcat"
+    },
+    {
+      "index": 16,
+      "start": 151,
+      "end": 160,
+      "chapter": "09",
+      "title": "Whose idea backfired?",
+      "copy": "A playable theatre for chat and its performer.",
+      "kind": "still",
+      "source": "submission/artwork/aragoz-devpost-3x2.png",
+      "offset": 0,
+      "crop": null,
+      "label": "PROMOTIONAL KEY ART / TECHNICAL PREVIEW",
+      "overlayPlaylist": ".runtime/submission-work/overlays-16.ffconcat"
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 5.867,
+      "text": "What if the audience wrote the monster\u2014and the one weakness that"
+    },
+    {
+      "start": 5.867,
+      "end": 8.0,
+      "text": "could bring it down?"
+    },
+    {
+      "start": 8.0,
+      "end": 13.5,
+      "text": "This is ARAGOZ: an Egyptian puppet-theatre-inspired boss fight. Chat makes the"
+    },
+    {
+      "start": 13.5,
+      "end": 16.0,
+      "text": "monster. You find the loophole."
+    },
+    {
+      "start": 16.0,
+      "end": 21.176,
+      "text": "In this real Twitch test, a chat command proposed a charge"
+    },
+    {
+      "start": 21.176,
+      "end": 26.353,
+      "text": "that cannot turn. A vote selected it, and the author\u2019s name"
+    },
+    {
+      "start": 26.353,
+      "end": 31.529,
+      "text": "stayed attached to the rule. Empty choices are clearly labelled House"
+    },
+    {
+      "start": 31.529,
+      "end": 32.0,
+      "text": "Suggestions."
+    },
+    {
+      "start": 32.0,
+      "end": 38.553,
+      "text": "Here is how that rule plays. Once the boss commits, it"
+    },
+    {
+      "start": 38.553,
+      "end": 45.106,
+      "text": "cannot steer. Put a striped stage block in its path. The"
+    },
+    {
+      "start": 45.106,
+      "end": 51.66,
+      "text": "collision jams the axle and opens a counter. Strike the exposed"
+    },
+    {
+      "start": 51.66,
+      "end": 58.213,
+      "text": "attachment, and the wheel breaks away. Charging stops because the module\u2014and"
+    },
+    {
+      "start": 58.213,
+      "end": 60.0,
+      "text": "its damage\u2014are disabled."
+    },
+    {
+      "start": 60.0,
+      "end": 65.156,
+      "text": "The real Twitch result carries the same credit: selection, activation, break,"
+    },
+    {
+      "start": 65.156,
+      "end": 70.312,
+      "text": "and showbill. This demonstration used one broadcaster account operated by our"
+    },
+    {
+      "start": 70.312,
+      "end": 75.0,
+      "text": "agent. It is a technical test, not a crowd playtest."
+    },
+    {
+      "start": 75.0,
+      "end": 81.722,
+      "text": "A different module changes the puzzle. Steam overheats after its burst"
+    },
+    {
+      "start": 81.722,
+      "end": 88.444,
+      "text": "sequence, exposing a valve. Delayed echo records your movement, previews the"
+    },
+    {
+      "start": 88.444,
+      "end": 95.167,
+      "text": "path, then copies it. Lead that copy into a block to"
+    },
+    {
+      "start": 95.167,
+      "end": 97.0,
+      "text": "expose the mirror."
+    },
+    {
+      "start": 97.0,
+      "end": 102.323,
+      "text": "The show runs for three acts. Encore keeps the exact recipe."
+    },
+    {
+      "start": 102.323,
+      "end": 107.645,
+      "text": "Remix replaces one module. A quiet channel can play with House"
+    },
+    {
+      "start": 107.645,
+      "end": 112.0,
+      "text": "Suggestions, and anyone can rehearse without a Twitch account."
+    },
+    {
+      "start": 112.0,
+      "end": 118.457,
+      "text": "I built ARAGOZ with Codex across the game, server, original Blender"
+    },
+    {
+      "start": 118.457,
+      "end": 124.913,
+      "text": "assets, and validation. The simulation runs at sixty fixed steps a"
+    },
+    {
+      "start": 124.913,
+      "end": 131.37,
+      "text": "second, separate from menus and networking. Versioned contracts connect chat, recipes,"
+    },
+    {
+      "start": 131.37,
+      "end": 137.826,
+      "text": "modules, events, and results. Codex also helped test immediate damage cancellation"
+    },
+    {
+      "start": 137.826,
+      "end": 139.0,
+      "text": "and recovery."
+    },
+    {
+      "start": 139.0,
+      "end": 143.552,
+      "text": "Live proposals currently match six authored profiles. Runtime model calls are"
+    },
+    {
+      "start": 143.552,
+      "end": 148.103,
+      "text": "disabled. Readable warnings, remapping, reduced motion, and mute controls keep the"
+    },
+    {
+      "start": 148.103,
+      "end": 151.0,
+      "text": "performance understandable and under the host\u2019s control."
+    },
+    {
+      "start": 151.0,
+      "end": 155.5,
+      "text": "The goal is simple: let chat write a boast, let the"
+    },
+    {
+      "start": 155.5,
+      "end": 160.0,
+      "text": "player break it, and let everyone see whose idea just backfired."
+    }
+  ]
+}

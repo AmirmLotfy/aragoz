@@ -1,0 +1,131 @@
+1
+00:00:00,000 --> 00:00:05,867
+What if the audience wrote the monster—and the one weakness that
+
+2
+00:00:05,867 --> 00:00:08,000
+could bring it down?
+
+3
+00:00:08,000 --> 00:00:13,500
+This is ARAGOZ: an Egyptian puppet-theatre-inspired boss fight. Chat makes the
+
+4
+00:00:13,500 --> 00:00:16,000
+monster. You find the loophole.
+
+5
+00:00:16,000 --> 00:00:21,176
+In this real Twitch test, a chat command proposed a charge
+
+6
+00:00:21,176 --> 00:00:26,353
+that cannot turn. A vote selected it, and the author’s name
+
+7
+00:00:26,353 --> 00:00:31,529
+stayed attached to the rule. Empty choices are clearly labelled House
+
+8
+00:00:31,529 --> 00:00:32,000
+Suggestions.
+
+9
+00:00:32,000 --> 00:00:38,553
+Here is how that rule plays. Once the boss commits, it
+
+10
+00:00:38,553 --> 00:00:45,106
+cannot steer. Put a striped stage block in its path. The
+
+11
+00:00:45,106 --> 00:00:51,660
+collision jams the axle and opens a counter. Strike the exposed
+
+12
+00:00:51,660 --> 00:00:58,213
+attachment, and the wheel breaks away. Charging stops because the module—and
+
+13
+00:00:58,213 --> 00:01:00,000
+its damage—are disabled.
+
+14
+00:01:00,000 --> 00:01:05,156
+The real Twitch result carries the same credit: selection, activation, break,
+
+15
+00:01:05,156 --> 00:01:10,312
+and showbill. This demonstration used one broadcaster account operated by our
+
+16
+00:01:10,312 --> 00:01:15,000
+agent. It is a technical test, not a crowd playtest.
+
+17
+00:01:15,000 --> 00:01:21,722
+A different module changes the puzzle. Steam overheats after its burst
+
+18
+00:01:21,722 --> 00:01:28,444
+sequence, exposing a valve. Delayed echo records your movement, previews the
+
+19
+00:01:28,444 --> 00:01:35,167
+path, then copies it. Lead that copy into a block to
+
+20
+00:01:35,167 --> 00:01:37,000
+expose the mirror.
+
+21
+00:01:37,000 --> 00:01:42,323
+The show runs for three acts. Encore keeps the exact recipe.
+
+22
+00:01:42,323 --> 00:01:47,645
+Remix replaces one module. A quiet channel can play with House
+
+23
+00:01:47,645 --> 00:01:52,000
+Suggestions, and anyone can rehearse without a Twitch account.
+
+24
+00:01:52,000 --> 00:01:58,457
+I built ARAGOZ with Codex across the game, server, original Blender
+
+25
+00:01:58,457 --> 00:02:04,913
+assets, and validation. The simulation runs at sixty fixed steps a
+
+26
+00:02:04,913 --> 00:02:11,370
+second, separate from menus and networking. Versioned contracts connect chat, recipes,
+
+27
+00:02:11,370 --> 00:02:17,826
+modules, events, and results. Codex also helped test immediate damage cancellation
+
+28
+00:02:17,826 --> 00:02:19,000
+and recovery.
+
+29
+00:02:19,000 --> 00:02:23,552
+Live proposals currently match six authored profiles. Runtime model calls are
+
+30
+00:02:23,552 --> 00:02:28,103
+disabled. Readable warnings, remapping, reduced motion, and mute controls keep the
+
+31
+00:02:28,103 --> 00:02:31,000
+performance understandable and under the host’s control.
+
+32
+00:02:31,000 --> 00:02:35,500
+The goal is simple: let chat write a boast, let the
+
+33
+00:02:35,500 --> 00:02:40,000
+player break it, and let everyone see whose idea just backfired.

@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 46440,
-      "sha256": "b79ca01e7fc9fcf470f3886df2f43d07251600f78367c017e0577175b8654fc4"
+      "bytes": 50586,
+      "sha256": "a5f88b056f07eeb459b0ddcbc1fdd27abc65923631e5fc1ab1b2bc90ebbe9fb1"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 8112,
-      "sha256": "5ee7959b6b5b1651ab0f3391dd39c189d8949af1f425d019d8a6bb9babcebaa9"
+      "bytes": 8167,
+      "sha256": "fd44e750c52a924ad24d3ae8ef3e230d46fb9a7c3ccb1a079fdc3e825cb92af3"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -91,13 +91,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 7901,
-      "sha256": "ce18baf716dfc4a4383c069b00286c30b6fa38eee3911ffb21d091832ec5e572"
+      "bytes": 8125,
+      "sha256": "f2e2b579507e084d4fd0ab602f729238563de4d7bc714cc30307a6dfa5f5d263"
     },
     {
       "path": "REMAINING_WORK.md",
-      "bytes": 9677,
-      "sha256": "fb5d50c32a186c596d2f47759cc238f747bd5f92bb1c3a78f6b80fe0e7a19f7a"
+      "bytes": 10076,
+      "sha256": "bed55dddc3fc274693df9fa4c5e5c7d2fa5d4532fa599304e5414c4c36737a50"
     },
     {
       "path": "SOURCE_LOG.md",
@@ -753,6 +753,11 @@
       "path": "assets/source/local-kit-v1/wood-dark-color-256.png",
       "bytes": 12913,
       "sha256": "f08d160bbd8d794b6e603cfce9055024a541e1494b914bd64f377975c2fd0361"
+    },
+    {
+      "path": "devpost-submission.md",
+      "bytes": 5955,
+      "sha256": "6e70e4ed9502fad32c59306817c9a2c265057e15df10f0d92653d9b1bcd3ad33"
     },
     {
       "path": "evidence/asset-format.tap",
@@ -1863,6 +1868,126 @@
       "path": "scripts/verify-public-preview.mjs",
       "bytes": 5537,
       "sha256": "49642f8cd83da111e4292fd11a4a2477637f996ee24c224ef4f1c5814f3467cb"
+    },
+    {
+      "path": "submission/DEVPOST.md",
+      "bytes": 6769,
+      "sha256": "16ae3d5cf8d254e58af274b02963618288970fe89782ecb75625cdacc35a4f38"
+    },
+    {
+      "path": "submission/JUDGE_GUIDE.md",
+      "bytes": 3882,
+      "sha256": "9521bdd4bddabb70b0b60a30ac041f7fd509732d0adce955da06ea8f002e10dc"
+    },
+    {
+      "path": "submission/MEDIA_MANIFEST.json",
+      "bytes": 3285,
+      "sha256": "305a1a84df93acbd03a6201bbff36cac74c8520dbd3718417f71f9e6db2699bd"
+    },
+    {
+      "path": "submission/QA_RECEIPT.json",
+      "bytes": 1674,
+      "sha256": "4c70b4ee31b8ec0df399195ca7af7159d5a32491851c837e49711e18c3570b72"
+    },
+    {
+      "path": "submission/README.md",
+      "bytes": 2955,
+      "sha256": "bc3e72c1340c85436a3a1eb0f5edfd5c5ee4bbd9ddb91c4fec961955170e74a9"
+    },
+    {
+      "path": "submission/RESEARCH.md",
+      "bytes": 10248,
+      "sha256": "7e3b64a10ac1e6508e1147de519ae24b59279d5f89bc571a40bc0c22bf1e3e5a"
+    },
+    {
+      "path": "submission/VIDEO_PLAN.md",
+      "bytes": 4952,
+      "sha256": "13c8de98169d65bea0e38281680c344f6c53d18f95a54ea8f188a56c078540be"
+    },
+    {
+      "path": "submission/VOICEOVER.md",
+      "bytes": 3788,
+      "sha256": "f1a1d7905bcc2834016681e25a3d510c531bbcbdd0d24c9e3f6d36623706e0dc"
+    },
+    {
+      "path": "submission/VOICEOVER_READ.txt",
+      "bytes": 1966,
+      "sha256": "fd0767cca9783ae4d8726bba95886ea931edcd40780fb1c7f39da8a4c251dbd0"
+    },
+    {
+      "path": "submission/artwork/PROVENANCE.md",
+      "bytes": 983,
+      "sha256": "b51a7a833b1a683db1b3ea1d1a0843476a42c50b5ee09500c5e9ae655f565387"
+    },
+    {
+      "path": "submission/artwork/aragoz-devpost-3x2.png",
+      "bytes": 2803078,
+      "sha256": "3532d22c4a5ebcf3700b70e60a3973a01931f5bdb1bcec16ab3758031a3ebecc"
+    },
+    {
+      "path": "submission/artwork/thumbnail.prompt.txt",
+      "bytes": 2179,
+      "sha256": "b4274b6e15ececf562bdf65197c85a58659b5f6cdf157ec2fe8e4566c3dc12b3"
+    },
+    {
+      "path": "submission/screenshots/01-real-twitch-vote.png",
+      "bytes": 106846,
+      "sha256": "c4556a634ca6f64b2abe1362435aa2a229c12d36783ea4e6848f1ce7e72b57b4"
+    },
+    {
+      "path": "submission/screenshots/02-rule-activates.png",
+      "bytes": 71089,
+      "sha256": "199d31dc799b4bb2235718379062cfce2e238dc4855611df0885b7a63b1e909c"
+    },
+    {
+      "path": "submission/screenshots/03-counter-opens.png",
+      "bytes": 69074,
+      "sha256": "d3ec2b65d34f91a75a9080b6f219bd6ba3e67e733d54fcdb8a4d173df021a159"
+    },
+    {
+      "path": "submission/screenshots/04-module-breaks.png",
+      "bytes": 70794,
+      "sha256": "84a5e4996486faaf988d4685443189f89646baa4a4556d6691df84c90d782719"
+    },
+    {
+      "path": "submission/screenshots/05-credited-showbill.png",
+      "bytes": 163597,
+      "sha256": "df05f1815f7fd2bdd0e9826996c4d821112e97517d775fbb20c067ea91e570fa"
+    },
+    {
+      "path": "submission/source/build_video.py",
+      "bytes": 17523,
+      "sha256": "42e9b72faa83bdf212c918e7349e0d9a89dd32f608d45d2a4bc7936f9feff4a9"
+    },
+    {
+      "path": "submission/video/RENDER_RECEIPT.json",
+      "bytes": 1113,
+      "sha256": "07da439b1001c793af81fa2a86496dce22c74915e0c006e0ad625ee12c15f2d5"
+    },
+    {
+      "path": "submission/video/TIMELINE.json",
+      "bytes": 12584,
+      "sha256": "e922b05194da60974984f97bb5d8f3c26364a5aaa362932aafeff4ec5f044dbe"
+    },
+    {
+      "path": "submission/video/aragoz-review-160s.mp4",
+      "bytes": 5454494,
+      "sha256": "3f10b23de10576924d123730b51febdc877654f2f9e8f51ed407af30b4d3779d"
+    },
+    {
+      "path": "submission/video/aragoz-review-en.srt",
+      "bytes": 3069,
+      "sha256": "b998387cd4e9ebe8ce08cb49d1825c880e981f5da26a8e250f409a7c28705395"
+    },
+    {
+      "path": "submission/video/aragoz-review-picture.mp4",
+      "bytes": 5135103,
+      "sha256": "2be1a1a4648795f242cb27131a23cee5dcce116f4f8e2cb91151b2cebde4a7fe"
+    },
+    {
+      "path": "submission/video/review-poster.jpg",
+      "bytes": 140025,
+      "sha256": "50da41e810ba68dd6d8af8b8839becad82dc04987a28477e335f970e54724914"
     },
     {
       "path": "tests/assets/glb.test.mjs",

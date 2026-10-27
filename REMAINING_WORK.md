@@ -46,7 +46,7 @@ Root integrated all changes; four concrete specialists completed disjoint source
 
 ## Separate optional or later scope
 
-Competition submission is separate: reverify official rules/deadline, prepare a ≤3minute actual Twitch demonstration, English description, Codex session identification, and repository/link/permission review before any authorized submission. No competition deadline was reverified in this inventory.
+Competition preparation is now explicitly authorized. The [production packet](submission/README.md) contains current official-web research/three verified past winners, Devpost copy, a3:2cover, five actual screenshots, a160-second captioned review cut and a308-word VO script. The public rules deadline was rechecked27October; official page conflicts are preserved in submission/RESEARCH.md. The draft is unpublished. Owner voice, genuine Twitch/Codex motion, authenticated form/eligibility/session confirmation, verified judge access and final upload/submission approval remain the final competition steps. Current browser access and native Codex capture are unavailable; restrictions are respected.
 
 Third shell, additional mechanic families/modules, controller refinements, a second stage arrangement, full Arabic localization, cross-channel sharing/community library, payments and public creator registration are not required first-release work. Downloadable House showbill is already implemented. Meshy generation, paid Render and enabling real model interpretation are not prerequisites for the approved no-cost catalogue/House/Blender route; do not quietly describe that narrow fallback as general AI interpretation.
 

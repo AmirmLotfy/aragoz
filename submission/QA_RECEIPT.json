@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-27",
+  "kind": "local-submission-media-QA-not-contest-acceptance",
+  "checks": {
+    "thumbnail1536x1024": true,
+    "thumbnailBelow5MB": true,
+    "fiveActualByteIdenticalScreenshots": true,
+    "duration160": true,
+    "frames4800": true,
+    "fullDecodeNoErrors": true,
+    "timelineContinuous": true,
+    "captions33": true,
+    "voiceScript308Words": true
+  },
+  "video": {
+    "path": "submission/video/aragoz-review-160s.mp4",
+    "sha256": "3f10b23de10576924d123730b51febdc877654f2f9e8f51ed407af30b4d3779d",
+    "meanVolumeDb": -59.9,
+    "peakVolumeDb": -29.4,
+    "voicePresent": false,
+    "sound": "quiet original offline editorial pulses; never played through speakers"
+  },
+  "reviewedActualEncodedFramesSeconds": [
+    3,
+    25,
+    50,
+    81,
+    85,
+    119,
+    128,
+    158
+  ],
+  "localReadiness": {
+    "ready": true,
+    "hostingConfigured": false,
+    "modelEnabled": false
+  },
+  "publicReadiness": {
+    "ready": true,
+    "hostingConfigured": true,
+    "modelEnabled": false
+  },
+  "limits": [
+    "No new gameplay/provider/human acceptance inferred.",
+    "Actual Twitch stills and separately recorded OBS motion; no single-attempt continuity claim.",
+    "Editorial build cards do not satisfy actual Codex UI capture.",
+    "Final VO, Twitch/Codex motion, authenticated fields, judge access, upload and submission pending."
+  ],
+  "toolLimits": {
+    "browser": "Local browser use is disabled in Work settings",
+    "nativeCodexCapture": "denied by computer-use tool; no alternate capture attempted",
+    "devpostConnector": "requires reauthentication; no retry or account mutation"
+  },
+  "paidCalls": 0,
+  "uploads": 0
+}

@@ -1,0 +1,64 @@
+{
+  "created": "2026-10-27",
+  "status": "unpublished-production-packet",
+  "gallery": [
+    {
+      "file": "submission/screenshots/01-real-twitch-vote.png",
+      "source": "evidence/twitch-charge-vote-20261027.png",
+      "caption": "Real Twitch ballot: one operator vote, credited charge, labelled House alternatives.",
+      "sha256": "c4556a634ca6f64b2abe1362435aa2a229c12d36783ea4e6848f1ce7e72b57b4",
+      "alteration": "none; byte-identical copy",
+      "evidence": "actual Twitch transport plus AI-operated account/play; not human/viewer acceptance"
+    },
+    {
+      "file": "submission/screenshots/02-rule-activates.png",
+      "source": "evidence/twitch-charge-activation-20261027.png",
+      "caption": "Real Twitch encounter activation, actual amirmolotfy credit and charge telegraph.",
+      "sha256": "199d31dc799b4bb2235718379062cfce2e238dc4855611df0885b7a63b1e909c",
+      "alteration": "none; byte-identical copy",
+      "evidence": "actual Twitch transport plus AI-operated account/play; not human/viewer acceptance"
+    },
+    {
+      "file": "submission/screenshots/03-counter-opens.png",
+      "source": "evidence/twitch-charge-exposed-20261027.png",
+      "caption": "Actual stage-block counter opens the charge attachment.",
+      "sha256": "d3ec2b65d34f91a75a9080b6f219bd6ba3e67e733d54fcdb8a4d173df021a159",
+      "alteration": "none; byte-identical copy",
+      "evidence": "actual Twitch transport plus AI-operated account/play; not human/viewer acceptance"
+    },
+    {
+      "file": "submission/screenshots/04-module-breaks.png",
+      "source": "evidence/twitch-charge-broken-20261027.png",
+      "caption": "Actual author credit, broken attachment and disabled ability.",
+      "sha256": "84a5e4996486faaf988d4685443189f89646baa4a4556d6691df84c90d782719",
+      "alteration": "none; byte-identical copy",
+      "evidence": "actual Twitch transport plus AI-operated account/play; not human/viewer acceptance"
+    },
+    {
+      "file": "submission/screenshots/05-credited-showbill.png",
+      "source": "evidence/twitch-live-result-20261027.png",
+      "caption": "Accepted real operator result and immutable credited contracts; full-page screenshot.",
+      "sha256": "df05f1815f7fd2bdd0e9826996c4d821112e97517d775fbb20c067ea91e570fa",
+      "alteration": "none; byte-identical copy",
+      "evidence": "actual Twitch transport plus AI-operated account/play; not human/viewer acceptance"
+    },
+    {
+      "file": ".runtime/obs-recordings/2026-10-26 09-50-08.mov",
+      "sha256": "5800c326b622a9434279237a03d8ea9af67fbb6381e2e1ed5caf47dfd007e130",
+      "evidence": "actual original M1 OBS; AI-led House rehearsal; source02f6b75",
+      "privateSource": true,
+      "retention": "ignored local source, never copied or uploaded"
+    }
+  ],
+  "cover": {
+    "file": "submission/artwork/aragoz-devpost-3x2.png",
+    "sha256": "3532d22c4a5ebcf3700b70e60a3973a01931f5bdb1bcec16ab3758031a3ebecc",
+    "kind": "generated promotional key art, never gameplay"
+  },
+  "limits": [
+    "No genuine human acceptance sessions.",
+    "Review cut uses actual Twitch stills plus separate OBS rehearsal motion.",
+    "Build notes are editorial; actual Codex UI capture remains pending.",
+    "Voice, final upload/access and submission approval remain pending."
+  ]
+}

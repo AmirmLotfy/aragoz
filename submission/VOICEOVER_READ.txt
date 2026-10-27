@@ -1,0 +1,19 @@
+What if the audience wrote the monster—and the one weakness that could bring it down?
+
+This is ARAGOZ: an Egyptian puppet-theatre-inspired boss fight. Chat makes the monster. You find the loophole.
+
+In this real Twitch test, a chat command proposed a charge that cannot turn. A vote selected it, and the author’s name stayed attached to the rule. Empty choices are clearly labelled House Suggestions.
+
+Here is how that rule plays. Once the boss commits, it cannot steer. Put a striped stage block in its path. The collision jams the axle and opens a counter. Strike the exposed attachment, and the wheel breaks away. Charging stops because the module—and its damage—are disabled.
+
+The real Twitch result carries the same credit: selection, activation, break, and showbill. This demonstration used one broadcaster account operated by our agent. It is a technical test, not a crowd playtest.
+
+A different module changes the puzzle. Steam overheats after its burst sequence, exposing a valve. Delayed echo records your movement, previews the path, then copies it. Lead that copy into a block to expose the mirror.
+
+The show runs for three acts. Encore keeps the exact recipe. Remix replaces one module. A quiet channel can play with House Suggestions, and anyone can rehearse without a Twitch account.
+
+I built ARAGOZ with Codex across the game, server, original Blender assets, and validation. The simulation runs at sixty fixed steps a second, separate from menus and networking. Versioned contracts connect chat, recipes, modules, events, and results. Codex also helped test immediate damage cancellation and recovery.
+
+Live proposals currently match six authored profiles. Runtime model calls are disabled. Readable warnings, remapping, reduced motion, and mute controls keep the performance understandable and under the host’s control.
+
+The goal is simple: let chat write a boast, let the player break it, and let everyone see whose idea just backfired.
