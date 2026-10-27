@@ -15,6 +15,8 @@ Local release candidate is prepared. This checklist records actual provider/host
 
 Current hosting infrastructure:19real public HTTP/WSS checks before and19after same-origin reload,7actual anonymous backup/restore checks,2launcher process tests. See ops/STEPS_6_10_REPORT.md. Genuine provider/channel/token gates remain unchecked.
 
+Current provider milestone: real free app/OAuth/EventSub/operator proposal/vote/accepted causal win, serialized refresh and genuine token/result restore/restart verified. [Exact evidence and limits](TWITCH_LIVE_VALIDATION.md). One AI-operated actual account does not satisfy human or multichannel acceptance. Read-only scope; models off; no spending.
+
 ## Authorized hosting procedure
 
 1. Private repository is approved; all spending is prohibited. Publish only non-ignored source; never include.env, SQLite data, dependency caches or local session data. No automatic billable CI or paid resource creation.

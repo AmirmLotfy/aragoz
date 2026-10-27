@@ -1,5 +1,7 @@
 # Steps 6–10 execution — 27 October 2026
 
+**Historical operations packet:** app/account blockers below have since been superseded by [real Twitch validation](TWITCH_LIVE_VALIDATION.md). Anonymous infrastructure evidence retains its original scope.
+
 Root resumed the owner's requested genuine-release sequence from clean `main` at `7fabb610545365751fc06613afc002c05913b2e8`. The complete first-release scope remains unchanged. This packet advances real hosting operations and fixes an observed operational failure; it does not substitute anonymous checks for broadcaster/viewer acceptance.
 
 Current free preview: **https://hunter-pin-talk-transactions.trycloudflare.com/house-show**. Local fallback: **http://127.0.0.1:3000/house-show**. Both retain account-free House play. The final public frontend bytes match the packaged build; fresh browser gameplay was not run in this packet.

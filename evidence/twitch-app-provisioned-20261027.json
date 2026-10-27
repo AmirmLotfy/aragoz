@@ -1,0 +1,24 @@
+{
+  "kind": "Actual Twitch developer app/OAuth provisioning; credential values excluded",
+  "at": "2026-10-27T19:00:31.190073+00:00",
+  "baseHead": "992642ca37c79600172fd50552d81c838fef4a39",
+  "ownerReportedAccountAnd2FAConfirmed": true,
+  "appCreationAcceptedByTwitch": true,
+  "appName": "ARAGOZ Theatre",
+  "account": "amirmolotfy",
+  "clientType": "confidential",
+  "category": "Game Integration",
+  "callback": "https://klein-wake-circle-favor.trycloudflare.com/api/auth/twitch/callback",
+  "creationAndFirstSecretApproved": true,
+  "chatReadConsentSeparatelyApproved": true,
+  "grantedScope": [
+    "user:read:chat"
+  ],
+  "clientSecretOnlyInIgnoredPrivateEnv": true,
+  "privateEnvMode": "600",
+  "secretScreenshotTaken": false,
+  "modelEnabled": false,
+  "modelBudgetRequests": 0,
+  "spending": 0,
+  "humanSessions": 0
+}

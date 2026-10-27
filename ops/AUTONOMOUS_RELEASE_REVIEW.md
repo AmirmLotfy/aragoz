@@ -2,6 +2,10 @@
 
 **Approve the current complete solo House show for the free desktop technical preview.** Root completed local remaining-work items A01–A05 and froze their source/evidence as the next technical-preview candidate. The owner delegated routine implementation and judgment; no routine review question is pending. Current receipt: [steps1–10](../evidence/steps-1-10-validation.json). The full first-release scope remains in IMPLEMENTATION_PLAN.md.
 
+## Latest genuine Twitch milestone
+
+The actual free app/OAuth/EventSub/operator chat/proposal/vote/physical causal win is now verified, with author credit and accepted result. Real serialized refresh and genuine token/result backup/restart recovery passed. [Provider report](TWITCH_LIVE_VALIDATION.md). Continue technical-preview approval; human sessions remain0 and remaining provider/multichannel cases stay open. No runtime model calls were enabled.
+
 ## Latest hosting repair and judgment
 
 The steps6–10operations packet repaired an actually expired Quick Tunnel, verified the current public hunter-pin-talk-transactions origin, same-URL backend reload, unchanged key, anonymous persistence and isolated restoration. Two process tests pass; actual public probes pass19before/19after reload;7backup/restore checks pass. No frontend/combat/assets changed; the technical-preview gameplay judgment remains source7fabb61. [Current operations report](STEPS_6_10_REPORT.md). Full invited-broadcaster judgment remains pending: no genuine provider/account or participant evidence was manufactured.
@@ -27,7 +31,7 @@ Current status documents distinguish these historical receipts from the new loca
 
 ## Blockers and constraints — kept at the very end
 
-1. Full invited-Twitch release is **not accepted**. Last actual free app registration rejected missing2FA; no client ID/secret exists. Owner deferred failedSMS. Fresh browser access failed with `Local browser use is disabled in Work settings` before any new provider state could be observed. No bypass/SMS retry/outreach/new account occurred.
-2. Genuine OAuth/chat/causal chain, lifecycle, hosted configured-account isolation and matching-key token restore remain B01–B03. Model requests stayoff; narrow catalogue fallback is not general AI interpretation. All spending is prohibited.
+1. Full invited-Twitch release is **not accepted** until remaining provider scenarios and real participants pass acceptance. The free app/read-only connection and operator causal win now have evidence; earlier 2FA/browser-disabled blockers are historical.
+2. B01technicaloperatorproof and single-account refresh/token/result recovery are verified. Remaining B02/B03provider/isolation cases stay open. Model requests remainoff; narrow catalogue grammar is not general AI interpretation. All spending is prohibited.
 3. The owner confirms no participants are available; human acceptance remains0sessions. B04 requires3first-time hosts and≥3genuine viewers/session, real counter/comprehension counts and consent. AI traffic/gameplay cannot supply this evidence. B05's technical-preview freeze is complete; its final full-release judgment follows genuine findings.
 4. Public Quick Tunnel has shown1033/reconnect/loadtimeout. The old hostname actually expired; the new hunter-pin-talk-transactions origin passed current real HTTPS/WSS checks before/afterreload, with modeloff. This is an availability limit, not stable hosting. Keep [local play](http://127.0.0.1:3000/house-show) available. The new supervisor uses verified project-local Node24and its same-URL SIGHUP was actually exercised. Preserve origin-specific showbills and keep localfallback when a future tunnel expires.

@@ -1,0 +1,25 @@
+{
+  "kind": "Actual Twitch token refresh/validation against one authorized broadcaster; no synthetic token or model call",
+  "at": "2026-10-27T18:49:03.895Z",
+  "channel": "amirmolotfy",
+  "concurrentRequests": 3,
+  "serializedUpstreamTokenRequests": 1,
+  "requests": [
+    {
+      "endpoint": "/oauth2/token",
+      "status": 200
+    },
+    {
+      "endpoint": "/oauth2/validate",
+      "status": 200
+    }
+  ],
+  "unchangedScopes": true,
+  "scopes": [
+    "user:read:chat"
+  ],
+  "nonExpiredCredential": true,
+  "durationMs": 1630,
+  "extraWebSocketsCreated": 0,
+  "complete": true
+}

@@ -27,6 +27,10 @@ Schema migrations use `PRAGMA user_version`; startup rejects an unknown newer da
 
 Internal backup: `node --env-file-if-exists=.env apps/server/src/backup.ts /absolute/new-backup.sqlite`. The destination must not exist. This command selects `DATABASE_PATH` from its own environment, not a running server's child environment. For the public launcher, use the explicit database selection in [the public backup runbook](../../ops/NO_COST_HOSTING.md#backups-and-evidence). The API has no backup/download endpoint. To restore, stop this single process, preserve its database and sidecars, then restore a verified backup to the configured database path with matching encryption key before restarting. The tests reopen a backup and compare the persisted recipe/channel identity. Production startup also serves `apps/web/dist` if present.
 
+## Real provider milestone
+
+The free ARAGOZ Theatre app and read-only OAuth/EventSub connection are verified against Twitch. An actual operator proposal/vote produced a correctly attributed accepted browser win. Real serialized refresh and genuine encrypted token/result backup/restart recovery also passed. [Provider report](../../ops/TWITCH_LIVE_VALIDATION.md). This is one AI-operated actual account; human sessions remain0. No model calls enabled. Specific provider and multichannel cases remain open.
+
 ## Current local verification — 27 October 2026
 
 The root suite now passes **171 tests across 14 files**, one worker, in 3.51 seconds; typecheck and release build also pass for the A01–A04 sources. [Full unit log](../../evidence/steps-1-4-unit.txt), [current evidence plan](../../TEST_PLAN.md). The final complete muted browser run passes 28/28 in 3.1 minutes; [final log](../../evidence/steps-1-5-browser-final.txt). The earlier author-span assertion failure is retained separately and was corrected before the complete rerun.
@@ -47,6 +51,6 @@ Protocol references: [Twitch WebSocket handling](https://dev.twitch.tv/docs/even
 
 ## Blockers and constraints — kept at the very end
 
-1. The last actual Twitch app registration rejected missing 2FA; zero apps were observed and no Client ID/secret was created. [Provider rejection](../../evidence/twitch-registration-20261027.json). The fresh UI attempt in this packet failed before browser access with `Local browser use is disabled in Work settings`, so it adds no newer provider state. Owner-deferred SMS recovery remains pending. No new account, credential or Twitch call occurred; no phone retry or support outreach is authorized.
-2. Genuine OAuth/chat, provider lifecycle, hosted multichannel control/isolation and matching-key token restore still need configured-account evidence. Human acceptance remains zero sessions. Synthetic traffic, mocks, AI-led gameplay, Linux checks and OBS captures do not replace those gates. The current local packet is recorded in [the execution receipt](../../evidence/steps-1-10-validation.json).
+1. The earlier missing2FA rejection is historical. The app/read-only OAuth/chat and single-account recovery now work; do not repeat the no-client-ID/secret blocker. Current limits are in the provider report.
+2. Real read-only OAuth/chat/operator causal win/refresh and matching-key token/result restoration now have configured-account evidence. Specific remaining provider and genuine multichannel/control/offline cases remain unverified. Human acceptance remains0sessions; do not turn AI operator activity into participant results.
 3. All spending is prohibited, including real model/Meshy calls, paid hosting and automatic billable CI. The public launcher forces model calls off. Keep local credentials/database keys private and out of logs, screenshots, Git and transfers. The free Mac/tunnel route requires its process/network to remain available and has no uptime guarantee; preserve local play. The complete invited-broadcaster release is not yet accepted.

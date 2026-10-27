@@ -1,0 +1,19 @@
+{
+  "kind": "Actual genuine-account service restart and post-restart Twitch message receipt; UI screenshot corroborates received challenge",
+  "at": "2026-10-27T18:54:38.004Z",
+  "origin": "https://klein-wake-circle-favor.trycloudflare.com",
+  "beforeBackend": 58801,
+  "afterBackend": 91619,
+  "sameSupervisor": true,
+  "sameTunnel": true,
+  "samePrivateKeyFile": true,
+  "authenticatedSessionRecovered": true,
+  "liveInputRecovered": true,
+  "postRestartOperatorCommandReceived": true,
+  "resultPersisted": true,
+  "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f",
+  "acceptedOutcome": "won",
+  "modelBudgetRequests": 0,
+  "humanSessions": 0,
+  "complete": true
+}

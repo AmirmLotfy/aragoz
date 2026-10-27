@@ -4,9 +4,13 @@ Updated 27 October 2026. On 26 October the owner approved private [AmirmLotfy/ar
 
 The public `/house-show` offers a complete account-free three-act show; `/rehearse` offers one-encounter practice. Actual AI-led HTTPS House gameplay completed three wins, six physical module breaks and a cumulative showbill. [Gameplay receipt](evidence/browser/autonomous-house/receipt.json). House authorship is explicit; no audience/provider activity is inferred. House saves belong to the browser and origin, independently of server-owned Twitch shows. Download the showbill before replacing a save or changing tunnel origin.
 
+## Latest genuine account status
+
+ARAGOZ Theatre is registered and connected to @amirmolotfy with exactly user:read:chat at `https://klein-wake-circle-favor.trycloudflare.com`. A real Twitch operator proposal/vote led to an actual accepted browser win with correct author credit. Real refresh and matching-key token/result backup/restart recovery also passed. [Current provider report](ops/TWITCH_LIVE_VALIDATION.md). Credentials remain private, models off and spending0; human sessions remain0.
+
 ## Current hosted operations
 
-The old paper-principles Quick Tunnel actually expired. The current owned public origin is `https://hunter-pin-talk-transactions.trycloudflare.com`, verified over real HTTPS/WSS before/after a same-origin backend reload. Existing local fallback/data/key are preserved. Two launcher-expiry process tests pass;19public checks before/19after reload and7actual anonymous backup/restore checks pass. [Steps6–10report](ops/STEPS_6_10_REPORT.md). These contain0channels/tokens/shows; genuine-account and human acceptance remain separate. Current supervisor uses project-local Node24and its reload was verified.
+The old paper-principles Quick Tunnel actually expired. The earlier packet used `https://hunter-pin-talk-transactions.trycloudflare.com`, verified over real HTTPS/WSS before/after a same-origin backend reload. Existing local fallback/data/key are preserved. Two launcher-expiry process tests pass;19public checks before/19after reload and7actual anonymous backup/restore checks pass. [Steps6–10report](ops/STEPS_6_10_REPORT.md). These contain0channels/tokens/shows; genuine-account and human acceptance remain separate. Current supervisor uses project-local Node24and its reload was verified.
 
 ## Runtime configuration and readiness
 
@@ -32,7 +36,7 @@ The historical paid design remains archived at `ops/archive/render.paid-unapprov
 
 ## Blockers and constraints — kept at the very end
 
-1. The last actual registration attempt for @amirmolotfy's ARAGOZ Theatre application was rejected because two-factor authentication was missing. Zero registered apps were observed; no Client ID/secret was created. [Actual rejection](evidence/twitch-registration-20261027.json). A fresh UI attempt in this packet stopped before browser access with `Local browser use is disabled in Work settings`; it does not supersede that last known provider state. No new account, Twitch call or private credential exists from this packet. Owner-deferred SMS recovery remains pending; no phone retry or support outreach is authorized.
-2. Genuine read-only OAuth, chat challenge, causal-chain credit, EventSub lifecycle, hosted multichannel isolation/control and matching-key token restoration still need actual configured-account evidence. Genuine human acceptance remains zero sessions. Local, mocked, AI-led, Linux and OBS evidence stay separate.
+1. The earlier missing2FA registration rejection is retained historically; the owner completed verification and the free app/OAuth/chat connection now works. Specific provider handover/revocation/gap scenarios remain unverified; see the current provider report.
+2. Real read-only OAuth/chat/operator causal credit and matching-key token/result restore now have evidence. Specific EventSub handover/revocation/gap and genuine multichannel/control cases remain. Human acceptance is still0sessions; evidence categories stay separate.
 3. All spending remains prohibited: no paid provisioning, model/Meshy usage or automatic billable CI. Keep secrets in ignored private settings, outside chat, Git, screenshots and transfers. Publication approval does not authorize spending.
 4. The Mac, launcher and network must remain running. The temporary tunnel has actually returned 1033/reconnected and had a browser load timeout; a later HTTP 200 is a point check, not uptime acceptance. Preserve the local fallback. This is a technical preview, not permanent managed hosting or full-release acceptance.

@@ -1,0 +1,159 @@
+{
+  "kind": "Actual Twitch app/OAuth/EventSub/operator chat and actual AI-operated browser combat; not genuine viewer/human acceptance",
+  "at": "2026-10-27T18:48:28.835Z",
+  "app": {
+    "name": "ARAGOZ Theatre",
+    "created": true,
+    "clientIdConfigured": true,
+    "clientSecretConfigured": true,
+    "credentialsOnlyInIgnoredPrivateSettings": true,
+    "scope": [
+      "user:read:chat"
+    ],
+    "chatHelp": false,
+    "encryptedAtRest": true
+  },
+  "channel": "amirmolotfy",
+  "roomId": "9c4a929b-9b1e-4bc2-a30d-2d38e83dae69",
+  "phase": "ended",
+  "recipeHashes": [
+    "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f"
+  ],
+  "credits": [
+    {
+      "family": "charge",
+      "profile": "charge-deliberate",
+      "source": "viewer",
+      "displayName": "amirmolotfy"
+    },
+    {
+      "family": "steam",
+      "profile": "steam-narrow",
+      "source": "house",
+      "displayName": "House Suggestion"
+    }
+  ],
+  "results": [
+    {
+      "attemptId": "53fadd06-d6d6-4610-9ee3-2690408b334f",
+      "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f",
+      "outcome": "won",
+      "durationTicks": 1290,
+      "brokenSlots": [
+        "right",
+        "left"
+      ],
+      "exploits": 3
+    }
+  ],
+  "events": [
+    {
+      "schemaVersion": 1,
+      "attemptId": "53fadd06-d6d6-4610-9ee3-2690408b334f",
+      "sequence": 1,
+      "simTick": 51,
+      "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f",
+      "kind": "module-activated",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "53fadd06-d6d6-4610-9ee3-2690408b334f",
+      "sequence": 4,
+      "simTick": 160,
+      "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f",
+      "kind": "flaw-exposed",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "53fadd06-d6d6-4610-9ee3-2690408b334f",
+      "sequence": 5,
+      "simTick": 414,
+      "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f",
+      "kind": "module-activated",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "53fadd06-d6d6-4610-9ee3-2690408b334f",
+      "sequence": 9,
+      "simTick": 669,
+      "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f",
+      "kind": "flaw-exposed",
+      "moduleSlot": "right",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "53fadd06-d6d6-4610-9ee3-2690408b334f",
+      "sequence": 10,
+      "simTick": 741,
+      "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f",
+      "kind": "module-broken",
+      "moduleSlot": "right",
+      "value": 100,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "53fadd06-d6d6-4610-9ee3-2690408b334f",
+      "sequence": 11,
+      "simTick": 825,
+      "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f",
+      "kind": "module-activated",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "53fadd06-d6d6-4610-9ee3-2690408b334f",
+      "sequence": 15,
+      "simTick": 916,
+      "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f",
+      "kind": "flaw-exposed",
+      "moduleSlot": "left",
+      "value": null,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "53fadd06-d6d6-4610-9ee3-2690408b334f",
+      "sequence": 16,
+      "simTick": 921,
+      "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f",
+      "kind": "module-broken",
+      "moduleSlot": "left",
+      "value": 100,
+      "outcome": null
+    },
+    {
+      "schemaVersion": 1,
+      "attemptId": "53fadd06-d6d6-4610-9ee3-2690408b334f",
+      "sequence": 17,
+      "simTick": 1290,
+      "recipeHash": "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f",
+      "kind": "outcome",
+      "moduleSlot": null,
+      "value": null,
+      "outcome": "won"
+    }
+  ],
+  "observedCharge": {
+    "exposedTick": 161,
+    "breakObservedTick": 921,
+    "disabledFor360Ticks": true
+  },
+  "operatorTraffic": "AI agent typed commands in the broadcaster’s own Twitch chat; one actual account, no fake viewer identity or genuine playtest count",
+  "humanSessions": 0,
+  "modelCallsEnabled": false,
+  "spending": 0
+}

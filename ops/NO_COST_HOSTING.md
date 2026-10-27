@@ -56,7 +56,7 @@ Readiness now returns503 when the built index or entry assets are missing. A fre
 
 ## Current operation and verification — 27 October
 
-The current temporary origin is `https://hunter-pin-talk-transactions.trycloudflare.com`; `.runtime/public-preview.json` remains authoritative. The old paper-principles hostname actually expired (`Unauthorized: Tunnel not found`). The launcher now terminates its own children and fails visibly on that message, including split chunks. It never silently switches origin during a show. Start a new preview deliberately between shows and update Twitch's exact callback when configured.
+The earlier packet used `https://hunter-pin-talk-transactions.trycloudflare.com`; `.runtime/public-preview.json` remains authoritative. The old paper-principles hostname actually expired (`Unauthorized: Tunnel not found`). The launcher now terminates its own children and fails visibly on that message, including split chunks. It never silently switches origin during a show. Start a new preview deliberately between shows and update Twitch's exact callback when configured.
 
 Use the verified project-local runtime in this workspace:
 
@@ -71,3 +71,7 @@ The public probe stores its anonymous cookie/CSRF only in ignored0600`.runtime/h
 `node scripts/verify-preview-persistence.mjs` is a bounded check for the currently unconfigured preview only. It refuses configured credentials/shows, creates a new online backup and isolated copy under ignored `data/public-preview/checkpoint-20261027-b03`, starts a temporary localhost server with the existing key, verifies anonymous continuity, and closes it. Destinations must be new; never delete a backup simply to repeat it. Genuine token/recipe/result restore needs the genuine-account procedure above.
 
 Current actual results:19public checks before/19after reload,7backup/restore checks,2process tests. These are anonymous infrastructure evidence. See [steps6–10report](STEPS_6_10_REPORT.md) for exact scope and final external dependencies. Public game/frontend remains source7fabb61; this packet changes only launcher/ops tooling and documentation.
+
+## Current real Twitch setup
+
+Current origin/callback: `https://klein-wake-circle-favor.trycloudflare.com` plus `/api/auth/twitch/callback`. The free ARAGOZ Theatre app is registered and the broadcaster granted only `user:read:chat`. Client credentials are in ignored0600`.env`; do not create a duplicate app or rotate the secret to change a tunnel URL. Genuine chat/operator play/refresh/encrypted backup/restart evidence is in [the provider report](TWITCH_LIVE_VALIDATION.md). Public setup is the hosting route; local3000remains account-free fallback. The anonymous-only persistence probe deliberately refuses configured shows and should not now be rerun unchanged. Models remainoff and human acceptance remainsopen.

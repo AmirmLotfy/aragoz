@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 43212,
-      "sha256": "96f1a26e158b03396b6fe61fcde886aa0b3567f883238d0d22d8fa824ea28b28"
+      "bytes": 46440,
+      "sha256": "b79ca01e7fc9fcf470f3886df2f43d07251600f78367c017e0577175b8654fc4"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,13 +61,13 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 11805,
-      "sha256": "7dba271fcbea99e69383829e3ce63054f542025414c739536206168f162005d4"
+      "bytes": 8112,
+      "sha256": "5ee7959b6b5b1651ab0f3391dd39c189d8949af1f425d019d8a6bb9babcebaa9"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
-      "bytes": 7346,
-      "sha256": "4154b6e01d369299a5ba205335bd7de3cab3861b6c716c6ea03a119bd2f415d3"
+      "bytes": 7427,
+      "sha256": "21932781af6c46f98f8ff09b0d3c9774d762e8f332819d6f74d8f7a39b5aedf7"
     },
     {
       "path": "Dockerfile",
@@ -96,8 +96,8 @@
     },
     {
       "path": "REMAINING_WORK.md",
-      "bytes": 10923,
-      "sha256": "abc793459e49fdd87c991f4fd9072536eb9450932f894636c1c095b6dcde2d3e"
+      "bytes": 9677,
+      "sha256": "fb5d50c32a186c596d2f47759cc238f747bd5f92bb1c3a78f6b80fe0e7a19f7a"
     },
     {
       "path": "SOURCE_LOG.md",
@@ -106,13 +106,13 @@
     },
     {
       "path": "TEST_PLAN.md",
-      "bytes": 11261,
-      "sha256": "74171d27b2611f96085b28f7b870e8931cd8cbb2cddee45cd066d61e9a5091b5"
+      "bytes": 11623,
+      "sha256": "e2155712bc3062bb465e696be8596e89dde6656d774a92c5008a126a9cce7e26"
     },
     {
       "path": "apps/server/README.md",
-      "bytes": 15408,
-      "sha256": "48c9a393f903980cff8a0e616bba32e959fe8bf250d4f452632abf4cf24546a9"
+      "bytes": 15546,
+      "sha256": "b20a0f5120c4fdb17a76eca8fc1fc32cf300516d2fd4e1c0024758a966e9aa80"
     },
     {
       "path": "apps/server/package.json",
@@ -1545,14 +1545,114 @@
       "sha256": "e2bc4fb8ac14257c15f64f1b3a2d73606da5c9563ea248d4f325fa59caf0cc59"
     },
     {
+      "path": "evidence/twitch-app-created-20261027.png",
+      "bytes": 36446,
+      "sha256": "9e2e0173b6cc40a12cd4884b26c7ebcb8476f618dcf44198495b12b83d5bb570"
+    },
+    {
+      "path": "evidence/twitch-app-provisioned-20261027.json",
+      "bytes": 829,
+      "sha256": "36c4b1fc2635506ba8e5e55269df2e62245c9019f108da515bcce2f997971875"
+    },
+    {
+      "path": "evidence/twitch-app-ready-20261027.png",
+      "bytes": 78165,
+      "sha256": "fda0b24f31eb8fdfbc7803536045171ca57adc5d87e51d4f1cce088d65ac1039"
+    },
+    {
+      "path": "evidence/twitch-charge-activation-20261027.png",
+      "bytes": 71089,
+      "sha256": "199d31dc799b4bb2235718379062cfce2e238dc4855611df0885b7a63b1e909c"
+    },
+    {
+      "path": "evidence/twitch-charge-assembled-20261027.png",
+      "bytes": 66105,
+      "sha256": "e272561df542b7b84b7332b63e288069688fd3a649432b241e18ce70d6a92355"
+    },
+    {
+      "path": "evidence/twitch-charge-broken-20261027.png",
+      "bytes": 70794,
+      "sha256": "84a5e4996486faaf988d4685443189f89646baa4a4556d6691df84c90d782719"
+    },
+    {
+      "path": "evidence/twitch-charge-exposed-20261027.png",
+      "bytes": 69074,
+      "sha256": "d3ec2b65d34f91a75a9080b6f219bd6ba3e67e733d54fcdb8a4d173df021a159"
+    },
+    {
+      "path": "evidence/twitch-charge-vote-20261027.png",
+      "bytes": 106846,
+      "sha256": "c4556a634ca6f64b2abe1362435aa2a229c12d36783ea4e6848f1ce7e72b57b4"
+    },
+    {
+      "path": "evidence/twitch-chat-consent-20261027.png",
+      "bytes": 56768,
+      "sha256": "9c9d61e6eda29f6f96b5cba21f9f2194cee18267535513c39214557acf14e749"
+    },
+    {
+      "path": "evidence/twitch-chat-operator-test-20261027.png",
+      "bytes": 30965,
+      "sha256": "d83879d6f6c0533b6c38ac426d237a68c98605f287f5aeba9bcaf97f2fecf24e"
+    },
+    {
       "path": "evidence/twitch-config-presence-20261027.json",
       "bytes": 265,
       "sha256": "ab648e54d5b2b22933ad43254428828acdefd3baf07a17580889c467a56badbb"
     },
     {
+      "path": "evidence/twitch-connected-20261027.png",
+      "bytes": 112752,
+      "sha256": "22d231b10198bb0335effa5d52b8ef081b4c231b087958b265345a6c8a85d022"
+    },
+    {
+      "path": "evidence/twitch-genuine-backup-restore-20261027.json",
+      "bytes": 811,
+      "sha256": "7815860e73a75446e1b53d1bdd9cbae2f766e44e64c87edfdbd2dac1856016b2"
+    },
+    {
+      "path": "evidence/twitch-genuine-restart-20261027.json",
+      "bytes": 698,
+      "sha256": "096dec5c9baf990bc9e2b849e7bbde7e628b683e631edb5bb4566f5d5a4468f7"
+    },
+    {
+      "path": "evidence/twitch-live-result-20261027.png",
+      "bytes": 163597,
+      "sha256": "df05f1815f7fd2bdd0e9826996c4d821112e97517d775fbb20c067ea91e570fa"
+    },
+    {
+      "path": "evidence/twitch-operator-gameplay-20261027.json",
+      "bytes": 29991,
+      "sha256": "7e197c9aba8c42e5f3e3b270a5c0b312f5a616da0facb2904b2f190b23bdaafd"
+    },
+    {
+      "path": "evidence/twitch-post-restart-chat-20261027.png",
+      "bytes": 93483,
+      "sha256": "89d7c536a6568afd8e7722e8e350ab109ed292b5d85625357094e19d8fbc4557"
+    },
+    {
+      "path": "evidence/twitch-real-operator-chain-20261027.json",
+      "bytes": 4605,
+      "sha256": "fbb70af8bbcb4b1b9a514a7fc5e79c61778827afe50f912fbee90307dda436ce"
+    },
+    {
+      "path": "evidence/twitch-real-refresh-20261027.json",
+      "bytes": 586,
+      "sha256": "a84a59a4b647441644c09a13b6555d69fa461c25c7cdde9f127290e7ee15f535"
+    },
+    {
       "path": "evidence/twitch-registration-20261027.json",
       "bytes": 1172,
       "sha256": "fae028507412ec93d71f8b7cb5c3b3ccea4666fa711076370ec80c1705d654ea"
+    },
+    {
+      "path": "evidence/twitch-setup-muted-stage-20261027.png",
+      "bytes": 69278,
+      "sha256": "34ef93f7bb4ae3a38ae0ec913e630c6b57f44970be2cdcf15089e11a873a46f1"
+    },
+    {
+      "path": "evidence/twitch-setup-verified-20261027.png",
+      "bytes": 122106,
+      "sha256": "f1eaecee6591cdb7d3c0f203f257c31ac20990d1d9d61232de822bb9c24a8879"
     },
     {
       "path": "evidence/validation.json",
@@ -1561,13 +1661,13 @@
     },
     {
       "path": "ops/AUTONOMOUS_RELEASE_REVIEW.md",
-      "bytes": 6549,
-      "sha256": "cd7a839e78825c8fb63b532727cc3facacf5c084129e1a4c7a43a91f85728192"
+      "bytes": 6930,
+      "sha256": "ddbd9076a82d36bf1a1b26a4032bb5bf0ccf1011a5cfae0cc52c5fed80c4020b"
     },
     {
       "path": "ops/NO_COST_HOSTING.md",
-      "bytes": 8798,
-      "sha256": "063d923272e47ab3df67c001e3136e999b399780da6a9f13f73cc744a820434e"
+      "bytes": 9510,
+      "sha256": "8151de0e95722c275397fd4cf746259c6828ac76f5d5f93a6b283131813d6a5b"
     },
     {
       "path": "ops/PERFORMANCE_REPORT.md",
@@ -1576,13 +1676,13 @@
     },
     {
       "path": "ops/RELEASE_CHECKLIST.md",
-      "bytes": 5584,
-      "sha256": "60dc93fa9627bb4f90a64e371b001cd8487474a2a0e9f9d76d7034a091b0156a"
+      "bytes": 5936,
+      "sha256": "35906892ff7ec92d987540a9eaef79febfb193d6070a9654bc3c0afe3a51ea45"
     },
     {
       "path": "ops/STEPS_6_10_REPORT.md",
-      "bytes": 8164,
-      "sha256": "572bd2657aa2bb1db3a4bbe7c676667f52e0fbdec8f3bbf91abb9c5881094548"
+      "bytes": 8371,
+      "sha256": "157b8d5ed93c5158d1a35dd9801f6b7c9f94efe0fa4773b3e120d5c92977e0a4"
     },
     {
       "path": "ops/STREAM_ACCESSIBILITY_REVIEW.md",
@@ -1593,6 +1693,11 @@
       "path": "ops/TWITCH_2FA_SUPPORT_DRAFT.md",
       "bytes": 2079,
       "sha256": "4ef4e42ccf77362b450c44514c2715bc5e2476e736fa324cf919b1be28582017"
+    },
+    {
+      "path": "ops/TWITCH_LIVE_VALIDATION.md",
+      "bytes": 8856,
+      "sha256": "aad1845c159eb22524101ccdbc1d2d168d2423b77622cfe3448a0c1e6aef60df"
     },
     {
       "path": "ops/acceptance/README.md",

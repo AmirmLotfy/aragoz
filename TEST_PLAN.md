@@ -2,6 +2,10 @@
 
 Updated 27 October 2026. Keep the complete first-release scope from the brief and IMPLEMENTATION_PLAN.md. The latest local checks and the historical receipts below have different source revisions and evidence scopes.
 
+## Latest real Twitch validation
+
+Free confidential ARAGOZ Theatre registration, read-only OAuth/EventSub input, actual operator proposal/vote/causal win, real serialized token refresh and genuine encrypted-token/result backup/restart recovery are now verified. [Provider report](ops/TWITCH_LIVE_VALIDATION.md). One actual broadcaster account was operated by the AI agent; human sessions remain0. No application source changed or full game suite was repeated. Runtime model calls remainoff/0usage. Specific handover/revocation/gap and multichannel/control cases remain open.
+
 ## New operations-only verification
 
 Steps6–10packet: `npm run test:ops` passes2isolated process tests for expired/split-message tunnel shutdown. Three changed scripts pass Node24syntax checks. Actual public HTTP/WSS probes pass19before and19after same-origin backend reload. Seven actual online-backup/isolated-restored-server checks pass, including current anonymous session continuity. These use0channels/tokens/shows and4anonymous sessions; genuine token/channel acceptance remains separate. No combat/frontend/dependency source changed and the current171/28/fourfocused gameplay receipts below were not rerun or relabelled. [Operations report](ops/STEPS_6_10_REPORT.md), [receipt](evidence/steps-6-10-validation.json).
@@ -58,8 +62,8 @@ Run `node scripts/check-resources.mjs --job verify|build|browser` for the next b
 
 ## Blockers and constraints — kept at the very end
 
-1. The last actual Twitch registration attempt rejected missing 2FA: zero apps were observed and no Client ID/secret was created. [Provider rejection](evidence/twitch-registration-20261027.json). The fresh UI attempt in this packet failed before browser access with `Local browser use is disabled in Work settings`; it supplies no newer provider state. Owner-deferred SMS recovery remains pending; no new account, credential or Twitch call occurred.
-2. Genuine OAuth/chat/causal-chain, lifecycle, multichannel control and hosted credential recovery still need real provider evidence. Synthetic load and mocked compiler/provider checks do not advance those gates.
+1. The earlier 2FA rejection is historical; the free app and actual read-only connection are now verified. Specific remaining provider scenarios are listed in ops/TWITCH_LIVE_VALIDATION.md.
+2. Actual read-only OAuth/chat/operator causal win/refresh and genuine token/result recovery are now verified. Specific remaining handover/revocation/gap and genuine multichannel/control/offline cases still need real evidence; mocked coverage stays separate.
 3. Human acceptance requires three first-time hosts with at least three genuine viewers/session. At least two hosts must perform an intended counter within their first two unassisted opportunities, and at least two viewers in each session must identify the selected rule/effect. Record real denominators, assistance, confusion, accessibility and consent. No sessions were added; contacting people or publishing recordings needs authorization.
 4. Phone-sized stream captures establish engineering layout evidence only; mobile combat support and genuine viewer comprehension are not inferred.
 5. All spending remains prohibited, including paid hosting, model/Meshy calls and automatic billable CI. Keep credentials/configuration private. The temporary tunnel has had actual 1033/reconnect and page-load failures; the Mac/process/network must remain available, with local fallback preserved. The full release remains a technical preview until genuine provider and human acceptance pass.

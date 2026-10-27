@@ -1,0 +1,30 @@
+{
+  "kind": "Actual configured-channel online backup and isolated restoration; genuine encrypted Twitch token validated with Twitch; no synthetic host",
+  "at": "2026-10-27T18:50:07.059Z",
+  "origin": "https://klein-wake-circle-favor.trycloudflare.com",
+  "channel": "amirmolotfy",
+  "integrity": "ok",
+  "counts": {
+    "channels": 1,
+    "shows": 1,
+    "recipes": 1,
+    "results": 1,
+    "encounter_events": 17
+  },
+  "sameKeyDecryption": true,
+  "wrongKeyRejected": true,
+  "providerValidationStatus": 200,
+  "restoredIdentityAndClientMatched": true,
+  "scopes": [
+    "user:read:chat"
+  ],
+  "recipeHashes": [
+    "984fa383cd5f386153fa0ec785094b6e437415c311b39a08e618c8728215bd6f"
+  ],
+  "outcomes": [
+    "won"
+  ],
+  "extraEventSubSockets": 0,
+  "activeDatabaseOverwritten": false,
+  "complete": true
+}
