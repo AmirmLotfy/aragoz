@@ -3,12 +3,15 @@
 // Reuses a still-valid persisted ARAGOZ session only in the private restored copy.
 import { DatabaseSync, backup } from 'node:sqlite';
 import { createHash } from 'node:crypto';
-import { chmodSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { chmodSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createApp } from '../apps/server/src/app.ts';
 import { CombatSimulation } from '../packages/combat/src/index.ts';
 
 const root=resolve(import.meta.dirname,'..');
+const receiptDay=new Intl.DateTimeFormat('en-CA',{timeZone:'Africa/Cairo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+const receiptPath=resolve(root,process.env.ARAGOZ_RECOVERY_RECEIPT??`evidence/restored-controller-recovery-${receiptDay.replaceAll('-','')}.json`);
+if(existsSync(receiptPath))throw Error('Receipt destination already exists; choose a fresh ARAGOZ_RECOVERY_RECEIPT path.');
 const runtime=JSON.parse(readFileSync(resolve(root,'.runtime/public-preview.json'),'utf8'));
 const sourcePath=resolve(root,'data/public-preview/aragoz.sqlite');
 if(runtime.database!==sourcePath)throw Error('Owned source database does not match runtime');
@@ -67,6 +70,18 @@ try{
   await action({type:'pause'});
   await rejected('paused attempt rejects queued damage',{expectedRevision:room.revision,clientId:'recovery-B',events:[eventsB[1]]},409,roomPath+'/events');
   await action({type:'resume'});response=await upload('recovery-B',[eventsB[1]]);check('resumed owner can continue exact sequence',response.status===200&&response.body.attempt.lastSequence===2);room=response.body;
+  const playedBeforeRestart=room.attempt.id,resultsBeforeRestart=room.results.length;
+  app.services.engine.recover();room=(await request(roomPath)).body;
+  const prepared=room.attempt.id;
+  check('recovery retires the actual interrupted attempt once',room.results.length===resultsBeforeRestart+1&&room.results.at(-1).attemptId===playedBeforeRestart&&room.results.at(-1).outcome==='abandoned'&&room.attempt.ownerClientId===null&&room.attempt.lastSequence===0);
+  app.services.engine.recover();room=(await request(roomPath)).body;
+  check('another recovery preserves the never-played replacement',room.attempt.id===prepared&&room.results.length===resultsBeforeRestart+1);
+  await action({type:'claim-control',clientId:'recovery-C',takeover:true});
+  check('first explicit recovery claim reuses that replacement without phantom result',room.attempt.id===prepared&&room.attempt.ownerClientId==='recovery-C'&&room.phase==='paused'&&room.results.length===resultsBeforeRestart+1);
+  await action({type:'resume'});
+  await rejected('pre-restart controller cannot upload into resumed replacement',{expectedRevision:room.revision,clientId:'recovery-B',events:[eventsB[2]]},409,roomPath+'/events');
+  const eventsC=simulationEvents(room.recipe,prepared);
+  response=await upload('recovery-C',[eventsC[0]]);check('recovered controller starts the same fresh sequence over HTTP',response.status===200&&response.body.attempt.id===prepared&&response.body.attempt.lastSequence===1);room=response.body;
   await action({type:'end-show'});
   await rejected('ended new attempt rejects late offline upload',{expectedRevision:room.revision,clientId:'recovery-B',events:[eventsB[2]]},409,roomPath+'/events');
   await rejected('anonymous upload cannot access restored encounter',{expectedRevision:room.revision,clientId:'recovery-B',events:[eventsB[2]]},401,roomPath+'/events',{'content-type':'application/json'});
@@ -77,5 +92,5 @@ try{
   source=new DatabaseSync(sourcePath,{readOnly:true});const after=fingerprint(source);check('live committed show/recipe/result/event rows unchanged',after.hash===baseline.hash,{counts:after.counts});source.close();source=null;
   receipt.complete=true;receipt.limits=['Persisted session and data are genuine; all mutations target an isolated localhost restore.','Event probes come from pure TypeScript simulation, not browser gameplay.','No new OAuth/chat/provider lifecycle, public-hosted controller-window, multichannel or human acceptance is established.','No Devpost/browser restriction was bypassed; original production state and credentials remain private.'];
 }catch(error){receipt.failure=error instanceof Error?error.message:'Recovery rehearsal failed';process.exitCode=1;}
-finally{if(app)await app.close();source?.close();writeFileSync(resolve(root,'evidence/restored-controller-recovery-20261027.json'),JSON.stringify(receipt,null,2)+'\n');}
+finally{if(app)await app.close();source?.close();writeFileSync(receiptPath,JSON.stringify(receipt,null,2)+'\n');}
 console.log(JSON.stringify({complete:receipt.complete,checks:receipt.checks.length,providerCalls:receipt.providerCalls,providerSockets:receipt.providerSockets,liveHttpMutations:receipt.liveHttpMutations,failure:receipt.failure??null}));

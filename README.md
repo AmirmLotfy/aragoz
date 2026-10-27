@@ -63,6 +63,8 @@ On28October, [a pause/upload revision race](ops/LIVE_PAUSE_QUEUE_FIX.md) was fix
 
 **No spending:** the owner prohibited payments on26October2026 and explicitly approved public visibility for this repository on28October. The repository is public; anonymous README access was verified. Model/Meshy calls remain off. Use the existing Mac plus the temporary HTTPS tunnel in [the no-cost hosting runbook](ops/NO_COST_HOSTING.md). The paid Render design is archived and unapproved; no automatic billable CI is configured.
 
+On 28 October, a subsequent [restart-ledger fix](ops/RESTART_RECOVERY_FIX.md) made repeated restart and the first control claim reuse the unplayed recovery attempt. Its verification includes 173 unit/server checks and 43 HTTP checks on an isolated restore of genuine data. Browser/provider/human evidence boundaries are recorded in that report.
+
 ## Local setup
 
 Use Node24 LTS and npm. The user superseded the initial fixed10GiB floor on26October2026. Run `node scripts/check-resources.mjs --job install` (or verify/build/browser/blender) for a bounded next-job estimate and working reserve. Split work when resources are tight; preserve unrelated projects and report any actual ENOSPC action precisely.

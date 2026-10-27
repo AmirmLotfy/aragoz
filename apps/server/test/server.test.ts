@@ -79,6 +79,41 @@ describe('authoring and deterministic fallback',()=>{
 
 describe('encounter ledger and recovery',()=>{
   it('commits before combat, acknowledges duplicate uploads and rejects stale attempts or another controller',async()=>{let r=await houseRecipe();expect(app.services.store.recipe(r.recipe!.id)?.hash).toBe(r.recipe!.hash);r=await action(r,{type:'claim-control',clientId:'client',takeover:false});r=await action(r,{type:'start-combat',clientId:'client'});const oldRevision=r.revision;const first=event(r,1);const response=await app.inject({method:'POST',url:`/api/shows/${r.roomId}/events`,headers:headers(),payload:{expectedRevision:r.revision,clientId:'other',events:[first]}});expect(response.statusCode).toBe(409);r=await app.services.engine.events(r.roomId,r.revision,'client',[first]);expect((await app.services.engine.events(r.roomId,oldRevision,'client',[first])).revision).toBe(r.revision);const oldAttempt=r.attempt!.id;expect((await app.inject({method:'POST',url:`/api/shows/${r.roomId}/actions`,headers:headers(),payload:{expectedRevision:r.revision,action:{type:'claim-control',clientId:'client',takeover:false}}})).statusCode).toBe(409);r=await action(r,{type:'claim-control',clientId:'client',takeover:true});expect(r.phase).toBe('paused');expect(r.attempt!.id).not.toBe(oldAttempt);expect(r.results[0]?.outcome).toBe('abandoned');r=await action(r,{type:'resume'});await expect(app.services.engine.events(r.roomId,r.revision,'client',[{...first,sequence:2}])).rejects.toThrow();});
+  it('reuses the unclaimed restart attempt across repeated recovery and the first control claim', async () => {
+    let r = await houseRecipe();
+    r = await action(r, { type: 'claim-control', clientId: 'before-restart', takeover: false });
+    r = await action(r, { type: 'start-combat', clientId: 'before-restart' });
+    r = await app.services.engine.events(r.roomId, r.revision, 'before-restart', [event(r, 1)]);
+    const interrupted = r.attempt!.id, recipeHash = r.recipe!.hash;
+    const stale = event(r, 2);
+
+    app.services.engine.recover();
+    r = app.services.engine.get(r.roomId);
+    const replacement = r.attempt!.id;
+    expect(replacement).not.toBe(interrupted);
+    expect(r.results).toHaveLength(1);
+    expect(r.results[0]).toMatchObject({ attemptId: interrupted, outcome: 'abandoned', durationTicks: 60 });
+    expect(r.attempt).toMatchObject({ ownerClientId: null, status: 'paused', lastSequence: 0 });
+
+    // A second restart before anyone plays must not invent another abandoned fight.
+    app.services.engine.recover();
+    r = app.services.engine.get(r.roomId);
+    expect(r.attempt!.id).toBe(replacement);
+    expect(r.results).toHaveLength(1);
+    r = await action(r, { type: 'claim-control', clientId: 'after-restart', takeover: true });
+    expect(r.attempt).toMatchObject({ id: replacement, ownerClientId: 'after-restart', status: 'paused', lastSequence: 0 });
+    expect(r.results).toHaveLength(1);
+    expect(r.recipe!.hash).toBe(recipeHash);
+
+    r = await action(r, { type: 'resume' });
+    await expect(app.services.engine.events(r.roomId, r.revision, 'before-restart', [stale])).rejects.toThrow();
+    r = await app.services.engine.events(r.roomId, r.revision, 'after-restart', [event(r, 1)]);
+    expect(r.attempt!.id).toBe(replacement);
+    expect(r.attempt!.lastSequence).toBe(1);
+    expect(r.results).toHaveLength(1);
+    expect(app.services.store.events(interrupted)).toHaveLength(1);
+    expect(app.services.store.events(replacement)).toHaveLength(1);
+  });
   it('keeps normal paused combat identity but gives explicit paused takeover a fresh sequence ledger',async()=>{let r=await houseRecipe();r=await action(r,{type:'claim-control',clientId:'client',takeover:false});r=await action(r,{type:'start-combat',clientId:'client'});r=await app.services.engine.events(r.roomId,r.revision,'client',[event(r,1)]);const previousId=r.attempt!.id;r=await action(r,{type:'pause'});r=await action(r,{type:'resume'});expect(r.attempt!.id).toBe(previousId);expect(r.attempt!.lastSequence).toBe(1);r=await action(r,{type:'pause'});r=await action(r,{type:'claim-control',clientId:'client',takeover:true});expect(r.phase).toBe('paused');expect(r.attempt!.status).toBe('paused');expect(r.attempt!.id).not.toBe(previousId);expect(r.attempt!.lastSequence).toBe(0);expect(r.results.at(-1)?.attemptId).toBe(previousId);expect(r.results.at(-1)?.outcome).toBe('abandoned');r=await action(r,{type:'resume'});r=await app.services.engine.events(r.roomId,r.revision,'client',[event(r,1)]);expect(r.attempt!.lastSequence).toBe(1);expect(app.services.store.events(r.attempt!.id)).toHaveLength(1);expect(app.services.store.events(previousId)).toHaveLength(1);});
   it('records exactly one result and refuses old uploads after end-show',async()=>{let r=await houseRecipe();r=await action(r,{type:'claim-control',clientId:'client',takeover:false});r=await action(r,{type:'start-combat',clientId:'client'});const outcome=event(r,1,'outcome');const oldRevision=r.revision;r=await app.services.engine.events(r.roomId,r.revision,'client',[outcome]);expect(r.results).toHaveLength(1);r=await app.services.engine.events(r.roomId,oldRevision,'client',[outcome]);expect(r.results).toHaveLength(1);r=await action(r,{type:'end-show'});await expect(app.services.engine.events(r.roomId,oldRevision,'client',[outcome])).rejects.toThrow('ended');});
   it('keeps Encore immutable, remixes one slot, and stops act advancement at three',async()=>{let r=await houseRecipe();const original=r.recipe!;r=await action(r,{type:'skip-act'});expect(r.actIndex).toBe(2);r=await action(r,{type:'skip-act'});expect(r.actIndex).toBe(3);r=await action(r,{type:'skip-act'});expect(r.phase).toBe('showbill');expect(r.actIndex).toBe(3);expect(app.services.store.recipe(original.id)?.hash).toBe(original.hash);});

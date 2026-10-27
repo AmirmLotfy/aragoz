@@ -325,3 +325,45 @@ trim/speed change). Root inspected the actual poster. Current source inventory
 passed private-path/configured-secret exclusion checks. No gameplay suite rerun
 for this documentation/media-only change. Specialist finished with no pending
 media job; root remains integration/Git owner.
+
+##28October — active completion goal / restart-ledger correction
+
+Active goal: make the complete game, Twitch path and Devpost ready; never infer
+completion from a technical preview or fabricate people/provider evidence. The
+previous README turn made authoritative progress. This first goal turn found and
+fixed a real restart-ledger defect: recovery created a fresh unowned paused attempt,
+then repeated restart or first takeover falsely abandoned that unused replacement.
+Engine now reuses it while preserving real owned-attempt takeover and stale-event
+fences. Details: ops/RESTART_RECOVERY_FIX.md. Root owns all integration/source/Git.
+Two bounded read-only specialists finished; no specialist process remains.
+
+Verification: pre-fix regression failed, server file35passed, full unit/server
+173passed/15files, typecheck and admitted release build passed. Full browser run
+had29existing passes and a new-test readiness wait failure; after waiting for
+actual seating and explicitly pausing, all4affected live browser cases passed.
+Do not claim a single30/30run. Browser mute is explicit in the live fixture init.
+43actual localhost HTTP checks on an isolated restore of genuine data passed;
+0provider calls/sockets/live mutations/new authenticated sessions; original live
+fingerprint unchanged. Fresh dated screenshots are retained, historical snapshot
+paths restored. No credentials or private DBs entered evidence/Git.
+
+Current browser initially failed existing-tab binding with browser.user unavailable;
+a fresh documented tab in the same browser2 worked. Devpost is still Draft3/5
+and its3required personal checkboxes were read as unchecked. Respect the owner's
+manual eligibility instruction; final terms/Submit untouched. Plugin-management
+search found no available Devpost connector; do not loop on settings or installs.
+Existing Twitch read grant reconnected through ordinary OAuth without new scope;
+genuine challengeC3D07C arrived at02:22:38Cairo. Current origin remains
+https://star-dawn-phases-nevada.trycloudflare.com ; supervisor86150/tunnel86151
+/backend86243and local86161 were verified live. Both real shows are ended.
+
+Smallest next step: push the source fix, reload only the verified preview backend
+between shows, retest the real chat challenge, then actual hosted controlling-window
+and offline recovery. Fresh tabs auditSetup9/auditChat10/auditDraft8 are root-owned
+in browser2. Keep play muted, no source/hidden simulation injection. Commit/source
+identity and later receipts identify which checks were actually deployed.
+
+Remaining: human acceptance0with no supplied participants; server-issued EventSub
+handover/revocation and genuine multichannel are unverified; Devpost personal
+declarations/rules/final entry remain owner-held. No spending or outreach allowed.
+Goal stays active. Do not mark complete/blocked from this first progress turn.

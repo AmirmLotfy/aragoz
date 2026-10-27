@@ -7,6 +7,11 @@ let harness: LiveHarness;
 
 test.beforeEach(async ({ context }) => {
   test.info().annotations.push({ type: 'evidence', description: LIVE_FIXTURE_LABEL });
+  await context.addInitScript(() => {
+    const key = 'aragoz.preferences.v1';
+    const existing = JSON.parse(localStorage.getItem(key) ?? '{}');
+    localStorage.setItem(key, JSON.stringify({ ...existing, muted: true }));
+  });
   harness = await createLiveHarness();
   await context.addCookies([harness.sessionCookie]);
 });
@@ -224,4 +229,33 @@ test('[FIXTURE] Pause waits for an in-flight encounter upload and resumes the sa
     await expect(play.getByRole('alert')).toHaveCount(0);
     await expect(play.getByText('Show changed. Reload before uploading events', { exact: true })).toHaveCount(0);
   } finally { releaseUpload(); }
+});
+
+
+test('[FIXTURE] recovery claims the prepared attempt without a second abandoned result', async ({ context }) => {
+  await context.addInitScript(() => localStorage.setItem('aragoz.preferences.v1', JSON.stringify({ muted: true, quality: 'low', presentationFps: 30, reducedMotion: true })));
+  const { play, backstage } = await openWindows(context);
+  await audienceBallot(play, backstage, { authorId: 'fixture-restart-charge', displayName: 'FIXTURE Restart Charge', raw: 'charges at you BUT cannot turn once it starts' });
+  await audienceBallot(play, backstage, { authorId: 'fixture-restart-steam', displayName: 'FIXTURE Restart Steam', raw: 'steam burst BUT overheats after three bursts' });
+  await harness.advance(701);
+  await play.getByRole('button', { name: 'Take the stage', exact: true }).click();
+  await expect.poll(() => harness.state().phase).toBe('combat');
+  const interrupted = harness.state().attempt!.id;
+  const recovered = harness.recover(), prepared = recovered.attempt!.id;
+  expect(recovered.results).toHaveLength(1);
+  expect(recovered.results[0]).toMatchObject({ attemptId: interrupted, outcome: 'abandoned' });
+  expect(harness.recover().attempt!.id).toBe(prepared);
+  // A new attempt reloads/admit assets and seats its parts before control is safe.
+  const canvas = play.getByTestId('game-canvas');
+  await expect(canvas).toHaveAttribute('data-attempt-id', prepared, { timeout: 15000 });
+  await expect(canvas).toHaveAttribute('data-presentation-ready', 'true', { timeout: 15000 });
+  await expect(play.getByRole('button', { name: 'Take control & restart safely', exact: true })).toBeEnabled();
+  await play.getByRole('button', { name: 'Take control & restart safely', exact: true }).click();
+  await expect.poll(() => harness.state().phase).toBe('combat');
+  expect(harness.state().attempt!.id).toBe(prepared);
+  expect(harness.state().results).toHaveLength(1);
+  await play.getByRole('button', { name: 'Pause', exact: true }).click();
+  await expect.poll(() => harness.state().phase).toBe('paused');
+  await expect(canvas).toHaveAttribute('data-paused', 'true');
+  await expect(play.getByRole('alert')).toHaveCount(0);
 });

@@ -34,6 +34,7 @@ export interface LiveHarness {
   advance(milliseconds: number): Promise<RoomState>;
   chat(message: FixtureChat): Promise<RoomState>;
   connection(connected: boolean): Promise<RoomState>;
+  recover(): RoomState;
   providerRequests(): number;
   close(): Promise<void>;
 }
@@ -86,6 +87,8 @@ export async function createLiveHarness(): Promise<LiveHarness> {
         await app.services.engine.connection(LIVE_FIXTURE_CHANNEL.id, connected, 'FIXTURE mock input disconnected. Restart this discarded ballot.');
         return state();
       },
+      // Simulates the actual persisted recovery transition, never a provider restart.
+      recover() { app.services.engine.recover(); return state(); },
       providerRequests: () => providerRequests,
       close: async () => {
         // These sockets belong only to the ephemeral fixture. Do not wait for a

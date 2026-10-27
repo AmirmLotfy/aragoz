@@ -26,7 +26,29 @@ export class Engine {
     this.admit(channel.id);
     const id=randomUUID();const r:RoomState={schemaVersion:SCHEMA_VERSION,roomId:id,showId:id,channel,actId:randomUUID(),actIndex:1,ballotSlot:0,ballotGeneration:0,roundCode:null,phase:'setup',phaseBeforePause:null,opensAt:null,deadline:null,revision:0,connected,candidates:[],selectedModules:[],recipe:null,attempt:null,settings:{broadcastDelayMs:0,hideAuthors:false,chatHelp:false},votes:[0,0,0],notice:null,results:[]};this.store.save(r);return r;
   }
-  recover() { for(const r of this.store.shows()){r.connected=false;if(AUTHORING.includes(r.phase)||r.phase==='paused'&&r.phaseBeforePause&&AUTHORING.includes(r.phaseBeforePause)){this.invalidate(r,'The server restarted. Start a fresh audience ballot.');}else if(r.phase==='combat'||r.phase==='paused'&&r.phaseBeforePause==='combat'){this.finish(r,'abandoned',this.store.events(r.attempt?.id??'').at(-1)?.simTick??0);r.attempt=this.attempt('paused',null);r.phase='paused';r.phaseBeforePause='combat';r.notice='The previous attempt was abandoned after restart. Claim control, then resume a fresh attempt.';}else if(r.phase==='assembling')r.phase='ready';if(r.attempt)r.attempt.ownerClientId=null;this.persist(r);} }
+  private unclaimedRestart(r:RoomState):boolean {
+    return r.phase==='paused'&&r.phaseBeforePause==='combat'&&r.attempt?.status==='paused'
+      &&r.attempt.ownerClientId===null&&r.attempt.lastSequence===0;
+  }
+  recover() {
+    for(const r of this.store.shows()) {
+      r.connected=false;
+      if(AUTHORING.includes(r.phase)||r.phase==='paused'&&r.phaseBeforePause&&AUTHORING.includes(r.phaseBeforePause)) {
+        this.invalidate(r,'The server restarted. Start a fresh audience ballot.');
+      } else if(r.phase==='combat'||r.phase==='paused'&&r.phaseBeforePause==='combat') {
+        // Recovery has already retired the old fight. A replacement nobody has
+        // claimed or played must survive another restart without a phantom result.
+        if(!this.unclaimedRestart(r)) {
+          this.finish(r,'abandoned',this.store.events(r.attempt?.id??'').at(-1)?.simTick??0);
+          r.attempt=this.attempt('paused',null);
+        }
+        r.phase='paused';r.phaseBeforePause='combat';
+        r.notice='The previous attempt was abandoned after restart. Claim control, then resume a fresh attempt.';
+      } else if(r.phase==='assembling')r.phase='ready';
+      if(r.attempt)r.attempt.ownerClientId=null;
+      this.persist(r);
+    }
+  }
   attempt(status:'ready'|'running'|'paused'='ready',ownerClientId:string|null=null) { return {id:randomUUID(),ownerClientId,status,lastSequence:0}; }
   invalidate(r:RoomState,notice:string) { r.ballotGeneration++;r.roundCode=null;r.phase='interrupted';r.phaseBeforePause=null;r.opensAt=null;r.deadline=null;r.candidates=[];r.votes=[0,0,0];r.notice=notice; }
   async connection(channelId:string,connected:boolean,reason='Twitch input was interrupted. This ballot was discarded; begin a new ballot.') { for(const item of this.store.shows(channelId))await this.serial(item.roomId,()=>{const r=this.store.room(item.roomId);if(!r||closed(r))return;r.connected=connected;if(!connected&&(AUTHORING.includes(r.phase)||r.phase==='paused'&&r.phaseBeforePause&&AUTHORING.includes(r.phaseBeforePause)))this.invalidate(r,reason);else if(!connected)r.notice='Twitch input disconnected. The committed fight can continue locally.';this.persist(r);}); }
@@ -55,7 +77,7 @@ export class Engine {
       case 'open-vote':requireState(r.phase==='review'&&r.candidates.length===3&&r.candidates.every(c=>c.approved),'Approve all three choices first');requireState(r.connected||r.candidates.every(c=>c.credit.source==='house'),'Audience input is disconnected');r.phase='vote-delay';r.opensAt=this.now()+r.settings.broadcastDelayMs;r.deadline=r.opensAt+20000;r.votes=[0,0,0];break;
       case 'close-vote':requireState(r.phase==='voting'||r.phase==='vote-delay'||r.phase==='review'&&r.candidates.every(c=>c.credit.source==='house'));return this.commitSelection(r);
       case 'restart-ballot':requireState(['setup','interrupted',...AUTHORING].includes(r.phase));this.newBallot(r,false);break;
-      case 'claim-control':{requireState(r.recipe&&r.attempt,'There is no committed encounter');const existing=r.attempt.ownerClientId;requireState(!existing||existing===action.clientId||action.takeover,'Another browser controls this attempt. Choose explicit takeover.');if(r.attempt.status==='running'||r.attempt.status==='paused'&&r.phase==='paused'&&r.phaseBeforePause==='combat'&&action.takeover){requireState(action.takeover,'A running attempt requires explicit takeover after refresh');this.finish(r,'abandoned',this.store.events(r.attempt.id).at(-1)?.simTick??0);r.attempt=this.attempt('paused',action.clientId);this.pauseRemaining.delete(id);r.phase='paused';r.phaseBeforePause='combat';r.notice='A fresh paused attempt is ready. Resume when the stage is visible.';}else r.attempt.ownerClientId=action.clientId;break;}
+      case 'claim-control':{requireState(r.recipe&&r.attempt,'There is no committed encounter');const existing=r.attempt.ownerClientId;requireState(!existing||existing===action.clientId||action.takeover,'Another browser controls this attempt. Choose explicit takeover.');if(r.attempt.status==='running'||r.attempt.status==='paused'&&r.phase==='paused'&&r.phaseBeforePause==='combat'&&action.takeover&&!this.unclaimedRestart(r)){requireState(action.takeover,'A running attempt requires explicit takeover after refresh');this.finish(r,'abandoned',this.store.events(r.attempt.id).at(-1)?.simTick??0);r.attempt=this.attempt('paused',action.clientId);this.pauseRemaining.delete(id);r.phase='paused';r.phaseBeforePause='combat';r.notice='A fresh paused attempt is ready. Resume when the stage is visible.';}else r.attempt.ownerClientId=action.clientId;break;}
       case 'start-combat':requireState(r.phase==='ready'&&r.recipe&&r.attempt?.status==='ready');requireState(r.attempt.ownerClientId===action.clientId,'Claim control of this attempt first');r.attempt.status='running';r.phase='combat';break;
       case 'pause':requireState(!['paused','result','showbill','ended','compiling'].includes(r.phase));r.phaseBeforePause=r.phase;this.pauseRemaining.set(id,{opens:r.opensAt===null?null:Math.max(0,r.opensAt-this.now()),deadline:r.deadline===null?null:Math.max(0,r.deadline-this.now())});r.phase='paused';r.opensAt=null;r.deadline=null;if(r.attempt?.status==='running')r.attempt.status='paused';break;
       case 'resume':{requireState(r.phase==='paused'&&r.phaseBeforePause);if(r.phaseBeforePause==='combat')requireState(r.attempt?.ownerClientId,'Claim control before resuming');const remaining=this.pauseRemaining.get(id);r.phase=r.phaseBeforePause;r.phaseBeforePause=null;r.opensAt=remaining?.opens===null||remaining?.opens===undefined?null:this.now()+remaining.opens;r.deadline=remaining?.deadline===null||remaining?.deadline===undefined?null:this.now()+remaining.deadline;this.pauseRemaining.delete(id);if(r.attempt?.status==='paused')r.attempt.status='running';break;}
