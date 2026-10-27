@@ -46,7 +46,7 @@ https://github.com/AmirmLotfy/aragoz — **private**. Official judge contact and
 
 ## Demo Video
 
-Local captioned review: [submission/video/aragoz-review-160s.mp4](submission/video/aragoz-review-160s.mp4),160seconds,1920×1080/30fps. The owner's recorded voice is pending. Actual Twitch stills and separate OBS rehearsal motion are labelled; real Codex workflow footage and continuous Twitch motion should replace the provisional sections before declaring full video compliance. YouTube URL/upload approval pending.
+Local captioned review: [submission/video/aragoz-review-160s.mp4](submission/video/aragoz-review-160s.mp4),160seconds,1920×1080/30fps. The supplied voice is now integrated in a local-only narrated160-second review; see submission/VOICE_INTEGRATION.md. Actual Twitch stills and separate OBS rehearsal motion are labelled; real Codex workflow footage and continuous Twitch motion should replace the provisional sections before declaring full video compliance. YouTube URL/upload approval pending.
 
 ## Screenshot Shot List
 
@@ -71,5 +71,5 @@ Technical preview; one real broadcaster account was operated by the agent, not a
 - Confirm entrant eligibility and rules acknowledgement through the actual account flow. No acknowledgement was fabricated or progress state initialized.
 - Confirm candidate primary build session `01a1746e-5b94-7b10-87dc-0f66a72f2e0f`, project context25–27October2026; owner confirmation still required before entry.
 - Verify authenticated questions and exact private-repository judge contact; approve the specific access change.
-- Add owner VO, final genuine Twitch/Codex footage, final YouTube URL and link/access checks.
+- Owner VO is integrated locally. Add final genuine Twitch/Codex footage, final YouTube URL and link/access checks.
 - Obtain final submission approval, then verify the live submitted status. This draft is not an entry.

@@ -16,8 +16,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 172,
-      "sha256": "4d5d8149f65dcb8b802f5f559d699b21e016fd99cbc1c74f62896a6786964867"
+      "bytes": 266,
+      "sha256": "a115d5c7cf0d0fb8f3cf0c8522796ca8d790c07826ab69d6fe7281dbd293f582"
     },
     {
       "path": ".impeccable.md",
@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 50586,
-      "sha256": "a5f88b056f07eeb459b0ddcbc1fdd27abc65923631e5fc1ab1b2bc90ebbe9fb1"
+      "bytes": 53434,
+      "sha256": "1629434421a3baf2df5e69efec4ef52cdc03412309f34c845400f35d90394d60"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 8167,
-      "sha256": "fd44e750c52a924ad24d3ae8ef3e230d46fb9a7c3ccb1a079fdc3e825cb92af3"
+      "bytes": 10039,
+      "sha256": "ad64c8223c30c799e8c1a550a3c48b9782efdd9dc73d00b407399985ce9a7289"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -91,13 +91,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 8125,
-      "sha256": "f2e2b579507e084d4fd0ab602f729238563de4d7bc714cc30307a6dfa5f5d263"
+      "bytes": 8211,
+      "sha256": "c03788af4a322c331fb2bd9302ee58a6ab8665c729d2c96832d308b2afdcce7b"
     },
     {
       "path": "REMAINING_WORK.md",
-      "bytes": 10076,
-      "sha256": "bed55dddc3fc274693df9fa4c5e5c7d2fa5d4532fa599304e5414c4c36737a50"
+      "bytes": 10174,
+      "sha256": "a56a4c2181f901bf5cbbc6349e40c1c1edcf8430d98e34469218cc7cf2e86187"
     },
     {
       "path": "SOURCE_LOG.md",
@@ -756,8 +756,8 @@
     },
     {
       "path": "devpost-submission.md",
-      "bytes": 5955,
-      "sha256": "6e70e4ed9502fad32c59306817c9a2c265057e15df10f0d92653d9b1bcd3ad33"
+      "bytes": 6055,
+      "sha256": "ff6870fb13b79084a5c27d5fcb1bbb3986068424b241cf9f2fb4fccb4d8502e3"
     },
     {
       "path": "evidence/asset-format.tap",
@@ -1871,8 +1871,8 @@
     },
     {
       "path": "submission/DEVPOST.md",
-      "bytes": 6769,
-      "sha256": "16ae3d5cf8d254e58af274b02963618288970fe89782ecb75625cdacc35a4f38"
+      "bytes": 6788,
+      "sha256": "4be010b7e4317e0190d086f4069414844402630e65af23f5ec1dc0c6e8e5b62c"
     },
     {
       "path": "submission/JUDGE_GUIDE.md",
@@ -1891,8 +1891,8 @@
     },
     {
       "path": "submission/README.md",
-      "bytes": 2955,
-      "sha256": "bc3e72c1340c85436a3a1eb0f5edfd5c5ee4bbd9ddb91c4fec961955170e74a9"
+      "bytes": 3267,
+      "sha256": "ad6fdbb63710506be827cf9f647de508b07c037da69b8f99cadded9b0d2db324"
     },
     {
       "path": "submission/RESEARCH.md",
@@ -1901,8 +1901,8 @@
     },
     {
       "path": "submission/VIDEO_PLAN.md",
-      "bytes": 4952,
-      "sha256": "13c8de98169d65bea0e38281680c344f6c53d18f95a54ea8f188a56c078540be"
+      "bytes": 5104,
+      "sha256": "1ef1d6aabe8576a9fbfa0eb77324c40d213a3d89f69aff7a90e0cb3aadb8f4fa"
     },
     {
       "path": "submission/VOICEOVER.md",
@@ -1913,6 +1913,11 @@
       "path": "submission/VOICEOVER_READ.txt",
       "bytes": 1966,
       "sha256": "fd0767cca9783ae4d8726bba95886ea931edcd40780fb1c7f39da8a4c251dbd0"
+    },
+    {
+      "path": "submission/VOICE_INTEGRATION.md",
+      "bytes": 3905,
+      "sha256": "2575134e1f2e8d4cc4b461811202cd0cd14d61f3189e5b72e56759769fb93135"
     },
     {
       "path": "submission/artwork/PROVENANCE.md",
@@ -1956,8 +1961,13 @@
     },
     {
       "path": "submission/source/build_video.py",
-      "bytes": 17523,
-      "sha256": "42e9b72faa83bdf212c918e7349e0d9a89dd32f608d45d2a4bc7936f9feff4a9"
+      "bytes": 17740,
+      "sha256": "0f28567e057eaadabd5f585da331e7117443917523673ca27bb9be55819feeb1"
+    },
+    {
+      "path": "submission/source/build_voice_cut.py",
+      "bytes": 10741,
+      "sha256": "abd4c20a3c55e60d313df853c9ebe32a6001f514ad782403313fb3108e2f1814"
     },
     {
       "path": "submission/video/RENDER_RECEIPT.json",

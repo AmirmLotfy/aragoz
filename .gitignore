@@ -16,3 +16,5 @@ playwright-report/
 __pycache__/
 *.pyc
 *.blend1
+# Owner-supplied voice and unpublished voice-bearing review exports.
+submission/local-review/

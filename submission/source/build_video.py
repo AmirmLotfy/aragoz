@@ -57,7 +57,7 @@ def card(name, kicker, title, lines, code=False):
             y = block(d, line, 64, y, 32, 1270, C['soot']) + 28
     path = WORK / (name + '.png'); im.save(path); return str(path.relative_to(ROOT))
 
-def prepare():
+def prepare(caption_overrides=None, voice_ready=False):
     WORK.mkdir(parents=True, exist_ok=True); OUT.mkdir(parents=True, exist_ok=True)
     assert MOV.exists(), 'Original owned OBS recording is required; never substitute generated gameplay.'
     records = []
@@ -135,6 +135,7 @@ def prepare():
         for group in groups:
             a=start+(end-start)*consumed/len(words); consumed+=len(group); b=start+(end-start)*consumed/len(words)
             cues.append({'start':round(a,3),'end':round(b,3),'text':' '.join(group)})
+    if caption_overrides is not None: cues = caption_overrides
     (OUT / 'aragoz-review-en.srt').write_text('\n\n'.join(f'{i+1}\n{stamp(c["start"])} --> {stamp(c["end"])}\n{c["text"]}' for i,c in enumerate(cues))+'\n')
     timeline=[]
     for i,(start,end,num,title,copy,kind,src,offset,crop,label) in enumerate(scenes):
@@ -150,7 +151,7 @@ def prepare():
             y=block(d,title,45,185,48,325,C['soot'],True)
             d.line((45,y+24,365,y+24),fill=C['soot'],width=2)
             block(d,copy,45,y+58,28,320,C['soot'])
-            block(d,'TECHNICAL PREVIEW\nREVIEW CUT · VO PENDING',45,795,19,320,C['soot'])
+            block(d,'TECHNICAL PREVIEW\nREVIEW CUT · VO ALIGNED' if voice_ready else 'TECHNICAL PREVIEW\nREVIEW CUT · VO PENDING',45,795,19,320,C['soot'])
             d.rectangle((416,0,W,99),fill=C['soot']);d.rectangle((416,896,W,H),fill=C['soot'])
             d.text((450,49),label,font=font(19,True),fill=C['cream'])
             if cue: block(d,cue['text'],455,925,32,1390,C['cream'],False,1.3)
@@ -159,7 +160,7 @@ def prepare():
             playlist.extend([f"file '{dest}'",f'duration {b-a:.6f}'])
         playlist.append(f"file '{dest}'")
         path=WORK/f'overlays-{i:02}.ffconcat';path.write_text('\n'.join(playlist)+'\n');scene['overlayPlaylist']=str(path.relative_to(ROOT));timeline.append(scene)
-    (ROOT/'submission/video/TIMELINE.json').write_text(json.dumps({'duration':TOTAL,'fps':FPS,'resolution':[W,H],'status':'review-cut-voice-and-final-footage-pending','scenes':timeline,'captions':cues},indent=2)+'\n')
+    (OUT/'TIMELINE.json').write_text(json.dumps({'duration':TOTAL,'fps':FPS,'resolution':[W,H],'status':'voice-aligned-review-final-footage-pending' if voice_ready else 'review-cut-voice-and-final-footage-pending','scenes':timeline,'captions':cues},indent=2)+'\n')
     records.append({'file':str(MOV.relative_to(ROOT)),'sha256':sha(MOV),'evidence':'actual original M1 OBS; AI-led House rehearsal; source02f6b75','privateSource':True,'retention':'ignored local source, never copied or uploaded'})
     (ROOT/'submission/MEDIA_MANIFEST.json').write_text(json.dumps({'created':'2026-10-27','status':'unpublished-production-packet','gallery':records,'cover':{'file':'submission/artwork/aragoz-devpost-3x2.png','sha256':sha(ROOT/'submission/artwork/aragoz-devpost-3x2.png'),'kind':'generated promotional key art, never gameplay'},'limits':['No genuine human acceptance sessions.','Review cut uses actual Twitch stills plus separate OBS rehearsal motion.','Build notes are editorial; actual Codex UI capture remains pending.','Voice, final upload/access and submission approval remain pending.']},indent=2)+'\n')
     print(json.dumps({'preparedScenes':len(timeline),'captionCues':len(cues),'voiceWords':sum(len(t.split()) for t in texts),'gallery':len(gallery)}),flush=True)

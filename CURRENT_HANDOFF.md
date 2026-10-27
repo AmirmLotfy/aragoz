@@ -1,10 +1,10 @@
-# ARAGOZ current handoff — hackathon draft and media
+# ARAGOZ current handoff — narrated hackathon review
 
-Updated27October2026. Root remains integration owner of the complete first release. The owner now requests the full hackathon package, including winning-entry research, original3:2cover, actual screenshots, a produced video and a script they will record and return. **Local preparation/review assets exist; this is not an uploaded or entered project and not full human release acceptance.**
+Updated27October2026. Root remains integration owner of the complete first release. The owner now requests the full hackathon package, including winning-entry research, original3:2cover, actual screenshots, a produced video and a script; they then returned speech.wav, now integrated into a local narrated review. **Local preparation/review assets exist; this is not an uploaded or entered project and not full human release acceptance.**
 
 ## Checkout and ownership
 
-- cwd `/Users/frameless/Desktop/Aragoz`, branch `main`, clean packet base `f8e665d88bef8ce25e4c9ce3f167fab8f622fb02`. Final pushed HEAD/clean state are in ignored `.runtime/delivery-state.json`; verify Git before resuming.
+- cwd `/Users/frameless/Desktop/Aragoz`, branch `main`, latest voice-packet base `c53a75252bcf27db8e09ba8c3b0ea4b312e79d22` (initial submission basef8e665d). Final pushed HEAD/clean state are in ignored `.runtime/delivery-state.json`; verify Git before resuming.
 - Root owns docs/media integration. One bounded specialist wrote only submission/RESEARCH.md, then a second packet errored at a workspace credit allowance before writing copy; root completed it. No active specialist or heavy job remains.
 - This packet changes README.md, REMAINING_WORK.md, BUILD_JOURNAL.md, CURRENT_HANDOFF.md, evidence/source-manifest.json, root devpost-submission.md and submission/**. App/combat/server/shared contracts/dependencies/runtime GLBs unchanged. No full game-test repetition for media/docs.
 - Private AmirmLotfy/aragoz publication approved; ALL spending remains prohibited. No paid hosting/model/Meshy/media/CI, no participant outreach, no new public upload/entry/access grant. Existing secrets/data/raw captures remain ignored; never print/copy/stage them.
@@ -20,6 +20,14 @@ Start at [submission/README.md](submission/README.md).
 - VOICEOVER.md gives recording directions/ten timed takes; VOICEOVER_READ.txt contains only the308spoken words. Owner will create the voice and return it. Text was queued in Codex editor; do not play game/audio through speakers during tests.
 - Produced review cut submission/video/aragoz-review-160s.mp4:160.000s,1920×1080/30fps,4800decoded video frames,33caption cues,5,454,494bytes. Quiet original offline editorial pulses, no recorded voice. Also picture-only master, SRT, poster, TIMELINE.json, plan, editable source/build_video.py and final render/QA receipts.
 - Actual motion comes from ignored original .runtime/obs-recordings/2026-10-26 09-50-08.mov, original M1/OBS House rehearsal/source02f6b75. Twitch chapter uses later actual stills plus an explicitly editorial transcript, not a continuous recorded Twitch fight. Source/code/architecture cards are editorial build notes, not a captured Codex interface. No generated/fabricated gameplay or fake app interface.
+
+## Supplied voice — completed local integration
+
+Owner supplied /Users/frameless/Desktop/speech.wav:130.960272s,22050Hzmono16-bitPCM. Desktop original and ignored working copy hashes match. Root installed official Homebrew Whisper.cpp1.9.5/dependencies, kept auto-update/cleanup off, used offline tiny.en for timing and base.en for a focused60-fixed-steps phrase check. No audio/API upload, paid call, voice cloning or speech synthesis. Homebrew addedggml/openssl4/llama.cpp and upgraded requiredlibomp/SDL3/sdl2-compat; no tap trust or unrelated cleanup. Tiny normalized-token match93.93%; expected spellings retained, timestamps remain machine estimates.
+
+Final narrated review: submission/local-review/aragoz-narrated-review.mp4,160s/1080p30/4800frames,7,848,393bytes,33aligned captions,−16.11LUFSintegrated/−3.82dBTP. Nine paragraph cuts fall in detected silence; no speech time-stretch. A3.972sbeat aligns echo narration with its scene. Full decode, caption ranges/order, original-copy identity and sampled encoded picture pass. Voice-bearing movie/SRT/receipts are ignored/local; only source/report changes are privately published. No need to request another VO by default. Details: submission/VOICE_INTEGRATION.md; ignored.runtime/submission-voice/VOICE_MIX_RECEIPT.json and ALIGNMENT.json.
+
+Available storage tightened during export to225MiB withoutENOSPC. After recognition finished, root checked no open model handles, recorded hashes/URLs and retired only215.21MiB of task-downloaded tiny/base weights. Original audio/transcripts/source/exports untouched. Last free space about384MiB; use bounded estimates and avoid heavy batches until it recovers. No other project's files or work were cleaned. No rendering/transcription job remains.
 
 ## Verified research and limits
 
@@ -37,11 +45,11 @@ Devpost preparation tool returned reauthentication required; no account action w
 
 ## Smallest next action
 
-When owner voice arrives, acknowledge the received file/path, preserve original, inspect duration/clipping/noise and align the ten takes to the actual edit. Retain natural voice; update picture/captions within<180seconds, mix/duck quiet original bed, inspect final encode and source claims. The user asked root to handle the complete edit; do not hand the remaining production back as a tutorial. Keep moving locally while external account/capture steps wait.
+The narrated review is complete and available locally. Resume the specific remaining continuous Twitch and actual Codex-workflow captures only when browser/capture control is available; preserve the supplied VO/retimed captions and align any replacement footage to them. Then inspect the actual Devpost form, verify eligibility/session/judge access, and present the concrete final upload/entry for approval. Do not request a new voice or repeat game/OBS acceptance just because the media docs changed.
 
 ## Remaining actions and blockers — kept at the end
 
-1. Owner-recorded voice has not arrived. Current cut is explicitly REVIEW CUT / VO PENDING. Actual Twitch motion and genuine Codex workflow clips should replace provisional still/editorial sections when browser/capture access works; do not bypass tool restrictions or pretend existing cards are footage.
+1. Supplied voice is integrated in the local narrated REVIEW CUT / VO ALIGNED. Actual Twitch motion and genuine Codex workflow clips should replace provisional still/editorial sections when browser/capture access works; do not bypass tool restrictions or pretend existing cards are footage.
 2. Devpost connector reauthentication, live form/eligibility/rules acknowledgement, candidate primary session confirmation, exact official private-repo judge contact/access approval, final YouTube upload and final entry approval remain. No legal/account/access/publication/submission action is implied by the local draft. Verify live submitted state eventually; a draft is not an entry.
 3. Genuine human acceptance remains0sessions; owner has no participants. Specific real EventSub handover/revocation/gap and genuine multichannel/controller/stale-offline cases remain open, separate from the completed one-account provider chain. See REMAINING_WORK.md. No fabricated participants/outreach/acceptance.
 4. Temporary free hosting requires this Mac/network. New origin needs registered callback update; no guaranteed judging uptime. Model/Meshy/paid hosting/billableCI remain prohibited.

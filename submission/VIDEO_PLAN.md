@@ -1,6 +1,6 @@
 # ARAGOZ — 160-second edit
 
-Created 27 October 2026. Local production, unpublished. Final picture target 1920×1080, 30 fps, H.264; simulation footage is from the unchanged fixed60Hz game. Original offline percussion bed, never played through speakers during tests. The owner will supply the voiceover in VOICEOVER.md.
+Created 27 October 2026. Local production, unpublished. Final picture target 1920×1080, 30 fps, H.264; simulation footage is from the unchanged fixed60Hz game. Original offline percussion bed, never played through speakers during tests. The supplied speech.wav has now been integrated; see VOICE_INTEGRATION.md. VOICEOVER.md retains the script.
 
 | Timeline | Picture | Purpose / evidence category |
 | --- | --- | --- |
@@ -39,6 +39,6 @@ Align original takes without inventing words. Remove only distracting silence/no
 
 ## Kept at the end: unresolved final-export items
 
-1. Owner-recorded voice is not supplied yet.
+1. Supplied voice is integrated in the local-only narrated review; publication masters await the remaining genuine footage and account steps.
 2. New browser control currently rejects access; Codex native-app capture is also denied. Do not bypass those restrictions. Existing authentic assets enable this review cut. A short continuous actual Twitch recording plus actual Codex-workflow screen capture should replace the two static/editorial sections before claiming the video fully satisfies the official footage requirement.
 3. YouTube upload, private-repository judge access, entrant/rules acknowledgement, exact primary session confirmation and final Devpost submission require their actual account steps. The connector needs reauthentication. No externally published or submitted state is asserted.

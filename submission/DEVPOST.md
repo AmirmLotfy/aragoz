@@ -58,7 +58,7 @@ The next release gate is genuine broadcaster/viewer testing: whether first-time 
 
 - Repository: https://github.com/AmirmLotfy/aragoz — **private; judge access not yet established**.
 - Demo candidate: https://klein-wake-circle-favor.trycloudflare.com/house-show — temporary Mac-hosted preview; recheck at publication. House play needs no account; invited Twitch hosting is separate.
-- Video: **pending final VO, final capture checks, upload and accessible YouTube URL**. Local review cut: video/aragoz-review-160s.mp4.
+- Video: **owner VO integrated locally; pending final capture checks, upload and accessible YouTube URL**. Local review cut: video/aragoz-review-160s.mp4.
 - Thumbnail: artwork/aragoz-devpost-3x2.png. Generated original promotional key art, not gameplay.
 - Gallery: screenshots/01–05, unchanged actual screenshots; captions in MEDIA_MANIFEST.json.
 - Candidate primary Codex session: `01a1746e-5b94-7b10-87dc-0f66a72f2e0f` (project build context25–27October2026). **Owner confirmation still pending; do not silently attest it is the required primary session.**
