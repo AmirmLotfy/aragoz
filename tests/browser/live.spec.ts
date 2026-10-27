@@ -161,3 +161,67 @@ test('[FIXTURE] interrupted mock input discards the ballot and old round command
   await expect(backstage.getByText('FIXTURE Stale Author', { exact: true })).toHaveCount(0);
   await expect(play.getByText(freshRaw, { exact: true })).toHaveCount(0);
 });
+
+test('[FIXTURE] Pause waits for an in-flight encounter upload and resumes the same ledger', async ({ context }) => {
+  await context.addInitScript(() => localStorage.setItem('aragoz.preferences.v1', JSON.stringify({ muted: true, quality: 'low', presentationFps: 30, reducedMotion: true })));
+  const play = await context.newPage();
+  await play.goto(`${harness.origin}/play/${harness.roomId}`);
+  await expect(play.getByRole('button', { name: 'Unmute game audio', exact: true })).toHaveAttribute('aria-pressed', 'true');
+  // House contracts keep this regression focused on real browser transport ordering.
+  for (let slot = 0; slot < 2; slot++) {
+    await play.getByRole('button', { name: 'Use labelled House Suggestions', exact: true }).click();
+    const session = await context.request.get(`${harness.origin}/api/session`);
+    const { csrfToken } = await session.json();
+    const response = await context.request.post(`${harness.origin}/api/shows/${harness.roomId}/actions`, {
+      headers: { origin: harness.origin, 'x-csrf-token': csrfToken },
+      data: { expectedRevision: harness.state().revision, action: { type: 'close-vote' } },
+    });
+    expect(response.status(), await response.text()).toBe(200);
+    await expect.poll(() => harness.state().selectedModules.length).toBe(slot + 1);
+  }
+  await harness.advance(701);
+  await expect(play.getByRole('button', { name: 'Take the stage', exact: true })).toBeEnabled();
+  const canvas = play.getByTestId('game-canvas');
+  let releaseUpload!: () => void, captureUpload!: () => void, holdFirst = true;
+  const held = new Promise<void>(resolve => { releaseUpload = resolve; });
+  const captured = new Promise<void>(resolve => { captureUpload = resolve; });
+  const pauseRequests: number[] = [], uploadStatuses: number[] = [];
+  play.on('request', request => {
+    if (request.url().endsWith(`/api/shows/${harness.roomId}/actions`) && request.postDataJSON()?.action?.type === 'pause') {
+      pauseRequests.push(request.postDataJSON().expectedRevision);
+    }
+  });
+  play.on('response', response => {
+    if (response.url().endsWith(`/api/shows/${harness.roomId}/events`)) uploadStatuses.push(response.status());
+  });
+  await play.route(`**/api/shows/${harness.roomId}/events`, async route => {
+    if (holdFirst) { holdFirst = false; captureUpload(); await held; }
+    await route.continue();
+  });
+  try {
+    await play.getByRole('button', { name: 'Take the stage', exact: true }).click();
+    await captured;
+    const attempt = harness.state().attempt!.id, revision = harness.state().revision;
+    await play.getByRole('button', { name: 'Pause', exact: true }).click();
+    await expect(canvas).toHaveAttribute('data-paused', 'true');
+    const tick = await canvas.getAttribute('data-sim-tick');
+    await play.waitForTimeout(800);
+    expect(await canvas.getAttribute('data-sim-tick')).toBe(tick);
+    expect(pauseRequests).toEqual([]);
+    expect(harness.state().phase).toBe('combat');
+    releaseUpload();
+    await expect.poll(() => harness.state().phase).toBe('paused');
+    await expect(play.getByRole('heading', { name: 'The fight is paused.', exact: true })).toBeVisible();
+    expect(pauseRequests).toEqual([revision + 1]);
+    expect(uploadStatuses).toEqual([200]);
+    const acknowledged = harness.state().attempt!.lastSequence;
+    expect(acknowledged).toBeGreaterThan(0);
+    await play.getByRole('button', { name: 'Back onstage', exact: true }).click();
+    await expect(canvas).toHaveAttribute('data-paused', 'false');
+    await expect.poll(() => harness.state().attempt!.lastSequence).toBeGreaterThan(acknowledged);
+    expect(harness.state().attempt!.id).toBe(attempt);
+    expect(uploadStatuses.every(status => status === 200)).toBe(true);
+    await expect(play.getByRole('alert')).toHaveCount(0);
+    await expect(play.getByText('Show changed. Reload before uploading events', { exact: true })).toHaveCount(0);
+  } finally { releaseUpload(); }
+});

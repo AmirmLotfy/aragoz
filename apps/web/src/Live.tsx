@@ -6,12 +6,14 @@ import { api, ApiError } from './api';
 import { GameCanvas } from './GameCanvas';
 import { CombatHud, ControlLegend, Placards, QuickMute, RuleList, ShowbillHistory, Timer } from './components';
 import { EventOutbox, clientIdentity } from './offline';
+import { RoomMutationQueue } from './room-mutations';
 import { STREAM_COPY } from './stream-copy';
 import type { Preferences } from './settings';
 
 function useRoom(id:string){
   const [room,setRoom]=useState<RoomState|null>(null),[error,setError]=useState<string|null>(null),[transport,setTransport]=useState(false),[busy,setBusy]=useState(false);
-  const current=useRef(room);current.current=room;
+  const current=useRef(room),pendingActions=useRef(0);current.current=room;
+  const [mutations]=useState(()=>new RoomMutationQueue());
   const accept=useCallback((next:RoomState)=>{if(!current.current||next.revision>=current.current.revision){current.current=next;setRoom(next);}},[]);
   const refresh=useCallback(async()=>{const r=await api.room(id);accept(r);return r;},[id,accept]);
   useEffect(()=>{
@@ -26,12 +28,20 @@ function useRoom(id:string){
     return()=>{closed=true;if(timer)clearTimeout(timer);socket?.close();};
   },[id,accept,refresh]);
   const action=useCallback(async(a:ShowAction)=>{
-    if(!current.current)return null;setBusy(true);setError(null);
-    try{const next=await api.action(current.current,a);accept(next);return next;}
-    catch(e){if(e instanceof ApiError&&e.status===409)await refresh().catch(()=>{});setError(e instanceof Error?e.message:'The cue could not be applied.');return null;}
-    finally{setBusy(false);}
-  },[accept,refresh]);
-  return{room,current,accept,refresh,action,error,setError,transport,busy};
+    const requested=current.current;if(!requested)return null;pendingActions.current++;setBusy(true);setError(null);
+    try{return await mutations.run(async()=>{
+      const latest=current.current;
+      if(!latest||latest.attempt?.id!==requested.attempt?.id||latest.attempt?.ownerClientId!==requested.attempt?.ownerClientId||latest.recipe?.hash!==requested.recipe?.hash)throw new Error('The encounter changed. Review the current stage before applying that cue.');
+      // A queued upload may already have finished the fight. Never apply its old pause to a later cue.
+      if(a.type==='pause'&&['paused','result','showbill','ended'].includes(latest.phase))return null;
+      if(['ended','showbill'].includes(latest.phase)&&latest.phase!==requested.phase)throw new Error('The show has ended. Review the current stage before applying that cue.');
+      try{const next=await api.action(latest,a);accept(next);return next;}
+      catch(e){if(e instanceof ApiError&&e.status===409)await refresh().catch(()=>{});throw e;}
+    });}
+    catch(e){setError(e instanceof Error?e.message:'The cue could not be applied.');return null;}
+    finally{pendingActions.current--;setBusy(pendingActions.current>0);}
+  },[accept,refresh,mutations]);
+  return{room,current,accept,refresh,action,mutations,error,setError,transport,busy};
 }
 
 function AudienceCue({room}:{room:RoomState}){
@@ -49,7 +59,7 @@ function AudienceCue({room}:{room:RoomState}){
 }
 
 export function LivePlay({id,preferences,navigate,onSettings}:{id:string;preferences:Preferences;navigate:(p:string)=>void;onSettings:()=>void}){
-  const live=useRoom(id),{room,current,accept,action,refresh,transport,busy}=live;
+  const live=useRoom(id),{room,current,accept,action,mutations,refresh,transport,busy}=live;
   const [client]=useState(clientIdentity),[outbox]=useState(()=>new EventOutbox('aragoz.outbox.'+id)),uploading=useRef(false);
   const [armed,setArmed]=useState<string|null>(null),[localPause,setLocalPause]=useState(true),[stageReady,setStageReady]=useState(false),[snapshot,setSnapshot]=useState<CombatSnapshot|null>(null),[pending,setPending]=useState(0),[caption,setCaption]=useState<{slot:SlotId;broken:boolean}|null>(null),[syncError,setSyncError]=useState<string|null>(null),[history,setHistory]=useState<BossRecipe[]>([]),[historyStatus,setHistoryStatus]=useState<'idle'|'loading'|'ready'|'error'>('idle');
   const captionTimer=useRef<ReturnType<typeof setTimeout>|null>(null),pauseRequest=useRef(false);
@@ -59,13 +69,19 @@ export function LivePlay({id,preferences,navigate,onSettings}:{id:string;prefere
   useEffect(()=>{if(!room||!['result','showbill','ended'].includes(room.phase))return;let active=true;setHistoryStatus('loading');void api.showbill(id).then(b=>{if(active){setHistory(b.recipes);setHistoryStatus('ready');}}).catch(()=>{if(active)setHistoryStatus('error');});return()=>{active=false;};},[id,room?.phase,room?.results.length]);
   useEffect(()=>()=>{if(captionTimer.current)clearTimeout(captionTimer.current);},[]);
   const flush=useCallback(async()=>{
-    const r=current.current;if(uploading.current||!r?.attempt||r.phase!=='combat')return;
-    const batch=outbox.pending(r.attempt.id);setPending(outbox.count(r.attempt.id));if(!batch.length)return;
+    const requested=current.current;if(uploading.current||!requested?.attempt||requested.phase!=='combat')return;
+    if(!outbox.count(requested.attempt.id))return;
     uploading.current=true;
-    try{const next=await api.events(r,client,batch);outbox.acknowledge(batch);accept(next);setSyncError(null);}
-    catch(e){if(e instanceof ApiError&&e.status===409)await refresh().catch(()=>{});setSyncError(e instanceof Error?e.message:'Results are saved locally until the connection returns.');}
-    finally{uploading.current=false;setPending(outbox.count(r.attempt.id));}
-  },[accept,current,refresh]);
+    try{await mutations.run(async()=>{
+      const r=current.current;
+      if(!r?.attempt||r.phase!=='combat'||r.attempt.status!=='running'||r.attempt.id!==requested.attempt!.id||r.recipe?.hash!==requested.recipe?.hash||r.attempt.ownerClientId!==client)return;
+      const batch=outbox.pending(r.attempt.id);setPending(outbox.count(r.attempt.id));if(!batch.length)return;
+      try{const next=await api.events(r,client,batch);outbox.acknowledge(batch);accept(next);setSyncError(null);}
+      catch(e){if(e instanceof ApiError&&e.status===409)await refresh().catch(()=>{});throw e;}
+    });}
+    catch(e){setSyncError(e instanceof Error?e.message:'Results are saved locally until the connection returns.');}
+    finally{uploading.current=false;const active=current.current?.attempt;if(active)setPending(outbox.count(active.id));}
+  },[accept,current,refresh,mutations,outbox,client]);
   useEffect(()=>{const timer=setInterval(()=>void flush(),700);return()=>clearInterval(timer);},[flush]);
   const receiveEvents=(batch:EncounterEvent[])=>{
     outbox.append(batch);if(current.current?.attempt)setPending(outbox.count(current.current.attempt.id));
