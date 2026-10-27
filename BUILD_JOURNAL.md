@@ -1,5 +1,13 @@
 # Build journal
 
+## 2026-10-27 — real-data isolated controller/offline-upload verification
+
+- Owner requested full continuation and reconfirmed browser controls enabled. Root made one freshCUAtabcheck and one directDevpostproject1268295read; bothstilldeny(browserWorksetting/appreauth). Treated as tool/settings mismatch, no repeated togglerequest orauthsetup/browserbypass. Continued a concrete backendverification gap withinB03 rather than repeating game suites or inventing provider/human acceptance.
+- Fromcleanmain84c387656c734e39b166e32b3d36ae775c973397, rootaloneaddedverify-restored-controller.mjs. OnlinebackedupactualpublicDBprivately, usedisolatedlocalhostapp/backgroundoff/providerfactoriesguarded, reusedexistingunexpiredOAuth-linkedARAGOZsessiononlyinrestoredcopy. No mintedidentity/browsercredentialextraction/liveHTTPmutation/DBreplacement. PureTSsimulationproducedlabelledeventprobes; no fakegameplay/viewer/win.
+- ActualNode24HTTP36/36checks passed initially in0.47s; strengthening measured session-row identity/count preservation passed again in0.41s: endedfences;immutableEncore;explicitcontroltakeover/oldabandonment/freshpausedattempt;correctclient/revision/attemptsequences;exactduplicateidempotence/conflictrejection;paused/resumeduploads;late/anonymousdenial. Originalgenuinewinretained. Livecommittedshow/recipe/result/eventfingerprintunchangedat1/1/1/17.0providerrequests/0sockets/0newauthenticatedsessions/0liveHTTPmutations. Isolatedlistenerclosed;privatecopy/sessiondataignored0600/0700. Evidenceandscopedreportretainlimits; publictwo-window/multichannel andprovider/humanacceptance stillopen.
+- No product/API/combat/contracts/dependency changes or unneeded fullbuild/game/OBSreruns. Resourceverifyadmitted4.42GiBfree;noENOSPC/unrelatedcleanup/spending. UpdatedB03status/handoff/sourceidentity andlocalreview/sourceZIPs fornewverificationfiles. Privatepublicationapproved; voice-bearingZIPs/media remainignored/local. FinalpushedHEAD/cleanstateandbundleidentityrecorded.runtime/delivery-state.json.
+
+
 ## 2026-10-27 — clean master, verified delivery bundles and approved sign-in attempt
 
 - Continued from cleanmain8a2fece00eaa5a033dad8425c87c1f6958c0587f, root alone. Re-read working agreement/handoff and scoped source brief; retained no-spend/mute/actual-evidence boundaries. Browser recheck still disabled. Devpostwhoami still reauthenticationrequired; no repeated auth/data calls.

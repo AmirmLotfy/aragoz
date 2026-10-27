@@ -62,6 +62,7 @@ def main():
         'submission/DEVPOST.md','devpost-submission.md','submission/JUDGE_GUIDE.md',
         'submission/YOUTUBE_UPLOAD.md','submission/FINAL_CAPTURE_PACKET.md','submission/DELIVERY.md',
         'submission/VOICE_INTEGRATION.md','submission/RESEARCH.md','submission/MEDIA_MANIFEST.json',
+        'ops/CONTROLLER_RECOVERY_REHEARSAL.md','evidence/restored-controller-recovery-20261027.json',
     ]+['submission/screenshots/'+name for name in [
         '01-real-twitch-vote.png','02-rule-activates.png','03-counter-opens.png','04-module-breaks.png','05-credited-showbill.png']]
     review_zip=OUT/'ARAGOZ-review-package.zip';review_manifest=[]

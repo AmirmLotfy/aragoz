@@ -20,6 +20,10 @@ Both movies are1920×1080/30fps,160seconds/4800frames. The clean master removes 
 
 No autoplay or speaker test was used. All rendering and archive checks were local. Full media decodes passed. The original prototype, video plan, source prompts, actual screenshot provenance and source-bound test reports remain in the repository.
 
+## Additional recovery evidence
+
+A36-check actual localhost HTTP rehearsal on an isolated restore of genuine ARAGOZ account/session/recipe/result data passed controller takeover and stale/offline upload fences. The live database fingerprint and original win were preserved, with no provider calls or new authenticated session. See ops/CONTROLLER_RECOVERY_REHEARSAL.md and its sanitized receipt in the source bundle. This remains separate from public browser/provider/human acceptance.
+
 ## Final external steps
 
 1. Complete the intended Twitch/Codex footage upgrades when supported capture control is available. The official public rules request working-Twitch and Codex-build footage; they do not prescribe one uninterrupted take. Our stronger causal sequence is an editorial recommendation, not an invented official condition. See FINAL_CAPTURE_PACKET.md.

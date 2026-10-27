@@ -1,0 +1,248 @@
+{
+  "kind": "Isolated localhost HTTP recovery using genuine persisted channel/session/recipe/result; deterministic simulation event probes; not live-provider/browser/human acceptance",
+  "at": "2026-10-27T20:32:11.779Z",
+  "checks": [
+    {
+      "name": "source has no active show",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "genuine committed encounter and accepted win exist",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "existing unexpired OAuth-linked ARAGOZ session restored",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "restored real session authorizes its invited channel",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "real original ledger event retained",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "ended show rejects even an old exact duplicate",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "ended show cannot claim control",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "stale room revision cannot start Encore",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "action accepted: encore",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Encore retains immutable recipe and genuine result",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "action accepted: claim-control",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "second client needs explicit takeover",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "non-controller cannot start combat",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "action accepted: start-combat",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "controller simulation event accepted over real localhost HTTP",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "exact retry is idempotent despite prior revision",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "conflicting retry cannot rewrite original event",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "action accepted: claim-control",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "takeover abandons old attempt and creates fresh paused attempt",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "action accepted: resume",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "prior exact duplicate acknowledges without advancing current attempt",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "old controller cannot flush queued damage",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "old attempt rejected even with new controller ID",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "new attempt rejects wrong controlling client",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "new controller owns fresh event sequence",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "current attempt rejects stale upload revision",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "action accepted: pause",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "paused attempt rejects queued damage",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "action accepted: resume",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "resumed owner can continue exact sequence",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "action accepted: end-show",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "ended new attempt rejects late offline upload",
+      "pass": true,
+      "detail": {
+        "status": 409
+      }
+    },
+    {
+      "name": "anonymous upload cannot access restored encounter",
+      "pass": true,
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "original actual win remains byte-identical",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "no provider calls, sockets or new authenticated sessions",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "live committed show/recipe/result/event rows unchanged",
+      "pass": true,
+      "detail": {
+        "counts": {
+          "shows": 1,
+          "recipes": 1,
+          "results": 1,
+          "encounter_events": 17
+        }
+      }
+    }
+  ],
+  "providerCalls": 0,
+  "providerSockets": 0,
+  "liveHttpMutations": 0,
+  "newAuthenticatedSessions": 0,
+  "complete": true,
+  "limits": [
+    "Persisted session and data are genuine; all mutations target an isolated localhost restore.",
+    "Event probes come from pure TypeScript simulation, not browser gameplay.",
+    "No new OAuth/chat/provider lifecycle, public-hosted controller-window, multichannel or human acceptance is established.",
+    "No Devpost/browser restriction was bypassed; original production state and credentials remain private."
+  ]
+}

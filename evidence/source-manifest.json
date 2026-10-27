@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 56154,
-      "sha256": "4af363f489b90b7c1ce125108bba296868e0dd7d5c2b2792ee892b6eb0b7d182"
+      "bytes": 58171,
+      "sha256": "748240b2ce6bd71214b648ac32fe3e4c5c2498ba216d6980adf967f527568397"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 12630,
-      "sha256": "727bbbfa2ebbafc07eae0c0ec2f3af4b3580db0ce7c4a513fcd40dab794cf67d"
+      "bytes": 14555,
+      "sha256": "990f27635288748e3ae34df5d3cb88201cd2f5f678d9cca174f12fcc4d7707b6"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -96,8 +96,8 @@
     },
     {
       "path": "REMAINING_WORK.md",
-      "bytes": 10454,
-      "sha256": "eee2de721b009ffb6d954f0636f5a59a99e687e6a65c341e0be5a245b8286f56"
+      "bytes": 10858,
+      "sha256": "ef787e1f3d6b1db9a15086fbadb3bf113b9cad16a257bed2b664aae3f93ea651"
     },
     {
       "path": "SOURCE_LOG.md",
@@ -1480,6 +1480,11 @@
       "sha256": "9a2e23c5c6d7b84b8b877da8f545f5a186c2624f0e2358ec0261201a2be893c8"
     },
     {
+      "path": "evidence/restored-controller-recovery-20261027.json",
+      "bytes": 5583,
+      "sha256": "65458564c19c541b3db22b6d8f0566b45a9e406938483269fff1f6e9c8edf418"
+    },
+    {
       "path": "evidence/silent-test-policy.json",
       "bytes": 927,
       "sha256": "71282c61024fd6ac938dbdc35ec525be2d6c05e2c45a9492b6a19320a0ac58b5"
@@ -1668,6 +1673,11 @@
       "path": "ops/AUTONOMOUS_RELEASE_REVIEW.md",
       "bytes": 6930,
       "sha256": "ddbd9076a82d36bf1a1b26a4032bb5bf0ccf1011a5cfae0cc52c5fed80c4020b"
+    },
+    {
+      "path": "ops/CONTROLLER_RECOVERY_REHEARSAL.md",
+      "bytes": 3651,
+      "sha256": "77951997732e011fd62e629f52bf38202e63cb5dd7ca58c1b2a03fedd96cf983"
     },
     {
       "path": "ops/NO_COST_HOSTING.md",
@@ -1870,9 +1880,14 @@
       "sha256": "49642f8cd83da111e4292fd11a4a2477637f996ee24c224ef4f1c5814f3467cb"
     },
     {
+      "path": "scripts/verify-restored-controller.mjs",
+      "bytes": 11717,
+      "sha256": "04eef991907a5c843fc1d145fd4e4582e6ffc6724fac4e218b25d766d59e103d"
+    },
+    {
       "path": "submission/DELIVERY.md",
-      "bytes": 3469,
-      "sha256": "cd59bdee823aae4617e64f02cb6f53966da97915bce9ad67a0cb26f122fc46ad"
+      "bytes": 3955,
+      "sha256": "1b5315a1da1e069d6be0b346497f1ba0bbea004c64058fd74926383246981736"
     },
     {
       "path": "submission/DEVPOST.md",
@@ -1991,8 +2006,8 @@
     },
     {
       "path": "submission/source/package_delivery.py",
-      "bytes": 6794,
-      "sha256": "e514eb0bed642779a1abeedede74dfb8123cb1e301ab2a9a1758c39317a4c18f"
+      "bytes": 6896,
+      "sha256": "b297034a679b128c6ea245bdc4942bc696ea94019366cbb99db4a63b6db3024d"
     },
     {
       "path": "submission/video/RENDER_RECEIPT.json",
