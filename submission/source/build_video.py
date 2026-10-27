@@ -162,14 +162,14 @@ def prepare(caption_overrides=None, voice_ready=False):
         path=WORK/f'overlays-{i:02}.ffconcat';path.write_text('\n'.join(playlist)+'\n');scene['overlayPlaylist']=str(path.relative_to(ROOT));timeline.append(scene)
     (OUT/'TIMELINE.json').write_text(json.dumps({'duration':TOTAL,'fps':FPS,'resolution':[W,H],'status':'voice-aligned-review-final-footage-pending' if voice_ready else 'review-cut-voice-and-final-footage-pending','scenes':timeline,'captions':cues},indent=2)+'\n')
     records.append({'file':str(MOV.relative_to(ROOT)),'sha256':sha(MOV),'evidence':'actual original M1 OBS; AI-led House rehearsal; source02f6b75','privateSource':True,'retention':'ignored local source, never copied or uploaded'})
-    (ROOT/'submission/MEDIA_MANIFEST.json').write_text(json.dumps({'created':'2026-10-27','status':'unpublished-production-packet','gallery':records,'cover':{'file':'submission/artwork/aragoz-devpost-3x2.png','sha256':sha(ROOT/'submission/artwork/aragoz-devpost-3x2.png'),'kind':'generated promotional key art, never gameplay'},'limits':['No genuine human acceptance sessions.','Review cut uses actual Twitch stills plus separate OBS rehearsal motion.','Build notes are editorial; actual Codex UI capture remains pending.','Voice, final upload/access and submission approval remain pending.']},indent=2)+'\n')
+    (ROOT/'submission/MEDIA_MANIFEST.json').write_text(json.dumps({'created':'2026-10-27','status':'unpublished-production-packet','gallery':records,'cover':{'file':'submission/artwork/aragoz-devpost-3x2.png','sha256':sha(ROOT/'submission/artwork/aragoz-devpost-3x2.png'),'kind':'generated promotional key art, never gameplay'},'limits':['No genuine human acceptance sessions.','Review cut uses actual Twitch stills plus separate OBS rehearsal motion.','Build notes are editorial; actual Codex UI capture remains pending.','Final footage, upload/access and submission approval remain pending. Voice integration is documented separately.']},indent=2)+'\n')
     print(json.dumps({'preparedScenes':len(timeline),'captionCues':len(cues),'voiceWords':sum(len(t.split()) for t in texts),'gallery':len(gallery)}),flush=True)
 
 def run(args):
     r=subprocess.run(args,cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
     if r.returncode: raise RuntimeError(r.stderr[-3500:])
 
-def render():
+def render(picture_only=False):
     j=json.loads((OUT/'TIMELINE.json').read_text()); parts=[]
     for s in j['scenes']:
         dest=WORK/f'scene-{s["index"]:02}.mp4'; parts.append(dest)
@@ -184,6 +184,9 @@ def render():
     playlist=WORK/'scenes.ffconcat';playlist.write_text('\n'.join(f"file '{p}'" for p in parts)+'\n')
     clean=OUT/'aragoz-review-picture.mp4'
     run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(playlist),'-c','copy','-movflags','+faststart',str(clean)])
+    if picture_only:
+        print(json.dumps({'pictureOnly':str(clean.relative_to(ROOT)),'seconds':TOTAL}),flush=True)
+        return clean
     bed=WORK/'original-editorial-bed.wav'; sr=48000; duration=TOTAL; data=bytearray(sr*duration*2)
     # Quiet original wood-like pulses; fixed authored sequence, no samples or output device.
     beats=[]

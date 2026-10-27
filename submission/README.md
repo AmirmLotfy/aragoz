@@ -12,6 +12,10 @@ Local draft prepared27October2026. **Nothing has been sent to Devpost or YouTube
 
 The official web pages show a2November2026,14:00PST cutoff, equivalent to3November00:00Cairo. The FAQ has an inconsistent UTC conversion; aim internally for1November and recheck the actual countdown. Research details/URLs are in RESEARCH.md. Do not treat this production packet as an eligibility attestation or accepted entry.
 
+## Complete local delivery
+
+See [DELIVERY.md](DELIVERY.md). `local-review/ARAGOZ-review-package.zip` contains both narrated masters, SRT, cover, gallery, copy/upload notes and a runnable source ZIP. `local-review/aragoz-narrated-clean.mp4` has no burned-in narration captions and exactly the same reviewed AAC audio. Source/archive hashes and CRC checks are recorded locally; credentials, original voice, raw recordings and private databases are excluded. Nothing is uploaded by packaging.
+
 ## Final steps, kept at the end
 
 1. Review the integrated narration and final picture; prepare publication masters after the remaining footage replacements. The local narrated review is160seconds with retimed captions and measured−16.11LUFS/−3.82dBTP.
