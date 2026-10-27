@@ -77,3 +77,37 @@ title and Play video control with no autoplay. The direct standalone-embed153
 was referer-context specific; the real Devpost iframe loaded successfully. No
 speaker playback/full external decoding claim. Screenshot: evidence/devpost-rendered-preview-20261028.jpg.
 The owner-facing Additional info tab remains open for manual eligibility.
+
+##28October — owner recording and README build history
+
+The owner supplied a silent screen recording and explicitly asked to add it and
+explain how ARAGOZ was planned/built in README. Root added the narrated demo/cover,
+actual screenshot gallery, supplied planning clip and an eight-step source-linked
+build history. It distinguishes human direction/approvals/narration/account
+actions from Codex coordination, bounded specialists, code/assets/tests/operations
+and media work. Runtime mapping remains six authored profiles with paid calls off.
+
+One bounded media specialist owns only docs/media/aragoz-codex-planning.mp4,
+its poster and evidence/owner-planning-recording-20261028.json. It reviews and
+compresses the user attachment; it captures no app/browser and uses no provider,
+spending or audio playback. Earlier tool capture denials remain historical; this
+new evidence was supplied by the owner. The original input is unchanged and stays
+out of Git. Recording/source identities and actual review/decode limits are in
+that receipt. Historical status/policy text is labelled retrospective, not current
+release proof. The existing YouTube movie and Devpost were not changed by this
+packet. The owner still handles eligibility/final entry manually.
+
+Root owns README, supporting media manifest/submission index, this handoff/journal,
+source manifest and Git/archive refresh. No gameplay, dependencies, credentials,
+configuration or runtime process changes. Check actual HEAD/status; final source
+and review archives are refreshed from the clean pushed checkpoint and identified
+in ignored submission/local-review/DELIVERY_BUNDLE_RECEIPT.json.
+
+README packet verification: all local README/submission-index targets exist;
+MP4/poster SHA256 and byte sizes match the receipt; silent H2641920×1200/30fps
+MP4 is9,936,859bytes and passed full decode. The entire decoded source sequence
+is preserved(21.133333s at30fps, original MOV header20.346667s; no artificial
+trim/speed change). Root inspected the actual poster. Current source inventory
+passed private-path/configured-secret exclusion checks. No gameplay suite rerun
+for this documentation/media-only change. Specialist finished with no pending
+media job; root remains integration/Git owner.

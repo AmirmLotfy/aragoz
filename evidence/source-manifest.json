@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 66868,
-      "sha256": "4d5dd073f1acdcc9824bbca9b6f6bf73f661ce26e759986146de93898c1b6359"
+      "bytes": 68716,
+      "sha256": "d88c5198bfa8bcf6e5429b5939211a38577dfa34e1c3d4bab001ae841ce9274d"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 14408,
-      "sha256": "8e68e06ee5a1537790ebcf4dd1d1dcdf4017542699e336bc53a6f5127e07f971"
+      "bytes": 16657,
+      "sha256": "6d7913eb98481122273a0df1def1b966f9535e470d96cebcfaf148a6c054fca3"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -91,8 +91,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9125,
-      "sha256": "3f781baec1e9671b30feda89497e5e8673111d928a39848776879f4c76e0748f"
+      "bytes": 17904,
+      "sha256": "b0fdd1af3952d8cef039c3bdc32387fcb41fdaf53bcbe304a08d0aa9bbaad702"
     },
     {
       "path": "REMAINING_WORK.md",
@@ -768,6 +768,16 @@
       "path": "devpost-submission.md",
       "bytes": 6704,
       "sha256": "307e53aec5ad1a8ecb3414285d31ea6291cdaf6d6e679283f43a06763e0fe0d5"
+    },
+    {
+      "path": "docs/media/aragoz-codex-planning-poster.jpg",
+      "bytes": 232453,
+      "sha256": "93e39ca42a414c58319fd23da4249257749b09022af844e0a015bab639cb3710"
+    },
+    {
+      "path": "docs/media/aragoz-codex-planning.mp4",
+      "bytes": 9936859,
+      "sha256": "3b4e83c6e310287716075c4df45e7623757be39776e0a31f0c727c24ef5f044d"
     },
     {
       "path": "evidence/asset-format.tap",
@@ -1480,6 +1490,11 @@
       "sha256": "653923d74761c4d7ae0c7a70201da8288576c54584b277415406a7aa1d360304"
     },
     {
+      "path": "evidence/owner-planning-recording-20261028.json",
+      "bytes": 7056,
+      "sha256": "7100980d603500efb082cde9e5a620a85c4ede694eb8569c56f268e01753d689"
+    },
+    {
       "path": "evidence/public-house-restored-20261028.jpg",
       "bytes": 86629,
       "sha256": "37420289cafd5724d1e7e452a51b408bb6173eab7ba44e88e8e9ebd0e98b6e4e"
@@ -1991,8 +2006,8 @@
     },
     {
       "path": "submission/MEDIA_MANIFEST.json",
-      "bytes": 4398,
-      "sha256": "f1f28bd04ff8f69b5528a7df429de9858f23bc979cc0434d225df657bb2800f5"
+      "bytes": 5009,
+      "sha256": "057be1baac0d3cb322c5aadf11b846dd9c6427cf466b4219bc26af1a3ec6e012"
     },
     {
       "path": "submission/QA_RECEIPT.json",
@@ -2001,8 +2016,8 @@
     },
     {
       "path": "submission/README.md",
-      "bytes": 4017,
-      "sha256": "c84617d744defc573da5fe5b405ffe3bedaab4ee5002871c7e1787a53155f9f3"
+      "bytes": 4380,
+      "sha256": "b5de921bbe4ae2edac1921470603ade1a49fe1e800161585ceaac5bc59e37452"
     },
     {
       "path": "submission/RESEARCH.md",

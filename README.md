@@ -4,6 +4,57 @@ Chat makes the monster. You find the loophole.
 
 ARAGOZ is a browser action game where Twitch viewers propose powers with built-in flaws. The selected contract attaches a physical module; exploiting the flaw opens a counter and breaking the module removes its ability.
 
+## Demo and media
+
+[Watch the narrated demo](https://youtu.be/ej-SDyRD6tE) · [Try the solo House show](https://star-dawn-phases-nevada.trycloudflare.com/house-show) · [Submission and media provenance](submission/README.md)
+
+[![ARAGOZ promotional key art — watch the narrated demo](submission/artwork/aragoz-devpost-3x2.png)](https://youtu.be/ej-SDyRD6tE)
+
+*Original generated promotional illustration, not a gameplay screenshot. The public movie is a 2-minute-40-second edit with supplied narration, actual game captures and clearly labelled development/source review. The free live preview depends on the host Mac and network; local setup below works without Twitch or model credentials.*
+
+### Actual gameplay
+
+These are unchanged captures from a genuine Twitch technical test using one agent-operated broadcaster account. They do not represent a multi-person audience playtest.
+
+| The audience chooses a rule | The flaw creates an opening |
+| --- | --- |
+| ![Real Twitch ballot, credited charge and labelled House alternatives](submission/screenshots/01-real-twitch-vote.png) | ![Stage-block collision exposes the charge axle](submission/screenshots/03-counter-opens.png) |
+| **The physical attachment breaks** | **The showbill keeps the author credit** |
+| ![Broken charge attachment and disabled ability](submission/screenshots/04-module-breaks.png) | ![Accepted encounter result and credited showbill](submission/screenshots/05-credited-showbill.png) |
+
+The [activation capture](submission/screenshots/02-rule-activates.png) and [media manifest](submission/MEDIA_MANIFEST.json) complete the five-image sequence, with source identities and evidence limits.
+
+### Owner-recorded Codex planning walkthrough
+
+[![Actual ARAGOZ Codex conversation and approved implementation plan — open the silent recording](docs/media/aragoz-codex-planning-poster.jpg)](docs/media/aragoz-codex-planning.mp4)
+
+[Watch or download the silent planning recording](docs/media/aragoz-codex-planning.mp4). Amir supplied this recording on 28 October 2026. It shows the actual ARAGOZ Codex conversation, the approved implementation plan and the House page, then scrolls through the project history. This is a retrospective walkthrough, not a continuous recording of every coding step. Historical progress messages in the recording retain their original context. The original capture stays unchanged outside the repository; the linked copy is compressed for delivery. [Recording provenance](evidence/owner-planning-recording-20261028.json).
+
+## How ARAGOZ was planned and built with Codex
+
+The project developed iteratively from 25–28 October 2026. Amir set the product direction and release priorities, approved the plan and visual direction, controlled account permissions and spending, supplied the narration, and recorded the planning walkthrough above. Codex acted as the implementation coordinator: translating the brief into contracts, writing and integrating code, authoring asset scripts, running checks, investigating failures and preparing the submission media. Bounded specialist agents handled concrete assignments such as combat, assets, presentation and backend validation; one coordinator retained ownership of shared contracts and integration. Heavy builds, tests and asset jobs ran one at a time.
+
+Tasks were bounded by concrete files, shared interfaces and acceptance checks. Codex used file/terminal tools for implementation and tests, Blender/Python for editable assets, and supported browser controls for actual UI/provider checks. Specialist changes returned to the coordinator for integration. Findings fed back into the source instead of being treated as automatic acceptance.
+
+The build followed this sequence:
+
+| Step | What was decided or built | Inspect the work |
+| --- | --- | --- |
+| **1. Define the playable idea** | The brief compared related audience-driven games and made the distinguishing chain explicit: a viewer writes a power **and** a flaw; the flaw creates executable counterplay; breaking the physical part removes its power; credit follows the author. Scope was fixed to one hero, one stage, two shells and three mechanic families. | [Original brief](ARAGOZ_Full_Game_Brief.md), [accepted plan](IMPLEMENTATION_PLAN.md) |
+| **2. Establish contracts and authority** | Versioned schemas define recipes, modules, room state, events and assets. A committed recipe has exactly two distinct families and an immutable hash. The server owns identity, ballots, deadlines and accepted results; the browser owns responsive combat. | [Executable schemas](packages/contracts/src/index.ts), [contract notes](CONTENT_SCHEMA.md) |
+| **3. Make the rules executable** | A pure TypeScript simulation advances at 60 Hz. Charge locks direction and exposes its axle on a block; steam overheats and exposes its valve; echo follows recorded movement and exposes its mirror on a block. Exposure accelerates break progress. A break cancels that module's damage in the same step; both breaks unlock the final strike. | [Combat simulation](packages/combat/src/index.ts), [mechanic tests](packages/combat/src/index.test.ts) |
+| **4. Connect the live show** | Fastify, SQLite and WebSockets manage the show. OAuth and Twitch EventSub receive round-coded proposals/votes. Private review, hard cutoffs, replacement votes and idempotent event uploads feed the public stage. React handles menus; Babylon renders the locally packaged 3D theatre. | [Twitch transport](apps/server/src/twitch.ts), [show engine](apps/server/src/engine.ts), [live UI](apps/web/src/Live.tsx), [stage](apps/web/src/theatre.ts) |
+| **5. Produce and admit the art** | Built-in image generation produced the concept sheet; Amir approved its direction on 26 October. Codex-authored Blender/Python scripts then produced seven original editable assets, materials, rigid animation, sockets and GLB exports. Static checks and Babylon inspection preceded runtime admission. No paid Meshy batch was used. | [Art bible](ART_BIBLE.md), [approval](assets/concepts/approval.json), [Blender source script](scripts/blender/build_local_kit.py), [asset admission](assets/production/local-kit-admission.json), [rights](ASSET_LICENSES.md) |
+| **6. Complete the product around combat** | Three acts, assembly, tutorial, distinct outcomes, Encore, one-slot Remix, attribution and showbills were integrated with accessibility controls and recovery. When Twitch setup was delayed, the complete account-free House show progressed independently. It labels authored content as House and keeps local saves separate from server-owned shows. | [House show](apps/web/src/house-show.ts), [controls/settings](apps/web/src/settings.ts), [server persistence](apps/server/src/store.ts) |
+| **7. Test, observe, repair** | Unit/server tests check rules and permissions; Playwright exercises browser flows; actual M1/OBS sessions measure presentation; genuine Twitch tests check the provider chain. Findings changed the code: arena framing, Retina presentation, render scheduling, final-strike assistance and a Pause/event-upload revision race. The latter was reproduced with a held real browser request and fixed with one per-room mutation queue. | [Test plan](TEST_PLAN.md), [performance](ops/PERFORMANCE_REPORT.md), [real Twitch report](ops/TWITCH_LIVE_VALIDATION.md), [pause-race fix](ops/LIVE_PAUSE_QUEUE_FIX.md) |
+| **8. Package the preview and explain it** | A no-cost Mac-hosted HTTPS preview preserves SQLite data locally. Source, rights and run instructions are public. Codex assembled the cover, actual screenshots, edit, captions and supplied narration into the demo, then verified media decodes and archive hashes. Genuine human acceptance remains a separate release gate. | [Hosting](ops/NO_COST_HOSTING.md), [media receipt](evidence/submission-media-20261028.json), [delivery](submission/DELIVERY.md) |
+
+The development agent and the runtime game have different roles. **Codex helped build ARAGOZ; a language model does not run the fight.** Current live proposals match a strict supported grammar to six authored profiles. The optional OpenAI structured-mapping/moderation path is implemented and mock-tested, but paid runtime calls remain disabled under the owner's no-spending instruction. The shipped game does not generate arbitrary mechanics, code or meshes from chat.
+
+This was a sequence of implementation and repair steps, not a single prompt producing an accepted release. [BUILD_JOURNAL.md](BUILD_JOURNAL.md) records dated decisions and checks; [Git history](https://github.com/AmirmLotfy/aragoz/commits/main/) shows the committed changes. Passing local or mocked tests is kept distinct from real Twitch, OBS, hosted and human evidence. No first-time host/viewer acceptance session is claimed.
+
+## Current status and evidence
+
 **Status:** functioning technical preview: complete three-act House show, rehearsal, three mechanic families, two shells, physical breaks, outcomes, Encore/Remix and recovery. Source7fabb61 passed typecheck/release build,171unit/server tests and one28/28browser run; four final affected typography cases passed separately. Seven original Blender GLBs are admitted. Actual M1/OBS measurements recommend1080p30presentation with unchanged60Hzsimulation; those recordings retain their source limits. On27October, one genuine Twitch account operated by the agent completed OAuth/chat/proposal/vote, a credited accepted win, real token refresh, encrypted backup/restore and authenticated restart. See [real Twitch evidence](ops/TWITCH_LIVE_VALIDATION.md), [performance](ops/PERFORMANCE_REPORT.md) and [remaining work](REMAINING_WORK.md). Genuine host/viewer acceptance and specific remaining provider/isolation cases remain open; the full release is not yet accepted.
 
 **Hackathon preparation:** [submission packet](submission/README.md) includes the Devpost story,3:2promotional cover, five actual screenshots,160-second captioned review video and owner voiceover script. The supplied voice is integrated into the final narrated movie; see [voice integration](submission/VOICE_INTEGRATION.md). The existing Devpost draft now contains the saved story, confirmed form answers, approved cover/gallery and links. New local narrated masters include actual Twitch assembly and charge-break motion, with original narration preserved. The build chapter shows actual GitHub source/commit review of a Codex-built fix, explicitly not Codex app footage. Public judge source access is verified; the [captioned movie is public](https://youtu.be/ej-SDyRD6tE) and saved in the draft. Eligibility/final entry remain pending; see [draft status](submission/DEVPOST_DRAFT_STATUS.md). The entry remains Draft3/5; the owner will complete eligibility manually.

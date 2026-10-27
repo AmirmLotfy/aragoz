@@ -79,5 +79,15 @@
     "receipt": "evidence/youtube-publication-20261028.json",
     "DevpostState": "Draft3/5",
     "finalEntry": false
+  },
+  "ownerProvidedPlanningRecording": {
+    "file": "docs/media/aragoz-codex-planning.mp4",
+    "poster": "docs/media/aragoz-codex-planning-poster.jpg",
+    "receipt": "evidence/owner-planning-recording-20261028.json",
+    "source": "Owner-supplied actual screen recording of the ARAGOZ Codex thread, plan and House UI",
+    "scope": "Retrospective planning/build-history walkthrough; not a continuous capture of every implementation action",
+    "publication": "User explicitly requested addition to the public repository README",
+    "publishedYouTubeMovieChanged": false,
+    "newNativeAppCapture": false
   }
 }

@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-27T23:10:12.840337+00:00",
+  "scope": "Owner-supplied recording prepared for the public ARAGOZ README; no new screen capture, app/browser control, upload, provider call or playback.",
+  "source": {
+    "origin": "User-supplied screen recording, 28 October 2026",
+    "stored_in_repository": false,
+    "original_unchanged": true,
+    "bytes": 67215767,
+    "sha256": "17c20ee9796f82623cb1b973def8adfa21311f433004646dc2160bd8382e5308",
+    "codec": "h264",
+    "width": 2880,
+    "height": 1800,
+    "nominal_frame_rate": "60/1",
+    "average_frame_rate_reported": "58620/1267",
+    "frame_count": 977,
+    "audio_streams": 0,
+    "container_duration_seconds": 20.346667,
+    "last_decoded_frame_pts_seconds": 20.2,
+    "last_decoded_frame_duration_seconds": 0.916667,
+    "complete_decoded_timeline_end_seconds": 21.116667,
+    "duration_note": "The MOV header duration is shorter than the complete decoded frame timeline. Encoding did not use -t or trim; it preserves all decoded sequence and holds at 30fps."
+  },
+  "output": {
+    "path": "docs/media/aragoz-codex-planning.mp4",
+    "bytes": 9936859,
+    "sha256": "3b4e83c6e310287716075c4df45e7623757be39776e0a31f0c727c24ef5f044d",
+    "duration_seconds": 21.133333,
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1200,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "duration": "21.133333",
+        "nb_frames": "634"
+      }
+    ],
+    "under_10000000_bytes": true,
+    "faststart_moov_before_mdat": true
+  },
+  "poster": {
+    "path": "docs/media/aragoz-codex-planning-poster.jpg",
+    "bytes": 232453,
+    "sha256": "93e39ca42a414c58319fd23da4249257749b09022af844e0a015bab639cb3710",
+    "duration_seconds": 0.04,
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "mjpeg",
+        "width": 1920,
+        "height": 1200,
+        "pix_fmt": "yuvj420p",
+        "r_frame_rate": "25/1",
+        "avg_frame_rate": "25/1",
+        "duration": "0.040000",
+        "nb_frames": null
+      }
+    ],
+    "source": "Frame at 0.5 seconds of the encoded derivative, JPEG quality 2; complete frame, no compositing or editorial alteration."
+  },
+  "encoding": {
+    "tool": "FFmpeg 9.0.1",
+    "video_encoder": "libx264",
+    "preset": "medium",
+    "crf": 21,
+    "threads": 2,
+    "filter": "scale=1920:1200:flags=lanczos,fps=30",
+    "pixel_format": "yuv420p",
+    "movflags": "+faststart",
+    "audio": "none",
+    "metadata": "map_metadata -1",
+    "cuts_or_speed_changes": false,
+    "frame_rate_conversion": "Original timestamps retained through fps=30 frame sampling/holds; final CFR duration rounds to a frame boundary."
+  },
+  "checks": {
+    "source_decode": "Successful complete 977-frame ffprobe decode and FFmpeg -xerror encode; no decode errors reported.",
+    "output_full_decode": {
+      "command": "ffmpeg -hide_banner -v error -xerror -i docs/media/aragoz-codex-planning.mp4 -map 0:v:0 -f null -",
+      "exit_code": 0
+    },
+    "encoded_visual_review_seconds": [
+      0.5,
+      4,
+      7,
+      13,
+      16,
+      20.5
+    ],
+    "legibility": "Plan headings, primary body text and House ballot remain readable at native 1920x1200; fast scrolling and embedded thumbnail text retain source limitations.",
+    "poster_reviewed": true
+  },
+  "privacy_review": {
+    "decision": "Admitted for requested public README use after bounded visual and OCR review.",
+    "visual_sampling": "All 21 frames extracted with fps=1 across the complete decoded clip, source opening frame, and denser selected scene/scroll transitions.",
+    "dense_visual_frame_indices": [
+      15,
+      18,
+      22,
+      25,
+      29,
+      50,
+      54,
+      58,
+      60,
+      61,
+      62,
+      63,
+      64,
+      66,
+      67,
+      70,
+      72,
+      77,
+      81,
+      84
+    ],
+    "dense_sampling": "84 complete source frames extracted with fps=4; OCR of all 84 using Tesseract psm 11. Sample indices begin at 1 and approximately correspond to (index-1)/4 seconds, with nearest-source-frame rounding.",
+    "ocr_flags": {
+      "credential_keywords": [
+        61,
+        62,
+        67,
+        72
+      ],
+      "email_like": [],
+      "common_credential_value_shapes": [],
+      "phone_like": []
+    },
+    "keyword_flag_review": "Frames 61/62 show historical no-app-or-secret and 2FA-required registration prose; frame 67 mentions token-refresh acceptance/authorization, frame 72 mentions session-ID requirements. These contain no visible credential values. All four flagged frames inspected visually.",
+    "observed_contents": [
+      "ARAGOZ Codex thread with owner approval to implement the plan",
+      "Original game brief and first-release implementation plan",
+      "Historical progress, concept approval, asset/diff summaries and remaining-work updates",
+      "Opening account-free House ballot with House labels and Unmute button",
+      "Small historical Twitch application-registration screenshot with a 2FA-required error",
+      "Promotional cover, upload approval and published-video status within the same project conversation"
+    ],
+    "sensitive_findings": "No phone number, email address, credential value or private unrelated conversation observed in reviewed samples. No phone-like/email/common-credential-value OCR flags. Earlier collapsed thread history is not expanded in the recording.",
+    "public_context": "Visible project owner name, public preview origin and local ARAGOZ workspace path are already intentional public repository context; coordinator confirmed that this same workspace path does not require redaction. Historical storage/paid-hosting text is superseded planning, not executed spending.",
+    "limitations": "Visual review sampled the entire timeline at one-second intervals plus selected transitions; OCR sampled at quarter-second intervals. This is not an exhaustive human reading of all 977 frames, and OCR may miss small, blurred or briefly visible text."
+  },
+  "evidence_limits": [
+    "User-recorded retrospective navigation of an actual project thread and plan; not a recording of every implementation action.",
+    "Historical progress/test counts and blockers remain historical statements; use current repository receipts for current status.",
+    "The House page labels authored content as House; this clip does not prove genuine viewer acceptance, provider configuration or final release acceptance.",
+    "No native Codex capture permission was exercised or bypassed; only the supplied attachment was processed."
+  ],
+  "ownership": {
+    "coordinator": "root",
+    "packet": "readme_recording",
+    "owned_files": [
+      "docs/media/aragoz-codex-planning.mp4",
+      "docs/media/aragoz-codex-planning-poster.jpg",
+      "evidence/owner-planning-recording-20261028.json"
+    ],
+    "git_head_at_start": "377b608543f019db3137baf8153d3af446e82c8a",
+    "branch_at_start": "main",
+    "pending_media_processes": []
+  }
+}

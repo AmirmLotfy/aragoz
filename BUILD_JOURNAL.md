@@ -297,3 +297,31 @@ and Play video control without autoplay, resolving the standalone-referer probe
 as a context limitation. Its screenshot is retained; no full remote playback or
 human review is claimed. The owner-facing draft stays on Additional info for the
 manual declarations.
+
+##2026-10-28 — owner-recorded planning walkthrough and README build history
+
+Owner supplied a silent Codex screen recording and requested README inclusion
+and an exact planning/build explanation. Root added demo/key-art links, actual
+gameplay gallery and an eight-step source-linked history: brief/plan, contracts,
+60-Hz combat, live server/Twitch/UI, approved Blender kit, complete House/product
+flow, observed regressions/testing, and no-cost preview/media delivery. Human
+direction/approvals/narration and Codex coordination/specialist implementation are
+attributed separately. Runtime model calls remain off; release acceptance is not
+claimed from the recording or documentation.
+
+A bounded media specialist reviewed only the supplied recording, authored a
+compact silent MP4/poster and recorded hashes/timeline/review limits. No new app
+capture, provider, billable job or audio playback. Original attachment unchanged
+and not committed. Root inspected the derived poster; final media validation and
+link checks are recorded alongside its receipt. Application source/tests remain
+unchanged; no unrelated full-suite rerun or Devpost/YouTube mutation. Root refreshes
+the source manifest and clean-HEAD delivery archives after this checkpoint.
+
+README packet verification: all local README/submission-index targets exist;
+MP4/poster SHA256 and byte sizes match the receipt; silent H2641920×1200/30fps
+MP4 is9,936,859bytes and passed full decode. The entire decoded source sequence
+is preserved(21.133333s at30fps, original MOV header20.346667s; no artificial
+trim/speed change). Root inspected the actual poster. Current source inventory
+passed private-path/configured-secret exclusion checks. No gameplay suite rerun
+for this documentation/media-only change. Specialist finished with no pending
+media job; root remains integration/Git owner.
