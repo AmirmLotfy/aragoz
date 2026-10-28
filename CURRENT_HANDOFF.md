@@ -153,3 +153,11 @@ Remaining: human acceptance0with no supplied participants; server-issued EventSu
 handover/revocation and genuine multichannel are unverified; Devpost personal
 declarations/rules/final entry remain owner-held. No spending or outreach allowed.
 Goal stays active. Do not mark complete/blocked from this first progress turn.
+
+## 28 October — hosted recovery checkpoint
+
+Previous goal turn made progress: server restart-ledger correction, genuine hosted recovery and a frontend offline-feedback fix. Complete muted browser suite now31/31 passed in3.6m (exec98801 terminal0); typecheck/release build passed. Current source diff is Live.tsx plus its browser regression. Fresh artifacts preserved under evidence/browser/release-audit-final-20261028; historical test-output paths restored byte-for-byte. Full evidence and limits: ops/HOSTED_RECOVERY_20261028.md. Unit/server173 and isolated restore43 retain their earlier source scope.
+
+Same public origin star-dawn-phases-nevada.trycloudflare.com; verified supervisor86150, tunnel86151, latest backend94588:3010; local86161:3000 remains older loaded server source. Show8d412f68-63ce-4830-87b9-76f203b568f3 ended. No fight/heavy job/network emulation remains. New setup tab13 and chat14 are operator checks; old bindings may report browser.user unavailable, fresh tabs in browser2 work. No spending/model calls/outreach. Bundled Python disappeared; /opt/homebrew/bin/python3 (3.14.7) is available for stdlib packaging.
+
+Task-owned Linux VM preparation failed under disk pressure; stopped failed profile removed, no unrelated VM touched. No current-source Linux pass. Next: commit/push this checkpoint, refresh clean-HEAD delivery bundles, then remaining genuine provider and submission gates. Devpost remains draft3/5 with owner-held eligibility/rules/entry; human sessions0. Goal remains active, completion unproven.

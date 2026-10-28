@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-28",
+  "kind": "genuine-configured-hosted-operator-two-real-backend-restarts",
+  "roomId": "8d412f68-63ce-4830-87b9-76f203b568f3",
+  "sourceHead": "2485f09",
+  "frontendWorkingTree": true,
+  "firstServerPid": 94587,
+  "secondServerPid": 94588,
+  "before": {
+    "label": "before",
+    "phase": "paused",
+    "attemptId": "01951d1b-87dd-4242-a500-44bce3f75423",
+    "ownerIsNull": false,
+    "lastSequence": 0,
+    "recipeHash": "9ca1fe005d03c94b961e8a7b287716c6cfa1286e851e524c187451b7a0e5728b",
+    "results": [
+      {
+        "attemptId": "be51ec03-c45b-48bc-bc6e-9a56e13a7133",
+        "recipeId": "d80f49c1-03e4-42f5-9dd2-7a66d00d3ebf",
+        "recipeHash": "9ca1fe005d03c94b961e8a7b287716c6cfa1286e851e524c187451b7a0e5728b",
+        "actIndex": 1,
+        "outcome": "abandoned",
+        "durationTicks": 56,
+        "brokenSlots": [],
+        "exploits": 0,
+        "finishedAt": "2026-10-27T23:40:35.411Z"
+      }
+    ],
+    "otherAcceptedResultsHash": "32903a225bd54f5b47e796a083783b71ad0a314e333cd539e895809d0ee3ea11"
+  },
+  "first": {
+    "label": "after-first-restart",
+    "phase": "paused",
+    "attemptId": "ab91b6a7-6c33-47a8-8f4c-ac49f0956496",
+    "ownerIsNull": true,
+    "lastSequence": 0,
+    "recipeHash": "9ca1fe005d03c94b961e8a7b287716c6cfa1286e851e524c187451b7a0e5728b",
+    "results": [
+      {
+        "attemptId": "be51ec03-c45b-48bc-bc6e-9a56e13a7133",
+        "recipeId": "d80f49c1-03e4-42f5-9dd2-7a66d00d3ebf",
+        "recipeHash": "9ca1fe005d03c94b961e8a7b287716c6cfa1286e851e524c187451b7a0e5728b",
+        "actIndex": 1,
+        "outcome": "abandoned",
+        "durationTicks": 56,
+        "brokenSlots": [],
+        "exploits": 0,
+        "finishedAt": "2026-10-27T23:40:35.411Z"
+      },
+      {
+        "attemptId": "01951d1b-87dd-4242-a500-44bce3f75423",
+        "recipeId": "d80f49c1-03e4-42f5-9dd2-7a66d00d3ebf",
+        "recipeHash": "9ca1fe005d03c94b961e8a7b287716c6cfa1286e851e524c187451b7a0e5728b",
+        "actIndex": 1,
+        "outcome": "abandoned",
+        "durationTicks": 0,
+        "brokenSlots": [],
+        "exploits": 0,
+        "finishedAt": "2026-10-27T23:59:30.180Z"
+      }
+    ],
+    "otherAcceptedResultsHash": "32903a225bd54f5b47e796a083783b71ad0a314e333cd539e895809d0ee3ea11"
+  },
+  "second": {
+    "label": "after-second-restart",
+    "phase": "paused",
+    "attemptId": "ab91b6a7-6c33-47a8-8f4c-ac49f0956496",
+    "ownerIsNull": true,
+    "lastSequence": 0,
+    "recipeHash": "9ca1fe005d03c94b961e8a7b287716c6cfa1286e851e524c187451b7a0e5728b",
+    "results": [
+      {
+        "attemptId": "be51ec03-c45b-48bc-bc6e-9a56e13a7133",
+        "recipeId": "d80f49c1-03e4-42f5-9dd2-7a66d00d3ebf",
+        "recipeHash": "9ca1fe005d03c94b961e8a7b287716c6cfa1286e851e524c187451b7a0e5728b",
+        "actIndex": 1,
+        "outcome": "abandoned",
+        "durationTicks": 56,
+        "brokenSlots": [],
+        "exploits": 0,
+        "finishedAt": "2026-10-27T23:40:35.411Z"
+      },
+      {
+        "attemptId": "01951d1b-87dd-4242-a500-44bce3f75423",
+        "recipeId": "d80f49c1-03e4-42f5-9dd2-7a66d00d3ebf",
+        "recipeHash": "9ca1fe005d03c94b961e8a7b287716c6cfa1286e851e524c187451b7a0e5728b",
+        "actIndex": 1,
+        "outcome": "abandoned",
+        "durationTicks": 0,
+        "brokenSlots": [],
+        "exploits": 0,
+        "finishedAt": "2026-10-27T23:59:30.180Z"
+      }
+    ],
+    "otherAcceptedResultsHash": "32903a225bd54f5b47e796a083783b71ad0a314e333cd539e895809d0ee3ea11"
+  },
+  "checks": {
+    "firstAbandonsPlayedAttemptOnce": true,
+    "firstPreparesUnownedPausedAttempt": true,
+    "secondRetainsUnusedAttempt": true,
+    "recipeUnchanged": true,
+    "olderAcceptedResultsUnchanged": true,
+    "firstClaimKeepsPreparedAttempt": true,
+    "claimPreservesOtherAcceptedResults": true
+  },
+  "limits": [
+    "Existing single real broadcaster account; operator-only test, no human acceptance.",
+    "Ordinary owned backend reloads, not Twitch-issued reconnect handover or revocation.",
+    "No simulation, recipe, author, event or result injected; snapshots are read-only database observations."
+  ],
+  "afterFirstClaim": {
+    "phase": "paused",
+    "attemptId": "ab91b6a7-6c33-47a8-8f4c-ac49f0956496",
+    "ownerIsNull": false,
+    "lastSequence": 0,
+    "results": [
+      {
+        "attemptId": "be51ec03-c45b-48bc-bc6e-9a56e13a7133",
+        "recipeId": "d80f49c1-03e4-42f5-9dd2-7a66d00d3ebf",
+        "recipeHash": "9ca1fe005d03c94b961e8a7b287716c6cfa1286e851e524c187451b7a0e5728b",
+        "actIndex": 1,
+        "outcome": "abandoned",
+        "durationTicks": 56,
+        "brokenSlots": [],
+        "exploits": 0,
+        "finishedAt": "2026-10-27T23:40:35.411Z"
+      },
+      {
+        "attemptId": "01951d1b-87dd-4242-a500-44bce3f75423",
+        "recipeId": "d80f49c1-03e4-42f5-9dd2-7a66d00d3ebf",
+        "recipeHash": "9ca1fe005d03c94b961e8a7b287716c6cfa1286e851e524c187451b7a0e5728b",
+        "actIndex": 1,
+        "outcome": "abandoned",
+        "durationTicks": 0,
+        "brokenSlots": [],
+        "exploits": 0,
+        "finishedAt": "2026-10-27T23:59:30.180Z"
+      }
+    ],
+    "simTickObservedInBrowser": 8
+  }
+}

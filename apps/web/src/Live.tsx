@@ -64,7 +64,7 @@ export function LivePlay({id,preferences,navigate,onSettings}:{id:string;prefere
   const [armed,setArmed]=useState<string|null>(null),[localPause,setLocalPause]=useState(true),[stageReady,setStageReady]=useState(false),[snapshot,setSnapshot]=useState<CombatSnapshot|null>(null),[pending,setPending]=useState(0),[caption,setCaption]=useState<{slot:SlotId;broken:boolean}|null>(null),[syncError,setSyncError]=useState<string|null>(null),[history,setHistory]=useState<BossRecipe[]>([]),[historyStatus,setHistoryStatus]=useState<'idle'|'loading'|'ready'|'error'>('idle');
   const captionTimer=useRef<ReturnType<typeof setTimeout>|null>(null),pauseRequest=useRef(false);
   useEffect(()=>{const previous=window.name;window.name='aragoz-play-'+id;return()=>{if(window.name==='aragoz-play-'+id)window.name=previous;};},[id]);
-  useEffect(()=>{setSnapshot(null);setStageReady(false);setLocalPause(true);setCaption(null);},[room?.attempt?.id,room?.recipe?.hash]);
+  useEffect(()=>{setSnapshot(null);setStageReady(false);setLocalPause(true);setCaption(null);setPending(outbox.count(room?.attempt?.id??''));setSyncError(null);live.setError(null);},[room?.attempt?.id,room?.recipe?.hash,outbox,live.setError]);
   useEffect(()=>{if(room?.phase==='combat'&&room.attempt?.id===armed)setLocalPause(false);else setLocalPause(true);},[room?.phase,room?.attempt?.id,armed]);
   useEffect(()=>{if(!room||!['result','showbill','ended'].includes(room.phase))return;let active=true;setHistoryStatus('loading');void api.showbill(id).then(b=>{if(active){setHistory(b.recipes);setHistoryStatus('ready');}}).catch(()=>{if(active)setHistoryStatus('error');});return()=>{active=false;};},[id,room?.phase,room?.results.length]);
   useEffect(()=>()=>{if(captionTimer.current)clearTimeout(captionTimer.current);},[]);
@@ -79,7 +79,7 @@ export function LivePlay({id,preferences,navigate,onSettings}:{id:string;prefere
       try{const next=await api.events(r,client,batch);outbox.acknowledge(batch);accept(next);setSyncError(null);}
       catch(e){if(e instanceof ApiError&&e.status===409)await refresh().catch(()=>{});throw e;}
     });}
-    catch(e){setSyncError(e instanceof Error?e.message:'Results are saved locally until the connection returns.');}
+    catch(e){if(current.current?.attempt?.id===requested.attempt?.id)setSyncError(e instanceof Error?e.message:'Results are saved locally until the connection returns.');}
     finally{uploading.current=false;const active=current.current?.attempt;if(active)setPending(outbox.count(active.id));}
   },[accept,current,refresh,mutations,outbox,client]);
   useEffect(()=>{const timer=setInterval(()=>void flush(),700);return()=>clearInterval(timer);},[flush]);
@@ -103,6 +103,7 @@ export function LivePlay({id,preferences,navigate,onSettings}:{id:string;prefere
   const displayPhase=room.phase==='paused'?room.phaseBeforePause:room.phase;
   const combatPage=Boolean(room.recipe&&room.attempt&&['ready','combat','paused','assembling','result','showbill','ended'].includes(room.phase));
   const showingResults=['result','showbill','ended'].includes(room.phase);
+  const historicalPending=room.attempt?outbox.historicalCount(room.attempt.id)+(showingResults?outbox.count(room.attempt.id):0):0;
   const controlled=armed===room.attempt?.id;
   const localFinished=Boolean(snapshot?.outcome&&room.phase==='combat');
   const canRecover=(room.phase==='combat'||room.phase==='paused'&&displayPhase==='combat')&&!controlled;
@@ -123,6 +124,8 @@ export function LivePlay({id,preferences,navigate,onSettings}:{id:string;prefere
       {captionText&&room.phase==='combat'&&!localPause&&!snapshot?.outcome&&<div className="author-caption" role="status">{captionText}</div>}
     </div>}
     <div className="stage-footnote"><span>Technical preview · ARAGOZ theatre</span><span>{transport?'Backstage connected':'Backstage reconnecting'} · {room.connected?'Twitch input connected':'Twitch input unavailable'}</span></div>
+    {pending>0&&!showingResults&&<p className="notice" role="status" data-pending-events={pending}>Fight progress is waiting to synchronize. Keep this window open.</p>}
+    {historicalPending>0&&<p className="notice" role="status" data-historical-events={historicalPending}>Progress from an earlier attempt is kept in this window. It cannot change the current fight.</p>}
     {showingResults&&<section className="showbill-history-section" aria-labelledby="showbill-history-title"><span className="eyebrow">THE EVENING’S CONTRACTS</span><h2 id="showbill-history-title">Every boast, its author, and its result.</h2>{historyStatus==='loading'&&<p role="status">Loading the committed show history…</p>}{historyStatus==='error'&&<p role="status">Earlier recipe history could not be loaded. Available records remain below; reload to try again.</p>}<ShowbillHistory roomId={room.roomId} recipes={room.recipe?[...history,room.recipe]:history} results={room.results} hideAuthors={room.settings.hideAuthors}/>{historyStatus==='ready'&&!history.length&&!room.recipe&&<p>No encounter recipe was committed in this show.</p>}<p>Encore attempts keep the same recipe. A Remix creates a separate committed contract.</p></section>}
   </main>;
 }

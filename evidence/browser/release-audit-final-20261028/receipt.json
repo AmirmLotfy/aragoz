@@ -1,0 +1,43 @@
+{
+  "suite": "npm run test:browser",
+  "session": 98801,
+  "exit_code": 0,
+  "passed": 31,
+  "reported_duration": "3.6m",
+  "scope": "Muted browser checks including explicitly labelled provider fixtures; not human acceptance.",
+  "artifacts": [
+    {
+      "path": "evidence/browser/release-audit-final-20261028/fallback-stage.png",
+      "sha256": "e6f4e5a0aba6e547d6c513e1964e3ae2b669d957c21a0d43273fd7997766f89e"
+    },
+    {
+      "path": "evidence/browser/release-audit-final-20261028/house-actual-result.json",
+      "sha256": "dc1ba86b218036c8c658ca52d666615d1ecbe772dbf33dc262e7804999af7e46"
+    },
+    {
+      "path": "evidence/browser/release-audit-final-20261028/house-actual-result.png",
+      "sha256": "f3811ebf3740f33bb80f51b58f8d5f00bb6a8318184c9b704afc17b155c8ff56"
+    },
+    {
+      "path": "evidence/browser/release-audit-final-20261028/house-choice-narrow.png",
+      "sha256": "f6e621adec8ed17a172113fd763fa00fa03c0ac3e5c347def59f9d28a4445347"
+    },
+    {
+      "path": "evidence/browser/release-audit-final-20261028/house-choices.png",
+      "sha256": "cc85998c2c2171cd9f9b697ee9def1ee4e1b0aed948181d751829f233efa5082"
+    },
+    {
+      "path": "evidence/browser/release-audit-final-20261028/house-ready-720p.png",
+      "sha256": "bd881fa0841bce41ad9dea6da6fcc465a155b38444c52f1f871ace8e5aaf7896"
+    },
+    {
+      "path": "evidence/browser/release-audit-final-20261028/house-showbill.png",
+      "sha256": "f91ca9a6c5f048ceb16ac53abc0ebb70d6b18c1fd74aa5feb20dc7f992165f86"
+    }
+  ],
+  "sourceHead": "2485f09",
+  "workingTreeChanges": [
+    "apps/web/src/Live.tsx",
+    "tests/browser/live.spec.ts"
+  ]
+}

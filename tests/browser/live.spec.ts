@@ -259,3 +259,49 @@ test('[FIXTURE] recovery claims the prepared attempt without a second abandoned 
   await expect(canvas).toHaveAttribute('data-paused', 'true');
   await expect(play.getByRole('alert')).toHaveCount(0);
 });
+
+
+test('[FIXTURE] failed offline uploads remain separated after a server-authorized control transfer', async ({ context }) => {
+  await context.addInitScript(() => localStorage.setItem('aragoz.preferences.v1', JSON.stringify({ muted: true, quality: 'low', presentationFps: 30, reducedMotion: true })));
+  const play = await context.newPage();
+  await play.goto(`${harness.origin}/play/${harness.roomId}`);
+  for (let slot = 0; slot < 2; slot++) {
+    await play.getByRole('button', { name: 'Use labelled House Suggestions', exact: true }).click();
+    const { csrfToken } = await (await context.request.get(`${harness.origin}/api/session`)).json();
+    const response = await context.request.post(`${harness.origin}/api/shows/${harness.roomId}/actions`, {
+      headers: { origin: harness.origin, 'x-csrf-token': csrfToken },
+      data: { expectedRevision: harness.state().revision, action: { type: 'close-vote' } },
+    });
+    expect(response.status(), await response.text()).toBe(200);
+    await expect.poll(() => harness.state().selectedModules.length).toBe(slot + 1);
+  }
+  await harness.advance(701);
+  let failedUploads = 0;
+  await play.route(`**/api/shows/${harness.roomId}/events`, async route => { failedUploads++; await route.abort('internetdisconnected'); });
+  await play.getByRole('button', { name: 'Take the stage', exact: true }).click();
+  await expect.poll(() => failedUploads).toBeGreaterThan(0);
+  await expect(play.locator('[data-pending-events]')).toBeVisible();
+  const oldAttempt = harness.state().attempt!.id;
+  await play.getByRole('button', { name: 'Pause', exact: true }).click();
+  await expect.poll(() => harness.state().phase).toBe('paused');
+
+  // This regression isolates the old window's real failed upload and rendered
+  // recovery feedback. Transfer control through the actual HTTP handler; genuine
+  // two-play-window operation is separately exercised on the hosted M1 browser.
+  const { csrfToken } = await (await context.request.get(`${harness.origin}/api/session`)).json();
+  const transfer = await context.request.post(`${harness.origin}/api/shows/${harness.roomId}/actions`, {
+    headers: { origin: harness.origin, 'x-csrf-token': csrfToken },
+    data: { expectedRevision: harness.state().revision, action: { type: 'claim-control', clientId: 'fixture-other-controller', takeover: true } },
+  });
+  expect(transfer.status(), await transfer.text()).toBe(200);
+  await expect.poll(() => harness.state().attempt!.id).not.toBe(oldAttempt);
+  expect(harness.state().phase).toBe('paused');
+  await expect(play.locator('[data-historical-events]')).toContainText('It cannot change the current fight.');
+  await expect.poll(async () => Number(await play.locator('[data-historical-events]').getAttribute('data-historical-events'))).toBeGreaterThan(0);
+  await expect(play.locator('[data-pending-events]')).toHaveCount(0);
+  await expect(play.getByText('Failed to fetch', { exact: true })).toHaveCount(0);
+  await expect(play.getByRole('button', { name: 'Take control & restart safely', exact: true })).toBeVisible();
+  expect(harness.state().results).toHaveLength(1);
+  expect(harness.state().results[0]).toMatchObject({ attemptId: oldAttempt, outcome: 'abandoned' });
+  expect(harness.state().attempt!.lastSequence).toBe(0);
+});

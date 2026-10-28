@@ -1,0 +1,101 @@
+{
+  "kind": "AI-led actual browser encounter; no viewer or provider acceptance",
+  "show": {
+    "schemaVersion": 1,
+    "revision": 27,
+    "id": "house-012e8671-6166-45e1-9f7c-eb4905c7ca92",
+    "actIndex": 1,
+    "phase": "result",
+    "selection": null,
+    "recipes": [
+      {
+        "id": "6832e6ae-363f-446c-a0a0-ea4cf49e5b37",
+        "schemaVersion": 1,
+        "mechanicLibraryVersion": "1.0.0",
+        "artKitVersion": "local-kit-v1",
+        "roomId": "house-012e8671-6166-45e1-9f7c-eb4905c7ca92",
+        "actId": "house-012e8671-6166-45e1-9f7c-eb4905c7ca92.act.1",
+        "seed": 2918,
+        "approvedName": "Teapot Tyrant",
+        "bodyId": "teapot",
+        "materialVariant": "vermilion",
+        "modules": [
+          {
+            "slotId": "left",
+            "mechanicId": "charge",
+            "profileId": "charge-deliberate",
+            "tellId": "striped-lane",
+            "exposureRuleId": "block-collision",
+            "breakRuleId": "strike-exposed-axle",
+            "approvedParameters": {
+              "windup": 1.5,
+              "speed": 7,
+              "duration": 1.7,
+              "recovery": 0.8,
+              "exposure": 2.8
+            },
+            "sourceProposalId": null,
+            "credit": {
+              "authorId": null,
+              "displayName": "House Suggestion",
+              "source": "house",
+              "hidden": false
+            }
+          },
+          {
+            "slotId": "right",
+            "mechanicId": "steam",
+            "profileId": "steam-narrow",
+            "tellId": "striped-cone",
+            "exposureRuleId": "burst-overheat",
+            "breakRuleId": "strike-exposed-valve",
+            "approvedParameters": {
+              "windup": 1.2,
+              "range": 4.2,
+              "angle": 0.65,
+              "bursts": 3,
+              "burstDuration": 0.65,
+              "burstGap": 0.55,
+              "recovery": 0.8,
+              "exposure": 3
+            },
+            "sourceProposalId": null,
+            "credit": {
+              "authorId": null,
+              "displayName": "House Suggestion",
+              "source": "house",
+              "hidden": false
+            }
+          }
+        ],
+        "threatBudget": 100,
+        "difficultyPreset": "rehearsal",
+        "validatedAt": "2026-10-28T00:03:59.231Z",
+        "status": "committed",
+        "hash": "5b4e45c8109380f88210e2227a7de4831014f7fdf10df4aaf6f6a5e21de9794c"
+      }
+    ],
+    "currentRecipeId": "6832e6ae-363f-446c-a0a0-ea4cf49e5b37",
+    "attempt": {
+      "id": "a7ea6bdf-370c-4881-bfed-09346b357c88",
+      "started": true,
+      "lastSequence": 16,
+      "durationTicks": 905,
+      "brokenSlots": [],
+      "exploits": 1
+    },
+    "results": [
+      {
+        "attemptId": "a7ea6bdf-370c-4881-bfed-09346b357c88",
+        "recipeId": "6832e6ae-363f-446c-a0a0-ea4cf49e5b37",
+        "recipeHash": "5b4e45c8109380f88210e2227a7de4831014f7fdf10df4aaf6f6a5e21de9794c",
+        "actIndex": 1,
+        "outcome": "lost",
+        "durationTicks": 905,
+        "brokenSlots": [],
+        "exploits": 1,
+        "finishedAt": "2026-10-28T00:04:17.743Z"
+      }
+    ]
+  }
+}

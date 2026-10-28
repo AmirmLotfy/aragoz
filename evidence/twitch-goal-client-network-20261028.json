@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-28",
+  "kind": "genuine-hosted-account-operator-test-with-scoped-tab-network-emulation",
+  "roomId": "8d412f68-63ce-4830-87b9-76f203b568f3",
+  "recipeHash": "9ca1fe005d03c94b961e8a7b287716c6cfa1286e851e524c187451b7a0e5728b",
+  "networkDomainEnabledBeforeEffectiveEmulation": true,
+  "networkRestored": true,
+  "failures": [
+    {
+      "sequence": 82,
+      "errorText": "net::ERR_INTERNET_DISCONNECTED",
+      "type": "Fetch"
+    },
+    {
+      "sequence": 84,
+      "errorText": "net::ERR_INTERNET_DISCONNECTED",
+      "type": "Fetch"
+    },
+    {
+      "sequence": 86,
+      "errorText": "net::ERR_INTERNET_DISCONNECTED",
+      "type": "Fetch"
+    },
+    {
+      "sequence": 89,
+      "errorText": "net::ERR_INTERNET_DISCONNECTED",
+      "type": "Fetch"
+    },
+    {
+      "sequence": 94,
+      "errorText": "net::ERR_INTERNET_DISCONNECTED",
+      "type": "Fetch"
+    }
+  ],
+  "retainedOldEvents": 1,
+  "currentAttemptPendingStatuses": 0,
+  "staleErrorCountAfterUpdatedUI": 0,
+  "oldWindowRequiresExplicitTakeover": true,
+  "secondWindowPausedAttemptId": "01951d1b-87dd-4242-a500-44bce3f75423",
+  "limits": [
+    "One real broadcaster account, agent-operated UI; no human acceptance.",
+    "CDP emulated client fetch interruption, not a server-issued Twitch reconnect/revocation.",
+    "No simulation state, events, outcomes, votes or authors injected.",
+    "First emulation before Network.enable had no proven effect and is not counted."
+  ]
+}
