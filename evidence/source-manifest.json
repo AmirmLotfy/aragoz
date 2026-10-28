@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 80799,
-      "sha256": "4676f2674c16bf6aec55f3634fc29abf5a333bd818b7c9fcd4c901e4453e69ae"
+      "bytes": 81624,
+      "sha256": "b25d29376655d720e5eecb2794b685d5581fe3f38448a0ca4ba7c6652e68809a"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 28740,
-      "sha256": "973eb7ebd74407aeeffd4a9ee997c939fb4ae9ccb7a0cc29384c874f45007be2"
+      "bytes": 29565,
+      "sha256": "819b20a1ce26cada4a00e24892b07feb784eb269245ea504c02801414b41a5e0"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -1480,6 +1480,16 @@
       "sha256": "2cbd4e89955169e45c9dfccb12a8b182fe2cc2a39f3786ae9089b39943ab13c7"
     },
     {
+      "path": "evidence/devpost-submitted-20261028.jpg",
+      "bytes": 80917,
+      "sha256": "5f51b2babdf7e161eb80e26723f0c7c9155a6dfa5537f53f909e0690dc3d5af0"
+    },
+    {
+      "path": "evidence/devpost-submitted-20261028.json",
+      "bytes": 1075,
+      "sha256": "71c5b3a2f47c6dc0f55821b7d391b48df88c0f1a1f4d40fa661753fc5eca00b3"
+    },
+    {
       "path": "evidence/devpost-video-saved-20261028.jpg",
       "bytes": 72347,
       "sha256": "9506d655e98dfd0dd01339403c5bdc6fd13902cb9c14b3ca9b97e9a7b356188b"
@@ -2176,8 +2186,8 @@
     },
     {
       "path": "submission/DEVPOST_DRAFT_STATUS.md",
-      "bytes": 11851,
-      "sha256": "18ef20d3b725e9485a2c1ea6d3594dc2cb4ae9f9e583d9d0515e35e0444a9846"
+      "bytes": 12676,
+      "sha256": "b23754a2cbfb9878660a930122de42ab922d4aa1fc5b91fb524faa8e729faf8b"
     },
     {
       "path": "submission/FINAL_CAPTURE_PACKET.md",

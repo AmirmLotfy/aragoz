@@ -1,0 +1,27 @@
+{
+  "kind": "read-only-live-hackathon-entry-verification",
+  "date": "2026-10-28",
+  "softwareId": 1513815,
+  "submissionId": 1268295,
+  "projectUrl": "https://devpost.com/software/aragoz",
+  "uiStatus": "SUBMITTED",
+  "steps": "5/5",
+  "submittedAt": "2026-10-28T00:30:56.609-04:00",
+  "submittedAtCairo": "2026-10-28T07:30:56.609+03:00",
+  "termsUi": "checked and disabled on submitted page",
+  "agentSubmitted": false,
+  "verification": [
+    "Authenticated get_project hackathon submitted_at is non-null",
+    "Normal finalization UI SUBMITTED /5of5 / Project submitted",
+    "Current preview ready/frontend/hosting true",
+    "Public repository metadata",
+    "Expected video URL retained"
+  ],
+  "demoUrl": "https://ensures-enclosed-excluding-silly.trycloudflare.com/house-show",
+  "videoUrl": "https://youtu.be/ej-SDyRD6tE",
+  "screenshot": "evidence/devpost-submitted-20261028.jpg",
+  "limits": [
+    "Submission confirmation is not judge eligibility/winner confirmation or full human release acceptance.",
+    "Free preview still depends on this Mac/network."
+  ]
+}
