@@ -1530,6 +1530,11 @@
       "sha256": "534f316aa5661ff474f34ec78c8d65944c2270843f9672adc57a98ff14c84103"
     },
     {
+      "path": "evidence/linux-container-build-20261028.log",
+      "bytes": 37754,
+      "sha256": "b700498f0d128b27672d4b38e6c102f825895f93a5e852f58b8bc506d701e786"
+    },
+    {
       "path": "evidence/linux-container-build.json",
       "bytes": 2555,
       "sha256": "ccd5bc119c80c9ee5138b4cf4c2044d64d67fa8860867ccb90d5bfd9138c5651"
