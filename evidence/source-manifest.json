@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 77850,
-      "sha256": "363e6d96a88e50a4b9c392237d37fe4400027b17de4a3633d0a426dcf2aa0b1d"
+      "bytes": 79112,
+      "sha256": "d1a1f5ecfe1cfb51b79f8adf4b19df3169eeca80858da80cd08e995e3be87d70"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 25791,
-      "sha256": "22e6ff5e81a6158e688e45b68a91e03355a279f8bff6a14414c346f2a5c67613"
+      "bytes": 27053,
+      "sha256": "9156bc1590a995bef93302d408b3502d53f2a520fb4a4c5361f2d17b505b7d9d"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -1511,8 +1511,8 @@
     },
     {
       "path": "evidence/hackathon-five-requirements-20261028.json",
-      "bytes": 1843,
-      "sha256": "25f4d4b84a0a2470c194498dc12d78250c8361bf7425a2d788d7d9b5e0f66797"
+      "bytes": 2183,
+      "sha256": "24f4679ea085c1015481435256326f43a209d6e9f0723fea04a45b7c2954ce5f"
     },
     {
       "path": "evidence/hosted-backup-restore-20261027.json",
@@ -2171,8 +2171,8 @@
     },
     {
       "path": "submission/DEVPOST_DRAFT_STATUS.md",
-      "bytes": 8902,
-      "sha256": "c15de93f83e5f6e9f2196143b3da6b20493cd8dd37671dc6b026de57b23c5b61"
+      "bytes": 10164,
+      "sha256": "4a38797fb259719329726f5b36685ff721b24f7ed5502b52faff6d96500bcf7e"
     },
     {
       "path": "submission/FINAL_CAPTURE_PACKET.md",

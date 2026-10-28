@@ -13,7 +13,7 @@
   "description": {
     "local": "submission/DEVPOST.md",
     "lastSavedProof": "evidence/devpost-story-update-20261028.json",
-    "currentRemoteRead": "blocked by connector authentication and browser policy"
+    "currentRemoteRead": "Verified through authenticated Devpost connector"
   },
   "sessionId": {
     "value": "01a1746e-5b94-7b10-87dc-0f66a72f2e0f",
@@ -38,16 +38,24 @@
     "ready": true,
     "frontendReady": true,
     "modelEnabled": false,
-    "savedDevpostUrlNeedsUpdate": true
+    "savedDevpostUrlNeedsUpdate": false
   },
   "submitted": false,
   "remaining": [
     "Update existing Twitch app callback",
-    "Update existing Devpost demo URL",
     "Verify new-origin OAuth and actual chat challenge"
   ],
   "toolLimits": [
-    "Devpost connector UNAUTHORIZED",
     "Browser: Local browser use is disabled in Work settings"
-  ]
+  ],
+  "devpost": {
+    "softwareId": 1513815,
+    "submissionId": 1268295,
+    "version": 11,
+    "state": "published",
+    "hackathonSubmittedAt": null,
+    "websiteUrlReadBack": "https://folks-informative-acting-sanyo.trycloudflare.com/house-show",
+    "videoUrlReadBack": "https://youtu.be/ej-SDyRD6tE",
+    "note": "update_project published the software page; contest entry remains unsubmitted. Only links were sent."
+  }
 }
