@@ -4,7 +4,7 @@ Technical preview. English interface. Desktop keyboard recommended. No payment, 
 
 ## Try the complete account-free show
 
-Candidate public link: https://star-dawn-phases-nevada.trycloudflare.com/house-show
+Candidate public link: https://folks-informative-acting-sanyo.trycloudflare.com/house-show
 
 This free temporary tunnel depends on the creator's Mac and network; verify the link when publishing. The repository route below remains the reproducible test path. It is not a claim of guaranteed judging-period uptime.
 

@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 76233,
-      "sha256": "0e3e4205e579c5fe8b5f3bed1cf9176f9f90d06b4673d9014bd3a26415a3ae97"
+      "bytes": 77850,
+      "sha256": "363e6d96a88e50a4b9c392237d37fe4400027b17de4a3633d0a426dcf2aa0b1d"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 24174,
-      "sha256": "38fe8f4268262ccf4db1e135179d0a8aff4d8a27e12adff0b608706435989780"
+      "bytes": 25791,
+      "sha256": "22e6ff5e81a6158e688e45b68a91e03355a279f8bff6a14414c346f2a5c67613"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -91,8 +91,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 18747,
-      "sha256": "fb79a3988d68fa60d3a1c288333725992d3f98672e0d92e2026d115f3e9bd58f"
+      "bytes": 18754,
+      "sha256": "27c6adb4a237e887a180c9ba9dc7382356574886c90fb3b8190ab4617d44476d"
     },
     {
       "path": "REMAINING_WORK.md",
@@ -766,8 +766,8 @@
     },
     {
       "path": "devpost-submission.md",
-      "bytes": 6704,
-      "sha256": "307e53aec5ad1a8ecb3414285d31ea6291cdaf6d6e679283f43a06763e0fe0d5"
+      "bytes": 6711,
+      "sha256": "014b69b5be32146eb96c7304b4b51f9b63b24daee4ac3b7d7f6e0554864f3c0b"
     },
     {
       "path": "docs/media/aragoz-codex-planning-poster.jpg",
@@ -1510,6 +1510,11 @@
       "sha256": "cd35a906607ff6a7df621b84b58ab25016f70485001ee50096bd5ea41b9b38be"
     },
     {
+      "path": "evidence/hackathon-five-requirements-20261028.json",
+      "bytes": 1843,
+      "sha256": "25f4d4b84a0a2470c194498dc12d78250c8361bf7425a2d788d7d9b5e0f66797"
+    },
+    {
       "path": "evidence/hosted-backup-restore-20261027.json",
       "bytes": 1324,
       "sha256": "3a93e3fe00ef5d6da86e5f6a428d94da11a0a34da467112a81d5ca290d652b92"
@@ -2176,8 +2181,8 @@
     },
     {
       "path": "submission/JUDGE_GUIDE.md",
-      "bytes": 3993,
-      "sha256": "cafd9bc79d93582c01ff26035192906d46c3465019a3f8fdc19720de87b9794e"
+      "bytes": 4000,
+      "sha256": "2375717d1776866c2e9af011bd1a296399fdbedbd5eb6dd5f48f4ae76d50cb99"
     },
     {
       "path": "submission/MEDIA_MANIFEST.json",

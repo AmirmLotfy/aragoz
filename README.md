@@ -6,7 +6,7 @@ ARAGOZ is a browser action game where Twitch viewers propose powers with built-i
 
 ## Demo and media
 
-[Watch the narrated demo](https://youtu.be/ej-SDyRD6tE) · [Try the solo House show](https://star-dawn-phases-nevada.trycloudflare.com/house-show) · [Submission and media provenance](submission/README.md)
+[Watch the narrated demo](https://youtu.be/ej-SDyRD6tE) · [Try the solo House show](https://folks-informative-acting-sanyo.trycloudflare.com/house-show) · [Submission and media provenance](submission/README.md)
 
 [![ARAGOZ promotional key art — watch the narrated demo](submission/artwork/aragoz-devpost-3x2.png)](https://youtu.be/ej-SDyRD6tE)
 

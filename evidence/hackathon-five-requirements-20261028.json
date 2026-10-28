@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-28T01:15:48.899468+00:00",
+  "scope": "Five hackathon requirement verification; not full-release acceptance or final entry",
+  "repository": {
+    "url": "https://github.com/AmirmLotfy/aragoz",
+    "public": true,
+    "anonymousReadmeChecked": true,
+    "runnableEvidence": [
+      "evidence/linux-container-build-20261028.json",
+      "evidence/linux-container-smoke-20261028.json"
+    ]
+  },
+  "description": {
+    "local": "submission/DEVPOST.md",
+    "lastSavedProof": "evidence/devpost-story-update-20261028.json",
+    "currentRemoteRead": "blocked by connector authentication and browser policy"
+  },
+  "sessionId": {
+    "value": "01a1746e-5b94-7b10-87dc-0f66a72f2e0f",
+    "ownerConfirmed": true,
+    "savedEvidence": "submission/DEVPOST_DRAFT_STATUS.md"
+  },
+  "video": {
+    "url": "https://youtu.be/ej-SDyRD6tE",
+    "anonymousOEmbedVerified": true,
+    "seconds": 160,
+    "provenance": "evidence/submission-media-20261028.json"
+  },
+  "twitch": {
+    "genuineIntegrationProof": "evidence/twitch-real-operator-chain-20261027.json",
+    "lastPostRestartInputProof": "evidence/twitch-goal-final-chat-20261028.jpg",
+    "currentHostingConfigured": true,
+    "freshInputTest": false,
+    "callbackUpdateNeeded": "https://folks-informative-acting-sanyo.trycloudflare.com/api/auth/twitch/callback"
+  },
+  "preview": {
+    "origin": "https://folks-informative-acting-sanyo.trycloudflare.com",
+    "ready": true,
+    "frontendReady": true,
+    "modelEnabled": false,
+    "savedDevpostUrlNeedsUpdate": true
+  },
+  "submitted": false,
+  "remaining": [
+    "Update existing Twitch app callback",
+    "Update existing Devpost demo URL",
+    "Verify new-origin OAuth and actual chat challenge"
+  ],
+  "toolLimits": [
+    "Devpost connector UNAUTHORIZED",
+    "Browser: Local browser use is disabled in Work settings"
+  ]
+}
