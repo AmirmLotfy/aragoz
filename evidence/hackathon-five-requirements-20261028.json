@@ -30,32 +30,40 @@
     "genuineIntegrationProof": "evidence/twitch-real-operator-chain-20261027.json",
     "lastPostRestartInputProof": "evidence/twitch-goal-final-chat-20261028.jpg",
     "currentHostingConfigured": true,
-    "freshInputTest": false,
-    "callbackUpdateNeeded": "https://folks-informative-acting-sanyo.trycloudflare.com/api/auth/twitch/callback"
+    "freshInputTest": true,
+    "callbackUpdateNeeded": null,
+    "callbackSaved": "https://ensures-enclosed-excluding-silly.trycloudflare.com/api/auth/twitch/callback",
+    "oauthCallbackSucceeded": true,
+    "actualChatChallenge": "9070EF",
+    "actualChatReceivedCairo": "2026-10-28 07:28:35",
+    "proof": "evidence/twitch-callback-chat-restored-20261028.jpg"
   },
   "preview": {
-    "origin": "https://folks-informative-acting-sanyo.trycloudflare.com",
+    "origin": "https://ensures-enclosed-excluding-silly.trycloudflare.com",
     "ready": true,
     "frontendReady": true,
     "modelEnabled": false,
     "savedDevpostUrlNeedsUpdate": false
   },
   "submitted": false,
-  "remaining": [
-    "Update existing Twitch app callback",
-    "Verify new-origin OAuth and actual chat challenge"
-  ],
-  "toolLimits": [
-    "Browser: Local browser use is disabled in Work settings"
-  ],
+  "remaining": [],
+  "toolLimits": [],
   "devpost": {
     "softwareId": 1513815,
     "submissionId": 1268295,
-    "version": 11,
+    "version": 12,
     "state": "published",
     "hackathonSubmittedAt": null,
-    "websiteUrlReadBack": "https://folks-informative-acting-sanyo.trycloudflare.com/house-show",
+    "websiteUrlReadBack": "https://ensures-enclosed-excluding-silly.trycloudflare.com/house-show",
     "videoUrlReadBack": "https://youtu.be/ej-SDyRD6tE",
     "note": "update_project published the software page; contest entry remains unsubmitted. Only links were sent."
+  },
+  "completion": "Five technical submission materials prepared and verified; final eligibility/terms/entry and full-release acceptance remain separate.",
+  "runtime": {
+    "supervisor": 75718,
+    "tunnel": 75719,
+    "backend": 75951,
+    "detached": true,
+    "modelEnabled": false
   }
 }

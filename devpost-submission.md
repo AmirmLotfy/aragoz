@@ -38,7 +38,7 @@ Use [submission/JUDGE_GUIDE.md](submission/JUDGE_GUIDE.md). Account-free `/house
 
 ## Public Demo Link
 
-Candidate: https://folks-informative-acting-sanyo.trycloudflare.com/house-show . Readiness was checked28October2026; it is a temporary Mac-hosted tunnel and must be rechecked before publication. Local fallback http://127.0.0.1:3000/house-show . The fallback URL only works on the host machine.
+Candidate: https://ensures-enclosed-excluding-silly.trycloudflare.com/house-show . Readiness was checked28October2026; it is a temporary Mac-hosted tunnel and must be rechecked before publication. Local fallback http://127.0.0.1:3000/house-show . The fallback URL only works on the host machine.
 
 ## Public Repository Link
 

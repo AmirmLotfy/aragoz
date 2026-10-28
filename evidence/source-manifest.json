@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 79112,
-      "sha256": "d1a1f5ecfe1cfb51b79f8adf4b19df3169eeca80858da80cd08e995e3be87d70"
+      "bytes": 80799,
+      "sha256": "4676f2674c16bf6aec55f3634fc29abf5a333bd818b7c9fcd4c901e4453e69ae"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 27053,
-      "sha256": "9156bc1590a995bef93302d408b3502d53f2a520fb4a4c5361f2d17b505b7d9d"
+      "bytes": 28740,
+      "sha256": "973eb7ebd74407aeeffd4a9ee997c939fb4ae9ccb7a0cc29384c874f45007be2"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -91,8 +91,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 18754,
-      "sha256": "27c6adb4a237e887a180c9ba9dc7382356574886c90fb3b8190ab4617d44476d"
+      "bytes": 18756,
+      "sha256": "5d5df12fdfc08bd9237a4a92ea5b89e178f1ce72f8ec4284676d614e3e3774b8"
     },
     {
       "path": "REMAINING_WORK.md",
@@ -766,8 +766,8 @@
     },
     {
       "path": "devpost-submission.md",
-      "bytes": 6711,
-      "sha256": "014b69b5be32146eb96c7304b4b51f9b63b24daee4ac3b7d7f6e0554864f3c0b"
+      "bytes": 6713,
+      "sha256": "3df28bd35146a122ed18f1aefd7f4d971d992e67a5875f82aa52cea88c6315a5"
     },
     {
       "path": "docs/media/aragoz-codex-planning-poster.jpg",
@@ -1511,8 +1511,8 @@
     },
     {
       "path": "evidence/hackathon-five-requirements-20261028.json",
-      "bytes": 2183,
-      "sha256": "24f4679ea085c1015481435256326f43a209d6e9f0723fea04a45b7c2954ce5f"
+      "bytes": 2532,
+      "sha256": "37bceff2d47126c82be09fed9619a2523854372f48c3192750b393235cd0727f"
     },
     {
       "path": "evidence/hosted-backup-restore-20261027.json",
@@ -1758,6 +1758,11 @@
       "path": "evidence/twitch-authoring-restart-20261028.jpg",
       "bytes": 48524,
       "sha256": "cbf7ba4b23068f95d1f424b9e2e4f227920f2da6fb2ce8b4f19f459454d07e8b"
+    },
+    {
+      "path": "evidence/twitch-callback-chat-restored-20261028.jpg",
+      "bytes": 63147,
+      "sha256": "a2b16560cf0c307c771b703bd01050c78fdc3d3bf1ad0311a42def79e886df24"
     },
     {
       "path": "evidence/twitch-capture-showbill-20261028.jpg",
@@ -2171,8 +2176,8 @@
     },
     {
       "path": "submission/DEVPOST_DRAFT_STATUS.md",
-      "bytes": 10164,
-      "sha256": "4a38797fb259719329726f5b36685ff721b24f7ed5502b52faff6d96500bcf7e"
+      "bytes": 11851,
+      "sha256": "18ef20d3b725e9485a2c1ea6d3594dc2cb4ae9f9e583d9d0515e35e0444a9846"
     },
     {
       "path": "submission/FINAL_CAPTURE_PACKET.md",
@@ -2181,8 +2186,8 @@
     },
     {
       "path": "submission/JUDGE_GUIDE.md",
-      "bytes": 4000,
-      "sha256": "2375717d1776866c2e9af011bd1a296399fdbedbd5eb6dd5f48f4ae76d50cb99"
+      "bytes": 4002,
+      "sha256": "e4e9d5676bdc88b9f5255ed928062402fa0de74a47fc4ae8de5f1d1aa46116a0"
     },
     {
       "path": "submission/MEDIA_MANIFEST.json",
