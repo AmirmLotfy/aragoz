@@ -109,3 +109,9 @@ The video and English SRT were uploaded; Studio no-issues checks and Video publi
 were observed. Anonymous oEmbed returned200 with matching title/channel. The owner
 will complete eligibility manually; final entry has not occurred. The replacement
 preview address was saved to the existing draft after the former processes stopped.
+
+## 28 October — saved final evidence refresh and external gate audit
+
+Live Devpost project1268295 was inspected again and remains Draft3/5. Root saved/read back updated story counts173unit/server,31browser and13current Linux container checks, plus genuine single-account recovery findings. It retains disabled runtime model calls and explicit human/OBS evidence limits. Source copy submission/DEVPOST.md now matches those paragraphs. Receipt: evidence/devpost-story-update-20261028.json; screenshot: evidence/devpost-current-story-20261028.jpg. All3personal eligibility DOMchecked values remain false; no declaration, terms or final Submit was clicked. Additional-info tab9 is retained for the owner.
+
+Completion is unproven. The same external conditions have remained through at least3consecutive goal turns: owner-held eligibility/final entry,0genuine participants with no outreach authority, no additional genuine channels or provider-issued handover/revocation event. Those turns made concrete implementation/recovery/Linux progress; the latest saved-story refresh exhausted the presently available authorized packet. Existing acceptance protocol/templates are ready. Do not rerun unchanged game/OBS suites or create documents merely to keep the goal active. Resume on owner declarations/action-time submission consent, actual participants/channel access or a relevant provider event. No paid/model resources may be enabled. Source/build/bundle identities remain explicit; no acceptance fabricated.

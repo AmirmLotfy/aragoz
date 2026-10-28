@@ -1,0 +1,23 @@
+{
+  "kind": "saved-devpost-draft-story-update",
+  "date": "2026-10-28",
+  "project": 1268295,
+  "state": "DRAFT",
+  "steps": "3/5",
+  "savedAndReadBack": true,
+  "changes": [
+    "173 unit/server checks",
+    "31 browser checks",
+    "current Linux build and13smoke checks",
+    "genuine single-account hosted recovery, with human/OBS evidence boundaries"
+  ],
+  "personalDeclarations": [
+    false,
+    false,
+    false
+  ],
+  "finalTermsAccepted": false,
+  "submitted": false,
+  "screenshot": "evidence/devpost-current-story-20261028.jpg",
+  "scope": "Story text only. No new media upload or eligibility attestation."
+}

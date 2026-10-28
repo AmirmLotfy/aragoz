@@ -44,7 +44,9 @@ Live operation adds another kind of timing problem. Commands need fresh round co
 
 One genuine Twitch broadcaster account submitted a proposal and a vote, produced a credited charge module, and completed an accepted encounter with both modules broken. The same author appeared through selection, activation, break and result. The account and gameplay were agent-operated for this technical test; they are not a claim of genuine viewer acceptance.
 
-The implementation also has171unit/server checks, a28-case full browser pass, original Blender sources and rights records, and measured30-minute M1/OBS capture evidence. The measured1080p30presentation profile keeps the60Hzsimulation unchanged. Exact sources, dates and limitations accompany those receipts in the repository.
+The current source passed 173 unit/server checks, 31 browser checks and a fresh LinuxARM64 release build with 13 container startup/persistence/backup checks. Original Blender sources, rights records and measured 30-minute M1/OBS capture evidence are included. The measured 1080p30 presentation profile keeps the 60 Hz simulation unchanged; those OBS measurements retain their original source bounds. Exact sources, dates and limitations accompany the receipts in the repository.
+
+Further genuine single-account hosted checks exercised interrupted authoring, explicit two-window takeover, retained offline progress and repeated server recovery. Findings led to fixes for a pause/upload race, phantom abandonment results and stale synchronization feedback. These remain operator technical checks, separate from genuine host/viewer acceptance.
 
 ## What we learned
 
