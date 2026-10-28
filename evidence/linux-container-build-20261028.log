@@ -1,0 +1,1299 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon  225.7MB
+
+Step 1/32 : FROM node:24.19.0-bookworm-slim@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df AS build
+24.19.0-bookworm-slim: Pulling from library/node
+75782e20ea1f: Pulling fs layer
+ea1c5d4af1ed: Pulling fs layer
+18a8d678ac29: Pulling fs layer
+707d116f5fee: Pulling fs layer
+2c2703a803de: Pulling fs layer
+ea1c5d4af1ed: Download complete
+18a8d678ac29: Download complete
+2c2703a803de: Download complete
+b0479c316fba: Download complete
+7a8f217d49c1: Download complete
+75782e20ea1f: Download complete
+18a8d678ac29: Pull complete
+75782e20ea1f: Pull complete
+707d116f5fee: Download complete
+ea1c5d4af1ed: Pull complete
+2c2703a803de: Pull complete
+707d116f5fee: Pull complete
+Digest: sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df
+Status: Downloaded newer image for node:24.19.0-bookworm-slim@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df
+ ---> a9f5f7c91a43
+Step 2/32 : WORKDIR /app
+ ---> Running in 85d443786445
+ ---> Removed intermediate container 85d443786445
+ ---> 89abb6bf0952
+Step 3/32 : COPY package.json package-lock.json tsconfig.json vitest.config.ts playwright.config.ts ./
+ ---> 2d6777208ceb
+Step 4/32 : COPY packages ./packages
+ ---> e3dcc5bb8978
+Step 5/32 : COPY apps ./apps
+ ---> 2b667e121ebc
+Step 6/32 : COPY scripts ./scripts
+ ---> b091d7f08b1a
+Step 7/32 : COPY assets ./assets
+ ---> 1dadaa769a83
+Step 8/32 : COPY evidence ./evidence
+ ---> fdc89c99b52f
+Step 9/32 : COPY tests ./tests
+ ---> f05580ee4d81
+Step 10/32 : RUN npm ci --ignore-scripts && npm run typecheck && npm test && npm run test:assets && npm run build:release
+ ---> Running in 420d0c44c69d
+
+added 143 packages, and audited 148 packages in 40s
+
+46 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice
+npm notice New major version of npm available! 11.17.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+
+> aragoz@0.1.0 typecheck
+> tsc --noEmit
+
+
+> aragoz@0.1.0 test
+> vitest run --maxWorkers=1
+
+
+ RUN  v5.0.5 /app
+
+ ✓ apps/server/test/server.test.ts (35 tests) 679ms
+ ✓ apps/server/test/hardening.test.ts (33 tests) 662ms
+ ✓ packages/combat/src/index.test.ts (29 tests) 198ms
+ ✓ apps/web/src/house-show.test.ts (15 tests) 75ms
+stdout | apps/server/test/audience-load.test.ts > bounded synthetic audience traffic across three channels > bounds proposals, samples twelve and isolates replacement, delivery, vote and cutoff rules
+SYNTHETIC_AUDIENCE_LOAD_RECEIPT {"evidence":"synthetic in-process Engine/SQLite; no Twitch, network, browser or human acceptance","channels":3,"counts":{"initialProposal":768,"duplicateProposalDelivery":48,"replacementProposal":48,"reorderedProposal":48,"tieOlderProposal":48,"overAuthorLimitProposal":48,"wrongProposalCode":3,"crossChannelProposal":3,"beforeProposalOpen":3,"afterProposalSentCutoff":3,"exactProposalCutoff":3,"expiredProposalArrival":3,"initialVote":600,"duplicateVoteDelivery":60,"replacementVote":60,"reorderedVote":60,"tieOlderVote":60,"wrongVoteCode":3,"crossChannelVote":3,"beforeVoteOpen":3,"afterVoteSentCutoff":3,"exactVoteCutoff":3,"expiredVoteArrival":3,"closedVoteCode":3},"totalMessages":1887,"retainedProposalsPerChannel":[128,128,128],"peakStoredProposals":128,"sampledPerChannel":[12,12,12],"effectiveVotesPerChannel":[201,201,201],"proposalWindowMs":25000,"voteWindowMs":20000,"durationMs":1536,"messageCompletionP95Ms":901,"messageCompletionMaxMs":1090,"failures":0,"invariants":["128 stored proposals/channel","12 eligible unique authors/sample","timestamp/message-id replacement","four proposal commands/author","delivery dedupe","channel isolation","latest vote/account","exact cutoff accepted; late receipt rejected","no provider calls","queues drained"]}
+
+stdout | apps/server/test/audience-load.test.ts > bounded synthetic audience traffic across three channels > keeps other channels and the event loop responsive while one compiler is pending
+SYNTHETIC_AUDIENCE_RESPONSIVENESS {"evidence":"synthetic local pending compiler","channels":3,"otherChannelsReachedReview":2,"hostActionCompleted":true,"extraTicks":3,"duplicateCompilations":0,"eventLoopAndHostActionMs":4,"failures":0}
+
+ ✓ apps/server/test/audience-load.test.ts (2 tests) 1554ms
+   ✓ bounded synthetic audience traffic across three channels (2)
+     ✓ bounds proposals, samples twelve and isolates replacement, delivery, vote and cutoff rules 1543ms
+ ✓ apps/web/src/audio-cues.test.ts (13 tests) 58ms
+ ✓ apps/server/test/compiler-deadline.test.ts (10 tests) 40ms
+ ✓ apps/web/src/aim-assist.test.ts (7 tests) 22ms
+ ✓ apps/web/src/showbill.test.ts (3 tests) 24ms
+ ✓ packages/contracts/src/index.test.ts (7 tests) 17ms
+ ✓ apps/web/src/asset-loading.test.ts (5 tests) 6ms
+ ✓ apps/web/src/assembly.test.ts (3 tests) 3ms
+ ✓ apps/web/src/controls.test.ts (4 tests) 3ms
+ ✓ apps/web/src/presentation.test.ts (6 tests) 4ms
+ ✓ apps/web/src/room-mutations.test.ts (1 test) 3ms
+
+ Test Files  15 passed (15)
+      Tests  173 passed (173)
+   Start at  00:23:01
+   Duration  6.39s (tests 66%, import 25%, transform 9%, worker 1%)
+
+    Isolate  15 workers spawned · ~79ms startup each (spawn + environment, per file)
+             at least ~1.11s faster with isolate: false — reuses workers across files instead of one per file
+
+
+> aragoz@0.1.0 test:assets
+> node --test --test-concurrency=1 tests/assets/*.test.mjs
+
+✔ measures transformed, indexed world geometry rather than accessor bounds (3.510922ms)
+✔ accepts Uint8Array slices without reading surrounding bytes (0.345047ms)
+✔ counts mesh instances separately and applies matrix transforms (0.903618ms)
+✔ uses the declared default scene and first scene when default is omitted (0.569118ms)
+✔ supports interleaved POSITION data with valid stride (0.337627ms)
+✔ ignores unused vertices for drawn bounds and supports non-indexed triangles (0.472403ms)
+✔ inspects embedded PNG dimensions and counts image payload once (1.096631ms)
+✔ reads JPEG frame dimensions without claiming pixel decode (0.479114ms)
+✔ supports declared unlit and texture-transform extensions (0.533683ms)
+✔ rejects wrong magic (0.208021ms)
+✔ rejects wrong GLB version (0.132941ms)
+✔ rejects declared length mismatch (0.105219ms)
+✔ rejects chunk beyond container (0.114016ms)
+✔ rejects misaligned chunk (0.103927ms)
+✔ rejects invalid JSON (0.141696ms)
+✔ rejects non-JSON first chunk (0.187427ms)
+✔ rejects truncated headers and truncated GLB bytes (0.146281ms)
+✔ rejects unsupported glTF version (0.162206ms)
+✔ rejects external buffer URL (0.12548ms)
+✔ rejects external image URL (0.186677ms)
+✔ rejects data image URI (0.628981ms)
+✔ rejects bufferView outside buffer (0.122936ms)
+✔ rejects accessor outside bufferView (0.11214ms)
+✔ rejects invalid accessor stride (0.111723ms)
+✔ rejects invalid accessor component type (0.256462ms)
+✔ rejects zero accessor count (0.131733ms)
+✔ rejects sparse geometry (0.125521ms)
+✔ rejects non-triangle primitive (0.121728ms)
+✔ rejects non-multiple-of-three index count (0.223236ms)
+✔ rejects morph targets (0.125605ms)
+✔ rejects skin deformation (0.127439ms)
+✔ rejects undeclared required extension (0.280307ms)
+✔ rejects matrix and TRS on one node (0.150534ms)
+✔ rejects non-unit quaternion (0.135568ms)
+✔ rejects invalid default scene (0.143989ms)
+✔ rejects duplicate scene root (0.156162ms)
+✔ rejects empty selected scene (0.191679ms)
+✔ rejects a non-finite actual POSITION despite finite declared min/max (0.24975ms)
+✔ rejects an actual index outside the POSITION range (0.147449ms)
+✔ rejects cycles even when disconnected from the selected scene (0.196598ms)
+✔ rejects multiple parents, duplicate children and non-root scene nodes (0.574996ms)
+✔ rejects oversized embedded textures even when no texture references them (0.448057ms)
+✔ rejects truncated embedded image containers (1.570368ms)
+✔ rejects unsupported extension KHR_draco_mesh_compression (0.192847ms)
+✔ rejects unsupported extension EXT_meshopt_compression (0.116267ms)
+✔ rejects unsupported extension KHR_texture_basisu (0.085793ms)
+✔ rejects unsupported extension KHR_materials_transmission (0.080958ms)
+✔ rejects compressed image MIME types (0.408371ms)
+✔ validates rigid animation and reports names with rest-pose bounds (1.26705ms)
+✔ validates cubic-spline animation triplet counts (0.439886ms)
+✔ rejects invalid animation key times 0,0 (0.220026ms)
+✔ rejects invalid animation key times 1,0 (0.172586ms)
+✔ rejects invalid animation key times -1,0 (0.16083ms)
+✔ rejects non-finite animation times (0.160121ms)
+✔ rejects animation output count mismatch and unsupported target paths (0.527805ms)
+✔ rejects duplicate animation targets and invalid rotation keys (0.265258ms)
+✔ enforces measured triangle, dimension and policy values (0.35005ms)
+✔ candidate middleware exists only for dev serving and forwards ordinary app routes (0.624521ms)
+✔ remote requests and traversal never receive candidate source bytes (0.243997ms)
+✔ only a pending-candidate manifest is served and is never cached (7.844295ms)
+✔ candidate GLB is inspected before bytes are served; malformed bytes are rejected (4.478321ms)
+✔ a symlink cannot escape the candidate directory (2.42492ms)
+ℹ tests 62
+ℹ suites 0
+ℹ pass 62
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 164.933676
+
+> aragoz@0.1.0 build:release
+> node scripts/check-assets.mjs --require-final && npm run build
+
+{
+  "acceptedAssets": 7,
+  "pending": [],
+  "compressedBytes": 1345615,
+  "declaredTriangles": 44796,
+  "allRuntimeAssetsAdmitted": true,
+  "engineAcceptanceEstablishedByThisCheck": false,
+  "inspections": [
+    {
+      "id": "hero",
+      "sha256": "ef5cf1bb8186a5a22c96f4b26cda6497a267c88e12ffc50238348234ec3c2f6f",
+      "byteLength": 540388,
+      "triangles": 10492,
+      "sceneTriangles": 10492,
+      "primitiveCount": 31,
+      "materialCount": 7,
+      "dimensions": [
+        0.9000000631746969,
+        1.8199998457149924,
+        0.6999999927465357
+      ],
+      "bounds": {
+        "min": [
+          -0.4500000274172473,
+          -4.035646838929097e-8,
+          -0.34999999990631814
+        ],
+        "max": [
+          0.4500000357574496,
+          1.819999805358524,
+          0.34999999284021754
+        ]
+      },
+      "nodeNames": [
+        "carved-head-crafted-surfaces",
+        "carved-head",
+        "hip-1-crafted-surfaces",
+        "hip-1",
+        "hip--1-crafted-surfaces",
+        "hip--1",
+        "performer-body-crafted-surfaces",
+        "hand-baton-crafted-surfaces",
+        "hand-baton",
+        "shoulder-1-crafted-surfaces",
+        "shoulder-1",
+        "open-hand-crafted-surfaces",
+        "open-hand",
+        "shoulder--1-crafted-surfaces",
+        "shoulder--1",
+        "performer-body",
+        "hero"
+      ],
+      "animationNames": [
+        "idle",
+        "run",
+        "strike",
+        "dodge",
+        "hurt",
+        "victory",
+        "defeat"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 1853
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 18270
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15475
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        }
+      ]
+    },
+    {
+      "id": "stage",
+      "sha256": "8e7be36a5bdf5bdec994d293304cec30d80e87d4d1b5b3460ffc716fa2b11688",
+      "byteLength": 639552,
+      "triangles": 10815,
+      "sceneTriangles": 10815,
+      "primitiveCount": 12,
+      "materialCount": 7,
+      "dimensions": [
+        15.300000190734863,
+        5.510000206530094,
+        8.717819690704346
+      ],
+      "bounds": {
+        "min": [
+          -7.650000095367432,
+          -0.20999999344348907,
+          -4.367819786071777
+        ],
+        "max": [
+          7.650000095367432,
+          5.300000213086605,
+          4.349999904632568
+        ]
+      },
+      "nodeNames": [
+        "block-east-crafted-surfaces",
+        "block-east",
+        "block-west-crafted-surfaces",
+        "block-west",
+        "stage-crafted-surfaces",
+        "stage"
+      ],
+      "animationNames": [],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 18270
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 20831
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15475
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        }
+      ]
+    },
+    {
+      "id": "shell-teapot",
+      "sha256": "67f0c21dc6242752386d8535f6486844fdf93eefa1b6166f6746a38273fc54ce",
+      "byteLength": 360684,
+      "triangles": 8676,
+      "sceneTriangles": 8676,
+      "primitiveCount": 5,
+      "materialCount": 5,
+      "dimensions": [
+        2.489941403831544,
+        2.299999874561891,
+        1.799999942947224
+      ],
+      "bounds": {
+        "min": [
+          -1.239941389604967,
+          -7.418326397612418e-9,
+          -0.8999999722004617
+        ],
+        "max": [
+          1.2500000142265772,
+          2.2999998671435646,
+          0.8999999707467623
+        ]
+      },
+      "nodeNames": [
+        "kettle-body-crafted-surfaces",
+        "kettle-body",
+        "left",
+        "right",
+        "shell-teapot"
+      ],
+      "animationNames": [
+        "idle"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 1853
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 18270
+        }
+      ]
+    },
+    {
+      "id": "shell-mirror",
+      "sha256": "c540a9c1c87b28003d8133b693fb47a42db5d4e92d52afd6e1af34b2d96ce9f7",
+      "byteLength": 352672,
+      "triangles": 7205,
+      "sceneTriangles": 7205,
+      "primitiveCount": 5,
+      "materialCount": 5,
+      "dimensions": [
+        1.899999971098083,
+        2.59999980032444,
+        1.200000090267661
+      ],
+      "bounds": {
+        "min": [
+          -0.9499999704893582,
+          0,
+          -0.6000000693181313
+        ],
+        "max": [
+          0.9500000006087248,
+          2.59999980032444,
+          0.6000000209495298
+        ]
+      },
+      "nodeNames": [
+        "braggart-body-crafted-surfaces",
+        "braggart-body",
+        "left",
+        "right",
+        "shell-mirror"
+      ],
+      "animationNames": [
+        "idle"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 47168
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 1853
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15475
+        }
+      ]
+    },
+    {
+      "id": "module-charge",
+      "sha256": "bbc7d9fce10877a8edccb1e534fd9b1a894f1ca5a4942b4a459dc25026631d72",
+      "byteLength": 171804,
+      "triangles": 2512,
+      "sceneTriangles": 2512,
+      "primitiveCount": 7,
+      "materialCount": 3,
+      "dimensions": [
+        1.2000000719840713,
+        0.8000000185715521,
+        0.6999999936003434
+      ],
+      "bounds": {
+        "min": [
+          -0.6000000359920357,
+          3.1339496331384e-8,
+          -0.3499999968001717
+        ],
+        "max": [
+          0.6000000359920357,
+          0.8000000499110484,
+          0.3499999968001717
+        ]
+      },
+      "nodeNames": [
+        "axle-crafted-surfaces",
+        "wheel-left-crafted-surfaces",
+        "wheel-left",
+        "wheel-right-crafted-surfaces",
+        "wheel-right",
+        "axle",
+        "module-charge"
+      ],
+      "animationNames": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        }
+      ]
+    },
+    {
+      "id": "module-steam",
+      "sha256": "a1ccdfb139e6b910ca35706b7452925d9b5a86a39f499e93abc31088b641c719",
+      "byteLength": 175384,
+      "triangles": 2844,
+      "sceneTriangles": 2844,
+      "primitiveCount": 4,
+      "materialCount": 3,
+      "dimensions": [
+        0.5999999886751652,
+        1.9000001442081746,
+        0.600000011187344
+      ],
+      "bounds": {
+        "min": [
+          -0.2999999943375826,
+          1.5492314986431666e-8,
+          -0.3000000051628895
+        ],
+        "max": [
+          0.2999999943375826,
+          1.9000001597004896,
+          0.30000000602445454
+        ]
+      },
+      "nodeNames": [
+        "valve-crafted-surfaces",
+        "valve-lid-crafted-surfaces",
+        "valve-lid",
+        "valve",
+        "module-steam"
+      ],
+      "animationNames": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        }
+      ]
+    },
+    {
+      "id": "module-echo",
+      "sha256": "7758967247b47b334fe17c8ced0c91bc498d56b64207a2e715a551a5de2505d1",
+      "byteLength": 184584,
+      "triangles": 2252,
+      "sceneTriangles": 2252,
+      "primitiveCount": 5,
+      "materialCount": 3,
+      "dimensions": [
+        0.6999997496604919,
+        1.8000000917103343,
+        0.3999999720965368
+      ],
+      "bounds": {
+        "min": [
+          -0.3499998152256012,
+          7.576861804636792e-9,
+          -0.19999999013213454
+        ],
+        "max": [
+          0.34999993443489075,
+          1.800000099287196,
+          0.19999998196440227
+        ]
+      },
+      "nodeNames": [
+        "mirror-crafted-surfaces",
+        "mirror-face-crafted-surfaces",
+        "mirror-face",
+        "mirror",
+        "module-echo"
+      ],
+      "animationNames": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 47168
+        }
+      ]
+    }
+  ],
+  "limits": {
+    "compressedBytes": 26214400,
+    "visibleTriangles": 120000
+  },
+  "note": "Static inspection checks recorded admission, not GPU rendering, animated bounds, draw calls, gameplay, OBS or human acceptance."
+}
+
+> aragoz@0.1.0 build
+> node scripts/generate-notices.mjs && node scripts/check-assets.mjs && node scripts/sync-assets.mjs && npm run build --workspace @aragoz/web && node scripts/precompress-web.mjs && npm run build --workspace @aragoz/server
+
+Packaged locked browser dependency license notices.
+{
+  "acceptedAssets": 7,
+  "pending": [],
+  "compressedBytes": 1345615,
+  "declaredTriangles": 44796,
+  "allRuntimeAssetsAdmitted": true,
+  "engineAcceptanceEstablishedByThisCheck": false,
+  "inspections": [
+    {
+      "id": "hero",
+      "sha256": "ef5cf1bb8186a5a22c96f4b26cda6497a267c88e12ffc50238348234ec3c2f6f",
+      "byteLength": 540388,
+      "triangles": 10492,
+      "sceneTriangles": 10492,
+      "primitiveCount": 31,
+      "materialCount": 7,
+      "dimensions": [
+        0.9000000631746969,
+        1.8199998457149924,
+        0.6999999927465357
+      ],
+      "bounds": {
+        "min": [
+          -0.4500000274172473,
+          -4.035646838929097e-8,
+          -0.34999999990631814
+        ],
+        "max": [
+          0.4500000357574496,
+          1.819999805358524,
+          0.34999999284021754
+        ]
+      },
+      "nodeNames": [
+        "carved-head-crafted-surfaces",
+        "carved-head",
+        "hip-1-crafted-surfaces",
+        "hip-1",
+        "hip--1-crafted-surfaces",
+        "hip--1",
+        "performer-body-crafted-surfaces",
+        "hand-baton-crafted-surfaces",
+        "hand-baton",
+        "shoulder-1-crafted-surfaces",
+        "shoulder-1",
+        "open-hand-crafted-surfaces",
+        "open-hand",
+        "shoulder--1-crafted-surfaces",
+        "shoulder--1",
+        "performer-body",
+        "hero"
+      ],
+      "animationNames": [
+        "idle",
+        "run",
+        "strike",
+        "dodge",
+        "hurt",
+        "victory",
+        "defeat"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 1853
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 18270
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15475
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        }
+      ]
+    },
+    {
+      "id": "stage",
+      "sha256": "8e7be36a5bdf5bdec994d293304cec30d80e87d4d1b5b3460ffc716fa2b11688",
+      "byteLength": 639552,
+      "triangles": 10815,
+      "sceneTriangles": 10815,
+      "primitiveCount": 12,
+      "materialCount": 7,
+      "dimensions": [
+        15.300000190734863,
+        5.510000206530094,
+        8.717819690704346
+      ],
+      "bounds": {
+        "min": [
+          -7.650000095367432,
+          -0.20999999344348907,
+          -4.367819786071777
+        ],
+        "max": [
+          7.650000095367432,
+          5.300000213086605,
+          4.349999904632568
+        ]
+      },
+      "nodeNames": [
+        "block-east-crafted-surfaces",
+        "block-east",
+        "block-west-crafted-surfaces",
+        "block-west",
+        "stage-crafted-surfaces",
+        "stage"
+      ],
+      "animationNames": [],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 18270
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 20831
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15475
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        }
+      ]
+    },
+    {
+      "id": "shell-teapot",
+      "sha256": "67f0c21dc6242752386d8535f6486844fdf93eefa1b6166f6746a38273fc54ce",
+      "byteLength": 360684,
+      "triangles": 8676,
+      "sceneTriangles": 8676,
+      "primitiveCount": 5,
+      "materialCount": 5,
+      "dimensions": [
+        2.489941403831544,
+        2.299999874561891,
+        1.799999942947224
+      ],
+      "bounds": {
+        "min": [
+          -1.239941389604967,
+          -7.418326397612418e-9,
+          -0.8999999722004617
+        ],
+        "max": [
+          1.2500000142265772,
+          2.2999998671435646,
+          0.8999999707467623
+        ]
+      },
+      "nodeNames": [
+        "kettle-body-crafted-surfaces",
+        "kettle-body",
+        "left",
+        "right",
+        "shell-teapot"
+      ],
+      "animationNames": [
+        "idle"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 1853
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 18270
+        }
+      ]
+    },
+    {
+      "id": "shell-mirror",
+      "sha256": "c540a9c1c87b28003d8133b693fb47a42db5d4e92d52afd6e1af34b2d96ce9f7",
+      "byteLength": 352672,
+      "triangles": 7205,
+      "sceneTriangles": 7205,
+      "primitiveCount": 5,
+      "materialCount": 5,
+      "dimensions": [
+        1.899999971098083,
+        2.59999980032444,
+        1.200000090267661
+      ],
+      "bounds": {
+        "min": [
+          -0.9499999704893582,
+          0,
+          -0.6000000693181313
+        ],
+        "max": [
+          0.9500000006087248,
+          2.59999980032444,
+          0.6000000209495298
+        ]
+      },
+      "nodeNames": [
+        "braggart-body-crafted-surfaces",
+        "braggart-body",
+        "left",
+        "right",
+        "shell-mirror"
+      ],
+      "animationNames": [
+        "idle"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 47168
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 1853
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15475
+        }
+      ]
+    },
+    {
+      "id": "module-charge",
+      "sha256": "bbc7d9fce10877a8edccb1e534fd9b1a894f1ca5a4942b4a459dc25026631d72",
+      "byteLength": 171804,
+      "triangles": 2512,
+      "sceneTriangles": 2512,
+      "primitiveCount": 7,
+      "materialCount": 3,
+      "dimensions": [
+        1.2000000719840713,
+        0.8000000185715521,
+        0.6999999936003434
+      ],
+      "bounds": {
+        "min": [
+          -0.6000000359920357,
+          3.1339496331384e-8,
+          -0.3499999968001717
+        ],
+        "max": [
+          0.6000000359920357,
+          0.8000000499110484,
+          0.3499999968001717
+        ]
+      },
+      "nodeNames": [
+        "axle-crafted-surfaces",
+        "wheel-left-crafted-surfaces",
+        "wheel-left",
+        "wheel-right-crafted-surfaces",
+        "wheel-right",
+        "axle",
+        "module-charge"
+      ],
+      "animationNames": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 30786
+        }
+      ]
+    },
+    {
+      "id": "module-steam",
+      "sha256": "a1ccdfb139e6b910ca35706b7452925d9b5a86a39f499e93abc31088b641c719",
+      "byteLength": 175384,
+      "triangles": 2844,
+      "sceneTriangles": 2844,
+      "primitiveCount": 4,
+      "materialCount": 3,
+      "dimensions": [
+        0.5999999886751652,
+        1.9000001442081746,
+        0.600000011187344
+      ],
+      "bounds": {
+        "min": [
+          -0.2999999943375826,
+          1.5492314986431666e-8,
+          -0.3000000051628895
+        ],
+        "max": [
+          0.2999999943375826,
+          1.9000001597004896,
+          0.30000000602445454
+        ]
+      },
+      "nodeNames": [
+        "valve-crafted-surfaces",
+        "valve-lid-crafted-surfaces",
+        "valve-lid",
+        "valve",
+        "module-steam"
+      ],
+      "animationNames": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 15916
+        }
+      ]
+    },
+    {
+      "id": "module-echo",
+      "sha256": "7758967247b47b334fe17c8ced0c91bc498d56b64207a2e715a551a5de2505d1",
+      "byteLength": 184584,
+      "triangles": 2252,
+      "sceneTriangles": 2252,
+      "primitiveCount": 5,
+      "materialCount": 3,
+      "dimensions": [
+        0.6999997496604919,
+        1.8000000917103343,
+        0.3999999720965368
+      ],
+      "bounds": {
+        "min": [
+          -0.3499998152256012,
+          7.576861804636792e-9,
+          -0.19999999013213454
+        ],
+        "max": [
+          0.34999993443489075,
+          1.800000099287196,
+          0.19999998196440227
+        ]
+      },
+      "nodeNames": [
+        "mirror-crafted-surfaces",
+        "mirror-face-crafted-surfaces",
+        "mirror-face",
+        "mirror",
+        "module-echo"
+      ],
+      "animationNames": [
+        "windup",
+        "exposed",
+        "break"
+      ],
+      "textures": [
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 12913
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 45994
+        },
+        {
+          "mimeType": "image/png",
+          "width": 256,
+          "height": 256,
+          "bytes": 47168
+        }
+      ]
+    }
+  ],
+  "limits": {
+    "compressedBytes": 26214400,
+    "visibleTriangles": 120000
+  },
+  "note": "Static inspection checks recorded admission, not GPU rendering, animated bounds, draw calls, gameplay, OBS or human acceptance."
+}
+Synced asset manifest and approved local runtime assets; concepts remain private source files.
+
+> @aragoz/web@0.1.0 build
+> vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 1218 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                               0.84 kB │ gzip:   0.47 kB
+dist/assets/index-ZTV5m7fc.css               34.13 kB │ gzip:   7.57 kB
+dist/assets/rolldown-runtime-4tVxZq34.js      0.23 kB │ gzip:   0.19 kB
+dist/assets/ui-frLmuMBC.js                  218.74 kB │ gzip:  68.27 kB
+dist/assets/index-DRse9aWF.js               236.85 kB │ gzip:  69.08 kB
+dist/assets/babylon-Cldp5xpI.js           3,609.02 kB │ gzip: 835.22 kB
+
+✓ built in 1.21s
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 1500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Precompressed public assets: {"files":18,"originalBytes":9456719,"gzipBytes":3997119,"brotliBytes":3506319}
+
+> @aragoz/server@0.1.0 build
+> tsc --noEmit -p tsconfig.json
+
+ ---> Removed intermediate container 420d0c44c69d
+ ---> f3aa6dc6eaae
+Step 11/32 : FROM node:24.19.0-bookworm-slim@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df AS production-dependencies
+ ---> a9f5f7c91a43
+Step 12/32 : WORKDIR /app
+ ---> Using cache
+ ---> 89abb6bf0952
+Step 13/32 : COPY package.json package-lock.json ./
+ ---> ad190b4ca40d
+Step 14/32 : COPY apps/server/package.json ./apps/server/package.json
+ ---> 5424a611f28d
+Step 15/32 : COPY apps/web/package.json ./apps/web/package.json
+ ---> 2207c58c8d7a
+Step 16/32 : COPY packages/contracts/package.json ./packages/contracts/package.json
+ ---> fc31498cf656
+Step 17/32 : COPY packages/combat/package.json ./packages/combat/package.json
+ ---> 793acbe5d3a9
+Step 18/32 : RUN npm ci --omit=dev --ignore-scripts --workspace @aragoz/server --workspace @aragoz/contracts --include-workspace-root=false
+ ---> Running in 75c0125ccdb8
+
+added 86 packages, and audited 89 packages in 5s
+
+33 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice
+npm notice New major version of npm available! 11.17.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+ ---> Removed intermediate container 75c0125ccdb8
+ ---> ef4e69bd03e6
+Step 19/32 : FROM node:24.19.0-bookworm-slim@sha256:a9f5f7c91a432850b2a8a7797adf5eadb6c733ceed61167806cee7ea7fbc29df
+ ---> a9f5f7c91a43
+Step 20/32 : ENV NODE_ENV=production HOST=0.0.0.0 PORT=3000 DATABASE_PATH=/var/data/aragoz.sqlite
+ ---> Running in dfc6d2d4a42f
+ ---> Removed intermediate container dfc6d2d4a42f
+ ---> a0a46d6fa0ea
+Step 21/32 : WORKDIR /app
+ ---> Running in cac2374a9878
+ ---> Removed intermediate container cac2374a9878
+ ---> 69c8b9f716e6
+Step 22/32 : COPY --from=build --chown=node:node /app/package.json /app/package-lock.json ./
+ ---> a56607f77f18
+Step 23/32 : COPY --from=production-dependencies --chown=node:node /app/node_modules ./node_modules
+ ---> 43d38d15e059
+Step 24/32 : COPY --from=build --chown=node:node /app/apps/server/src ./apps/server/src
+ ---> 9709a7ccf3de
+Step 25/32 : COPY --from=build --chown=node:node /app/apps/server/package.json ./apps/server/package.json
+ ---> 187741830fee
+Step 26/32 : COPY --from=build --chown=node:node /app/packages/contracts ./packages/contracts
+ ---> 52517e2d5848
+Step 27/32 : COPY --from=build --chown=node:node /app/apps/web/dist ./apps/web/dist
+ ---> 5e46783204c7
+Step 28/32 : RUN mkdir -p /var/data && chown node:node /var/data
+ ---> Running in d72ac520a744
+ ---> Removed intermediate container d72ac520a744
+ ---> 853846a60dd1
+Step 29/32 : USER node
+ ---> Running in 44291a17e28e
+ ---> Removed intermediate container 44291a17e28e
+ ---> ede2cef00d35
+Step 30/32 : EXPOSE 3000
+ ---> Running in a342f7f2c87e
+ ---> Removed intermediate container a342f7f2c87e
+ ---> 7f417fe22955
+Step 31/32 : HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD node -e "fetch('http://127.0.0.1:'+process.env.PORT+'/api/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"
+ ---> Running in 3bb0add27358
+ ---> Removed intermediate container 3bb0add27358
+ ---> 0f158e13726b
+Step 32/32 : CMD ["node","apps/server/src/index.ts"]
+ ---> Running in c2407ccb3d4f
+ ---> Removed intermediate container c2407ccb3d4f
+ ---> dba6f7e6962c
+Successfully built dba6f7e6962c
+Successfully tagged aragoz-goal:20261028

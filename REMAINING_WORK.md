@@ -43,7 +43,7 @@ For the 27 October A01–A05 packet, root integrated all changes and four concre
 - Invited-live show source, moderation/review, deadlines/votes, security, offline ledger and mocked OAuth/EventSub coverage.
 - Seven original approved GLBs with Blender sources, rights/font notices, actual engine admission and budgets.
 - Owner-approved public repository at https://github.com/AmirmLotfy/aragoz and free public/local preview. Public visibility supersedes the earlier private-only restriction; no collaborator invitation was needed or made.
-- Actual LinuxARM64/non-root/container persistence/backup/restoration checks for their recorded revision.
+- Actual LinuxARM64/non-root/container persistence/backup/restoration checks, refreshed28October for e4a124e:173unit/server tests and13container smoke checks. See evidence/linux-container-build-20261028.json; historical receipts remain unchanged.
 - Actual30minute720p60 and1080p30OBS sessions for their recorded revisions; documented measured1080p30fallback with unchanged60Hzsimulation. These are not automatically reopened by new documentation or unrelated fixes.
 
 ## Separate optional or later scope

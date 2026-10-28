@@ -1,0 +1,27 @@
+{
+  "kind": "local-linux-container-smoke",
+  "recordedAt": "2026-10-28T00:23:51.673Z",
+  "image": "aragoz-goal:20261028",
+  "context": "colima-aragoz-goal-20261028",
+  "passed": true,
+  "platform": "linux/arm64",
+  "checks": [
+    "Linux image and non-root runtime",
+    "HTTP 200 /api/health",
+    "HTTP 200 /api/readiness",
+    "HTTP 200 /rehearse",
+    "HTTP 200 /house-show",
+    "HTTP 200 /assets/manifest.json",
+    "HTTP 200 /fonts/NotoSans-OFL.txt",
+    "Unauthenticated private API denied",
+    "Packaged Brotli GLB decodes to original format",
+    "Volume writable by node runtime user",
+    "Online SQLite backup",
+    "Persistence after container replacement",
+    "Backup restoration and integrity in separate database"
+  ],
+  "cleanupErrors": [],
+  "limits": [
+    "Synthetic SQL sentinel only; no genuine Twitch, audience, hosted or OBS acceptance."
+  ]
+}

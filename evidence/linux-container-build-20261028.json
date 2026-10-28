@@ -1,0 +1,466 @@
+{
+  "kind": "actual-local-linux-container-build",
+  "recordedAt": "2026-10-28T00:24:08.680599+00:00",
+  "sourceHead": "e4a124ed8c14d6538590dd8219b9d01b39d80d62",
+  "imageId": "sha256:dba6f7e6962cc34687d2f0ed0abd4e5d135986e702243d5632ded79de22aba8b",
+  "platform": "linux/arm64",
+  "runtimeUser": "node",
+  "exitCode": 0,
+  "unitServerTests": 173,
+  "testFiles": 15,
+  "smoke": "evidence/linux-container-smoke-20261028.json",
+  "log": "evidence/linux-container-build-20261028.log",
+  "sourceHashes": [
+    {
+      "path": ".dockerignore",
+      "sha256": "59e175f3ade6282f699f66ae8f778abe30fee6b2e14091af91e443a277083c25"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "952bb9afe6b4d77b01da36faa8d450ea4276857f6abc24ac9e0a17405578959f"
+    },
+    {
+      "path": "apps/server/README.md",
+      "sha256": "b20a0f5120c4fdb17a76eca8fc1fc32cf300516d2fd4e1c0024758a966e9aa80"
+    },
+    {
+      "path": "apps/server/package.json",
+      "sha256": "b5a4cb37c953f5db657e97008a6eec10e53d8d6aedb9256958c849f8df14d743"
+    },
+    {
+      "path": "apps/server/src/app.ts",
+      "sha256": "88b13041ef805e45fce3c32053f63362550ad68cf920f270e16512bd1a09eda2"
+    },
+    {
+      "path": "apps/server/src/backup.ts",
+      "sha256": "67441e02dc12e18f3790e6217ab8d8a77abe3542e75536caf4e8bb48d015e3c2"
+    },
+    {
+      "path": "apps/server/src/compiler.ts",
+      "sha256": "41587b162d8360fc51ac28da2f9baa74ad2652de9cd861349b6572f7579ab06d"
+    },
+    {
+      "path": "apps/server/src/config.ts",
+      "sha256": "908f6710b62c1f3cb8be33c857fee6dd35bb2c8ae40e18dbbd1d7da92784b794"
+    },
+    {
+      "path": "apps/server/src/connection.ts",
+      "sha256": "f1dc6c03ef558eada174c43f5a5d5bb3ec303b9134a6b89f1ae5b90337bad816"
+    },
+    {
+      "path": "apps/server/src/engine.ts",
+      "sha256": "f7a10ecc40802a99ae71288b8e70f7a7dfe593563cc20dd35285ce56406d4ab1"
+    },
+    {
+      "path": "apps/server/src/index.ts",
+      "sha256": "15db0cf347d5425489369d1fe65e79efaa03adf776bca42e9af10b3462086d24"
+    },
+    {
+      "path": "apps/server/src/readiness.ts",
+      "sha256": "2952fe4141b97a85541a991fe6853e98e5b61b1f6d421344c3cfae8dc37acda1"
+    },
+    {
+      "path": "apps/server/src/store.ts",
+      "sha256": "04bbd1ee2c3eca364e34ed7488ee81252acdccfadef1c72dddc574f3344a1088"
+    },
+    {
+      "path": "apps/server/src/twitch.ts",
+      "sha256": "46e9abcd47b4f2dc240820d8181f43fd06b40c17410a515b4b74a2fe4dffb17f"
+    },
+    {
+      "path": "apps/server/test/audience-load.test.ts",
+      "sha256": "1231faf38e85e0d98a0fd8204a9c3fb97414c55779afae8500654e9d5ddb7e0d"
+    },
+    {
+      "path": "apps/server/test/compiler-deadline.test.ts",
+      "sha256": "a6d4a67dc9059ee1d31a9161a5cd4abee49adfb7147de2555895947f6cf9915b"
+    },
+    {
+      "path": "apps/server/test/hardening.test.ts",
+      "sha256": "379f66b6aeade50ef3cb7bc13091ada1a1037bce35ce243efefa6c8934b1215b"
+    },
+    {
+      "path": "apps/server/test/server.test.ts",
+      "sha256": "af8eaa27fc0025d006fc28fa03a6a5fcf1d116833d3576d05382305363611c5a"
+    },
+    {
+      "path": "apps/server/tsconfig.json",
+      "sha256": "de5250f735b7ecb0b0bead3ed29f2406b43ce7050c9ac1dd1559eb3498ab9c1a"
+    },
+    {
+      "path": "apps/web/asset-review-plugin.ts",
+      "sha256": "7ff0285aab0020b4c9d68ebbae3f8564f672938433ed0a2d17c6c4c3f601c944"
+    },
+    {
+      "path": "apps/web/index.html",
+      "sha256": "64a427562a5fc87dcb7a492019e9955479c8572ba610c1ac212c4f86bfba0b22"
+    },
+    {
+      "path": "apps/web/package.json",
+      "sha256": "3001dc9b51ba17b4f09710fdf129ba28ee27b067de8b4ad972b2cbd44843b3b9"
+    },
+    {
+      "path": "apps/web/public/assets/manifest.json",
+      "sha256": "e0560c812584c67870825589fe25870d3d536d7086b9200fd2e8ff436c89dfb0"
+    },
+    {
+      "path": "apps/web/public/assets/runtime/hero.glb",
+      "sha256": "ef5cf1bb8186a5a22c96f4b26cda6497a267c88e12ffc50238348234ec3c2f6f"
+    },
+    {
+      "path": "apps/web/public/assets/runtime/module-charge.glb",
+      "sha256": "bbc7d9fce10877a8edccb1e534fd9b1a894f1ca5a4942b4a459dc25026631d72"
+    },
+    {
+      "path": "apps/web/public/assets/runtime/module-echo.glb",
+      "sha256": "7758967247b47b334fe17c8ced0c91bc498d56b64207a2e715a551a5de2505d1"
+    },
+    {
+      "path": "apps/web/public/assets/runtime/module-steam.glb",
+      "sha256": "a1ccdfb139e6b910ca35706b7452925d9b5a86a39f499e93abc31088b641c719"
+    },
+    {
+      "path": "apps/web/public/assets/runtime/shell-mirror.glb",
+      "sha256": "c540a9c1c87b28003d8133b693fb47a42db5d4e92d52afd6e1af34b2d96ce9f7"
+    },
+    {
+      "path": "apps/web/public/assets/runtime/shell-teapot.glb",
+      "sha256": "67f0c21dc6242752386d8535f6486844fdf93eefa1b6166f6746a38273fc54ce"
+    },
+    {
+      "path": "apps/web/public/assets/runtime/stage.glb",
+      "sha256": "8e7be36a5bdf5bdec994d293304cec30d80e87d4d1b5b3460ffc716fa2b11688"
+    },
+    {
+      "path": "apps/web/public/fonts/NotoSans-OFL.txt",
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+    },
+    {
+      "path": "apps/web/public/fonts/NotoSans.ttf",
+      "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d"
+    },
+    {
+      "path": "apps/web/public/fonts/NotoSansArabic-OFL.txt",
+      "sha256": "07fc70bfeb985cc1a87a8587d0a0c80bab11c86c9dc3fd95b6f0cb332f983e96"
+    },
+    {
+      "path": "apps/web/public/fonts/NotoSansArabic.ttf",
+      "sha256": "63111b5b2e074dd48cc67692e0a2726d86ee94c1c37fe8598257b7b4e87e869e"
+    },
+    {
+      "path": "apps/web/public/third-party-notices.txt",
+      "sha256": "2527eb7bd9ed366456d11df51d4acbcfa76f87625e99c3688a35f7426b1ea388"
+    },
+    {
+      "path": "apps/web/src/App.tsx",
+      "sha256": "c1587215b6fee90e224d7074fa96a93384b56b908713618955b06fe415020a93"
+    },
+    {
+      "path": "apps/web/src/GameCanvas.tsx",
+      "sha256": "2f5cb5e286d5af46c31c25bc738778776375b9af248a4c8fc3beeff04d46df91"
+    },
+    {
+      "path": "apps/web/src/HouseShowView.tsx",
+      "sha256": "e9a068ac16c7e4d57afd22939be045194f4a8d2d40a6d827780092a8363731e2"
+    },
+    {
+      "path": "apps/web/src/Live.tsx",
+      "sha256": "7546d86efa7c7d7d0489b6dd5416ae6d94cc3934de61cb5f1a2b9ba182080b35"
+    },
+    {
+      "path": "apps/web/src/RehearsalView.tsx",
+      "sha256": "69a13b5b0c42db8d990033fd61fde72f5e6f08f2707f7d2803479a6471551974"
+    },
+    {
+      "path": "apps/web/src/aim-assist.test.ts",
+      "sha256": "9aca0c308fafd403f67671a97018bdda8df3141a7315aabe45669167b893171a"
+    },
+    {
+      "path": "apps/web/src/aim-assist.ts",
+      "sha256": "311008ae1f428a1e937dc3d5e281bc16e606f94eae9f84db3261f060fb996396"
+    },
+    {
+      "path": "apps/web/src/api.ts",
+      "sha256": "0dd998773d4153b5cc62f048973e6613c3611df27a7393cfb1a17b444be30cdc"
+    },
+    {
+      "path": "apps/web/src/assembly.test.ts",
+      "sha256": "35ede31c944abb537c67724956a784432e12f0ce28d55ec341211c63e85abc75"
+    },
+    {
+      "path": "apps/web/src/assembly.ts",
+      "sha256": "09e779fcfb882a36fefe15a01d1204510a0f499253c910d6c96c1f9edc5f5132"
+    },
+    {
+      "path": "apps/web/src/asset-loading.test.ts",
+      "sha256": "6e2928b470d6b73b5d8b9f8761b2802ca4d035332e8ff07a67c27e4d3184e63e"
+    },
+    {
+      "path": "apps/web/src/asset-loading.ts",
+      "sha256": "a80ec66d3c253ad5776321dcd99295555172e3208bb4380a68818b991907b402"
+    },
+    {
+      "path": "apps/web/src/asset-review.ts",
+      "sha256": "012fa22231f4e1f0b59e1ff35251cf405070b1267803c9fff01e4d1accb83600"
+    },
+    {
+      "path": "apps/web/src/audio-cues.test.ts",
+      "sha256": "8e8249794b00b8be9f668aa1d0bb4b63b91baad75afe33a28e0e54e936534299"
+    },
+    {
+      "path": "apps/web/src/audio-cues.ts",
+      "sha256": "cf1244625323ac262ed2700be59af7dcb80d8b21e2393a91446a7ff12b17ae1a"
+    },
+    {
+      "path": "apps/web/src/audio.ts",
+      "sha256": "674d2158963baa43885b2e46d570bc27e8fb85fa909f31d0bc4143f144d76dab"
+    },
+    {
+      "path": "apps/web/src/components.tsx",
+      "sha256": "8934271215438de344b372d090e9650c9fefbeab011a94c50010dce258846325"
+    },
+    {
+      "path": "apps/web/src/controls.test.ts",
+      "sha256": "0fed99420e5a9f954725093549d0291cb768225ff863d414970e7401312a7f27"
+    },
+    {
+      "path": "apps/web/src/controls.ts",
+      "sha256": "08ddf48e33fd1df293e951189ddd7ac73d0b12b8622ea074ea70cd9b0ff4b351"
+    },
+    {
+      "path": "apps/web/src/house-show.test.ts",
+      "sha256": "15dbee25c73cb97d3671bcd8730bc150bbb9788ebb0ab1e358ca721473825cf0"
+    },
+    {
+      "path": "apps/web/src/house-show.ts",
+      "sha256": "33d46030ba6705c7fb4e6be1d84025b2153a118e36fc0d2378e68f088957a3df"
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "sha256": "7fc8f1d210a1662292f96a2d289d8ab24c3de6ce9dbf27548f2b97ebad19a8c9"
+    },
+    {
+      "path": "apps/web/src/offline.ts",
+      "sha256": "ee4e05a6efd6a876a0b051de975cd6d2240b339044bfe6d35d8c3e64a0fde932"
+    },
+    {
+      "path": "apps/web/src/presentation.test.ts",
+      "sha256": "ef4036ed384cd8302585f707078b3e0ee22134fffdb01a7782f16a864b0e3a1a"
+    },
+    {
+      "path": "apps/web/src/presentation.ts",
+      "sha256": "7d1ee6335c192c008da661bdde6f703acbdc9ab14a0474a8681370ef739f736d"
+    },
+    {
+      "path": "apps/web/src/rehearsal.ts",
+      "sha256": "e98e3fcf9801e20d1de669f12b033d73c1754bceea00ecba3becfa8720d2a7a0"
+    },
+    {
+      "path": "apps/web/src/rendering.ts",
+      "sha256": "697d3037977071af8acb77c0149be06a2c9ce7cff9350da66d39223b7c19b4f5"
+    },
+    {
+      "path": "apps/web/src/room-mutations.test.ts",
+      "sha256": "9e593ab06b685a56cd321c5e8b0b07db953a8ed8e21027a6f380f8568a5fbbc4"
+    },
+    {
+      "path": "apps/web/src/room-mutations.ts",
+      "sha256": "503f8e02e07fd56444da0cec8172284c5c917e0e324857d30841f21ac497af6d"
+    },
+    {
+      "path": "apps/web/src/settings.ts",
+      "sha256": "33949f46012b88254685fd0f4747e084ff0356169add3296e9381940d1a00cd6"
+    },
+    {
+      "path": "apps/web/src/showbill.test.ts",
+      "sha256": "1a33e995401ae5ab6a3dc45246942a6e9df76f7c49de30da7d02d74164e0b006"
+    },
+    {
+      "path": "apps/web/src/showbill.ts",
+      "sha256": "f3ed539a2340c30fb01bf051561740bcf9e406695dc65ae9d618d3fb84da7b7a"
+    },
+    {
+      "path": "apps/web/src/stream-copy.ts",
+      "sha256": "5c5dd2c6d3fc7cdac462ac1accfea7b59f2d8e08d55e21228f67bd2f5ca39c72"
+    },
+    {
+      "path": "apps/web/src/styles.css",
+      "sha256": "d205fcce764a43559490061625a79ee7ca6a4079fcec26c59f36932ea9dd051c"
+    },
+    {
+      "path": "apps/web/src/telemetry.ts",
+      "sha256": "fddfd02acb2e289f70a15d76ea6aa696cd8194363cd09bbd38bc787635017302"
+    },
+    {
+      "path": "apps/web/src/theatre.ts",
+      "sha256": "ac1652e925939a3cf44503af17ffcf5d203c0365c4294c957a81add19f2aefb2"
+    },
+    {
+      "path": "apps/web/src/type.css",
+      "sha256": "f7e39f1028c5f86bae17513ae1392c18acc21ef22f114c1d16a458c1e90a28d6"
+    },
+    {
+      "path": "apps/web/vite.config.ts",
+      "sha256": "13a890faf28840f97ec13c65899ce86f6e8bddee27a10b97ffe7ebb3448c4314"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "4d5fda594eff9c1ddf3af928377b4488b559548a766a888c3e135787c9959d88"
+    },
+    {
+      "path": "packages/combat/package.json",
+      "sha256": "e8dc9f13f1d4b14743a900ed83d0500e0764633a6ff7a1d25f3673655a86550c"
+    },
+    {
+      "path": "packages/combat/src/index.test.ts",
+      "sha256": "fb3ca519c8f42a40a852d31c5488eb36e7fa892a6fc7db8b9ec703ee265110fa"
+    },
+    {
+      "path": "packages/combat/src/index.ts",
+      "sha256": "5dc9994277815a1f87fc8d08024f5222e18181c9be83fd809c6cf3ab5ccd890f"
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "sha256": "81cc10e838f93d28f94eea9b09f25dd55a3eb8fc2080e947b3d5c84482c7e5d0"
+    },
+    {
+      "path": "packages/contracts/src/index.test.ts",
+      "sha256": "0e740f09d3631f81b1e9246075655ef7635904b11c87b7ccb22f20b666217086"
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "sha256": "173742f9d476ed06fa56f4f0e895994f3aff5622d4719eea8e09c17df87c766e"
+    },
+    {
+      "path": "scripts/blender/build_local_kit.py",
+      "sha256": "828e286372dea43bfaab934345631b21e2fc3f27f1dc6c1f0539260f50dab4cf"
+    },
+    {
+      "path": "scripts/blender/inspect_local_kit.mjs",
+      "sha256": "a7a409437e820171f53b0dd45610d52f37743d773a406307a32792be42c2270e"
+    },
+    {
+      "path": "scripts/check-assets.mjs",
+      "sha256": "39e1a56301a711a7c1cb96d2d1ba107340d6f4e865e614980441035b282f2f8e"
+    },
+    {
+      "path": "scripts/check-resources.mjs",
+      "sha256": "c7b3ff331510e31b6fef541a69589f0ea132562a271f27daa583a5e0fccebd7b"
+    },
+    {
+      "path": "scripts/check-source-syntax.mjs",
+      "sha256": "0f9d3e60a222d218b77919a59e7f9bd858e1b527b2517acbb9ba7bddd2bd0972"
+    },
+    {
+      "path": "scripts/generate-notices.mjs",
+      "sha256": "80d2f4eb089cff851ac0503f17f70ec06e9582e6b445a137d1d9dd6dee10f468"
+    },
+    {
+      "path": "scripts/inspect-browser-counter.mjs",
+      "sha256": "6fecf9194907f7347ac930ef36ef9e79991f2b827f2f81dddbe7214ac4f78347"
+    },
+    {
+      "path": "scripts/inspect-browser-stage.mjs",
+      "sha256": "90e99b99b6d3804bc2c260d020346c7ebaf520cee1002e796459c545502fc197"
+    },
+    {
+      "path": "scripts/inspect-echo-counter.mjs",
+      "sha256": "198805b4dd96a8be6a2cb774894cb03a17404c5d98970e4cf61d9d5262eada57"
+    },
+    {
+      "path": "scripts/inspect-house-show.mjs",
+      "sha256": "dd974646af1c25a6e85a081eae533ad6b50ba6995478dff1d5f44add5c43ddb4"
+    },
+    {
+      "path": "scripts/inspect-stream-readability.mjs",
+      "sha256": "fb2a18331d895277e0bcc2c963e39f8a49e5c7d44ee4030e7c706b28cb0d2d08"
+    },
+    {
+      "path": "scripts/lib/glb.d.mts",
+      "sha256": "2abe6662a90cc47011058a3065504356706edffa2caf1cb305530422e099c460"
+    },
+    {
+      "path": "scripts/lib/glb.mjs",
+      "sha256": "59bebf99542a625221d3dbb2d294fc30ecbfbd9edd4d17e8b022bd45b227cf6d"
+    },
+    {
+      "path": "scripts/measure-browser-smoke.mjs",
+      "sha256": "84981c27d956f6500b54115fb22dff9f593a40e0e9873100dfa916008235d887"
+    },
+    {
+      "path": "scripts/obs-gameplay-session.mjs",
+      "sha256": "1ac38bc56953dd0a23a2f57271e4f180eb1f95884034dfd854de6c8c61ad47dc"
+    },
+    {
+      "path": "scripts/precompress-web.mjs",
+      "sha256": "7a57ab69ed85fb778bc7da3e50e78cc0fe41b89ae1c1acdc8b7d523dae284c8d"
+    },
+    {
+      "path": "scripts/source-manifest.mjs",
+      "sha256": "7122713cf00028b08f7d118ab0363d0a60a54932cf7910d90486de14282785fb"
+    },
+    {
+      "path": "scripts/start-public-preview.mjs",
+      "sha256": "98d78afc121cf3f6cbfd697faebdb607dd839ebb0175c11965ede614ca588c50"
+    },
+    {
+      "path": "scripts/sync-assets.mjs",
+      "sha256": "b2c9b75bd22a6a11614bdb78ca359046e3318f8db51711927d3fda63825251ac"
+    },
+    {
+      "path": "scripts/verify-preview-persistence.mjs",
+      "sha256": "9a03c497d930f183f7dd929a25e40d0e7bcd62cff00476905e36fc1e0816c029"
+    },
+    {
+      "path": "scripts/verify-public-preview.mjs",
+      "sha256": "49642f8cd83da111e4292fd11a4a2477637f996ee24c224ef4f1c5814f3467cb"
+    },
+    {
+      "path": "scripts/verify-restored-controller.mjs",
+      "sha256": "33cd0397fbc6fcfdf81079f76199e38b1bc136a48cf8efd5b91d6e31e7edeec4"
+    },
+    {
+      "path": "tests/assets/glb.test.mjs",
+      "sha256": "ce4649f940e536e9f0826a1ea232bbe0ff3d0f8ec30ba9c39c7bdf9a8f3da676"
+    },
+    {
+      "path": "tests/assets/review-path.test.mjs",
+      "sha256": "b1717e836952f9e6173767c06e027676bacf6359a89bfe68075aecd5b0c972dd"
+    },
+    {
+      "path": "tests/browser/house-show.spec.ts",
+      "sha256": "f432f2745c30cbf5f6178589900f1b593963cbbbe895862686eee80cf6818c2c"
+    },
+    {
+      "path": "tests/browser/live.spec.ts",
+      "sha256": "1fd130d49e8587aafd11608c2f83196567db70c286117e089f7c5647e2ba3c8e"
+    },
+    {
+      "path": "tests/browser/readability.spec.ts",
+      "sha256": "e9bab4b90db0a5642c14c5c88b69be3ca5e7cc1aa6e5e0203ab7385da4152dab"
+    },
+    {
+      "path": "tests/browser/rehearsal.spec.ts",
+      "sha256": "4aceafd37e0eb83227d8876b5cf5aa2d8e6f72a60913655eabc46423cad6e934"
+    },
+    {
+      "path": "tests/container/smoke.mjs",
+      "sha256": "c01a3144e683162de0c9a09b7e2e79079b60d61cd08c8d3b23de87955facb4e9"
+    },
+    {
+      "path": "tests/ops/public-preview.test.mjs",
+      "sha256": "8c47ef23e2f47347a2f2af7eadd6b833a0d03d96c9cea02a43bded7aa0cf6a03"
+    },
+    {
+      "path": "tests/support/live-harness.ts",
+      "sha256": "4339951c3779c38e5cf202043c1aa73e0746fa35c7e2dc64a03a498cb54f315a"
+    }
+  ],
+  "limits": [
+    "Local isolated Linux container, synthetic persistence sentinel. No hosted provider, human or contest acceptance."
+  ],
+  "paidResources": 0,
+  "retainedImage": false,
+  "cleanup": "Task-owned containers and smoke volume removed; stopped task VM/profile and data deleted successfully. Original default Docker context restored. Unrelated environments were not used or controlled.",
+  "assetToolingTests": 62
+}

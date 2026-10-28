@@ -104,3 +104,5 @@ Short M1 Metal browser samples and a keyboard-driven counter/break/final-strike/
 Public rendering loads only locally admitted runtime assets. Concepts are not included in the deployment image. The accepted brief, plan, art bible, content schema, rights log, test plan and build journal live at the repository root. The public technical preview uses an account-free tunnel with local durable SQLite. DEPLOYMENT_REVIEW.md records current ownership/no-spend rules; ops/archive/render.paid-unapproved.yaml preserves only the historical paid design. Compressed static assets negotiate Brotli/gzip with byte-identical fallback.
 
 The subsequent [hosted recovery checkpoint](ops/HOSTED_RECOVERY_20261028.md) records31/31 muted browser checks, genuine two-window/offline operator checks and repeated backend restart verification. These remain distinct from human acceptance.
+
+Current-source LinuxARM64 packaging also passed the [28 October build](evidence/linux-container-build-20261028.json) and [13 container smoke checks](evidence/linux-container-smoke-20261028.json), including container replacement and backup restoration.

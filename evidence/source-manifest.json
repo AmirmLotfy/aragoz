@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 73129,
-      "sha256": "da75e55b007b543d3acc91e3779c20c0197f88dc7cd404cff9ef0c4026a5866d"
+      "bytes": 74727,
+      "sha256": "39822038884cf04e77eae3300d9c1370e395874960e6d7dc4d05f8f81ffaadcc"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 21070,
-      "sha256": "8c027963b33f5f9f21e1342c67835e94a58b89133f3655a3ffd36243e37842d2"
+      "bytes": 22668,
+      "sha256": "70d0e9b55d779161b9114f50a2b2dadbadca02bf482156b01329491317af21a3"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -91,13 +91,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 18494,
-      "sha256": "3e53c205d642bf294c7ead45429b38c26b2a1cc628b9e737b0346901117a3032"
+      "bytes": 18747,
+      "sha256": "fb79a3988d68fa60d3a1c288333725992d3f98672e0d92e2026d115f3e9bd58f"
     },
     {
       "path": "REMAINING_WORK.md",
-      "bytes": 14619,
-      "sha256": "d2755fbbd4057bc44222533211b900b78663d8c7c63d708869e5ea69352f4cbb"
+      "bytes": 14760,
+      "sha256": "cb695e19036b755812339cf874318d663b685d3d50c596d1a7aaaf23d15fc6d3"
     },
     {
       "path": "SOURCE_LOG.md",
@@ -1525,9 +1525,19 @@
       "sha256": "fd8d3f39abbc75abfcb0f0fc7c319afb8d78c8728d286925264a4fde572f82df"
     },
     {
+      "path": "evidence/linux-container-build-20261028.json",
+      "bytes": 16839,
+      "sha256": "534f316aa5661ff474f34ec78c8d65944c2270843f9672adc57a98ff14c84103"
+    },
+    {
       "path": "evidence/linux-container-build.json",
       "bytes": 2555,
       "sha256": "ccd5bc119c80c9ee5138b4cf4c2044d64d67fa8860867ccb90d5bfd9138c5651"
+    },
+    {
+      "path": "evidence/linux-container-smoke-20261028.json",
+      "bytes": 871,
+      "sha256": "2d39a360d8b9f4f9654b564f2bfd91b0951d97383d2f92f446165cd38be3319c"
     },
     {
       "path": "evidence/linux-container-smoke.json",
