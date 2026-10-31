@@ -24,3 +24,7 @@ See [DELIVERY.md](DELIVERY.md). `local-review/ARAGOZ-review-package.zip` contain
 3. The browser draft and confirmed primary session are saved. The owner will complete untouched eligibility manually; final rules/entry remain pending. Public source and video URLs are resolved. The connector auth issue no longer blocks browser preparation.
 4. The public video upload is complete and saved in Devpost. Final submission follows the owner's manual eligibility and rules steps. A saved project draft is not an entered project. Verify the eventual live submitted status.
 5. Continue remaining real-provider and genuine human release acceptance separately. No participants are available and none were fabricated. Stable paid hosting/model calls remain prohibited.
+
+## 31 October local video revision
+
+A revised160-second export now includes the owner-recorded actual Codex thread at01:52–02:13, with the original voice preserved. It is prepared locally and has **not** replaced the public movie or submitted video. See [revision and upload notes](YOUTUBE_REVISION_20261031.md) and [QA receipt](../evidence/submission-codex-walkthrough-20261031.json).

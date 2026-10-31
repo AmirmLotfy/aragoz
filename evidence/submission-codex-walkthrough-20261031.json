@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-31",
+  "kind": "offline-video-revision-with-owner-recorded-Codex-UI",
+  "sources": {
+    "docs/media/aragoz-codex-planning.mp4": "3b4e83c6e310287716075c4df45e7623757be39776e0a31f0c727c24ef5f044d",
+    "submission/local-review/aragoz-narrated-motion-review.mp4": "03b43c4ed88d61207f0303ca9fe86bac638a1c7bde9a007d4307fdc1ac5d8ccc",
+    "submission/local-review/aragoz-narrated-motion-clean.mp4": "a5aa9e0a47472ef014149cbfc03c4e286a0fa21fc0708b9ca2205231499e5a2a"
+  },
+  "changedIntervalSeconds": [
+    112,
+    133
+  ],
+  "seconds": 160,
+  "clipIntervalSeconds": [
+    0,
+    21
+  ],
+  "playbackSpeed": 1,
+  "visualTreatment": "Full frame aspect ratio preserved at 1728x1080 inside1920x1080. Header/footer labels and narration captions overlay the recording. Surrounding original video packets are copied at verified scene keyframes, without re-encoding.",
+  "limits": [
+    "Retrospective project-thread navigation supplied by the owner, not live coding.",
+    "Existing Twitch, House, result and game evidence retain their original labels and source dates.",
+    "No new Twitch/provider/human acceptance or generated footage.",
+    "Local exports only; no upload, submission or replacement of the original public movie."
+  ],
+  "exports": [
+    {
+      "file": "submission/local-review/aragoz-codex-walkthrough-captioned-20261031.mp4",
+      "sha256": "de6c8908d341873d7603854afa8f014d5acfaf364e5910a66de558f4c1b44bf0",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "nb_frames": "4800"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "r_frame_rate": "0/0",
+            "nb_frames": "7501"
+          }
+        ],
+        "format": {
+          "duration": "160.000000",
+          "size": "19144193"
+        }
+      },
+      "originalAudioPacketHash": "SHA256=5573eb7c680a51f1739be69b12dd99852786550accf72818fd6bec5252532238",
+      "audioPacketsUnchanged": true,
+      "fullDecodeNoErrors": true,
+      "decodedVideoFrames": 4800,
+      "uploaded": false
+    },
+    {
+      "file": "submission/local-review/aragoz-codex-walkthrough-clean-20261031.mp4",
+      "sha256": "92742c07aa5b79084da58b329a372632cbc2bcc4218c6f4330c6e2d945aa7a0f",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "nb_frames": "4800"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "r_frame_rate": "0/0",
+            "nb_frames": "7501"
+          }
+        ],
+        "format": {
+          "duration": "160.000000",
+          "size": "18681143"
+        }
+      },
+      "originalAudioPacketHash": "SHA256=5573eb7c680a51f1739be69b12dd99852786550accf72818fd6bec5252532238",
+      "audioPacketsUnchanged": true,
+      "fullDecodeNoErrors": true,
+      "decodedVideoFrames": 4800,
+      "uploaded": false
+    }
+  ],
+  "visualQa": {
+    "outsideReplacementSsimSamples": [
+      {
+        "seconds": 28,
+        "ssim": 1.0
+      },
+      {
+        "seconds": 61,
+        "ssim": 1.0
+      },
+      {
+        "seconds": 100,
+        "ssim": 1.0
+      },
+      {
+        "seconds": 140,
+        "ssim": 1.0
+      },
+      {
+        "seconds": 155,
+        "ssim": 1.0
+      }
+    ],
+    "extractedSamplesSeconds": [
+      111.9,
+      112.5,
+      116,
+      119,
+      124,
+      130,
+      133.1,
+      140
+    ],
+    "reviewedEncodedFramesSeconds": [
+      111.9,
+      112.5,
+      116,
+      119,
+      124,
+      130,
+      133.1,
+      140
+    ],
+    "judgment": "Actual project conversation/plan/asset and validation history readable; source aspect ratio preserved, heading and retrospective footer present, matching captions visible, original scene restored at133s.",
+    "proof": "evidence/submission-codex-walkthrough-20261031.jpg"
+  },
+  "tools": {
+    "ffmpeg": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "Pillow": "12.3.0"
+  },
+  "diagnostics": [
+    "First nested overlay assembly rejected in visual QA: chapter labels/captions absent; no public replacement.",
+    "Filter-concat attempt rejected by exact duration/frame gate; no public replacement.",
+    "Final direct packet-copy splice uses verified112s/133s scene keyframes; complete decode, encoded label guards and outside-frame comparisons pass."
+  ],
+  "originalInputsStillMatch": true
+}

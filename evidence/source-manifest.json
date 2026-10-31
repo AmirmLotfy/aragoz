@@ -51,8 +51,8 @@
     },
     {
       "path": "BUILD_JOURNAL.md",
-      "bytes": 81624,
-      "sha256": "b25d29376655d720e5eecb2794b685d5581fe3f38448a0ca4ba7c6652e68809a"
+      "bytes": 84315,
+      "sha256": "e85e46fb2ad8ad32dffbf9f899ccffcfebbccaf3c6c7a6fcaf74abd24ae0c485"
     },
     {
       "path": "CONTENT_SCHEMA.md",
@@ -61,8 +61,8 @@
     },
     {
       "path": "CURRENT_HANDOFF.md",
-      "bytes": 29565,
-      "sha256": "819b20a1ce26cada4a00e24892b07feb784eb269245ea504c02801414b41a5e0"
+      "bytes": 32256,
+      "sha256": "2910dae00efcaebb17e183aa2d7b537b09a8fcf6085f6a9f6d4e062bb01fd386"
     },
     {
       "path": "DEPLOYMENT_REVIEW.md",
@@ -1740,6 +1740,16 @@
       "sha256": "7b0927d359ad56284c8873cb574e12317444d2754356a2c78762dc78d8a0e62c"
     },
     {
+      "path": "evidence/submission-codex-walkthrough-20261031.jpg",
+      "bytes": 119997,
+      "sha256": "618f30a3ea7f45190b61c8a9f0aa7fba375598d09a91c5acb4b3077e92bda4d8"
+    },
+    {
+      "path": "evidence/submission-codex-walkthrough-20261031.json",
+      "bytes": 4745,
+      "sha256": "73a15389a37710010d1c66ea8fd8743375f1c1716316e93cd2a93cda431a84c2"
+    },
+    {
       "path": "evidence/submission-media-20261028.json",
       "bytes": 7468,
       "sha256": "b3da74b280b3d61bbac201561e352e45e170cd6c01ef6307b11b631783228a67"
@@ -2211,8 +2221,8 @@
     },
     {
       "path": "submission/README.md",
-      "bytes": 4380,
-      "sha256": "b5de921bbe4ae2edac1921470603ade1a49fe1e800161585ceaac5bc59e37452"
+      "bytes": 4769,
+      "sha256": "d0df631975f440ace5cd23e0b8007615ee0ce5b8e52ba85d5cb38a37a2b1285c"
     },
     {
       "path": "submission/RESEARCH.md",
@@ -2238,6 +2248,11 @@
       "path": "submission/VOICE_INTEGRATION.md",
       "bytes": 4756,
       "sha256": "49a22105c2ec7eb163c2246a7752db00f9da142af9afc3e12b17b1c3855e7174"
+    },
+    {
+      "path": "submission/YOUTUBE_REVISION_20261031.md",
+      "bytes": 3681,
+      "sha256": "5e200568b01c82fe31f5c3163e595e7efd027afccc2f5b737c994b53740113fe"
     },
     {
       "path": "submission/YOUTUBE_UPLOAD.md",
@@ -2303,6 +2318,11 @@
       "path": "submission/source/build_voice_cut.py",
       "bytes": 10741,
       "sha256": "abd4c20a3c55e60d313df853c9ebe32a6001f514ad782403313fb3108e2f1814"
+    },
+    {
+      "path": "submission/source/insert_codex_walkthrough.py",
+      "bytes": 11075,
+      "sha256": "46f7bec62e88ee5253b2905d717678cc319581f02624da3a3d7152e176c8fe25"
     },
     {
       "path": "submission/source/package_delivery.py",
